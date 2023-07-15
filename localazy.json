@@ -1,0 +1,56 @@
+{
+
+	"writeKey": "a8151210718646444184-5b716da2c0543d32e9395b9dfe0759d748e606c831979a0ffb2122900ac18917",
+	"readKey": "a8151210718646444184-a8f8385bc116854945c43849e2717742aa20b2fea65739e87183979aec15b26a",
+	"upload": {
+		"files": [
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/en/GalaxySlicer_en.po",
+				"lang": "en"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/fr/GalaxySlicer_fr.po",
+				"lang": "fr"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/de/GalaxySlicer_de.po",
+				"lang": "de"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/sv/GalaxySlicer_sv.po",
+				"lang": "sv"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/es/GalaxySlicer_es.po",
+				"lang": "es"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/nl/GalaxySlicer_nl.po",
+				"lang": "nl"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/hu/GalaxySlicer_hu.po",
+				"lang": "hu"
+			},
+			{
+				"type": "po",
+				"pattern": "bbl/i18n/ja/GalaxySlicer_ja.po",
+				"lang": "ja"
+			}
+		]
+	},
+	"download": {
+		"folder": "bbl/i18n",
+		"includeSourceLang" : "true",
+		"files": {
+			"output": "${lang}/GalaxySlicer_${lang}.po"
+		}
+	}
+}

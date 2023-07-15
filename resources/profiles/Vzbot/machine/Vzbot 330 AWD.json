@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Vzbot 330 AWD",
+    "model_id": "Vzbot 330 AWD",
+    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Vzbot",
+    "bed_model": "vzbot_330awd_buildplate_model.stl",
+    "bed_texture": "vzbot_330awd_buildplate_texture.svg",
+    "hotend_model": "vzbot_hotend.stl",
+    "default_materials": "Vzbot Generic ABS;Vzbot Generic PLA;Vzbot Generic PLA-CF;Vzbot Generic PETG;Vzbot Generic TPU;Vzbot Generic ASA;Vzbot Generic PC;Vzbot Generic PVA;Vzbot Generic PA;Vzbot Generic PA-CF"
+}

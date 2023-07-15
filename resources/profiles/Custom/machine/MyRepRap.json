@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Generic RepRap Printer",
+    "model_id": "my_reprap_01",
+    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "MyPrinter",
+    "bed_model": "",
+    "bed_texture": "",
+    "hotend_model": "",
+    "default_materials": "My Generic ABS;My Generic PLA;My Generic PLA-CF;My Generic PETG;My Generic TPU;My Generic ASA;My Generic PC;My Generic PVA;My Generic PA;My Generic PA-CF"
+}
