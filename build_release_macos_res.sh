@@ -58,8 +58,8 @@ if [ "studio." != $BUILD_TARGET. ];
 then
     echo "building deps..."
     echo "cmake ../ -DDESTDIR=$DEPS -DOPENSSL_ARCH=darwin64-${ARCH}-cc -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES:STRING=${ARCH}"
-    cmake ../ -DDESTDIR="$DEPS" -DOPENSSL_ARCH="darwin64-${ARCH}-cc" -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES:STRING=${ARCH}
-    cmake --build . --config Release --target all 
+    #cmake ../ -DDESTDIR="$DEPS" -DOPENSSL_ARCH="darwin64-${ARCH}-cc" -DCMAKE_BUILD_TYPE=Release -DCMAKE_OSX_ARCHITECTURES:STRING=${ARCH}
+    #cmake --build . --config Release --target all 
     if [ "1." == "$PACK_DEPS". ];
     then
         tar -zcvf GalaxySlicer_dep_mac_${ARCH}_$(date +"%d-%m-%Y").tar.gz GalaxySlicer_dep_$ARCH
@@ -76,8 +76,8 @@ cd $WD
 mkdir -p build_$ARCH
 cd build_$ARCH
 echo "building studio..."
-cmake .. -GXcode -DBBL_RELEASE_TO_PUBLIC=1 -DCMAKE_PREFIX_PATH="$DEPS/usr/local" -DCMAKE_INSTALL_PREFIX="$PWD/GalaxySlicer" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MACOSX_RPATH=ON -DCMAKE_INSTALL_RPATH="$DEPS/usr/local" -DCMAKE_MACOSX_BUNDLE=ON -DCMAKE_OSX_ARCHITECTURES=${ARCH}
-cmake --build . --config Release --target ALL_BUILD 
+#cmake .. -GXcode -DBBL_RELEASE_TO_PUBLIC=1 -DCMAKE_PREFIX_PATH="$DEPS/usr/local" -DCMAKE_INSTALL_PREFIX="$PWD/GalaxySlicer" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MACOSX_RPATH=ON -DCMAKE_INSTALL_RPATH="$DEPS/usr/local" -DCMAKE_MACOSX_BUNDLE=ON -DCMAKE_OSX_ARCHITECTURES=${ARCH}
+#cmake --build . --config Release --target ALL_BUILD 
 mkdir -p GalaxySlicer
 cd GalaxySlicer
 rm -r ./GalaxySlicer.app
