@@ -1,7 +1,7 @@
 name: Build dependencies
 
 on:
-  pull_request:
+  push:
     branches:
       - main
     paths:
