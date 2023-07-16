@@ -2,8 +2,8 @@ include(ExternalProject)
 
 # Use boost 1.78 for Windows, to support VS2022
 if (WIN32)
-	set(_boost_url "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.gz")
-	set(_boost_hash 94CED8B72956591C4775AE2207A9763D3600B30D9D7446562C552F0A14A63BE7)
+	set(_boost_url "https://boostorg.jfrog.io/artifactory/main/release/1.82.0/source/boost_1_82_0.tar.gz")
+	set(_boost_hash f7c9e28d242abcd7a2c1b962039fcdd463ca149d1883c3a950bbcc0ce6f7c6d9)
     set(_bootstrap_cmd bootstrap.bat)
     set(_build_cmd  b2.exe)
 else()
