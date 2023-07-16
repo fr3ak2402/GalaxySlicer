@@ -5,6 +5,11 @@ GalaxySlicer is an extended version of the Orca Slicer.
 
 GalaxySlicer is based on [Orca Slicer](https://github.com/SoftFever/OrcaSlicer) by SoftFever, which is based on [Bambu Studio](https://github.com/bambulab/BambuStudio) by BambuLab. Bambu Studio is based on [PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) by Prusa Research, which emerged from [Slic3r](https://github.com/Slic3r/Slic3r) by Alessandro Ranellucci and the RepRap community. Orca Slicer incorporates a lot of features from [Super Slicer](https://github.com/supermerill/SuperSlicer) by supermerill
 
+# Main features
+- Profile Manager (Coming soon)
+- Marlin2 support (Coming soon)
+- Klipper support
+
 # License
 GalaxySlicer is licensed under the GNU Affero General Public License, version 3. GalaxySlicer is based on Orca Slicer by SoftFever.
 
