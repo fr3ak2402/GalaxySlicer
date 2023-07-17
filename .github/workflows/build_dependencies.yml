@@ -6,13 +6,13 @@ on:
       - main
     paths:
       - 'deps/**'
-      - '.github/workflow/**'
+      - '.github/workflows/**'
   push:
     branches:
       - main
     paths:
       - 'deps/**'
-      - '.github/workflow/**'
+      - '.github/workflows/**'
 
 jobs:
   build_deps:
