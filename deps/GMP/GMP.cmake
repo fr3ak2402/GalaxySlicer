@@ -57,8 +57,8 @@ else ()
     endif ()
 
     ExternalProject_Add(dep_GMP
-        URL https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz
-        URL_HASH SHA256=fd4829912cddd12f84181c3451cc752be224643e87fac497b69edddadc49b4f2
+        URL https://github.com/bambulab/gmp/archive/refs/tags/6.2.1.tar.gz
+        URL_HASH SHA256=705ae57ee2014b2c6fc0f572c85ee43276b99b6b256ee16c1a9d3a8c4e3609d5
         DOWNLOAD_DIR ${DEP_DOWNLOAD_DIR}/GMP
         BUILD_IN_SOURCE ON 
         CONFIGURE_COMMAND  env "CFLAGS=${_gmp_ccflags}" "CXXFLAGS=${_gmp_ccflags}" ./configure ${_cross_compile_arg} --enable-shared=no --enable-cxx=yes --enable-static=yes "--prefix=${DESTDIR}/usr/local" ${_gmp_build_tgt}
