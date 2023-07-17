@@ -6,17 +6,17 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 15:24+0200\n"
+"POT-Creation-Date: 2023-07-17 08:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.3.2\n"
 
 msgid "Supports Painting"
 msgstr ""
@@ -93,7 +93,7 @@ msgstr ""
 msgid "Gap Fill"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Allows painting only on facets selected by: \"%1%\""
 msgstr ""
 
@@ -109,8 +109,10 @@ msgstr ""
 msgid "Lay on face"
 msgstr ""
 
-#, boost-format
-msgid "Filament count exceeds the maximum number that painting tool supports. only the first %1% filaments will be available in painting tool."
+#, possible-boost-format
+msgid ""
+"Filament count exceeds the maximum number that painting tool supports. only "
+"the first %1% filaments will be available in painting tool."
 msgstr ""
 
 msgid "Color Painting"
@@ -167,7 +169,7 @@ msgstr ""
 msgid "Remove painted color"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Painted using: Filament %1%"
 msgstr ""
 
@@ -407,8 +409,10 @@ msgstr ""
 msgid "Decimate ratio"
 msgstr ""
 
-#, boost-format
-msgid "Processing model '%1%' with more than 1M triangles could be slow. It is highly recommended to simplify the model."
+#, possible-boost-format
+msgid ""
+"Processing model '%1%' with more than 1M triangles could be slow. It is "
+"highly recommended to simplify the model."
 msgstr ""
 
 msgid "Simplify model"
@@ -438,14 +442,14 @@ msgstr ""
 msgid "Extra low"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%d triangles"
 msgstr ""
 
 msgid "Show wireframe"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "%1%"
 msgstr ""
 
@@ -526,7 +530,7 @@ msgstr ""
 msgid "Undefined"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "%1% was replaced with %2%"
 msgstr ""
 
@@ -548,26 +552,31 @@ msgstr ""
 msgid "Configuration package was loaded, but some values were not recognized."
 msgstr ""
 
-#, boost-format
-msgid "Configuration file \"%1%\" was loaded, but some values were not recognized."
+#, possible-boost-format
+msgid ""
+"Configuration file \"%1%\" was loaded, but some values were not recognized."
 msgstr ""
 
 msgid "V"
 msgstr ""
 
-msgid "GalaxySlicer will terminate because of running out of memory.It may be a bug. It will be appreciated if you report the issue to our team."
+msgid ""
+"GalaxySlicer will terminate because of running out of memory.It may be a "
+"bug. It will be appreciated if you report the issue to our team."
 msgstr ""
 
 msgid "Fatal error"
 msgstr ""
 
-msgid "GalaxySlicer will terminate because of a localization error. It will be appreciated if you report the specific scenario this issue happened."
+msgid ""
+"GalaxySlicer will terminate because of a localization error. It will be "
+"appreciated if you report the specific scenario this issue happened."
 msgstr ""
 
 msgid "Critical error"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr ""
 
@@ -577,14 +586,16 @@ msgstr ""
 msgid "Incorrect password"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr ""
 
-msgid "GalaxySlicer configuration file may be corrupted and is not abled to be parsed.Please delete the file and try again."
+msgid ""
+"GalaxySlicer configuration file may be corrupted and is not abled to be "
+"parsed.Please delete the file and try again."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "%s\n"
 "Do you want to continue?"
@@ -596,7 +607,7 @@ msgstr ""
 msgid "Loading configuration"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Click to download new version in default browser: %s"
 msgstr ""
 
@@ -630,7 +641,9 @@ msgstr ""
 msgid "Some presets are modified."
 msgstr ""
 
-msgid "You can keep the modifield presets to the new project, discard or save changes as new presets."
+msgid ""
+"You can keep the modifield presets to the new project, discard or save "
+"changes as new presets."
 msgstr ""
 
 msgid "User logged out"
@@ -642,7 +655,9 @@ msgstr ""
 msgid "Open Project"
 msgstr ""
 
-msgid "The version of Bambu studio is too low and needs to be updated to the latest version before it can be used normally"
+msgid ""
+"The version of Bambu studio is too low and needs to be updated to the latest "
+"version before it can be used normally"
 msgstr ""
 
 msgid "Login information expired. Please login again."
@@ -702,7 +717,7 @@ msgstr ""
 msgid "GalaxySlicer GUI initialization failed"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Fatal error, exception catched: %1%"
 msgstr ""
 
@@ -862,7 +877,7 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Filament %d"
 msgstr ""
 
@@ -1049,13 +1064,13 @@ msgstr ""
 msgid "Fila."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%1$d error repaired"
 msgid_plural "%1$d errors repaired"
 msgstr[0] ""
 msgstr[1] ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Error: %1$d non-manifold edge."
 msgid_plural "Error: %1$d non-manifold edges."
 msgstr[0] ""
@@ -1064,7 +1079,7 @@ msgstr[1] ""
 msgid "Remaining errors"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%1$d non-manifold edge"
 msgid_plural "%1$d non-manifold edges"
 msgstr[0] ""
@@ -1109,7 +1124,9 @@ msgstr ""
 msgid "Switch to per-object setting mode to edit modifier settings."
 msgstr ""
 
-msgid "Switch to per-object setting mode to edit process settings of selected objects."
+msgid ""
+"Switch to per-object setting mode to edit process settings of selected "
+"objects."
 msgstr ""
 
 msgid "Delete connector from object which is a part of cut"
@@ -1121,14 +1138,17 @@ msgstr ""
 msgid "Delete negative volume from object which is a part of cut"
 msgstr ""
 
-msgid "To save cut correspondence you can delete all connectors from all related objects."
+msgid ""
+"To save cut correspondence you can delete all connectors from all related "
+"objects."
 msgstr ""
 
 msgid ""
 "This action will break a cut correspondence.\n"
 "After that model consistency can't be guaranteed .\n"
 "\n"
-"To manipulate with solid parts or negative volumes you have to invalidate cut infornation first."
+"To manipulate with solid parts or negative volumes you have to invalidate "
+"cut infornation first."
 msgstr ""
 
 msgid "Delete all connectors"
@@ -1185,10 +1205,13 @@ msgstr ""
 msgid "Selection conflicts"
 msgstr ""
 
-msgid "If first selected item is an object, the second one should also be object."
+msgid ""
+"If first selected item is an object, the second one should also be object."
 msgstr ""
 
-msgid "If first selected item is a part, the second one should be part in the same object."
+msgid ""
+"If first selected item is a part, the second one should be part in the same "
+"object."
 msgstr ""
 
 msgid "The type of the last solid object part is not to be changed."
@@ -1462,7 +1485,9 @@ msgstr ""
 msgid "Confirm whether the filament has been extruded"
 msgstr ""
 
-msgid "Choose an AMS slot then press \"Load\" or \"Unload\" button to automatically load or unload filiament."
+msgid ""
+"Choose an AMS slot then press \"Load\" or \"Unload\" button to automatically "
+"load or unload filiament."
 msgstr ""
 
 msgid "Edit"
@@ -1484,7 +1509,8 @@ msgstr ""
 msgid "Arranging..."
 msgstr ""
 
-msgid "Arrange failed. Found some exceptions when processing object geometries."
+msgid ""
+"Arrange failed. Found some exceptions when processing object geometries."
 msgstr ""
 
 msgid "Arranging"
@@ -1493,15 +1519,17 @@ msgstr ""
 msgid "Arranging canceled."
 msgstr ""
 
-msgid "Arranging is done but there are unpacked items. Reduce spacing and try again."
+msgid ""
+"Arranging is done but there are unpacked items. Reduce spacing and try again."
 msgstr ""
 
 msgid "Arranging done."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
-"Arrangement ignored the following objects which can't fit into a single bed:\n"
+"Arrangement ignored the following objects which can't fit into a single "
+"bed:\n"
 "%s"
 msgstr ""
 
@@ -1569,7 +1597,9 @@ msgstr ""
 msgid "Print file not found, please slice again"
 msgstr ""
 
-msgid "The print file exceeds the maximum allowable size (1GB). Please simplify the model and slice again"
+msgid ""
+"The print file exceeds the maximum allowable size (1GB). Please simplify the "
+"model and slice again"
 msgstr ""
 
 msgid "Failed uploading print file"
@@ -1593,7 +1623,7 @@ msgstr ""
 msgid "Sending print configuration"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Successfully sent. Will automatically jump to the device page in %ss"
 msgstr ""
 
@@ -1618,7 +1648,7 @@ msgstr ""
 msgid "Sending gcode file to sdcard"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Successfully sent. Close current page in %s s"
 msgstr ""
 
@@ -1655,7 +1685,9 @@ msgstr ""
 msgid "Importing SLA archive"
 msgstr ""
 
-msgid "The SLA archive doesn't contain any presets. Please activate some SLA printer preset first before importing that SLA archive."
+msgid ""
+"The SLA archive doesn't contain any presets. Please activate some SLA "
+"printer preset first before importing that SLA archive."
 msgstr ""
 
 msgid "Importing canceled."
@@ -1664,7 +1696,9 @@ msgstr ""
 msgid "Importing done."
 msgstr ""
 
-msgid "The imported SLA archive did not contain any presets. The current SLA presets were used as fallback."
+msgid ""
+"The imported SLA archive did not contain any presets. The current SLA "
+"presets were used as fallback."
 msgstr ""
 
 msgid "You cannot load SLA project with a multi-part object on the bed"
@@ -1709,23 +1743,24 @@ msgstr ""
 msgid "GNU Affero General Public License, version 3"
 msgstr ""
 
-msgid "GalaxySlicer is based on BambuStudio by Bambulab, which is from PrusaSlicer by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"
+msgid ""
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
 msgstr ""
 
 msgid "Libraries"
 msgstr ""
 
-msgid "This software uses open source components whose copyright and other proprietary rights belong to their respective owners"
+msgid ""
+"This software uses open source components whose copyright and other "
+"proprietary rights belong to their respective owners"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "About %s"
 msgstr ""
 
 msgid "GalaxySlicer "
-msgstr ""
-
-msgid "GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and SuperSlicer."
 msgstr ""
 
 msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
@@ -1737,7 +1772,9 @@ msgstr ""
 msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
 msgstr ""
 
-msgid "Slic3r was created by Alessandro Ranellucci with the help of many other contributors."
+msgid ""
+"Slic3r was created by Alessandro Ranellucci with the help of many other "
+"contributors."
 msgstr ""
 
 msgid "Version"
@@ -1766,7 +1803,7 @@ msgstr ""
 msgid "min"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "The input value should be greater than %1% and less than %2%"
 msgstr ""
 
@@ -1806,7 +1843,10 @@ msgstr ""
 msgid "Dynamic flow calibration"
 msgstr ""
 
-msgid "The nozzle temp and max volumetric speed will affect the calibration results. Please fill in the same values as the actual printing. They can be auto-filled by selecting a filament preset."
+msgid ""
+"The nozzle temp and max volumetric speed will affect the calibration "
+"results. Please fill in the same values as the actual printing. They can be "
+"auto-filled by selecting a filament preset."
 msgstr ""
 
 msgid "Nozzle Diameter"
@@ -1839,7 +1879,10 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-msgid "Calibration completed. Please find the most uniform extrusion line on your hot bed like the picture below, and fill the value on its left side into the factor K input box."
+msgid ""
+"Calibration completed. Please find the most uniform extrusion line on your "
+"hot bed like the picture below, and fill the value on its left side into the "
+"factor K input box."
 msgstr ""
 
 msgid "Save"
@@ -1851,14 +1894,14 @@ msgstr ""
 msgid "Example"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Calibrating... %d%%"
 msgstr ""
 
 msgid "Calibration completed"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s does not support %s"
 msgstr ""
 
@@ -1871,7 +1914,8 @@ msgstr ""
 msgid "AMS Slots"
 msgstr ""
 
-msgid "Note: Only the AMS slots loaded with the same material type can be selected."
+msgid ""
+"Note: Only the AMS slots loaded with the same material type can be selected."
 msgstr ""
 
 msgid "Enable AMS"
@@ -1889,20 +1933,28 @@ msgstr ""
 msgid "Cabin humidity"
 msgstr ""
 
-msgid "Green means that AMS humidity is normal, orange represent humidity is high, red represent humidity is too high.(Hygrometer: lower the better.)"
+msgid ""
+"Green means that AMS humidity is normal, orange represent humidity is high, "
+"red represent humidity is too high.(Hygrometer: lower the better.)"
 msgstr ""
 
 msgid "Desiccant status"
 msgstr ""
 
-msgid "A desiccant status lower than two bars indicates that desiccant may be inactive. Please change the desiccant.(The bars: higher the better.)"
+msgid ""
+"A desiccant status lower than two bars indicates that desiccant may be "
+"inactive. Please change the desiccant.(The bars: higher the better.)"
 msgstr ""
 
 msgid ""
-"Note: When the lid is open or the desiccant pack is changed, it can take hours or a night to absorb the moisture. Low temperatures also slow down the process. During this time, the indicator may not represent the chamber accurately."
+"Note: When the lid is open or the desiccant pack is changed, it can take "
+"hours or a night to absorb the moisture. Low temperatures also slow down the "
+"process. During this time, the indicator may not represent the chamber "
+"accurately."
 msgstr ""
 
-msgid "Config which AMS slot should be used for a filament used in the print job"
+msgid ""
+"Config which AMS slot should be used for a filament used in the print job"
 msgstr ""
 
 msgid "Filament used in this print job"
@@ -1938,34 +1990,51 @@ msgstr ""
 msgid "Insertion update"
 msgstr ""
 
-msgid "The AMS will automatically read the filament information when inserting a new Bambu Lab filament. This takes about 20 seconds."
+msgid ""
+"The AMS will automatically read the filament information when inserting a "
+"new Bambu Lab filament. This takes about 20 seconds."
 msgstr ""
 
-msgid "Note: if new filament is inserted during  printing, the AMS will not automatically read any information until printing is completed."
+msgid ""
+"Note: if new filament is inserted during  printing, the AMS will not "
+"automatically read any information until printing is completed."
 msgstr ""
 
-msgid "When inserting a new filament, the AMS will not automatically read its information, leaving it blank for you to enter manually."
+msgid ""
+"When inserting a new filament, the AMS will not automatically read its "
+"information, leaving it blank for you to enter manually."
 msgstr ""
 
 msgid "Power on update"
 msgstr ""
 
-msgid "The AMS will automatically read the information of inserted filament on start-up. It will take about 1 minute.The reading process will roll filament spools."
+msgid ""
+"The AMS will automatically read the information of inserted filament on "
+"start-up. It will take about 1 minute.The reading process will roll filament "
+"spools."
 msgstr ""
 
-msgid "The AMS will not automatically read information from inserted filament during startup and will continue to use the information recorded before the last shutdown."
+msgid ""
+"The AMS will not automatically read information from inserted filament "
+"during startup and will continue to use the information recorded before the "
+"last shutdown."
 msgstr ""
 
 msgid "Update remaining capacity"
 msgstr ""
 
-msgid "The AMS will estimate Bambu filament's remaining capacity after the filament info is updated. During printing, remaining capacity will be updated automatically."
+msgid ""
+"The AMS will estimate Bambu filament's remaining capacity after the filament "
+"info is updated. During printing, remaining capacity will be updated "
+"automatically."
 msgstr ""
 
 msgid "AMS filament backup"
 msgstr ""
 
-msgid "AMS will continue to another spool with the same properties of filament automatically when current filament runs out"
+msgid ""
+"AMS will continue to another spool with the same properties of filament "
+"automatically when current filament runs out"
 msgstr ""
 
 msgid "File"
@@ -1974,10 +2043,14 @@ msgstr ""
 msgid "Calibration"
 msgstr ""
 
-msgid "Failed to download the plug-in. Please check your firewall settings and vpn software, check and retry."
+msgid ""
+"Failed to download the plug-in. Please check your firewall settings and vpn "
+"software, check and retry."
 msgstr ""
 
-msgid "Failed to install the plug-in. Please check whether it is blocked or deleted by anti-virus software."
+msgid ""
+"Failed to install the plug-in. Please check whether it is blocked or deleted "
+"by anti-virus software."
 msgstr ""
 
 msgid "click here to see more info"
@@ -1986,13 +2059,17 @@ msgstr ""
 msgid "Please home all axes (click "
 msgstr ""
 
-msgid ") to locate the toolhead's position. This prevents device moving beyond the printable boundary and causing equipment wear."
+msgid ""
+") to locate the toolhead's position. This prevents device moving beyond the "
+"printable boundary and causing equipment wear."
 msgstr ""
 
 msgid "Go Home"
 msgstr ""
 
-msgid "A error occurred. Maybe memory of system is not enough or it's a bug of the program"
+msgid ""
+"A error occurred. Maybe memory of system is not enough or it's a bug of the "
+"program"
 msgstr ""
 
 msgid "Please save project and restart the program. "
@@ -2028,14 +2105,14 @@ msgstr ""
 msgid "Unknown error when export G-code."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid ""
 "Failed to save gcode file.\n"
 "Error message: %1%.\n"
 "Source file %2%."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Succeed to export G-code to %1%"
 msgstr ""
 
@@ -2045,7 +2122,7 @@ msgstr ""
 msgid "Copying of the temporary G-code to the output G-code failed"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Scheduling upload to `%1%`. See Window -> Print Host Upload Queue"
 msgstr ""
 
@@ -2058,10 +2135,14 @@ msgstr ""
 msgid "Size in X and Y of the rectangular plate."
 msgstr ""
 
-msgid "Distance of the 0,0 G-code coordinate from the front left corner of the rectangle."
+msgid ""
+"Distance of the 0,0 G-code coordinate from the front left corner of the "
+"rectangle."
 msgstr ""
 
-msgid "Diameter of the print bed. It is assumed that origin (0,0) is located in the center."
+msgid ""
+"Diameter of the print bed. It is assumed that origin (0,0) is located in the "
+"center."
 msgstr ""
 
 msgid "Rectangular"
@@ -2103,7 +2184,8 @@ msgstr ""
 msgid "The selected file contains no geometry."
 msgstr ""
 
-msgid "The selected file contains several disjoint areas. This is not supported."
+msgid ""
+"The selected file contains several disjoint areas. This is not supported."
 msgstr ""
 
 msgid "Choose a file to import bed texture from (PNG/SVG):"
@@ -2121,20 +2203,24 @@ msgid ""
 "\n"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Recommended nozzle temperature of this filament type is [%d, %d] degree centigrade"
+#, possible-c-format, possible-boost-format
+msgid ""
+"Recommended nozzle temperature of this filament type is [%d, %d] degree "
+"centigrade"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
-"Bed temperature of other layer is lower than bed temperature of initial layer for more than %d degree centigrade.\n"
+"Bed temperature of other layer is lower than bed temperature of initial "
+"layer for more than %d degree centigrade.\n"
 "This may cause model broken free from build plate during printing"
 msgstr ""
 
 msgid ""
 "Bed temperature is higher than vitrification temperature of this filament.\n"
 "This may cause nozzle blocked and printing failure\n"
-"Please keep the printer open during the printing process to ensure air circulation or reduce the temperature of the hot bed"
+"Please keep the printer open during the printing process to ensure air "
+"circulation or reduce the temperature of the hot bed"
 msgstr ""
 
 msgid ""
@@ -2159,7 +2245,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This setting is only used for model size tunning with small value in some cases.\n"
+"This setting is only used for model size tunning with small value in some "
+"cases.\n"
 "For example, when model size has small error and hard to be assembled.\n"
 "For large size tuning, please use model scale function.\n"
 "\n"
@@ -2174,7 +2261,9 @@ msgid ""
 "The value will be reset to 0."
 msgstr ""
 
-msgid "Spiral mode only works when wall loops is 1, support is disabled, top shell layers is 0, sparse infill density is 0 and timelapse type is traditional."
+msgid ""
+"Spiral mode only works when wall loops is 1, support is disabled, top shell "
+"layers is 0, sparse infill density is 0 and timelapse type is traditional."
 msgstr ""
 
 msgid ""
@@ -2184,7 +2273,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Prime tower does not work when Adaptive Layer Height or Independent Support Layer Height is on.\n"
+"Prime tower does not work when Adaptive Layer Height or Independent Support "
+"Layer Height is on.\n"
 "Which do you want to keep?\n"
 "YES - Keep Prime Tower\n"
 "NO  - Keep Adaptive Layer Height and Independent Support Layer Height"
@@ -2204,7 +2294,7 @@ msgid ""
 "NO  - Keep Independent Support Layer Height"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "%1% infill pattern doesn't support 100%% density."
 msgstr ""
 
@@ -2330,11 +2420,11 @@ msgstr ""
 msgid "N/A"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s can't be percentage"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Value %s is out of range, continue?"
 msgstr ""
 
@@ -2344,14 +2434,14 @@ msgstr ""
 msgid "Value is out of range."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "Is it %s%% or %s %s?\n"
 "YES for %s%%, \n"
 "NO for %s %s."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Invalid format. Expected vector format: \"%1%\""
 msgstr ""
 
@@ -2682,8 +2772,10 @@ msgstr ""
 msgid "Size:"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please separate the conflicted objects farther (%s <-> %s)."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
+"separate the conflicted objects farther (%s <-> %s)."
 msgstr ""
 
 msgid "An object is layed over the boundary of plate."
@@ -2697,7 +2789,8 @@ msgstr ""
 
 msgid ""
 "An object is laid over the boundary of plate or exceeds the height limit.\n"
-"Please solve the problem by moving it totally on or off the plate, and confirming that the height is within the build volume."
+"Please solve the problem by moving it totally on or off the plate, and "
+"confirming that the height is within the build volume."
 msgstr ""
 
 msgid "Jump to"
@@ -2722,7 +2815,8 @@ msgid "Calibration program"
 msgstr ""
 
 msgid ""
-"The calibration program detects the status of your device automatically to minimize deviation.\n"
+"The calibration program detects the status of your device automatically to "
+"minimize deviation.\n"
 "It keeps the device performing optimally."
 msgstr ""
 
@@ -2854,7 +2948,7 @@ msgstr ""
 msgid "Open Network Test"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "&About %s"
 msgstr ""
 
@@ -3130,7 +3224,7 @@ msgstr ""
 msgid "&Quit"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Quit %s"
 msgstr ""
 
@@ -3143,11 +3237,11 @@ msgstr ""
 msgid "&Help"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "A file exists with the same name: %s, do you want to override it."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "A config exists with the same name: %s, do you want to override it."
 msgstr ""
 
@@ -3163,7 +3257,7 @@ msgstr ""
 msgid "Choose a directory"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "There is %d config exported. (Only non-system configs)"
 msgid_plural "There are %d configs exported. (Only non-system configs)"
 msgstr[0] ""
@@ -3175,9 +3269,10 @@ msgstr ""
 msgid "Select profile to load:"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "There is %d config imported. (Only non-system and compatible configs)"
-msgid_plural "There are %d configs imported. (Only non-system and compatible configs)"
+msgid_plural ""
+"There are %d configs imported. (Only non-system and compatible configs)"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3231,14 +3326,14 @@ msgstr ""
 msgid "Initialize failed (Not supported by printer)!"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Initialize failed (%s)!"
 msgstr ""
 
 msgid "Network unreachable"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Stopped [%d]!"
 msgstr ""
 
@@ -3262,7 +3357,7 @@ msgid ""
 "Do you want to stop this virtual camera?"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Virtual camera initialize failed (%s)!"
 msgstr ""
 
@@ -3272,7 +3367,7 @@ msgstr ""
 msgid "Playing..."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Load failed [%d]!"
 msgstr ""
 
@@ -3330,7 +3425,7 @@ msgstr ""
 msgid "Connecting..."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Connect failed [%d]!"
 msgstr ""
 
@@ -3346,14 +3441,14 @@ msgstr ""
 msgid "Missing LAN ip of printer!"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "You are going to delete %u files. Are you sure to continue?"
 msgstr ""
 
 msgid "Delete files"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "File '%s' was lost! Please download it again."
 msgstr ""
 
@@ -3369,7 +3464,7 @@ msgstr ""
 msgid "Download finished"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Downloading %d%%..."
 msgstr ""
 
@@ -3463,12 +3558,16 @@ msgstr ""
 msgid "Are you sure you want to cancel this print?"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Disconnected from printer [%s] due to LAN mode disabled.Please reconnect the printer by logging in with your user account."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Disconnected from printer [%s] due to LAN mode disabled.Please reconnect the "
+"printer by logging in with your user account."
 msgstr ""
 
-#, c-format, boost-format
-msgid "Disconnected from printer [%s] due to LAN mode enabled.Please reconnect the printer by inputting Access Code which can be gotten from printer screen."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Disconnected from printer [%s] due to LAN mode enabled.Please reconnect the "
+"printer by inputting Access Code which can be gotten from printer screen."
 msgstr ""
 
 msgid "Downloading..."
@@ -3477,15 +3576,15 @@ msgstr ""
 msgid "Cloud Slicing..."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "In Cloud Slicing Queue, there are %s tasks ahead."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Layer: %s"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Layer: %d/%d"
 msgstr ""
 
@@ -3501,7 +3600,9 @@ msgstr ""
 msgid "Please select an AMS slot before calibration"
 msgstr ""
 
-msgid "Cannot read filament info: the filament is loaded to the tool head,please unload the filament and try again."
+msgid ""
+"Cannot read filament info: the filament is loaded to the tool head,please "
+"unload the filament and try again."
 msgstr ""
 
 msgid "This only takes effect during printing"
@@ -3543,27 +3644,27 @@ msgstr ""
 msgid "Don't show again"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s error"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s has encountered an error"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s warning"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s has a warning"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s info"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s information"
 msgstr ""
 
@@ -3612,19 +3713,19 @@ msgstr ""
 msgid "Safely remove hardware."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%1$d Object has custom supports."
 msgid_plural "%1$d Objects have custom supports."
 msgstr[0] ""
 msgstr[1] ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%1$d Object has color painting."
 msgid_plural "%1$d Objects have color painting."
 msgstr[0] ""
 msgstr[1] ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%1$d object was loaded as a part of cut object."
 msgid_plural "%1$d objects were loaded as parts of cut object"
 msgstr[0] ""
@@ -3684,7 +3785,9 @@ msgstr ""
 msgid "Range"
 msgstr ""
 
-msgid "The application cannot run normally because OpenGL version is lower than 2.0.\n"
+msgid ""
+"The application cannot run normally because OpenGL version is lower than "
+"2.0.\n"
 msgstr ""
 
 msgid "Please upgrade your graphics card driver."
@@ -3693,7 +3796,7 @@ msgstr ""
 msgid "Unsupported OpenGL version"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "Unable to load shaders:\n"
 "%s"
@@ -3719,7 +3822,9 @@ msgstr ""
 msgid "Enable detection of build plate position"
 msgstr ""
 
-msgid "The localization tag of build plate is detected, and printing is paused if the tag is not in predefined range."
+msgid ""
+"The localization tag of build plate is detected, and printing is paused if "
+"the tag is not in predefined range."
 msgstr ""
 
 msgid "First Layer Inspection"
@@ -3752,7 +3857,7 @@ msgstr ""
 msgid "Untitled"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid " plate %1%:"
 msgstr ""
 
@@ -3804,16 +3909,21 @@ msgstr ""
 msgid "Set filaments to use"
 msgstr ""
 
-msgid "No AMS filaments. Please select a printer in 'Device' page to load AMS info."
+msgid ""
+"No AMS filaments. Please select a printer in 'Device' page to load AMS info."
 msgstr ""
 
 msgid "Sync filaments with AMS"
 msgstr ""
 
-msgid "Sync filaments with AMS will drop all current selected filament presets and colors. Do you want to continue?"
+msgid ""
+"Sync filaments with AMS will drop all current selected filament presets and "
+"colors. Do you want to continue?"
 msgstr ""
 
-msgid "Already did a synchronization, do you want to sync only changes or resync all?"
+msgid ""
+"Already did a synchronization, do you want to sync only changes or resync "
+"all?"
 msgstr ""
 
 msgid "Sync"
@@ -3825,18 +3935,23 @@ msgstr ""
 msgid "There are no compatible filaments, and sync is not performed."
 msgstr ""
 
-msgid "There are some unknown filaments mapped to generic preset. Please update GalaxySlicer or restart GalaxySlicer to check if there is an update to system presets."
+msgid ""
+"There are some unknown filaments mapped to generic preset. Please update "
+"GalaxySlicer or restart GalaxySlicer to check if there is an update to "
+"system presets."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Do you want to save changes to \"%1%\"?"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Successfully unmounted. The device %s(%s) can now be safely removed from the computer."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Successfully unmounted. The device %s(%s) can now be safely removed from the "
+"computer."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Ejecting of device %s(%s) has failed."
 msgstr ""
 
@@ -3846,13 +3961,18 @@ msgstr ""
 msgid "Restore"
 msgstr ""
 
-msgid "The bed temperature exceeds filament's vitrification temperature. Please open the front door of printer before printing to avoid nozzle clog."
+msgid ""
+"The bed temperature exceeds filament's vitrification temperature. Please "
+"open the front door of printer before printing to avoid nozzle clog."
 msgstr ""
 
-msgid "The nozzle hardness required by the filament is higher than the default nozzle hardness of the printer. Please replace the hardened nozzle or filament, otherwise, the nozzle will be attrited or damaged."
+msgid ""
+"The nozzle hardness required by the filament is higher than the default "
+"nozzle hardness of the printer. Please replace the hardened nozzle or "
+"filament, otherwise, the nozzle will be attrited or damaged."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Loading file: %s"
 msgstr ""
 
@@ -3868,8 +3988,10 @@ msgstr ""
 msgid "The 3mf is generated by old GalaxySlicer, load geometry data only."
 msgstr ""
 
-#, c-format, boost-format
-msgid "The 3mf's version %s is newer than %s's version %s, Found following keys unrecognized:"
+#, possible-c-format, possible-boost-format
+msgid ""
+"The 3mf's version %s is newer than %s's version %s, Found following keys "
+"unrecognized:"
 msgstr ""
 
 msgid "You'd better upgrade your software.\n"
@@ -3878,8 +4000,10 @@ msgstr ""
 msgid "Newer 3mf version"
 msgstr ""
 
-#, c-format, boost-format
-msgid "The 3mf's version %s is newer than %s's version %s, Suggest to upgrade your software."
+#, possible-c-format, possible-boost-format
+msgid ""
+"The 3mf's version %s is newer than %s's version %s, Suggest to upgrade your "
+"software."
 msgstr ""
 
 msgid "Invalid values found in the 3mf:"
@@ -3900,7 +4024,7 @@ msgstr ""
 msgid "The name may show garbage characters!"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Failed loading file \"%1%\". An invalid configuration was found."
 msgstr ""
 
@@ -3910,7 +4034,7 @@ msgstr ""
 msgid "The volume of the object is zero"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "The object from file %s is too small, and maybe in meters or inches.\n"
 " Do you want to scale to millimeters?"
@@ -3937,7 +4061,9 @@ msgstr ""
 msgid "The file does not contain any geometry data."
 msgstr ""
 
-msgid "Your object appears to be too large, Do you want to scale it down to fit the heat bed automatically?"
+msgid ""
+"Your object appears to be too large, Do you want to scale it down to fit the "
+"heat bed automatically?"
 msgstr ""
 
 msgid "Object too large"
@@ -3991,14 +4117,15 @@ msgstr ""
 msgid "Slicing Canceled"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Slicing Plate %d"
 msgstr ""
 
 msgid "Please resolve the slicing errors and publish again."
 msgstr ""
 
-msgid "Network Plug-in is not detected. Network related features are unavailable."
+msgid ""
+"Network Plug-in is not detected. Network related features are unavailable."
 msgstr ""
 
 msgid ""
@@ -4017,7 +4144,8 @@ msgstr ""
 
 msgid ""
 "Failed to save the project.\n"
-"Please check whether the folder exists online or if other programs open the project file."
+"Please check whether the folder exists online or if other programs open the "
+"project file."
 msgstr ""
 
 msgid "Save project"
@@ -4032,7 +4160,7 @@ msgstr ""
 msgid "downloading project ..."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Project downloaded %d%%"
 msgstr ""
 
@@ -4093,8 +4221,10 @@ msgstr ""
 msgid "Save Sliced file as:"
 msgstr ""
 
-#, c-format, boost-format
-msgid "The file %s has been sent to the printer's storage space and can be viewed on the printer."
+#, possible-c-format, possible-boost-format
+msgid ""
+"The file %s has been sent to the printer's storage space and can be viewed "
+"on the printer."
 msgstr ""
 
 msgid ""
@@ -4117,42 +4247,47 @@ msgstr ""
 msgid "Plate Settings"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Part name: %1%\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Object name: %1%\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Size: %1% x %2% x %3% in\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Size: %1% x %2% x %3% mm\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Volume: %1% in³\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Volume: %1% mm³\n"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Triangles: %1%\n"
 msgstr ""
 
 msgid "Tips:"
 msgstr ""
 
-msgid "\"Fix Model\" feature is currently only on Windows. Please repair the model on GalaxySlicer(windows) or CAD softwares."
+msgid ""
+"\"Fix Model\" feature is currently only on Windows. Please repair the model "
+"on GalaxySlicer(windows) or CAD softwares."
 msgstr ""
 
-#, c-format, boost-format
-msgid "Plate% d: %s is not suggested to be used to print filament %s(%s). If you still want to do this printing, please set this filament's bed temperature to non zero."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Plate% d: %s is not suggested to be used to print filament %s(%s). If you "
+"still want to do this printing, please set this filament's bed temperature "
+"to non zero."
 msgstr ""
 
 msgid "Switching the language requires application restart.\n"
@@ -4218,7 +4353,9 @@ msgstr ""
 msgid "Zoom to mouse position"
 msgstr ""
 
-msgid "Zoom in towards the mouse pointer's position in the 3D view, rather than the 2D window center."
+msgid ""
+"Zoom in towards the mouse pointer's position in the 3D view, rather than the "
+"2D window center."
 msgstr ""
 
 msgid "Show \"Tip of the day\" notification after start"
@@ -4269,7 +4406,8 @@ msgstr ""
 msgid "Associate .step/.stp files to GalaxySlicer"
 msgstr ""
 
-msgid "If enabled, sets GalaxySlicer as default application to open .step files"
+msgid ""
+"If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr ""
 
 msgid "Maximum recent projects"
@@ -4284,7 +4422,8 @@ msgstr ""
 msgid "Auto-Backup"
 msgstr ""
 
-msgid "Backup your project periodically for restoring from the occasional crash."
+msgid ""
+"Backup your project periodically for restoring from the occasional crash."
 msgstr ""
 
 msgid "every"
@@ -4494,7 +4633,7 @@ msgstr ""
 msgid "Jump to webpage"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Save %s as"
 msgstr ""
 
@@ -4519,11 +4658,11 @@ msgstr ""
 msgid "Overwrite a system profile is not allowed"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Preset \"%1%\" already exists."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Preset \"%1%\" already exists and is incompatible with current printer."
 msgstr ""
 
@@ -4549,23 +4688,23 @@ msgctxt "PresetName"
 msgid "Copy"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Printer \"%1%\" is selected with preset \"%2%\""
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Please choose an action with \"%1%\" preset after saving."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "For \"%1%\", change \"%2%\" to \"%3%\" "
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "For \"%1%\", add \"%2%\" as a new preset"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Simply switch to \"%1%\""
 msgstr ""
 
@@ -4635,33 +4774,48 @@ msgstr ""
 msgid "Cannot send the print job when the printer is updating firmware"
 msgstr ""
 
-msgid "The printer is executing instructions. Please restart printing after it ends"
+msgid ""
+"The printer is executing instructions. Please restart printing after it ends"
 msgstr ""
 
 msgid "The printer is busy on other print job"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Filament %s exceeds the number of AMS slots. Please update the printer firmware to support AMS slot assignment."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Filament %s exceeds the number of AMS slots. Please update the printer "
+"firmware to support AMS slot assignment."
 msgstr ""
 
-msgid "Filament exceeds the number of AMS slots. Please update the printer firmware to support AMS slot assignment."
+msgid ""
+"Filament exceeds the number of AMS slots. Please update the printer firmware "
+"to support AMS slot assignment."
 msgstr ""
 
-msgid "Filaments to AMS slots mappings have been established. You can click a filament above to change its mapping AMS slot"
+msgid ""
+"Filaments to AMS slots mappings have been established. You can click a "
+"filament above to change its mapping AMS slot"
 msgstr ""
 
-msgid "Please click each filament above to specify its mapping AMS slot before sending the print job"
+msgid ""
+"Please click each filament above to specify its mapping AMS slot before "
+"sending the print job"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Filament %s does not match the filament in AMS slot %s. Please update the printer firmware to support AMS slot assignment."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Filament %s does not match the filament in AMS slot %s. Please update the "
+"printer firmware to support AMS slot assignment."
 msgstr ""
 
-msgid "Filament does not match the filament in AMS slot. Please update the printer firmware to support AMS slot assignment."
+msgid ""
+"Filament does not match the filament in AMS slot. Please update the printer "
+"firmware to support AMS slot assignment."
 msgstr ""
 
-msgid "The printer firmware only supports sequential mapping of filament => AMS slot."
+msgid ""
+"The printer firmware only supports sequential mapping of filament => AMS "
+"slot."
 msgstr ""
 
 msgid "An SD card needs to be inserted before printing."
@@ -4670,7 +4824,9 @@ msgstr ""
 msgid "An SD card needs to be inserted to record timelapse."
 msgstr ""
 
-msgid "Cannot send the print job to a printer whose firmware is required to get updated."
+msgid ""
+"Cannot send the print job to a printer whose firmware is required to get "
+"updated."
 msgstr ""
 
 msgid "Cannot send the print job for empty plate"
@@ -4685,17 +4841,24 @@ msgstr ""
 msgid "Please check the following:"
 msgstr ""
 
-msgid "The printer type selected when generating G-Code is not consistent with the currently selected printer. It is recommended that you use the same printer type for slicing."
+msgid ""
+"The printer type selected when generating G-Code is not consistent with the "
+"currently selected printer. It is recommended that you use the same printer "
+"type for slicing."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s is not supported by AMS."
 msgstr ""
 
-msgid "There are some unknown filaments in the AMS mappings. Please check whether they are the required filaments. If they are okay, press \"Confirm\" to start printing."
+msgid ""
+"There are some unknown filaments in the AMS mappings. Please check whether "
+"they are the required filaments. If they are okay, press \"Confirm\" to "
+"start printing."
 msgstr ""
 
-msgid "Please click the confirm button if you still want to proceed with printing."
+msgid ""
+"Please click the confirm button if you still want to proceed with printing."
 msgstr ""
 
 msgid "Preparing print job"
@@ -4744,7 +4907,7 @@ msgid "Failed to log out."
 msgstr ""
 
 #. TRN "Save current Settings"
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Save current %s"
 msgstr ""
 
@@ -4757,14 +4920,19 @@ msgstr ""
 msgid "Click to reset all settings to the last saved preset."
 msgstr ""
 
-msgid "Prime tower is required for smooth timeplase. There may be flaws on the model without prime tower. Are you sure you want to disable prime tower?"
-msgstr ""
-
-msgid "Prime tower is required for smooth timelapse. There may be flaws on the model without prime tower. Do you want to enable prime tower?"
+msgid ""
+"Prime tower is required for smooth timeplase. There may be flaws on the "
+"model without prime tower. Are you sure you want to disable prime tower?"
 msgstr ""
 
 msgid ""
-"We have added an experimental style \"Tree Slim\" that features smaller support volume but weaker strength.\n"
+"Prime tower is required for smooth timelapse. There may be flaws on the "
+"model without prime tower. Do you want to enable prime tower?"
+msgstr ""
+
+msgid ""
+"We have added an experimental style \"Tree Slim\" that features smaller "
+"support volume but weaker strength.\n"
 "We recommend using it with: 0 interface layers, 0 top distance, 2 walls."
 msgstr ""
 
@@ -4774,17 +4942,24 @@ msgid ""
 "No  - Do not change these settings for me"
 msgstr ""
 
-msgid "For \"Tree Strong\" and \"Tree Hybrid\" styles, we recommend the following settings: at least 2 interface layers, at least 0.1mm top z distance or using support materials on interface."
+msgid ""
+"For \"Tree Strong\" and \"Tree Hybrid\" styles, we recommend the following "
+"settings: at least 2 interface layers, at least 0.1mm top z distance or "
+"using support materials on interface."
 msgstr ""
 
 msgid ""
-"When using support material for the support interface, We recommend the following settings:\n"
-"0 top z distance, 0 interface spacing, concentric pattern and disable independent support layer height"
+"When using support material for the support interface, We recommend the "
+"following settings:\n"
+"0 top z distance, 0 interface spacing, concentric pattern and disable "
+"independent support layer height"
 msgstr ""
 
 msgid ""
-"When recording timelapse without toolhead, it is recommended to add a \"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive\"->\"Timelapse Wipe Tower\"."
+"When recording timelapse without toolhead, it is recommended to add a "
+"\"Timelapse Wipe Tower\" \n"
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 
 msgid "Line width"
@@ -4814,7 +4989,10 @@ msgstr ""
 msgid "Overhang speed"
 msgstr ""
 
-msgid "This is the speed for various overhang degrees. Overhang degrees are expressed as a percentage of line width. 0 speed means no slowing down for the overhang degree range and wall speed is used"
+msgid ""
+"This is the speed for various overhang degrees. Overhang degrees are "
+"expressed as a percentage of line width. 0 speed means no slowing down for "
+"the overhang degree range and wall speed is used"
 msgstr ""
 
 msgid "Travel speed"
@@ -4847,13 +5025,15 @@ msgstr ""
 msgid "Frequent"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "Following line %s contains reserved keywords.\n"
-"Please remove it, or will beat G-code visualization and printing time estimation."
+"Please remove it, or will beat G-code visualization and printing time "
+"estimation."
 msgid_plural ""
 "Following lines %s contain reserved keywords.\n"
-"Please remove them, or will beat G-code visualization and printing time estimation."
+"Please remove them, or will beat G-code visualization and printing time "
+"estimation."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -4893,19 +5073,27 @@ msgstr ""
 msgid "Cool plate"
 msgstr ""
 
-msgid "Bed temperature when cool plate is installed. Value 0 means the filament does not support to print on the Cool Plate"
+msgid ""
+"Bed temperature when cool plate is installed. Value 0 means the filament "
+"does not support to print on the Cool Plate"
 msgstr ""
 
 msgid "Engineering plate"
 msgstr ""
 
-msgid "Bed temperature when engineering plate is installed. Value 0 means the filament does not support to print on the Engineering Plate"
+msgid ""
+"Bed temperature when engineering plate is installed. Value 0 means the "
+"filament does not support to print on the Engineering Plate"
 msgstr ""
 
-msgid "Bed temperature when high temperature plate is installed. Value 0 means the filament does not support to print on the High Temp Plate"
+msgid ""
+"Bed temperature when high temperature plate is installed. Value 0 means the "
+"filament does not support to print on the High Temp Plate"
 msgstr ""
 
-msgid "Bed temperature when Textured PEI Plate is installed. Value 0 means the filament does not support to print on the Textured PEI Plate"
+msgid ""
+"Bed temperature when Textured PEI Plate is installed. Value 0 means the "
+"filament does not support to print on the Textured PEI Plate"
 msgstr ""
 
 msgid "Volumetric speed limitation"
@@ -4924,14 +5112,18 @@ msgid "Min fan speed threshold"
 msgstr ""
 
 msgid ""
-"Part cooling fan speed will start to run at min speed when the estimated layer time is no longer than the layer time in setting. When layer time is shorter than threshold, fan speed is interpolated between the minimum and maximum "
-"fan speed according to layer printing time"
+"Part cooling fan speed will start to run at min speed when the estimated "
+"layer time is no longer than the layer time in setting. When layer time is "
+"shorter than threshold, fan speed is interpolated between the minimum and "
+"maximum fan speed according to layer printing time"
 msgstr ""
 
 msgid "Max fan speed threshold"
 msgstr ""
 
-msgid "Part cooling fan speed will be max when the estimated layer time is shorter than the setting value"
+msgid ""
+"Part cooling fan speed will be max when the estimated layer time is shorter "
+"than the setting value"
 msgstr ""
 
 msgid "Auxiliary part cooling fan"
@@ -5020,12 +5212,12 @@ msgid_plural "Following presets will be deleted too."
 msgstr[0] ""
 msgstr[1] ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Are you sure to %1% the selected preset?"
 msgstr ""
 
 #. TRN  Remove/Delete
-#, boost-format
+#, possible-boost-format
 msgid "%1% Preset"
 msgstr ""
 
@@ -5086,39 +5278,45 @@ msgstr ""
 msgid "Transfer the selected options to the newly selected preset."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid ""
 "Save the selected options to preset \n"
 "\"%1%\"."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid ""
 "Transfer the selected options to the newly selected preset \n"
 "\"%1%\"."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Preset \"%1%\" contains the following unsaved changes:"
 msgstr ""
 
-#, boost-format
-msgid "Preset \"%1%\" is not compatible with the new printer profile and it contains the following unsaved changes:"
+#, possible-boost-format
+msgid ""
+"Preset \"%1%\" is not compatible with the new printer profile and it "
+"contains the following unsaved changes:"
 msgstr ""
 
-#, boost-format
-msgid "Preset \"%1%\" is not compatible with the new process profile and it contains the following unsaved changes:"
+#, possible-boost-format
+msgid ""
+"Preset \"%1%\" is not compatible with the new process profile and it "
+"contains the following unsaved changes:"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid ""
 "You have changed some settings of preset \"%1%\". \n"
-"Would you like to keep these changed settings (new value) after switching preset?"
+"Would you like to keep these changed settings (new value) after switching "
+"preset?"
 msgstr ""
 
 msgid ""
 "You have changed some preset settings. \n"
-"Would you like to keep these changed settings (new value) after switching preset?"
+"Would you like to keep these changed settings (new value) after switching "
+"preset?"
 msgstr ""
 
 msgid "Extruders count"
@@ -5145,7 +5343,7 @@ msgstr ""
 msgid "Cover"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "The name \"%1%\" already exists."
 msgstr ""
 
@@ -5167,7 +5365,7 @@ msgstr ""
 msgid "Model Name"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "%s Update"
 msgstr ""
 
@@ -5189,13 +5387,13 @@ msgstr ""
 msgid "the configuration package is incompatible with current application."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
 "The configuration package is incompatible with current application.\n"
 "%s will update the configuration package, Otherwise it won't be able to start"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Exit %s"
 msgstr ""
 
@@ -5223,11 +5421,11 @@ msgstr ""
 msgid "Flushing volume (mm³) for each filament pair."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Suggestion: Flushing Volume in range [%d, %d]"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "The multiplier should be in range [%.2f, %.2f]."
 msgstr ""
 
@@ -5303,7 +5501,10 @@ msgstr ""
 msgid "Shift+R"
 msgstr ""
 
-msgid "Auto orientates selected objects or all objects.If there are selected objects, it just orientates the selected ones.Otherwise, it will orientates all objects in the current disk."
+msgid ""
+"Auto orientates selected objects or all objects.If there are selected "
+"objects, it just orientates the selected ones.Otherwise, it will orientates "
+"all objects in the current disk."
 msgstr ""
 
 msgid "Shift+Tab"
@@ -5504,17 +5705,18 @@ msgstr ""
 msgid "Release Note"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "version %s update information :"
 msgstr ""
 
 msgid "Network plug-in update"
 msgstr ""
 
-msgid "Click OK to update the Network plug-in when GalaxySlicer launches next time."
+msgid ""
+"Click OK to update the Network plug-in when GalaxySlicer launches next time."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "A new Network plug-in(%s) available, Do you want to install it?"
 msgstr ""
 
@@ -5530,10 +5732,13 @@ msgstr ""
 msgid "LAN Connection Failed (Sending print file)"
 msgstr ""
 
-msgid "Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
+msgid ""
+"Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
 msgstr ""
 
-msgid "Step 2, if the IP and Access Code below are different from the actual values on your printer, please correct them."
+msgid ""
+"Step 2, if the IP and Access Code below are different from the actual values "
+"on your printer, please correct them."
 msgstr ""
 
 msgid "IP"
@@ -5578,13 +5783,21 @@ msgstr ""
 msgid "Updating successful"
 msgstr ""
 
-msgid "Are you sure you want to update? This will take about 10 minutes. Do not turn off the power while the printer is updating."
+msgid ""
+"Are you sure you want to update? This will take about 10 minutes. Do not "
+"turn off the power while the printer is updating."
 msgstr ""
 
-msgid "An important update was detected and needs to be run before printing can continue. Do you want to update now? You can also update later from 'Upgrade firmware'."
+msgid ""
+"An important update was detected and needs to be run before printing can "
+"continue. Do you want to update now? You can also update later from 'Upgrade "
+"firmware'."
 msgstr ""
 
-msgid "The firmware version is abnormal. Repairing and updating are required before printing. Do you want to update now? You can also update later on printer or update next time starting the studio."
+msgid ""
+"The firmware version is abnormal. Repairing and updating are required before "
+"printing. Do you want to update now? You can also update later on printer or "
+"update next time starting the studio."
 msgstr ""
 
 msgid "Extension Board"
@@ -5638,7 +5851,7 @@ msgstr ""
 msgid "Repair canceled"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Copying of file %1% to %2% failed: %3%"
 msgstr ""
 
@@ -5651,18 +5864,22 @@ msgstr ""
 msgid "Open G-code file:"
 msgstr ""
 
-msgid "One object has empty initial layer and can't be printed. Please Cut the bottom or enable supports."
+msgid ""
+"One object has empty initial layer and can't be printed. Please Cut the "
+"bottom or enable supports."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Object can't be printed for empty layer between %1% and %2%."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Object: %1%"
 msgstr ""
 
-msgid "Maybe parts of the object at these height are too thin, or the object has faulty mesh"
+msgid ""
+"Maybe parts of the object at these height are too thin, or the object has "
+"faulty mesh"
 msgstr ""
 
 msgid "No object can be printed. Maybe too small"
@@ -5676,7 +5893,7 @@ msgstr ""
 msgid "Please check the custom G-code or use the default custom G-code."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Generating G-code: layer %1%"
 msgstr ""
 
@@ -5716,7 +5933,7 @@ msgstr ""
 msgid "Multiple"
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr ""
 
@@ -5813,15 +6030,16 @@ msgstr ""
 msgid "write callback failed"
 msgstr ""
 
-#, boost-format
-msgid "%1% is too close to exclusion area, there may be collisions when printing."
+#, possible-boost-format
+msgid ""
+"%1% is too close to exclusion area, there may be collisions when printing."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "%1% is too close to others, and collisions may be caused."
 msgstr ""
 
-#, boost-format
+#, possible-boost-format
 msgid "%1% is too tall, and collisions will be caused."
 msgstr ""
 
@@ -5840,25 +6058,39 @@ msgstr ""
 msgid " is too close to exclusion area, and collisions will be caused.\n"
 msgstr ""
 
-msgid "Can not print multiple filaments which have large difference of temperature together. Otherwise, the extruder and nozzle may be blocked or damaged during printing"
+msgid ""
+"Can not print multiple filaments which have large difference of temperature "
+"together. Otherwise, the extruder and nozzle may be blocked or damaged "
+"during printing"
 msgstr ""
 
 msgid "No extrusions under current settings."
 msgstr ""
 
-msgid "Smooth mode of timelapse is not supported when \"by object\" sequence is enabled."
+msgid "Bed temperatures for the used filaments differ significantly."
 msgstr ""
 
-msgid "Please select \"By object\" print sequence to print multiple objects in spiral vase mode."
+msgid ""
+"Smooth mode of timelapse is not supported when \"by object\" sequence is "
+"enabled."
 msgstr ""
 
-msgid "The spiral vase mode does not work when an object contains more than one materials."
+msgid ""
+"Please select \"By object\" print sequence to print multiple objects in "
+"spiral vase mode."
+msgstr ""
+
+msgid ""
+"The spiral vase mode does not work when an object contains more than one "
+"materials."
 msgstr ""
 
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr ""
 
-msgid "The prime tower is not supported when adaptive layer height is on. It requires that all objects have the same layer height."
+msgid ""
+"The prime tower is not supported when adaptive layer height is on. It "
+"requires that all objects have the same layer height."
 msgstr ""
 
 msgid "The prime tower requires \"support gap\" to be multiple of layer height"
@@ -5867,13 +6099,19 @@ msgstr ""
 msgid "The prime tower requires that all objects have the same layer heights"
 msgstr ""
 
-msgid "The prime tower requires that all objects are printed over the same number of raft layers"
+msgid ""
+"The prime tower requires that all objects are printed over the same number "
+"of raft layers"
 msgstr ""
 
-msgid "The prime tower requires that all objects are sliced with the same layer heights."
+msgid ""
+"The prime tower requires that all objects are sliced with the same layer "
+"heights."
 msgstr ""
 
-msgid "The prime tower is only supported if all objects have the same variable layer height"
+msgid ""
+"The prime tower is only supported if all objects have the same variable "
+"layer height"
 msgstr ""
 
 msgid "Too small line width"
@@ -5882,16 +6120,18 @@ msgstr ""
 msgid "Too large line width"
 msgstr ""
 
-msgid "The prime tower requires that support has the same layer height with object."
+msgid ""
+"The prime tower requires that support has the same layer height with object."
 msgstr ""
 
-msgid "Support enforcers are used but support is not enabled. Please enable support."
+msgid ""
+"Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 
 msgid "Layer height cannot exceed nozzle diameter"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Plate %d: %s does not support filament %s"
 msgstr ""
 
@@ -5913,7 +6153,10 @@ msgstr ""
 msgid "Bed exclude area"
 msgstr ""
 
-msgid "Unprintable area in XY plane. For example, X1 Series printers use the front left corner to cut filament during filament change. The area is expressed as polygon by points in following format: \"XxY, XxY, ...\""
+msgid ""
+"Unprintable area in XY plane. For example, X1 Series printers use the front "
+"left corner to cut filament during filament change. The area is expressed as "
+"polygon by points in following format: \"XxY, XxY, ...\""
 msgstr ""
 
 msgid "Bed custom texture"
@@ -5925,10 +6168,14 @@ msgstr ""
 msgid "Elephant foot compensation"
 msgstr ""
 
-msgid "Shrink the initial layer on build plate to compensate for elephant foot effect"
+msgid ""
+"Shrink the initial layer on build plate to compensate for elephant foot "
+"effect"
 msgstr ""
 
-msgid "Slicing height for each layer. Smaller layer height means more accurate and more printing time"
+msgid ""
+"Slicing height for each layer. Smaller layer height means more accurate and "
+"more printing time"
 msgstr ""
 
 msgid "Printable height"
@@ -5944,20 +6191,26 @@ msgid "Hostname, IP or URL"
 msgstr ""
 
 msgid ""
-"Slic3r can upload G-code files to a printer host. This field should contain the hostname, IP address or URL of the printer host instance. Print host behind HAProxy with basic auth enabled can be accessed by putting the user name "
-"and password into the URL in the following format: https://username:password@your-octopi-address/"
+"Slic3r can upload G-code files to a printer host. This field should contain "
+"the hostname, IP address or URL of the printer host instance. Print host "
+"behind HAProxy with basic auth enabled can be accessed by putting the user "
+"name and password into the URL in the following format: https://username:"
+"password@your-octopi-address/"
 msgstr ""
 
 msgid "Device UI"
 msgstr ""
 
-msgid "Specify the URL of your device user interface if it's not same as print_host"
+msgid ""
+"Specify the URL of your device user interface if it's not same as print_host"
 msgstr ""
 
 msgid "API Key / Password"
 msgstr ""
 
-msgid "Slic3r can upload G-code files to a printer host. This field should contain the API Key or the password required for authentication."
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field should contain "
+"the API Key or the password required for authentication."
 msgstr ""
 
 msgid "Name of the printer"
@@ -5966,7 +6219,10 @@ msgstr ""
 msgid "HTTPS CA File"
 msgstr ""
 
-msgid "Custom CA certificate file can be specified for HTTPS OctoPrint connections, in crt/pem format. If left blank, the default OS CA certificate repository is used."
+msgid ""
+"Custom CA certificate file can be specified for HTTPS OctoPrint connections, "
+"in crt/pem format. If left blank, the default OS CA certificate repository "
+"is used."
 msgstr ""
 
 msgid "User"
@@ -5978,7 +6234,10 @@ msgstr ""
 msgid "Ignore HTTPS certificate revocation checks"
 msgstr ""
 
-msgid "Ignore HTTPS certificate revocation checks in case of missing or offline distribution points. One may want to enable this option for self signed certificates if connection fails."
+msgid ""
+"Ignore HTTPS certificate revocation checks in case of missing or offline "
+"distribution points. One may want to enable this option for self signed "
+"certificates if connection fails."
 msgstr ""
 
 msgid "Names of presets related to the physical printer"
@@ -6003,8 +6262,10 @@ msgid "Avoid crossing wall - Max detour length"
 msgstr ""
 
 msgid ""
-"Maximum detour distance for avoiding crossing wall. Don't detour if the detour distance is large than this value. Detour length could be specified either as an absolute value or as percentage (for example 50%) of a direct travel "
-"path. Zero to disable"
+"Maximum detour distance for avoiding crossing wall. Don't detour if the "
+"detour distance is large than this value. Detour length could be specified "
+"either as an absolute value or as percentage (for example 50%) of a direct "
+"travel path. Zero to disable"
 msgstr ""
 
 msgid "mm or %"
@@ -6013,19 +6274,27 @@ msgstr ""
 msgid "Other layers"
 msgstr ""
 
-msgid "Bed temperature for layers except the initial one. Value 0 means the filament does not support to print on the Cool Plate"
+msgid ""
+"Bed temperature for layers except the initial one. Value 0 means the "
+"filament does not support to print on the Cool Plate"
 msgstr ""
 
 msgid "°C"
 msgstr ""
 
-msgid "Bed temperature for layers except the initial one. Value 0 means the filament does not support to print on the Engineering Plate"
+msgid ""
+"Bed temperature for layers except the initial one. Value 0 means the "
+"filament does not support to print on the Engineering Plate"
 msgstr ""
 
-msgid "Bed temperature for layers except the initial one. Value 0 means the filament does not support to print on the High Temp Plate"
+msgid ""
+"Bed temperature for layers except the initial one. Value 0 means the "
+"filament does not support to print on the High Temp Plate"
 msgstr ""
 
-msgid "Bed temperature for layers except the initial one. Value 0 means the filament does not support to print on the Textured PEI Plate"
+msgid ""
+"Bed temperature for layers except the initial one. Value 0 means the "
+"filament does not support to print on the Textured PEI Plate"
 msgstr ""
 
 msgid "Initial layer"
@@ -6034,16 +6303,24 @@ msgstr ""
 msgid "Initial layer bed temperature"
 msgstr ""
 
-msgid "Bed temperature of the initial layer. Value 0 means the filament does not support to print on the Cool Plate"
+msgid ""
+"Bed temperature of the initial layer. Value 0 means the filament does not "
+"support to print on the Cool Plate"
 msgstr ""
 
-msgid "Bed temperature of the initial layer. Value 0 means the filament does not support to print on the Engineering Plate"
+msgid ""
+"Bed temperature of the initial layer. Value 0 means the filament does not "
+"support to print on the Engineering Plate"
 msgstr ""
 
-msgid "Bed temperature of the initial layer. Value 0 means the filament does not support to print on the High Temp Plate"
+msgid ""
+"Bed temperature of the initial layer. Value 0 means the filament does not "
+"support to print on the High Temp Plate"
 msgstr ""
 
-msgid "Bed temperature of the initial layer. Value 0 means the filament does not support to print on the Textured PEI Plate"
+msgid ""
+"Bed temperature of the initial layer. Value 0 means the filament does not "
+"support to print on the Textured PEI Plate"
 msgstr ""
 
 msgid "Bed types supported by the printer"
@@ -6055,42 +6332,58 @@ msgstr ""
 msgid "Bottom shell layers"
 msgstr ""
 
-msgid "This is the number of solid layers of bottom shell, including the bottom surface layer. When the thickness calculated by this value is thinner than bottom shell thickness, the bottom shell layers will be increased"
+msgid ""
+"This is the number of solid layers of bottom shell, including the bottom "
+"surface layer. When the thickness calculated by this value is thinner than "
+"bottom shell thickness, the bottom shell layers will be increased"
 msgstr ""
 
 msgid "Bottom shell thickness"
 msgstr ""
 
 msgid ""
-"The number of bottom solid layers is increased when slicing if the thickness calculated by bottom shell layers is thinner than this value. This can avoid having too thin shell when layer height is small. 0 means that this setting "
-"is disabled and thickness of bottom shell is absolutely determained by bottom shell layers"
+"The number of bottom solid layers is increased when slicing if the thickness "
+"calculated by bottom shell layers is thinner than this value. This can avoid "
+"having too thin shell when layer height is small. 0 means that this setting "
+"is disabled and thickness of bottom shell is absolutely determained by "
+"bottom shell layers"
 msgstr ""
 
 msgid "Force cooling for overhang and bridge"
 msgstr ""
 
-msgid "Enable this option to optimize part cooling fan speed for overhang and bridge to get better cooling"
+msgid ""
+"Enable this option to optimize part cooling fan speed for overhang and "
+"bridge to get better cooling"
 msgstr ""
 
 msgid "Fan speed for overhang"
 msgstr ""
 
-msgid "Force part cooling fan to be this speed when printing bridge or overhang wall which has large overhang degree. Forcing cooling for overhang and bridge can get better quality for these part"
+msgid ""
+"Force part cooling fan to be this speed when printing bridge or overhang "
+"wall which has large overhang degree. Forcing cooling for overhang and "
+"bridge can get better quality for these part"
 msgstr ""
 
 msgid "Cooling overhang threshold"
 msgstr ""
 
-#, c-format
+#, possible-c-format
 msgid ""
-"Force cooling fan to be specific speed when overhang degree of printed part exceeds this value. Expressed as percentage which indicides how much width of the line without support from lower layer. 0% means forcing cooling for all "
-"outer wall no matter how much overhang degree"
+"Force cooling fan to be specific speed when overhang degree of printed part "
+"exceeds this value. Expressed as percentage which indicides how much width "
+"of the line without support from lower layer. 0% means forcing cooling for "
+"all outer wall no matter how much overhang degree"
 msgstr ""
 
 msgid "Bridge infill direction"
 msgstr ""
 
-msgid "Bridging angle override. If left to zero, the bridging angle will be calculated automatically. Otherwise the provided angle will be used for external bridges. Use 180°for zero angle."
+msgid ""
+"Bridging angle override. If left to zero, the bridging angle will be "
+"calculated automatically. Otherwise the provided angle will be used for "
+"external bridges. Use 180°for zero angle."
 msgstr ""
 
 msgid "Bridge density"
@@ -6102,13 +6395,17 @@ msgstr ""
 msgid "Bridge flow"
 msgstr ""
 
-msgid "Decrease this value slightly(for example 0.9) to reduce the amount of material for bridge, to improve sag"
+msgid ""
+"Decrease this value slightly(for example 0.9) to reduce the amount of "
+"material for bridge, to improve sag"
 msgstr ""
 
 msgid "Top surface flow ratio"
 msgstr ""
 
-msgid "This factor affects the amount of material for top solid infill. You can decrease it slightly to have smooth surface finish"
+msgid ""
+"This factor affects the amount of material for top solid infill. You can "
+"decrease it slightly to have smooth surface finish"
 msgstr ""
 
 msgid "Bottom surface flow ratio"
@@ -6120,19 +6417,25 @@ msgstr ""
 msgid "Precise wall(experimental)"
 msgstr ""
 
-msgid "Improve shell precision by adjusting outer wall spacing. This also improves layer consistency."
+msgid ""
+"Improve shell precision by adjusting outer wall spacing. This also improves "
+"layer consistency."
 msgstr ""
 
 msgid "Only one wall on top surfaces"
 msgstr ""
 
-msgid "Use only one wall on flat top surface, to give more space to the top infill pattern"
+msgid ""
+"Use only one wall on flat top surface, to give more space to the top infill "
+"pattern"
 msgstr ""
 
 msgid "Only one wall on first layer"
 msgstr ""
 
-msgid "Use only one wall on first layer, to give more space to the bottom infill pattern"
+msgid ""
+"Use only one wall on first layer, to give more space to the bottom infill "
+"pattern"
 msgstr ""
 
 msgid "Classic mode"
@@ -6162,7 +6465,9 @@ msgstr ""
 msgid "Brim type"
 msgstr ""
 
-msgid "This controls the generation of the brim at outer and/or inner side of models. Auto means the brim width is analysed and calculated automatically."
+msgid ""
+"This controls the generation of the brim at outer and/or inner side of "
+"models. Auto means the brim width is analysed and calculated automatically."
 msgstr ""
 
 msgid "outer_only"
@@ -6177,7 +6482,9 @@ msgstr ""
 msgid "Brim-object gap"
 msgstr ""
 
-msgid "A gap between innermost brim line and object can make brim be removed more easily"
+msgid ""
+"A gap between innermost brim line and object can make brim be removed more "
+"easily"
 msgstr ""
 
 msgid "Compatible machine"
@@ -6208,14 +6515,18 @@ msgid "Slow printing down for better layer cooling"
 msgstr ""
 
 msgid ""
-"Enable this option to slow printing speed down to make the final layer time not shorter than the layer time threshold in \"Max fan speed threshold\", so that layer can be cooled for longer time. This can improve the cooling quality "
-"for needle and small details"
+"Enable this option to slow printing speed down to make the final layer time "
+"not shorter than the layer time threshold in \"Max fan speed threshold\", so "
+"that layer can be cooled for longer time. This can improve the cooling "
+"quality for needle and small details"
 msgstr ""
 
 msgid "Normal printing"
 msgstr ""
 
-msgid "The default acceleration of both normal printing and travel except initial layer"
+msgid ""
+"The default acceleration of both normal printing and travel except initial "
+"layer"
 msgstr ""
 
 msgid "mm/s²"
@@ -6236,7 +6547,9 @@ msgstr ""
 msgid "No cooling for the first"
 msgstr ""
 
-msgid "Close all cooling fan for the first certain layers. Cooling fan of the first layer used to be closed to get better build plate adhesion"
+msgid ""
+"Close all cooling fan for the first certain layers. Cooling fan of the first "
+"layer used to be closed to get better build plate adhesion"
 msgstr ""
 
 msgid "layers"
@@ -6245,19 +6558,27 @@ msgstr ""
 msgid "Don't support bridges"
 msgstr ""
 
-msgid "Don't support the whole bridge area which make support very large. Bridge usually can be printing directly without support if not very long"
+msgid ""
+"Don't support the whole bridge area which make support very large. Bridge "
+"usually can be printing directly without support if not very long"
 msgstr ""
 
 msgid "Thick bridges"
 msgstr ""
 
-msgid "If enabled, bridges are more reliable, can bridge longer distances, but may look worse. If disabled, bridges look better but are reliable just for shorter bridged distances."
+msgid ""
+"If enabled, bridges are more reliable, can bridge longer distances, but may "
+"look worse. If disabled, bridges look better but are reliable just for "
+"shorter bridged distances."
 msgstr ""
 
 msgid "Max bridge length"
 msgstr ""
 
-msgid "Max length of bridges that don't need support. Set it to 0 if you want all bridges to be supported, and set it to a very large value if you don't want any bridges to be supported."
+msgid ""
+"Max length of bridges that don't need support. Set it to 0 if you want all "
+"bridges to be supported, and set it to a very large value if you don't want "
+"any bridges to be supported."
 msgstr ""
 
 msgid "End G-code"
@@ -6272,15 +6593,20 @@ msgstr ""
 msgid "Ensure vertical shell thickness"
 msgstr ""
 
-msgid "Add solid infill near sloping surfaces to guarantee the vertical shell thickness (top+bottom solid layers)"
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)"
 msgstr ""
 
 msgid "Internal bridge support thickness"
 msgstr ""
 
 msgid ""
-"If enabled, support loops will be generated under the contours of internal bridges. These support loops could prevent internal bridges from extruding over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support loops. 0 means disable this feature"
+"If enabled, support loops will be generated under the contours of internal "
+"bridges.These support loops could prevent internal bridges from extruding "
+"over the air and improve the top surface quality, especially when the sparse "
+"infill density is low.This value determines the thickness of the support "
+"loops. 0 means disable this feature"
 msgstr ""
 
 msgid "Top surface pattern"
@@ -6322,15 +6648,19 @@ msgstr ""
 msgid "Line width of outer wall"
 msgstr ""
 
-msgid "Speed of outer wall which is outermost and visible. It's used to be slower than inner wall speed to get better quality."
+msgid ""
+"Speed of outer wall which is outermost and visible. It's used to be slower "
+"than inner wall speed to get better quality."
 msgstr ""
 
 msgid "Small perimeters"
 msgstr ""
 
 msgid ""
-"This separate setting will affect the speed of perimeters having radius <= small_perimeter_threshold (usually holes). If expressed as percentage (for example: 80%) it will be calculated on the outer wall speed setting above. Set to "
-"zero for auto."
+"This separate setting will affect the speed of perimeters having radius <= "
+"small_perimeter_threshold (usually holes). If expressed as percentage (for "
+"example: 80%) it will be calculated on the outer wall speed setting above. "
+"Set to zero for auto."
 msgstr ""
 
 msgid "mm/s or %"
@@ -6339,7 +6669,8 @@ msgstr ""
 msgid "Small perimeters threshold"
 msgstr ""
 
-msgid "This sets the threshold for small perimeter length. Default threshold is 0mm"
+msgid ""
+"This sets the threshold for small perimeter length. Default threshold is 0mm"
 msgstr ""
 
 msgid "Order of inner wall/outer wall/infil"
@@ -6366,16 +6697,22 @@ msgstr ""
 msgid "Height to rod"
 msgstr ""
 
-msgid "Distance of the nozzle tip to the lower rod. Used for collision avoidance in by-object printing."
+msgid ""
+"Distance of the nozzle tip to the lower rod. Used for collision avoidance in "
+"by-object printing."
 msgstr ""
 
 msgid "Height to lid"
 msgstr ""
 
-msgid "Distance of the nozzle tip to the lid. Used for collision avoidance in by-object printing."
+msgid ""
+"Distance of the nozzle tip to the lid. Used for collision avoidance in by-"
+"object printing."
 msgstr ""
 
-msgid "Clearance radius around extruder. Used for collision avoidance in by-object printing."
+msgid ""
+"Clearance radius around extruder. Used for collision avoidance in by-object "
+"printing."
 msgstr ""
 
 msgid "Extruder Color"
@@ -6391,14 +6728,19 @@ msgid "Flow ratio"
 msgstr ""
 
 msgid ""
-"The material may have volumetric change after switching between molten state and crystalline state. This setting changes all extrusion flow of this filament in gcode proportionally. Recommended value range is between 0.95 and 1.05. "
-"Maybe you can tune this value to get nice flat surface when there has slight overflow or underflow"
+"The material may have volumetric change after switching between molten state "
+"and crystalline state. This setting changes all extrusion flow of this "
+"filament in gcode proportionally. Recommended value range is between 0.95 "
+"and 1.05. Maybe you can tune this value to get nice flat surface when there "
+"has slight overflow or underflow"
 msgstr ""
 
 msgid "Enable pressure advance"
 msgstr ""
 
-msgid "Enable pressure advance, auto calibration result will be overwriten once enabled."
+msgid ""
+"Enable pressure advance, auto calibration result will be overwriten once "
+"enabled."
 msgstr ""
 
 msgid "Pressure advance(Klipper) AKA Linear advance factor(Marlin)"
@@ -6410,13 +6752,18 @@ msgstr ""
 msgid "Keep fan always on"
 msgstr ""
 
-msgid "If enable this setting, part cooling fan will never be stoped and will run at least at minimum speed to reduce the frequency of starting and stoping"
+msgid ""
+"If enable this setting, part cooling fan will never be stoped and will run "
+"at least at minimum speed to reduce the frequency of starting and stoping"
 msgstr ""
 
 msgid "Layer time"
 msgstr ""
 
-msgid "Part cooling fan will be enabled for layers of which estimated time is shorter than this value. Fan speed is interpolated between the minimum and maximum fan speeds according to layer printing time"
+msgid ""
+"Part cooling fan will be enabled for layers of which estimated time is "
+"shorter than this value. Fan speed is interpolated between the minimum and "
+"maximum fan speeds according to layer printing time"
 msgstr ""
 
 msgid "s"
@@ -6434,10 +6781,15 @@ msgstr ""
 msgid "Required nozzle HRC"
 msgstr ""
 
-msgid "Minimum HRC of nozzle required to print the filament. Zero means no checking of nozzle's HRC."
+msgid ""
+"Minimum HRC of nozzle required to print the filament. Zero means no checking "
+"of nozzle's HRC."
 msgstr ""
 
-msgid "This setting stands for how much volume of filament can be melted and extruded per second. Printing speed is limited by max volumetric speed, in case of too high and unreasonable speed setting. Can't be zero"
+msgid ""
+"This setting stands for how much volume of filament can be melted and "
+"extruded per second. Printing speed is limited by max volumetric speed, in "
+"case of too high and unreasonable speed setting. Can't be zero"
 msgstr ""
 
 msgid "mm³/s"
@@ -6447,8 +6799,11 @@ msgid "Minimal purge on wipe tower"
 msgstr ""
 
 msgid ""
-"After a tool change, the exact position of the newly loaded filament inside the nozzle may not be known, and the filament pressure is likely not yet stable. Before purging the print head into an infill or a sacrificial object, "
-"Slic3r will always prime this amount of material into the wipe tower to produce successive infill or sacrificial object extrusions reliably."
+"After a tool change, the exact position of the newly loaded filament inside "
+"the nozzle may not be known, and the filament pressure is likely not yet "
+"stable. Before purging the print head into an infill or a sacrificial "
+"object, Slic3r will always prime this amount of material into the wipe tower "
+"to produce successive infill or sacrificial object extrusions reliably."
 msgstr ""
 
 msgid "Filament load time"
@@ -6463,16 +6818,21 @@ msgstr ""
 msgid "Time to unload old filament when switch filament. For statistics only"
 msgstr ""
 
-msgid "Filament diameter is used to calculate extrusion in gcode, so it's important and should be accurate"
+msgid ""
+"Filament diameter is used to calculate extrusion in gcode, so it's important "
+"and should be accurate"
 msgstr ""
 
 msgid "Shrinkage"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid ""
-"Enter the shrinkage percentage that the filament will get after cooling (94% if you measure 94mm instead of 100mm). The part will be scaled in xy to compensate. Only the filament used for the perimeter is taken into account.\n"
-"Be sure to allow enough space between objects, as this compensation is done after the checks."
+"Enter the shrinkage percentage that the filament will get after cooling "
+"(94% if you measure 94mm instead of 100mm). The part will be scaled in xy to "
+"compensate. Only the filament used for the perimeter is taken into account.\n"
+"Be sure to allow enough space between objects, as this compensation is done "
+"after the checks."
 msgstr ""
 
 msgid "Density"
@@ -6490,19 +6850,23 @@ msgstr ""
 msgid "Soluble material"
 msgstr ""
 
-msgid "Soluble material is commonly used to print support and support interface"
+msgid ""
+"Soluble material is commonly used to print support and support interface"
 msgstr ""
 
 msgid "Support material"
 msgstr ""
 
-msgid "Support material is commonly used to print support and support interface"
+msgid ""
+"Support material is commonly used to print support and support interface"
 msgstr ""
 
 msgid "Temperature of vitrificaiton"
 msgstr ""
 
-msgid "Material becomes soft at this temperature. Thus the heatbed cannot be hotter than this tempature"
+msgid ""
+"Material becomes soft at this temperature. Thus the heatbed cannot be hotter "
+"than this tempature"
 msgstr ""
 
 msgid "Price"
@@ -6520,13 +6884,15 @@ msgstr ""
 msgid "Infill direction"
 msgstr ""
 
-msgid "Angle for sparse infill pattern, which controls the start or main direction of line"
+msgid ""
+"Angle for sparse infill pattern, which controls the start or main direction "
+"of line"
 msgstr ""
 
 msgid "Sparse infill density"
 msgstr ""
 
-#, c-format
+#, possible-c-format
 msgid "Density of internal sparse infill, 100% means solid throughout"
 msgstr ""
 
@@ -6570,10 +6936,15 @@ msgid "Sparse infill anchor length"
 msgstr ""
 
 msgid ""
-"Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. Slic3r tries to connect two close infill lines "
-"to a short perimeter segment. If no such perimeter segment shorter than infill_anchor_max is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to "
-"this parameter, but no longer than anchor_length_max. \n"
-"Set this parameter to zero to disable anchoring perimeters connected to a single infill line."
+"Connect an infill line to an internal perimeter with a short segment of an "
+"additional perimeter. If expressed as percentage (example: 15%) it is "
+"calculated over infill extrusion width. Slic3r tries to connect two close "
+"infill lines to a short perimeter segment. If no such perimeter segment "
+"shorter than infill_anchor_max is found, the infill line is connected to a "
+"perimeter segment at just one side and the length of the perimeter segment "
+"taken is limited to this parameter, but no longer than anchor_length_max. \n"
+"Set this parameter to zero to disable anchoring perimeters connected to a "
+"single infill line."
 msgstr ""
 
 msgid "0 (no open anchors)"
@@ -6586,10 +6957,15 @@ msgid "Maximum length of the infill anchor"
 msgstr ""
 
 msgid ""
-"Connect an infill line to an internal perimeter with a short segment of an additional perimeter. If expressed as percentage (example: 15%) it is calculated over infill extrusion width. Slic3r tries to connect two close infill lines "
-"to a short perimeter segment. If no such perimeter segment shorter than this parameter is found, the infill line is connected to a perimeter segment at just one side and the length of the perimeter segment taken is limited to "
-"infill_anchor, but no longer than this parameter. \n"
-"If set to 0, the old algorithm for infill connection will be used, it should create the same result as with 1000 & 0."
+"Connect an infill line to an internal perimeter with a short segment of an "
+"additional perimeter. If expressed as percentage (example: 15%) it is "
+"calculated over infill extrusion width. Slic3r tries to connect two close "
+"infill lines to a short perimeter segment. If no such perimeter segment "
+"shorter than this parameter is found, the infill line is connected to a "
+"perimeter segment at just one side and the length of the perimeter segment "
+"taken is limited to infill_anchor, but no longer than this parameter. \n"
+"If set to 0, the old algorithm for infill connection will be used, it should "
+"create the same result as with 1000 & 0."
 msgstr ""
 
 msgid "0 (Simple connect)"
@@ -6604,25 +6980,36 @@ msgstr ""
 msgid "Acceleration of travel moves"
 msgstr ""
 
-msgid "Acceleration of top surface infill. Using a lower value may improve top surface quality"
+msgid ""
+"Acceleration of top surface infill. Using a lower value may improve top "
+"surface quality"
 msgstr ""
 
 msgid "Acceleration of outer wall. Using a lower value can improve quality"
 msgstr ""
 
-msgid "Acceleration of bridges. If the value is expressed as a percentage (e.g. 50%), it will be calculated based on the outer wall acceleration."
+msgid ""
+"Acceleration of bridges. If the value is expressed as a percentage (e.g. "
+"50%), it will be calculated based on the outer wall acceleration."
 msgstr ""
 
 msgid "mm/s² or %"
 msgstr ""
 
-msgid "Acceleration of sparse infill. If the value is expressed as a percentage (e.g. 100%), it will be calculated based on the default acceleration."
+msgid ""
+"Acceleration of sparse infill. If the value is expressed as a percentage (e."
+"g. 100%), it will be calculated based on the default acceleration."
 msgstr ""
 
-msgid "Acceleration of internal solid infill. If the value is expressed as a percentage (e.g. 100%), it will be calculated based on the default acceleration."
+msgid ""
+"Acceleration of internal solid infill. If the value is expressed as a "
+"percentage (e.g. 100%), it will be calculated based on the default "
+"acceleration."
 msgstr ""
 
-msgid "Acceleration of initial layer. Using a lower value can improve build plate adhensive"
+msgid ""
+"Acceleration of initial layer. Using a lower value can improve build plate "
+"adhensive"
 msgstr ""
 
 msgid "Enable accel_to_decel"
@@ -6634,7 +7021,7 @@ msgstr ""
 msgid "accel_to_decel"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
 msgstr ""
 
@@ -6662,7 +7049,9 @@ msgstr ""
 msgid "Initial layer height"
 msgstr ""
 
-msgid "Height of initial layer. Making initial layer height to be thick slightly can improve build plate adhension"
+msgid ""
+"Height of initial layer. Making initial layer height to be thick slightly "
+"can improve build plate adhension"
 msgstr ""
 
 msgid "Speed of initial layer except the solid infill part"
@@ -6683,7 +7072,9 @@ msgstr ""
 msgid "Number of slow layers"
 msgstr ""
 
-msgid "The first few layers are printed slower than normal. The speed is gradually increased in a linear fashion over the specified number of layers."
+msgid ""
+"The first few layers are printed slower than normal. The speed is gradually "
+"increased in a linear fashion over the specified number of layers."
 msgstr ""
 
 msgid "Initial layer nozzle temperature"
@@ -6696,20 +7087,26 @@ msgid "Full fan speed at layer"
 msgstr ""
 
 msgid ""
-"Fan speed will be ramped up linearly from zero at layer \"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower than \"close_fan_the_first_x_layers\", in "
-"which case the fan will be running at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"Fan speed will be ramped up linearly from zero at layer "
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 
 msgid "Support interface fan speed"
 msgstr ""
 
 msgid ""
-"This fan speed is enforced during all support interfaces, to be able to weaken their bonding with a high fan speed.\n"
+"This fan speed is enforced during all support interfaces, to be able to "
+"weaken their bonding with a high fan speed.\n"
 "Set to -1 to disable this override.\n"
 "Can only be overriden by disable_fan_first_layers."
 msgstr ""
 
-msgid "Randomly jitter while printing the wall, so that the surface has a rough look. This setting controls the fuzzy position"
+msgid ""
+"Randomly jitter while printing the wall, so that the surface has a rough "
+"look. This setting controls the fuzzy position"
 msgstr ""
 
 msgid "None"
@@ -6727,13 +7124,17 @@ msgstr ""
 msgid "Fuzzy skin thickness"
 msgstr ""
 
-msgid "The width within which to jitter. It's adversed to be below outer wall line width"
+msgid ""
+"The width within which to jitter. It's adversed to be below outer wall line "
+"width"
 msgstr ""
 
 msgid "Fuzzy skin point distance"
 msgstr ""
 
-msgid "The average diatance between the random points introducded on each line segment"
+msgid ""
+"The average diatance between the random points introducded on each line "
+"segment"
 msgstr ""
 
 msgid "Filter out tiny gaps"
@@ -6742,16 +7143,22 @@ msgstr ""
 msgid "Layers and Perimeters"
 msgstr ""
 
-msgid "Filter out gaps smaller than the threshold specified. This setting won't affact top/bottom layers"
+msgid ""
+"Filter out gaps smaller than the threshold specified. This setting won't "
+"affact top/bottom layers"
 msgstr ""
 
-msgid "Speed of gap infill. Gap usually has irregular line width and should be printed more slowly"
+msgid ""
+"Speed of gap infill. Gap usually has irregular line width and should be "
+"printed more slowly"
 msgstr ""
 
 msgid "Arc fitting"
 msgstr ""
 
-msgid "Enable this to get a G-code file which has G2 and G3 moves. And the fitting tolerance is same with resolution"
+msgid ""
+"Enable this to get a G-code file which has G2 and G3 moves. And the fitting "
+"tolerance is same with resolution"
 msgstr ""
 
 msgid "Add line number"
@@ -6763,13 +7170,17 @@ msgstr ""
 msgid "Scan first layer"
 msgstr ""
 
-msgid "Enable this to enable the camera on printer to check the quality of first layer"
+msgid ""
+"Enable this to enable the camera on printer to check the quality of first "
+"layer"
 msgstr ""
 
 msgid "Nozzle type"
 msgstr ""
 
-msgid "The metallic material of nozzle. This determines the abrasive resistance of nozzle, and what kind of filament can be printed"
+msgid ""
+"The metallic material of nozzle. This determines the abrasive resistance of "
+"nozzle, and what kind of filament can be printed"
 msgstr ""
 
 msgid "Undefine"
@@ -6787,7 +7198,9 @@ msgstr ""
 msgid "Nozzle HRC"
 msgstr ""
 
-msgid "The nozzle's hardness. Zero means no checking for nozzle's hardness during slicing."
+msgid ""
+"The nozzle's hardness. Zero means no checking for nozzle's hardness during "
+"slicing."
 msgstr ""
 
 msgid "HRC"
@@ -6797,10 +7210,14 @@ msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr ""
 
 msgid ""
-"Start the fan this number of seconds earlier than its target start time (you can use fractional seconds). It assumes infinite acceleration for this time estimation, and will only take into account G1 and G0 moves (arc fitting is "
+"Start the fan this number of seconds earlier than its target start time (you "
+"can use fractional seconds). It assumes infinite acceleration for this time "
+"estimation, and will only take into account G1 and G0 moves (arc fitting is "
 "unsupported).\n"
-"It won't move fan comands from custom gcodes (they act as a sort of 'barrier').\n"
-"It won't move fan comands into the start gcode if the 'only custom start gcode' is activated.\n"
+"It won't move fan comands from custom gcodes (they act as a sort of "
+"'barrier').\n"
+"It won't move fan comands into the start gcode if the 'only custom start "
+"gcode' is activated.\n"
 "Use 0 to deactivate."
 msgstr ""
 
@@ -6814,8 +7231,10 @@ msgid "Fan kick-start time"
 msgstr ""
 
 msgid ""
-"Emit a max fan speed command for this amount of seconds before reducing to target speed to kick-start the cooling fan.\n"
-"This is useful for fans where a low PWM/power may be insufficient to get the fan started spinning from a stop, or to get the fan up to speed faster.\n"
+"Emit a max fan speed command for this amount of seconds before reducing to "
+"target speed to kick-start the cooling fan.\n"
+"This is useful for fans where a low PWM/power may be insufficient to get the "
+"fan started spinning from a stop, or to get the fan up to speed faster.\n"
 "Set to 0 to deactivate."
 msgstr ""
 
@@ -6832,8 +7251,10 @@ msgid "Label objects"
 msgstr ""
 
 msgid ""
-"Enable this to add comments into the G-Code labeling print moves with what object they belong to, which is useful for the Octoprint CancelObject plugin. This settings is NOT compatible with Single Extruder Multi Material setup and "
-"Wipe into Object / Wipe into Infill."
+"Enable this to add comments into the G-Code labeling print moves with what "
+"object they belong to, which is useful for the Octoprint CancelObject "
+"plugin. This settings is NOT compatible with Single Extruder Multi Material "
+"setup and Wipe into Object / Wipe into Infill."
 msgstr ""
 
 msgid "Exclude objects"
@@ -6845,13 +7266,18 @@ msgstr ""
 msgid "Verbose G-code"
 msgstr ""
 
-msgid "Enable this to get a commented G-code file, with each line explained by a descriptive text. If you print from SD card, the additional weight of the file could make your firmware slow down."
+msgid ""
+"Enable this to get a commented G-code file, with each line explained by a "
+"descriptive text. If you print from SD card, the additional weight of the "
+"file could make your firmware slow down."
 msgstr ""
 
 msgid "Infill combination"
 msgstr ""
 
-msgid "Automatically Combine sparse infill of several layers to print together to reduce time. Wall is still printed with original layer height."
+msgid ""
+"Automatically Combine sparse infill of several layers to print together to "
+"reduce time. Wall is still printed with original layer height."
 msgstr ""
 
 msgid "Filament to print internal sparse infill."
@@ -6863,7 +7289,9 @@ msgstr ""
 msgid "Infill/Wall overlap"
 msgstr ""
 
-msgid "Infill area is enlarged slightly to overlap with wall for better bonding. The percentage value is relative to line width of sparse infill"
+msgid ""
+"Infill area is enlarged slightly to overlap with wall for better bonding. "
+"The percentage value is relative to line width of sparse infill"
 msgstr ""
 
 msgid "Speed of internal sparse infill"
@@ -6872,13 +7300,18 @@ msgstr ""
 msgid "Interface shells"
 msgstr ""
 
-msgid "Force the generation of solid shells between adjacent materials/volumes. Useful for multi-extruder prints with translucent materials or manual soluble support material"
+msgid ""
+"Force the generation of solid shells between adjacent materials/volumes. "
+"Useful for multi-extruder prints with translucent materials or manual "
+"soluble support material"
 msgstr ""
 
 msgid "Ironing Type"
 msgstr ""
 
-msgid "Ironing is using small flow to print on same height of surface again to make flat surface more smooth. This setting controls which layer being ironed"
+msgid ""
+"Ironing is using small flow to print on same height of surface again to make "
+"flat surface more smooth. This setting controls which layer being ironed"
 msgstr ""
 
 msgid "No ironing"
@@ -6896,7 +7329,9 @@ msgstr ""
 msgid "Ironing flow"
 msgstr ""
 
-msgid "The amount of material to extrude during ironing. Relative to flow of normal layer height. Too high value results in overextrusion on the surface"
+msgid ""
+"The amount of material to extrude during ironing. Relative to flow of normal "
+"layer height. Too high value results in overextrusion on the surface"
 msgstr ""
 
 msgid "Ironing line spacing"
@@ -6917,10 +7352,14 @@ msgstr ""
 msgid "Supports silent mode"
 msgstr ""
 
-msgid "Whether the machine supports silent mode in which machine use lower acceleration to print"
+msgid ""
+"Whether the machine supports silent mode in which machine use lower "
+"acceleration to print"
 msgstr ""
 
-msgid "This G-code will be used as a code for the pause print. User can insert pause G-code in gcode viewer"
+msgid ""
+"This G-code will be used as a code for the pause print. User can insert "
+"pause G-code in gcode viewer"
 msgstr ""
 
 msgid "This G-code will be used as a custom code"
@@ -7034,25 +7473,34 @@ msgstr ""
 msgid "Fan speed"
 msgstr ""
 
-msgid "Part cooling fan speed may be increased when auto cooling is enabled. This is the maximum speed limitation of part cooling fan"
+msgid ""
+"Part cooling fan speed may be increased when auto cooling is enabled. This "
+"is the maximum speed limitation of part cooling fan"
 msgstr ""
 
 msgid "Max"
 msgstr ""
 
-msgid "The largest printable layer height for extruder. Used tp limits the maximum layer hight when enable adaptive layer height"
+msgid ""
+"The largest printable layer height for extruder. Used tp limits the maximum "
+"layer hight when enable adaptive layer height"
 msgstr ""
 
 msgid "Minimum speed for part cooling fan"
 msgstr ""
 
-msgid "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed during printing except the first several layers which is defined by no cooling layers"
+msgid ""
+"Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
+"during printing except the first several layers which is defined by no "
+"cooling layers"
 msgstr ""
 
 msgid "Min"
 msgstr ""
 
-msgid "The lowest printable layer height for extruder. Used tp limits the minimum layer hight when enable adaptive layer height"
+msgid ""
+"The lowest printable layer height for extruder. Used tp limits the minimum "
+"layer hight when enable adaptive layer height"
 msgstr ""
 
 msgid "Min print speed"
@@ -7070,7 +7518,9 @@ msgstr ""
 msgid "Host Type"
 msgstr ""
 
-msgid "Slic3r can upload G-code files to a printer host. This field must contain the kind of the host."
+msgid ""
+"Slic3r can upload G-code files to a printer host. This field must contain "
+"the kind of the host."
 msgstr ""
 
 msgid "Nozzle volume"
@@ -7088,7 +7538,10 @@ msgstr ""
 msgid "Reduce infill retraction"
 msgstr ""
 
-msgid "Don't retract when the travel is in infill area absolutely. That means the oozing can't been seen. This can reduce times of retraction for complex model and save printing time, but make slicing and G-code generating slower"
+msgid ""
+"Don't retract when the travel is in infill area absolutely. That means the "
+"oozing can't been seen. This can reduce times of retraction for complex "
+"model and save printing time, but make slicing and G-code generating slower"
 msgstr ""
 
 msgid "Enable"
@@ -7103,8 +7556,10 @@ msgstr ""
 msgid "Detect overhang wall"
 msgstr ""
 
-#, c-format, boost-format
-msgid "Detect the overhang percentage relative to line width and use different speed to print. For 100%% overhang, bridge speed is used."
+#, possible-c-format, possible-boost-format
+msgid ""
+"Detect the overhang percentage relative to line width and use different "
+"speed to print. For 100%% overhang, bridge speed is used."
 msgstr ""
 
 msgid "Line width of inner wall"
@@ -7117,8 +7572,11 @@ msgid "Number of walls of every layer"
 msgstr ""
 
 msgid ""
-"If you want to process the output G-code through custom scripts, just list their absolute paths here. Separate multiple scripts with a semicolon. Scripts will be passed the absolute path to the G-code file as the first argument, "
-"and they can access the Slic3r config settings by reading environment variables."
+"If you want to process the output G-code through custom scripts, just list "
+"their absolute paths here. Separate multiple scripts with a semicolon. "
+"Scripts will be passed the absolute path to the G-code file as the first "
+"argument, and they can access the Slic3r config settings by reading "
+"environment variables."
 msgstr ""
 
 msgid "Raft contact Z distance"
@@ -7148,22 +7606,30 @@ msgstr ""
 msgid "Raft layers"
 msgstr ""
 
-msgid "Object will be raised by this number of support layers. Use this function to avoid wrapping when print ABS"
+msgid ""
+"Object will be raised by this number of support layers. Use this function to "
+"avoid wrapping when print ABS"
 msgstr ""
 
-msgid "G-code path is genereated after simplifing the contour of model to avoid too much points and gcode lines in gcode file. Smaller value means higher resolution and more time to slice"
+msgid ""
+"G-code path is genereated after simplifing the contour of model to avoid too "
+"much points and gcode lines in gcode file. Smaller value means higher "
+"resolution and more time to slice"
 msgstr ""
 
 msgid "Travel distance threshold"
 msgstr ""
 
-msgid "Only trigger retraction when the travel distance is longer than this threshold"
+msgid ""
+"Only trigger retraction when the travel distance is longer than this "
+"threshold"
 msgstr ""
 
 msgid "Retract amount before wipe"
 msgstr ""
 
-msgid "The length of fast retraction before wipe, relative to retraction length"
+msgid ""
+"The length of fast retraction before wipe, relative to retraction length"
 msgstr ""
 
 msgid "Retract when change layer"
@@ -7178,13 +7644,18 @@ msgstr ""
 msgid "Retraction Length"
 msgstr ""
 
-msgid "Some amount of material in extruder is pulled back to avoid ooze during long travel. Set zero to disable retraction"
+msgid ""
+"Some amount of material in extruder is pulled back to avoid ooze during long "
+"travel. Set zero to disable retraction"
 msgstr ""
 
 msgid "Z hop when retract"
 msgstr ""
 
-msgid "Whenever the retraction is done, the nozzle is lifted a little to create clearance between nozzle and the print. It prevents nozzle from hitting the print when travel move. Using spiral line to lift z can prevent stringing"
+msgid ""
+"Whenever the retraction is done, the nozzle is lifted a little to create "
+"clearance between nozzle and the print. It prevents nozzle from hitting the "
+"print when travel move. Using spiral line to lift z can prevent stringing"
 msgstr ""
 
 msgid "Z hop type"
@@ -7199,10 +7670,14 @@ msgstr ""
 msgid "Extra length on restart"
 msgstr ""
 
-msgid "When the retraction is compensated after the travel move, the extruder will push this additional amount of filament. This setting is rarely needed."
+msgid ""
+"When the retraction is compensated after the travel move, the extruder will "
+"push this additional amount of filament. This setting is rarely needed."
 msgstr ""
 
-msgid "When the retraction is compensated after changing tool, the extruder will push this additional amount of filament."
+msgid ""
+"When the retraction is compensated after changing tool, the extruder will "
+"push this additional amount of filament."
 msgstr ""
 
 msgid "Retraction Speed"
@@ -7214,13 +7689,17 @@ msgstr ""
 msgid "Deretraction Speed"
 msgstr ""
 
-msgid "Speed for reloading filament into extruder. Zero means same speed with retraction"
+msgid ""
+"Speed for reloading filament into extruder. Zero means same speed with "
+"retraction"
 msgstr ""
 
 msgid "Use firmware retraction"
 msgstr ""
 
-msgid "This experimental setting uses G10 and G11 commands to have the firmware handle the retraction. This is only supported in recent Marlin."
+msgid ""
+"This experimental setting uses G10 and G11 commands to have the firmware "
+"handle the retraction. This is only supported in recent Marlin."
 msgstr ""
 
 msgid "Show auto-calibration marks"
@@ -7248,29 +7727,37 @@ msgid "Seam gap"
 msgstr ""
 
 msgid ""
-"In order to reduce the visibility of the seam in a closed loop extrusion, the loop is interrupted and shortened by a specified amount.\n"
-"This amount can be specified in millimeters or as a percentage of the current extruder diameter. The default value for this parameter is 15%."
+"In order to reduce the visibility of the seam in a closed loop extrusion, "
+"the loop is interrupted and shortened by a specified amount.\n"
+"This amount can be specified in millimeters or as a percentage of the "
+"current extruder diameter. The default value for this parameter is 15%."
 msgstr ""
 
 msgid "Role base wipe speed"
 msgstr ""
 
 msgid ""
-"The wipe speed is determined by the speed of the current extrusion role.e.g. if a wipe action is executed immediately following an outer wall extrusion, the speed of the outer wall extrusion will be utilized for the wipe action."
+"The wipe speed is determined by the speed of the current extrusion role.e.g. "
+"if a wipe action is executed immediately following an outer wall extrusion, "
+"the speed of the outer wall extrusion will be utilized for the wipe action."
 msgstr ""
 
 msgid "Wipe on loops"
 msgstr ""
 
-msgid "To minimize the visibility of the seam in a closed loop extrusion, a small inward movement is executed before the extruder leaves the loop."
+msgid ""
+"To minimize the visibility of the seam in a closed loop extrusion, a small "
+"inward movement is executed before the extruder leaves the loop."
 msgstr ""
 
 msgid "Wipe speed"
 msgstr ""
 
 msgid ""
-"The wipe speed is determined by the speed setting specified in this configuration.If the value is expressed as a percentage (e.g. 80%), it will be calculated based on the travel speed setting above.The default value for this "
-"parameter is 80%"
+"The wipe speed is determined by the speed setting specified in this "
+"configuration.If the value is expressed as a percentage (e.g. 80%), it will "
+"be calculated based on the travel speed setting above.The default value for "
+"this parameter is 80%"
 msgstr ""
 
 msgid "Skirt distance"
@@ -7291,13 +7778,23 @@ msgstr ""
 msgid "Number of loops for the skirt. Zero means disabling skirt"
 msgstr ""
 
-msgid "The printing speed in exported gcode will be slowed down, when the estimated layer time is shorter than this value, to get better cooling for these layers"
+msgid "Skirt speed"
+msgstr ""
+
+msgid "Speed of skirt, in mm/s. Zero means use default layer extrusion speed."
+msgstr ""
+
+msgid ""
+"The printing speed in exported gcode will be slowed down, when the estimated "
+"layer time is shorter than this value, to get better cooling for these layers"
 msgstr ""
 
 msgid "Minimum sparse infill threshold"
 msgstr ""
 
-msgid "Sparse infill area which is smaller than threshold value is replaced by internal solid infill"
+msgid ""
+"Sparse infill area which is smaller than threshold value is replaced by "
+"internal solid infill"
 msgstr ""
 
 msgid "mm²"
@@ -7312,13 +7809,21 @@ msgstr ""
 msgid "Spiral vase"
 msgstr ""
 
-msgid "Spiralize smooths out the z moves of the outer contour. And turns a solid model into a single walled print with solid bottom layers. The final generated model has no seam"
+msgid ""
+"Spiralize smooths out the z moves of the outer contour. And turns a solid "
+"model into a single walled print with solid bottom layers. The final "
+"generated model has no seam"
 msgstr ""
 
 msgid ""
-"If smooth or traditional mode is selected, a timelapse video will be generated for each print. After each layer is printed, a snapshot is taken with the chamber camera. All of these snapshots are composed into a timelapse video "
-"when printing completes. If smooth mode is selected, the toolhead will move to the excess chute after each layer is printed and then take a snapshot. Since the melt filament may leak from the nozzle during the process of taking a "
-"snapshot, prime tower is required for smooth mode to wipe nozzle."
+"If smooth or traditional mode is selected, a timelapse video will be "
+"generated for each print. After each layer is printed, a snapshot is taken "
+"with the chamber camera. All of these snapshots are composed into a "
+"timelapse video when printing completes. If smooth mode is selected, the "
+"toolhead will move to the excess chute after each layer is printed and then "
+"take a snapshot. Since the melt filament may leak from the nozzle during the "
+"process of taking a snapshot, prime tower is required for smooth mode to "
+"wipe nozzle."
 msgstr ""
 
 msgid "Traditional"
@@ -7339,13 +7844,18 @@ msgstr ""
 msgid "Slice gap closing radius"
 msgstr ""
 
-msgid "Cracks smaller than 2x gap closing radius are being filled during the triangle mesh slicing. The gap closing operation may reduce the final print resolution, therefore it is advisable to keep the value reasonably low."
+msgid ""
+"Cracks smaller than 2x gap closing radius are being filled during the "
+"triangle mesh slicing. The gap closing operation may reduce the final print "
+"resolution, therefore it is advisable to keep the value reasonably low."
 msgstr ""
 
 msgid "Slicing Mode"
 msgstr ""
 
-msgid "Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to close all holes in the model."
+msgid ""
+"Use \"Even-odd\" for 3DLabPrint airplane models. Use \"Close holes\" to "
+"close all holes in the model."
 msgstr ""
 
 msgid "Regular"
@@ -7363,7 +7873,10 @@ msgstr ""
 msgid "Enable support generation."
 msgstr ""
 
-msgid "normal(auto) and tree(auto) is used to generate support automatically. If normal(manual) or tree(manual) is selected, only support enforcers are generated"
+msgid ""
+"normal(auto) and tree(auto) is used to generate support automatically. If "
+"normal(manual) or tree(manual) is selected, only support enforcers are "
+"generated"
 msgstr ""
 
 msgid "normal(auto)"
@@ -7399,7 +7912,9 @@ msgstr ""
 msgid "Support critical regions only"
 msgstr ""
 
-msgid "Only create support for critical regions including sharp tail, cantilever, etc."
+msgid ""
+"Only create support for critical regions including sharp tail, cantilever, "
+"etc."
 msgstr ""
 
 msgid "Top Z distance"
@@ -7417,7 +7932,9 @@ msgstr ""
 msgid "Support/raft base"
 msgstr ""
 
-msgid "Filament to print support base and raft. \"Default\" means no specific filament for support and current filament is used"
+msgid ""
+"Filament to print support base and raft. \"Default\" means no specific "
+"filament for support and current filament is used"
 msgstr ""
 
 msgid "Line width of support"
@@ -7426,13 +7943,16 @@ msgstr ""
 msgid "Interface use loop pattern"
 msgstr ""
 
-msgid "Cover the top contact layer of the supports with loops. Disabled by default."
+msgid ""
+"Cover the top contact layer of the supports with loops. Disabled by default."
 msgstr ""
 
 msgid "Support/raft interface"
 msgstr ""
 
-msgid "Filament to print support interface. \"Default\" means no specific filament for support interface and current filament is used"
+msgid ""
+"Filament to print support interface. \"Default\" means no specific filament "
+"for support interface and current filament is used"
 msgstr ""
 
 msgid "Top interface layers"
@@ -7474,7 +7994,10 @@ msgstr ""
 msgid "Interface pattern"
 msgstr ""
 
-msgid "Line pattern of support interface. Default pattern for non-soluble support interface is Rectilinear, while default pattern for soluble support interface is Concentric"
+msgid ""
+"Line pattern of support interface. Default pattern for non-soluble support "
+"interface is Rectilinear, while default pattern for soluble support "
+"interface is Concentric"
 msgstr ""
 
 msgid "Rectilinear Interlaced"
@@ -7496,8 +8019,12 @@ msgid "Speed of support"
 msgstr ""
 
 msgid ""
-"Style and shape of the support. For normal support, projecting the supports into a regular grid will create more stable supports (default), while snug support towers will save material and reduce object scarring.\n"
-"For tree support, slim style will merge branches more aggressively and save a lot of material (default), while hybrid style will create similar structure to normal support under large flat overhangs."
+"Style and shape of the support. For normal support, projecting the supports "
+"into a regular grid will create more stable supports (default), while snug "
+"support towers will save material and reduce object scarring.\n"
+"For tree support, slim style will merge branches more aggressively and save "
+"a lot of material (default), while hybrid style will create similar "
+"structure to normal support under large flat overhangs."
 msgstr ""
 
 msgid "Snug"
@@ -7515,37 +8042,50 @@ msgstr ""
 msgid "Independent support layer height"
 msgstr ""
 
-msgid "Support layer uses layer height independent with object layer. This is to support customizing z-gap and save print time.This option will be invalid when the prime tower is enabled."
+msgid ""
+"Support layer uses layer height independent with object layer. This is to "
+"support customizing z-gap and save print time.This option will be invalid "
+"when the prime tower is enabled."
 msgstr ""
 
 msgid "Threshold angle"
 msgstr ""
 
-msgid "Support will be generated for overhangs whose slope angle is below the threshold."
+msgid ""
+"Support will be generated for overhangs whose slope angle is below the "
+"threshold."
 msgstr ""
 
 msgid "Tree support branch angle"
 msgstr ""
 
-msgid "This setting determines the maximum overhang angle that t he branches of tree support allowed to make.If the angle is increased, the branches can be printed more horizontally, allowing them to reach farther."
+msgid ""
+"This setting determines the maximum overhang angle that t he branches of "
+"tree support allowed to make.If the angle is increased, the branches can be "
+"printed more horizontally, allowing them to reach farther."
 msgstr ""
 
 msgid "Tree support branch distance"
 msgstr ""
 
-msgid "This setting determines the distance between neighboring tree support nodes."
+msgid ""
+"This setting determines the distance between neighboring tree support nodes."
 msgstr ""
 
 msgid "Adaptive layer height"
 msgstr ""
 
-msgid "Enabling this option means the height of  tree support layer except the first will be automatically calculated "
+msgid ""
+"Enabling this option means the height of  tree support layer except the "
+"first will be automatically calculated "
 msgstr ""
 
 msgid "Auto brim width"
 msgstr ""
 
-msgid "Enabling this option means the width of the brim for tree support will be automatically calculated"
+msgid ""
+"Enabling this option means the width of the brim for tree support will be "
+"automatically calculated"
 msgstr ""
 
 msgid "Tree support brim width"
@@ -7569,7 +8109,9 @@ msgstr ""
 msgid "Tree support with infill"
 msgstr ""
 
-msgid "This setting specifies whether to add infill inside large hollows of tree support"
+msgid ""
+"This setting specifies whether to add infill inside large hollows of tree "
+"support"
 msgstr ""
 
 msgid "Target chamber temperature"
@@ -7581,16 +8123,23 @@ msgstr ""
 msgid "Bed temperature difference"
 msgstr ""
 
-msgid "Do not recommend bed temperature of other layer to be lower than initial layer for more than this threshold. Too low bed temperature of other layer may cause the model broken free from build plate"
+msgid ""
+"Do not recommend bed temperature of other layer to be lower than initial "
+"layer for more than this threshold. Too low bed temperature of other layer "
+"may cause the model broken free from build plate"
 msgstr ""
 
 msgid "Detect thin wall"
 msgstr ""
 
-msgid "Detect thin wall which can't contain two line width. And use single line to print. Maybe printed not very well, because it's not closed loop"
+msgid ""
+"Detect thin wall which can't contain two line width. And use single line to "
+"print. Maybe printed not very well, because it's not closed loop"
 msgstr ""
 
-msgid "This gcode is inserted when change filament, including T command to trigger tool change"
+msgid ""
+"This gcode is inserted when change filament, including T command to trigger "
+"tool change"
 msgstr ""
 
 msgid "Line width for top surfaces"
@@ -7602,7 +8151,10 @@ msgstr ""
 msgid "Top shell layers"
 msgstr ""
 
-msgid "This is the number of solid layers of top shell, including the top surface layer. When the thickness calculated by this value is thinner than top shell thickness, the top shell layers will be increased"
+msgid ""
+"This is the number of solid layers of top shell, including the top surface "
+"layer. When the thickness calculated by this value is thinner than top shell "
+"thickness, the top shell layers will be increased"
 msgstr ""
 
 msgid "Top solid layers"
@@ -7612,8 +8164,11 @@ msgid "Top shell thickness"
 msgstr ""
 
 msgid ""
-"The number of top solid layers is increased when slicing if the thickness calculated by top shell layers is thinner than this value. This can avoid having too thin shell when layer height is small. 0 means that this setting is "
-"disabled and thickness of top shell is absolutely determained by top shell layers"
+"The number of top solid layers is increased when slicing if the thickness "
+"calculated by top shell layers is thinner than this value. This can avoid "
+"having too thin shell when layer height is small. 0 means that this setting "
+"is disabled and thickness of top shell is absolutely determained by top "
+"shell layers"
 msgstr ""
 
 msgid "Speed of travel which is faster and without extrusion"
@@ -7622,16 +8177,22 @@ msgstr ""
 msgid "Wipe while retracting"
 msgstr ""
 
-msgid "Move nozzle along the last extrusion path when retracting to clean leaked material on nozzle. This can minimize blob when print new part after travel"
+msgid ""
+"Move nozzle along the last extrusion path when retracting to clean leaked "
+"material on nozzle. This can minimize blob when print new part after travel"
 msgstr ""
 
 msgid "Wipe Distance"
 msgstr ""
 
-msgid "Discribe how long the nozzle will move along the last path when retracting"
+msgid ""
+"Discribe how long the nozzle will move along the last path when retracting"
 msgstr ""
 
-msgid "The wiping tower can be used to clean up the residue on the nozzle and stabilize the chamber pressure inside the nozzle, in order to avoid appearance defects when printing objects."
+msgid ""
+"The wiping tower can be used to clean up the residue on the nozzle and "
+"stabilize the chamber pressure inside the nozzle, in order to avoid "
+"appearance defects when printing objects."
 msgstr ""
 
 msgid "Purging volumes"
@@ -7640,7 +8201,9 @@ msgstr ""
 msgid "Flush multiplier"
 msgstr ""
 
-msgid "The actual flushing volumes is equal to the flush multiplier multiplied by the flushing volumes in the table."
+msgid ""
+"The actual flushing volumes is equal to the flush multiplier multiplied by "
+"the flushing volumes in the table."
 msgstr ""
 
 msgid "Prime volume"
@@ -7656,46 +8219,65 @@ msgid "Width of prime tower"
 msgstr ""
 
 msgid ""
-"Purging after filament change will be done inside objects' infills. This may lower the amount of waste and decrease the print time. If the walls are printed with transparent filament, the mixed color infill will be seen outside. It "
-"will not take effect, unless the prime tower is enabled."
+"Purging after filament change will be done inside objects' infills. This may "
+"lower the amount of waste and decrease the print time. If the walls are "
+"printed with transparent filament, the mixed color infill will be seen "
+"outside. It will not take effect, unless the prime tower is enabled."
 msgstr ""
 
-msgid "Purging after filament change will be done inside objects' support. This may lower the amount of waste and decrease the print time. It will not take effect, unless the prime tower is enabled."
+msgid ""
+"Purging after filament change will be done inside objects' support. This may "
+"lower the amount of waste and decrease the print time. It will not take "
+"effect, unless the prime tower is enabled."
 msgstr ""
 
-msgid "This object will be used to purge the nozzle after a filament change to save filament and decrease the print time. Colours of the objects will be mixed as a result. It will not take effect, unless the prime tower is enabled."
+msgid ""
+"This object will be used to purge the nozzle after a filament change to save "
+"filament and decrease the print time. Colours of the objects will be mixed "
+"as a result. It will not take effect, unless the prime tower is enabled."
 msgstr ""
 
 msgid "X-Y hole compensation"
 msgstr ""
 
 msgid ""
-"Holes of object will be grown or shrunk in XY plane by the configured value. Positive value makes holes bigger. Negative value makes holes smaller. This function is used to adjust size slightly when the object has assembling issue"
+"Holes of object will be grown or shrunk in XY plane by the configured value. "
+"Positive value makes holes bigger. Negative value makes holes smaller. This "
+"function is used to adjust size slightly when the object has assembling issue"
 msgstr ""
 
 msgid "X-Y contour compensation"
 msgstr ""
 
 msgid ""
-"Contour of object will be grown or shrunk in XY plane by the configured value. Positive value makes contour bigger. Negative value makes contour smaller. This function is used to adjust size slightly when the object has assembling "
-"issue"
+"Contour of object will be grown or shrunk in XY plane by the configured "
+"value. Positive value makes contour bigger. Negative value makes contour "
+"smaller. This function is used to adjust size slightly when the object has "
+"assembling issue"
 msgstr ""
 
 msgid "G-code thumbnails"
 msgstr ""
 
-msgid "Picture sizes to be stored into a .gcode and .sl1 / .sl1s files, in the following format: \"XxY, XxY, ...\""
+msgid ""
+"Picture sizes to be stored into a .gcode and .sl1 / .sl1s files, in the "
+"following format: \"XxY, XxY, ...\""
 msgstr ""
 
 msgid "Use relative E distances"
 msgstr ""
 
 msgid ""
-"Relative extrusion is recommended when using \"label_objects\" option.Some extruders work better with this option unckecked (absolute extrusion mode). Wipe tower is only compatible with relative mode. It is always enabled on "
+"Relative extrusion is recommended when using \"label_objects\" option.Some "
+"extruders work better with this option unckecked (absolute extrusion mode). "
+"Wipe tower is only compatible with relative mode. It is always enabled on "
 "BambuLab printers. Default is checked"
 msgstr ""
 
-msgid "Classic wall generator produces walls with constant extrusion width and for very thin areas is used gap-fill. Arachne engine produces walls with variable extrusion width"
+msgid ""
+"Classic wall generator produces walls with constant extrusion width and for "
+"very thin areas is used gap-fill. Arachne engine produces walls with "
+"variable extrusion width"
 msgstr ""
 
 msgid "Classic"
@@ -7707,58 +8289,77 @@ msgstr ""
 msgid "Wall transition length"
 msgstr ""
 
-msgid "When transitioning between different numbers of walls as the part becomes thinner, a certain amount of space is allotted to split or join the wall segments. It's expressed as a percentage over nozzle diameter"
+msgid ""
+"When transitioning between different numbers of walls as the part becomes "
+"thinner, a certain amount of space is allotted to split or join the wall "
+"segments. It's expressed as a percentage over nozzle diameter"
 msgstr ""
 
 msgid "Wall transitioning filter margin"
 msgstr ""
 
 msgid ""
-"Prevent transitioning back and forth between one extra wall and one less. This margin extends the range of extrusion widths which follow to [Minimum wall width - margin, 2 * Minimum wall width + margin]. Increasing this margin "
-"reduces the number of transitions, which reduces the number of extrusion starts/stops and travel time. However, large extrusion width variation can lead to under- or overextrusion problems. It's expressed as a percentage over "
-"nozzle diameter"
+"Prevent transitioning back and forth between one extra wall and one less. "
+"This margin extends the range of extrusion widths which follow to [Minimum "
+"wall width - margin, 2 * Minimum wall width + margin]. Increasing this "
+"margin reduces the number of transitions, which reduces the number of "
+"extrusion starts/stops and travel time. However, large extrusion width "
+"variation can lead to under- or overextrusion problems. It's expressed as a "
+"percentage over nozzle diameter"
 msgstr ""
 
 msgid "Wall transitioning threshold angle"
 msgstr ""
 
 msgid ""
-"When to create transitions between even and odd numbers of walls. A wedge shape with an angle greater than this setting will not have transitions and no walls will be printed in the center to fill the remaining space. Reducing this "
-"setting reduces the number and length of these center walls, but may leave gaps or overextrude"
+"When to create transitions between even and odd numbers of walls. A wedge "
+"shape with an angle greater than this setting will not have transitions and "
+"no walls will be printed in the center to fill the remaining space. Reducing "
+"this setting reduces the number and length of these center walls, but may "
+"leave gaps or overextrude"
 msgstr ""
 
 msgid "Wall distribution count"
 msgstr ""
 
-msgid "The number of walls, counted from the center, over which the variation needs to be spread. Lower values mean that the outer walls don't change in width"
+msgid ""
+"The number of walls, counted from the center, over which the variation needs "
+"to be spread. Lower values mean that the outer walls don't change in width"
 msgstr ""
 
 msgid "Minimum feature size"
 msgstr ""
 
 msgid ""
-"Minimum thickness of thin features. Model features that are thinner than this value will not be printed, while features thicker than the Minimum feature size will be widened to the Minimum wall width. It's expressed as a percentage "
-"over nozzle diameter"
+"Minimum thickness of thin features. Model features that are thinner than "
+"this value will not be printed, while features thicker than the Minimum "
+"feature size will be widened to the Minimum wall width. It's expressed as a "
+"percentage over nozzle diameter"
 msgstr ""
 
 msgid "Minimum wall width"
 msgstr ""
 
 msgid ""
-"Width of the wall that will replace thin features (according to the Minimum feature size) of the model. If the Minimum wall width is thinner than the thickness of the feature, the wall will become as thick as the feature itself. "
-"It's expressed as a percentage over nozzle diameter"
+"Width of the wall that will replace thin features (according to the Minimum "
+"feature size) of the model. If the Minimum wall width is thinner than the "
+"thickness of the feature, the wall will become as thick as the feature "
+"itself. It's expressed as a percentage over nozzle diameter"
 msgstr ""
 
 msgid "Detect narrow internal solid infill"
 msgstr ""
 
-msgid "This option will auto detect narrow internal solid infill area. If enabled, concentric pattern will be used for the area to speed printing up. Otherwise, rectilinear pattern is used defaultly."
+msgid ""
+"This option will auto detect narrow internal solid infill area. If enabled, "
+"concentric pattern will be used for the area to speed printing up. "
+"Otherwise, rectilinear pattern is used defaultly."
 msgstr ""
 
 msgid "invalid value "
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid " doesn't work at 100%% density "
 msgstr ""
 
@@ -7885,7 +8486,10 @@ msgstr ""
 msgid "Data directory"
 msgstr ""
 
-msgid "Load and store settings at the given directory. This is useful for maintaining different profiles or including configurations from a network storage."
+msgid ""
+"Load and store settings at the given directory. This is useful for "
+"maintaining different profiles or including configurations from a network "
+"storage."
 msgstr ""
 
 msgid "Output directory"
@@ -7897,7 +8501,9 @@ msgstr ""
 msgid "Debug level"
 msgstr ""
 
-msgid "Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:trace\n"
+msgid ""
+"Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+"trace\n"
 msgstr ""
 
 msgid "Error in zip archive"
@@ -7930,8 +8536,10 @@ msgstr ""
 msgid "large overhangs"
 msgstr ""
 
-#, c-format, boost-format
-msgid "It seems object %s has %s. Please re-orient the object or enable support generation."
+#, possible-c-format, possible-boost-format
+msgid ""
+"It seems object %s has %s. Please re-orient the object or enable support "
+"generation."
 msgstr ""
 
 msgid "Optimizing toolpath"
@@ -7946,15 +8554,18 @@ msgstr ""
 msgid "Slicing mesh"
 msgstr ""
 
-msgid "No layers were detected. You might want to repair your STL file(s) or check their size or thickness and retry.\n"
+msgid ""
+"No layers were detected. You might want to repair your STL file(s) or check "
+"their size or thickness and retry.\n"
 msgstr ""
 
 msgid ""
-"An object's XY size compensation will not be used because it is also color-painted.\n"
+"An object's XY size compensation will not be used because it is also color-"
+"painted.\n"
 "XY Size compensation can not be combined with color-painting."
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Support: generate toolpath at layer %d"
 msgstr ""
 
@@ -7973,15 +8584,15 @@ msgstr ""
 msgid "Support: generate toolpath"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Support: generate polygons at layer %d"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Support: fix holes at layer %d"
 msgstr ""
 
-#, c-format, boost-format
+#, possible-c-format, possible-boost-format
 msgid "Support: propagate branches at layer %d"
 msgstr ""
 
@@ -8125,7 +8736,9 @@ msgstr ""
 msgid "Refresh Printers"
 msgstr ""
 
-msgid "HTTPS CA file is optional. It is only needed if you use HTTPS with a self-signed certificate."
+msgid ""
+"HTTPS CA file is optional. It is only needed if you use HTTPS with a self-"
+"signed certificate."
 msgstr ""
 
 msgid "Certificate files (*.crt, *.pem)|*.crt;*.pem|All files|*.*"
@@ -8134,163 +8747,116 @@ msgstr ""
 msgid "Open CA certificate file"
 msgstr ""
 
-#, c-format, boost-format
-msgid "On this system, %s uses HTTPS certificates from the system Certificate Store or Keychain."
+#, possible-c-format, possible-boost-format
+msgid ""
+"On this system, %s uses HTTPS certificates from the system Certificate Store "
+"or Keychain."
 msgstr ""
 
-msgid "To use a custom CA file, please import your CA file into Certificate Store / Keychain."
+msgid ""
+"To use a custom CA file, please import your CA file into Certificate Store / "
+"Keychain."
 msgstr ""
 
 msgid "Connection to printers connected via the print host failed."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
-msgid ""
-"3D Scene Operations\n"
-"Did you know how to control view and object/part selection with mouse and touchpanel in the 3D scene?"
+msgid "3D Scene Operations\nDid you know how to control view and object/part selection with mouse and touchpanel in the 3D scene?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Cut Tool]
-msgid ""
-"Cut Tool\n"
-"Did you know that you can cut a model at any angle and position with the cutting tool?"
+msgid "Cut Tool\nDid you know that you can cut a model at any angle and position with the cutting tool?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Fix Model]
-msgid ""
-"Fix Model\n"
-"Did you know that you can fix a corrupted 3D model to avoid a lot of slicing problems?"
+msgid "Fix Model\nDid you know that you can fix a corrupted 3D model to avoid a lot of slicing problems?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Timelapse]
-msgid ""
-"Timelapse\n"
-"Did you know that you can generate a timelapse video during each print?"
+msgid "Timelapse\nDid you know that you can generate a timelapse video during each print?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Auto-Arrange]
-msgid ""
-"Auto-Arrange\n"
-"Did you know that you can auto-arrange all objects in your project?"
+msgid "Auto-Arrange\nDid you know that you can auto-arrange all objects in your project?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Auto-Orient]
-msgid ""
-"Auto-Orient\n"
-"Did you know that you can rotate objects to an optimal orientation for printing by a simple click?"
+msgid "Auto-Orient\nDid you know that you can rotate objects to an optimal orientation for printing by a simple click?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Lay on Face]
-msgid ""
-"Lay on Face\n"
-"Did you know that you can quickly orient a model so that one of its faces sits on the print bed? Select the \"Place on face\" function or press the <b>F</b> key."
+msgid "Lay on Face\nDid you know that you can quickly orient a model so that one of its faces sits on the print bed? Select the \"Place on face\" function or press the <b>F</b> key."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Object List]
-msgid ""
-"Object List\n"
-"Did you know that you can view all objects/parts in a list and change settings for each object/part?"
+msgid "Object List\nDid you know that you can view all objects/parts in a list and change settings for each object/part?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Simplify Model]
-msgid ""
-"Simplify Model\n"
-"Did you know that you can reduce the number of triangles in a mesh using the Simplify mesh feature? Right-click the model and select Simplify model. Read more in the documentation."
+msgid "Simplify Model\nDid you know that you can reduce the number of triangles in a mesh using the Simplify mesh feature? Right-click the model and select Simplify model. Read more in the documentation."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Slicing Parameter Table]
-msgid ""
-"Slicing Parameter Table\n"
-"Did you know that you can view all objects/parts on a table and change settings for each object/part?"
+msgid "Slicing Parameter Table\nDid you know that you can view all objects/parts on a table and change settings for each object/part?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Split to Objects/Parts]
-msgid ""
-"Split to Objects/Parts\n"
-"Did you know that you can split a big object into small ones for easy colorizing or printing?"
+msgid "Split to Objects/Parts\nDid you know that you can split a big object into small ones for easy colorizing or printing?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Subtract a Part]
-msgid ""
-"Subtract a Part\n"
-"Did you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in GalaxySlicer. Read more in the documentation."
+msgid "Subtract a Part\nDid you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in GalaxySlicer. Read more in the documentation."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:STEP]
-msgid ""
-"STEP\n"
-"Did you know that you can improve your print quality by slicing a STEP file instead of an STL?\n"
-"GalaxySlicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
+msgid "STEP\nDid you know that you can improve your print quality by slicing a STEP file instead of an STL?\nGalaxySlicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Z seam location]
-msgid ""
-"Z seam location\n"
-"Did you know that you can customize the location of the Z seam, and even paint it on your print, to have it in a less visible location? This improves the overall look of your model. Check it out!"
+msgid "Z seam location\nDid you know that you can customize the location of the Z seam, and even paint it on your print, to have it in a less visible location? This improves the overall look of your model. Check it out!"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Fine-tuning for flow rate]
-msgid ""
-"Fine-tuning for flow rate\n"
-"Did you know that flow rate can be fine-tuned for even better-looking prints? Depending on the material, you can improve the overall finish of the printed model by doing some fine-tuning."
+msgid "Fine-tuning for flow rate\nDid you know that flow rate can be fine-tuned for even better-looking prints? Depending on the material, you can improve the overall finish of the printed model by doing some fine-tuning."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Split your prints into plates]
-msgid ""
-"Split your prints into plates\n"
-"Did you know that you can split a model that has a lot of parts into individual plates ready to print? This will simplify the process of keeping track of all the parts."
+msgid "Split your prints into plates\nDid you know that you can split a model that has a lot of parts into individual plates ready to print? This will simplify the process of keeping track of all the parts."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Speed up your print with Adaptive Layer Height]
-msgid ""
-"Speed up your print with Adaptive Layer Height\n"
-"Did you know that you can print a model even faster, by using the Adaptive Layer Height option? Check it out!"
+msgid "Speed up your print with Adaptive Layer Height\nDid you know that you can print a model even faster, by using the Adaptive Layer Height option? Check it out!"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Support painting]
-msgid ""
-"Support painting\n"
-"Did you know that you can paint the location of your supports? This feature makes it easy to place the support material only on the sections of the model that actually need it."
+msgid "Support painting\nDid you know that you can paint the location of your supports? This feature makes it easy to place the support material only on the sections of the model that actually need it."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Different types of supports]
-msgid ""
-"Different types of supports\n"
-"Did you know that you can choose from multiple types of supports? Tree supports work great for organic models, while saving filament and improving print speed. Check them out!"
+msgid "Different types of supports\nDid you know that you can choose from multiple types of supports? Tree supports work great for organic models, while saving filament and improving print speed. Check them out!"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Printing Silk Filament]
-msgid ""
-"Printing Silk Filament\n"
-"Did you know that Silk filament needs special consideration to print it successfully? Higher temperature and lower speed are always recommended for the best results."
+msgid "Printing Silk Filament\nDid you know that Silk filament needs special consideration to print it successfully? Higher temperature and lower speed are always recommended for the best results."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Brim for better adhesion]
-msgid ""
-"Brim for better adhesion\n"
-"Did you know that when printing models have a small contact interface with the printing surface, it's recommended to use a brim?"
+msgid "Brim for better adhesion\nDid you know that when printing models have a small contact interface with the printing surface, it's recommended to use a brim?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Set parameters for multiple objects]
-msgid ""
-"Set parameters for multiple objects\n"
-"Did you know that you can set slicing parameters for all selected objects at one time?"
+msgid "Set parameters for multiple objects\nDid you know that you can set slicing parameters for all selected objects at one time?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Stack objects]
-msgid ""
-"Stack objects\n"
-"Did you know that you can stack objects as a whole one?"
+msgid "Stack objects\nDid you know that you can stack objects as a whole one?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Flush into support/objects/infill]
-msgid ""
-"Flush into support/objects/infill\n"
-"Did you know that you can save the wasted filament by flushing them into support/objects/infill during filament change?"
+msgid "Flush into support/objects/infill\nDid you know that you can save the wasted filament by flushing them into support/objects/infill during filament change?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Improve strength]
-msgid ""
-"Improve strength\n"
-"Did you know that you can use more wall loops and higher sparse infill density to improve the strength of the model?"
+msgid "Improve strength\nDid you know that you can use more wall loops and higher sparse infill density to improve the strength of the model?"
 msgstr ""
