@@ -20,6 +20,7 @@ In the GalaxySlicer wiki, How to contributions are maintained, these articles sh
 
 The following How to articles can be found in the Wiki:
 
+* **[Translation guide](https://github.com/fr3ak2402/GalaxySlicer/wiki/Translation-guide)**
 * **[Compile GalaxySlicer](https://github.com/fr3ak2402/GalaxySlicer/wiki/Compile-GalaxySlicer)**
 
 # License
