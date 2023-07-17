@@ -10,6 +10,18 @@ GalaxySlicer is based on **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer
 - Marlin2 support (Coming soon)
 - Klipper support
 
+# Pre-compiled releases
+Currently, only Windows releases are precompiled.
+
+All compile releases can be found at the following link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
+
+# How to Wiki articles
+In the GalaxySlicer wiki, How to contributions are maintained, these articles show the required steps. 
+
+The following How to articles can be found in the Wiki:
+
+* **[Compile GalaxySlicer](https://github.com/fr3ak2402/GalaxySlicer/wiki/Compile-GalaxySlicer)**
+
 # License
 GalaxySlicer is licensed under the GNU Affero General Public License, version 3. GalaxySlicer is based on Orca Slicer by SoftFever.
 
