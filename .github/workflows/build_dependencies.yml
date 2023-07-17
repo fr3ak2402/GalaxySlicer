@@ -19,10 +19,10 @@ jobs:
       matrix:
         include:
           - os: windows-2022
-          - os: macos-13
-            arch: x86_64
-          - os: macos-13
-            arch: arm64
+          #- os: macos-13
+          #  arch: x86_64
+          #- os: macos-13
+          #  arch: arm64
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -41,28 +41,34 @@ jobs:
             mkdir ${{ github.workspace }}/deps/build
             mkdir ${{ github.workspace }}/deps/build/GalaxySlicer_dep
             .\build_release_vs2022.bat deps
-            
-      - name: Upload artifacts
+      
+      - name: Pack Windows dependencies
+        if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
+        run: '"C:/Program Files/7-Zip/7z.exe" a -tzip GalaxySlicer_dep.zip ${{ github.workspace }}/deps/build/GalaxySlicer_dep'
+        
+      - name: Upload Windows dependencies
         if: matrix.os == 'windows-2022'
         uses: actions/upload-artifact@v3
         with:
           name: GalaxySlicer_dep
-          path: ${{ github.workspace }}/deps/build/GalaxySlicer_dep
+          path: ${{ github.workspace }}/deps/build/GalaxySlicer_dep.zip
 
-      - name: Build on Mac x86_64
-        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
-        working-directory: ${{ github.workspace }}
-        run: |
-            brew install cmake git gettext
-            mkdir -p ${{ github.workspace }}/deps/build_x86_64
-            mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
-            ./build_release_macos.sh -d -a x86_64
+      #- name: Build on Mac x86_64
+      #  if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
+      #  working-directory: ${{ github.workspace }}
+      #  run: |
+      #      brew install cmake git gettext
+      #      mkdir -p ${{ github.workspace }}/deps/build_x86_64
+      #      mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
+      #      ./build_release_macos.sh -d -a x86_64
 
-      - name: Build on Mac arm64
-        if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
-        working-directory: ${{ github.workspace }}
-        run: |
-            brew install cmake git gettext
-            mkdir -p ${{ github.workspace }}/deps/build_arm64
-            mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-            ./build_release_macos.sh -d -a arm64
+      #- name: Build on Mac arm64
+      #  if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
+      #  working-directory: ${{ github.workspace }}
+      #  run: |
+      #      brew install cmake git gettext
+      #      mkdir -p ${{ github.workspace }}/deps/build_arm64
+      #      mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
+      #     ./build_release_macos.sh -d -a arm64
