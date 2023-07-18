@@ -1,0 +1,55 @@
+name: Build Win x64
+
+on: 
+    push:
+      branches: 
+       - main
+      paths:
+       - 'src/**'
+       - '**/CMakeLists.txt'
+       - 'version.inc'
+       - 'bbl/**'
+       - 'resources/**'
+
+    pull_request:
+      branches: 
+       - main 
+      paths:
+       - 'src/**'
+       - '**/CMakeLists.txt'
+       - 'version.inc'
+       - 'bbl/**'
+       - 'resources/**'
+
+jobs:
+  build_win64:
+    name: Build Win x64
+    runs-on: windows-2022
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ilammy/msvc-dev-cmd@v1
+      - name: Install perl
+        run: |
+          choco install strawberryperl
+      - run: mkdir ${{ github.workspace }}/deps/build
+      - run: mkdir ${{ github.workspace }}/deps/build/GalaxySlicer_dep
+      - name: download GalaxySlicer deps
+        shell: powershell
+        run: '(new-object System.Net.WebClient).DownloadFile("https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/July_23/GalaxySlicer_dep_Win_x64_18-07-23.zip", "$env:temp\GalaxySlicer_dep_Win_x64_18-07-23.zip")'
+      - name: extract deps
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
+        run: '"C:/Program Files/7-Zip/7z.exe" x %temp%\GalaxySlicer_dep_Win_x64_18-07-23.zip'
+
+      - run: dir "${{ github.workspace }}\deps\build\GalaxySlicerSlicer_dep"
+      
+      - name: Build GalaxySlicer
+        working-directory: ${{ github.workspace }}
+        run: .\build_release_vs2022.bat studio
+
+      - name: Upload GalaxySlicer
+        uses: actions/upload-artifact@v3
+        with:
+          name: GalaxySlicer_Win_x64_nightly
+          path: ${{ github.workspace }}/build/GalaxySlicer
