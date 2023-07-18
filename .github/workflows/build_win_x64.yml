@@ -42,7 +42,7 @@ jobs:
         shell: cmd
         run: '"C:/Program Files/7-Zip/7z.exe" x %temp%\GalaxySlicer_dep_Win_x64_18-07-23.zip'
 
-      - run: dir "${{ github.workspace }}\deps\build\GalaxySlicerSlicer_dep"
+      - run: dir "${{ github.workspace }}\deps\build\GalaxySlicer_dep"
       
       - name: Build GalaxySlicer
         working-directory: ${{ github.workspace }}
