@@ -1,0 +1,21 @@
+{
+    "type": "filament",
+    "filament_id": "GFL99",
+    "setting_id": "GFSA04",
+    "name": "Anker Generic PLA @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Anker Generic PLA @base",
+    "filament_flow_ratio": [
+        "0.98"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "compatible_printers": [
+	  "Anker M5 (0.8 nozzle)"
+    ]
+}

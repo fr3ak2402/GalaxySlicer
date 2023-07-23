@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "Qidi X-Max 3",
     "model_id": "Qidi-XMax-3",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "Qidi",
     "bed_model": "qidi_xmax3_buildplate_model.stl",
     "bed_texture": "qidi_xmax3_buildplate_texture.png",
     "hotend_model": "qidi_xseries_gen3_hotend.stl",
-	"default_materials": "Qidi Generic ASA;Qidi Generic ABS;Qidi Generic PA-CF;Qidi Generic PA;Qidi Generic PC;Qidi Generic PETG-CF;Qidi Generic PETG;Qidi Generic PLA Silk;Qidi Generic PLA;Qidi Generic PLA-CF;Qidi Generic PVA;Qidi Generic TPU"
+	"default_materials": "Qidi Generic ASA @0.2 nozzle;Qidi Generic ABS @0.2 nozzle;Qidi Generic PA-CF @0.2 nozzle;Qidi Generic PA @0.2 nozzle;Qidi Generic PC @0.2 nozzle;Qidi Generic PETG-CF @0.2 nozzle;Qidi Generic PETG @0.2 nozzle;Qidi Generic PLA Silk @0.2 nozzle;Qidi Generic PLA @0.2 nozzle;Qidi Generic PLA-CF @0.2 nozzle;Qidi Generic PVA @0.2 nozzle;Qidi Generic TPU @0.2 nozzle;Qidi Generic ASA @0.4 nozzle;Qidi Generic ABS @0.4 nozzle;Qidi Generic PA-CF @0.4 nozzle;Qidi Generic PA @0.4 nozzle;Qidi Generic PC @0.4 nozzle;Qidi Generic PETG-CF @0.4 nozzle;Qidi Generic PETG @0.4 nozzle;Qidi Generic PLA Silk @0.4 nozzle;Qidi Generic PLA @0.4 nozzle;Qidi Generic PLA-CF @0.4 nozzle;Qidi Generic PVA @0.4 nozzle;Qidi Generic TPU @0.4 nozzle;Qidi Generic ASA @0.6 nozzle;Qidi Generic ABS @0.6 nozzle;Qidi Generic PA-CF @0.6 nozzle;Qidi Generic PA @0.6 nozzle;Qidi Generic PC @0.6 nozzle;Qidi Generic PETG-CF @0.6 nozzle;Qidi Generic PETG @0.6 nozzle;Qidi Generic PLA Silk @0.6 nozzle;Qidi Generic PLA @0.6 nozzle;Qidi Generic PLA-CF @0.6 nozzle;Qidi Generic PVA @0.6 nozzle;Qidi Generic TPU @0.6 nozzle;Qidi Generic ASA @0.8 nozzle;Qidi Generic ABS @0.8 nozzle;Qidi Generic PA-CF @0.8 nozzle;Qidi Generic PA @0.8 nozzle;Qidi Generic PC @0.8 nozzle;Qidi Generic PETG-CF @0.8 nozzle;Qidi Generic PETG @0.8 nozzle;Qidi Generic PLA Silk @0.8 nozzle;Qidi Generic PLA @0.8 nozzle;Qidi Generic PLA-CF @0.8 nozzle;Qidi Generic PVA @0.8 nozzle;Qidi Generic TPU @0.8 nozzle"
 }

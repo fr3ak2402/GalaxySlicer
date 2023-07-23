@@ -7,7 +7,7 @@
   "inherits": "fdm_creality_common",
   "printer_model": "Creality Ender-3 V2",
   "default_filament_profile": [
-    "Creality Generic PLA"
+    "Creality Generic PLA @0.6 nozzle"
   ],
   "default_print_profile": "0.20mm Standard @Creality Ender3V2 (0.6 nozzle)",
   "nozzle_diameter": [

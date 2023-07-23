@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFC99",
+    "setting_id": "GFSC99_00",
+    "name": "Tronxy Generic PC @0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Tronxy Generic PC @base",
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "filament_flow_ratio": [
+        "0.94"
+    ],
+    "compatible_printers": [
+	  "Tronxy X5SA 400 (Marlin) (0.6 nozzle)"
+    ]
+}

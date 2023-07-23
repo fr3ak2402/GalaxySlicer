@@ -1,0 +1,25 @@
+{
+    "type": "filament",
+    "filament_id": "GFN98",
+    "setting_id": "GFSA04",
+    "name": "Vzbot Generic PA-CF @0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Vzbot Generic PA-CF @base",
+    "filament_type": [
+        "PA-CF"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "280"
+    ],
+    "nozzle_temperature": [
+        "280"
+    ],
+    "filament_max_volumetric_speed": [
+        "50"
+    ],
+    "compatible_printers": [
+      "Vzbot 235 AWD (0.2 nozzle)",
+	  "Vzbot 330 AWD (0.2 nozzle)"
+    ]
+}

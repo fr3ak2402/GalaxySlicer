@@ -1,0 +1,24 @@
+{
+    "type": "filament",
+    "filament_id": "GFN98",
+    "setting_id": "GFSN98",
+    "name": "Tronxy Generic PA-CF @0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Tronxy Generic PA-CF @base",
+    "filament_type": [
+        "PA-CF"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "280"
+    ],
+    "nozzle_temperature": [
+        "280"
+    ],
+    "filament_max_volumetric_speed": [
+        "8"
+    ],
+    "compatible_printers": [
+	  "Tronxy X5SA 400 (Marlin) (0.2 nozzle)"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "filament",
+    "filament_id": "GFN99",
+    "setting_id": "GFSN98",
+    "name": "BIQU Generic PA @base",
+    "from": "system",
+    "instantiation": "false",
+    "inherits": "fdm_filament_pa",
+    "required_nozzle_HRC": [
+      "3"
+    ],
+    "nozzle_temperature_initial_layer": [
+      "280"
+    ],
+    "nozzle_temperature": [
+      "280"
+    ],
+    "filament_max_volumetric_speed": [
+      "16"
+    ]
+}

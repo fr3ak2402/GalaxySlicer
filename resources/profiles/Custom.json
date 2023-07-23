@@ -433,44 +433,244 @@
             "sub_path": "filament/fdm_filament_pa.json"
         },
         {
-            "name": "My Generic PLA",
-            "sub_path": "filament/My Generic PLA.json"
+            "name": "My Generic PLA @base",
+            "sub_path": "filament/My Generic PLA @base.json"
         },
         {
-            "name": "My Generic PLA-CF",
-            "sub_path": "filament/My Generic PLA-CF.json"
+            "name": "My Generic PLA @0.2 nozzle",
+            "sub_path": "filament/My Generic PLA @0.2 nozzle.json"
         },
         {
-            "name": "My Generic PETG",
-            "sub_path": "filament/My Generic PETG.json"
+            "name": "My Generic PLA @0.4 nozzle",
+            "sub_path": "filament/My Generic PLA @0.4 nozzle.json"
         },
         {
-            "name": "My Generic ABS",
-            "sub_path": "filament/My Generic ABS.json"
+            "name": "My Generic PLA @0.5 nozzle",
+            "sub_path": "filament/My Generic PLA @0.5 nozzle.json"
         },
         {
-            "name": "My Generic TPU",
-            "sub_path": "filament/My Generic TPU.json"
+            "name": "My Generic PLA @0.6 nozzle",
+            "sub_path": "filament/My Generic PLA @0.6 nozzle.json"
         },
         {
-            "name": "My Generic ASA",
-            "sub_path": "filament/My Generic ASA.json"
+            "name": "My Generic PLA @0.8 nozzle",
+            "sub_path": "filament/My Generic PLA @0.8 nozzle.json"
         },
         {
-            "name": "My Generic PC",
-            "sub_path": "filament/My Generic PC.json"
+            "name": "My Generic PLA-CF @base",
+            "sub_path": "filament/My Generic PLA-CF @base.json"
         },
         {
-            "name": "My Generic PVA",
-            "sub_path": "filament/My Generic PVA.json"
+            "name": "My Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.2 nozzle.json"
         },
         {
-            "name": "My Generic PA",
-            "sub_path": "filament/My Generic PA.json"
+            "name": "My Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.4 nozzle.json"
         },
         {
-            "name": "My Generic PA-CF",
-            "sub_path": "filament/My Generic PA-CF.json"
+            "name": "My Generic PLA-CF @0.5 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @base",
+            "sub_path": "filament/My Generic PETG @base.json"
+        },
+        {
+            "name": "My Generic PETG @0.2 nozzle",
+            "sub_path": "filament/My Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.4 nozzle",
+            "sub_path": "filament/My Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.5 nozzle",
+            "sub_path": "filament/My Generic PETG @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.6 nozzle",
+            "sub_path": "filament/My Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.8 nozzle",
+            "sub_path": "filament/My Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @base",
+            "sub_path": "filament/My Generic ABS @base.json"
+        },
+        {
+            "name": "My Generic ABS @0.2 nozzle",
+            "sub_path": "filament/My Generic ABS @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.4 nozzle",
+            "sub_path": "filament/My Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.5 nozzle",
+            "sub_path": "filament/My Generic ABS @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.6 nozzle",
+            "sub_path": "filament/My Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.8 nozzle",
+            "sub_path": "filament/My Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @base",
+            "sub_path": "filament/My Generic TPU @base.json"
+        },
+        {
+            "name": "My Generic TPU @0.2 nozzle",
+            "sub_path": "filament/My Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.4 nozzle",
+            "sub_path": "filament/My Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.5 nozzle",
+            "sub_path": "filament/My Generic TPU @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.6 nozzle",
+            "sub_path": "filament/My Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.8 nozzle",
+            "sub_path": "filament/My Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @base",
+            "sub_path": "filament/My Generic ASA @base.json"
+        },
+        {
+            "name": "My Generic ASA @0.2 nozzle",
+            "sub_path": "filament/My Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.4 nozzle",
+            "sub_path": "filament/My Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.5 nozzle",
+            "sub_path": "filament/My Generic ASA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.6 nozzle",
+            "sub_path": "filament/My Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.8 nozzle",
+            "sub_path": "filament/My Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @base",
+            "sub_path": "filament/My Generic PC @base.json"
+        },
+        {
+            "name": "My Generic PC @0.2 nozzle",
+            "sub_path": "filament/My Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.4 nozzle",
+            "sub_path": "filament/My Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.5 nozzle",
+            "sub_path": "filament/My Generic PC @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.6 nozzle",
+            "sub_path": "filament/My Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.8 nozzle",
+            "sub_path": "filament/My Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @base",
+            "sub_path": "filament/My Generic PVA @base.json"
+        },
+        {
+            "name": "My Generic PVA @0.2 nozzle",
+            "sub_path": "filament/My Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.4 nozzle",
+            "sub_path": "filament/My Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.5 nozzle",
+            "sub_path": "filament/My Generic PVA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.6 nozzle",
+            "sub_path": "filament/My Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.8 nozzle",
+            "sub_path": "filament/My Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @base",
+            "sub_path": "filament/My Generic PA @base.json"
+        },
+        {
+            "name": "My Generic PA @0.2 nozzle",
+            "sub_path": "filament/My Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.4 nozzle",
+            "sub_path": "filament/My Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.5 nozzle",
+            "sub_path": "filament/My Generic PA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.6 nozzle",
+            "sub_path": "filament/My Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.8 nozzle",
+            "sub_path": "filament/My Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @base",
+            "sub_path": "filament/My Generic PA-CF @base.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.5 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.8 nozzle.json"
         }
     ],
     "machine_list": [

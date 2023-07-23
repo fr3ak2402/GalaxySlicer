@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFB98",
+    "setting_id": "GFSB98_00",
+    "name": "TwoTrees Generic ASA @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TwoTrees Generic ASA @base",
+    "filament_flow_ratio": [
+        "0.93"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "compatible_printers": [
+	  "TwoTrees SP-5 (Klipper) (0.8 nozzle)"
+    ]
+}

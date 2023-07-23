@@ -1,0 +1,27 @@
+{
+    "type": "filament",
+    "filament_id": "GFL99",
+    "setting_id": "GFSA04",
+    "name": "Anycubic Generic PLA @0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Anycubic Generic PLA @base",
+    "filament_flow_ratio": [
+        "0.98"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "compatible_printers": [
+		"Anycubic i3 Mega S (0.6 nozzle)",
+		"Anycubic Chiron (0.6 nozzle)",
+		"Anycubic Vyper (0.6 nozzle)",
+		"Anycubic Kobra Plus (0.6 nozzle)",
+		"Anycubic Kobra Max (0.6 nozzle)",
+		"Anycubic 4Max Pro (0.6 nozzle)",
+		"Anycubic 4Max Pro 2 (0.6 nozzle)"
+    ]
+}
