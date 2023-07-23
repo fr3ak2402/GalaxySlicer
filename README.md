@@ -10,8 +10,12 @@ GalaxySlicer is based on **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer
 - Marlin2 support (Coming soon)
 - Klipper support
 
+# Supported printers
+
+The following printers are currently supported by GalaxySlicer: **[Printer list](https://github.com/fr3ak2402/GalaxySlicer-Profile-Library/wiki/Supported-printers)**
+
 # Pre-compiled releases
-Currently, only Windows releases are precompiled.
+Currently, only Windows, macOS x64 & arm64 releases are precompiled.
 
 All compile releases can be found at the following link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
 
