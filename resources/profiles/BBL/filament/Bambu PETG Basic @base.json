@@ -12,7 +12,7 @@
         "90"
     ],
     "overhang_fan_threshold": [
-        "10%"
+        "25%"
     ],
     "fan_max_speed": [
         "40"
