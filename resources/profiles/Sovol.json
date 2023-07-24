@@ -292,20 +292,36 @@
             "sub_path": "machine/Sovol SV01 Pro (0.8 nozzle).json"
         },
 		{
-            "name": "Sovol SV02 (0.2 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.2 nozzle).json"
+            "name": "Sovol SV02 (0.2 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.2 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.4 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.4 nozzle).json"
+            "name": "Sovol SV02 (0.4 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.4 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.6 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.6 nozzle).json"
+            "name": "Sovol SV02 (0.6 nozzle)(Dual)",
+            "sub_path": "machine/Sovol SV02 (0.6 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.8 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.8 nozzle).json"
+            "name": "Sovol SV02 (0.8 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.8 nozzle) (Dual).json"
+        },
+		{
+            "name": "Sovol SV02 (0.2 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.2 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.4 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.4 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.6 nozzle)(Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.6 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.8 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.8 nozzle) (Mixer).json"
         },
         {
             "name": "Sovol SV05 (0.2 nozzle)",

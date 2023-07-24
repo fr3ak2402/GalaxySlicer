@@ -104,6 +104,7 @@
 	"xy_hole_compensation": "0",
 	"xy_contour_compensation": "0",
 	"compatible_printers": [
-		"Sovol SV02 (0.4 nozzle)"
+		"Sovol SV02 (0.4 nozzle) (Dual)",
+		"Sovol SV02 (0.4 nozzle) (Mixer)"
 	]
 }
