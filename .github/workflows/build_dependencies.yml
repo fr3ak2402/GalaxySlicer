@@ -66,6 +66,12 @@ jobs:
       #      mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
       #      ./build_release_macos.sh -d -a x86_64
       
+      #- name: Upload macOS x86_64 dependencies
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: GalaxySlicer_dep_x86_64
+      #    path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_x86_64
+      
       - name: Build on Mac arm64
         if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
         working-directory: ${{ github.workspace }}
