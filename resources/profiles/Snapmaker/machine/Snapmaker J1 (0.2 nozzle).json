@@ -1,6 +1,6 @@
 {
     "type": "machine",
-    "setting_id": "GM010",
+    "setting_id": "GM009",
     "name": "Snapmaker J1 (0.2 nozzle)",
     "from": "system",
     "instantiation": "true",
