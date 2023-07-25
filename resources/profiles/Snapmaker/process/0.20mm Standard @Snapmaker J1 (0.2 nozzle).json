@@ -42,9 +42,8 @@
   "overhang_2_4_speed": "30",
   "overhang_3_4_speed": "20",
   "post_process": [
-      ";~/smfix-darwin-arm64",
-      "\n~/sm2uploader -fix -host J1X2",
-      "\n"
+    "~/sm2uploader -fix -host J1X2",
+    "\n"
   ],
   "precise_outer_wall": "1",
   "prime_tower_brim_width": "1",
