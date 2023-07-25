@@ -42,8 +42,8 @@
   "overhang_2_4_speed": "30",
   "overhang_3_4_speed": "20",
   "post_process": [
-      "/Users/hliebscher/smfix_bs-darwin-arm64",
-      "\n/Users/hliebscher/j1x2",
+      ";~/smfix-darwin-arm64",
+      "\n~/sm2uploader -fix -host J1X2",
       "\n"
   ],
   "precise_outer_wall": "1",
