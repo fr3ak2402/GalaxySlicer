@@ -23,7 +23,7 @@ jobs:
           - os: windows-2022
           #- os: macos-13
           #  arch: x86_64
-          - os: macos-13
+          - os: macos-12
             arch: arm64
     runs-on: ${{ matrix.os }}
 
@@ -73,7 +73,7 @@ jobs:
       #    path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_x86_64
       
       - name: Build on Mac arm64
-        if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
+        if: matrix.os == 'macos-12' && matrix.arch == 'arm64'
         working-directory: ${{ github.workspace }}
         run: |
             brew install cmake git gettext
