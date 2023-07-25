@@ -56,18 +56,6 @@
             "sub_path": "process/0.25mm Draft @Raise3D E2 (0.4 nozzle).json"
         },
 		{
-            "name": "0.10mm Fine @Raise3D E2 (0.5 nozzle)",
-            "sub_path": "process/0.10mm Fine @Raise3D E2 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Raise3D E2 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Raise3D E2 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.25mm Draft @Raise3D E2 (0.5 nozzle)",
-            "sub_path": "process/0.25mm Draft @Raise3D E2 (0.5 nozzle).json"
-        },
-		{
             "name": "0.10mm Fine @Raise3D E2 (0.6 nozzle)",
             "sub_path": "process/0.10mm Fine @Raise3D E2 (0.6 nozzle).json"
         },
@@ -138,30 +126,6 @@
         {
             "name": "0.25mm Draft @Raise3D Pro2Plus (0.4 nozzle)",
             "sub_path": "process/0.25mm Draft @Raise3D Pro2Plus (0.4 nozzle).json"
-        },
-        {
-            "name": "0.10mm Fine @Raise3D Pro2 (0.5 nozzle)",
-            "sub_path": "process/0.10mm Fine @Raise3D Pro2 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.10mm Fine @Raise3D Pro2Plus (0.5 nozzle)",
-            "sub_path": "process/0.10mm Fine @Raise3D Pro2Plus (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Raise3D Pro2 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Raise3D Pro2 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Raise3D Pro2Plus (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Raise3D Pro2Plus (0.5 nozzle).json"
-        },
-        {
-            "name": "0.25mm Draft @Raise3D Pro2 (0.5 nozzle)",
-            "sub_path": "process/0.25mm Draft @Raise3D Pro2 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.25mm Draft @Raise3D Pro2Plus (0.5 nozzle)",
-            "sub_path": "process/0.25mm Draft @Raise3D Pro2Plus (0.5 nozzle).json"
         },
         {
             "name": "0.10mm Fine @Raise3D Pro2 (0.6 nozzle)",
@@ -260,30 +224,6 @@
             "sub_path": "process/0.25mm Draft @Raise3D Pro3Plus (0.4 nozzle).json"
         },
         {
-            "name": "0.10mm Fine @Raise3D Pro3 (0.5 nozzle)",
-            "sub_path": "process/0.10mm Fine @Raise3D Pro3 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.10mm Fine @Raise3D Pro3Plus (0.5 nozzle)",
-            "sub_path": "process/0.10mm Fine @Raise3D Pro3Plus (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Raise3D Pro3 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Raise3D Pro3 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Raise3D Pro3Plus (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Raise3D Pro3Plus (0.5 nozzle).json"
-        },
-        {
-            "name": "0.25mm Draft @Raise3D Pro3 (0.5 nozzle)",
-            "sub_path": "process/0.25mm Draft @Raise3D Pro3 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.25mm Draft @Raise3D Pro3Plus (0.5 nozzle)",
-            "sub_path": "process/0.25mm Draft @Raise3D Pro3Plus (0.5 nozzle).json"
-        },
-        {
             "name": "0.10mm Fine @Raise3D Pro3 (0.6 nozzle)",
             "sub_path": "process/0.10mm Fine @Raise3D Pro3 (0.6 nozzle).json"
         },
@@ -358,24 +298,104 @@
             "sub_path": "filament/fdm_filament_tpu.json"
         },
         {
-            "name": "Raise3D Generic ASA",
-            "sub_path": "filament/Raise3D Generic ASA.json"
+            "name": "Raise3D Generic ASA @base",
+            "sub_path": "filament/Raise3D Generic ASA @base.json"
         },
         {
-            "name": "Raise3D Generic PETG",
-            "sub_path": "filament/Raise3D Generic PETG.json"
+            "name": "Raise3D Generic ASA @0.2 nozzle",
+            "sub_path": "filament/Raise3D Generic ASA @0.2 nozzle.json"
         },
         {
-            "name": "Raise3D Generic PLA",
-            "sub_path": "filament/Raise3D Generic PLA.json"
+            "name": "Raise3D Generic ASA @0.4 nozzle",
+            "sub_path": "filament/Raise3D Generic ASA @0.4 nozzle.json"
         },
         {
-            "name": "Raise3D Generic PVA",
-            "sub_path": "filament/Raise3D Generic PVA.json"
+            "name": "Raise3D Generic ASA @0.6 nozzle",
+            "sub_path": "filament/Raise3D Generic ASA @0.6 nozzle.json"
         },
         {
-            "name": "Raise3D Generic TPU",
-            "sub_path": "filament/Raise3D Generic TPU.json"
+            "name": "Raise3D Generic ASA @0.8 nozzle",
+            "sub_path": "filament/Raise3D Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PETG @base",
+            "sub_path": "filament/Raise3D Generic PETG @base.json"
+        },
+        {
+            "name": "Raise3D Generic PETG @0.2 nozzle",
+            "sub_path": "filament/Raise3D Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PETG @0.4 nozzle",
+            "sub_path": "filament/Raise3D Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PETG @0.6 nozzle",
+            "sub_path": "filament/Raise3D Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PETG @0.8 nozzle",
+            "sub_path": "filament/Raise3D Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PLA @base",
+            "sub_path": "filament/Raise3D Generic PLA @base.json"
+        },
+        {
+            "name": "Raise3D Generic PLA @0.2 nozzle",
+            "sub_path": "filament/Raise3D Generic PLA @0.2 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PLA @0.4 nozzle",
+            "sub_path": "filament/Raise3D Generic PLA @0.4 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PLA @0.6 nozzle",
+            "sub_path": "filament/Raise3D Generic PLA @0.6 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PLA @0.8 nozzle",
+            "sub_path": "filament/Raise3D Generic PLA @0.8 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PVA @base",
+            "sub_path": "filament/Raise3D Generic PVA @base.json"
+        },
+        {
+            "name": "Raise3D Generic PVA @0.2 nozzle",
+            "sub_path": "filament/Raise3D Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PVA @0.4 nozzle",
+            "sub_path": "filament/Raise3D Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PVA @0.6 nozzle",
+            "sub_path": "filament/Raise3D Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic PVA @0.8 nozzle",
+            "sub_path": "filament/Raise3D Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic TPU @base",
+            "sub_path": "filament/Raise3D Generic TPU @base.json"
+        },
+        {
+            "name": "Raise3D Generic TPU @0.2 nozzle",
+            "sub_path": "filament/Raise3D Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic TPU @0.4 nozzle",
+            "sub_path": "filament/Raise3D Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic TPU @0.6 nozzle",
+            "sub_path": "filament/Raise3D Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "Raise3D Generic TPU @0.8 nozzle",
+            "sub_path": "filament/Raise3D Generic TPU @0.8 nozzle.json"
         }
     ],
     "machine_list": [
@@ -390,10 +410,6 @@
         {
             "name": "Raise3D E2 (0.4 nozzle) (Dual)",
             "sub_path": "machine/Raise3D E2 (0.4 nozzle) (Dual).json"
-        },
-        {
-            "name": "Raise3D E2 (0.5 nozzle) (Dual)",
-            "sub_path": "machine/Raise3D E2 (0.5 nozzle) (Dual).json"
         },
         {
             "name": "Raise3D E2 (0.6 nozzle) (Dual)",
@@ -412,10 +428,6 @@
             "sub_path": "machine/Raise3D Pro2 (0.4 nozzle) (Dual).json"
         },
         {
-            "name": "Raise3D Pro2 (0.5 nozzle) (Dual)",
-            "sub_path": "machine/Raise3D Pro2 (0.5 nozzle) (Dual).json"
-        },
-        {
             "name": "Raise3D Pro2 (0.6 nozzle) (Dual)",
             "sub_path": "machine/Raise3D Pro2 (0.6 nozzle) (Dual).json"
         },
@@ -430,10 +442,6 @@
         {
             "name": "Raise3D Pro2 (0.4 nozzle) (Left)",
             "sub_path": "machine/Raise3D Pro2 (0.4 nozzle) (Left).json"
-        },
-        {
-            "name": "Raise3D Pro2 (0.5 nozzle) (Left)",
-            "sub_path": "machine/Raise3D Pro2 (0.5 nozzle) (Left).json"
         },
         {
             "name": "Raise3D Pro2 (0.6 nozzle) (Left)",
@@ -452,10 +460,6 @@
             "sub_path": "machine/Raise3D Pro2 (0.4 nozzle) (Right).json"
         },
         {
-            "name": "Raise3D Pro2 (0.5 nozzle) (Right)",
-            "sub_path": "machine/Raise3D Pro2 (0.5 nozzle) (Right).json"
-        },
-        {
             "name": "Raise3D Pro2 (0.6 nozzle) (Right)",
             "sub_path": "machine/Raise3D Pro2 (0.6 nozzle) (Right).json"
         },
@@ -470,10 +474,6 @@
         {
             "name": "Raise3D Pro2 Plus (0.4 nozzle) (Dual)",
             "sub_path": "machine/Raise3D Pro2 Plus (0.4 nozzle) (Dual).json"
-        },
-        {
-            "name": "Raise3D Pro2 Plus (0.5 nozzle) (Dual)",
-            "sub_path": "machine/Raise3D Pro2 Plus (0.5 nozzle) (Dual).json"
         },
         {
             "name": "Raise3D Pro2 Plus (0.6 nozzle) (Dual)",
@@ -492,10 +492,6 @@
             "sub_path": "machine/Raise3D Pro2 Plus (0.4 nozzle) (Left).json"
         },
         {
-            "name": "Raise3D Pro2 Plus (0.5 nozzle) (Left)",
-            "sub_path": "machine/Raise3D Pro2 Plus (0.5 nozzle) (Left).json"
-        },
-        {
             "name": "Raise3D Pro2 Plus (0.6 nozzle) (Left)",
             "sub_path": "machine/Raise3D Pro2 Plus (0.6 nozzle) (Left).json"
         },
@@ -510,10 +506,6 @@
         {
             "name": "Raise3D Pro2 Plus (0.4 nozzle) (Right)",
             "sub_path": "machine/Raise3D Pro2 Plus (0.4 nozzle) (Right).json"
-        },
-        {
-            "name": "Raise3D Pro2 Plus (0.5 nozzle) (Right)",
-            "sub_path": "machine/Raise3D Pro2 Plus (0.5 nozzle) (Right).json"
         },
         {
             "name": "Raise3D Pro2 Plus (0.6 nozzle) (Right)",
@@ -532,10 +524,6 @@
             "sub_path": "machine/Raise3D Pro3 (0.4 nozzle) (Dual).json"
         },
         {
-            "name": "Raise3D Pro3 (0.5 nozzle) (Dual)",
-            "sub_path": "machine/Raise3D Pro3 (0.5 nozzle) (Dual).json"
-        },
-        {
             "name": "Raise3D Pro3 (0.6 nozzle) (Dual)",
             "sub_path": "machine/Raise3D Pro3 (0.6 nozzle) (Dual).json"
         },
@@ -550,10 +538,6 @@
         {
             "name": "Raise3D Pro3 (0.4 nozzle) (Left)",
             "sub_path": "machine/Raise3D Pro3 (0.4 nozzle) (Left).json"
-        },
-        {
-            "name": "Raise3D Pro3 (0.5 nozzle) (Left)",
-            "sub_path": "machine/Raise3D Pro3 (0.5 nozzle) (Left).json"
         },
         {
             "name": "Raise3D Pro3 (0.6 nozzle) (Left)",
@@ -572,10 +556,6 @@
             "sub_path": "machine/Raise3D Pro3 (0.4 nozzle) (Right).json"
         },
         {
-            "name": "Raise3D Pro3 (0.5 nozzle) (Right)",
-            "sub_path": "machine/Raise3D Pro3 (0.5 nozzle) (Right).json"
-        },
-        {
             "name": "Raise3D Pro3 (0.6 nozzle) (Right)",
             "sub_path": "machine/Raise3D Pro3 (0.6 nozzle) (Right).json"
         },
@@ -590,10 +570,6 @@
         {
             "name": "Raise3D Pro3 Plus (0.4 nozzle) (Dual)",
             "sub_path": "machine/Raise3D Pro3 Plus (0.4 nozzle) (Dual).json"
-        },
-        {
-            "name": "Raise3D Pro3 Plus (0.5 nozzle) (Dual)",
-            "sub_path": "machine/Raise3D Pro3 Plus (0.5 nozzle) (Dual).json"
         },
         {
             "name": "Raise3D Pro3 Plus (0.6 nozzle) (Dual)",
@@ -612,10 +588,6 @@
             "sub_path": "machine/Raise3D Pro3 Plus (0.4 nozzle) (Left).json"
         },
         {
-            "name": "Raise3D Pro3 Plus (0.5 nozzle) (Left)",
-            "sub_path": "machine/Raise3D Pro3 Plus (0.5 nozzle) (Left).json"
-        },
-        {
             "name": "Raise3D Pro3 Plus (0.6 nozzle) (Left)",
             "sub_path": "machine/Raise3D Pro3 Plus (0.6 nozzle) (Left).json"
         },
@@ -630,10 +602,6 @@
         {
             "name": "Raise3D Pro3 Plus (0.4 nozzle) (Right)",
             "sub_path": "machine/Raise3D Pro3 Plus (0.4 nozzle) (Right).json"
-        },
-        {
-            "name": "Raise3D Pro3 Plus (0.5 nozzle) (Right)",
-            "sub_path": "machine/Raise3D Pro3 Plus (0.5 nozzle) (Right).json"
         },
         {
             "name": "Raise3D Pro3 Plus (0.6 nozzle) (Right)",

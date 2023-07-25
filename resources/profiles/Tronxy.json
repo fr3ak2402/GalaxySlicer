@@ -1,5 +1,6 @@
 {
     "name": "Tronxy",
+    "url": "",
     "version": "01.00.00.00",
     "force_update": "0",
     "description": "Tronxy configurations",
@@ -65,26 +66,6 @@
         {
             "name": "0.08mm Extra Fine @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
             "sub_path": "process/0.08mm Extra Fine @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.12mm Fine @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.15mm Optimal @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.24mm Draft @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.28mm Extra Draft @Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
         },
         {
             "name": "0.08mm Extra Fine @Tronxy X5SA 400 (Marlin) (0.6 nozzle)",
@@ -173,44 +154,204 @@
             "sub_path": "filament/fdm_filament_pa.json"
         },
         {
-            "name": "Tronxy Generic PLA",
-            "sub_path": "filament/Tronxy Generic PLA.json"
+            "name": "Tronxy Generic PLA @base",
+            "sub_path": "filament/Tronxy Generic PLA @base.json"
         },
         {
-            "name": "Tronxy Generic PLA-CF",
-            "sub_path": "filament/Tronxy Generic PLA-CF.json"
+            "name": "Tronxy Generic PLA @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA @0.2 nozzle.json"
         },
         {
-            "name": "Tronxy Generic PETG",
-            "sub_path": "filament/Tronxy Generic PETG.json"
+            "name": "Tronxy Generic PLA @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA @0.4 nozzle.json"
         },
         {
-            "name": "Tronxy Generic ABS",
-            "sub_path": "filament/Tronxy Generic ABS.json"
+            "name": "Tronxy Generic PLA @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA @0.6 nozzle.json"
         },
         {
-            "name": "Tronxy Generic TPU",
-            "sub_path": "filament/Tronxy Generic TPU.json"
+            "name": "Tronxy Generic PLA @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA @0.8 nozzle.json"
         },
         {
-            "name": "Tronxy Generic ASA",
-            "sub_path": "filament/Tronxy Generic ASA.json"
+            "name": "Tronxy Generic PLA-CF @base",
+            "sub_path": "filament/Tronxy Generic PLA-CF @base.json"
         },
         {
-            "name": "Tronxy Generic PC",
-            "sub_path": "filament/Tronxy Generic PC.json"
+            "name": "Tronxy Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA-CF @0.2 nozzle.json"
         },
         {
-            "name": "Tronxy Generic PVA",
-            "sub_path": "filament/Tronxy Generic PVA.json"
+            "name": "Tronxy Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA-CF @0.4 nozzle.json"
         },
         {
-            "name": "Tronxy Generic PA",
-            "sub_path": "filament/Tronxy Generic PA.json"
+            "name": "Tronxy Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA-CF @0.6 nozzle.json"
         },
         {
-            "name": "Tronxy Generic PA-CF",
-            "sub_path": "filament/Tronxy Generic PA-CF.json"
+            "name": "Tronxy Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PETG @base",
+            "sub_path": "filament/Tronxy Generic PETG @base.json"
+        },
+        {
+            "name": "Tronxy Generic PETG @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PETG @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PETG @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PETG @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ABS @base",
+            "sub_path": "filament/Tronxy Generic ABS @base.json"
+        },
+        {
+            "name": "Tronxy Generic ABS @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic ABS @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ABS @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ABS @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ABS @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic TPU @base",
+            "sub_path": "filament/Tronxy Generic TPU @base.json"
+        },
+        {
+            "name": "Tronxy Generic TPU @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic TPU @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic TPU @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic TPU @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ASA @base",
+            "sub_path": "filament/Tronxy Generic ASA @base.json"
+        },
+        {
+            "name": "Tronxy Generic ASA @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ASA @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ASA @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic ASA @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PC @base",
+            "sub_path": "filament/Tronxy Generic PC @base.json"
+        },
+        {
+            "name": "Tronxy Generic PC @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PC @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PC @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PC @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PVA @base",
+            "sub_path": "filament/Tronxy Generic PVA @base.json"
+        },
+        {
+            "name": "Tronxy Generic PVA @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PVA @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PVA @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PVA @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA @base",
+            "sub_path": "filament/Tronxy Generic PA @base.json"
+        },
+        {
+            "name": "Tronxy Generic PA @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA-CF @base",
+            "sub_path": "filament/Tronxy Generic PA-CF @base.json"
+        },
+        {
+            "name": "Tronxy Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/Tronxy Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/Tronxy Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/Tronxy Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "Tronxy Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/Tronxy Generic PA-CF @0.8 nozzle.json"
         }
     ],
     "machine_list": [
@@ -225,10 +366,6 @@
         {
             "name": "Tronxy X5SA 400 (Marlin) (0.4 nozzle)",
             "sub_path": "machine/Tronxy X5SA 400 (Marlin) (0.4 nozzle).json"
-        },
-        {
-            "name": "Tronxy X5SA 400 (Marlin) (0.5 nozzle)",
-            "sub_path": "machine/Tronxy X5SA 400 (Marlin) (0.5 nozzle).json"
         },
         {
             "name": "Tronxy X5SA 400 (Marlin) (0.6 nozzle)",

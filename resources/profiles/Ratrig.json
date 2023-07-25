@@ -327,150 +327,6 @@
             "sub_path": "process/0.28mm Extra Draft @RatRig V-Cast (0.4 nozzle).json"
         },
         {
-            "name": "0.08mm Extra Fine @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Extra Fine @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Extra Fine @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Extra Fine @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Extra Fine @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Extra Fine @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.08mm Extra Fine @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
-            "name": "0.12mm Fine @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.12mm Fine @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.12mm Fine @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.12mm Fine @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.12mm Fine @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.12mm Fine @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.12mm Fine @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
-            "name": "0.15mm Optimal @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.15mm Optimal @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.15mm Optimal @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.15mm Optimal @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.15mm Optimal @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.15mm Optimal @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.15mm Optimal @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
-            "name": "0.24mm Draft @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
-            "name": "0.28mm Extra Draft @RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.28mm Extra Draft @RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Core 3 300 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.28mm Extra Draft @RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.28mm Extra Draft @RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Core 3 500 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.28mm Extra Draft @RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Minion (0.5 nozzle).json"
-        },
-		{
-            "name": "0.28mm Extra Draft @RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "process/0.28mm Extra Draft @RatRig V-Cast (0.5 nozzle).json"
-        },
-        {
             "name": "0.08mm Extra Fine @RatRig V-Core 3 200 (0.6 nozzle)",
             "sub_path": "process/0.08mm Extra Fine @RatRig V-Core 3 200 (0.6 nozzle).json"
         },
@@ -797,44 +653,204 @@
             "sub_path": "filament/fdm_filament_pa.json"
         },
         {
-            "name": "RatRig Generic PLA",
-            "sub_path": "filament/RatRig Generic PLA.json"
+            "name": "RatRig Generic PLA @base",
+            "sub_path": "filament/RatRig Generic PLA @base.json"
         },
         {
-            "name": "RatRig Generic PLA-CF",
-            "sub_path": "filament/RatRig Generic PLA-CF.json"
+            "name": "RatRig Generic PLA @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PLA @0.2 nozzle.json"
         },
         {
-            "name": "RatRig Generic PETG",
-            "sub_path": "filament/RatRig Generic PETG.json"
+            "name": "RatRig Generic PLA @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PLA @0.4 nozzle.json"
         },
         {
-            "name": "RatRig Generic ABS",
-            "sub_path": "filament/RatRig Generic ABS.json"
+            "name": "RatRig Generic PLA @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PLA @0.6 nozzle.json"
         },
         {
-            "name": "RatRig Generic TPU",
-            "sub_path": "filament/RatRig Generic TPU.json"
+            "name": "RatRig Generic PLA @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PLA @0.8 nozzle.json"
         },
         {
-            "name": "RatRig Generic ASA",
-            "sub_path": "filament/RatRig Generic ASA.json"
+            "name": "RatRig Generic PLA-CF @base",
+            "sub_path": "filament/RatRig Generic PLA-CF @base.json"
         },
         {
-            "name": "RatRig Generic PC",
-            "sub_path": "filament/RatRig Generic PC.json"
+            "name": "RatRig Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PLA-CF @0.2 nozzle.json"
         },
         {
-            "name": "RatRig Generic PVA",
-            "sub_path": "filament/RatRig Generic PVA.json"
+            "name": "RatRig Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PLA-CF @0.4 nozzle.json"
         },
         {
-            "name": "RatRig Generic PA",
-            "sub_path": "filament/RatRig Generic PA.json"
+            "name": "RatRig Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PLA-CF @0.6 nozzle.json"
         },
         {
-            "name": "RatRig Generic PA-CF",
-            "sub_path": "filament/RatRig Generic PA-CF.json"
+            "name": "RatRig Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PETG @base",
+            "sub_path": "filament/RatRig Generic PETG @base.json"
+        },
+        {
+            "name": "RatRig Generic PETG @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PETG @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PETG @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PETG @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ABS @base",
+            "sub_path": "filament/RatRig Generic ABS @base.json"
+        },
+        {
+            "name": "RatRig Generic ABS @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic ABS @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ABS @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ABS @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ABS @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic TPU @base",
+            "sub_path": "filament/RatRig Generic TPU @base.json"
+        },
+        {
+            "name": "RatRig Generic TPU @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic TPU @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic TPU @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic TPU @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ASA @base",
+            "sub_path": "filament/RatRig Generic ASA @base.json"
+        },
+        {
+            "name": "RatRig Generic ASA @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ASA @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ASA @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic ASA @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PC @base",
+            "sub_path": "filament/RatRig Generic PC @base.json"
+        },
+        {
+            "name": "RatRig Generic PC @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PC @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PC @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PC @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PVA @base",
+            "sub_path": "filament/RatRig Generic PVA @base.json"
+        },
+        {
+            "name": "RatRig Generic PVA @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PVA @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PVA @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PVA @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA @base",
+            "sub_path": "filament/RatRig Generic PA @base.json"
+        },
+        {
+            "name": "RatRig Generic PA @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA-CF @base",
+            "sub_path": "filament/RatRig Generic PA-CF @base.json"
+        },
+        {
+            "name": "RatRig Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/RatRig Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/RatRig Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/RatRig Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "RatRig Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/RatRig Generic PA-CF @0.8 nozzle.json"
         }
     ],
     "machine_list": [
@@ -855,10 +871,6 @@
             "sub_path": "machine/RatRig V-Core 3 200 (0.4 nozzle).json"
         },
 		{
-            "name": "RatRig V-Core 3 200 (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Core 3 200 (0.5 nozzle).json"
-        },
-		{
             "name": "RatRig V-Core 3 200 (0.6 nozzle)",
             "sub_path": "machine/RatRig V-Core 3 200 (0.6 nozzle).json"
         },
@@ -873,10 +885,6 @@
         {
             "name": "RatRig V-Core 3 300 (0.4 nozzle)",
             "sub_path": "machine/RatRig V-Core 3 300 (0.4 nozzle).json"
-        },
-        {
-            "name": "RatRig V-Core 3 300 (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Core 3 300 (0.5 nozzle).json"
         },
         {
             "name": "RatRig V-Core 3 300 (0.6 nozzle)",
@@ -895,10 +903,6 @@
             "sub_path": "machine/RatRig V-Core 3 400 (0.4 nozzle).json"
         },
         {
-            "name": "RatRig V-Core 3 400 (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Core 3 400 (0.5 nozzle).json"
-        },
-        {
             "name": "RatRig V-Core 3 400 (0.6 nozzle)",
             "sub_path": "machine/RatRig V-Core 3 400 (0.6 nozzle).json"
         },
@@ -913,10 +917,6 @@
         {
             "name": "RatRig V-Core 3 500 (0.4 nozzle)",
             "sub_path": "machine/RatRig V-Core 3 500 (0.4 nozzle).json"
-        },
-        {
-            "name": "RatRig V-Core 3 500 (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Core 3 500 (0.5 nozzle).json"
         },
         {
             "name": "RatRig V-Core 3 500 (0.6 nozzle)",
@@ -935,10 +935,6 @@
             "sub_path": "machine/RatRig V-Minion (0.4 nozzle).json"
         },
         {
-            "name": "RatRig V-Minion (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Minion (0.5 nozzle).json"
-        },
-        {
             "name": "RatRig V-Minion (0.6 nozzle)",
             "sub_path": "machine/RatRig V-Minion (0.6 nozzle).json"
         },
@@ -953,10 +949,6 @@
         {
             "name": "RatRig V-Cast (0.4 nozzle)",
             "sub_path": "machine/RatRig V-Cast (0.4 nozzle).json"
-        },
-        {
-            "name": "RatRig V-Cast (0.5 nozzle)",
-            "sub_path": "machine/RatRig V-Cast (0.5 nozzle).json"
         },
         {
             "name": "RatRig V-Cast (0.6 nozzle)",

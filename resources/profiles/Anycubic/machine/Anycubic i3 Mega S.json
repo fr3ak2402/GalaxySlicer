@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "Anycubic i3 Mega S",
     "model_id": "Anycubic-i3-Mega-S",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "Anycubic",
     "bed_model": "anycubic_i3megas_buildplate_model.stl",
     "bed_texture": "anycubic_i3megas_buildplate_texture.png",
     "hotend_model": "",
-    "default_materials": "Anycubic Generic ABS;Anycubic Generic PLA;Anycubic Generic PLA-CF;Anycubic Generic PETG;Anycubic Generic TPU;Anycubic Generic ASA;Anycubic Generic PC;Anycubic Generic PVA;Anycubic Generic PA;Anycubic Generic PA-CF"
+    "default_materials": "Anycubic Generic ABS @0.2 nozzle;Anycubic Generic PLA @0.2 nozzle;Anycubic Generic PLA-CF @0.2 nozzle;Anycubic Generic PETG @0.2 nozzle;Anycubic Generic TPU @0.2 nozzle;Anycubic Generic ASA @0.2 nozzle;Anycubic Generic PC @0.2 nozzle;Anycubic Generic PVA @0.2 nozzle;Anycubic Generic PA @0.2 nozzle;Anycubic Generic PA-CF @0.2 nozzle;Anycubic Generic ABS @0.4 nozzle;Anycubic Generic PLA @0.4 nozzle;Anycubic Generic PLA-CF @0.4 nozzle;Anycubic Generic PETG @0.4 nozzle;Anycubic Generic TPU @0.4 nozzle;Anycubic Generic ASA @0.4 nozzle;Anycubic Generic PC @0.4 nozzle;Anycubic Generic PVA @0.4 nozzle;Anycubic Generic PA @0.4 nozzle;Anycubic Generic PA-CF @0.4 nozzle;Anycubic Generic ABS @0.6 nozzle;Anycubic Generic PLA @0.6 nozzle;Anycubic Generic PLA-CF @0.6 nozzle;Anycubic Generic PETG @0.6 nozzle;Anycubic Generic TPU @0.6 nozzle;Anycubic Generic ASA @0.6 nozzle;Anycubic Generic PC @0.6 nozzle;Anycubic Generic PVA @0.6 nozzle;Anycubic Generic PA @0.6 nozzle;Anycubic Generic PA-CF @0.6 nozzle;Anycubic Generic ABS @0.8 nozzle;Anycubic Generic PLA @0.8 nozzle;Anycubic Generic PLA-CF @0.8 nozzle;Anycubic Generic PETG @0.8 nozzle;Anycubic Generic TPU @0.8 nozzle;Anycubic Generic ASA @0.8 nozzle;Anycubic Generic PC @0.8 nozzle;Anycubic Generic PVA @0.8 nozzle;Anycubic Generic PA @0.8 nozzle;Anycubic Generic PA-CF @0.8 nozzle"
 }

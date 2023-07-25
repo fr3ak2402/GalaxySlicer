@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "Tronxy X5SA 400 (Marlin)",
     "model_id": "Tronxy_X5SA_400_Marlin_Firmware",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "Tronxy",
     "bed_model": "tronxy_x5sa400_buildplate_model.stl",
     "bed_texture": "tronxy_x5sa400_buildplate_texture.png",
     "hotend_model": "",
-    "default_materials": "Tronxy Generic ABS;Tronxy Generic PLA;Tronxy Generic PLA-CF;Tronxy Generic PETG;Tronxy Generic TPU;Tronxy Generic ASA;Tronxy Generic PC;Tronxy Generic PVA;Tronxy Generic PA;Tronxy Generic PA-CF"
+    "default_materials": "Tronxy Generic ABS @0.2 nozzle;Tronxy Generic PLA @0.2 nozzle;Tronxy Generic PLA-CF @0.2 nozzle;Tronxy Generic PETG @0.2 nozzle;Tronxy Generic TPU @0.2 nozzle;Tronxy Generic ASA @0.2 nozzle;Tronxy Generic PC @0.2 nozzle;Tronxy Generic PVA @0.2 nozzle;Tronxy Generic PA @0.2 nozzle;Tronxy Generic PA-CF @0.2 nozzle;Tronxy Generic ABS @0.4 nozzle;Tronxy Generic PLA @0.4 nozzle;Tronxy Generic PLA-CF @0.4 nozzle;Tronxy Generic PETG @0.4 nozzle;Tronxy Generic TPU @0.4 nozzle;Tronxy Generic ASA @0.4 nozzle;Tronxy Generic PC @0.4 nozzle;Tronxy Generic PVA @0.4 nozzle;Tronxy Generic PA @0.4 nozzle;Tronxy Generic PA-CF @0.4 nozzle;Tronxy Generic ABS @0.6 nozzle;Tronxy Generic PLA @0.6 nozzle;Tronxy Generic PLA-CF @0.6 nozzle;Tronxy Generic PETG @0.6 nozzle;Tronxy Generic TPU @0.6 nozzle;Tronxy Generic ASA @0.6 nozzle;Tronxy Generic PC @0.6 nozzle;Tronxy Generic PVA @0.6 nozzle;Tronxy Generic PA @0.6 nozzle;Tronxy Generic PA-CF @0.6 nozzle;Tronxy Generic ABS @0.8 nozzle;Tronxy Generic PLA @0.8 nozzle;Tronxy Generic PLA-CF @0.8 nozzle;Tronxy Generic PETG @0.8 nozzle;Tronxy Generic TPU @0.8 nozzle;Tronxy Generic ASA @0.8 nozzle;Tronxy Generic PC @0.8 nozzle;Tronxy Generic PVA @0.8 nozzle;Tronxy Generic PA @0.8 nozzle;Tronxy Generic PA-CF @0.8 nozzle"
 }

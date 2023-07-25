@@ -112,46 +112,6 @@
             "sub_path": "process/0.20mm Standard @Sovol SV06Plus (0.4 nozzle).json"
         },
         {
-            "name": "0.18mm Optimal @Sovol SV01Pro (0.5 nozzle)",
-            "sub_path": "process/0.18mm Optimal @Sovol SV01Pro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.18mm Optimal @Sovol SV02 (0.5 nozzle)",
-            "sub_path": "process/0.18mm Optimal @Sovol SV02 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.18mm Optimal @Sovol SV05 (0.5 nozzle)",
-            "sub_path": "process/0.18mm Optimal @Sovol SV05 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.18mm Optimal @Sovol SV06 (0.5 nozzle)",
-            "sub_path": "process/0.18mm Optimal @Sovol SV06 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.18mm Optimal @Sovol SV06Plus (0.5 nozzle)",
-            "sub_path": "process/0.18mm Optimal @Sovol SV06Plus (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Sovol SV01Pro (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Sovol SV01Pro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @Sovol SV02 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Sovol SV02 (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Sovol SV05 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Sovol SV05 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @Sovol SV06 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Sovol SV06 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @Sovol SV06Plus (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Sovol SV06Plus (0.5 nozzle).json"
-        },
-        {
             "name": "0.18mm Optimal @Sovol SV01Pro (0.6 nozzle)",
             "sub_path": "process/0.18mm Optimal @Sovol SV01Pro (0.6 nozzle).json"
         },
@@ -250,16 +210,64 @@
             "sub_path": "filament/fdm_filament_pla.json"
         },
         {
-            "name": "Sovol Generic ABS",
-            "sub_path": "filament/Sovol Generic ABS.json"
+            "name": "Sovol Generic ABS @base",
+            "sub_path": "filament/Sovol Generic ABS @base.json"
         },
         {
-            "name": "Sovol Generic PETG",
-            "sub_path": "filament/Sovol Generic PETG.json"
+            "name": "Sovol Generic ABS @0.2 nozzle",
+            "sub_path": "filament/Sovol Generic ABS @0.2 nozzle.json"
         },
         {
-            "name": "Sovol Generic PLA",
-            "sub_path": "filament/Sovol Generic PLA.json"
+            "name": "Sovol Generic ABS @0.4 nozzle",
+            "sub_path": "filament/Sovol Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic ABS @0.6 nozzle",
+            "sub_path": "filament/Sovol Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic ABS @0.8 nozzle",
+            "sub_path": "filament/Sovol Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PETG @base",
+            "sub_path": "filament/Sovol Generic PETG @base.json"
+        },
+        {
+            "name": "Sovol Generic PETG @0.2 nozzle",
+            "sub_path": "filament/Sovol Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PETG @0.4 nozzle",
+            "sub_path": "filament/Sovol Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PETG @0.6 nozzle",
+            "sub_path": "filament/Sovol Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PETG @0.8 nozzle",
+            "sub_path": "filament/Sovol Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PLA @base",
+            "sub_path": "filament/Sovol Generic PLA @base.json"
+        },
+        {
+            "name": "Sovol Generic PLA @0.2 nozzle",
+            "sub_path": "filament/Sovol Generic PLA @0.2 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PLA @0.4 nozzle",
+            "sub_path": "filament/Sovol Generic PLA @0.4 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PLA @0.6 nozzle",
+            "sub_path": "filament/Sovol Generic PLA @0.6 nozzle.json"
+        },
+        {
+            "name": "Sovol Generic PLA @0.8 nozzle",
+            "sub_path": "filament/Sovol Generic PLA @0.8 nozzle.json"
         }
     ],
     "machine_list": [
@@ -276,10 +284,6 @@
             "sub_path": "machine/Sovol SV01 Pro (0.4 nozzle).json"
         },
         {
-            "name": "Sovol SV01 Pro (0.5 nozzle)",
-            "sub_path": "machine/Sovol SV01 Pro (0.5 nozzle).json"
-        },
-        {
             "name": "Sovol SV01 Pro (0.6 nozzle)",
             "sub_path": "machine/Sovol SV01 Pro (0.6 nozzle).json"
         },
@@ -288,24 +292,36 @@
             "sub_path": "machine/Sovol SV01 Pro (0.8 nozzle).json"
         },
 		{
-            "name": "Sovol SV02 (0.2 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.2 nozzle).json"
+            "name": "Sovol SV02 (0.2 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.2 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.4 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.4 nozzle).json"
+            "name": "Sovol SV02 (0.4 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.4 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.5 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.5 nozzle).json"
+            "name": "Sovol SV02 (0.6 nozzle)(Dual)",
+            "sub_path": "machine/Sovol SV02 (0.6 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.6 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.6 nozzle).json"
+            "name": "Sovol SV02 (0.8 nozzle) (Dual)",
+            "sub_path": "machine/Sovol SV02 (0.8 nozzle) (Dual).json"
         },
 		{
-            "name": "Sovol SV02 (0.8 nozzle)",
-            "sub_path": "machine/Sovol SV02 (0.8 nozzle).json"
+            "name": "Sovol SV02 (0.2 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.2 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.4 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.4 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.6 nozzle)(Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.6 nozzle) (Mixer).json"
+        },
+		{
+            "name": "Sovol SV02 (0.8 nozzle) (Mixer)",
+            "sub_path": "machine/Sovol SV02 (0.8 nozzle) (Mixer).json"
         },
         {
             "name": "Sovol SV05 (0.2 nozzle)",
@@ -314,10 +330,6 @@
         {
             "name": "Sovol SV05 (0.4 nozzle)",
             "sub_path": "machine/Sovol SV05 (0.4 nozzle).json"
-        },
-        {
-            "name": "Sovol SV05 (0.5 nozzle)",
-            "sub_path": "machine/Sovol SV05 (0.5 nozzle).json"
         },
         {
             "name": "Sovol SV05 (0.6 nozzle)",
@@ -336,10 +348,6 @@
             "sub_path": "machine/Sovol SV06 (0.4 nozzle).json"
         },
 		{
-            "name": "Sovol SV06 (0.5 nozzle)",
-            "sub_path": "machine/Sovol SV06 (0.5 nozzle).json"
-        },
-		{
             "name": "Sovol SV06 (0.6 nozzle)",
             "sub_path": "machine/Sovol SV06 (0.6 nozzle).json"
         },
@@ -354,10 +362,6 @@
 		{
             "name": "Sovol SV06 Plus (0.4 nozzle)",
             "sub_path": "machine/Sovol SV06 Plus (0.4 nozzle).json"
-        },
-		{
-            "name": "Sovol SV06 Plus (0.5 nozzle)",
-            "sub_path": "machine/Sovol SV06 Plus (0.5 nozzle).json"
         },
 		{
             "name": "Sovol SV06 Plus (0.6 nozzle)",

@@ -125,7 +125,7 @@
     "1"
   ],
   "default_filament_profile": [
-    "Voron Generic ABS"
+    "Voron Generic ABS @0.4 nozzle"
   ],
   "default_print_profile": "0.20mm Standard @Voron",
   "bed_exclude_area": [

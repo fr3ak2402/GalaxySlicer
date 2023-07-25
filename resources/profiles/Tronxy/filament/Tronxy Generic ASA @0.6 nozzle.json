@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFB98",
+    "setting_id": "GFSB98_00",
+    "name": "Tronxy Generic ASA @0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Tronxy Generic ASA @base",
+    "filament_flow_ratio": [
+        "0.93"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "compatible_printers": [
+	  "Tronxy X5SA 400 (Marlin) (0.6 nozzle)"
+    ]
+}

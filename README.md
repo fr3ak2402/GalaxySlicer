@@ -1,5 +1,7 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
+[![Build Win x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
+-------------------------------------
 
 GalaxySlicer is an extended version of the Orca Slicer.
 
@@ -10,8 +12,12 @@ GalaxySlicer is based on **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer
 - Marlin2 support (Coming soon)
 - Klipper support
 
+# Supported printers
+
+The following printers are currently supported by GalaxySlicer: **[Printer list](https://github.com/fr3ak2402/GalaxySlicer-Profile-Library/wiki/Supported-printers)**
+
 # Pre-compiled releases
-Currently, only Windows releases are precompiled.
+Currently, only Windows, macOS x64 & arm64 releases are precompiled.
 
 All compile releases can be found at the following link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
 

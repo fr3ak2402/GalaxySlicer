@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "FLSun Super Racer (Marlin)",
     "model_id": "FLSun-Super-Racer-Marlin",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "FLSun",
     "bed_model": "flsun_superracer_buildplate_model.stl",
     "bed_texture": "flsun_superracer_buildplate_texture.png",
     "hotend_model": "",
-    "default_materials": "FLSun Generic ABS;FLSun Generic PLA;FLSun Generic PLA-CF;FLSun Generic PETG;FLSun Generic TPU;FLSun Generic ASA;FLSun Generic PC;FLSun Generic PVA;FLSun Generic PA;FLSun Generic PA-CF"
+    "default_materials": "FLSun Generic ABS @0.2 nozzle;FLSun Generic PLA @0.2 nozzle;FLSun Generic PLA-CF @0.2 nozzle;FLSun Generic PETG @0.2 nozzle;FLSun Generic TPU @0.2 nozzle;FLSun Generic ASA @0.2 nozzle;FLSun Generic PC @0.2 nozzle;FLSun Generic PVA @0.2 nozzle;FLSun Generic PA @0.2 nozzle;FLSun Generic PA-CF @0.2 nozzle;FLSun Generic ABS @0.4 nozzle;FLSun Generic PLA @0.4 nozzle;FLSun Generic PLA-CF @0.4 nozzle;FLSun Generic PETG @0.4 nozzle;FLSun Generic TPU @0.4 nozzle;FLSun Generic ASA @0.4 nozzle;FLSun Generic PC @0.4 nozzle;FLSun Generic PVA @0.4 nozzle;FLSun Generic PA @0.4 nozzle;FLSun Generic PA-CF @0.4 nozzle;FLSun Generic ABS @0.6 nozzle;FLSun Generic PLA @0.6 nozzle;FLSun Generic PLA-CF @0.6 nozzle;FLSun Generic PETG @0.6 nozzle;FLSun Generic TPU @0.6 nozzle;FLSun Generic ASA @0.6 nozzle;FLSun Generic PC @0.6 nozzle;FLSun Generic PVA @0.6 nozzle;FLSun Generic PA @0.6 nozzle;FLSun Generic PA-CF @0.6 nozzle;FLSun Generic ABS @0.8 nozzle;FLSun Generic PLA @0.8 nozzle;FLSun Generic PLA-CF @0.8 nozzle;FLSun Generic PETG @0.8 nozzle;FLSun Generic TPU @0.8 nozzle;FLSun Generic ASA @0.8 nozzle;FLSun Generic PC @0.8 nozzle;FLSun Generic PVA @0.8 nozzle;FLSun Generic PA @0.8 nozzle;FLSun Generic PA-CF @0.8 nozzle"
 }

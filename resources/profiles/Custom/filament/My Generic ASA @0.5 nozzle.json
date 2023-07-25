@@ -1,0 +1,20 @@
+{
+    "type": "filament",
+    "filament_id": "GFB98",
+    "setting_id": "GFSA04",
+    "name": "My Generic ASA @0.5 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "My Generic ASA @base",
+    "filament_flow_ratio": [
+        "0.93"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "compatible_printers": [
+	  "MyKlipper (0.5 nozzle)",
+	  "MyRepRap (0.5 nozzle)",
+	  "MyMarlin (0.5 nozzle)"
+    ]
+}

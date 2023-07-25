@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "Artillery Sidewinder X1",
     "model_id": "Artillery-Sidewinder-X1",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "Artillery",
     "bed_model": "artillery_sidewinderx1_buildplate_model.stl",
     "bed_texture": "artillery_sidewinderx1_buildplate_texture.png",
     "hotend_model": "",
-    "default_materials": "Artillery Generic ABS;Artillery Generic PLA;Artillery Generic PLA-CF;Artillery Generic PETG;Artillery Generic TPU;Artillery Generic ASA"
+    "default_materials": "Artillery Generic ABS @0.2 nozzle;Artillery Generic PLA @0.2 nozzle;Artillery Generic PLA-CF @0.2 nozzle;Artillery Generic PETG @0.2 nozzle;Artillery Generic TPU @0.2 nozzle;Artillery Generic ASA @0.2 nozzle;Artillery Generic ABS @0.4 nozzle;Artillery Generic PLA @0.4 nozzle;Artillery Generic PLA-CF @0.4 nozzle;Artillery Generic PETG @0.4 nozzle;Artillery Generic TPU @0.4 nozzle;Artillery Generic ASA @0.4 nozzle;Artillery Generic ABS @0.6 nozzle;Artillery Generic PLA @0.6 nozzle;Artillery Generic PLA-CF @0.6 nozzle;Artillery Generic PETG @0.6 nozzle;Artillery Generic TPU @0.6 nozzle;Artillery Generic ASA @0.6 nozzle;Artillery Generic ABS @0.8 nozzle;Artillery Generic PLA @0.8 nozzle;Artillery Generic PLA-CF @0.8 nozzle;Artillery Generic PETG @0.8 nozzle;Artillery Generic TPU @0.8 nozzle;Artillery Generic ASA @0.8 nozzle"
 }

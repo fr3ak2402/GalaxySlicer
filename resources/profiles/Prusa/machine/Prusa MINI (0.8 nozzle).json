@@ -7,7 +7,7 @@
   "inherits": "fdm_machine_common",
   "printer_model": "Prusa MINI",
   "default_filament_profile": [
-      "Prusa Generic PLA"
+      "Prusa Generic PLA @0.8 nozzle"
   ],
   "default_print_profile": "0.20mm Standard @Prusa MINI (0.8 nozzle)",
   "nozzle_diameter": [

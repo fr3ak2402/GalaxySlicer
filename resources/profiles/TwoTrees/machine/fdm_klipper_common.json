@@ -126,7 +126,7 @@
     "1"
   ],
   "default_filament_profile": [
-    "TwoTrees Generic PLA"
+    "TwoTrees Generic PLA @0.4 nozzle"
   ],
   "bed_exclude_area": [
     "0x0"

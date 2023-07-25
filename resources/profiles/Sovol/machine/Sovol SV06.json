@@ -2,11 +2,11 @@
     "type": "machine_model",
     "name": "Sovol SV06",
     "model_id": "Sovol-SV06",
-    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
     "machine_tech": "FFF",
     "family": "Sovol",
     "bed_model": "sovol_sv06_buildplate_model.stl",
     "bed_texture": "sovol_sv06_buildplate_texture.png",
     "hotend_model": "",
-	"default_materials": "Sovol Generic ABS;Sovol Generic PETG;Sovol Generic PLA"
+	"default_materials": "Sovol Generic PLA @0.2 nozzle;Sovol Generic PETG @0.2 nozzle;Sovol Generic ABS @0.2 nozzle;Sovol Generic PLA @0.4 nozzle;Sovol Generic PETG @0.4 nozzle;Sovol Generic ABS @0.4 nozzle;Sovol Generic PLA @0.6 nozzle;Sovol Generic PETG @0.6 nozzle;Sovol Generic ABS @0.6 nozzle;Sovol Generic PLA @0.8 nozzle;Sovol Generic PETG @0.8 nozzle;Sovol Generic ABS @0.8 nozzle"
 }

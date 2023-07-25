@@ -6,38 +6,26 @@
     "description": "Prusa configurations",
     "machine_model_list": [
         {
+            "name": "Prusa MINI",
+            "sub_path": "machine/Prusa MINI.json"
+        },
+        {
             "name": "Prusa MK3S",
             "sub_path": "machine/Prusa MK3S.json"
         },
         {
-            "name": "Prusa MINI",
-            "sub_path": "machine/Prusa MINI.json"
+            "name": "Prusa MK4",
+            "sub_path": "machine/Prusa MK4.json"
+        },
+        {
+            "name": "Prusa XL",
+            "sub_path": "machine/Prusa XL.json"
         }
     ],
     "process_list": [
         {
             "name": "fdm_process_common",
             "sub_path": "process/fdm_process_common.json"
-        },
-        {
-            "name": "0.20mm Standard @Prusa MK3S (0.2 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.2 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Prusa MK3S (0.4 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.4 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Prusa MK3S (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Prusa MK3S (0.6 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.6 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @Prusa MK3S (0.8 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.8 nozzle).json"
         },
         {
             "name": "0.20mm Standard @Prusa MINI (0.2 nozzle)",
@@ -48,16 +36,60 @@
             "sub_path": "process/0.20mm Standard @Prusa MINI (0.4 nozzle).json"
         },
         {
-            "name": "0.20mm Standard @Prusa MINI (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @Prusa MINI (0.5 nozzle).json"
-        },
-        {
             "name": "0.20mm Standard @Prusa MINI (0.6 nozzle)",
             "sub_path": "process/0.20mm Standard @Prusa MINI (0.6 nozzle).json"
         },
         {
             "name": "0.20mm Standard @Prusa MINI (0.8 nozzle)",
             "sub_path": "process/0.20mm Standard @Prusa MINI (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK3S (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK3S (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK3S (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK3S (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK3S (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK4 (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK4 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK4 (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK4 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK4 (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK4 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa MK4 (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa MK4 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa XL (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa XL (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa XL (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa XL (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa XL (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa XL (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Prusa XL (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @Prusa XL (0.8 nozzle).json"
         }
     ],
     "filament_list": [
@@ -98,70 +130,210 @@
             "sub_path": "filament/fdm_filament_pa.json"
         },
         {
-            "name": "Prusa Generic PLA",
-            "sub_path": "filament/Prusa Generic PLA.json"
+            "name": "Prusa Generic PLA @base",
+            "sub_path": "filament/Prusa Generic PLA @base.json"
         },
         {
-            "name": "Prusa Generic PLA-CF",
-            "sub_path": "filament/Prusa Generic PLA-CF.json"
+            "name": "Prusa Generic PLA @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PLA @0.2 nozzle.json"
         },
         {
-            "name": "Prusa Generic PETG",
-            "sub_path": "filament/Prusa Generic PETG.json"
+            "name": "Prusa Generic PLA @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PLA @0.4 nozzle.json"
         },
         {
-            "name": "Prusa Generic ABS",
-            "sub_path": "filament/Prusa Generic ABS.json"
+            "name": "Prusa Generic PLA @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PLA @0.6 nozzle.json"
         },
         {
-            "name": "Prusa Generic TPU",
-            "sub_path": "filament/Prusa Generic TPU.json"
+            "name": "Prusa Generic PLA @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PLA @0.8 nozzle.json"
         },
         {
-            "name": "Prusa Generic ASA",
-            "sub_path": "filament/Prusa Generic ASA.json"
+            "name": "Prusa Generic PLA-CF @base",
+            "sub_path": "filament/Prusa Generic PLA-CF @base.json"
         },
         {
-            "name": "Prusa Generic PC",
-            "sub_path": "filament/Prusa Generic PC.json"
+            "name": "Prusa Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PLA-CF @0.2 nozzle.json"
         },
         {
-            "name": "Prusa Generic PVA",
-            "sub_path": "filament/Prusa Generic PVA.json"
+            "name": "Prusa Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PLA-CF @0.4 nozzle.json"
         },
         {
-            "name": "Prusa Generic PA",
-            "sub_path": "filament/Prusa Generic PA.json"
+            "name": "Prusa Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PLA-CF @0.6 nozzle.json"
         },
         {
-            "name": "Prusa Generic PA-CF",
-            "sub_path": "filament/Prusa Generic PA-CF.json"
+            "name": "Prusa Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PETG @base",
+            "sub_path": "filament/Prusa Generic PETG @base.json"
+        },
+        {
+            "name": "Prusa Generic PETG @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PETG @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PETG @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PETG @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ABS @base",
+            "sub_path": "filament/Prusa Generic ABS @base.json"
+        },
+        {
+            "name": "Prusa Generic ABS @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic ABS @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ABS @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ABS @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ABS @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic TPU @base",
+            "sub_path": "filament/Prusa Generic TPU @base.json"
+        },
+        {
+            "name": "Prusa Generic TPU @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic TPU @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic TPU @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic TPU @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ASA @base",
+            "sub_path": "filament/Prusa Generic ASA @base.json"
+        },
+        {
+            "name": "Prusa Generic ASA @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ASA @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ASA @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic ASA @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PC @base",
+            "sub_path": "filament/Prusa Generic PC @base.json"
+        },
+        {
+            "name": "Prusa Generic PC @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PC @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PC @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PC @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PVA @base",
+            "sub_path": "filament/Prusa Generic PVA @base.json"
+        },
+        {
+            "name": "Prusa Generic PVA @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PVA @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PVA @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PVA @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA @base",
+            "sub_path": "filament/Prusa Generic PA @base.json"
+        },
+        {
+            "name": "Prusa Generic PA @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA-CF @base",
+            "sub_path": "filament/Prusa Generic PA-CF @base.json"
+        },
+        {
+            "name": "Prusa Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/Prusa Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/Prusa Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/Prusa Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "Prusa Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/Prusa Generic PA-CF @0.8 nozzle.json"
         }
     ],
     "machine_list": [
         {
             "name": "fdm_machine_common",
             "sub_path": "machine/fdm_machine_common.json"
-        },
-        {
-            "name": "Prusa MK3S (0.2 nozzle)",
-            "sub_path": "machine/Prusa MK3S (0.2 nozzle).json"
-        },
-        {
-            "name": "Prusa MK3S (0.4 nozzle)",
-            "sub_path": "machine/Prusa MK3S (0.4 nozzle).json"
-        },
-        {
-            "name": "Prusa MK3S (0.5 nozzle)",
-            "sub_path": "machine/Prusa MK3S (0.5 nozzle).json"
-        },
-        {
-            "name": "Prusa MK3S (0.6 nozzle)",
-            "sub_path": "machine/Prusa MK3S (0.6 nozzle).json"
-        },
-        {
-            "name": "Prusa MK3S (0.8 nozzle)",
-            "sub_path": "machine/Prusa MK3S (0.8 nozzle).json"
         },
         {
             "name": "Prusa MINI (0.2 nozzle)",
@@ -172,16 +344,60 @@
             "sub_path": "machine/Prusa MINI (0.4 nozzle).json"
         },
         {
-            "name": "Prusa MINI (0.5 nozzle)",
-            "sub_path": "machine/Prusa MINI (0.5 nozzle).json"
-        },
-        {
             "name": "Prusa MINI (0.6 nozzle)",
             "sub_path": "machine/Prusa MINI (0.6 nozzle).json"
         },
         {
             "name": "Prusa MINI (0.8 nozzle)",
             "sub_path": "machine/Prusa MINI (0.8 nozzle).json"
+        },
+        {
+            "name": "Prusa MK3S (0.2 nozzle)",
+            "sub_path": "machine/Prusa MK3S (0.2 nozzle).json"
+        },
+        {
+            "name": "Prusa MK3S (0.4 nozzle)",
+            "sub_path": "machine/Prusa MK3S (0.4 nozzle).json"
+        },
+        {
+            "name": "Prusa MK3S (0.6 nozzle)",
+            "sub_path": "machine/Prusa MK3S (0.6 nozzle).json"
+        },
+        {
+            "name": "Prusa MK3S (0.8 nozzle)",
+            "sub_path": "machine/Prusa MK3S (0.8 nozzle).json"
+        },
+        {
+            "name": "Prusa MK4 (0.2 nozzle)",
+            "sub_path": "machine/Prusa MK4 (0.2 nozzle).json"
+        },
+        {
+            "name": "Prusa MK4 (0.4 nozzle)",
+            "sub_path": "machine/Prusa MK4 (0.4 nozzle).json"
+        },
+        {
+            "name": "Prusa MK4 (0.6 nozzle)",
+            "sub_path": "machine/Prusa MK4 (0.6 nozzle).json"
+        },
+        {
+            "name": "Prusa MK4 (0.8 nozzle)",
+            "sub_path": "machine/Prusa MK4 (0.8 nozzle).json"
+        },
+        {
+            "name": "Prusa XL (0.2 nozzle)",
+            "sub_path": "machine/Prusa XL (0.2 nozzle).json"
+        },
+        {
+            "name": "Prusa XL (0.4 nozzle)",
+            "sub_path": "machine/Prusa XL (0.4 nozzle).json"
+        },
+        {
+            "name": "Prusa XL (0.6 nozzle)",
+            "sub_path": "machine/Prusa XL (0.6 nozzle).json"
+        },
+        {
+            "name": "Prusa XL (0.8 nozzle)",
+            "sub_path": "machine/Prusa XL (0.8 nozzle).json"
         }
     ]
 }

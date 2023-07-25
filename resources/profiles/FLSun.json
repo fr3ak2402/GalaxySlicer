@@ -199,90 +199,6 @@
             "sub_path": "process/0.30mm Extra Draft @FLSun SuperRacer (Klipper) (0.4 nozzle).json"
         },
 		{
-            "name": "0.08mm Fine @FLSun Q5 (0.5 nozzle)",
-            "sub_path": "process/0.08mm Fine @FLSun Q5 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Fine @FLSun QQSPro (0.5 nozzle)",
-            "sub_path": "process/0.08mm Fine @FLSun QQSPro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Fine @FLSun SuperRacer (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.08mm Fine @FLSun SuperRacer (Marlin) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.08mm Fine @FLSun SuperRacer (Klipper) (0.5 nozzle)",
-            "sub_path": "process/0.08mm Fine @FLSun SuperRacer (Klipper) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.16mm Optimal @FLSun Q5 (0.5 nozzle)",
-            "sub_path": "process/0.16mm Optimal @FLSun Q5 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.16mm Optimal @FLSun QQSPro (0.5 nozzle)",
-            "sub_path": "process/0.16mm Optimal @FLSun QQSPro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.16mm Optimal @FLSun SuperRacer (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.16mm Optimal @FLSun SuperRacer (Marlin) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.16mm Optimal @FLSun SuperRacer (Klipper) (0.5 nozzle)",
-            "sub_path": "process/0.16mm Optimal @FLSun SuperRacer (Klipper) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @FLSun Q5 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @FLSun Q5 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @FLSun QQSPro (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @FLSun QQSPro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @FLSun SuperRacer (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @FLSun SuperRacer (Marlin) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.20mm Standard @FLSun SuperRacer (Klipper) (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @FLSun SuperRacer (Klipper) (0.5 nozzle).json"
-        },
-        {
-            "name": "0.20mm Standard @FLSun V400 (0.5 nozzle)",
-            "sub_path": "process/0.20mm Standard @FLSun V400 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @FLSun Q5 (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @FLSun Q5 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @FLSun QQSPro (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @FLSun QQSPro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @FLSun SuperRacer (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @FLSun SuperRacer (Marlin) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.24mm Draft @FLSun SuperRacer (Klipper) (0.5 nozzle)",
-            "sub_path": "process/0.24mm Draft @FLSun SuperRacer (Klipper) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.30mm Extra Draft @FLSun Q5 (0.5 nozzle)",
-            "sub_path": "process/0.30mm Extra Draft @FLSun Q5 (0.5 nozzle).json"
-        },
-		{
-            "name": "0.30mm Extra Draft @FLSun QQSPro (0.5 nozzle)",
-            "sub_path": "process/0.30mm Extra Draft @FLSun QQSPro (0.5 nozzle).json"
-        },
-		{
-            "name": "0.30mm Extra Draft @FLSun SuperRacer (Marlin) (0.5 nozzle)",
-            "sub_path": "process/0.30mm Extra Draft @FLSun SuperRacer (Marlin) (0.5 nozzle).json"
-        },
-		{
-            "name": "0.30mm Extra Draft @FLSun SuperRacer (Klipper) (0.5 nozzle)",
-            "sub_path": "process/0.30mm Extra Draft @FLSun SuperRacer (Klipper) (0.5 nozzle).json"
-        },
-		{
             "name": "0.08mm Fine @FLSun Q5 (0.6 nozzle)",
             "sub_path": "process/0.08mm Fine @FLSun Q5 (0.6 nozzle).json"
         },
@@ -489,44 +405,204 @@
             "sub_path": "filament/fdm_filament_pa.json"
         },
         {
-            "name": "FLSun Generic PLA",
-            "sub_path": "filament/FLSun Generic PLA.json"
+            "name": "FLSun Generic PLA @base",
+            "sub_path": "filament/FLSun Generic PLA @base.json"
         },
         {
-            "name": "FLSun Generic PLA-CF",
-            "sub_path": "filament/FLSun Generic PLA-CF.json"
+            "name": "FLSun Generic PLA @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PLA @0.2 nozzle.json"
         },
         {
-            "name": "FLSun Generic PETG",
-            "sub_path": "filament/FLSun Generic PETG.json"
+            "name": "FLSun Generic PLA @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PLA @0.4 nozzle.json"
         },
         {
-            "name": "FLSun Generic ABS",
-            "sub_path": "filament/FLSun Generic ABS.json"
+            "name": "FLSun Generic PLA @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PLA @0.6 nozzle.json"
         },
         {
-            "name": "FLSun Generic TPU",
-            "sub_path": "filament/FLSun Generic TPU.json"
+            "name": "FLSun Generic PLA @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PLA @0.8 nozzle.json"
         },
         {
-            "name": "FLSun Generic ASA",
-            "sub_path": "filament/FLSun Generic ASA.json"
+            "name": "FLSun Generic PLA-CF @base",
+            "sub_path": "filament/FLSun Generic PLA-CF @base.json"
         },
         {
-            "name": "FLSun Generic PC",
-            "sub_path": "filament/FLSun Generic PC.json"
+            "name": "FLSun Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PLA-CF @0.2 nozzle.json"
         },
         {
-            "name": "FLSun Generic PVA",
-            "sub_path": "filament/FLSun Generic PVA.json"
+            "name": "FLSun Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PLA-CF @0.4 nozzle.json"
         },
         {
-            "name": "FLSun Generic PA",
-            "sub_path": "filament/FLSun Generic PA.json"
+            "name": "FLSun Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PLA-CF @0.6 nozzle.json"
         },
         {
-            "name": "FLSun Generic PA-CF",
-            "sub_path": "filament/FLSun Generic PA-CF.json"
+            "name": "FLSun Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PETG @base",
+            "sub_path": "filament/FLSun Generic PETG @base.json"
+        },
+        {
+            "name": "FLSun Generic PETG @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PETG @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PETG @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PETG @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ABS @base",
+            "sub_path": "filament/FLSun Generic ABS @base.json"
+        },
+        {
+            "name": "FLSun Generic ABS @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic ABS @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ABS @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ABS @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ABS @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic TPU @base",
+            "sub_path": "filament/FLSun Generic TPU @base.json"
+        },
+        {
+            "name": "FLSun Generic TPU @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic TPU @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic TPU @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic TPU @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ASA @base",
+            "sub_path": "filament/FLSun Generic ASA @base.json"
+        },
+        {
+            "name": "FLSun Generic ASA @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ASA @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ASA @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic ASA @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PC @base",
+            "sub_path": "filament/FLSun Generic PC @base.json"
+        },
+        {
+            "name": "FLSun Generic PC @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PC @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PC @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PC @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PVA @base",
+            "sub_path": "filament/FLSun Generic PVA @base.json"
+        },
+        {
+            "name": "FLSun Generic PVA @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PVA @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PVA @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PVA @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA @base",
+            "sub_path": "filament/FLSun Generic PA @base.json"
+        },
+        {
+            "name": "FLSun Generic PA @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA-CF @base",
+            "sub_path": "filament/FLSun Generic PA-CF @base.json"
+        },
+        {
+            "name": "FLSun Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/FLSun Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/FLSun Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/FLSun Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "FLSun Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/FLSun Generic PA-CF @0.8 nozzle.json"
         }
     ],
     "machine_list": [
@@ -541,10 +617,6 @@
 		{
             "name": "FLSun Q5 (0.4 nozzle)",
             "sub_path": "machine/FLSun Q5 (0.4 nozzle).json"
-        },
-		{
-            "name": "FLSun Q5 (0.5 nozzle)",
-            "sub_path": "machine/FLSun Q5 (0.5 nozzle).json"
         },
 		{
             "name": "FLSun Q5 (0.6 nozzle)",
@@ -563,10 +635,6 @@
             "sub_path": "machine/FLSun QQ-S Pro (0.4 nozzle).json"
         },
 		{
-            "name": "FLSun QQ-S Pro (0.5 nozzle)",
-            "sub_path": "machine/FLSun QQ-S Pro (0.5 nozzle).json"
-        },
-		{
             "name": "FLSun QQ-S Pro (0.6 nozzle)",
             "sub_path": "machine/FLSun QQ-S Pro (0.6 nozzle).json"
         },
@@ -581,10 +649,6 @@
 		{
             "name": "FLSun Super Racer (Marlin) (0.4 nozzle)",
             "sub_path": "machine/FLSun Super Racer (Marlin) (0.4 nozzle).json"
-        },
-		{
-            "name": "FLSun Super Racer (Marlin) (0.5 nozzle)",
-            "sub_path": "machine/FLSun Super Racer (Marlin) (0.5 nozzle).json"
         },
 		{
             "name": "FLSun Super Racer (Marlin) (0.6 nozzle)",
@@ -603,10 +667,6 @@
             "sub_path": "machine/FLSun Super Racer (Klipper) (0.4 nozzle).json"
         },
 		{
-            "name": "FLSun Super Racer (Klipper) (0.5 nozzle)",
-            "sub_path": "machine/FLSun Super Racer (Klipper) (0.5 nozzle).json"
-        },
-		{
             "name": "FLSun Super Racer (Klipper) (0.6 nozzle)",
             "sub_path": "machine/FLSun Super Racer (Klipper) (0.6 nozzle).json"
         },
@@ -621,10 +681,6 @@
         {
             "name": "FLSun V400 (0.4 nozzle)",
             "sub_path": "machine/FLSun V400 (0.4 nozzle).json"
-        },
-        {
-            "name": "FLSun V400 (0.5 nozzle)",
-            "sub_path": "machine/FLSun V400 (0.5 nozzle).json"
         },
         {
             "name": "FLSun V400 (0.6 nozzle)",
