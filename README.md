@@ -1,6 +1,7 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
 [![Build Win x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
+[![Build macOS arm64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml)
 -------------------------------------
 
 GalaxySlicer is an extended version of the Orca Slicer.
