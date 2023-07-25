@@ -24,7 +24,7 @@ on:
 jobs:
   build_osx_arm64:
     name: Build macOS arm64
-    runs-on: macos-12
+    runs-on: macos-13
 
     steps:
       - uses: actions/checkout@v3
