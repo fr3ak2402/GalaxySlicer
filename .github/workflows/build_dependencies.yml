@@ -43,19 +43,25 @@ jobs:
             mkdir ${{ github.workspace }}/deps/build
             mkdir ${{ github.workspace }}/deps/build/GalaxySlicer_dep
             .\build_release_vs2022.bat deps
-      
-      #- name: Pack Windows dependencies
-      #  if: matrix.os == 'windows-2022'
-      #  working-directory: ${{ github.workspace }}/deps/build
-      #  shell: cmd
-      #  run: '"C:/Program Files/7-Zip/7z.exe" a -tzip GalaxySlicer_dep.zip ${{ github.workspace }}/deps/build/GalaxySlicer_dep'
+            
+      - name: Cleaning up the Windows Build Directory
+        if: matrix.os == 'windows-2022'
+        run: |
+            cd ${{ github.workspace }}/deps/build
+            ls | grep -v "GalaxySlicer_dep" | xargs rm -rf
+        
+      - name: Pack Windows dependencies
+        if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
+        run: '"C:/Program Files/7-Zip/7z.exe" a -tzip GalaxySlicer_dep.zip ${{ github.workspace }}/deps/build/GalaxySlicer_dep'
         
       - name: Upload Windows dependencies
         if: matrix.os == 'windows-2022'
         uses: actions/upload-artifact@v3
         with:
           name: GalaxySlicer_dep
-          path: ${{ github.workspace }}/deps/build/GalaxySlicer_dep
+          path: ${{ github.workspace }}/deps/build/GalaxySlicer_dep.zip
 
       #- name: Build on Mac x86_64
       #  if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
