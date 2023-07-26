@@ -48,7 +48,8 @@ jobs:
         if: matrix.os == 'windows-2022'
         run: |
             cd ${{ github.workspace }}/deps/build
-            ls | grep -v "GalaxySlicer_dep" | xargs rm -rf
+      #      ls | grep -v "GalaxySlicer_dep" | xargs rm -rf
+            powershell.exe -Command "Get-ChildItem | Where-Object { $_.Name -ne 'GalaxySlicer_dep' } | Remove-Item -Recurse -Force"
         
       - name: Pack Windows dependencies
         if: matrix.os == 'windows-2022'
