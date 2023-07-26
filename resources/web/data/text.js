@@ -91,7 +91,8 @@ var LangText={
 		"t96": "GalaxySlicer Profile Manager",
 		"t97": "Profile management",
 		"t98": "Coming soon",
-		"t99": "Very sorry...: 1.0.0-alpha -> 1.0.0-beta"
+		"t99": "Very sorry...: 1.0.0-alpha -> 1.0.0-beta",
+		"t100": "Search"
 	},
 	"de_DE":{
 			"t1":"Willkommen im GalaxySlicer",
@@ -183,7 +184,8 @@ var LangText={
 			"t96": "GalaxySlicer Profile Manager",
 			"t97": "Profilverwaltung",
 			"t98": "Demnächst verfügbar",
-			"t99": "Entschuldigung...: 1.0.0-alpha -> 1.0.0-beta"
+			"t99": "Entschuldigung...: 1.0.0-alpha -> 1.0.0-beta",
+			"t100": "Suchen"
 	    },
 		"cs_CZ":{
 			"t1":"Vítejte v GalaxySlicer",
@@ -275,7 +277,8 @@ var LangText={
 			"t96": "GalaxySlicer Profile Manager",
 			"t97": "Správa profilů",
 			"t98": "Již brzy",
-			"t99": "Velmi se omlouvám...: 1.0.0-alpha -> 1.0.0-beta"
+			"t99": "Velmi se omlouvám...: 1.0.0-alpha -> 1.0.0-beta",
+			"t100": "Vyhledávání"
 	    },
 	"fr_FR":{
 		"t1":"Bienvenue sur GalaxySlicer",
@@ -370,6 +373,7 @@ var LangText={
 		"t97": "Gestion des profils",
 		"t98": "Bientôt disponible",
 		"t99": "Pardon... : 1.0.0-alpha -> 1.0.0-beta",
+		"t100": "Rechercher",
 		"wk1":"Démarrage rapide",
 		"wk2":"Cet article présente l'utilisation la plus basique de GalaxySlicer. Il guide les utilisateurs pour configurer le logiciel, créer des projets et effectuer la première tâche d'impression étape par étape.",
 		"wk3":"Workflow basé sur des projets",
@@ -478,6 +482,7 @@ var LangText={
 		"t97": "简介管理",
 		"t98": "即将推出",
 		"t99": "非常抱歉...: 1.0.0-alpha -> 1.0.0-beta",
+		"t100": "搜索",
 		"wk1":"快速入门指南",
 		"wk2":"本文介绍了GalaxySlicer的最基本用法。它指导用户配置软件，创建项目，并逐步完成第一个打印任务。",
 		"wk3":"基于项目的工作流",
@@ -528,8 +533,10 @@ function TranslatePage()
 		
 		let tid=$(OneNode).attr("tid");
 		if( LangText[strLang].hasOwnProperty(tid) )
-		{
+		{	
 			$(OneNode).html(LangText[strLang][tid]);
 		}
 	}
+	
+	$('input[type=search]').attr('placeholder',LangText[strLang]['t100']);
 }
