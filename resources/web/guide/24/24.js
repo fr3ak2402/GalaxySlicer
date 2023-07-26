@@ -67,7 +67,7 @@ function HandleModelList( pVal )
 			if( sVV=="Other")
 				sVV="Orca colosseum";
 
-			let HtmlNewVendor='<div class="OneVendorBlock" Vendor="'+strVendor+'">'+
+			let HtmlNewVendor='<div class="OneVendorBlock" Vendor="'+strVendor+'" VendorName="'+sVV+'">'+
 '<div class="BlockBanner">'+
 '	<div class="BannerBtns">'+
 '		<div class="SmallBtn_Green trans" tid="t11" onClick="SelectPrinterAll('+"\'"+strVendor+"\'"+')">all</div>'+
@@ -247,6 +247,47 @@ function ConfirmSelect()
 	}
 }
 
+function FilterVendor()
+{
+    var inputValue = $('#Search').val();
+    
+    if (inputValue.trim() !== '') 
+	{
+        var searchedVendor = $('#Search').val().trim();
+		
+		
+        
+        // Search for elements with the attribute "VendorName" and check them
+        $('[VendorName]').each(function() 
+		{
+            var nameVendor = $(this).attr('VendorName');
+            
+            if (nameVendor.includes(searchedVendor)) 
+			{
+                $(this).show(); // The element's vendor value contains the searched string, show it
+            } 
+			else 
+			{
+                $(this).hide(); // The element has a different vendor value or doesn't contain the string, hide it
+            }
+        });
+    } 
+	else 
+	{
+        $('[VendorName]').show();
+    }
+}
 
+$(document).ready(function() 
+{
+    $('#Search').on('input', function() 
+	{
+        FilterVendor();
+    });
 
-
+    $('#Clear').click(function() 
+	{
+        $('#Search').val(''); // Clear the input field
+        $('[VendorName]').show(); // Show all Vendor elements
+    });
+});

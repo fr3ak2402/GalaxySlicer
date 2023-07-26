@@ -34,6 +34,7 @@ input[type=search] {
 	border:#9c6da4 1px solid;
 	background-color: #B9B9BC;
 	caret-color : #9c6da4;
+	color: black;
 }
 
 /*-----Button-----*/
