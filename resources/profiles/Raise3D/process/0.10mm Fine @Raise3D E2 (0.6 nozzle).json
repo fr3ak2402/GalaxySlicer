@@ -103,6 +103,6 @@
 	"xy_hole_compensation": "0",
 	"xy_contour_compensation": "0",
 	"compatible_printers": [
-		"Raise3D E2 (0.6 nozzle) (Dual)"
+		"Raise3D E2 (0.6 nozzle) (IDEX)"
 	]
 }

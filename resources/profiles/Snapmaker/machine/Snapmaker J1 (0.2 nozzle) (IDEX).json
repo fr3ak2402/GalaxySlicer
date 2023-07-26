@@ -1,12 +1,12 @@
 {
     "type": "machine",
-    "setting_id": "GM010",
-    "name": "Snapmaker J1 (0.4 nozzle)",
+    "setting_id": "GM009",
+    "name": "Snapmaker J1 (0.2 nozzle) (IDEX)",
     "from": "system",
     "instantiation": "true",
     "inherits": "fdm_machine_idex",
     "printer_model": "Snapmaker J1",
-    "default_print_profile": "0.20mm Standard @Snapmaker J1 (0.4 nozzle)",
+    "default_print_profile": "0.20mm Standard @Snapmaker J1 (0.2 nozzle)",
     "retraction_minimum_travel": [
       "3"
     ],
@@ -20,9 +20,9 @@
       "SpiralLift"
     ],
     "nozzle_diameter": [
-        "0.4"
+        "0.2"
     ],
-	"printer_variant": "0.4",
+	"printer_variant": "0.2",
     "bed_exclude_area": [
       "0x0"
     ],

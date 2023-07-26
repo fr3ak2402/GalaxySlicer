@@ -1,7 +1,7 @@
 {
   "type": "process",
   "setting_id": "GP029",
-  "name": "0.24mm Optimal @Folgertech FT-6 (0.6 nozzle)",
+  "name": "0.24mm Optimal @Folgertech FT-6 (0.6 nozzle) (Dual)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_process_folgertech_common",
@@ -106,6 +106,6 @@
     "xy_hole_compensation": "0",
     "xy_contour_compensation": "0",
   "compatible_printers": [
-    "Folgertech FT-6 (0.6 nozzle)"
+    "Folgertech FT-6 (0.6 nozzle) (Dual)"
   ]
 }

@@ -1,7 +1,7 @@
 {
 	"type": "machine",
 	"setting_id": "GM001",
-	"name": "Elegoo Neptune 2D (0.4 nozzle)",
+	"name": "Elegoo Neptune 2D (0.4 nozzle) (Dual)",
 	"from": "system",
 	"instantiation": "true",
 	"inherits": "fdm_elegoo_common",
