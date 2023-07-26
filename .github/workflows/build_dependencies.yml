@@ -48,7 +48,7 @@ jobs:
         if: matrix.os == 'windows-2022'
         run: |
             cd ${{ github.workspace }}/deps/build
-            for /d %%i in (*) do (
+            for (/d %%i in (*) do (
               if /i not "%%i"=="GalaxySlicer_dep" rd /s /q "%%i"
             )
         
