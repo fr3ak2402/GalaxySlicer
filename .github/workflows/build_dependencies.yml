@@ -46,11 +46,11 @@ jobs:
             
       - name: Cleaning up the Windows Build Directory
         if: matrix.os == 'windows-2022'
-        shell: pwsh
         run: |
             cd ${{ github.workspace }}/deps/build
-      #      ls | grep -v "GalaxySlicer_dep" | xargs rm -rf
-            Get-ChildItem | Where-Object { $_.Name -ne 'GalaxySlicer_dep' } | Remove-Item -Recurse -Force
+            for /d %%i in (*) do (
+              if /i not "%%i"=="GalaxySlicer_dep" rd /s /q "%%i"
+            )
         
       - name: Pack Windows dependencies
         if: matrix.os == 'windows-2022'
