@@ -20,7 +20,20 @@ body
 
 #Title div
 {
-	color: #693A71;
+	color: #9c6da4;
+}
+
+/*----TitleBar with Search----*/
+#TitleBarText p
+{
+    color: #9c6da4;
+}
+
+/*--SearchField--*/
+input[type=text] {
+	border:#9c6da4 1px solid;
+	background-color: #B9B9BC;
+	caret-color : #9c6da4;
 }
 
 /*-----Button-----*/
@@ -65,12 +78,4 @@ body
 {
 	background-color:#9C6DA4;
 	color: #fff;	
-}
-
-#Title div
-{
-	font-size:28px;
-	line-height: 28px;
-	color: #9c6da4;
-	padding: 0px 10mm;
 }
