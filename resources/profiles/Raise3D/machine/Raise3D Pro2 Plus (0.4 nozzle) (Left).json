@@ -6,7 +6,7 @@
 	"instantiation": "true",
 	"inherits": "fdm_machine_common",
 	"printer_model": "Raise3D Pro2 Plus",
-	"default_print_profile": "0.20mm Standard @Raise3D Pro2Plus (0.4 nozzle)",
+	"default_print_profile": "0.20mm Standard @Raise3D Pro2 (0.4 nozzle)",
 	"nozzle_diameter": [
 		"0.4",
 		"0.4"

@@ -6,7 +6,7 @@
 	"instantiation": "true",
 	"inherits": "fdm_machine_common",
 	"printer_model": "Anycubic Kobra Plus",
-	"default_print_profile": "0.20mm Standard @Anycubic KobraPlus (0.2 nozzle)",
+	"default_print_profile": "0.20mm Standard @Anycubic Kobra (0.2 nozzle)",
 	"nozzle_diameter": [
 		"0.2"
 	],

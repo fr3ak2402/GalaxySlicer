@@ -6,7 +6,7 @@
   "instantiation": "true",
   "inherits": "fdm_klipper_common",
   "printer_model": "RatRig V-Core 3 300",
-  "default_print_profile": "0.20mm Standard @RatRig V-Core 3 300 (0.2 nozzle)",
+  "default_print_profile": "0.20mm Standard @RatRig V-Core 3 (0.2 nozzle)",
   "nozzle_diameter": [
     "0.2"
   ],
@@ -17,6 +17,5 @@
     "300x300",
     "0x300"
   ],
-  "default_print_profile": "0.20mm Standard @RatRig V-Core 3 300 (0.2 nozzle)",
   "printable_height": "300"
 }
