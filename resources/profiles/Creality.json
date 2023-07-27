@@ -9,6 +9,10 @@
       "sub_path": "machine/Creality CR-10 Max.json"
   },
   {
+      "name": "Creality CR-10 Smart Pro",
+      "sub_path": "machine/Creality CR-10 Smart Pro.json"
+  },
+  {
       "name": "Creality CR-10 V2",
       "sub_path": "machine/Creality CR-10 V2.json"
   },
@@ -203,6 +207,22 @@
       "sub_path": "process/0.16mm Extra Fine @Creality CR6SE (0.6 nozzle).json"
   },
   {
+      "name": "0.16mm Optimal @Creality CR10SmartPro (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality CR10SmartPro (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality CR10SmartPro (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality CR10SmartPro (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality CR10SmartPro (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality CR10SmartPro (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality CR10SmartPro (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality CR10SmartPro (0.8 nozzle).json"
+  },
+  {
       "name": "0.16mm Optimal @Creality CR10V2 (0.2 nozzle)",
       "sub_path": "process/0.16mm Optimal @Creality CR10V2 (0.2 nozzle).json"
   },
@@ -377,6 +397,22 @@
   {
       "name": "0.20mm Standard @Creality CR10Max (0.8 nozzle)",
       "sub_path": "process/0.20mm Standard @Creality CR10Max (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality CR10SmartPro (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality CR10SmartPro (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality CR10SmartPro (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality CR10SmartPro (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality CR10SmartPro (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality CR10SmartPro (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality CR10SmartPro (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality CR10SmartPro (0.8 nozzle).json"
   },
   {
       "name": "0.20mm Standard @Creality CR10V2 (0.2 nozzle)",
@@ -849,6 +885,22 @@
   {
       "name": "Creality CR-10 Max (0.8 nozzle)",
       "sub_path": "machine/Creality CR-10 Max (0.8 nozzle).json"
+  },
+  {
+      "name": "Creality CR-10 Smart Pro (0.2 nozzle)",
+      "sub_path": "machine/Creality CR-10 Smart Pro (0.2 nozzle).json"
+  },
+  {
+      "name": "Creality CR-10 Smart Pro (0.4 nozzle)",
+      "sub_path": "machine/Creality CR-10 Smart Pro (0.4 nozzle).json"
+  },
+  {
+      "name": "Creality CR-10 Smart Pro (0.6 nozzle)",
+      "sub_path": "machine/Creality CR-10 Smart Pro (0.6 nozzle).json"
+  },
+  {
+      "name": "Creality CR-10 Smart Pro (0.8 nozzle)",
+      "sub_path": "machine/Creality CR-10 Smart Pro (0.8 nozzle).json"
   },
   {
       "name": "Creality CR-10 V2 (0.2 nozzle)",
