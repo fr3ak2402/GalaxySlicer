@@ -18,10 +18,7 @@
     "0x200"
   ],
   "bed_exclude_area": [
-    "312x0",
-    "324x0",
-    "324x200",
-    "312x200"
+    "0x0"
   ],
   "printable_height": "200",
   "nozzle_diameter": [
