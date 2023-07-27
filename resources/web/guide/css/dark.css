@@ -37,6 +37,15 @@ input[type=search] {
 	color: black;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3E3E45;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #3E3E45;
+}
+
 /*-----Button-----*/
 .GrayBtn
 {

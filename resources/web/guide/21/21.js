@@ -82,6 +82,9 @@ function HandleModelList( pVal )
 			$('#Content').append(HtmlNewVendor);
 		}
 		
+		//GalaxySlicer: Sort Vendors
+		sortVendors();
+		
 		let ModelName=OneModel['model'];
 		
 		//Collect Html Node Nozzel Html
@@ -228,20 +231,63 @@ function ShowNotice( nShow )
 	}
 }
 
+function sortVendors() 
+{
+    var vendorElements = $('[Vendor]');
+    var customVendor = null;
+    var sortedVendors = [];
+
+    vendorElements.each(function() 
+	{
+        var vendorName = $(this).attr('Vendor');
+		
+        if (vendorName === 'Custom') 
+		{
+            customVendor = this; // Save the 'Custom' element
+        } 
+		else 
+		{
+            sortedVendors.push(this); // Add the other vendor elements
+        }
+    });
+
+    // Sort the other vendor elements alphabetically
+    sortedVendors.sort(function(a, b) 
+	{
+        var vendorA = $(a).attr('Vendor');
+        var vendorB = $(b).attr('Vendor');
+        return vendorA.localeCompare(vendorB);
+    });
+
+    // Empty the container and add the sorted elements in the desired order
+    var container = vendorElements.parent();
+    container.empty();
+
+    // Add the 'Custom' element first, if present
+    if (customVendor !== null) 
+	{
+        container.append(customVendor);
+    }
+
+    // Add the other vendor elements in the sorted order
+    sortedVendors.forEach(function(element) 
+	{
+        container.append(element);
+    });
+}
+
 function FilterVendor()
 {
     var inputValue = $('#Search').val();
     
     if (inputValue.trim() !== '') 
 	{
-        var searchedVendor = $('#Search').val().trim();
-		
-		
-        
+        var searchedVendor = $('#Search').val().trim().toLowerCase();
+
         // Search for elements with the attribute "VendorName" and check them
         $('[VendorName]').each(function() 
 		{
-            var nameVendor = $(this).attr('VendorName');
+            var nameVendor = $(this).attr('VendorName').toLowerCase();
             
             if (nameVendor.includes(searchedVendor)) 
 			{
