@@ -1,9 +1,9 @@
 {
     "type": "process",
-    "name": "fdm_process_Vzbot_common",
+    "name": "fdm_process_vzbot_common_0.4_nozzle",
     "from": "system",
     "instantiation": "false",
-    "inherits": "fdm_process_common",
+    "inherits": "fdm_process_common_0.4_nozzle",
     "adaptive_layer_height": "0",
     "reduce_crossing_wall": "0",
     "max_travel_detour_distance": "0",

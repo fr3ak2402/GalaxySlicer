@@ -101,64 +101,64 @@
       "sub_path": "filament/fdm_filament_pla.json"
   },
   {
-      "name": "Voxelab Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Voxelab Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Voxelab Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Voxelab Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Voxelab Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic ABS @base",
-      "sub_path": "filament/Voxelab Generic ABS @base.json"
-  },
-  {
-      "name": "Voxelab Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Voxelab Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Voxelab Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Voxelab Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Voxelab Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PETG @base",
-      "sub_path": "filament/Voxelab Generic PETG @base.json"
-  },
-  {
-      "name": "Voxelab Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Voxelab Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Voxelab Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Voxelab Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Voxelab Generic PLA @0.6 nozzle.json"
+      "name": "Voxelab Generic PLA @base",
+      "sub_path": "filament/Voxelab Generic PLA @base.json"
   },
   {
       "name": "Voxelab Generic PLA @0.8 nozzle",
       "sub_path": "filament/Voxelab Generic PLA @0.8 nozzle.json"
   },
   {
-      "name": "Voxelab Generic PLA @base",
-      "sub_path": "filament/Voxelab Generic PLA @base.json"
+      "name": "Voxelab Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @base",
+      "sub_path": "filament/Voxelab Generic PETG @base.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @base",
+      "sub_path": "filament/Voxelab Generic ABS @base.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

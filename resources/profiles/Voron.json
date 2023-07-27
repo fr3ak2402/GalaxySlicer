@@ -369,204 +369,204 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "Voron Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Voron Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Voron Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Voron Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Voron Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ABS @base",
-      "sub_path": "filament/Voron Generic ABS @base.json"
-  },
-  {
-      "name": "Voron Generic ASA @0.2 nozzle",
-      "sub_path": "filament/Voron Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ASA @0.4 nozzle",
-      "sub_path": "filament/Voron Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ASA @0.6 nozzle",
-      "sub_path": "filament/Voron Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ASA @0.8 nozzle",
-      "sub_path": "filament/Voron Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic ASA @base",
-      "sub_path": "filament/Voron Generic ASA @base.json"
-  },
-  {
-      "name": "Voron Generic PA @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PA @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PA @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PA @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PA @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA @base",
-      "sub_path": "filament/Voron Generic PA @base.json"
-  },
-  {
-      "name": "Voron Generic PA-CF @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA-CF @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA-CF @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA-CF @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PA-CF @base",
-      "sub_path": "filament/Voron Generic PA-CF @base.json"
-  },
-  {
-      "name": "Voron Generic PC @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PC @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PC @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PC @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PC @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PC @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PC @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PC @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PC @base",
-      "sub_path": "filament/Voron Generic PC @base.json"
-  },
-  {
-      "name": "Voron Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PETG @base",
-      "sub_path": "filament/Voron Generic PETG @base.json"
-  },
-  {
-      "name": "Voron Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA @base",
-      "sub_path": "filament/Voron Generic PLA @base.json"
-  },
-  {
-      "name": "Voron Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PLA-CF @base",
-      "sub_path": "filament/Voron Generic PLA-CF @base.json"
-  },
-  {
-      "name": "Voron Generic PVA @0.2 nozzle",
-      "sub_path": "filament/Voron Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PVA @0.4 nozzle",
-      "sub_path": "filament/Voron Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PVA @0.6 nozzle",
-      "sub_path": "filament/Voron Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PVA @0.8 nozzle",
-      "sub_path": "filament/Voron Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "Voron Generic PVA @base",
-      "sub_path": "filament/Voron Generic PVA @base.json"
-  },
-  {
-      "name": "Voron Generic TPU @0.2 nozzle",
-      "sub_path": "filament/Voron Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "Voron Generic TPU @0.4 nozzle",
-      "sub_path": "filament/Voron Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "Voron Generic TPU @0.6 nozzle",
-      "sub_path": "filament/Voron Generic TPU @0.6 nozzle.json"
+      "name": "Voron Generic TPU @base",
+      "sub_path": "filament/Voron Generic TPU @base.json"
   },
   {
       "name": "Voron Generic TPU @0.8 nozzle",
       "sub_path": "filament/Voron Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "Voron Generic TPU @base",
-      "sub_path": "filament/Voron Generic TPU @base.json"
+      "name": "Voron Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Voron Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Voron Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Voron Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PVA @base",
+      "sub_path": "filament/Voron Generic PVA @base.json"
+  },
+  {
+      "name": "Voron Generic PVA @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PVA @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PVA @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PVA @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA-CF @base",
+      "sub_path": "filament/Voron Generic PLA-CF @base.json"
+  },
+  {
+      "name": "Voron Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA @base",
+      "sub_path": "filament/Voron Generic PLA @base.json"
+  },
+  {
+      "name": "Voron Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PETG @base",
+      "sub_path": "filament/Voron Generic PETG @base.json"
+  },
+  {
+      "name": "Voron Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PC @base",
+      "sub_path": "filament/Voron Generic PC @base.json"
+  },
+  {
+      "name": "Voron Generic PC @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PC @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PC @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PC @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PC @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PC @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PC @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PC @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA-CF @base",
+      "sub_path": "filament/Voron Generic PA-CF @base.json"
+  },
+  {
+      "name": "Voron Generic PA-CF @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA-CF @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA-CF @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA-CF @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA @base",
+      "sub_path": "filament/Voron Generic PA @base.json"
+  },
+  {
+      "name": "Voron Generic PA @0.8 nozzle",
+      "sub_path": "filament/Voron Generic PA @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA @0.6 nozzle",
+      "sub_path": "filament/Voron Generic PA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA @0.4 nozzle",
+      "sub_path": "filament/Voron Generic PA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic PA @0.2 nozzle",
+      "sub_path": "filament/Voron Generic PA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ASA @base",
+      "sub_path": "filament/Voron Generic ASA @base.json"
+  },
+  {
+      "name": "Voron Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Voron Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Voron Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Voron Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Voron Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ABS @base",
+      "sub_path": "filament/Voron Generic ABS @base.json"
+  },
+  {
+      "name": "Voron Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Voron Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Voron Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Voron Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Voron Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Voron Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

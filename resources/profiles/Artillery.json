@@ -213,124 +213,124 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "Artillery Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Artillery Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ABS @base",
-      "sub_path": "filament/Artillery Generic ABS @base.json"
-  },
-  {
-      "name": "Artillery Generic ASA @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ASA @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ASA @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ASA @0.8 nozzle",
-      "sub_path": "filament/Artillery Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic ASA @base",
-      "sub_path": "filament/Artillery Generic ASA @base.json"
-  },
-  {
-      "name": "Artillery Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Artillery Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PETG @base",
-      "sub_path": "filament/Artillery Generic PETG @base.json"
-  },
-  {
-      "name": "Artillery Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Artillery Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA @base",
-      "sub_path": "filament/Artillery Generic PLA @base.json"
-  },
-  {
-      "name": "Artillery Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/Artillery Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic PLA-CF @base",
-      "sub_path": "filament/Artillery Generic PLA-CF @base.json"
-  },
-  {
-      "name": "Artillery Generic TPU @0.2 nozzle",
-      "sub_path": "filament/Artillery Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic TPU @0.4 nozzle",
-      "sub_path": "filament/Artillery Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "Artillery Generic TPU @0.6 nozzle",
-      "sub_path": "filament/Artillery Generic TPU @0.6 nozzle.json"
+      "name": "Artillery Generic TPU @base",
+      "sub_path": "filament/Artillery Generic TPU @base.json"
   },
   {
       "name": "Artillery Generic TPU @0.8 nozzle",
       "sub_path": "filament/Artillery Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "Artillery Generic TPU @base",
-      "sub_path": "filament/Artillery Generic TPU @base.json"
+      "name": "Artillery Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA-CF @base",
+      "sub_path": "filament/Artillery Generic PLA-CF @base.json"
+  },
+  {
+      "name": "Artillery Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/Artillery Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA @base",
+      "sub_path": "filament/Artillery Generic PLA @base.json"
+  },
+  {
+      "name": "Artillery Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Artillery Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PETG @base",
+      "sub_path": "filament/Artillery Generic PETG @base.json"
+  },
+  {
+      "name": "Artillery Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Artillery Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ASA @base",
+      "sub_path": "filament/Artillery Generic ASA @base.json"
+  },
+  {
+      "name": "Artillery Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Artillery Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ABS @base",
+      "sub_path": "filament/Artillery Generic ABS @base.json"
+  },
+  {
+      "name": "Artillery Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Artillery Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Artillery Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Artillery Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Artillery Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Artillery Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

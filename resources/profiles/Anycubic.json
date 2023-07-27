@@ -333,204 +333,204 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "Anycubic Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ABS @base",
-      "sub_path": "filament/Anycubic Generic ABS @base.json"
-  },
-  {
-      "name": "Anycubic Generic ASA @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ASA @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ASA @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ASA @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic ASA @base",
-      "sub_path": "filament/Anycubic Generic ASA @base.json"
-  },
-  {
-      "name": "Anycubic Generic PA @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PA @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PA @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PA @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PA @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA @base",
-      "sub_path": "filament/Anycubic Generic PA @base.json"
-  },
-  {
-      "name": "Anycubic Generic PA-CF @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA-CF @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA-CF @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA-CF @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PA-CF @base",
-      "sub_path": "filament/Anycubic Generic PA-CF @base.json"
-  },
-  {
-      "name": "Anycubic Generic PC @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PC @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PC @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PC @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PC @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PC @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PC @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PC @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PC @base",
-      "sub_path": "filament/Anycubic Generic PC @base.json"
-  },
-  {
-      "name": "Anycubic Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PETG @base",
-      "sub_path": "filament/Anycubic Generic PETG @base.json"
-  },
-  {
-      "name": "Anycubic Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA @base",
-      "sub_path": "filament/Anycubic Generic PLA @base.json"
-  },
-  {
-      "name": "Anycubic Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PLA-CF @base",
-      "sub_path": "filament/Anycubic Generic PLA-CF @base.json"
-  },
-  {
-      "name": "Anycubic Generic PVA @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PVA @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PVA @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PVA @0.8 nozzle",
-      "sub_path": "filament/Anycubic Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic PVA @base",
-      "sub_path": "filament/Anycubic Generic PVA @base.json"
-  },
-  {
-      "name": "Anycubic Generic TPU @0.2 nozzle",
-      "sub_path": "filament/Anycubic Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic TPU @0.4 nozzle",
-      "sub_path": "filament/Anycubic Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "Anycubic Generic TPU @0.6 nozzle",
-      "sub_path": "filament/Anycubic Generic TPU @0.6 nozzle.json"
+      "name": "Anycubic Generic TPU @base",
+      "sub_path": "filament/Anycubic Generic TPU @base.json"
   },
   {
       "name": "Anycubic Generic TPU @0.8 nozzle",
       "sub_path": "filament/Anycubic Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "Anycubic Generic TPU @base",
-      "sub_path": "filament/Anycubic Generic TPU @base.json"
+      "name": "Anycubic Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PVA @base",
+      "sub_path": "filament/Anycubic Generic PVA @base.json"
+  },
+  {
+      "name": "Anycubic Generic PVA @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PVA @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PVA @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PVA @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA-CF @base",
+      "sub_path": "filament/Anycubic Generic PLA-CF @base.json"
+  },
+  {
+      "name": "Anycubic Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA @base",
+      "sub_path": "filament/Anycubic Generic PLA @base.json"
+  },
+  {
+      "name": "Anycubic Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PETG @base",
+      "sub_path": "filament/Anycubic Generic PETG @base.json"
+  },
+  {
+      "name": "Anycubic Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PC @base",
+      "sub_path": "filament/Anycubic Generic PC @base.json"
+  },
+  {
+      "name": "Anycubic Generic PC @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PC @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PC @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PC @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PC @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PC @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PC @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PC @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA-CF @base",
+      "sub_path": "filament/Anycubic Generic PA-CF @base.json"
+  },
+  {
+      "name": "Anycubic Generic PA-CF @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA-CF @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA-CF @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA-CF @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA @base",
+      "sub_path": "filament/Anycubic Generic PA @base.json"
+  },
+  {
+      "name": "Anycubic Generic PA @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic PA @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic PA @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic PA @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic PA @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic PA @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ASA @base",
+      "sub_path": "filament/Anycubic Generic ASA @base.json"
+  },
+  {
+      "name": "Anycubic Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ABS @base",
+      "sub_path": "filament/Anycubic Generic ABS @base.json"
+  },
+  {
+      "name": "Anycubic Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Anycubic Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Anycubic Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Anycubic Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Anycubic Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Anycubic Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

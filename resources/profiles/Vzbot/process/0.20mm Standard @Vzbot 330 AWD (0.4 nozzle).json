@@ -3,7 +3,7 @@
     "setting_id": "GP004",
     "name": "0.20mm Standard @Vzbot 330 AWD (0.4 nozzle)",
     "from": "system",
-    "inherits": "fdm_process_Vzbot_common",
+    "inherits": "fdm_process_vzbot_common_0.4_nozzle" ,
     "instantiation": "true",
     "layer_height": "0.2",
     "bottom_shell_layers": "3",

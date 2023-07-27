@@ -4,7 +4,7 @@
     "name": "0.15mm Optimal @Vzbot 330 AWD (0.4 nozzle)",
     "from": "system",
     "instantiation": "true",
-    "inherits": "fdm_process_Vzbot_common",
+    "inherits": "fdm_process_vzbot_common_0.4_nozzle" ,
     "bottom_shell_layers": "4",
     "top_shell_layers": "5",
     "layer_height": "0.15",

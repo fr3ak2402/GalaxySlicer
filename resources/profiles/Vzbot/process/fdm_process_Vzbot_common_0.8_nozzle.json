@@ -1,6 +1,6 @@
 {
     "type": "process",
-    "name": "fdm_process_Vzbot_common_0.8_nozzle",
+    "name": "fdm_process_vzbot_common_0.8_nozzle",
     "from": "system",
     "instantiation": "false",
     "inherits": "fdm_process_common_0.8_nozzle",

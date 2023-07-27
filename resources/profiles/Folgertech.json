@@ -377,244 +377,244 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "Folgertech Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ABS @base",
-      "sub_path": "filament/Folgertech Generic ABS @base.json"
-  },
-  {
-      "name": "Folgertech Generic ASA @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ASA @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ASA @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ASA @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic ASA @base",
-      "sub_path": "filament/Folgertech Generic ASA @base.json"
-  },
-  {
-      "name": "Folgertech Generic PA @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PA @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PA @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PA @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PA @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA @base",
-      "sub_path": "filament/Folgertech Generic PA @base.json"
-  },
-  {
-      "name": "Folgertech Generic PA-CF @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA-CF @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA-CF @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA-CF @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PA-CF @base",
-      "sub_path": "filament/Folgertech Generic PA-CF @base.json"
-  },
-  {
-      "name": "Folgertech Generic PC @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PC @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PC @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PC @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PC @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PC @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PC @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PC @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PC @base",
-      "sub_path": "filament/Folgertech Generic PC @base.json"
-  },
-  {
-      "name": "Folgertech Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG @base",
-      "sub_path": "filament/Folgertech Generic PETG @base.json"
-  },
-  {
-      "name": "Folgertech Generic PETG-CF @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG-CF @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG-CF @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG-CF @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PETG-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PETG-CF @base",
-      "sub_path": "filament/Folgertech Generic PETG-CF @base.json"
-  },
-  {
-      "name": "Folgertech Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA @base",
-      "sub_path": "filament/Folgertech Generic PLA @base.json"
-  },
-  {
-      "name": "Folgertech Generic PLA Silk @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA Silk @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA Silk @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA Silk @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA Silk @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA Silk @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA Silk @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA Silk @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA Silk @base",
-      "sub_path": "filament/Folgertech Generic PLA Silk @base.json"
-  },
-  {
-      "name": "Folgertech Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PLA-CF @base",
-      "sub_path": "filament/Folgertech Generic PLA-CF @base.json"
-  },
-  {
-      "name": "Folgertech Generic PVA @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PVA @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PVA @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PVA @0.8 nozzle",
-      "sub_path": "filament/Folgertech Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic PVA @base",
-      "sub_path": "filament/Folgertech Generic PVA @base.json"
-  },
-  {
-      "name": "Folgertech Generic TPU @0.2 nozzle",
-      "sub_path": "filament/Folgertech Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic TPU @0.4 nozzle",
-      "sub_path": "filament/Folgertech Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "Folgertech Generic TPU @0.6 nozzle",
-      "sub_path": "filament/Folgertech Generic TPU @0.6 nozzle.json"
+      "name": "Folgertech Generic TPU @base",
+      "sub_path": "filament/Folgertech Generic TPU @base.json"
   },
   {
       "name": "Folgertech Generic TPU @0.8 nozzle",
       "sub_path": "filament/Folgertech Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "Folgertech Generic TPU @base",
-      "sub_path": "filament/Folgertech Generic TPU @base.json"
+      "name": "Folgertech Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PVA @base",
+      "sub_path": "filament/Folgertech Generic PVA @base.json"
+  },
+  {
+      "name": "Folgertech Generic PVA @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PVA @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PVA @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PVA @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA-CF @base",
+      "sub_path": "filament/Folgertech Generic PLA-CF @base.json"
+  },
+  {
+      "name": "Folgertech Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA Silk @base",
+      "sub_path": "filament/Folgertech Generic PLA Silk @base.json"
+  },
+  {
+      "name": "Folgertech Generic PLA Silk @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA Silk @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA Silk @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA Silk @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA Silk @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA Silk @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA Silk @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA Silk @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA @base",
+      "sub_path": "filament/Folgertech Generic PLA @base.json"
+  },
+  {
+      "name": "Folgertech Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG-CF @base",
+      "sub_path": "filament/Folgertech Generic PETG-CF @base.json"
+  },
+  {
+      "name": "Folgertech Generic PETG-CF @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG-CF @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG-CF @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG-CF @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG @base",
+      "sub_path": "filament/Folgertech Generic PETG @base.json"
+  },
+  {
+      "name": "Folgertech Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PC @base",
+      "sub_path": "filament/Folgertech Generic PC @base.json"
+  },
+  {
+      "name": "Folgertech Generic PC @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PC @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PC @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PC @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PC @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PC @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PC @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PC @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA-CF @base",
+      "sub_path": "filament/Folgertech Generic PA-CF @base.json"
+  },
+  {
+      "name": "Folgertech Generic PA-CF @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA-CF @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA-CF @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA-CF @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA @base",
+      "sub_path": "filament/Folgertech Generic PA @base.json"
+  },
+  {
+      "name": "Folgertech Generic PA @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic PA @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic PA @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic PA @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic PA @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic PA @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ASA @base",
+      "sub_path": "filament/Folgertech Generic ASA @base.json"
+  },
+  {
+      "name": "Folgertech Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ABS @base",
+      "sub_path": "filament/Folgertech Generic ABS @base.json"
+  },
+  {
+      "name": "Folgertech Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Folgertech Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Folgertech Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Folgertech Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Folgertech Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Folgertech Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

@@ -7,7 +7,7 @@ explore_filament() {
     local indent="$3"
     local fdm_files_common=$(find "$dir" -maxdepth 1 -type f -name "fdm_filament_common.json" | sort)
     local fdm_files=$(find "$dir" -maxdepth 1 -type f -name "fdm*.json"  ! -name "fdm_filament_common.json"| sort)
-    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "fdm*.json" | sort)
+    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "fdm*.json" | sort -r)
     local json_string=""
     local leer="      " 
 
@@ -77,7 +77,7 @@ explore_machine_model_list() {
     local dir="$1"
     local subdir="$2"
     local indent="$3"
-    local files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "*(*" ! -name "fdm*" | sort)
+    local files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "*nozzle)*" ! -name "fdm*" | sort)
     local json_string=""
     local leer="      " 
 
@@ -106,7 +106,7 @@ explore_machine() {
     local indent="$3"
     local fdm_files_common=$(find "$dir" -maxdepth 1 -type f -name "fdm_machine_common.json" | sort)
     local fdm_files=$(find "$dir" -maxdepth 1 -type f -name "fdm*.json"  ! -name "fdm_machine_common.json"| sort)
-    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*(*.json" ! -name "fdm*.json" | sort)
+    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*nozzle)*.json" ! -name "fdm*.json" | sort)
     local json_string=""
     local leer="      " 
 

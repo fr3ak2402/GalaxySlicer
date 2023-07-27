@@ -3,7 +3,7 @@
 	"name": "Creality CR-6 Max (0.8 nozzle)",
 	"from": "system",
 	"instantiation": "true",
-	"inherits": "fdm_creality_common",
+	"inherits": "fdm_machine_creality",
 	"printer_model": "Creality CR-6 Max",
 	"printer_variant": "0.8",
     "default_print_profile": "0.40mm Standard @Creality CR6Max (0.8 nozzle)",

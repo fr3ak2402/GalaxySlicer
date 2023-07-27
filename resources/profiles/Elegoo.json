@@ -933,64 +933,64 @@
       "sub_path": "filament/fdm_filament_pla.json"
   },
   {
-      "name": "Elegoo Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Elegoo Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Elegoo Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Elegoo Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Elegoo Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic ABS @base",
-      "sub_path": "filament/Elegoo Generic ABS @base.json"
-  },
-  {
-      "name": "Elegoo Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Elegoo Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Elegoo Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Elegoo Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Elegoo Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PETG @base",
-      "sub_path": "filament/Elegoo Generic PETG @base.json"
-  },
-  {
-      "name": "Elegoo Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Elegoo Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Elegoo Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Elegoo Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Elegoo Generic PLA @0.6 nozzle.json"
+      "name": "Elegoo Generic PLA @base",
+      "sub_path": "filament/Elegoo Generic PLA @base.json"
   },
   {
       "name": "Elegoo Generic PLA @0.8 nozzle",
       "sub_path": "filament/Elegoo Generic PLA @0.8 nozzle.json"
   },
   {
-      "name": "Elegoo Generic PLA @base",
-      "sub_path": "filament/Elegoo Generic PLA @base.json"
+      "name": "Elegoo Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Elegoo Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Elegoo Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Elegoo Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PETG @base",
+      "sub_path": "filament/Elegoo Generic PETG @base.json"
+  },
+  {
+      "name": "Elegoo Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Elegoo Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Elegoo Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Elegoo Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Elegoo Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic ABS @base",
+      "sub_path": "filament/Elegoo Generic ABS @base.json"
+  },
+  {
+      "name": "Elegoo Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Elegoo Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Elegoo Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Elegoo Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Elegoo Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Elegoo Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

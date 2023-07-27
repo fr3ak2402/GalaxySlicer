@@ -201,104 +201,104 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "Raise3D Generic ASA @0.2 nozzle",
-      "sub_path": "filament/Raise3D Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic ASA @0.4 nozzle",
-      "sub_path": "filament/Raise3D Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic ASA @0.6 nozzle",
-      "sub_path": "filament/Raise3D Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic ASA @0.8 nozzle",
-      "sub_path": "filament/Raise3D Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic ASA @base",
-      "sub_path": "filament/Raise3D Generic ASA @base.json"
-  },
-  {
-      "name": "Raise3D Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Raise3D Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Raise3D Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Raise3D Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Raise3D Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PETG @base",
-      "sub_path": "filament/Raise3D Generic PETG @base.json"
-  },
-  {
-      "name": "Raise3D Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Raise3D Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Raise3D Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Raise3D Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Raise3D Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PLA @base",
-      "sub_path": "filament/Raise3D Generic PLA @base.json"
-  },
-  {
-      "name": "Raise3D Generic PVA @0.2 nozzle",
-      "sub_path": "filament/Raise3D Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PVA @0.4 nozzle",
-      "sub_path": "filament/Raise3D Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PVA @0.6 nozzle",
-      "sub_path": "filament/Raise3D Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PVA @0.8 nozzle",
-      "sub_path": "filament/Raise3D Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic PVA @base",
-      "sub_path": "filament/Raise3D Generic PVA @base.json"
-  },
-  {
-      "name": "Raise3D Generic TPU @0.2 nozzle",
-      "sub_path": "filament/Raise3D Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic TPU @0.4 nozzle",
-      "sub_path": "filament/Raise3D Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "Raise3D Generic TPU @0.6 nozzle",
-      "sub_path": "filament/Raise3D Generic TPU @0.6 nozzle.json"
+      "name": "Raise3D Generic TPU @base",
+      "sub_path": "filament/Raise3D Generic TPU @base.json"
   },
   {
       "name": "Raise3D Generic TPU @0.8 nozzle",
       "sub_path": "filament/Raise3D Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "Raise3D Generic TPU @base",
-      "sub_path": "filament/Raise3D Generic TPU @base.json"
+      "name": "Raise3D Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Raise3D Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Raise3D Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Raise3D Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PVA @base",
+      "sub_path": "filament/Raise3D Generic PVA @base.json"
+  },
+  {
+      "name": "Raise3D Generic PVA @0.8 nozzle",
+      "sub_path": "filament/Raise3D Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PVA @0.6 nozzle",
+      "sub_path": "filament/Raise3D Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PVA @0.4 nozzle",
+      "sub_path": "filament/Raise3D Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PVA @0.2 nozzle",
+      "sub_path": "filament/Raise3D Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PLA @base",
+      "sub_path": "filament/Raise3D Generic PLA @base.json"
+  },
+  {
+      "name": "Raise3D Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Raise3D Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Raise3D Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Raise3D Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Raise3D Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PETG @base",
+      "sub_path": "filament/Raise3D Generic PETG @base.json"
+  },
+  {
+      "name": "Raise3D Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Raise3D Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Raise3D Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Raise3D Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Raise3D Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic ASA @base",
+      "sub_path": "filament/Raise3D Generic ASA @base.json"
+  },
+  {
+      "name": "Raise3D Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Raise3D Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Raise3D Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Raise3D Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Raise3D Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Raise3D Generic ASA @0.2 nozzle.json"
   }
   ],
 "machine_list":   [

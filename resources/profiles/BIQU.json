@@ -261,244 +261,244 @@
       "sub_path": "filament/fdm_filament_tpu.json"
   },
   {
-      "name": "BIQU Generic ABS @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic ABS @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ABS @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ABS @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ABS @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ABS @base",
-      "sub_path": "filament/BIQU Generic ABS @base.json"
-  },
-  {
-      "name": "BIQU Generic ASA @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ASA @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ASA @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ASA @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic ASA @base",
-      "sub_path": "filament/BIQU Generic ASA @base.json"
-  },
-  {
-      "name": "BIQU Generic PA @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PA @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PA @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PA @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PA @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA @base",
-      "sub_path": "filament/BIQU Generic PA @base.json"
-  },
-  {
-      "name": "BIQU Generic PA-CF @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA-CF @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA-CF @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA-CF @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PA-CF @base",
-      "sub_path": "filament/BIQU Generic PA-CF @base.json"
-  },
-  {
-      "name": "BIQU Generic PC @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PC @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PC @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PC @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PC @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PC @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PC @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PC @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PC @base",
-      "sub_path": "filament/BIQU Generic PC @base.json"
-  },
-  {
-      "name": "BIQU Generic PETG @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG @base",
-      "sub_path": "filament/BIQU Generic PETG @base.json"
-  },
-  {
-      "name": "BIQU Generic PETG-CF @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PETG-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG-CF @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PETG-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG-CF @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PETG-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG-CF @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PETG-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PETG-CF @base",
-      "sub_path": "filament/BIQU Generic PETG-CF @base.json"
-  },
-  {
-      "name": "BIQU Generic PLA @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA @base",
-      "sub_path": "filament/BIQU Generic PLA @base.json"
-  },
-  {
-      "name": "BIQU Generic PLA Silk @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PLA Silk @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA Silk @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PLA Silk @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA Silk @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PLA Silk @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA Silk @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PLA Silk @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA Silk @base",
-      "sub_path": "filament/BIQU Generic PLA Silk @base.json"
-  },
-  {
-      "name": "BIQU Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PLA-CF @base",
-      "sub_path": "filament/BIQU Generic PLA-CF @base.json"
-  },
-  {
-      "name": "BIQU Generic PVA @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PVA @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PVA @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PVA @0.8 nozzle",
-      "sub_path": "filament/BIQU Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic PVA @base",
-      "sub_path": "filament/BIQU Generic PVA @base.json"
-  },
-  {
-      "name": "BIQU Generic TPU @0.2 nozzle",
-      "sub_path": "filament/BIQU Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic TPU @0.4 nozzle",
-      "sub_path": "filament/BIQU Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "BIQU Generic TPU @0.6 nozzle",
-      "sub_path": "filament/BIQU Generic TPU @0.6 nozzle.json"
+      "name": "BIQU Generic TPU @base",
+      "sub_path": "filament/BIQU Generic TPU @base.json"
   },
   {
       "name": "BIQU Generic TPU @0.8 nozzle",
       "sub_path": "filament/BIQU Generic TPU @0.8 nozzle.json"
   },
   {
-      "name": "BIQU Generic TPU @base",
-      "sub_path": "filament/BIQU Generic TPU @base.json"
+      "name": "BIQU Generic TPU @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic TPU @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic TPU @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PVA @base",
+      "sub_path": "filament/BIQU Generic PVA @base.json"
+  },
+  {
+      "name": "BIQU Generic PVA @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PVA @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PVA @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PVA @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA-CF @base",
+      "sub_path": "filament/BIQU Generic PLA-CF @base.json"
+  },
+  {
+      "name": "BIQU Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA Silk @base",
+      "sub_path": "filament/BIQU Generic PLA Silk @base.json"
+  },
+  {
+      "name": "BIQU Generic PLA Silk @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PLA Silk @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA Silk @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PLA Silk @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA Silk @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PLA Silk @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA Silk @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PLA Silk @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA @base",
+      "sub_path": "filament/BIQU Generic PLA @base.json"
+  },
+  {
+      "name": "BIQU Generic PLA @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PLA @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG-CF @base",
+      "sub_path": "filament/BIQU Generic PETG-CF @base.json"
+  },
+  {
+      "name": "BIQU Generic PETG-CF @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PETG-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG-CF @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PETG-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG-CF @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PETG-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG-CF @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PETG-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG @base",
+      "sub_path": "filament/BIQU Generic PETG @base.json"
+  },
+  {
+      "name": "BIQU Generic PETG @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PETG @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PC @base",
+      "sub_path": "filament/BIQU Generic PC @base.json"
+  },
+  {
+      "name": "BIQU Generic PC @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PC @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PC @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PC @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PC @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PC @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PC @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PC @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA-CF @base",
+      "sub_path": "filament/BIQU Generic PA-CF @base.json"
+  },
+  {
+      "name": "BIQU Generic PA-CF @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA-CF @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA-CF @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA-CF @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA @base",
+      "sub_path": "filament/BIQU Generic PA @base.json"
+  },
+  {
+      "name": "BIQU Generic PA @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic PA @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic PA @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic PA @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic PA @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic PA @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ASA @base",
+      "sub_path": "filament/BIQU Generic ASA @base.json"
+  },
+  {
+      "name": "BIQU Generic ASA @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ASA @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ASA @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ASA @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ABS @base",
+      "sub_path": "filament/BIQU Generic ABS @base.json"
+  },
+  {
+      "name": "BIQU Generic ABS @0.8 nozzle",
+      "sub_path": "filament/BIQU Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ABS @0.6 nozzle",
+      "sub_path": "filament/BIQU Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ABS @0.4 nozzle",
+      "sub_path": "filament/BIQU Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "BIQU Generic ABS @0.2 nozzle",
+      "sub_path": "filament/BIQU Generic ABS @0.2 nozzle.json"
   }
   ],
 "machine_list":   [
