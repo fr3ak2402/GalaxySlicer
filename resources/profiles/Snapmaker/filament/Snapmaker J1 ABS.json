@@ -1,21 +1,12 @@
 {
-    "type": "filament",
-    "filament_id": "GFB99",
-    "setting_id": "GFSX04",
     "name": "Snapmaker J1 ABS",
-    "from": "system",
     "instantiation": "true",
-    "inherits": "fdm_filament_abs",
-    "filament_flow_ratio": [
-        "0.926"
+    "setting_id": "SMFS42",
+    "inherits": "Snapmaker J1 ABS @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.4 nozzle)",
+        "Snapmaker J1 (0.6 nozzle)"
     ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-     "compatible_printers": [
-        "Snapmaker J1 (0.2 nozzle)",
-		"Snapmaker J1 (0.4 nozzle)",
-		"Snapmaker J1 (0.6 nozzle)",
-        "Snapmaker J1 (0.8 nozzle)"
-    ]
+    "type": "filament",
+    "from": "system"
 }

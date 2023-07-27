@@ -8,5 +8,5 @@
     "bed_model": "snapmaker_a250_buildplate_model.stl",
     "bed_texture": "snapmaker_a250_buildplate_texture.png",
     "hotend_model": "",
-    "default_materials": "Snapmaker Generic ABS;Snapmaker Generic PLA;Snapmaker Generic PLA-CF;Snapmaker Generic PETG;Snapmaker Generic TPU;Snapmaker Generic ASA;Snapmaker Generic PC;Snapmaker Generic PVA;Snapmaker Generic PA;Snapmaker Generic PA-CF"
+    "default_materials": "Snapmaker ABS;Snapmaker PLA;Snapmaker PLA-CF;Snapmaker PETG;Snapmaker TPU;Snapmaker ASA;Snapmaker PC;Snapmaker PVA;Snapmaker PA;Snapmaker PA-CF"
 }

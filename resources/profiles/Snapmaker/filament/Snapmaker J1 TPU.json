@@ -1,24 +1,13 @@
 {
-    "type": "filament",
-    "filament_id": "GFU99",
-    "setting_id": "GFSX04",
     "name": "Snapmaker J1 TPU",
-    "from": "system",
     "instantiation": "true",
-    "inherits": "fdm_filament_tpu",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
-    "nozzle_temperature": [
-        "220"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "220"
-    ],
-     "compatible_printers": [
-        "Snapmaker J1 (0.2 nozzle)",
-		"Snapmaker J1 (0.4 nozzle)",
-		"Snapmaker J1 (0.6 nozzle)",
+    "setting_id": "SMFS83",
+    "inherits": "Snapmaker J1 TPU @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.4 nozzle)",
+        "Snapmaker J1 (0.6 nozzle)",
         "Snapmaker J1 (0.8 nozzle)"
-    ]
+    ],
+    "type": "filament",
+    "from": "system"
 }

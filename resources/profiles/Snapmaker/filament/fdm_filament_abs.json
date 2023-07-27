@@ -1,26 +1,33 @@
 {
-    "type": "filament",
     "name": "fdm_filament_abs",
-    "from": "system",
     "instantiation": "false",
     "inherits": "fdm_filament_common",
-    "cool_plate_temp" : [
-        "105"
+    "default_filament_colour": [
+        "#682D35"
     ],
-    "eng_plate_temp" : [
-        "105"
+    "cool_plate_temp": [
+        "90"
     ],
-    "hot_plate_temp" : [
-        "105"
+    "eng_plate_temp": [
+        "90"
     ],
-    "cool_plate_temp_initial_layer" : [
-        "105"
+    "hot_plate_temp": [
+        "90"
     ],
-    "eng_plate_temp_initial_layer" : [
-        "105"
+    "textured_plate_temp": [
+        "90"
     ],
-    "hot_plate_temp_initial_layer" : [
-        "105"
+    "cool_plate_temp_initial_layer": [
+        "90"
+    ],
+    "eng_plate_temp_initial_layer": [
+        "90"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "90"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "90"
     ],
     "slow_down_for_layer_cooling": [
         "1"
@@ -32,7 +39,7 @@
         "30"
     ],
     "filament_max_volumetric_speed": [
-        "28.6"
+        "16"
     ],
     "filament_type": [
         "ABS"
@@ -41,7 +48,13 @@
         "1.04"
     ],
     "filament_cost": [
-        "20"
+        "50"
+    ],
+    "filament_z_hop": [
+        "0.7"
+    ],
+    "filament_retraction_length": [
+        "0.6"
     ],
     "nozzle_temperature_initial_layer": [
         "260"
@@ -49,11 +62,11 @@
     "reduce_fan_stop_start_freq": [
         "1"
     ],
+    "fan_min_speed": [
+        "15"
+    ],
     "fan_max_speed": [
         "80"
-    ],
-    "fan_min_speed": [
-        "10"
     ],
     "overhang_fan_threshold": [
         "25%"
@@ -65,18 +78,26 @@
         "260"
     ],
     "temperature_vitrification": [
-        "110"
+        "189"
     ],
     "nozzle_temperature_range_low": [
         "240"
     ],
     "nozzle_temperature_range_high": [
-        "270"
+        "280"
     ],
     "slow_down_min_speed": [
-        "10"
+        "20"
     ],
     "slow_down_layer_time": [
         "3"
-    ]
+    ],
+    "filament_flow_ratio": [
+        "0.93"
+    ],
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "type": "filament",
+    "from": "system"
 }

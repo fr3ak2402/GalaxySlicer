@@ -1,30 +1,14 @@
 {
-    "type": "filament",
-    "filament_id": "GFL99",
-    "setting_id": "GFSX04",
     "name": "Snapmaker J1 PLA",
-    "from": "system",
     "instantiation": "true",
-    "inherits": "fdm_filament_pla",
-    "filament_flow_ratio": [
-        "0.92"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "slow_down_layer_time": [
-        "8"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "205"
-    ],
-    "nozzle_temperature": [
-        "200"
-    ],
-     "compatible_printers": [
+    "setting_id": "SMFS61",
+    "inherits": "Snapmaker J1 PLA @base",
+    "compatible_printers": [
         "Snapmaker J1 (0.2 nozzle)",
-		"Snapmaker J1 (0.4 nozzle)",
-		"Snapmaker J1 (0.6 nozzle)",
+        "Snapmaker J1 (0.4 nozzle)",
+        "Snapmaker J1 (0.6 nozzle)",
         "Snapmaker J1 (0.8 nozzle)"
-    ]
+    ],
+    "type": "filament",
+    "from": "system"
 }

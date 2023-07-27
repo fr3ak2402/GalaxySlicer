@@ -7,7 +7,8 @@ explore_filament() {
     local indent="$3"
     local fdm_files_common=$(find "$dir" -maxdepth 1 -type f -name "fdm_filament_common.json" | sort)
     local fdm_files=$(find "$dir" -maxdepth 1 -type f -name "fdm*.json"  ! -name "fdm_filament_common.json"| sort)
-    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "fdm*.json" | sort -r)
+    local other_at_files=$(find "$dir" -maxdepth 1 -type f -name "*@*.json" ! -name "fdm*.json" | sort -r)
+    local other_files=$(find "$dir" -maxdepth 1 -type f -name "*.json" ! -name "fdm*.json" ! -name "*@*.json" | sort -r)
     local json_string=""
     local leer="      " 
 
@@ -19,6 +20,10 @@ explore_filament() {
     
     for file in $fdm_files; do
         set_json_string
+    done
+   
+    for file in $other_at_files; do
+         set_json_string
     done
    
     for file in $other_files; do
