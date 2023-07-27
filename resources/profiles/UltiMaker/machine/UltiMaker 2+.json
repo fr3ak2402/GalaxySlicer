@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "UltiMaker 2+",
+    "model_id": "UltiMaker-2+",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "UltiMaker",
+    "bed_model": "ultimaker_2_buildplate_model.stl",
+    "bed_texture": "ultimaker_2_buildplate_texture.png",
+    "hotend_model": "ultimaker_hotend.stl",
+	"default_materials": "UltiMaker Generic PLA @0.2 nozzle;UltiMaker Generic PETG @0.2 nozzle;UltiMaker Generic ABS @0.2 nozzle;UltiMaker Generic PLA @0.4 nozzle;UltiMaker Generic PETG @0.4 nozzle;UltiMaker Generic ABS @0.4 nozzle;UltiMaker Generic PLA @0.6 nozzle;UltiMaker Generic PETG @0.6 nozzle;UltiMaker Generic ABS @0.6 nozzle;UltiMaker Generic PLA @0.8 nozzle;UltiMaker Generic PETG @0.8 nozzle;UltiMaker Generic ABS @0.8 nozzle"
+}
