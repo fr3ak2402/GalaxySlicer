@@ -23,8 +23,8 @@ jobs:
           - os: windows-2022
           #- os: macos-13
           #  arch: x86_64
-          - os: macos-12
-            arch: arm64
+          #- os: macos-12
+          #  arch: arm64
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -48,9 +48,11 @@ jobs:
         if: matrix.os == 'windows-2022'
         run: |
             cd ${{ github.workspace }}/deps/build
-            for (/d %%i in (*) do (
-              if /i not "%%i"=="GalaxySlicer_dep" rd /s /q "%%i"
-            )
+            rmdir /s /q dep_wxWidgets-prefix
+            rmdir /s /q dep_OpenSSL-prefix
+            rmdir /s /q dep_OCCT-prefix
+            rmdir /s /q dep_CGAL-prefix
+            rmdir /s /q dep_Boost-prefix
         
       - name: Pack Windows dependencies
         if: matrix.os == 'windows-2022'
@@ -80,17 +82,17 @@ jobs:
       #    name: GalaxySlicer_dep_x86_64
       #    path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_x86_64
       
-      - name: Build on Mac arm64
-        if: matrix.os == 'macos-12' && matrix.arch == 'arm64'
-        working-directory: ${{ github.workspace }}
-        run: |
-            brew install cmake git gettext automake
-            mkdir -p ${{ github.workspace }}/deps/build_arm64
-            mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-            ./build_release_macos.sh -d -a arm64
+      # - name: Build on Mac arm64
+      #  if: matrix.os == 'macos-12' && matrix.arch == 'arm64'
+      #  working-directory: ${{ github.workspace }}
+      #  run: |
+      #      brew install cmake git gettext automake
+      #      mkdir -p ${{ github.workspace }}/deps/build_arm64
+      #      mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
+      #      ./build_release_macos.sh -d -a arm64
            
-      - name: Upload macOS arm64 dependencies
-        uses: actions/upload-artifact@v3
-        with:
-          name: GalaxySlicer_dep_arm64
-          path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
+      #- name: Upload macOS arm64 dependencies
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: GalaxySlicer_dep_arm64
+      #    path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
