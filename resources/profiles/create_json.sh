@@ -185,4 +185,7 @@ main() {
 }
 
 # Verzeichnisname als Eingabeparameter an das Skript übergeben
+
+
+
 main "$1"

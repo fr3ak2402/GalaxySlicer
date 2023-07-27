@@ -279,20 +279,20 @@
       "sub_path": "machine/Snapmaker Artisan (0.8 nozzle).json"
   },
   {
-      "name": "Snapmaker J1 (0.2 nozzle)",
-      "sub_path": "machine/Snapmaker J1 (0.2 nozzle).json"
+      "name": "Snapmaker J1 (0.2 nozzle) (IDEX)",
+      "sub_path": "machine/Snapmaker J1 (0.2 nozzle) (IDEX).json"
   },
   {
-      "name": "Snapmaker J1 (0.4 nozzle)",
-      "sub_path": "machine/Snapmaker J1 (0.4 nozzle).json"
+      "name": "Snapmaker J1 (0.4 nozzle) (IDEX)",
+      "sub_path": "machine/Snapmaker J1 (0.4 nozzle) (IDEX).json"
   },
   {
-      "name": "Snapmaker J1 (0.6 nozzle)",
-      "sub_path": "machine/Snapmaker J1 (0.6 nozzle).json"
+      "name": "Snapmaker J1 (0.6 nozzle) (IDEX)",
+      "sub_path": "machine/Snapmaker J1 (0.6 nozzle) (IDEX).json"
   },
   {
-      "name": "Snapmaker J1 (0.8 nozzle)",
-      "sub_path": "machine/Snapmaker J1 (0.8 nozzle).json"
+      "name": "Snapmaker J1 (0.8 nozzle) (IDEX)",
+      "sub_path": "machine/Snapmaker J1 (0.8 nozzle) (IDEX).json"
   }
   ]
 }
