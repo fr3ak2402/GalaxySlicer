@@ -169,12 +169,40 @@
       "sub_path": "filament/fdm_filament_abs.json"
   },
   {
+      "name": "fdm_filament_asa",
+      "sub_path": "filament/fdm_filament_asa.json"
+  },
+  {
       "name": "fdm_filament_pet",
       "sub_path": "filament/fdm_filament_pet.json"
   },
   {
       "name": "fdm_filament_pla",
       "sub_path": "filament/fdm_filament_pla.json"
+  },
+  {
+      "name": "fdm_filament_tpu",
+      "sub_path": "filament/fdm_filament_tpu.json"
+  },
+  {
+      "name": "Sovol Generic TPU @base",
+      "sub_path": "filament/Sovol Generic TPU @base.json"
+  },
+  {
+      "name": "Sovol Generic TPU @0.8 nozzle",
+      "sub_path": "filament/Sovol Generic TPU @0.8 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic TPU @0.6 nozzle",
+      "sub_path": "filament/Sovol Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic TPU @0.4 nozzle",
+      "sub_path": "filament/Sovol Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic TPU @0.2 nozzle",
+      "sub_path": "filament/Sovol Generic TPU @0.2 nozzle.json"
   },
   {
       "name": "Sovol Generic PLA @base",
@@ -215,6 +243,26 @@
   {
       "name": "Sovol Generic PETG @0.2 nozzle",
       "sub_path": "filament/Sovol Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic ASA @base",
+      "sub_path": "filament/Sovol Generic ASA @base.json"
+  },
+  {
+      "name": "Sovol Generic ASA @0.8 nozzle",
+      "sub_path": "filament/Sovol Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic ASA @0.6 nozzle",
+      "sub_path": "filament/Sovol Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic ASA @0.4 nozzle",
+      "sub_path": "filament/Sovol Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "Sovol Generic ASA @0.2 nozzle",
+      "sub_path": "filament/Sovol Generic ASA @0.2 nozzle.json"
   },
   {
       "name": "Sovol Generic ABS @base",

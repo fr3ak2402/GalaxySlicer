@@ -61,6 +61,10 @@
       "sub_path": "machine/Creality Ender-6.json"
   },
   {
+      "name": "Creality Ender-7",
+      "sub_path": "machine/Creality Ender-7.json"
+  },
+  {
       "name": "Creality K1 Max",
       "sub_path": "machine/Creality K1 Max.json"
   },
@@ -359,6 +363,22 @@
       "sub_path": "process/0.16mm Optimal @Creality Ender6 (0.8 nozzle).json"
   },
   {
+      "name": "0.16mm Optimal @Creality Ender7 (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality Ender7 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality Ender7 (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality Ender7 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality Ender7 (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality Ender7 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Creality Ender7 (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Creality Ender7 (0.8 nozzle).json"
+  },
+  {
       "name": "0.16mm Optimal @Creality K1 (0.4 nozzle)",
       "sub_path": "process/0.16mm Optimal @Creality K1 (0.4 nozzle).json"
   },
@@ -581,6 +601,22 @@
   {
       "name": "0.20mm Standard @Creality Ender6 (0.8 nozzle)",
       "sub_path": "process/0.20mm Standard @Creality Ender6 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender7 (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender7 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender7 (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender7 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender7 (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender7 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender7 (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender7 (0.8 nozzle).json"
   },
   {
       "name": "0.20mm Standard @Creality K1 (0.4 nozzle)",
@@ -1093,6 +1129,22 @@
   {
       "name": "Creality Ender-6 (0.8 nozzle)",
       "sub_path": "machine/Creality Ender-6 (0.8 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-7 (0.2 nozzle)",
+      "sub_path": "machine/Creality Ender-7 (0.2 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-7 (0.4 nozzle)",
+      "sub_path": "machine/Creality Ender-7 (0.4 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-7 (0.6 nozzle)",
+      "sub_path": "machine/Creality Ender-7 (0.6 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-7 (0.8 nozzle)",
+      "sub_path": "machine/Creality Ender-7 (0.8 nozzle).json"
   },
   {
       "name": "Creality K1 (0.4 nozzle)",
