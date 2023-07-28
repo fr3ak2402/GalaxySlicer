@@ -46,8 +46,9 @@ jobs:
             
       - name: Cleaning up the Windows Build Directory
         if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
         run: |
-            cd ${{ github.workspace }}/deps/build
             rmdir /s /q dep_wxWidgets-prefix
             rmdir /s /q dep_OpenSSL-prefix
             rmdir /s /q dep_OCCT-prefix
