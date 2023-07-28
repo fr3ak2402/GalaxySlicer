@@ -107,54 +107,6 @@
       "sub_path": "process/0.20 Strength @Snapmaker J1 (0.4 nozzle).json"
   },
   {
-      "name": "0.20mm Standard @Snapmaker A250 (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A250 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A250 (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A250 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A250 (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A250 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A250 (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A250 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A350 (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A350 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A350 (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A350 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A350 (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A350 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker A350 (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker A350 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker Artisan (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker Artisan (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker Artisan (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker Artisan (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker Artisan (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker Artisan (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Snapmaker Artisan (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @Snapmaker Artisan (0.8 nozzle).json"
-  },
-  {
       "name": "0.24 Draft @Snapmaker (0.4 nozzle)",
       "sub_path": "process/0.24 Draft @Snapmaker (0.4 nozzle).json"
   },

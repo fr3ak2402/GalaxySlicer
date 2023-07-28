@@ -6,7 +6,7 @@
     "instantiation": "true",
     "inherits": "fdm_machine_common",
     "printer_model": "Snapmaker A350",
-    "default_print_profile": "0.20mm Standard @Snapmaker A350 (0.4 nozzle)",
+    "default_print_profile": "0.20 Standard @Snapmaker (0.4 nozzle)",
     "nozzle_diameter": [
         "0.4"
     ],
