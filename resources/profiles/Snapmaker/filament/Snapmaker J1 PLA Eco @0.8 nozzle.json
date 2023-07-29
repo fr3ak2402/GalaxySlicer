@@ -4,7 +4,7 @@
     "setting_id": "SMFS59",
     "inherits": "Snapmaker J1 PLA Eco @base",
     "compatible_printers": [
-        "Snapmaker J1 (0.8 nozzle)"
+        "Snapmaker J1 (0.8 nozzle) (IDEX)"
     ],
     "filament_max_volumetric_speed": [
         "12"

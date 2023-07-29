@@ -1,9 +1,9 @@
 {
-    "name": "0.18 Standard @Snapmaker J1 (0.6 nozzle)",
+    "name": "0.18 Standard @Snapmaker J1 (0.6 nozzle) (IDEX)",
     "inherits": "fdm_process_idex",
     "instantiation": "true",
     "compatible_printers": [
-        "Snapmaker J1 (0.6 nozzle)"
+        "Snapmaker J1 (0.6 nozzle) (IDEX)"
     ],
     "type": "process",
     "from": "system",

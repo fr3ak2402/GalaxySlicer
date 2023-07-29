@@ -4,7 +4,7 @@
     "setting_id": "SMFS76",
     "inherits": "PolyLite PLA @0.2 nozzle",
     "compatible_printers": [
-        "Snapmaker J1 (0.2 nozzle)"
+        "Snapmaker J1 (0.2 nozzle) (IDEX)"
     ],
     "type": "filament",
     "from": "system"

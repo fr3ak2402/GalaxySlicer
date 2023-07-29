@@ -1,22 +1,22 @@
 {
-  "name": "Snapmaker J1 (0.6 nozzle)",
-  "setting_id": "snapmaker_j1_(0.6_nozzle)",
+  "name": "Snapmaker J1 (0.8 nozzle) (IDEX)",
+  "setting_id": "snapmaker_j1_(0.8_nozzle)",
   "inherits": "fdm_machine_idex",
   "type": "machine",
   "from": "system",
   "instantiation": "true",
   "nozzle_diameter": [
-    "0.6",
-    "0.6"
+    "0.8",
+    "0.8"
   ],
-  "printer_variant": "0.6",
+  "printer_variant": "0.8",
   "printer_model": "Snapmaker J1",
-  "default_print_profile": "0.24 Standard @Snapmaker J1 (0.6 nozzle)",
+  "default_print_profile": "0.32 Standard @Snapmaker J1 (0.8 nozzle)",
   "max_layer_height": [
-    "0.42"
+    "0.48"
   ],
   "min_layer_height": [
-    "0.18"
+    "0.24"
   ],
   "retraction_length": [
     "0.8"
