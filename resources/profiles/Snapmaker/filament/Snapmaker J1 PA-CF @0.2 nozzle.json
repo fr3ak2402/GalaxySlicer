@@ -1,8 +1,8 @@
 {
-    "name": "PolyLite J1 PLA @0.2 nozzle",
+    "name": "Snapmaker J1 PA-CF @0.2 nozzle",
     "instantiation": "true",
-    "setting_id": "SMFS76",
-    "inherits": "PolyLite J1 PLA @base",
+    "setting_id": "SMFS49",
+    "inherits": "Snapmaker J1 PA-CF @base",
     "compatible_printers": [
         "Snapmaker J1 (0.2 nozzle) (IDEX)"
     ],

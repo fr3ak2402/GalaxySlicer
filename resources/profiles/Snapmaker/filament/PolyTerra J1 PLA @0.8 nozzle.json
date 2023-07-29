@@ -1,10 +1,10 @@
 {
-    "name": "PolyTerra J1 PLA @0.2 nozzle",
+    "name": "PolyTerra J1 PLA @0.8 nozzle",
     "instantiation": "true",
-    "setting_id": "SMFS78",
+    "setting_id": "SMFS77",
     "inherits": "PolyTerra J1 PLA @base",
     "compatible_printers": [
-        "Snapmaker J1 (0.2 nozzle) (IDEX)"
+        "Snapmaker J1 (0.8 nozzle) (IDEX)"
     ],
     "type": "filament",
     "from": "system"

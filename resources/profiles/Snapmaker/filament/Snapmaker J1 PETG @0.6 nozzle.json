@@ -1,0 +1,11 @@
+{
+    "name": "Snapmaker J1 PETG @0.6 nozzle",
+    "instantiation": "true",
+    "setting_id": "SMFS51",
+    "inherits": "Snapmaker J1 PETG @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.6 nozzle) (IDEX)"
+    ],
+    "type": "filament",
+    "from": "system"
+}

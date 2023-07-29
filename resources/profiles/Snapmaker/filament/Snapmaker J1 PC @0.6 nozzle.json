@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFC99",
+    "setting_id": "GFSX04",
+    "name": "Snapmaker J1 PC @0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Snapmaker J1 PC @base",
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "filament_flow_ratio": [
+        "0.94"
+    ],
+     "compatible_printers": [
+		"Snapmaker J1 (0.6 nozzle) (IDEX)"
+    ]
+}

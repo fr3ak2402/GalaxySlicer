@@ -1,0 +1,11 @@
+{
+    "name": "Snapmaker J1 PVA @0.8 nozzle",
+    "instantiation": "true",
+    "setting_id": "SMFS80",
+    "inherits": "Snapmaker J1 PVA @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.8 nozzle) (IDEX)"
+    ],
+    "type": "filament",
+    "from": "system"
+}
