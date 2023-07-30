@@ -77,6 +77,12 @@ jobs:
           cd ${{ github.workspace }}/build_arm64/GalaxySlicer
           zip -FSrq GalaxySlicer${ver}_Mac_AppleSilicon_signed.zip ./GalaxySlicer.app
           
+      - name: Create DMG
+        uses: QQxiaoming/create-dmg-action@v0.0.2
+        with:
+          name: 'GalaxySlicer'
+          srcdir: '${{ github.workspace }}/build_arm64/GalaxySlicer/GalaxySlicer.app'
+      
       - name: Upload GalaxySlicer
         uses: actions/upload-artifact@v3
         with:
