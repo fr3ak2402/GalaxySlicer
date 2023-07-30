@@ -82,8 +82,14 @@ jobs:
         with:
           name: 'GalaxySlicer'
           srcdir: '${{ github.workspace }}/build_arm64/GalaxySlicer/GalaxySlicer.app'
-      
-      - name: Upload GalaxySlicer
+
+      - name: Upload GalaxySlicer.dmg
+        uses: actions/upload-artifact@v3
+        with:
+          name: GalaxySlicer.dmg
+          path: GalaxySlicer.dmg
+          
+      - name: Upload GalaxySlicer*.zip
         uses: actions/upload-artifact@v3
         with:
           name: GalaxySlicer_macOS_arm64_nightly
