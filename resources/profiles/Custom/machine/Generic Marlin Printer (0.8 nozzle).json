@@ -1,7 +1,7 @@
 {
   "type": "machine",
   "setting_id": "GM001",
-  "name": "MyMarlin (0.8 nozzle)",
+  "name": "Generic Marlin Printer (0.8 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_machine_common",

@@ -1,7 +1,7 @@
 {
   "type": "machine",
   "setting_id": "GM001",
-  "name": "MyRepRap (0.4 nozzle)",
+  "name": "Generic RepRap Printer (0.4 nozzle)",
   "from": "system",
   "instantiation": "true",
   "inherits": "fdm_reprap_common",
