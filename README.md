@@ -30,6 +30,7 @@ The following How to articles can be found in the Wiki:
 * **[Install GalaxySlicer](https://github.com/fr3ak2402/GalaxySlicer/wiki/Install-GalaxySlicer)**
 * **[Translation guide](https://github.com/fr3ak2402/GalaxySlicer/wiki/Translation-guide)**
 * **[Compile GalaxySlicer](https://github.com/fr3ak2402/GalaxySlicer/wiki/Compile-GalaxySlicer)**
+* **[Configuring sm2uploader](https://github.com/fr3ak2402/GalaxySlicer/wiki/Configuring-sm2uploader)**
 
 # License
 GalaxySlicer is licensed under the GNU Affero General Public License, version 3. GalaxySlicer is based on Orca Slicer by SoftFever.
