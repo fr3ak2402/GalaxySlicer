@@ -4,7 +4,8 @@
     "instantiation": "true",
     "compatible_printers": [
         "Snapmaker A250 (0.8 nozzle)",
-        "Snapmaker A350 (0.8 nozzle)"
+        "Snapmaker A350 (0.8 nozzle)",
+		"Snapmaker Artisan (0.8 nozzle)"
     ],
     "type": "process",
     "from": "system",

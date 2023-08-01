@@ -5,7 +5,8 @@
     "inherits": "Snapmaker PVA @base",
     "compatible_printers": [
         "Snapmaker A250 (0.2 nozzle)",
-        "Snapmaker A350 (0.2 nozzle)"
+        "Snapmaker A350 (0.2 nozzle)",
+		"Snapmaker Artisan (0.2 nozzle)"
     ],
     "filament_max_volumetric_speed": [
         "1.2"
