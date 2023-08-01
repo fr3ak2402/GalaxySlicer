@@ -7,8 +7,8 @@ if (WIN32)
     set(_bootstrap_cmd bootstrap.bat)
     set(_build_cmd  b2.exe)
 else()
-	set(_boost_url "https://boostorg.jfrog.io/artifactory/main/release/1.75.0/source/boost_1_75_0.tar.gz")
-	set(_boost_hash AEB26F80E80945E82EE93E5939BAEBDCA47B9DEE80A07D3144BE1E1A6A66DD6A)
+	set(_boost_url "https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.zip")
+	set(_boost_hash f22143b5528e081123c3c5ed437e92f648fe69748e95fa6e2bd41484e2986cc3)
     set(_bootstrap_cmd ./bootstrap.sh)
     set(_build_cmd ./b2)
 endif()
@@ -171,6 +171,8 @@ ExternalProject_Add(
 
 else()
 
+list(APPEND _patch_command COMMAND git init && ${PATCH_CMD} ${CMAKE_CURRENT_LIST_DIR}/0001-Boost-fix.patch)
+
 ExternalProject_Add(
     dep_Boost
 	URL ${_boost_url}
@@ -180,7 +182,7 @@ ExternalProject_Add(
         --with-toolset=clang
         --with-libraries=date_time,filesystem,iostreams,locale,log,regex,system,thread
         "--prefix=${DESTDIR}/usr/local"
-#    PATCH_COMMAND ${_patch_command}
+	PATCH_COMMAND ${_patch_command}
     BUILD_COMMAND "${_build_cmd}"
     BUILD_IN_SOURCE    ON
     INSTALL_COMMAND "${_install_cmd}"
