@@ -4,8 +4,11 @@ if (WIN32)
 	set(_curl_url "https://github.com/curl/curl/archive/refs/tags/curl-7_75_0.zip")
 	set(_curl_hash a63ae025bb0a14f119e73250f2c923f4bf89aa93b8d4fafa4a9f5353a96a765a)
 else()
-	set(_curl_url "https://github.com/curl/curl/releases/download/curl-8_2_0/curl-8.2.0.zip")
-	set(_curl_hash 3f36ff8e8eb780a9e1400309a1f813f260399baa93c2fc8ac0c389e2161c5098)
+	#set(_curl_url "https://github.com/curl/curl/releases/download/curl-8_2_0/curl-8.2.0.zip")
+	#set(_curl_hash 3f36ff8e8eb780a9e1400309a1f813f260399baa93c2fc8ac0c389e2161c5098)
+	
+	set(_curl_url "https://github.com/curl/curl/archive/refs/tags/curl-7_75_0.zip")
+	set(_curl_hash a63ae025bb0a14f119e73250f2c923f4bf89aa93b8d4fafa4a9f5353a96a765a)
 endif()
 
 # Set Curl Platform Flags
