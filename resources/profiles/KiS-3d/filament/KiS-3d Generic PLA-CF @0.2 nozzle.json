@@ -1,0 +1,24 @@
+{
+    "type": "filament",
+    "filament_id": "GFL98",
+    "setting_id": "GFSA04",
+    "name": "KiS-3d Generic PLA-CF @0.2 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "KiS-3d Generic PLA-CF @base",
+    "filament_flow_ratio": [
+        "0.95"
+    ],
+    "filament_type": [
+        "PLA-CF"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "slow_down_layer_time": [
+        "7"
+    ],
+    "compatible_printers": [
+	  "KiS-3d S235 EVO (0.2 nozzle)"
+    ]
+}
