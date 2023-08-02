@@ -21,10 +21,10 @@ jobs:
       matrix:
         include:
           - os: windows-2022
-          #- os: macos-13
-          #  arch: x86_64
-          #- os: macos-12
-          #  arch: arm64
+          - os: macos-13
+            arch: x86_64
+          - os: macos-13
+            arch: arm64
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -83,14 +83,14 @@ jobs:
       #    name: GalaxySlicer_dep_x86_64
       #    path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_x86_64
       
-      # - name: Build on Mac arm64
-      #  if: matrix.os == 'macos-12' && matrix.arch == 'arm64'
-      #  working-directory: ${{ github.workspace }}
-      #  run: |
-      #      brew install cmake git gettext automake
-      #      mkdir -p ${{ github.workspace }}/deps/build_arm64
-      #      mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-      #      ./build_release_macos.sh -d -a arm64
+      - name: Build on Mac arm64
+        if: matrix.os == 'macos-12' && matrix.arch == 'arm64'
+        working-directory: ${{ github.workspace }}
+        run: |
+            brew install cmake git gettext automake
+            mkdir -p ${{ github.workspace }}/deps/build_arm64
+            mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
+            ./build_release_macos.sh -d -a arm64
            
       #- name: Upload macOS arm64 dependencies
       #  uses: actions/upload-artifact@v3
