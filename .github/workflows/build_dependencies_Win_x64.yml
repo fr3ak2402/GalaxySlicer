@@ -1,4 +1,4 @@
-name: Build dependencies
+name: Build dependencies (Win x64)
 
 on:
   pull_request:
