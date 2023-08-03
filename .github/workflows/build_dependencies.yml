@@ -118,7 +118,7 @@ jobs:
         working-directory: ${{ github.workspace }}/deps/build_arm64
         run: 'tar cfvz GalaxySlicer_dep_arm64.tar.gz GalaxySlicer_dep_arm64'
 
-      - name: Upload macOS amr64 dependencies
+      - name: Upload macOS arm64 dependencies
         if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
         uses: actions/upload-artifact@v3
         with:
