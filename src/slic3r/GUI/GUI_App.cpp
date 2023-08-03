@@ -4125,6 +4125,7 @@ void GUI_App::check_new_version_sf(bool show_tips, int by_user)
             std::stringstream json_stream(body);
             boost::property_tree::read_json(json_stream, root);
             bool i_am_pre = false;
+            
             //at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
             std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
