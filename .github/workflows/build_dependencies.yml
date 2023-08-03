@@ -88,7 +88,6 @@ jobs:
       - name: Pack macOS x64 dependencies
         if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
         working-directory: ${{ github.workspace }}/deps/build_x86_64
-        shell: cmd
         run: 'tar cfvz GalaxySlicer_dep_x86_64.tar.gz GalaxySlicer_dep_x86_64'
 
       - name: Upload macOS x86_64 dependencies
@@ -116,7 +115,6 @@ jobs:
       - name: Pack macOS arm64 dependencies
         if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
         working-directory: ${{ github.workspace }}/deps/build_arm64
-        shell: cmd
         run: 'tar cfvz GalaxySlicer_dep_arm64.tar.gz GalaxySlicer_dep_arm64'
 
       - name: Upload macOS amr64 dependencies
