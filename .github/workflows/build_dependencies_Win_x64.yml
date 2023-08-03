@@ -1,0 +1,61 @@
+name: Build dependencies
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+
+jobs:
+  build_deps:
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - os: windows-2022
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build on Windows
+        if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}
+        run: |
+            choco install strawberryperl
+            mkdir ${{ github.workspace }}/deps/build
+            mkdir ${{ github.workspace }}/deps/build/GalaxySlicer_dep
+            .\build_release_vs2022.bat deps
+            
+      - name: Cleaning up the Windows Build Directory
+        if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
+        run: |
+            rmdir /s /q dep_wxWidgets-prefix
+            rmdir /s /q dep_OpenSSL-prefix
+            rmdir /s /q dep_OCCT-prefix
+            rmdir /s /q dep_CGAL-prefix
+            rmdir /s /q dep_Boost-prefix
+        
+      - name: Pack Windows dependencies
+        if: matrix.os == 'windows-2022'
+        working-directory: ${{ github.workspace }}/deps/build
+        shell: cmd
+        run: '"C:/Program Files/7-Zip/7z.exe" a -tzip GalaxySlicer_dep.zip ${{ github.workspace }}/deps/build/GalaxySlicer_dep'
+        
+      - name: Upload Windows dependencies
+        if: matrix.os == 'windows-2022'
+        uses: actions/upload-artifact@v3
+        with:
+          name: GalaxySlicer_dep
+          path: ${{ github.workspace }}/deps/build/GalaxySlicer_dep.zip
