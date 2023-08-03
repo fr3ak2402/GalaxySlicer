@@ -2750,10 +2750,9 @@ void MainFrame::init_menubar_as_editor()
     
     m_menubar->Append(calib_menu,wxString::Format("&%s", _L("Calibration")));
 
-    /*if (helpMenu)
-        m_menubar->Append(helpMenu, wxString::Format("&%s", _L("Help")));*/
-        
-    m_menubar->Append(helpMenu, wxString::Format("&%s", _L("Help")));
+    if (helpMenu)
+        m_menubar->Append(helpMenu, wxString::Format("&%s", _L("Help")));
+
     SetMenuBar(m_menubar);
 
 #endif
