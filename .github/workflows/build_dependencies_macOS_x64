@@ -1,0 +1,56 @@
+name: Build dependencies
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+
+jobs:
+  build_deps:
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - os: macos-13
+            arch: x86_64
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build on macOS x64
+        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
+        working-directory: ${{ github.workspace }}
+        run: |
+            brew install cmake git gettext
+            mkdir -p ${{ github.workspace }}/deps/build_x86_64
+            mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
+            ./build_release_macos.sh -d -a x86_64
+
+      - name: Cleaning up the macOS x64 Build Directory
+        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
+        working-directory: ${{ github.workspace }}/deps/build_x86_64
+        run: |
+            rm -r dep_*
+          
+      - name: Pack macOS x64 dependencies
+        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
+        working-directory: ${{ github.workspace }}/deps/build_x86_64
+        run: 'tar cfvz GalaxySlicer_dep_x86_64.tar.gz GalaxySlicer_dep_x86_64'
+
+      - name: Upload macOS x64 dependencies
+        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
+        uses: actions/upload-artifact@v3
+        with:
+          name: GalaxySlicer_dep_x86_64
+          path: ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64.tar.gz
