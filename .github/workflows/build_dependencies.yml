@@ -91,6 +91,7 @@ jobs:
         run: 'tar cfvz GalaxySlicer_dep_x86_64.tar.gz GalaxySlicer_dep_x86_64'
 
       - name: Upload macOS x86_64 dependencies
+        if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
         uses: actions/upload-artifact@v3
         with:
           name: GalaxySlicer_dep_x86_64
@@ -118,6 +119,7 @@ jobs:
         run: 'tar cfvz GalaxySlicer_dep_arm64.tar.gz GalaxySlicer_dep_arm64'
 
       - name: Upload macOS amr64 dependencies
+        if: matrix.os == 'macos-13' && matrix.arch == 'arm64'
         uses: actions/upload-artifact@v3
         with:
           name: GalaxySlicer_dep_arm64
