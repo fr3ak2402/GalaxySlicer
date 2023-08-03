@@ -1,4 +1,4 @@
-name: Build dependencies
+name: Build dependencies (macOS x64)
 
 on:
   pull_request:
