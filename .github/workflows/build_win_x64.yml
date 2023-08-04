@@ -36,11 +36,11 @@ jobs:
       - run: mkdir ${{ github.workspace }}/deps/build/GalaxySlicer_dep
       - name: download GalaxySlicer deps
         shell: powershell
-        run: '(new-object System.Net.WebClient).DownloadFile("https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/July_23/GalaxySlicer_dep_Win_x64_21-07-23.zip", "$env:temp\GalaxySlicer_dep_Win_x64_21-07-23.zip")'
+        run: '(new-object System.Net.WebClient).DownloadFile("https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/August_23/GalaxySlicer_dep_Win_x64_01-08-23.zip", "$env:temp\GalaxySlicer_dep_Win_x64_01-08-23.zip")'
       - name: extract deps
         working-directory: ${{ github.workspace }}/deps/build
         shell: cmd
-        run: '"C:/Program Files/7-Zip/7z.exe" x %temp%\GalaxySlicer_dep_Win_x64_21-07-23.zip'
+        run: '"C:/Program Files/7-Zip/7z.exe" x %temp%\GalaxySlicer_dep_Win_x64_01-08-23.zip'
 
       - run: dir "${{ github.workspace }}\deps\build\GalaxySlicer_dep"
       
