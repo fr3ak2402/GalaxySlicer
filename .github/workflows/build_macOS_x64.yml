@@ -23,7 +23,7 @@ on:
     
 jobs:
   build_osx_arm64:
-    name: Build macOS arm64
+    name: Build macOS x64
     runs-on: macos-13
 
     steps:
