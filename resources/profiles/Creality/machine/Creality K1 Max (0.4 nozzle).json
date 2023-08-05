@@ -108,7 +108,7 @@
     ],
 	"single_extruder_multi_material": "0",
 	"change_filament_gcode": "",
-	"machine_pause_gcode": "M400 U1",
+	"machine_pause_gcode": "PAUSE",
 	"default_filament_profile": [
 		"Creality Generic PLA @0.4 nozzle"
 	],
