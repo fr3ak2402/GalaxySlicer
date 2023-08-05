@@ -92,5 +92,5 @@ jobs:
       - name: Upload GalaxySlicer*.zip
         uses: actions/upload-artifact@v3
         with:
-          name: GalaxySlicer_macOS_arm64_nightly
+          name: GalaxySlicer_macOS_x64_nightly
           path: ${{ github.workspace }}/build_x86_64/GalaxySlicer/GalaxySlicer*.zip
