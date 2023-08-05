@@ -17,7 +17,7 @@ on:
 jobs:
   build_osx_arm64:
     name: Build dependencies (macOS arm64)
-    runs-on: macos-13
+    runs-on: macos-arm64
 
     steps:
       - name: Checkout
