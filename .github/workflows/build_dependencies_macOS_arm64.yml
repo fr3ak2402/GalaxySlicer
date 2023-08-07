@@ -27,7 +27,7 @@ jobs:
       - name: Build on macOS arm64
         working-directory: ${{ github.workspace }}
         run: |
-            brew install cmake git gettext automake
+            brew install cmake git gettext automake libiconv
             mkdir -p ${{ github.workspace }}/deps/build_arm64
             mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
             ./build_release_macos.sh -d -a arm64
