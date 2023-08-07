@@ -31,7 +31,7 @@ jobs:
 
       - name: Install tools
         run: |
-          brew install cmake git gettext create-dmg
+          brew install cmake git gettext
                 
       - run: mkdir -p ${{ github.workspace }}/deps/build_x86_64
       - run: mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
@@ -84,16 +84,11 @@ jobs:
       #    name: 'GalaxySlicer'
       #    srcdir: '${{ github.workspace }}/build_x86_64/GalaxySlicer/GalaxySlicer.app'
 
-      - name: Create DMG
-        working-directory: ${{ github.workspace }}
-        run: |
-          create-dmg --volname GalaxySlicer --background installer_background.png --window-pos 200 120 window-size 800 450 --icon-size 100 --app-drop-link 600 185 GalaxySlicer.dmg ${{ github.workspace }}/build_x86_64/GalaxySlicer/GalaxySlicer.app
-
-      - name: Upload GalaxySlicer.dmg
-        uses: actions/upload-artifact@v3
-        with:
-          name: GalaxySlicer.dmg
-          path: GalaxySlicer.dmg
+      #- name: Upload GalaxySlicer.dmg
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: GalaxySlicer.dmg
+      #    path: GalaxySlicer.dmg
           
       - name: Upload GalaxySlicer*.zip
         uses: actions/upload-artifact@v3
