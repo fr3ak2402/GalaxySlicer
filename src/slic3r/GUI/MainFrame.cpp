@@ -2571,9 +2571,15 @@ void MainFrame::init_menubar_as_editor()
 #ifndef __APPLE__
     m_topbar->SetFileMenu(fileMenu);
     if (editMenu)
-        m_topbar->AddDropDownSubMenu(editMenu, _L("Edit"));
+        //m_topbar->AddDropDownSubMenu(editMenu, _L("Edit"));
+        
+        //GalaxySlicer: Set Edit Menu
+        m_topbar->SetEditMenu(editMenu);
     if (viewMenu)
-        m_topbar->AddDropDownSubMenu(viewMenu, _L("View"));
+        //m_topbar->AddDropDownSubMenu(viewMenu, _L("View"));
+        
+        //GalaxySlicer: Set View Menu
+        m_topbar->SetViewMenu(viewMenu);
     //BBS add Preference
 
     append_menu_item(

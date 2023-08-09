@@ -23,6 +23,8 @@ public:
     void OnFullScreen(wxAuiToolBarEvent& event);
     void OnCloseFrame(wxAuiToolBarEvent& event);
     void OnFileToolItem(wxAuiToolBarEvent& evt);
+    void OnEditToolItem(wxAuiToolBarEvent& evt);
+    void OnViewToolItem(wxAuiToolBarEvent& evt);
     void OnDropdownToolItem(wxAuiToolBarEvent& evt);
     void OnCalibToolItem(wxAuiToolBarEvent& evt);
     void OnMouseLeftDClock(wxMouseEvent& mouse);
@@ -41,6 +43,8 @@ public:
     wxAuiToolBarItem* FindToolByCurrentPosition();
 	
     void SetFileMenu(wxMenu* file_menu);
+    void SetEditMenu(wxMenu* edit_menu);
+    void SetViewMenu(wxMenu* view_menu);
     void AddDropDownSubMenu(wxMenu* sub_menu, const wxString& title);
     void AddDropDownMenuItem(wxMenuItem* menu_item);
     wxMenu* GetTopMenu();
@@ -57,11 +61,15 @@ public:
 private:
     wxFrame* m_frame;
     wxAuiToolBarItem* m_file_menu_item;
+    wxAuiToolBarItem* m_edit_menu_item;
+    wxAuiToolBarItem* m_view_menu_item;
     wxAuiToolBarItem* m_dropdown_menu_item;
     wxRect m_normalRect;
     wxPoint m_delta;
     wxMenu m_top_menu;
     wxMenu* m_file_menu;
+    wxMenu* m_edit_menu;
+    wxMenu* m_view_menu;
     wxMenu m_calib_menu;
     wxAuiToolBarItem* m_title_item;
     wxAuiToolBarItem* m_account_item;
@@ -81,6 +89,8 @@ private:
 
     int m_toolbar_h;
     bool m_skip_popup_file_menu;
+    bool m_skip_popup_edit_menu;
+    bool m_skip_popup_view_menu;
     bool m_skip_popup_dropdown_menu;
     bool m_skip_popup_calib_menu;
 };

@@ -20,6 +20,8 @@ enum CUSTOM_ID
     ID_TOP_MENU_TOOL = 3100,
     ID_LOGO,
     ID_TOP_FILE_MENU,
+    ID_TOP_EDIT_MENU,
+    ID_TOP_VIEW_MENU,
     ID_TOP_DROPDOWN_MENU,
     ID_TITLE,
     ID_MODEL_STORE,
@@ -194,6 +196,8 @@ void BBLTopbar::Init(wxFrame* parent)
     SetArtProvider(new BBLTopbarArt());
     m_frame = parent;
     m_skip_popup_file_menu = false;
+    m_skip_popup_edit_menu = false;
+    m_skip_popup_view_menu = false;
     m_skip_popup_dropdown_menu = false;
     m_skip_popup_calib_menu = false;
     wxInitAllImageHandlers();
@@ -209,6 +213,17 @@ void BBLTopbar::Init(wxFrame* parent)
     m_file_menu_item = this->AddTool(ID_TOP_FILE_MENU, _L("File"), file_bitmap, wxEmptyString, wxITEM_NORMAL);
 
     this->SetForegroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_HIGHLIGHTTEXT));
+
+    //GalaxySlicer: The menu item View & Edit is no longer in the GalaxySlicer dropdown menu.
+    this->AddSpacer(FromDIP(5));
+
+    wxBitmap edit_bitmap = create_scaled_bitmap("galaxyslicer_topbar_edit", nullptr, TOPBAR_ICON_SIZE);
+    m_edit_menu_item = this->AddTool(ID_TOP_EDIT_MENU, _L("Edit"), edit_bitmap, wxEmptyString, wxITEM_NORMAL);
+
+    this->AddSpacer(FromDIP(5));
+
+    wxBitmap view_bitmap = create_scaled_bitmap("galaxyslicer_topbar_view", nullptr, TOPBAR_ICON_SIZE);
+    m_view_menu_item = this->AddTool(ID_TOP_VIEW_MENU, _L("View"), view_bitmap, wxEmptyString, wxITEM_NORMAL);
 
     this->AddSpacer(FromDIP(5));
 
@@ -303,6 +318,8 @@ void BBLTopbar::Init(wxFrame* parent)
     this->Bind(wxEVT_MOUSE_CAPTURE_LOST, &BBLTopbar::OnMouseCaptureLost, this);
     this->Bind(wxEVT_MENU_CLOSE, &BBLTopbar::OnMenuClose, this);
     this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnFileToolItem, this, ID_TOP_FILE_MENU);
+    this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnEditToolItem, this, ID_TOP_EDIT_MENU);
+    this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnViewToolItem, this, ID_TOP_VIEW_MENU);
     this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnDropdownToolItem, this, ID_TOP_DROPDOWN_MENU);
     this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnCalibToolItem, this, ID_CALIB);
     this->Bind(wxEVT_AUITOOLBAR_TOOL_DROPDOWN, &BBLTopbar::OnIconize, this, wxID_ICONIZE_FRAME);
@@ -322,8 +339,12 @@ void BBLTopbar::Init(wxFrame* parent)
 BBLTopbar::~BBLTopbar()
 {
     m_file_menu_item = nullptr;
+    m_edit_menu_item = nullptr;
+    m_view_menu_item = nullptr;
     m_dropdown_menu_item = nullptr;
     m_file_menu = nullptr;
+    m_edit_menu = nullptr;
+    m_view_menu = nullptr;
 }
 
 void BBLTopbar::show_publish_button(bool show)
@@ -410,6 +431,18 @@ void BBLTopbar::SetFileMenu(wxMenu* file_menu)
     m_file_menu = file_menu;
 }
 
+//GalaxySlicer: Sets the menu content of the edit menu
+void BBLTopbar::SetEditMenu(wxMenu* edit_menu)
+{
+    m_edit_menu = edit_menu;
+}
+
+//GalaxySlicer: Sets the menu content of the view menu
+void BBLTopbar::SetViewMenu(wxMenu* view_menu)
+{
+    m_view_menu = view_menu;
+}
+
 void BBLTopbar::AddDropDownSubMenu(wxMenu* sub_menu, const wxString& title)
 {
     m_top_menu.AppendSubMenu(sub_menu, title);
@@ -464,6 +497,14 @@ void BBLTopbar::Rescale() {
 
     item = this->FindTool(ID_TOP_FILE_MENU);
     item->SetBitmap(create_scaled_bitmap("topbar_file", this, TOPBAR_ICON_SIZE));
+
+    //GalaxySlicer: Set Edit Icon
+    item = this->FindTool(ID_TOP_EDIT_MENU);
+    item->SetBitmap(create_scaled_bitmap("galaxyslicer_topbar_edit", this, TOPBAR_ICON_SIZE));
+
+    //GalaxySlicer: Set View Icon
+    item = this->FindTool(ID_TOP_VIEW_MENU);
+    item->SetBitmap(create_scaled_bitmap("galaxyslicer_topbar_view", this, TOPBAR_ICON_SIZE));
 
     item = this->FindTool(ID_TOP_DROPDOWN_MENU);
     item->SetBitmap(create_scaled_bitmap("topbar_dropdown", this, TOPBAR_ICON_SIZE));
@@ -582,6 +623,42 @@ void BBLTopbar::OnFileToolItem(wxAuiToolBarEvent& evt)
     tb->SetToolSticky(evt.GetId(), false);
 }
 
+//GalaxySlicer: Controls the behavior of the menu
+void BBLTopbar::OnEditToolItem(wxAuiToolBarEvent& evt)
+{
+    wxAuiToolBar* tb = static_cast<wxAuiToolBar*>(evt.GetEventObject());
+
+    tb->SetToolSticky(evt.GetId(), true);
+
+    if (!m_skip_popup_edit_menu) {
+        this->PopupMenu(m_edit_menu, wxPoint(FromDIP(1), this->GetSize().GetHeight() - 2));
+    }
+    else {
+        m_skip_popup_edit_menu = false;
+    }
+
+    // make sure the button is "un-stuck"
+    tb->SetToolSticky(evt.GetId(), false);
+}
+
+//GalaxySlicer: Controls the behavior of the menu
+void BBLTopbar::OnViewToolItem(wxAuiToolBarEvent& evt)
+{
+    wxAuiToolBar* tb = static_cast<wxAuiToolBar*>(evt.GetEventObject());
+
+    tb->SetToolSticky(evt.GetId(), true);
+
+    if (!m_skip_popup_view_menu) {
+        this->PopupMenu(m_view_menu, wxPoint(FromDIP(1), this->GetSize().GetHeight() - 2));
+    }
+    else {
+        m_skip_popup_view_menu = false;
+    }
+
+    // make sure the button is "un-stuck"
+    tb->SetToolSticky(evt.GetId(), false);
+}
+
 void BBLTopbar::OnDropdownToolItem(wxAuiToolBarEvent& evt)
 {
     wxAuiToolBar* tb = static_cast<wxAuiToolBar*>(evt.GetEventObject());
@@ -686,6 +763,12 @@ void BBLTopbar::OnMenuClose(wxMenuEvent& event)
     wxAuiToolBarItem* item = this->FindToolByCurrentPosition();
     if (item == m_file_menu_item) {
         m_skip_popup_file_menu = true;
+    }
+    else if (item == m_edit_menu_item) {
+        m_skip_popup_edit_menu = true;
+    }
+    else if (item == m_view_menu_item) {
+        m_skip_popup_view_menu = true;
     }
     else if (item == m_dropdown_menu_item) {
         m_skip_popup_dropdown_menu = true;
