@@ -3836,8 +3836,8 @@ void GUI_App::check_new_version_sf(bool show_tips, int by_user)
         .timeout_connect(1)
         .on_complete([&](std::string body, unsigned /* http_status */) {
             boost::trim(body);
-            // GalaxySlicer: parse github release, ported from SS
 
+            // GalaxySlicer: parse github release, ported from SS
             boost::property_tree::ptree root;
             std::stringstream json_stream(body);
             boost::property_tree::read_json(json_stream, root);
@@ -3847,23 +3847,32 @@ void GUI_App::check_new_version_sf(bool show_tips, int by_user)
             std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
             Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
-            Semver best_pre(1, 0, 0);
-            Semver best_release(1, 0, 0);
+
+            Semver best_pre(0, 0, 0);
+            Semver best_release(0, 0, 0);
             std::string best_pre_url;
             std::string best_release_url;
             std::string best_release_content;
             std::string best_pre_content;
-            const std::regex reg_num("([0-9]+)");
-            for (auto json_version : root) {
-                std::string tag = json_version.second.get<std::string>("tag_name");
-                if (tag[0] == 'v')
-                    tag.erase(0, 1);
-                for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num); it != std::sregex_iterator(); ++it) {
 
+            //go through the complete JSON from the Github API to determine the current version of GalaxySlicer
+            for (auto json_version : root) {
+
+                //From the tag_name the version of the release can be determined
+                std::string tag = json_version.second.get<std::string>("tag_name");
+
+                //GalaxySlicer: In the tags of GalaxySlicer a 'V' is used for the version
+                if (tag[0] == 'V') {
+                    //removes the V from the tag
+                    tag.erase(0, 1);
                 }
+
                 Semver tag_version = get_version(tag, matcher);
-                if (current_version == tag_version)
+
+                if (current_version == tag_version) {
                     i_am_pre = json_version.second.get<bool>("prerelease");
+                }
+
                 if (json_version.second.get<bool>("prerelease")) {
                     if (best_pre < tag_version) {
                         best_pre = tag_version;
