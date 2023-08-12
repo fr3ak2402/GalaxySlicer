@@ -889,7 +889,7 @@ void GUI_App::post_init()
             this->preset_updater->sync(http_url, language, network_ver, sys_preset ? preset_bundle : nullptr);
 
             //BBS: check new version
-            this->check_new_version_sf();
+            this->check_new_galaxyslicer_version();
 			//BBS: check privacy version
             if (is_user_login())
                 this->check_privacy_version(0);
@@ -3822,7 +3822,7 @@ Semver get_version(const std::string& str, const std::regex& regexp) {
     return Semver::invalid();
 }
 
-void GUI_App::check_new_version_sf(bool show_tips, int by_user)
+void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
 {
     AppConfig* app_config = wxGetApp().app_config;
     auto version_check_url = app_config->version_check_url();
@@ -3847,6 +3847,8 @@ void GUI_App::check_new_version_sf(bool show_tips, int by_user)
             std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
             Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
+
+            BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_short());
 
             Semver best_pre(0, 0, 0);
             Semver best_release(0, 0, 0);
@@ -3903,7 +3905,7 @@ void GUI_App::check_new_version_sf(bool show_tips, int by_user)
             //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
 
             version_info.url = i_am_pre ? best_pre_url : best_release_url;
-            version_info.version_str = i_am_pre ? best_pre.to_string() : best_release.to_string_sf();
+            version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
             version_info.description = i_am_pre ? best_pre_content : best_release_content;
             version_info.force_upgrade = false;
 
