@@ -11,5 +11,5 @@ if(NOT DEFINED BBL_INTERNAL_TESTING)
 set(BBL_INTERNAL_TESTING "1")
 endif()
 
-set(GalaxySlicer_VERSION "1.0.0-alpha3")
+set(GalaxySlicer_VERSION "1.0.0-alpha")
 set(SLIC3R_VERSION "01.06.00.66")

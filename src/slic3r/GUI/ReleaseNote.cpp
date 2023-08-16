@@ -290,16 +290,12 @@ UpdateVersionDialog::UpdateVersionDialog(wxWindow *parent)
     m_simplebook_release_note->SetMinSize(wxSize(FromDIP(560), FromDIP(430)));
     m_simplebook_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
 
-    m_scrollwindows_release_note = new wxScrolledWindow(m_simplebook_release_note, wxID_ANY, wxDefaultPosition, wxSize(FromDIP(560), FromDIP(430)), wxVSCROLL);
-    m_scrollwindows_release_note->SetScrollRate(5, 5);
-    m_scrollwindows_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
-
     //webview
     m_vebview_release_note = CreateTipView(m_simplebook_release_note);
     m_vebview_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
     m_vebview_release_note->SetSize(wxSize(FromDIP(560), FromDIP(430)));
     m_vebview_release_note->SetMinSize(wxSize(FromDIP(560), FromDIP(430)));
-    //m_vebview_release_note->SetMaxSize(wxSize(FromDIP(560), FromDIP(430)));
+    m_vebview_release_note->SetMaxSize(wxSize(FromDIP(560), FromDIP(430)));
 
 
 	fs::path ph(data_dir());
@@ -476,42 +472,69 @@ void UpdateVersionDialog::update_version_info(wxString release_note, wxString ve
     //bbs check whether the web display is used
     bool use_web_link       = false;
     std::string url_line    = "";
-    /*auto split_array        =  splitWithStl(release_note.ToStdString(), "\r\n");
 
-    if (split_array.size() >= 3) {
-        for (auto i = 0; i < split_array.size(); i++) {
-            std::string url = split_array[i];
-            if (std::strstr(url.c_str(), "http://") != NULL || std::strstr(url.c_str(), "https://") != NULL) {
-                use_web_link = true;
-                url_line = url;
-                break;
-            }
+    m_simplebook_release_note->SetMaxSize(wxSize(FromDIP(560), FromDIP(430)));
+    m_simplebook_release_note->SetSelection(0);
+    m_text_up_info->SetLabel(wxString::Format(_L("Click to download new version in default browser: %s"), version));
+        
+    wxString htmlTemplate = wxString::Format(R"(
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="./releasenote.css" />
+        <script src="./main.js"></script>
+        <script src="./marked.min.js"></script>
+    </head>
+    <body style="background-color: #F8F8F8;">
+        <div class="container markdown-body" id="contents">
+            %s
+        </div>
+    </body>
+    <script>
+        const resizeOberver = new ResizeObserver((entities) => {
+            const height = entities[0].contentRect.height
+            document.title = height.toFixed()
+        })
+        resizeOberver.observe(document.querySelector('#contents'))
+        window.showMarkdownFile = function (file) {
+            $.get(file, function( data ) {
+                window.showMarkdown(encodeURIComponent(data));
+            });
         }
-    }
-   
+        document.addEventListener("DOMContentLoaded", function() {
+            const markdownContainer = document.querySelector(".markdown-body");
+            const markdownText = markdownContainer.textContent.trim();
+            const markdownTextWithoutEmptyLines = markdownText.replace(/^\s*[\r\n]/gm, ''); // Remove empty lines
+            const markdownTextWithSingleEmptyLines = markdownTextWithoutEmptyLines.replace(/\n/g, '\n\n'); // Add a single empty line between Markdown lines
+            const htmlText = marked(markdownTextWithSingleEmptyLines);
+            markdownContainer.innerHTML = htmlText;
+        });
+    </script>
+</html>)", release_note);
 
-    if (use_web_link) {
-        m_brand->Hide();
-        m_text_up_info->Hide();
-        m_simplebook_release_note->SetSelection(1);
-        m_vebview_release_note->LoadURL(from_u8(url_line));
+    fs::path ph(data_dir());
+	ph /= "resources/tooltip/releasenote.html";
+	if (!fs::exists(ph)) {
+		ph = resources_dir();
+		ph /= "tooltip/releasenote.html";
+	}
+
+    // Open file (overwrites existing contents)
+    fs::ofstream outputFile(ph);
+
+    if (outputFile.is_open()) {
+        outputFile << htmlTemplate << std::endl;
+
+        //Close file
+        outputFile.close();
     }
-    else {*/
-        m_simplebook_release_note->SetMaxSize(wxSize(FromDIP(560), FromDIP(430)));
-        m_simplebook_release_note->SetSelection(0);
-        m_text_up_info->SetLabel(wxString::Format(_L("Click to download new version in default browser: %s"), version));
-        wxBoxSizer* sizer_text_release_note = new wxBoxSizer(wxVERTICAL);
-        auto        m_staticText_release_note = new ::Label(m_scrollwindows_release_note, release_note);
-        m_staticText_release_note->SetMinSize(wxSize(FromDIP(560), -1));
-        m_staticText_release_note->SetMaxSize(wxSize(FromDIP(560), -1));
-        m_staticText_release_note->Wrap(FromDIP(530));
-        sizer_text_release_note->Add(m_staticText_release_note, 0, wxALL, 5);
-        m_scrollwindows_release_note->SetSizer(sizer_text_release_note);
-        m_scrollwindows_release_note->Layout();
-        m_scrollwindows_release_note->Fit();
-        SetMinSize(GetSize());
-        SetMaxSize(GetSize());
-    //}
+
+	auto url = ph.string();
+	std::replace(url.begin(), url.end(), '\\', '/');
+	url = "file:///" + url;
+    m_vebview_release_note->LoadURL(from_u8(url));
 
     wxGetApp().UpdateDlgDarkUI(this);
     Layout();
