@@ -3467,6 +3467,15 @@ std::string GUI_App::handle_web_request(std::string cmd)
                     wxPostEvent(mainframe, e);
                 }
             }
+            else if (command_str.compare("homepage_open_social") == 0) {
+                if (root.get_child_optional("data") != boost::none) {
+                    pt::ptree                    data_node = root.get_child("data");
+                    boost::optional<std::string> path      = data_node.get_optional<std::string>("url");
+                    if (path.has_value()) {
+                        wxLaunchDefaultBrowser(path.value());
+                    }
+                }
+            }
             else if (command_str.compare("userguide_wiki_open") == 0) {
                 if (root.get_child_optional("data") != boost::none) {
                     pt::ptree                    data_node = root.get_child("data");

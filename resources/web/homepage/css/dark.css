@@ -90,7 +90,15 @@ body
 	color:#818183;
 }
 
-.ApplictionItem:hover
+/*----Applications------*/
+.ApplicationItem:hover
+{
+	border-color: #9C6DA4;
+	background-color: #6B5E7D;
+}
+
+/*----Socials------*/
+.SocialItem:hover
 {
 	border-color: #9C6DA4;
 	background-color: #6B5E7D;

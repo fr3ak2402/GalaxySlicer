@@ -46,11 +46,17 @@
 			<div class="BtnIcon "><img class="LeftIcon" src="img/i7.png" /></div>
 			<div class="trans" tid="t95">Applications</div> 
 		</div>
-
+		
 	    <div menu="wikiguide" class="BtnItem" onClick="GotoMenu('wikiguide')">
 			<div class="BtnIcon "><img class="LeftIcon" src="img/i1.png" /></div>
 			<div class="trans" tid="t87">UserGuide</div> 
-		</div>		
+		</div>
+
+		<!-- GalaxySlicer Socials -->
+	    <div menu="socials" class="BtnItem" onClick="GotoMenu('socials')">
+			<div class="BtnIcon "><img class="LeftIcon" src="img/i9.png" /></div>
+			<div class="trans" tid="t101">Socials</div> 
+		</div>
 	</div>
 </div>
 
@@ -185,7 +191,7 @@
 
 		<div id="ApplicationArea">
 			<!--GalaxySlicer Profile Manager-->
-			<div class="ApplictionItem" onClick="ShowNotice(1)">
+			<div class="ApplicationItem" onClick="ShowNotice(1)">
 				<div class="MenuIcon"><img src="img/i8.png"></div>
 				<div>
 					<div class="trans TextS1" tid="t96">GalaxySlicer Profile Manager</div>
@@ -196,7 +202,7 @@
 	</div>
 </div>
 
-<!-- Show Notice -->
+<!-- Show Applications Notice -->
 <div id="NoticeMask"></div>
 <div id="NoticeBody">
 	<div id="NoticeBar" class="trans" tid="t98">Coming soon</div>
@@ -206,7 +212,33 @@
 		<div class="SmallBtn trans" tid="t36" onClick="ShowNotice(0)">ok</div>
 	</div>
 	</div>
-</div>	
+</div>
+
+<div id="SocialBoard" board="socials">
+	<div id="SocialContentBoard">
+		<div style="height: 14px;"></div>
+
+		<div id="SocialArea">
+			<!--GalaxySlicer Github Issues-->
+			<div class="SocialItem" onClick="OpenSocialUrl('https://github.com/fr3ak2402/GalaxySlicer/issues')">
+				<div class="MenuIcon"><img src="img/i10.png"></div>
+				<div>
+					<div class="trans TextS1" tid="t102">Github</div>
+					<div class="MenuDesc trans"  tid="t103">Github issues</div>
+				</div>
+			</div>
+			
+			<!--GalaxySlicer Discord Server-->
+			<div class="SocialItem" onClick="ShowNotice(1)">
+				<div class="MenuIcon"><img src="img/i11.png"></div>
+				<div>
+					<div class="trans TextS1" tid="t104">Discord</div>
+					<div class="MenuDesc trans"  tid="t105">Official GalaxySlicer Server</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	
 <div id="WikiGuideBigBoard" board="wikiguide">
 <div id="WikiGuideBoard" >

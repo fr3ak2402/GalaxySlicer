@@ -414,6 +414,19 @@ function ShowNotice( nShow )
 	}
 }
 
+//-------------Socials------------------
+
+function OpenSocialUrl( strUrl )
+{
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="homepage_open_social";
+	tSend['data']={};
+	tSend['data']['url']=strUrl;
+	
+	SendWXMessage( JSON.stringify(tSend) );	
+}
+
 //---------------Global-----------------
 window.postMessage = HandleStudio;
 

@@ -542,7 +542,7 @@ body
 	flex: 0 0 140px;
 }
 
-.ApplictionItem
+.ApplicationItem
 {
 	border-width: 1px;
 	border-style: solid;
@@ -557,12 +557,56 @@ body
 	cursor: pointer;
 }
 
-.ApplictionItem:hover
+.ApplicationItem:hover
 {
 	border-color: #9C6DA4;
 	background-color: #F1EBF2;
 }
 
+/*---------Social----------*/
+#SocialBoard
+{
+	display:none;
+}
+
+#SocialContentBoard
+{
+	overflow-y:auto;
+	padding: 0px 40px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+}
+
+#SocialArea
+{
+	height: 140px;
+	display: flex;
+	align-items: center;
+	flex: 0 0 140px;
+}
+
+.SocialItem
+{
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 12px;
+	height: 101px;
+	width: 300px;
+	padding-left: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+.SocialItem:hover
+{
+	border-color: #9C6DA4;
+	background-color: #F1EBF2;
+}
 
 /*---------Wiki----------*/
 #WikiGuideBigBoard

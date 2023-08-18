@@ -92,7 +92,12 @@ var LangText={
 		"t97": "Profile management",
 		"t98": "Coming soon",
 		"t99": "Very sorry...: 1.0.0-alpha -> 1.0.0-beta",
-		"t100": "Search"
+		"t100": "Search",
+		"t101": "Socials",
+		"t102": "Github",
+		"t103": "Github issues",
+		"t104": "Discord",
+		"t105": "Official server"
 	},
 	"de_DE":{
 			"t1":"Willkommen im GalaxySlicer",
@@ -185,7 +190,12 @@ var LangText={
 			"t97": "Profilverwaltung",
 			"t98": "Demnächst verfügbar",
 			"t99": "Entschuldigung...: 1.0.0-alpha -> 1.0.0-beta",
-			"t100": "Suchen"
+			"t100": "Suchen",
+			"t101": "Soziale Netzwerke",
+			"t102": "Github",
+			"t103": "Github Themen",
+			"t104": "Discord",
+			"t105": "Offizieller Server"
 	    },
 		"cs_CZ":{
 			"t1":"Vítejte v GalaxySlicer",
@@ -278,7 +288,12 @@ var LangText={
 			"t97": "Správa profilů",
 			"t98": "Již brzy",
 			"t99": "Velmi se omlouvám...: 1.0.0-alpha -> 1.0.0-beta",
-			"t100": "Vyhledávání"
+			"t100": "Vyhledávání",
+			"t101": "Sociální sítě",
+			"t102": "Github",
+			"t103": "Problémy Github",
+			"t104": "Discord",
+			"t105": "Oficiální server"
 	    },
 	"fr_FR":{
 		"t1":"Bienvenue sur GalaxySlicer",
@@ -374,6 +389,11 @@ var LangText={
 		"t98": "Bientôt disponible",
 		"t99": "Pardon... : 1.0.0-alpha -> 1.0.0-beta",
 		"t100": "Rechercher",
+		"t101": "Socials",
+		"t102": "Github",
+		"t103": "Problèmes Github",
+		"t104": "Discord",
+		"t105": "Serveur officiel",
 		"wk1":"Démarrage rapide",
 		"wk2":"Cet article présente l'utilisation la plus basique de GalaxySlicer. Il guide les utilisateurs pour configurer le logiciel, créer des projets et effectuer la première tâche d'impression étape par étape.",
 		"wk3":"Workflow basé sur des projets",
@@ -483,6 +503,11 @@ var LangText={
 		"t98": "即将推出",
 		"t99": "非常抱歉...: 1.0.0-alpha -> 1.0.0-beta",
 		"t100": "搜索",
+		"t101": "社交活动",
+		"t102": "Github",
+		"t103": "Github 问题",
+		"t104": "Discord",
+		"t105": "官方服务器",
 		"wk1":"快速入门指南",
 		"wk2":"本文介绍了GalaxySlicer的最基本用法。它指导用户配置软件，创建项目，并逐步完成第一个打印任务。",
 		"wk3":"基于项目的工作流",
