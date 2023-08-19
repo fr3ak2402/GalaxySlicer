@@ -279,7 +279,7 @@ UpdateVersionDialog::UpdateVersionDialog(wxWindow *parent)
     wxBoxSizer *m_sizer_right = new wxBoxSizer(wxVERTICAL);
 
     m_text_up_info = new Label(this,wxEmptyString);
-    m_text_up_info->SetFont(::Label::Head_14);
+    m_text_up_info->SetFont(::Label::Head_12);
     m_text_up_info->SetForegroundColour(wxColour(0x26, 0x2E, 0x30));
     m_text_up_info->Wrap(-1);
 
@@ -535,6 +535,9 @@ void UpdateVersionDialog::update_version_info(wxString release_note, wxString ve
 	std::replace(url.begin(), url.end(), '\\', '/');
 	url = "file:///" + url;
     m_vebview_release_note->LoadURL(from_u8(url));
+
+    SetMinSize(GetSize());
+    SetMaxSize(GetSize());
 
     wxGetApp().UpdateDlgDarkUI(this);
     Layout();
