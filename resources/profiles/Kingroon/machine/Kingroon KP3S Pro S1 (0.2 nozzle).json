@@ -1,0 +1,116 @@
+{
+	"type": "machine",
+	"setting_id": "GM001",
+	"name": "Kingroon KP3S Pro S1 (0.2 nozzle)",
+	"from": "system",
+	"instantiation": "true",
+	"inherits": "fdm_machine_kingroon",
+	"printer_model": "Kingroon KP3S Pro S1",
+	"default_print_profile": "0.20mm Standard @Kingroon KP3SProS1 (0.2 nozzle)",
+	"nozzle_diameter": [
+		"0.2"
+	],
+	"printer_variant": "0.2",
+	"printable_area": [
+		"0x0",
+		"200x0",
+		"200x200",
+		"0x200"
+	],
+	"printable_height": "200",
+	"nozzle_type": "undefine",
+	"auxiliary_fan": "0",
+	"machine_max_acceleration_extruding": [
+		"1250",
+		"1250"
+	],
+	"machine_max_acceleration_retracting": [
+		"1250",
+		"1250"
+	],
+	"machine_max_acceleration_travel": [
+		"9000",
+		"9000"
+	],
+	"machine_max_acceleration_x": [
+		"3000",
+		"3000"
+	],
+	"machine_max_acceleration_y": [
+		"3000",
+		"3000"
+	],
+	"machine_max_acceleration_z": [
+		"200",
+		"200"
+	],
+	"machine_max_speed_e": [
+		"120",
+		"120"
+	],
+	"machine_max_speed_x": [
+		"200",
+		"200"
+	],
+	"machine_max_speed_y": [
+		"200",
+		"200"
+	],
+	"machine_max_speed_z": [
+		"12",
+		"12"
+	],
+	"machine_max_jerk_e": [
+		"5",
+		"5"
+	],
+	"machine_max_jerk_x": [
+		"12",
+		"12"
+	],
+	"machine_max_jerk_y": [
+		"12",
+		"12"
+	],
+	"machine_max_jerk_z": [
+		"0.4",
+		"0.4"
+	],
+	"max_layer_height": [
+		"0.3"
+	],
+	"min_layer_height": [
+		"0.08"
+	],
+	"printer_settings_id": "Kingroon",
+	"retraction_minimum_travel": [
+		"2"
+	],
+	"retract_before_wipe": [
+		"70%"
+	],
+	"retraction_length": [
+		"1"
+	],
+	"retract_length_toolchange": [
+		"2"
+	],
+	"retraction_speed": [
+		"35"
+	],
+	"deretraction_speed": [
+		"30"
+	],
+	"single_extruder_multi_material": "0",
+	"change_filament_gcode": "M600",
+	"machine_pause_gcode": "PAUSE",
+	"default_filament_profile": [
+		"Kingroon Generic PLA @0.2 nozzle"
+	],
+	"gcode_flavor": "klipper",
+	"machine_end_gcode": "{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+2, max_print_height)} F600 ; Move print head up{endif}\nG1 X5 Y{print_bed_max[1]*0.8} F{travel_speed*60} ; present print\n{if max_layer_z < max_print_height-10}G1 Z{z_offset+min(max_layer_z+20, max_print_height-10)} F600 ; Move print head further up{endif}\n{if max_layer_z < max_print_height*0.6}G1 Z{max_print_height*0.6} F600 ; Move print head further up{endif}\nM140 S0 ; turn off heatbed\nM104 S0 ; turn off temperature\nM107 ; turn off fan\nG1 X0 Y170 F1000 ; prepare for part removal\nM84; disable motors\n",
+	"machine_start_gcode": "M190 S0 ; Prevents prusaslicer engine from prepending m190 to the gcode ruining our macro\nM109 S0 ; Prevents prusaslicer engine from prepending m109 to the gcode ruining our macro\nSET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count] ; Provide layer information\nSTART_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[first_layer_bed_temperature] CHAMBER=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
+	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
+	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+	"scan_first_layer": "0"
+}

@@ -7,6 +7,10 @@
   {
       "name": "Anker M5",
       "sub_path": "machine/Anker M5.json"
+  },
+  {
+      "name": "Anker M5C",
+      "sub_path": "machine/Anker M5C.json"
   }
   ],
 "process_list":   [
@@ -29,6 +33,22 @@
   {
       "name": "0.20mm Standard @Anker M5 (0.8 nozzle)",
       "sub_path": "process/0.20mm Standard @Anker M5 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Anker M5C (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Anker M5C (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Anker M5C (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Anker M5C (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Anker M5C (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Anker M5C (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Anker M5C (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Anker M5C (0.8 nozzle).json"
   }
   ],
 "filament_list":   [
@@ -289,6 +309,22 @@
   {
       "name": "Anker M5 (0.8 nozzle)",
       "sub_path": "machine/Anker M5 (0.8 nozzle).json"
+  },
+  {
+      "name": "Anker M5C (0.2 nozzle)",
+      "sub_path": "machine/Anker M5C (0.2 nozzle).json"
+  },
+  {
+      "name": "Anker M5C (0.4 nozzle)",
+      "sub_path": "machine/Anker M5C (0.4 nozzle).json"
+  },
+  {
+      "name": "Anker M5C (0.6 nozzle)",
+      "sub_path": "machine/Anker M5C (0.6 nozzle).json"
+  },
+  {
+      "name": "Anker M5C (0.8 nozzle)",
+      "sub_path": "machine/Anker M5C (0.8 nozzle).json"
   }
   ]
 }
