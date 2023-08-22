@@ -1,0 +1,132 @@
+{
+	"type": "machine",
+	"setting_id": "GM001",
+	"name": "Craftbot FLOW Wide XL (0.6 nozzle)",
+	"from": "system",
+	"instantiation": "true",
+	"inherits": "fdm_machine_common",
+	"printer_model": "Craftbot FLOW Wide XL",
+	"default_print_profile": "0.20mm Standard @Craftbot FLOW (0.6 nozzle)",
+	"nozzle_diameter": [
+		"0.6"
+	],
+	"printer_variant": "0.6",
+	"printable_area": [
+		"0x0",
+		"425x0",
+		"425x250",
+		"0x250"
+	],
+	"printable_height": "500",
+	"nozzle_type": "undefine",
+	"auxiliary_fan": "0",
+    "machine_max_acceleration_e": [
+        "1100",
+		"1100"
+    ],
+	"machine_max_acceleration_extruding": [
+		"5000",
+		"5000"
+	],
+	"machine_max_acceleration_retracting": [
+		"1100",
+		"1100"
+	],
+	"machine_max_acceleration_travel": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_x": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_y": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_z": [
+		"100",
+		"100"
+	],
+	"machine_max_speed_e": [
+		"20",
+		"20"
+	],
+	"machine_max_speed_x": [
+		"350",
+		"350"
+	],
+	"machine_max_speed_y": [
+		"350",
+		"350"
+	],
+	"machine_max_speed_z": [
+		"2",
+		"2"
+	],
+	"machine_max_jerk_e": [
+		"5",
+		"5"
+	],
+	"machine_max_jerk_x": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_y": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_z": [
+		"0.3",
+		"0.3"
+	],
+	"max_layer_height": [
+		"0.30"
+	],
+	"min_layer_height": [
+		"0.05"
+	],
+	"printer_settings_id": "Craftbot",
+	"retraction_minimum_travel": [
+		"1"
+	],
+	"retract_before_wipe": [
+		"0%"
+	],
+	"retraction_length": [
+		"0.8"
+	],
+	"retract_length_toolchange": [
+		"1.5"
+	],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retraction_speed": [
+        "40"
+    ],
+	"deretraction_speed": [
+		"0"
+	],
+    "wipe": [
+        "1"
+    ],
+	"single_extruder_multi_material": "0",
+	"change_filament_gcode": "M600",
+	"machine_pause_gcode": "M25; pause print",
+	"default_filament_profile": [
+		"Craftbot Generic PLA @0.6 nozzle"
+	],
+	"machine_start_gcode": "G28 X0 Y0\nG28 Z0\nG0 Z10 F1800",
+	"machine_end_gcode": "M104 S0 ; turn off temperature\nM140 S0\nG91\nG0 Z15 F2000\nG90\nG28 X0 Y0\nG0 Y200 F2000\nM84; disable motors",
+	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\n",
+	"toolchange_gcode": "; Custom tool change G-code",
+	"scan_first_layer": "0"
+}
