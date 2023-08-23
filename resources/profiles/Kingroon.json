@@ -11,6 +11,14 @@
   {
       "name": "Kingroon KP3S Pro V2",
       "sub_path": "machine/Kingroon KP3S Pro V2.json"
+  },
+  {
+      "name": "Kingroon KP5L",
+      "sub_path": "machine/Kingroon KP5L.json"
+  },
+  {
+      "name": "Kingroon KP5M",
+      "sub_path": "machine/Kingroon KP5M.json"
   }
   ],
 "process_list":   [
@@ -55,6 +63,38 @@
       "sub_path": "process/0.16mm Optimal @Kingroon KP3SProV2 (0.8 nozzle).json"
   },
   {
+      "name": "0.16mm Optimal @Kingroon KP5L (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5L (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5L (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5L (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5L (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5L (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5L (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5L (0.8 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5M (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5M (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5M (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5M (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5M (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5M (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Kingroon KP5M (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Kingroon KP5M (0.8 nozzle).json"
+  },
+  {
       "name": "0.20mm Standard @Kingroon KP3SProS1 (0.2 nozzle)",
       "sub_path": "process/0.20mm Standard @Kingroon KP3SProS1 (0.2 nozzle).json"
   },
@@ -85,6 +125,38 @@
   {
       "name": "0.20mm Standard @Kingroon KP3SProV2 (0.8 nozzle)",
       "sub_path": "process/0.20mm Standard @Kingroon KP3SProV2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5L (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5L (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5L (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5L (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5L (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5L (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5L (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5L (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5M (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5M (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5M (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5M (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5M (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5M (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Kingroon KP5M (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Kingroon KP5M (0.8 nozzle).json"
   }
   ],
 "filament_list":   [
@@ -205,6 +277,38 @@
   {
       "name": "Kingroon KP3S Pro V2 (0.8 nozzle)",
       "sub_path": "machine/Kingroon KP3S Pro V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5L (0.2 nozzle)",
+      "sub_path": "machine/Kingroon KP5L (0.2 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5L (0.4 nozzle)",
+      "sub_path": "machine/Kingroon KP5L (0.4 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5L (0.6 nozzle)",
+      "sub_path": "machine/Kingroon KP5L (0.6 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5L (0.8 nozzle)",
+      "sub_path": "machine/Kingroon KP5L (0.8 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5M (0.2 nozzle)",
+      "sub_path": "machine/Kingroon KP5M (0.2 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5M (0.4 nozzle)",
+      "sub_path": "machine/Kingroon KP5M (0.4 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5M (0.6 nozzle)",
+      "sub_path": "machine/Kingroon KP5M (0.6 nozzle).json"
+  },
+  {
+      "name": "Kingroon KP5M (0.8 nozzle)",
+      "sub_path": "machine/Kingroon KP5M (0.8 nozzle).json"
   }
   ]
 }
