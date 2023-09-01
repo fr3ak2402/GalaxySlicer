@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Snapmaker A250",
+    "model_id": "SnapmakerA250",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Snapmaker",
+    "bed_model": "snapmaker_a250_buildplate_model.stl",
+    "bed_texture": "snapmaker_a250_buildplate_texture.png",
+    "hotend_model": "",
+    "default_materials": "Snapmaker ABS @0.2 nozzle;Snapmaker PLA @0.2 nozzle;Snapmaker PLA-CF @0.2 nozzle;Snapmaker PETG @0.2 nozzle;Snapmaker TPU @0.2 nozzle;Snapmaker ASA @0.2 nozzle;Snapmaker PVA @0.2 nozzle;Snapmaker PA-CF @0.2 nozzle;Snapmaker ABS @0.4 nozzle;Snapmaker PLA @0.4 nozzle;Snapmaker PLA-CF @0.4 nozzle;Snapmaker PETG @0.4 nozzle;Snapmaker TPU @0.4 nozzle;Snapmaker ASA @0.4 nozzle;Snapmaker PVA @0.4 nozzle;Snapmaker PA-CF @0.4 nozzle;Snapmaker ABS @0.6 nozzle;Snapmaker PLA @0.6 nozzle;Snapmaker PLA-CF @0.6 nozzle;Snapmaker PETG @0.6 nozzle;Snapmaker TPU @0.6 nozzle;Snapmaker ASA @0.6 nozzle;Snapmaker PVA @0.6 nozzle;Snapmaker PA-CF @0.6 nozzle;Snapmaker ABS @0.8 nozzle;Snapmaker PLA @0.8 nozzle;Snapmaker PLA-CF @0.8 nozzle;Snapmaker PETG @0.8 nozzle;Snapmaker TPU @0.8 nozzle;Snapmaker ASA @0.8 nozzle;Snapmaker PVA @0.8 nozzle;Snapmaker PA-CF @0.8 nozzle"
+}

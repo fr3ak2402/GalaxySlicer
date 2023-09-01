@@ -1,0 +1,91 @@
+*
+{
+	color: #efeff0;
+	border-color: #B9B9BC;
+}
+
+body
+{
+	background-color:#3E3E45;
+	color: #efeff0;
+}
+
+.ZScrol::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    background-color: #939594;
+}
+
+.ZScrol::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        background: #161817;
+}
+
+#Title div
+{
+	color: #9c6da4;
+}
+
+/*----TitleBar with Search----*/
+#TitleBarText p
+{
+    color: #9c6da4;
+}
+
+/*--SearchField--*/
+input[type=search] {
+	border:#9c6da4 1px solid;
+	background-color: #B9B9BC;
+	caret-color : #9c6da4;
+	color: black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3E3E45;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #3E3E45;
+}
+
+/*-----Button-----*/
+.GrayBtn
+{
+	border: 1px solid #B9B9BC;
+	color: #B9B9BC;	
+}
+
+.GrayBtn:hover
+{
+	background-color:#E8E8E8;
+	color: #565656;
+}
+
+/*-------Text------*/
+
+.TextS1
+{
+
+}
+
+.TextS2
+{
+	color:#B9B9BC;
+}
+
+/*---Policy---*/
+.TextArea1
+{
+	background-color: #4A4A51;
+	color: #BEBEC0;
+}
+
+/*----Region---*/
+.RegionItem:hover
+{
+	background-color:#4C4C55;
+}
+
+.RegionSelected:hover
+{
+	background-color:#9C6DA4;
+	color: #fff;	
+}

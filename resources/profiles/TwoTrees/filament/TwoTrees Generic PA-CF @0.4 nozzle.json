@@ -1,0 +1,24 @@
+{
+    "type": "filament",
+    "filament_id": "GFN98",
+    "setting_id": "GFSN98",
+    "name": "TwoTrees Generic PA-CF @0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TwoTrees Generic PA-CF @base",
+    "filament_type": [
+        "PA-CF"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "280"
+    ],
+    "nozzle_temperature": [
+        "280"
+    ],
+    "filament_max_volumetric_speed": [
+        "8"
+    ],
+    "compatible_printers": [
+	  "TwoTrees SP-5 (Klipper) (0.4 nozzle)"
+    ]
+}

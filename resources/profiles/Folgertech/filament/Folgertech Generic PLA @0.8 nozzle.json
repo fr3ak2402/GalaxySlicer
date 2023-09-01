@@ -1,0 +1,23 @@
+{
+    "type": "filament",
+	"filament_id": "GFL99",
+    "setting_id": "GFSL99",
+    "name": "Folgertech Generic PLA @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Folgertech Generic PLA @base",
+	"filament_flow_ratio": [
+        "0.98"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "slow_down_layer_time": [
+        "8"
+    ],
+    "compatible_printers": [
+	  "Folgertech FT-5 (0.8 nozzle)",
+	  "Folgertech FT-6 (0.8 nozzle) (Dual)",
+	  "Folgertech i3 (0.8 nozzle)"
+    ]
+}

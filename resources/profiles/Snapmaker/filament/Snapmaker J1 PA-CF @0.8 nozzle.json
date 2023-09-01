@@ -1,0 +1,11 @@
+{
+    "name": "Snapmaker J1 PA-CF @0.8 nozzle",
+    "instantiation": "true",
+    "setting_id": "SMFS49",
+    "inherits": "Snapmaker J1 PA-CF @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.8 nozzle) (IDEX)"
+    ],
+    "type": "filament",
+    "from": "system"
+}

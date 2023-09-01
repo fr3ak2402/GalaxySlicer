@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "BIQU Hurakan",
+    "model_id": "Hurakan",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "BIQU",
+    "bed_model": "biqu_hurakan_buildplate_model.stl",
+    "bed_texture": "biqu_hurakan_buildplate_texture.png",
+    "hotend_model": "biqu_hurakan_hotend.stl",
+    "default_materials": "BIQU Generic ABS @0.2 nozzle;BIQU Generic ASA @0.2 nozzle;BIQU Generic PA @0.2 nozzle;BIQU Generic PA-CF @0.2 nozzle;BIQU Generic PC @0.2 nozzle;BIQU Generic PETG @0.2 nozzle;BIQU Generic PETG-CF @0.2 nozzle;BIQU Generic PLA Silk @0.2 nozzle;BIQU Generic PLA @0.2 nozzle;BIQU Generic PLA-CF @0.2 nozzle;BIQU Generic PVA @0.2 nozzle;BIQU Generic TPU @0.2 nozzle;BIQU Generic ABS @0.4 nozzle;BIQU Generic ASA @0.4 nozzle;BIQU Generic PA @0.4 nozzle;BIQU Generic PA-CF @0.4 nozzle;BIQU Generic PC @0.4 nozzle;BIQU Generic PETG @0.4 nozzle;BIQU Generic PETG-CF @0.4 nozzle;BIQU Generic PLA Silk @0.4 nozzle;BIQU Generic PLA @0.4 nozzle;BIQU Generic PLA-CF @0.4 nozzle;BIQU Generic PVA @0.4 nozzle;BIQU Generic TPU @0.4 nozzle;BIQU Generic ABS @0.6 nozzle;BIQU Generic ASA @0.6 nozzle;BIQU Generic PA @0.6 nozzle;BIQU Generic PA-CF @0.6 nozzle;BIQU Generic PC @0.6 nozzle;BIQU Generic PETG @0.6 nozzle;BIQU Generic PETG-CF @0.6 nozzle;BIQU Generic PLA Silk @0.6 nozzle;BIQU Generic PLA @0.6 nozzle;BIQU Generic PLA-CF @0.6 nozzle;BIQU Generic PVA @0.6 nozzle;BIQU Generic TPU @0.6 nozzle;BIQU Generic ABS @0.8 nozzle;BIQU Generic ASA @0.8 nozzle;BIQU Generic PA @0.8 nozzle;BIQU Generic PA-CF @0.8 nozzle;BIQU Generic PC @0.8 nozzle;BIQU Generic PETG @0.8 nozzle;BIQU Generic PETG-CF @0.8 nozzle;BIQU Generic PLA Silk @0.8 nozzle;BIQU Generic PLA @0.8 nozzle;BIQU Generic PLA-CF @0.8 nozzle;BIQU Generic PVA @0.8 nozzle;BIQU Generic TPU @0.8 nozzle"
+}

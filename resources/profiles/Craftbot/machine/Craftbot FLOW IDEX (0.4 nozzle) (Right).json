@@ -1,0 +1,132 @@
+{
+	"type": "machine",
+	"setting_id": "GM001",
+	"name": "Craftbot FLOW IDEX (0.4 nozzle) (Right)",
+	"from": "system",
+	"instantiation": "true",
+	"inherits": "fdm_machine_common",
+	"printer_model": "Craftbot FLOW IDEX",
+	"default_print_profile": "0.20mm Standard @Craftbot FLOWIDEX (0.4 nozzle)",
+	"nozzle_diameter": [
+		"0.4"
+	],
+	"printer_variant": "0.4",
+	"printable_area": [
+		"0x0",
+		"425x0",
+		"425x250",
+		"0x250"
+	],
+	"printable_height": "250",
+	"nozzle_type": "undefine",
+	"auxiliary_fan": "0",
+    "machine_max_acceleration_e": [
+        "1100",
+		"1100"
+    ],
+	"machine_max_acceleration_extruding": [
+		"5000",
+		"5000"
+	],
+	"machine_max_acceleration_retracting": [
+		"1100",
+		"1100"
+	],
+	"machine_max_acceleration_travel": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_x": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_y": [
+		"500",
+		"500"
+	],
+	"machine_max_acceleration_z": [
+		"100",
+		"100"
+	],
+	"machine_max_speed_e": [
+		"20",
+		"20"
+	],
+	"machine_max_speed_x": [
+		"350",
+		"350"
+	],
+	"machine_max_speed_y": [
+		"350",
+		"350"
+	],
+	"machine_max_speed_z": [
+		"2",
+		"2"
+	],
+	"machine_max_jerk_e": [
+		"5",
+		"5"
+	],
+	"machine_max_jerk_x": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_y": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_z": [
+		"0.3",
+		"0.3"
+	],
+	"max_layer_height": [
+		"0.30"
+	],
+	"min_layer_height": [
+		"0.05"
+	],
+	"printer_settings_id": "Craftbot",
+	"retraction_minimum_travel": [
+		"1"
+	],
+	"retract_before_wipe": [
+		"0%"
+	],
+	"retraction_length": [
+		"0.8"
+	],
+	"retract_length_toolchange": [
+		"1.5"
+	],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retraction_speed": [
+        "40"
+    ],
+	"deretraction_speed": [
+		"0"
+	],
+    "wipe": [
+        "1"
+    ],
+	"single_extruder_multi_material": "0",
+	"change_filament_gcode": "M600",
+	"machine_pause_gcode": "M25; pause print",
+	"default_filament_profile": [
+		"Craftbot Generic PLA @0.4 nozzle"
+	],
+	"machine_start_gcode": ";Right only (i.e. T1)\nM9006 S0;set DEFAULT mode 0=DEFAULT, 1=MIRROR, 2=PARALLEL, 3=not used, 4=INVERTHEAD, 5=BACKUP\n;if you want to be able to set the mode on the HMI, you have to comment out the above line\nM900 K0;turn off linear advance\nM140 S{first_layer_bed_temperature[0]};set bed temp (no wait)\nM104 S{first_layer_temperature[0]} T1;set extruder temp (no wait)\nG28 X Y;home X and Y axes\nG28 Z;home Z\n;wait for all temperatures\nM190 S{first_layer_bed_temperature[0]};set bed temp (wait)\nM109 S{first_layer_temperature[0]} T1;set extruder temp (wait)\nT1 ; switch to tool position T1\nG21;mm\nG90;absolute positioning\nG92 E0;reset extruder\nM425 S1 ;use wiper blade\nM430 Z1 F1800 ; Set head change elevation 1mm\nM431 E4 F1800  ;Head change exit retract 4mm\nM433 E4 F1800;Head change enter prime 4mm\nM300;signal start of print\n;move head to the wipe position while extruding some filament. That way\n;the nozzle is primed and when the print starts, the filament is wiped off.\nG1 Y140 F1800 E13",
+	"machine_end_gcode": "G101 F3600 Z10;lower the bed 10mm\nG90;absolute positioning\nG28 X Y;home X and Y\nG0 Y250;move Y back away from the camera\nM104 T0 S0;turn off left extruder heater\nM104 T1 S0;turn off right extruder heater\nM140 S0;turn off bed heater\nM106 T0 S0;turn off left fan\nM106 T1 S0;turn off right fan\nM84;disable motors\nM900 K0;turn off linear advance",
+	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\n; added due to bug in first layer extruder temp\n{if layer_num==0}\nM109 S[first_layer_temperature[current_extruder]] T[current_extruder] ; Wait for Extruder temperature\n{endif}\n\n",
+	"toolchange_gcode": "; Custom tool change G-code",
+	"scan_first_layer": "0"
+}

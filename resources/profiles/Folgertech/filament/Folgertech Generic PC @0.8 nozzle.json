@@ -1,0 +1,20 @@
+{
+    "type": "filament",
+    "filament_id": "GFC99",
+    "setting_id": "GFSC99",
+    "name": "Folgertech Generic PC @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Folgertech Generic PC @base",
+    "filament_max_volumetric_speed": [
+        "16"
+    ],
+    "filament_flow_ratio": [
+        "0.94"
+    ],
+    "compatible_printers": [
+	  "Folgertech FT-5 (0.8 nozzle)",
+	  "Folgertech FT-6 (0.8 nozzle) (Dual)",
+	  "Folgertech i3 (0.8 nozzle)"
+	]
+}

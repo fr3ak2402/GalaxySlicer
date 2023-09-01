@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "TwoTrees SP-5 (Klipper)",
+    "model_id": "TwoTrees_SP-5_Klipper",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "TwoTrees",
+    "bed_model": "twotrees_sp5_buildplate_model.stl",
+    "bed_texture": "twotrees_sp5_buildplate_texture.png",
+    "hotend_model": "",
+    "default_materials": "TwoTrees Generic ABS @0.2 nozzle;TwoTrees Generic PLA @0.2 nozzle;TwoTrees Generic PLA-CF @0.2 nozzle;TwoTrees Generic PETG @0.2 nozzle;TwoTrees Generic TPU @0.2 nozzle;TwoTrees Generic ASA @0.2 nozzle;TwoTrees Generic PC @0.2 nozzle;TwoTrees Generic PVA @0.2 nozzle;TwoTrees Generic PA @0.2 nozzle;TwoTrees Generic PA-CF @0.2 nozzle;TwoTrees Generic ABS @0.4 nozzle;TwoTrees Generic PLA @0.4 nozzle;TwoTrees Generic PLA-CF @0.4 nozzle;TwoTrees Generic PETG @0.4 nozzle;TwoTrees Generic TPU @0.4 nozzle;TwoTrees Generic ASA @0.4 nozzle;TwoTrees Generic PC @0.4 nozzle;TwoTrees Generic PVA @0.4 nozzle;TwoTrees Generic PA @0.4 nozzle;TwoTrees Generic PA-CF @0.4 nozzle;TwoTrees Generic ABS @0.6 nozzle;TwoTrees Generic PLA @0.6 nozzle;TwoTrees Generic PLA-CF @0.6 nozzle;TwoTrees Generic PETG @0.6 nozzle;TwoTrees Generic TPU @0.6 nozzle;TwoTrees Generic ASA @0.6 nozzle;TwoTrees Generic PC @0.6 nozzle;TwoTrees Generic PVA @0.6 nozzle;TwoTrees Generic PA @0.6 nozzle;TwoTrees Generic PA-CF @0.6 nozzle;TwoTrees Generic ABS @0.8 nozzle;TwoTrees Generic PLA @0.8 nozzle;TwoTrees Generic PLA-CF @0.8 nozzle;TwoTrees Generic PETG @0.8 nozzle;TwoTrees Generic TPU @0.8 nozzle;TwoTrees Generic ASA @0.8 nozzle;TwoTrees Generic PC @0.8 nozzle;TwoTrees Generic PVA @0.8 nozzle;TwoTrees Generic PA @0.8 nozzle;TwoTrees Generic PA-CF @0.8 nozzle"
+}

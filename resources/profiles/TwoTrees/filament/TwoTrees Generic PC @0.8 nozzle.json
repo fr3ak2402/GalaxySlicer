@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFC99",
+    "setting_id": "GFSC99_00",
+    "name": "TwoTrees Generic PC @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "TwoTrees Generic PC @base",
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+    "filament_flow_ratio": [
+        "0.94"
+    ],
+    "compatible_printers": [
+	  "TwoTrees SP-5 (Klipper) (0.8 nozzle)"
+    ]
+}

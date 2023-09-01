@@ -1,0 +1,11 @@
+{
+    "name": "Snapmaker J1 PLA-CF @0.6 nozzle",
+    "instantiation": "true",
+    "setting_id": "SMFS70",
+    "inherits": "Snapmaker J1 PLA-CF @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.6 nozzle) (IDEX)"
+    ],
+    "type": "filament",
+    "from": "system"
+}

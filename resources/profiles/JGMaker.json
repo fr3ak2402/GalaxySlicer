@@ -1,0 +1,211 @@
+{
+"name": "JGMaker",
+"version": "01.00.00.00",
+"force_update": "0",
+"description": "JGMaker configurations",
+"machine_model_list":   [
+  {
+      "name": "JGMaker Artist-D Pro",
+      "sub_path": "machine/JGMaker Artist-D Pro.json"
+  },
+  {
+      "name": "JGMaker Artist-D",
+      "sub_path": "machine/JGMaker Artist-D.json"
+  }
+  ],
+"process_list":   [
+  {
+      "name": "fdm_process_common",
+      "sub_path": "process/fdm_process_common.json"
+  },
+  {
+      "name": "fdm_process_jgmaker_common",
+      "sub_path": "process/fdm_process_jgmaker_common.json"
+  },
+  {
+      "name": "0.12mm Fine @JGMaker ArtistD (0.2 nozzle)",
+      "sub_path": "process/0.12mm Fine @JGMaker ArtistD (0.2 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @JGMaker ArtistD (0.4 nozzle)",
+      "sub_path": "process/0.12mm Fine @JGMaker ArtistD (0.4 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @JGMaker ArtistD (0.6 nozzle)",
+      "sub_path": "process/0.12mm Fine @JGMaker ArtistD (0.6 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @JGMaker ArtistD (0.8 nozzle)",
+      "sub_path": "process/0.12mm Fine @JGMaker ArtistD (0.8 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @JGMaker ArtistD (0.2 nozzle)",
+      "sub_path": "process/0.15mm Optimal @JGMaker ArtistD (0.2 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @JGMaker ArtistD (0.4 nozzle)",
+      "sub_path": "process/0.15mm Optimal @JGMaker ArtistD (0.4 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @JGMaker ArtistD (0.6 nozzle)",
+      "sub_path": "process/0.15mm Optimal @JGMaker ArtistD (0.6 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @JGMaker ArtistD (0.8 nozzle)",
+      "sub_path": "process/0.15mm Optimal @JGMaker ArtistD (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @JGMaker ArtistD (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @JGMaker ArtistD (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @JGMaker ArtistD (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @JGMaker ArtistD (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @JGMaker ArtistD (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @JGMaker ArtistD (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @JGMaker ArtistD (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @JGMaker ArtistD (0.8 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @JGMaker ArtistD (0.2 nozzle)",
+      "sub_path": "process/0.24mm Draft @JGMaker ArtistD (0.2 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @JGMaker ArtistD (0.4 nozzle)",
+      "sub_path": "process/0.24mm Draft @JGMaker ArtistD (0.4 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @JGMaker ArtistD (0.6 nozzle)",
+      "sub_path": "process/0.24mm Draft @JGMaker ArtistD (0.6 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @JGMaker ArtistD (0.8 nozzle)",
+      "sub_path": "process/0.24mm Draft @JGMaker ArtistD (0.8 nozzle).json"
+  }
+  ],
+"filament_list":   [
+  {
+      "name": "fdm_filament_common",
+      "sub_path": "filament/fdm_filament_common.json"
+  },
+  {
+      "name": "fdm_filament_abs",
+      "sub_path": "filament/fdm_filament_abs.json"
+  },
+  {
+      "name": "fdm_filament_pet",
+      "sub_path": "filament/fdm_filament_pet.json"
+  },
+  {
+      "name": "fdm_filament_pla",
+      "sub_path": "filament/fdm_filament_pla.json"
+  },
+  {
+      "name": "JGMaker Generic PLA @base",
+      "sub_path": "filament/JGMaker Generic PLA @base.json"
+  },
+  {
+      "name": "JGMaker Generic PLA @0.8 nozzle",
+      "sub_path": "filament/JGMaker Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PLA @0.6 nozzle",
+      "sub_path": "filament/JGMaker Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PLA @0.4 nozzle",
+      "sub_path": "filament/JGMaker Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PLA @0.2 nozzle",
+      "sub_path": "filament/JGMaker Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PETG @base",
+      "sub_path": "filament/JGMaker Generic PETG @base.json"
+  },
+  {
+      "name": "JGMaker Generic PETG @0.8 nozzle",
+      "sub_path": "filament/JGMaker Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PETG @0.6 nozzle",
+      "sub_path": "filament/JGMaker Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PETG @0.4 nozzle",
+      "sub_path": "filament/JGMaker Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic PETG @0.2 nozzle",
+      "sub_path": "filament/JGMaker Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic ABS @base",
+      "sub_path": "filament/JGMaker Generic ABS @base.json"
+  },
+  {
+      "name": "JGMaker Generic ABS @0.8 nozzle",
+      "sub_path": "filament/JGMaker Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic ABS @0.6 nozzle",
+      "sub_path": "filament/JGMaker Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic ABS @0.4 nozzle",
+      "sub_path": "filament/JGMaker Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "JGMaker Generic ABS @0.2 nozzle",
+      "sub_path": "filament/JGMaker Generic ABS @0.2 nozzle.json"
+  }
+  ],
+"machine_list":   [
+  {
+      "name": "fdm_machine_common",
+      "sub_path": "machine/fdm_machine_common.json"
+  },
+  {
+      "name": "fdm_jgmaker_common",
+      "sub_path": "machine/fdm_jgmaker_common.json"
+  },
+  {
+      "name": "JGMaker Artist-D (0.2 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D (0.2 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D (0.4 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D (0.4 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D (0.6 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D (0.6 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D (0.8 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D (0.8 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D Pro (0.2 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D Pro (0.2 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D Pro (0.4 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D Pro (0.4 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D Pro (0.6 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D Pro (0.6 nozzle) (IDEX).json"
+  },
+  {
+      "name": "JGMaker Artist-D Pro (0.8 nozzle) (IDEX)",
+      "sub_path": "machine/JGMaker Artist-D Pro (0.8 nozzle) (IDEX).json"
+  }
+  ]
+}
+

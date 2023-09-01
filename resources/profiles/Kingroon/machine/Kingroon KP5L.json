@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Kingroon KP5L",
+    "model_id": "Kingroon-KP5L",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Kingroon",
+    "bed_model": "kingroon_kp5l_buildplate_model.stl",
+    "bed_texture": "kingroon_kp5l_buildplate_texture.png",
+    "hotend_model": "",
+    "default_materials": "Kingroon Generic PLA @0.2 nozzle;Kingroon Generic PETG @0.2 nozzle;Kingroon Generic ABS @0.2 nozzle;Kingroon Generic PLA @0.4 nozzle;Kingroon Generic PETG @0.4 nozzle;Kingroon Generic ABS @0.4 nozzle;Kingroon Generic PLA @0.6 nozzle;Kingroon Generic PETG @0.6 nozzle;Kingroon Generic ABS @0.6 nozzle;Kingroon Generic PLA @0.8 nozzle;Kingroon Generic PETG @0.8 nozzle;Kingroon Generic ABS @0.8 nozzle"
+}

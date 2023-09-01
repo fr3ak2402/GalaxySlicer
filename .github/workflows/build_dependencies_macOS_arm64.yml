@@ -1,0 +1,48 @@
+name: Build dependencies (macOS arm64)
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'deps/**'
+      - '.github/workflows/**'
+    
+jobs:
+  build_osx_arm64:
+    name: Build dependencies (macOS arm64)
+    runs-on: macos-arm64
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Build macOS arm64 dependencies
+      - name: Build on macOS arm64
+        working-directory: ${{ github.workspace }}
+        run: |
+            brew install cmake git gettext automake libiconv
+            mkdir -p ${{ github.workspace }}/deps/build_arm64
+            mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
+            ./build_release_macos.sh -d -a arm64
+           
+      - name: Cleaning up the macOS arm64 Build Directory
+        working-directory: ${{ github.workspace }}/deps/build_arm64
+        run: |
+            rm -r dep_*
+          
+      - name: Pack macOS arm64 dependencies
+        working-directory: ${{ github.workspace }}/deps/build_arm64
+        run: 'tar cfvz GalaxySlicer_dep_arm64.tar.gz GalaxySlicer_dep_arm64'
+
+      - name: Upload macOS arm64 dependencies
+        uses: actions/upload-artifact@v3
+        with:
+          name: GalaxySlicer_dep_arm64
+          path: ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64.tar.gz

@@ -1,0 +1,203 @@
+{
+"name": "Voxelab",
+"version": "01.00.00.00",
+"force_update": "0",
+"description": "Voxelab configurations",
+"machine_model_list":   [
+  {
+      "name": "Voxelab Aquila X2",
+      "sub_path": "machine/Voxelab Aquila X2.json"
+  },
+  {
+      "name": "Voxelab Aries",
+      "sub_path": "machine/Voxelab Aries.json"
+  }
+  ],
+"process_list":   [
+  {
+      "name": "fdm_process_common",
+      "sub_path": "process/fdm_process_common.json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab AquilaX2 (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab AquilaX2 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab AquilaX2 (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab AquilaX2 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab AquilaX2 (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab AquilaX2 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab AquilaX2 (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab AquilaX2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab Aries (0.2 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab Aries (0.2 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab Aries (0.4 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab Aries (0.4 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab Aries (0.6 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab Aries (0.6 nozzle).json"
+  },
+  {
+      "name": "0.16mm Optimal @Voxelab Aries (0.8 nozzle)",
+      "sub_path": "process/0.16mm Optimal @Voxelab Aries (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab AquilaX2 (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab AquilaX2 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab AquilaX2 (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab AquilaX2 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab AquilaX2 (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab AquilaX2 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab AquilaX2 (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab AquilaX2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab Aries (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab Aries (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab Aries (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab Aries (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab Aries (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab Aries (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Voxelab Aries (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Voxelab Aries (0.8 nozzle).json"
+  }
+  ],
+"filament_list":   [
+  {
+      "name": "fdm_filament_common",
+      "sub_path": "filament/fdm_filament_common.json"
+  },
+  {
+      "name": "fdm_filament_abs",
+      "sub_path": "filament/fdm_filament_abs.json"
+  },
+  {
+      "name": "fdm_filament_pet",
+      "sub_path": "filament/fdm_filament_pet.json"
+  },
+  {
+      "name": "fdm_filament_pla",
+      "sub_path": "filament/fdm_filament_pla.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @base",
+      "sub_path": "filament/Voxelab Generic PLA @base.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.8 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PLA @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @base",
+      "sub_path": "filament/Voxelab Generic PETG @base.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.8 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic PETG @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @base",
+      "sub_path": "filament/Voxelab Generic ABS @base.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.8 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.6 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.4 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "Voxelab Generic ABS @0.2 nozzle",
+      "sub_path": "filament/Voxelab Generic ABS @0.2 nozzle.json"
+  }
+  ],
+"machine_list":   [
+  {
+      "name": "fdm_machine_common",
+      "sub_path": "machine/fdm_machine_common.json"
+  },
+  {
+      "name": "Voxelab Aquila X2 (0.2 nozzle)",
+      "sub_path": "machine/Voxelab Aquila X2 (0.2 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aquila X2 (0.4 nozzle)",
+      "sub_path": "machine/Voxelab Aquila X2 (0.4 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aquila X2 (0.6 nozzle)",
+      "sub_path": "machine/Voxelab Aquila X2 (0.6 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aquila X2 (0.8 nozzle)",
+      "sub_path": "machine/Voxelab Aquila X2 (0.8 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aries (0.2 nozzle)",
+      "sub_path": "machine/Voxelab Aries (0.2 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aries (0.4 nozzle)",
+      "sub_path": "machine/Voxelab Aries (0.4 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aries (0.6 nozzle)",
+      "sub_path": "machine/Voxelab Aries (0.6 nozzle).json"
+  },
+  {
+      "name": "Voxelab Aries (0.8 nozzle)",
+      "sub_path": "machine/Voxelab Aries (0.8 nozzle).json"
+  }
+  ]
+}
+

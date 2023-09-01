@@ -1,0 +1,15 @@
+{
+    "type": "filament",
+    "filament_id": "GFU99",
+    "setting_id": "GFSU99",
+    "name": "Tronxy Generic TPU @0.4 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Tronxy Generic TPU @base",
+    "filament_max_volumetric_speed": [
+        "3.2"
+    ],
+    "compatible_printers": [
+	  "Tronxy X5SA 400 (Marlin) (0.4 nozzle)"
+    ]
+}

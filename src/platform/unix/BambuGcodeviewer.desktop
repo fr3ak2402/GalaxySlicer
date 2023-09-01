@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Bambu GCode viewer
+Exec=galaxy-slicer --gcodeviewer %F
+Icon=GalaxySlicer-gcodeviewer
+Terminal=false
+Type=Application
+MimeType=text/x.gcode;
+Categories=Graphics;3DGraphics;
+Keywords=3D;Printing;Slicer;

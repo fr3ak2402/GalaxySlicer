@@ -1,0 +1,11 @@
+{
+    "name": "PolyLite J1 PLA @0.4 nozzle",
+    "instantiation": "true",
+    "setting_id": "SMFS75",
+    "inherits": "PolyLite J1 PLA @base",
+    "compatible_printers": [
+        "Snapmaker J1 (0.4 nozzle) (IDEX)"
+    ],
+    "type": "filament",
+    "from": "system"
+}

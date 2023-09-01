@@ -1,0 +1,131 @@
+{
+	"type": "machine",
+	"setting_id": "GM001",
+	"name": "JGMaker Artist-D Pro (0.2 nozzle) (IDEX)",
+	"from": "system",
+	"instantiation": "true",
+	"inherits": "fdm_jgmaker_common",
+	"printer_model": "JGMaker Artist-D Pro",
+	"default_filament_profile": [
+		"JGMaker Generic PLA @0.2 nozzle"
+	],
+	"default_print_profile": "0.20mm Standard @JGMaker ArtistD (0.2 nozzle)",
+	"printer_variant": "0.2",
+	"nozzle_diameter": [
+		"0.2",
+		"0.2"
+	],
+	"extruder_colour": [
+        "#FCE94F",
+		"#FCE94F"
+    ],
+	"extruder_offset": [
+        "0x0",
+		"0x0"
+    ],
+	"printable_area": [
+		"0x0",
+		"300x0",
+		"300x300",
+		"0x300"
+	],
+	"printable_height": "340",
+	"nozzle_type": "undefine",
+	"auxiliary_fan": "0",
+	"machine_max_acceleration_extruding": [
+		"1500",
+		"1500"
+	],
+	"machine_max_acceleration_retracting": [
+		"1500",
+		"1500"
+	],
+	"machine_max_acceleration_travel": [
+		"1500",
+		"1500"
+	],
+	"machine_max_acceleration_x": [
+		"800",
+		"800"
+	],
+	"machine_max_acceleration_y": [
+		"800",
+		"800"
+	],
+	"machine_max_acceleration_z": [
+		"500",
+		"500"
+	],
+	"machine_max_speed_e": [
+		"5000",
+		"5000"
+	],
+	"machine_max_speed_x": [
+		"500",
+		"500"
+	],
+	"machine_max_speed_y": [
+		"500",
+		"500"
+	],
+	"machine_max_speed_z": [
+		"12",
+		"12"
+	],
+	"machine_max_jerk_e": [
+		"2.5",
+		"2.5"
+	],
+	"machine_max_jerk_x": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_y": [
+		"8",
+		"8"
+	],
+	"machine_max_jerk_z": [
+		"0.2",
+		"0.2"
+	],
+	"max_layer_height": [
+		"0.32",
+		"0.32"
+	],
+	"min_layer_height": [
+		"0.08",
+		"0.08"
+	],
+	"printer_settings_id": "JGMaker",
+	"retraction_minimum_travel": [
+		"1",
+		"1"
+	],
+	"retract_before_wipe": [
+		"70%",
+		"70%"
+	],
+	"retraction_length": [
+		"1.2",
+		"1.2"
+	],
+	"retract_length_toolchange": [
+		"2",
+		"2"
+	],
+	"deretraction_speed": [
+		"0",
+		"0"
+	],
+	"retraction_speed": [
+        "40",
+		"40"
+    ],
+	"single_extruder_multi_material": "0",
+	"machine_pause_gcode": "M601",
+	"machine_start_gcode": "G28 ; home all axes\nT0\nG1 Z5 F5000 ; lift nozzle\n\nM190 S40; \nM140 S[first_layer_bed_temperature]; Start the bed warming\nM104 S[first_layer_temperature] T1; set nozzle temp for Extruder 2\nM109 S[first_layer_temperature] T0; set nozzle temp and wait for temp to be reached\nM190 S[first_layer_bed_temperature]; set bed temp and wait for temp to be reached\n\nM900 T0 K0.12 ; set K-factor extruder 1\nM900 T1 K0.12 ; set K-factor extruder 2\n\nT0;\nG92 E0 ;zero the extruded length\nG1  Z2.0 F3000 ;Move Z Axis up\nG1  X5 Y10 Z0.28 F5000.0 ;Move to start position\n\nT0 G92 E0; reset extruder0\nT0 G90\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X3 Y10 Z0.28 F5000.0 ;Move to start position\nG1 X145 Y10 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X145 Y10.4 Z0.28 F5000.0 ;Move to side a little\nG1 X3 Y10.4 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0.0 ; reset extruder distance position\n\nT1;\nT1 G90\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X303 Y10 Z0.28 F5000.0 ;Move to start position\nG1 X155 Y10 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X155 Y10.4 Z0.28 F5000.0 ;Move to side a little\nG1 X303 Y10.4 Z0.28 F1500.0 E30 ;Draw the second line\nT1 G92 E0; reset extruder1\nT0 G92 E0; reset extruder0\nM117 Printing...; put message on display",
+    "machine_end_gcode": "T1 G92 E0; reset extruder0\nG1 E-15 F300 ;retract 15mm filament speed 300\nT0 G92 E0; reset extruder0\nG1 E-15 F300 ;retract 15mm filament speed 300\n\nM104 S0 T0; turn off temperature\nM104 S0 T1; turn off temperature\nM140 S0 ; turn off heatbed\nG28 X0  ; home X axis \nM84     ; disable motors\n",
+	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
+	"scan_first_layer": "0"
+}

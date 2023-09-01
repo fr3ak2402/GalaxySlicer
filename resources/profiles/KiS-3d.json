@@ -1,0 +1,295 @@
+{
+"name": "KiS-3d",
+"version": "01.00.00.00",
+"force_update": "0",
+"description": "KiS-3d configurations",
+"machine_model_list":   [
+  {
+      "name": "KiS-3d S235 EVO",
+      "sub_path": "machine/KiS-3d S235 EVO.json"
+  }
+  ],
+"process_list":   [
+  {
+      "name": "fdm_process_common",
+      "sub_path": "process/fdm_process_common.json"
+  },
+  {
+      "name": "0.20mm Standard @KiS-3d S235EVO (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @KiS-3d S235EVO (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @KiS-3d S235EVO (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @KiS-3d S235EVO (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @KiS-3d S235EVO (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @KiS-3d S235EVO (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @KiS-3d S235EVO (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @KiS-3d S235EVO (0.8 nozzle).json"
+  }
+  ],
+"filament_list":   [
+  {
+      "name": "fdm_filament_common",
+      "sub_path": "filament/fdm_filament_common.json"
+  },
+  {
+      "name": "fdm_filament_abs",
+      "sub_path": "filament/fdm_filament_abs.json"
+  },
+  {
+      "name": "fdm_filament_asa",
+      "sub_path": "filament/fdm_filament_asa.json"
+  },
+  {
+      "name": "fdm_filament_pa",
+      "sub_path": "filament/fdm_filament_pa.json"
+  },
+  {
+      "name": "fdm_filament_pc",
+      "sub_path": "filament/fdm_filament_pc.json"
+  },
+  {
+      "name": "fdm_filament_pet",
+      "sub_path": "filament/fdm_filament_pet.json"
+  },
+  {
+      "name": "fdm_filament_pla",
+      "sub_path": "filament/fdm_filament_pla.json"
+  },
+  {
+      "name": "fdm_filament_pva",
+      "sub_path": "filament/fdm_filament_pva.json"
+  },
+  {
+      "name": "fdm_filament_tpu",
+      "sub_path": "filament/fdm_filament_tpu.json"
+  },
+  {
+      "name": "KiS-3d Generic TPU @base",
+      "sub_path": "filament/KiS-3d Generic TPU @base.json"
+  },
+  {
+      "name": "KiS-3d Generic TPU @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic TPU @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic TPU @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic TPU @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic TPU @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic TPU @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic TPU @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic TPU @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PVA @base",
+      "sub_path": "filament/KiS-3d Generic PVA @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PVA @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PVA @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PVA @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PVA @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PVA @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PVA @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PVA @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PVA @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA-CF @base",
+      "sub_path": "filament/KiS-3d Generic PLA-CF @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA-CF @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA-CF @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA-CF @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA-CF @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA @base",
+      "sub_path": "filament/KiS-3d Generic PLA @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PLA @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PLA @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PETG @base",
+      "sub_path": "filament/KiS-3d Generic PETG @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PETG @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PETG @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PETG @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PETG @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PETG @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PETG @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PETG @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PETG @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PC @base",
+      "sub_path": "filament/KiS-3d Generic PC @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PC @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PC @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PC @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PC @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PC @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PC @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PC @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PC @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA-CF @base",
+      "sub_path": "filament/KiS-3d Generic PA-CF @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PA-CF @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA-CF @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA-CF @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA-CF @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA-CF @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA-CF @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA-CF @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA-CF @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA @base",
+      "sub_path": "filament/KiS-3d Generic PA @base.json"
+  },
+  {
+      "name": "KiS-3d Generic PA @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic PA @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic PA @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ASA @base",
+      "sub_path": "filament/KiS-3d Generic ASA @base.json"
+  },
+  {
+      "name": "KiS-3d Generic ASA @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic ASA @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ASA @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic ASA @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ASA @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic ASA @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ASA @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic ASA @0.2 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ABS @base",
+      "sub_path": "filament/KiS-3d Generic ABS @base.json"
+  },
+  {
+      "name": "KiS-3d Generic ABS @0.8 nozzle",
+      "sub_path": "filament/KiS-3d Generic ABS @0.8 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ABS @0.6 nozzle",
+      "sub_path": "filament/KiS-3d Generic ABS @0.6 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ABS @0.4 nozzle",
+      "sub_path": "filament/KiS-3d Generic ABS @0.4 nozzle.json"
+  },
+  {
+      "name": "KiS-3d Generic ABS @0.2 nozzle",
+      "sub_path": "filament/KiS-3d Generic ABS @0.2 nozzle.json"
+  }
+  ],
+"machine_list":   [
+  {
+      "name": "fdm_machine_common",
+      "sub_path": "machine/fdm_machine_common.json"
+  },
+  {
+      "name": "KiS-3d S235 EVO (0.2 nozzle)",
+      "sub_path": "machine/KiS-3d S235 EVO (0.2 nozzle).json"
+  },
+  {
+      "name": "KiS-3d S235 EVO (0.4 nozzle)",
+      "sub_path": "machine/KiS-3d S235 EVO (0.4 nozzle).json"
+  },
+  {
+      "name": "KiS-3d S235 EVO (0.6 nozzle)",
+      "sub_path": "machine/KiS-3d S235 EVO (0.6 nozzle).json"
+  },
+  {
+      "name": "KiS-3d S235 EVO (0.8 nozzle)",
+      "sub_path": "machine/KiS-3d S235 EVO (0.8 nozzle).json"
+  }
+  ]
+}
+

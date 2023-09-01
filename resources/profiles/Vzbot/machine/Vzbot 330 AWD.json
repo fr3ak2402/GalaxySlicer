@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Vzbot 330 AWD",
+    "model_id": "Vzbot 330 AWD",
+    "nozzle_diameter": "0.2;0.4;0.5;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Vzbot",
+    "bed_model": "vzbot_330awd_buildplate_model.stl",
+    "bed_texture": "vzbot_330awd_buildplate_texture.svg",
+    "hotend_model": "vzbot_hotend.stl",
+    "default_materials": "Voron Generic ABS @0.2 nozzle;Voron Generic PLA @0.2 nozzle;Voron Generic PLA-CF @0.2 nozzle;Voron Generic PETG @0.2 nozzle;Voron Generic TPU @0.2 nozzle;Voron Generic ASA @0.2 nozzle;Voron Generic PC @0.2 nozzle;Voron Generic PVA @0.2 nozzle;Voron Generic PA @0.2 nozzle;Voron Generic PA-CF @0.2 nozzle;Voron Generic ABS @0.4 nozzle;Voron Generic PLA @0.4 nozzle;Voron Generic PLA-CF @0.4 nozzle;Voron Generic PETG @0.4 nozzle;Voron Generic TPU @0.4 nozzle;Voron Generic ASA @0.4 nozzle;Voron Generic PC @0.4 nozzle;Voron Generic PVA @0.4 nozzle;Voron Generic PA @0.4 nozzle;Voron Generic PA-CF @0.4 nozzle;Vzbot Generic ABS @0.5 nozzle;Vzbot Generic PLA @0.5 nozzle;Vzbot Generic PLA-CF @0.5 nozzle;Vzbot Generic PETG @0.5 nozzle;Vzbot Generic TPU @0.5 nozzle;Vzbot Generic ASA @0.5 nozzle;Vzbot Generic PC @0.5 nozzle;Vzbot Generic PVA @0.5 nozzle;Vzbot Generic PA @0.5 nozzle;Vzbot Generic PA-CF @0.5 nozzle;Voron Generic ABS @0.6 nozzle;Voron Generic PLA @0.6 nozzle;Voron Generic PLA-CF @0.6 nozzle;Voron Generic PETG @0.6 nozzle;Voron Generic TPU @0.6 nozzle;Voron Generic ASA @0.6 nozzle;Voron Generic PC @0.6 nozzle;Voron Generic PVA @0.6 nozzle;Voron Generic PA @0.6 nozzle;Voron Generic PA-CF @0.6 nozzle;Voron Generic ABS @0.8 nozzle;Voron Generic PLA @0.8 nozzle;Voron Generic PLA-CF @0.8 nozzle;Voron Generic PETG @0.8 nozzle;Voron Generic TPU @0.8 nozzle;Voron Generic ASA @0.8 nozzle;Voron Generic PC @0.8 nozzle;Voron Generic PVA @0.8 nozzle;Voron Generic PA @0.8 nozzle;Voron Generic PA-CF @0.8 nozzle"
+}

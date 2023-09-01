@@ -1,0 +1,20 @@
+{
+    "type": "filament",
+    "filament_id": "GFB99",
+    "setting_id": "GFSA04",
+    "name": "Folgertech Generic ASA @0.6 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Folgertech Generic ASA @base",
+	"filament_max_volumetric_speed": [
+        "12"
+    ],
+    "filament_flow_ratio": [
+        "0.926"
+    ],
+    "compatible_printers": [
+	  "Folgertech FT-5 (0.6 nozzle)",
+	  "Folgertech FT-6 (0.6 nozzle) (Dual)",
+	  "Folgertech i3 (0.6 nozzle)"
+	]
+}
