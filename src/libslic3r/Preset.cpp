@@ -3171,10 +3171,23 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-        if (pm != nullptr && !pm->bed_model.empty()) {
-            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/assets/buildplate/" + pm->bed_model;
+        if (pm != nullptr && !pm->bed_model.empty()) 
+        {
+            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->bed_model;
+
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
-                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->bed_model;
+            {
+                //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_models.
+                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/assets/buildplate/" + pm->bed_model;
+
+                if (!boost::filesystem::exists(boost::filesystem::path(out)))
+                {
+                    //if there is no folder for assets in the vendor's profile folder, then search in the vendor's folder.
+                    //this query is needed to ensure the compatibility of a profile of BBL. 
+                    //BBL does not store its stl_models in a separate folder but directly in the profile folder of the vendor.
+                    out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->bed_model;
+                }
+            }
         }
         return out;
     }
@@ -3183,10 +3196,23 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-        if (pm != nullptr && !pm->bed_texture.empty()) {
-            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/assets/buildplate/" + pm->bed_texture;
+        if (pm != nullptr && !pm->bed_texture.empty()) 
+        {
+            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->bed_texture;
+
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
-                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->bed_texture;
+            {
+                //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_textures.
+                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/assets/buildplate/" + pm->bed_texture;
+
+                //if there is no folder for assets in the vendor's profile folder, then search in the vendor's folder.
+                //this query is needed to ensure the compatibility of a profile of BBL. 
+                //BBL does not store its stl_textures in a separate folder but directly in the profile folder of the vendor.
+                if (!boost::filesystem::exists(boost::filesystem::path(out)))
+                {
+                    out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->bed_texture;
+                }
+            }
         }
         return out;
     }
@@ -3195,10 +3221,23 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-        if (pm != nullptr && !pm->hotend_model.empty()) {
-            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/assets/hotend/" + pm->hotend_model;
+        if (pm != nullptr && !pm->hotend_model.empty()) 
+        {
+            out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->hotend_model;
+
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
-                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->hotend_model;
+            {
+                //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the hotend_models.
+                out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/assets/hotend/" + pm->hotend_model;
+
+                if (!boost::filesystem::exists(boost::filesystem::path(out)))
+                {
+                    //if there is no folder for assets in the vendor's profile folder, then search in the vendor's folder.
+                    //this query is needed to ensure the compatibility of a profile of BBL. 
+                    //BBL does not store its hotend_models in a separate folder but directly in the profile folder of the vendor.
+                    out = Slic3r::resources_dir() + "/profiles/" + preset.vendor->id + "/" + pm->hotend_model;
+                }
+            }
         }
         
         if (out.empty() ||!boost::filesystem::exists(boost::filesystem::path(out)))
