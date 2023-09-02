@@ -507,8 +507,8 @@ void SideTools::show_status(int status)
     else if ((status & (int)MonitorStatus::MONITOR_CONNECTING) != 0) {
         m_hyperlink->Hide();
         m_connection_info->SetLabel(_L("Connecting..."));
-        m_connection_info->SetBackgroundColor(#693a71);
-        m_connection_info->SetBorderColor(#693a71);
+        m_connection_info->SetBackgroundColor(0x693a71);
+        m_connection_info->SetBorderColor(0x693a71);
         m_connection_info->Show();
         m_more_button->Hide();
         m_side_error_panel->Hide();
