@@ -318,13 +318,13 @@ AboutDialog::AboutDialog()
       }
     //Add "Portions copyright" button
     Button* button_portions = new Button(this,_L("Portions copyright"));
-    StateColor report_bg(std::pair<wxColour, int>(wxColour(255, 255, 255), StateColor::Disabled), std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Pressed),
-                         std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered), std::pair<wxColour, int>(wxColour(255, 255, 255), StateColor::Enabled),
-                         std::pair<wxColour, int>(wxColour(255, 255, 255), StateColor::Normal));
+    StateColor report_bg(std::pair<wxColour, int>(wxColour(#ffffff), StateColor::Disabled), std::pair<wxColour, int>(wxColour(#cecece), StateColor::Pressed),
+                         std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Hovered), std::pair<wxColour, int>(wxColour(#ffffff), StateColor::Enabled),
+                         std::pair<wxColour, int>(wxColour(#ffffff), StateColor::Normal));
     button_portions->SetBackgroundColor(report_bg);
-    StateColor report_bd(std::pair<wxColour, int>(wxColour(144, 144, 144), StateColor::Disabled), std::pair<wxColour, int>(wxColour(38, 46, 48), StateColor::Enabled));
+    StateColor report_bd(std::pair<wxColour, int>(wxColour(#909090), StateColor::Disabled), std::pair<wxColour, int>(wxColour(#262e30), StateColor::Enabled));
     button_portions->SetBorderColor(report_bd);
-    StateColor report_text(std::pair<wxColour, int>(wxColour(144, 144, 144), StateColor::Disabled), std::pair<wxColour, int>(wxColour(38, 46, 48), StateColor::Enabled));
+    StateColor report_text(std::pair<wxColour, int>(wxColour(#909090), StateColor::Disabled), std::pair<wxColour, int>(wxColour(#262e30), StateColor::Enabled));
     button_portions->SetTextColor(report_text);
     button_portions->SetFont(Label::Body_12);
     button_portions->SetCornerRadius(FromDIP(12));
