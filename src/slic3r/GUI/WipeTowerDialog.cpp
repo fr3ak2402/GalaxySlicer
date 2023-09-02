@@ -55,7 +55,7 @@ wxBoxSizer* WipingDialog::create_btn_sizer(long flags)
     btn_sizer->AddStretchSpacer();
 
     StateColor ok_btn_bg(
-        std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed),
         std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
         std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal)
     );
@@ -84,7 +84,7 @@ wxBoxSizer* WipingDialog::create_btn_sizer(long flags)
 
 
     StateColor calc_btn_bg(
-        std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed),
         std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
         std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal)
     );

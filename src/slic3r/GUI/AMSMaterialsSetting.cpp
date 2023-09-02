@@ -34,18 +34,18 @@ void AMSMaterialsSetting::create()
     m_sizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
     m_button_confirm = new Button(this, _L("Confirm"));
-    m_btn_bg_green   = StateColor(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
+    m_btn_bg_green   = StateColor(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
     m_button_confirm->SetBackgroundColor(m_btn_bg_green);
-    m_button_confirm->SetBorderColor(wxColour(#693a71));
+    m_button_confirm->SetBorderColor(wxColour(0x693a71));
     m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
     m_button_confirm->SetMinSize(AMS_MATERIALS_SETTING_BUTTON_SIZE);
     m_button_confirm->SetCornerRadius(FromDIP(12));
     m_button_confirm->Bind(wxEVT_BUTTON, &AMSMaterialsSetting::on_select_ok, this);
 
     m_button_reset = new Button(this, _L("Reset"));
-    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour(#cecece), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
-        std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Hovered),
+    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour(0xcecece), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
+        std::pair<wxColour, int>(wxColour(0xeeeeee), StateColor::Hovered),
         std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
     m_button_reset->SetBackgroundColor(m_btn_bg_gray);
     m_button_reset->SetBorderColor(AMS_MATERIALS_SETTING_GREY900);
@@ -219,7 +219,7 @@ void AMSMaterialsSetting::create_panel_normal(wxWindow* parent)
         (boost::format(_u8L("The input value should be greater than %1% and less than %2%")) % FILAMENT_MIN_TEMP % FILAMENT_MAX_TEMP).str());
     warning_text = new wxStaticText(parent, wxID_ANY, warning_string, wxDefaultPosition, wxDefaultSize, 0);
     warning_text->SetFont(::Label::Body_13);
-    warning_text->SetForegroundColour(wxColour(#ff6f00));
+    warning_text->SetForegroundColour(wxColour(0xff6f00));
 
     warning_text->Wrap(AMS_MATERIALS_SETTING_BODY_WIDTH);
     warning_text->SetMinSize(wxSize(AMS_MATERIALS_SETTING_BODY_WIDTH, -1));
@@ -273,7 +273,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     auto sizer = new wxBoxSizer(wxVERTICAL);
     // title
     m_ratio_text = new wxStaticText(parent, wxID_ANY, _L("Factors of Flow Dynamics Calibration"));
-    m_ratio_text->SetForegroundColour(wxColour(#323a3d));
+    m_ratio_text->SetForegroundColour(wxColour(0x323a3d));
     m_ratio_text->SetFont(Label::Head_14);
 
     wxBoxSizer *m_sizer_cali_resutl = new wxBoxSizer(wxHORIZONTAL);
@@ -300,7 +300,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     m_k_param->SetMinSize(wxSize(FromDIP(80), -1));
     m_k_param->SetMaxSize(wxSize(FromDIP(80), -1));
     m_k_param->SetFont(::Label::Body_13);
-    m_k_param->SetForegroundColour(wxColour(#323a3d));
+    m_k_param->SetForegroundColour(wxColour(0x323a3d));
     m_k_param->Wrap(-1);
     kn_val_sizer->Add(m_k_param, 0, wxALL | wxALIGN_CENTER_VERTICAL, FromDIP(0));
 
@@ -314,7 +314,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     wxBoxSizer* n_sizer = new wxBoxSizer(wxHORIZONTAL);
     m_n_param = new wxStaticText(parent, wxID_ANY, _L("Factor N"), wxDefaultPosition, wxDefaultSize, 0);
     m_n_param->SetFont(::Label::Body_13);
-    m_n_param->SetForegroundColour(wxColour(#323a3d));
+    m_n_param->SetForegroundColour(wxColour(0x323a3d));
     m_n_param->Wrap(-1);
     kn_val_sizer->Add(m_n_param, 1, wxALL | wxALIGN_CENTER_VERTICAL, FromDIP(5));
     m_input_n_val = new TextInput(parent, wxEmptyString, wxEmptyString, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_CENTRE | wxTE_PROCESS_ENTER);
@@ -984,7 +984,7 @@ void AMSMaterialsSetting::on_select_filament(wxCommandEvent &evt)
     }
     else {
         m_button_confirm->SetBackgroundColor(m_btn_bg_green);
-        m_button_confirm->SetBorderColor(wxColour(#693a71));
+        m_button_confirm->SetBorderColor(wxColour(0x693a71));
         m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
         m_button_confirm->Enable(true);
     }
@@ -1287,7 +1287,7 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     wxBoxSizer* m_sizer_custom = new wxBoxSizer(wxHORIZONTAL);
     auto m_title_custom = new wxStaticText(m_def_color_box, wxID_ANY, _L("Custom Color"), wxDefaultPosition, wxDefaultSize, 0);
     m_title_custom->SetFont(::Label::Body_14);
-    m_title_custom->SetBackgroundColour(wxColour(#eeeeee));
+    m_title_custom->SetBackgroundColour(wxColour(0xeeeeee));
     auto custom_line = new wxPanel(m_def_color_box, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
     custom_line->SetBackgroundColour(wxColour(0xCECECE));
     custom_line->SetMinSize(wxSize(-1, 1));
@@ -1299,7 +1299,7 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     m_custom_cp->SetSize(FromDIP(60), FromDIP(25));
     m_custom_cp->SetMinSize(wxSize(FromDIP(60), FromDIP(25)));
     m_custom_cp->SetMaxSize(wxSize(FromDIP(60), FromDIP(25)));
-    m_custom_cp->SetBorderColor(StateColor(std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Normal)));
+    m_custom_cp->SetBorderColor(StateColor(std::pair<wxColour, int>(wxColour(0xeeeeee), StateColor::Normal)));
     m_custom_cp->Bind(wxEVT_LEFT_DOWN, &ColorPickerPopup::on_custom_clr_picker, this);
     m_custom_cp->Bind(wxEVT_ENTER_WINDOW, [this](auto& e) {
         SetCursor(wxCURSOR_HAND);

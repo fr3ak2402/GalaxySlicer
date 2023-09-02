@@ -28,9 +28,9 @@
 #include "BBLStatusBar.hpp"
 #include "BBLStatusBarBind.hpp"
 
-#define BIND_DIALOG_GREY200 wxColour(#f8f8f8)
-#define BIND_DIALOG_GREY800 wxColour(#323a3d)
-#define BIND_DIALOG_GREY900 wxColour(#262e30)
+#define BIND_DIALOG_GREY200 wxColour(0xf8f8f8)
+#define BIND_DIALOG_GREY800 wxColour(0x323a3d)
+#define BIND_DIALOG_GREY900 wxColour(0x262e30)
 #define BIND_DIALOG_BUTTON_SIZE wxSize(FromDIP(68), FromDIP(24))
 #define BIND_DIALOG_BUTTON_PANEL_SIZE wxSize(FromDIP(450), FromDIP(30))
 

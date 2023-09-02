@@ -253,7 +253,7 @@ public:
             wxMemoryDC memDC;
             memDC.SelectObject(bitmap);
             memDC.SetFont(m_action_font);
-            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(#909090)));
+            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(0x909090)));
             int width = bitmap.GetWidth();
             int text_height = memDC.GetTextExtent(text).GetHeight();
             int text_width = memDC.GetTextExtent(text).GetWidth();
@@ -2947,12 +2947,12 @@ bool GUI_App::dark_mode()
 
 const wxColour GUI_App::get_label_default_clr_system()
 {
-    return dark_mode() ? wxColour(#73dc67) : wxColour(#693A71);
+    return dark_mode() ? wxColour(0x73dc67) : wxColour(0x693A71);
 }
 
 const wxColour GUI_App::get_label_default_clr_modified()
 {
-    return dark_mode() ? wxColour(#fd6f28) : wxColour(#fc4d01);
+    return dark_mode() ? wxColour(0xfd6f28) : wxColour(0xfc4d01);
 }
 
 void GUI_App::init_label_colours()
@@ -2962,16 +2962,16 @@ void GUI_App::init_label_colours()
     m_color_label_sys      = is_dark_mode ? wxColour("#b2b3b5") : wxColour("#363636");
 
 #ifdef _WIN32
-    m_color_label_default           = is_dark_mode ? wxColour(#fafafa) : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_label_default = is_dark_mode ? wxColour(#e6e6e6): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_default       = is_dark_mode ? wxColour(#4e4e4e)   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
-    m_color_hovered_btn_label       = is_dark_mode ? wxColour(#fffffe) : wxColour(#000000);
-    m_color_default_btn_label       = is_dark_mode ? wxColour(#fffffe): wxColour(#000000);
-    m_color_selected_btn_bg         = is_dark_mode ? wxColour(#54545b)   : wxColour(#cecece);
+    m_color_label_default           = is_dark_mode ? wxColour(0xfafafa) : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_label_default = is_dark_mode ? wxColour(0xe6e6e6): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_default       = is_dark_mode ? wxColour(0x4e4e4e)   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
+    m_color_hovered_btn_label       = is_dark_mode ? wxColour(0xfffffe) : wxColour(0x000000);
+    m_color_default_btn_label       = is_dark_mode ? wxColour(0xfffffe): wxColour(0x000000);
+    m_color_selected_btn_bg         = is_dark_mode ? wxColour(0x54545b)   : wxColour(0xcecece);
 #else
     m_color_label_default = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
 #endif
-    m_color_window_default          = is_dark_mode ? wxColour(#2b2b2b)   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
+    m_color_window_default          = is_dark_mode ? wxColour(0x2b2b2b)   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
     StateColor::SetDarkMode(is_dark_mode);
 }
 

@@ -47,12 +47,12 @@
 #include "slic3r/GUI/AmsWidgets.hpp"
 #include "Widgets/SideTools.hpp"
 
-#define AUFILE_GREY700 wxColour(#6b6b6b)
-#define AUFILE_GREY500 wxColour(#9e9e9e)
-#define AUFILE_GREY300 wxColour(#eeeeee)
-#define AUFILE_GREY200 wxColour(#f8f8f8)
-#define AUFILE_BRAND wxColour(#693a71)
-#define AUFILE_BRAND_TRANSPARENT wxColour(#d7e8de)
+#define AUFILE_GREY700 wxColour(0x6b6b6b)
+#define AUFILE_GREY500 wxColour(0x9e9e9e)
+#define AUFILE_GREY300 wxColour(0xeeeeee)
+#define AUFILE_GREY200 wxColour(0xf8f8f8)
+#define AUFILE_BRAND wxColour(0x693a71)
+#define AUFILE_BRAND_TRANSPARENT wxColour(0xd7e8de)
 //#define AUFILE_PICTURES_SIZE wxSize(FromDIP(300), FromDIP(300))
 //#define AUFILE_PICTURES_PANEL_SIZE wxSize(FromDIP(300), FromDIP(340))
 #define AUFILE_PICTURES_SIZE wxSize(FromDIP(168), FromDIP(168))

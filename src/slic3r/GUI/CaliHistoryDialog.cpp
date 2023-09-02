@@ -59,7 +59,7 @@ HistoryWindow::HistoryWindow(wxWindow* parent, const std::vector<PACalibResult>&
     scroll_window->SetSizer(scroll_sizer);
 
     wxPanel* comboBox_panel = new wxPanel(scroll_window);
-    comboBox_panel->SetBackgroundColour(wxColour(#eeeeee));
+    comboBox_panel->SetBackgroundColour(wxColour(238, 238, 238));
     auto comboBox_sizer = new wxBoxSizer(wxVERTICAL);
     comboBox_panel->SetSizer(comboBox_sizer);
     comboBox_sizer->AddSpacer(10);
@@ -82,7 +82,7 @@ HistoryWindow::HistoryWindow(wxWindow* parent, const std::vector<PACalibResult>&
     auto tips_sizer = new wxBoxSizer(wxVERTICAL);
     tips_panel->SetSizer(tips_sizer);
     m_tips = new Label(tips_panel, "");
-    m_tips->SetForegroundColour({ #919191 });
+    m_tips->SetForegroundColour({ 145, 145, 145 });
     tips_sizer->Add(m_tips, 0, wxEXPAND);
 
     scroll_sizer->Add(tips_panel, 0, wxEXPAND);
@@ -273,12 +273,12 @@ void HistoryWindow::sync_history_data() {
             });
 
         auto edit_button = new Button(m_history_data_panel, _L("Edit"));
-        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
-            std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
-            std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
+        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed),
+            std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
+            std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
         edit_button->SetBackgroundColour(*wxWHITE);
         edit_button->SetBackgroundColor(btn_bg_green);
-        edit_button->SetBorderColor(wxColour(#693a71));
+        edit_button->SetBorderColor(wxColour("#693a71"));
         edit_button->SetTextColor(wxColour("#fffffe"));
         edit_button->SetMinSize(wxSize(-1, FromDIP(24)));
         edit_button->SetCornerRadius(FromDIP(12));
@@ -407,12 +407,12 @@ EditCalibrationHistoryDialog::EditCalibrationHistoryDialog(wxWindow* parent, con
 
     auto btn_sizer = new wxBoxSizer(wxHORIZONTAL);
     Button* save_btn = new Button(top_panel, _L("Save"));
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
     save_btn->SetBackgroundColour(*wxWHITE);
     save_btn->SetBackgroundColor(btn_bg_green);
-    save_btn->SetBorderColor(wxColour(#693a71));
+    save_btn->SetBorderColor(wxColour(0x693a71));
     save_btn->SetTextColor(wxColour("#fffffe"));
     save_btn->SetMinSize(wxSize(-1, FromDIP(24)));
     save_btn->SetCornerRadius(FromDIP(12));

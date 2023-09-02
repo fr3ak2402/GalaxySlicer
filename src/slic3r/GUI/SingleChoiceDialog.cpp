@@ -26,7 +26,7 @@ SingleChoiceDialog::SingleChoiceDialog(const wxString &message, const wxString &
 
     wxBoxSizer *bSizer_button = new wxBoxSizer(wxHORIZONTAL);
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
                             std::pair<wxColour, int>(AMS_CONTROL_BRAND_COLOUR, StateColor::Normal));
 
     m_button_ok = new Button(this, _L("OK"));
