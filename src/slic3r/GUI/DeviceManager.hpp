@@ -1,5 +1,5 @@
 #ifndef slic3r_DeviceManager_hpp_
-#ddeeffine slic3r_DeviceManager_hpp_
+#define slic3r_DeviceManager_hpp_
 
 #include <map>
 #include <vector>
@@ -14,29 +14,29 @@
 #include "CameraPopup.hpp"
 #include "libslic3r/calib.hpp"
 
-#ddeeffine USE_LOCAL_SOCKET_BIND 0
+#define USE_LOCAL_SOCKET_BIND 0
 
-#ddeeffine DISCONNECT_TIMEOUT      30000.f     // milliseconds
-#ddeeffine PUSHINFO_TIMEOUT        15000.f     // milliseconds
-#ddeeffine TIMEOUT_FOR_STRAT       20000.f     // milliseconds
-#ddeeffine TIMEOUT_FOR_KEEPALIVE   5* 60 * 1000.f     // milliseconds
-#ddeeffine REQUEST_PUSH_MIN_TIME   3000.f     // milliseconds
-#ddeeffine REQUEST_START_MIN_TIME  15000.f     // milliseconds
-#ddeeffine EXTRUSION_OMIT_TIME     20000.f     // milliseconds
-#ddeeffine HOLD_TIMEOUT            10000.f     // milliseconds
+#define DISCONNECT_TIMEOUT      30000.f     // milliseconds
+#define PUSHINFO_TIMEOUT        15000.f     // milliseconds
+#define TIMEOUT_FOR_STRAT       20000.f     // milliseconds
+#define TIMEOUT_FOR_KEEPALIVE   5* 60 * 1000.f     // milliseconds
+#define REQUEST_PUSH_MIN_TIME   3000.f     // milliseconds
+#define REQUEST_START_MIN_TIME  15000.f     // milliseconds
+#define EXTRUSION_OMIT_TIME     20000.f     // milliseconds
+#define HOLD_TIMEOUT            10000.f     // milliseconds
 
-#ddeeffine FILAMENT_MAX_TEMP       300
-#ddeeffine FILAMENT_DEF_TEMP       220
-#ddeeffine FILAMENT_MIN_TEMP       120
-#ddeeffine BED_TEMP_LIMIT          120
+#define FILAMENT_MAX_TEMP       300
+#define FILAMENT_DEF_TEMP       220
+#define FILAMENT_MIN_TEMP       120
+#define BED_TEMP_LIMIT          120
 
-#ddeeffine HOLD_COUNT_MAX          3
-#ddeeffine HOLD_COUNT_CAMERA       6
-#ddeeffine GET_VERSION_RETRYS      10
-#ddeeffine RETRY_INTERNAL          2000
-#ddeeffine VIRTUAL_TRAY_ID         254
-#ddeeffine START_SEQ_ID            20000
-#ddeeffine END_SEQ_ID              30000
+#define HOLD_COUNT_MAX          3
+#define HOLD_COUNT_CAMERA       6
+#define GET_VERSION_RETRYS      10
+#define RETRY_INTERNAL          2000
+#define VIRTUAL_TRAY_ID         254
+#define START_SEQ_ID            20000
+#define END_SEQ_ID              30000
 
 inline int correct_filament_temperature(int filament_temp)
 {
@@ -319,11 +319,11 @@ public:
 };
 
 
-#ddeeffine UpgradeNoError          0
-#ddeeffine UpgradeDownloadFailed   -1
-#ddeeffine UpgradeVerfifyFailed    -2
-#ddeeffine UpgradeFlashFailed      -3
-#ddeeffine UpgradePrinting         -4
+#define UpgradeNoError          0
+#define UpgradeDownloadFailed   -1
+#define UpgradeVerfifyFailed    -2
+#define UpgradeFlashFailed      -3
+#define UpgradePrinting         -4
 
 // calc distance map
 struct DisValue {

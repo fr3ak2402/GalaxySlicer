@@ -6,8 +6,8 @@
 
 namespace Slic3r { namespace GUI {
 
-#ddeeffine CALIBRATION_SAVE_INPUT_SIZE     wxSize(FromDIP(240), FromDIP(24))
-#ddeeffine FLOW_RATE_MAX_VALUE  1.15
+#define CALIBRATION_SAVE_INPUT_SIZE     wxSize(FromDIP(240), FromDIP(24))
+#define FLOW_RATE_MAX_VALUE  1.15
 
 static wxString get_default_name(wxString filament_name, CalibMode mode){
     PresetBundle* preset_bundle = wxGetApp().preset_bundle;

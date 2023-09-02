@@ -9,7 +9,7 @@
 // uses the slic3r/GUI version (the macros will take precedence over the functions).
 // Also, there is a check that the former is not included from slic3r module.
 // This is the only place where we want to allow that, so define an override macro.
-#ddeeffine SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
+#define SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
 #include "libslic3r/I18N.hpp"
 #undef SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
 #include "slic3r/GUI/I18N.hpp"

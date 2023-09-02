@@ -12,9 +12,9 @@ namespace Slic3r {
 namespace GUI {
 
   
-#ddeeffine HISTORY_WINDOW_SIZE                wxSize(FromDIP(700), FromDIP(600))
-#ddeeffine EDIT_HISTORY_DIALOG_INPUT_SIZE     wxSize(FromDIP(160), FromDIP(24))
-#ddeeffine HISTORY_WINDOW_ITEMS_COUNT         5
+#define HISTORY_WINDOW_SIZE                wxSize(FromDIP(700), FromDIP(600))
+#define EDIT_HISTORY_DIALOG_INPUT_SIZE     wxSize(FromDIP(160), FromDIP(24))
+#define HISTORY_WINDOW_ITEMS_COUNT         5
 
 static wxString get_preset_name_by_filament_id(std::string filament_id)
 {

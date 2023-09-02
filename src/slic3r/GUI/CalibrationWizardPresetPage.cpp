@@ -444,8 +444,8 @@ void CalibrationPresetPage::create_selection_panel(wxWindow* parent)
     m_comboBox_bed_type->Bind(wxEVT_COMBOBOX, &CalibrationPresetPage::on_select_plate_type, this);
 }
 
-#ddeeffine NOZZLE_LIST_COUNT       4
-#ddeeffine NOZZLE_LIST_DEFAULT     1
+#define NOZZLE_LIST_COUNT       4
+#define NOZZLE_LIST_DEFAULT     1
 float nozzle_diameter_list[NOZZLE_LIST_COUNT] = {0.2, 0.4, 0.6, 0.8 };
 
 void CalibrationPresetPage::init_selection_values()

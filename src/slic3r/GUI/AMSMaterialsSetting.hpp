@@ -15,12 +15,12 @@
 #include "Widgets/TextInput.hpp"
 #include "../slic3r/Utils/CalibUtils.hpp"
 
-#ddeeffine AMS_MATERIALS_SETTING_DEF_COLOUR wxColour(#ffffff)
-#ddeeffine AMS_MATERIALS_SETTING_GREY900 wxColour(#262e30)
-#ddeeffine AMS_MATERIALS_SETTING_GREY800 wxColour(#323a3d)
-#ddeeffine AMS_MATERIALS_SETTING_GREY700 wxColour(#6b6b6b)
-#ddeeffine AMS_MATERIALS_SETTING_GREY300 wxColour(#aeaeae)
-#ddeeffine AMS_MATERIALS_SETTING_GREY200 wxColour(#f8f8f8)
+#define AMS_MATERIALS_SETTING_DEF_COLOUR wxColour(#ffffff)
+#define AMS_MATERIALS_SETTING_GREY900 wxColour(#262e30)
+#define AMS_MATERIALS_SETTING_GREY800 wxColour(#323a3d)
+#define AMS_MATERIALS_SETTING_GREY700 wxColour(#6b6b6b)
+#define AMS_MATERIALS_SETTING_GREY300 wxColour(#aeaeae)
+#define AMS_MATERIALS_SETTING_GREY200 wxColour(#f8f8f8)
 #define AMS_MATERIALS_SETTING_BODY_WIDTH FromDIP(380)
 #define AMS_MATERIALS_SETTING_LABEL_WIDTH FromDIP(80)
 #define AMS_MATERIALS_SETTING_COMBOX_WIDTH wxSize(FromDIP(250), FromDIP(30))
