@@ -4292,7 +4292,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             // metadata
             std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
-            Semver current_version = get_version(SoftFever_VERSION, matcher);
+            Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
             Semver best_pre(1, 0, 0);
             Semver best_release(1, 0, 0);
             std::string best_pre_url;
