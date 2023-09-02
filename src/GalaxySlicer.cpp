@@ -370,7 +370,7 @@ int CLI::run(int argc, char **argv)
         boost::nowide::cerr << text.c_str() << std::endl;
         return CLI_ENVIRONMENT_ERROR;
     }
-    BOOST_LOG_TRIVIAL(info) << "Current OraSlicer Version "<< GalaxySlicer_VERSION << std::endl;
+    BOOST_LOG_TRIVIAL(info) << "Current GalaxySlicer Version "<< GalaxySlicer_VERSION << std::endl;
 
     /*BOOST_LOG_TRIVIAL(info) << "begin to setup params, argc=" << argc << std::endl;
     for (int index=0; index < argc; index++)

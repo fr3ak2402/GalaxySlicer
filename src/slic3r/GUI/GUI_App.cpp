@@ -4052,7 +4052,7 @@ AppConfig* app_config = wxGetApp().app_config;
         if ((i_am_pre ? best_pre : best_release) <= current_version)
             return;
 
-        //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
+        BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
 
         version_info.url = i_am_pre ? best_pre_url : best_release_url;
         version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
@@ -4063,7 +4063,7 @@ AppConfig* app_config = wxGetApp().app_config;
         evt->SetString((i_am_pre ? best_pre : best_release).to_string());
          GUI::wxGetApp().QueueEvent(evt);
     })
-    .perform_sync();;
+    .perform_sync();
 }
 
 //BBS pop up a dialog and download files
