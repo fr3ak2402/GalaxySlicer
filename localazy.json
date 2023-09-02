@@ -53,6 +53,11 @@
 				"type": "po",
 				"pattern": "localization/i18n/ru/GalaxySlicer_ru.po",
 				"lang": "ru"
+			},
+			{
+				"type": "po",
+				"pattern": "localization/i18n/zh_TW/GalaxySlicer_zh_TW.po",
+				"lang": "zh_TW"
 			}
 		]
 	},

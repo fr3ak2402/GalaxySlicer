@@ -7,17 +7,13 @@ set(SLIC3R_APP_KEY "GalaxySlicer")
 if(NOT DEFINED BBL_RELEASE_TO_PUBLIC)
 set(BBL_RELEASE_TO_PUBLIC "1")
 endif()
-
 if(NOT DEFINED BBL_INTERNAL_TESTING)
 set(BBL_INTERNAL_TESTING "1")
 endif()
-
-set(GalaxySlicer_VERSION "1.0.0-alpha")
-
-string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"GalaxySlicer_VERSION_MATCH ${GalaxySlicer_VERSION})
-
+set(GalaxySlicer_VERSION "1.7.0-dev")
+string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"
+       GalaxySlicer_VERSION_MATCH ${GalaxySlicer_VERSION})
 set(SLIC3R_VERSION_MAJOR ${CMAKE_MATCH_1})
 set(SLIC3R_VERSION_MINOR ${CMAKE_MATCH_2})
 set(SLIC3R_VERSION_PATCH ${CMAKE_MATCH_3})
-
 set(SLIC3R_VERSION "01.07.04.52")
