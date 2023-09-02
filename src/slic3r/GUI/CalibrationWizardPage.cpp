@@ -429,7 +429,7 @@ void CaliPageCaption::create_wiki(wxWindow* parent)
 {
     m_wiki_text = new Label(parent, _L("Wiki"));
     m_wiki_text->SetFont(Label::Head_14);
-    m_wiki_text->SetForegroundColour({ #0058dc });
+    m_wiki_text->SetForegroundColour({ 0x0058dc });
     m_wiki_text->Bind(wxEVT_ENTER_WINDOW, [this](wxMouseEvent& e) {
         e.Skip();
         SetCursor(wxCURSOR_HAND);

@@ -4270,7 +4270,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
     Http::get(version_check_url)
         .on_error([&](std::string body, std::string error, unsigned http_status) {
           (void)body;
-          BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "check_new_version_sf", http_status,
+          BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "heck_new_galaxyslicer_version", http_status,
                                              error);
         })
         .timeout_connect(1)
@@ -4340,7 +4340,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             // SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
 
             version_info.url = i_am_pre ? best_pre_url : best_release_url;
-            version_info.version_str = i_am_pre ? best_pre.to_string() : best_release.to_string_sf();
+            version_info.version_str = i_am_pre ? best_pre.to_string() : best_release.to_string_short();
             version_info.description = i_am_pre ? best_pre_content : best_release_content;
             version_info.force_upgrade = false;
 

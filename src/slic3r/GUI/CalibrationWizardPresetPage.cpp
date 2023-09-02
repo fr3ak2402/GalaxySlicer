@@ -269,7 +269,7 @@ void CaliPresetTipsPanel::create_panel(wxWindow* parent)
 
     m_top_sizer->AddSpacer(FromDIP(10));
 
-    auto info_sizer = new wxFlexGridSizer(#000300, FromDIP(10));
+    auto info_sizer = new wxFlexGridSizer(0, 3, 0, FromDIP(10));
     info_sizer->SetFlexibleDirection(wxBOTH);
     info_sizer->SetNonFlexibleGrowMode(wxFLEX_GROWMODE_SPECIFIED);
 
@@ -407,7 +407,7 @@ void CalibrationPresetPage::create_selection_panel(wxWindow* parent)
     auto filament_from_text = new Label(m_filament_from_panel, _L("filament position"));
     filament_from_text->SetFont(Label::Head_14);
     filament_from_sizer->Add(filament_from_text, 0);
-    auto raioBox_sizer = new wxFlexGridSizer(#020100, FromDIP(10));
+    auto raioBox_sizer = new wxFlexGridSizer(2, 1, 0, FromDIP(10));
     m_ams_radiobox = new wxRadioButton(m_filament_from_panel, wxID_ANY, _L("AMS"));
     m_ams_radiobox->SetValue(true);
 
@@ -657,9 +657,9 @@ void CalibrationPresetPage::create_sending_panel(wxWindow* parent)
     sizer_extra_info->Add(m_st_txt_extra_info, 0, wxALL, 0);
 
     sizer_print_failed_info->Add(sizer_error_code, 0, wxLEFT, 5);
-    sizer_print_failed_info->Add(#000000, wxTOP, FromDIP(3));
+    sizer_print_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
     sizer_print_failed_info->Add(sizer_error_desc, 0, wxLEFT, 5);
-    sizer_print_failed_info->Add(#000000, wxTOP, FromDIP(3));
+    sizer_print_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
     sizer_print_failed_info->Add(sizer_extra_info, 0, wxLEFT, 5);
 
     Bind(EVT_SHOW_ERROR_INFO, [this](auto& e) {
@@ -929,7 +929,7 @@ void CalibrationPresetPage::check_filament_compatible()
         selected_filaments_list.push_back(item.second);
 
     if (!is_filaments_compatiable(selected_filaments_list, bed_temp, incompatiable_filament_name, error_tips)) {
-        m_tips_panel->set_params(#000000.0f);
+        m_tips_panel->set_params(0, 0, 0.0f);
         if (!error_tips.empty()) {
             wxString tips = from_u8(error_tips);
             m_warning_panel->set_warning(tips);

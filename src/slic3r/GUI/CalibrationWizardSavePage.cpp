@@ -496,10 +496,10 @@ void CaliPASaveManualPanel::create_panel(wxWindow* parent)
 
     auto save_text = new Label(parent, _L("Name"));
     save_text->SetFont(Label::Head_14);
-    m_top_sizer->Add(save_text, #000000);
+    m_top_sizer->Add(save_text, 0, 0, 0);
 
     m_save_name_input = new TextInput(parent, "", "", "", wxDefaultPosition, { CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24) }, 0);
-    m_top_sizer->Add(m_save_name_input, #000000);
+    m_top_sizer->Add(m_save_name_input, 0, 0, 0);
 
     m_top_sizer->AddSpacer(FromDIP(10));
 
@@ -1162,7 +1162,7 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
     coarse_value_sizer->Add(coarse_value_text, 0, 0);
     coarse_value_sizer->Add(m_optimal_block_coarse, 0, 0);
     coarse_value_sizer->Add(coarse_calc_result_text, 0);
-    m_top_sizer->Add(coarse_value_sizer, #000000);
+    m_top_sizer->Add(coarse_value_sizer, 0, 0, 0);
     m_top_sizer->AddSpacer(FromDIP(20));
 
     auto checkBox_panel = new wxPanel(parent);
@@ -1181,7 +1181,7 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
         checkBox_skip_calibration->GetEventHandler()->ProcessEvent(event);
         });
 
-    m_top_sizer->Add(checkBox_panel, #000000);
+    m_top_sizer->Add(checkBox_panel, 0, 0, 0);
 
     auto save_panel = new wxPanel(parent);
     save_panel->SetBackgroundColour(*wxWHITE);
@@ -1191,12 +1191,12 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
     auto save_text = new Label(save_panel, _L("Save to Filament Preset"));
     save_text->Wrap(-1);
     save_text->SetFont(Label::Head_14);
-    save_sizer->Add(save_text, #000000);
+    save_sizer->Add(save_text, 0, 0, 0);
 
     m_save_name_input = new TextInput(save_panel, "", "", "", wxDefaultPosition, {CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24)}, 0);
-    save_sizer->Add(m_save_name_input, #000000);
+    save_sizer->Add(m_save_name_input, 0, 0, 0);
 
-    m_top_sizer->Add(save_panel, #000000);
+    m_top_sizer->Add(save_panel, 0, 0, 0);
     save_panel->Hide();
 
     m_top_sizer->AddSpacer(FromDIP(20));
@@ -1341,16 +1341,16 @@ void CalibrationFlowFineSavePage::create_page(wxWindow* parent)
     fine_value_sizer->Add(fine_value_text, 0, 0);
     fine_value_sizer->Add(m_optimal_block_fine, 0, 0);
     fine_value_sizer->Add(fine_calc_result_text, 0);
-    m_top_sizer->Add(fine_value_sizer, #000000);
+    m_top_sizer->Add(fine_value_sizer, 0, 0, 0);
     m_top_sizer->AddSpacer(FromDIP(20));
 
     auto save_text = new Label(parent, _L("Save to Filament Preset"));
     save_text->Wrap(-1);
     save_text->SetFont(Label::Head_14);
-    m_top_sizer->Add(save_text, #000000);
+    m_top_sizer->Add(save_text, 0, 0, 0);
 
     m_save_name_input = new TextInput(parent, "", "", "", wxDefaultPosition, {CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24)}, 0);
-    m_top_sizer->Add(m_save_name_input, #000000);
+    m_top_sizer->Add(m_save_name_input, 0, 0, 0);
 
     m_top_sizer->AddSpacer(FromDIP(20));
 
