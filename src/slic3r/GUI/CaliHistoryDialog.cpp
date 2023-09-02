@@ -12,9 +12,9 @@ namespace Slic3r {
 namespace GUI {
 
   
-#define HISTORY_WINDOW_SIZE                wxSize(FromDIP(700), FromDIP(600))
-#define EDIT_HISTORY_DIALOG_INPUT_SIZE     wxSize(FromDIP(160), FromDIP(24))
-#define HISTORY_WINDOW_ITEMS_COUNT         5
+#ddeeffine HISTORY_WINDOW_SIZE                wxSize(FromDIP(700), FromDIP(600))
+#ddeeffine EDIT_HISTORY_DIALOG_INPUT_SIZE     wxSize(FromDIP(160), FromDIP(24))
+#ddeeffine HISTORY_WINDOW_ITEMS_COUNT         5
 
 static wxString get_preset_name_by_filament_id(std::string filament_id)
 {
@@ -59,7 +59,7 @@ HistoryWindow::HistoryWindow(wxWindow* parent, const std::vector<PACalibResult>&
     scroll_window->SetSizer(scroll_sizer);
 
     wxPanel* comboBox_panel = new wxPanel(scroll_window);
-    comboBox_panel->SetBackgroundColour(wxColour(238, 238, 238));
+    comboBox_panel->SetBackgroundColour(wxColour(#eeeeee));
     auto comboBox_sizer = new wxBoxSizer(wxVERTICAL);
     comboBox_panel->SetSizer(comboBox_sizer);
     comboBox_sizer->AddSpacer(10);
@@ -82,7 +82,7 @@ HistoryWindow::HistoryWindow(wxWindow* parent, const std::vector<PACalibResult>&
     auto tips_sizer = new wxBoxSizer(wxVERTICAL);
     tips_panel->SetSizer(tips_sizer);
     m_tips = new Label(tips_panel, "");
-    m_tips->SetForegroundColour({ 145, 145, 145 });
+    m_tips->SetForegroundColour({ #919191 });
     tips_sizer->Add(m_tips, 0, wxEXPAND);
 
     scroll_sizer->Add(tips_panel, 0, wxEXPAND);
@@ -273,13 +273,13 @@ void HistoryWindow::sync_history_data() {
             });
 
         auto edit_button = new Button(m_history_data_panel, _L("Edit"));
-        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-            std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-            std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+            std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+            std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
         edit_button->SetBackgroundColour(*wxWHITE);
         edit_button->SetBackgroundColor(btn_bg_green);
-        edit_button->SetBorderColor(wxColour(105, 58, 113));
-        edit_button->SetTextColor(wxColour("#FFFFFE"));
+        edit_button->SetBorderColor(wxColour(#693a71));
+        edit_button->SetTextColor(wxColour("#fffffe"));
         edit_button->SetMinSize(wxSize(-1, FromDIP(24)));
         edit_button->SetCornerRadius(FromDIP(12));
         edit_button->Bind(wxEVT_BUTTON, [this, result, k_value, name_value, edit_button](auto& e) {
@@ -407,13 +407,13 @@ EditCalibrationHistoryDialog::EditCalibrationHistoryDialog(wxWindow* parent, con
 
     auto btn_sizer = new wxBoxSizer(wxHORIZONTAL);
     Button* save_btn = new Button(top_panel, _L("Save"));
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
     save_btn->SetBackgroundColour(*wxWHITE);
     save_btn->SetBackgroundColor(btn_bg_green);
-    save_btn->SetBorderColor(wxColour(105, 58, 113));
-    save_btn->SetTextColor(wxColour("#FFFFFE"));
+    save_btn->SetBorderColor(wxColour(#693a71));
+    save_btn->SetTextColor(wxColour("#fffffe"));
     save_btn->SetMinSize(wxSize(-1, FromDIP(24)));
     save_btn->SetCornerRadius(FromDIP(12));
     Button* cancel_btn = new Button(top_panel, _L("Cancel"));

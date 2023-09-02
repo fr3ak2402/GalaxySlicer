@@ -24,7 +24,7 @@ ConnectPrinterDialog::ConnectPrinterDialog(wxWindow *parent, wxWindowID id, cons
 
     m_staticText_connection_code = new wxStaticText(this, wxID_ANY, _L("Please input the printer access code:"), wxDefaultPosition, wxDefaultSize, 0);
     m_staticText_connection_code->SetFont(Label::Body_15);
-    m_staticText_connection_code->SetForegroundColour(wxColour(50, 58, 61));
+    m_staticText_connection_code->SetForegroundColour(wxColour(#323a3d));
     m_staticText_connection_code->Wrap(-1);
     sizer_top->Add(m_staticText_connection_code, 0, wxALL, 0);
 
@@ -42,7 +42,7 @@ ConnectPrinterDialog::ConnectPrinterDialog(wxWindow *parent, wxWindowID id, cons
     m_textCtrl_code->GetTextCtrl()->SetSize(wxSize(-1, FromDIP(22)));
     m_textCtrl_code->GetTextCtrl()->SetMinSize(wxSize(-1, FromDIP(22)));
     m_textCtrl_code->SetBackgroundColour(*wxWHITE);
-    m_textCtrl_code->GetTextCtrl()->SetForegroundColour(wxColour(107, 107, 107));
+    m_textCtrl_code->GetTextCtrl()->SetForegroundColour(wxColour(#6b6b6b));
     sizer_connect->Add(m_textCtrl_code, 0, wxALL | wxALIGN_CENTER_VERTICAL, 0);
 
     sizer_connect->Add(FromDIP(20), 0);
@@ -51,17 +51,17 @@ ConnectPrinterDialog::ConnectPrinterDialog(wxWindow *parent, wxWindowID id, cons
     m_button_confirm->SetFont(Label::Body_12);
     m_button_confirm->SetMinSize(wxSize(-1, FromDIP(24)));
     m_button_confirm->SetCornerRadius(FromDIP(12));
-    m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
+    m_button_confirm->SetTextColor(wxColour("#fffffe"));
 
     StateColor btn_bg(
-        std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal)
+        std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal)
     );
 
-    StateColor btn_bd(std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    StateColor btn_bd(std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
 
-    StateColor btn_text(std::pair<wxColour, int>(wxColour(255, 255, 255), StateColor::Normal));
+    StateColor btn_text(std::pair<wxColour, int>(wxColour(#ffffff), StateColor::Normal));
 
     m_button_confirm->SetBackgroundColor(btn_bg);
     m_button_confirm->SetBorderColor(btn_bd);
@@ -77,7 +77,7 @@ ConnectPrinterDialog::ConnectPrinterDialog(wxWindow *parent, wxWindowID id, cons
 
     m_staticText_hints = new wxStaticText(this, wxID_ANY, _L("You can find it in \"Settings > Network > Connection code\"\non the printer, as shown in the figure:"), wxDefaultPosition, wxDefaultSize, 0);
     m_staticText_hints->SetFont(Label::Body_15);
-    m_staticText_hints->SetForegroundColour(wxColour(50, 58, 61));
+    m_staticText_hints->SetForegroundColour(wxColour(#323a3d));
     m_staticText_hints->Wrap(-1);
     sizer_top->Add(m_staticText_hints, 0, wxALL, 0);
 

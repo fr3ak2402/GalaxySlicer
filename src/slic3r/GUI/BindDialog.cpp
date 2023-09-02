@@ -65,9 +65,9 @@ wxString get_fail_reason(int code)
      SetBackgroundColour(*wxWHITE);
      wxBoxSizer *m_sizer_main = new wxBoxSizer(wxVERTICAL);
      auto m_line_top = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-     m_line_top->SetBackgroundColour(wxColour(166, 169, 170));
+     m_line_top->SetBackgroundColour(wxColour(#a6a9aa));
      m_sizer_main->Add(m_line_top, 0, wxEXPAND, 0);
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(38));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(38));
 
      wxBoxSizer *m_sizer_body = new wxBoxSizer(wxHORIZONTAL);
 
@@ -86,7 +86,7 @@ wxString get_fail_reason(int code)
      m_printer_name->SetBackgroundColour(BIND_DIALOG_GREY200);
      m_printer_name->SetFont(::Label::Head_14);
      m_sizere_left_v->Add(m_printer_img, 0, wxALIGN_CENTER, 0);
-     m_sizere_left_v->Add(0, 0, 0, wxTOP, 5);
+     m_sizere_left_v->Add(#000000, wxTOP, 5);
      m_sizere_left_v->Add(m_printer_name, 0, wxALIGN_CENTER, 0);
      m_sizere_left_h->Add(m_sizere_left_v, 1, wxALIGN_CENTER, 0);
 
@@ -110,7 +110,7 @@ wxString get_fail_reason(int code)
 
      m_avatar = new wxStaticBitmap(m_panel_right, wxID_ANY, wxNullBitmap, wxDefaultPosition, wxSize(FromDIP(60), FromDIP(60)), 0);
      m_sizer_right_v->Add(m_avatar, 0, wxALIGN_CENTER, 0);
-     m_sizer_right_v->Add(0, 0, 0, wxTOP, 7);
+     m_sizer_right_v->Add(#000000, wxTOP, 7);
      m_sizer_right_v->Add(m_user_name, 0, wxALIGN_CENTER, 0);
      m_sizer_right_h->Add(m_sizer_right_v, 1, wxALIGN_CENTER, 0);
 
@@ -120,12 +120,12 @@ wxString get_fail_reason(int code)
 
      m_sizer_main->Add(m_sizer_body, 1, wxEXPAND | wxLEFT | wxRIGHT, FromDIP(30));
 
-     m_sizer_main->Add(0, 0, 0, wxEXPAND | wxTOP, FromDIP(20));
+     m_sizer_main->Add(#000000, wxEXPAND | wxTOP, FromDIP(20));
 
 
      auto m_sizer_status_text = new wxBoxSizer(wxHORIZONTAL);
      m_status_text = new wxStaticText(this, wxID_ANY, _L("Would you like to log in this printer with current account?"));
-     m_status_text->SetForegroundColour(wxColour(107, 107, 107));
+     m_status_text->SetForegroundColour(wxColour(#6b6b6b));
      m_status_text->SetFont(::Label::Body_13);
      m_status_text->Wrap(-1);
 
@@ -177,13 +177,13 @@ wxString get_fail_reason(int code)
      auto m_checkbox_privacy = new CheckBox(m_panel_agreement, wxID_ANY);
      auto m_st_privacy_title = new Label(m_panel_agreement, _L("Read and accept"));
      m_st_privacy_title->SetFont(Label::Body_13);
-     m_st_privacy_title->SetForegroundColour(wxColour(38, 46, 48));
+     m_st_privacy_title->SetForegroundColour(wxColour(#262e30));
 
      auto m_link_Terms_title = new Label(m_panel_agreement, _L("Terms and Conditions"));
      m_link_Terms_title->SetFont(Label::Head_13);
      m_link_Terms_title->SetMaxSize(wxSize(FromDIP(450), -1));
      m_link_Terms_title->Wrap(FromDIP(450));
-     m_link_Terms_title->SetForegroundColour(wxColour(0x009688));
+     m_link_Terms_title->SetForegroundColour(wxColour(#693a71)); //#693a71 #c7accb #9c6da4
      m_link_Terms_title->Bind(wxEVT_LEFT_DOWN, [this](auto& e) {
          wxString txt = _L("Thank you for purchasing a Bambu Lab device.Before using your Bambu Lab device, please read the termsand conditions.By clicking to agree to use your Bambu Lab device, you agree to abide by the Privacy Policyand Terms of Use(collectively, the \"Terms\"). If you do not comply with or agree to the Bambu Lab Privacy Policy, please do not use Bambu Lab equipment and services.");
          ConfirmBeforeSendDialog confirm_dlg(this, wxID_ANY, _L("Terms and Conditions"), ConfirmBeforeSendDialog::ButtonStyle::ONLY_CONFIRM);
@@ -196,13 +196,13 @@ wxString get_fail_reason(int code)
 
      auto m_st_and_title = new Label(m_panel_agreement, _L("and"));
      m_st_and_title->SetFont(Label::Body_13);
-     m_st_and_title->SetForegroundColour(wxColour(38, 46, 48));
+     m_st_and_title->SetForegroundColour(wxColour(#262e30));
 
      auto m_link_privacy_title = new Label(m_panel_agreement, _L("Privacy Policy"));
      m_link_privacy_title->SetFont(Label::Head_13);
      m_link_privacy_title->SetMaxSize(wxSize(FromDIP(450), -1));
      m_link_privacy_title->Wrap(FromDIP(450));
-     m_link_privacy_title->SetForegroundColour(wxColour(0x009688));
+     m_link_privacy_title->SetForegroundColour(wxColour(#693a71));
      m_link_privacy_title->Bind(wxEVT_LEFT_DOWN, [this](auto& e) {
          std::string url;
          std::string country_code = Slic3r::GUI::wxGetApp().app_config->get_country_code();
@@ -218,15 +218,15 @@ wxString get_fail_reason(int code)
      m_link_privacy_title->Bind(wxEVT_ENTER_WINDOW, [this](auto& e) {SetCursor(wxCURSOR_HAND);});
      m_link_privacy_title->Bind(wxEVT_LEAVE_WINDOW, [this](auto& e) {SetCursor(wxCURSOR_ARROW);});
 
-     sizere_notice_agreement->Add(0, 0, 0, wxTOP, FromDIP(4));
+     sizere_notice_agreement->Add(#000000, wxTOP, FromDIP(4));
      sizer_privacy_agreement->Add(m_st_privacy_title, 0, wxALIGN_CENTER, 0);
-     sizer_privacy_agreement->Add(0, 0, 0, wxLEFT, FromDIP(5));
+     sizer_privacy_agreement->Add(#000000, wxLEFT, FromDIP(5));
      sizer_privacy_agreement->Add(m_link_Terms_title, 0, wxALIGN_CENTER, 0);
      sizer_privacy_agreement->Add(m_st_and_title, 0, wxALIGN_CENTER|wxLEFT|wxRIGHT, FromDIP(5));
      sizer_privacy_agreement->Add(m_link_privacy_title, 0, wxALIGN_CENTER, 0);
 
      sizer_privacy_body->Add(m_checkbox_privacy, 0, wxALL, 0);
-     sizer_privacy_body->Add(0, 0, 0, wxLEFT, FromDIP(8));
+     sizer_privacy_body->Add(#000000, wxLEFT, FromDIP(8));
      sizer_privacy_body->Add(sizer_privacy_agreement, 1, wxEXPAND, 0);
 
 
@@ -236,13 +236,13 @@ wxString get_fail_reason(int code)
      auto m_checkbox_notice = new CheckBox(m_panel_agreement, wxID_ANY);
      auto m_st_notice_title = new Label(m_panel_agreement, notice_title);
      m_st_notice_title->SetFont(Label::Body_13);
-     m_st_notice_title->SetForegroundColour(wxColour(38, 46, 48));
+     m_st_notice_title->SetForegroundColour(wxColour(#262e30));
 
      auto m_link_notice_title = new Label(m_panel_agreement, notice_link_title);
      m_link_notice_title->SetFont(Label::Head_13);
      m_link_notice_title->SetMaxSize(wxSize(FromDIP(450), -1));
      m_link_notice_title->Wrap(FromDIP(450));
-     m_link_notice_title->SetForegroundColour(wxColour(0x009688));
+     m_link_notice_title->SetForegroundColour(wxColour(#693a71));
      m_link_notice_title->Bind(wxEVT_ENTER_WINDOW, [this](auto& e) {SetCursor(wxCURSOR_HAND); });
      m_link_notice_title->Bind(wxEVT_LEAVE_WINDOW, [this](auto& e) {SetCursor(wxCURSOR_ARROW); });
      m_link_notice_title->Bind(wxEVT_LEFT_DOWN, [this](auto& e) {
@@ -259,13 +259,13 @@ wxString get_fail_reason(int code)
          confirm_dlg.on_show();
      });
 
-     sizere_notice_agreement->Add(0, 0, 0, wxTOP, FromDIP(4));
+     sizere_notice_agreement->Add(#000000, wxTOP, FromDIP(4));
      sizere_notice_agreement->Add(m_st_notice_title, 0, 0, wxALIGN_CENTER, 0);
-     sizere_notice_agreement->Add(0, 0, 0, wxLEFT, FromDIP(2));
+     sizere_notice_agreement->Add(#000000, wxLEFT, FromDIP(2));
      sizere_notice_agreement->Add(m_link_notice_title, 0, 0, wxALIGN_CENTER, 0);
 
      sizere_notice_body->Add(m_checkbox_notice, 0, wxALL, 0);
-     sizere_notice_body->Add(0, 0, 0, wxLEFT, FromDIP(8));
+     sizere_notice_body->Add(#000000, wxLEFT, FromDIP(8));
      sizere_notice_body->Add(sizere_notice_agreement, 1, wxEXPAND, 0);
 
      wxBoxSizer* sizer_agreement = new wxBoxSizer(wxVERTICAL);
@@ -297,7 +297,7 @@ wxString get_fail_reason(int code)
      m_sw_bind_failed_info->SetSizer( m_sizer_bind_failed_info );
 
      m_link_network_state = new Label(m_sw_bind_failed_info, _L("Check the status of current system services"));
-     m_link_network_state->SetForegroundColour(0x009688);
+     m_link_network_state->SetForegroundColour(#693a71);
      m_link_network_state->SetFont(::Label::Body_12);
      m_link_network_state->Bind(wxEVT_LEFT_DOWN, [this](auto& e) {wxGetApp().link_to_network_check(); });
      m_link_network_state->Bind(wxEVT_ENTER_WINDOW, [this](auto& e) {m_link_network_state->SetCursor(wxCURSOR_HAND); });
@@ -363,9 +363,9 @@ wxString get_fail_reason(int code)
 
      m_sizer_bind_failed_info->Add(m_link_network_state, 0, wxLEFT, 0);
      m_sizer_bind_failed_info->Add(sizer_error_code, 0, wxLEFT, 0);
-     m_sizer_bind_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
+     m_sizer_bind_failed_info->Add(#000000, wxTOP, FromDIP(3));
      m_sizer_bind_failed_info->Add(sizer_error_desc, 0, wxLEFT, 0);
-     m_sizer_bind_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
+     m_sizer_bind_failed_info->Add(#000000, wxTOP, FromDIP(3));
      m_sizer_bind_failed_info->Add(sizer_extra_info, 0, wxLEFT, 0);
 
      m_simplebook = new wxSimplebook(this, wxID_ANY, wxDefaultPosition,BIND_DIALOG_BUTTON_PANEL_SIZE, 0);
@@ -376,23 +376,23 @@ wxString get_fail_reason(int code)
      auto        button_panel   = new wxPanel(m_simplebook, wxID_ANY, wxDefaultPosition, BIND_DIALOG_BUTTON_PANEL_SIZE);
      button_panel->SetBackgroundColour(*wxWHITE);
      wxBoxSizer *m_sizer_button = new wxBoxSizer(wxHORIZONTAL);
-     m_sizer_button->Add(0, 0, 1, wxEXPAND, 5);
+     m_sizer_button->Add(#000001, wxEXPAND, 5);
      m_button_bind = new Button(button_panel, _L("Confirm"));
 
-     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Disabled),
-         std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-         std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-         std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#cecece), StateColor::Disabled),
+         std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed),
+         std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+         std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
      m_button_bind->SetBackgroundColor(btn_bg_green);
      m_button_bind->SetBorderColor(*wxWHITE);
-     m_button_bind->SetTextColor(wxColour("#FFFFFE"));
+     m_button_bind->SetTextColor(wxColour("#fffffe"));
      m_button_bind->SetSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_bind->SetMinSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_bind->SetCornerRadius(FromDIP(12));
      m_button_bind->Enable(false);
 
 
-     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Hovered),
+     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(#cecece), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
 
      m_button_cancel = new Button(button_panel, _L("Cancel"));
@@ -404,7 +404,7 @@ wxString get_fail_reason(int code)
      m_button_cancel->SetCornerRadius(FromDIP(12));
 
      m_sizer_button->Add(m_button_bind, 0, wxALIGN_CENTER, 0);
-     m_sizer_button->Add(0, 0, 0, wxLEFT, FromDIP(13));
+     m_sizer_button->Add(#000000, wxLEFT, FromDIP(13));
      m_sizer_button->Add(m_button_cancel, 0, wxALIGN_CENTER, 0);
      button_panel->SetSizer(m_sizer_button);
      button_panel->Layout();
@@ -419,12 +419,12 @@ wxString get_fail_reason(int code)
 
 
      m_sizer_main->Add(m_sizer_status_text, 0, wxALIGN_CENTER, FromDIP(40));
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(10));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(10));
      m_sizer_main->Add(m_panel_agreement, 0, wxALIGN_CENTER, 0);
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(10));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(10));
      m_sizer_main->Add(m_sw_bind_failed_info, 0, wxALIGN_CENTER, 0);
      m_sizer_main->Add(m_simplebook, 0, wxALIGN_CENTER, 0);
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(20));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(20));
 
      SetSizer(m_sizer_main);
      Layout();
@@ -673,9 +673,9 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      SetBackgroundColour(*wxWHITE);
      wxBoxSizer *m_sizer_main = new wxBoxSizer(wxVERTICAL);
      auto m_line_top = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-     m_line_top->SetBackgroundColour(wxColour(166, 169, 170));
+     m_line_top->SetBackgroundColour(wxColour(#a6a9aa));
      m_sizer_main->Add(m_line_top, 0, wxEXPAND, 0);
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(38));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(38));
 
      wxBoxSizer *m_sizer_body = new wxBoxSizer(wxHORIZONTAL);
 
@@ -694,7 +694,7 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      m_printer_name->SetForegroundColour(*wxBLACK);
      m_printer_name->SetBackgroundColour(BIND_DIALOG_GREY200);
      m_sizere_left_v->Add(m_printer_img, 0, wxALIGN_CENTER, 0);
-     m_sizere_left_v->Add(0, 0, 0, wxTOP, 5);
+     m_sizere_left_v->Add(#000000, wxTOP, 5);
      m_sizere_left_v->Add(m_printer_name, 0, wxALIGN_CENTER, 0);
      m_sizere_left_h->Add(m_sizere_left_v, 1, wxALIGN_CENTER, 0);
 
@@ -718,7 +718,7 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
 
      m_avatar = new wxStaticBitmap(m_panel_right, wxID_ANY, wxNullBitmap, wxDefaultPosition, wxSize(FromDIP(60), FromDIP(60)), 0);
      m_sizer_right_v->Add(m_avatar, 0, wxALIGN_CENTER, 0);
-     m_sizer_right_v->Add(0, 0, 0, wxTOP, 7);
+     m_sizer_right_v->Add(#000000, wxTOP, 7);
      m_sizer_right_v->Add(m_user_name, 0, wxALIGN_CENTER, 0);
      m_sizer_right_h->Add(m_sizer_right_v, 1, wxALIGN_CENTER, 0);
 
@@ -728,29 +728,29 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
 
      m_sizer_main->Add(m_sizer_body, 1, wxEXPAND | wxLEFT | wxRIGHT, FromDIP(30));
 
-     m_sizer_main->Add(0, 0, 0, wxEXPAND | wxTOP, FromDIP(20));
+     m_sizer_main->Add(#000000, wxEXPAND | wxTOP, FromDIP(20));
 
      m_status_text = new wxStaticText(this, wxID_ANY, _L("Would you like to log out the printer?"), wxDefaultPosition, wxSize(BIND_DIALOG_BUTTON_PANEL_SIZE.x, -1), wxST_ELLIPSIZE_END);
-     m_status_text->SetForegroundColour(wxColour(107, 107, 107));
+     m_status_text->SetForegroundColour(wxColour(#6b6b6b));
      m_status_text->SetFont(::Label::Body_13);
 
 
 
      wxBoxSizer *m_sizer_button = new wxBoxSizer(wxHORIZONTAL);
 
-     m_sizer_button->Add(0, 0, 1, wxEXPAND, 5);
+     m_sizer_button->Add(#000001, wxEXPAND, 5);
      m_button_unbind = new Button(this, _L("Confirm"));
-     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-                             std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+                             std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
      m_button_unbind->SetBackgroundColor(btn_bg_green);
-     m_button_unbind->SetBorderColor(wxColour(105, 58, 113));
-     m_button_unbind->SetTextColor(wxColour("#FFFFFE"));
+     m_button_unbind->SetBorderColor(wxColour(#693a71));
+     m_button_unbind->SetTextColor(wxColour("#fffffe"));
      m_button_unbind->SetSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_unbind->SetMinSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_unbind->SetCornerRadius(FromDIP(12));
 
 
-     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Hovered),
+     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(#cecece), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
 
      m_button_cancel = new Button(this, _L("Cancel"));
@@ -762,13 +762,13 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      m_button_cancel->SetCornerRadius(FromDIP(12));
 
      m_sizer_button->Add(m_button_unbind, 0, wxALIGN_CENTER, 0);
-     m_sizer_button->Add(0, 0, 0, wxLEFT, FromDIP(13));
+     m_sizer_button->Add(#000000, wxLEFT, FromDIP(13));
      m_sizer_button->Add(m_button_cancel, 0, wxALIGN_CENTER, 0);
 
      m_sizer_main->Add(m_status_text, 0, wxALIGN_CENTER, 0);
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(10));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(10));
      m_sizer_main->Add(m_sizer_button, 0, wxEXPAND | wxLEFT | wxRIGHT, FromDIP(30));
-     m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(20));
+     m_sizer_main->Add(#000000, wxTOP, FromDIP(20));
 
      SetSizer(m_sizer_main);
      Layout();

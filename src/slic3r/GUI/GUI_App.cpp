@@ -9,7 +9,7 @@
 // uses the slic3r/GUI version (the macros will take precedence over the functions).
 // Also, there is a check that the former is not included from slic3r module.
 // This is the only place where we want to allow that, so define an override macro.
-#define SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
+#ddeeffine SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
 #include "libslic3r/I18N.hpp"
 #undef SLIC3R_ALLOW_LIBSLIC3R_I18N_IN_SLIC3R
 #include "slic3r/GUI/I18N.hpp"
@@ -253,7 +253,7 @@ public:
             wxMemoryDC memDC;
             memDC.SelectObject(bitmap);
             memDC.SetFont(m_action_font);
-            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(144, 144, 144)));
+            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(#909090)));
             int width = bitmap.GetWidth();
             int text_height = memDC.GetTextExtent(text).GetHeight();
             int text_width = memDC.GetTextExtent(text).GetWidth();
@@ -291,7 +291,7 @@ public:
         memDc.DrawBitmap(background_bmp, (width - background_width) / 2, (width - background_width) / 2, true);
 
         //draw based text
-        memDc.SetTextForeground(StateColor::darkModeColorFor(wxColor(38, 46, 48)));
+        memDc.SetTextForeground(StateColor::darkModeColorFor(wxColor(#262e30)));
         memDc.SetFont(m_constant_text.credits_font);
         int based_height = memDc.GetTextExtent(m_constant_text.credits).GetHeight();
         int based_width = memDc.GetTextExtent(m_constant_text.credits).GetHeight();
@@ -523,7 +523,7 @@ wxString file_wildcards(FileType file_type, const std::string &custom_extension)
 static std::string libslic3r_translate_callback(const char *s) { return wxGetTranslation(wxString(s, wxConvUTF8)).utf8_str().data(); }
 
 #ifdef WIN32
-#if !wxVERSION_EQUAL_OR_GREATER_THAN(3,1,3)
+#if !wxVERSION_EQUAL_OR_GREATER_THAN(#030103)
 static void register_win32_dpi_event()
 {
     enum { WM_DPICHANGED_ = 0x02e0 };
@@ -646,7 +646,7 @@ static void register_win32_device_notification_event()
 static void generic_exception_handle()
 {
     // Note: Some wxWidgets APIs use wxLogError() to report errors, eg. wxImage
-    // - see https://docs.wxwidgets.org/3.1/classwx_image.html#aa249e657259fe6518d68a5208b9043d0
+    // - see https://docs.wxwidgets.org/3.1/classwx_image.html#aa249e7259fe6518d68a5208b9043d0
     //
     // wxLogError typically goes around exception handling and display an error dialog some time
     // after an error is logged even if exception handling and OnExceptionInMainLoop() take place.
@@ -656,7 +656,7 @@ static void generic_exception_handle()
     //
     // If a custom error message window (or some other solution) were to be used, it would be necessary
     // to turn off wxLogError() usage in wx APIs, most notably in wxImage
-    // - see https://docs.wxwidgets.org/trunk/classwx_image.html#aa32e5d3507cc0f8c3330135bc0befc6a
+    // - see https://docs.wxwidgets.org/trunk/classwx_image.html#aa32e5507cc0f8c3330135bc0befc6a
 /*#ifdef WIN32
     //LPEXCEPTION_POINTERS exception_pointers = nullptr;
     __try {
@@ -1982,7 +1982,7 @@ bool GUI_App::on_init_inner()
     wxLog::SetLogLevel(wxLOG_Message);
 #endif
 
-    // Set initialization of image handlers before any UI actions - See GH issue #7469
+    // Set initialization of image handlers before any UI actions - See GH issue #774466
     wxInitAllImageHandlers();
 #ifdef NDEBUG
     wxImage::SetDefaultLoadFlags(0); // ignore waring in release build
@@ -1995,7 +1995,7 @@ bool GUI_App::on_init_inner()
 
     // Forcing back menu icons under gtk2 and gtk3. Solution is based on:
     // https://docs.gtk.org/gtk3/class.Settings.html
-    // see also https://docs.wxwidgets.org/3.0/classwx_menu_item.html#a2b5d6bcb820b992b1e4709facbf6d4fb
+    // see also https://docs.wxwidgets.org/3.0/classwx_menu_item.html#a2b5d6b820b992b1e4709facbf6d4fb
     // TODO: Find workaround for GTK4
 #if defined(__WXGTK20__) || defined(__WXGTK3__)
     g_object_set (gtk_settings_get_default (), "gtk-menu-images", TRUE, NULL);
@@ -2322,7 +2322,7 @@ bool GUI_App::on_init_inner()
     }
 
 #ifdef WIN32
-#if !wxVERSION_EQUAL_OR_GREATER_THAN(3,1,3)
+#if !wxVERSION_EQUAL_OR_GREATER_THAN(#030103)
     register_win32_dpi_event();
 #endif // !wxVERSION_EQUAL_OR_GREATER_THAN
     register_win32_device_notification_event();
@@ -2431,7 +2431,7 @@ bool GUI_App::on_init_inner()
         //use m_post_initialized instead
         //static bool update_gui_after_init = true;
 
-        // An ugly solution to GH #5537 in which GUI_App::init_opengl (normally called from events wxEVT_PAINT
+        // An ugly solution to GH #555533 in which GUI_App::init_opengl (normally called from events wxEVT_PAINT
         // and wxEVT_SET_FOCUS before GUI_App::post_init is called) wasn't called before GUI_App::post_init and OpenGL wasn't initialized.
 //#ifdef __linux__
 //        if (!m_post_initialized && m_opengl_initialized) {
@@ -2647,31 +2647,31 @@ bool GUI_App::dark_mode()
 
 const wxColour GUI_App::get_label_default_clr_system()
 {
-    return dark_mode() ? wxColour(115, 220, 103) : wxColour(26, 132, 57);
+    return dark_mode() ? wxColour(#73dc67) : wxColour(#693A71);
 }
 
 const wxColour GUI_App::get_label_default_clr_modified()
 {
-    return dark_mode() ? wxColour(253, 111, 40) : wxColour(252, 77, 1);
+    return dark_mode() ? wxColour(#fd6f28) : wxColour(#fc4d01);
 }
 
 void GUI_App::init_label_colours()
 {
     bool is_dark_mode = dark_mode();
-    m_color_label_modified = is_dark_mode ? wxColour("#F1754E") : wxColour("#F1754E");
-    m_color_label_sys      = is_dark_mode ? wxColour("#B2B3B5") : wxColour("#363636");
+    m_color_label_modified = is_dark_mode ? wxColour("#f1754e") : wxColour("#f1754e");
+    m_color_label_sys      = is_dark_mode ? wxColour("#b2b3b5") : wxColour("#363636");
 
 #ifdef _WIN32
-    m_color_label_default           = is_dark_mode ? wxColour(250, 250, 250) : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_label_default = is_dark_mode ? wxColour(230, 230, 230): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_default       = is_dark_mode ? wxColour(78, 78, 78)   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
-    m_color_hovered_btn_label       = is_dark_mode ? wxColour(255, 255, 254) : wxColour(0,0,0);
-    m_color_default_btn_label       = is_dark_mode ? wxColour(255, 255, 254): wxColour(0,0,0);
-    m_color_selected_btn_bg         = is_dark_mode ? wxColour(84, 84, 91)   : wxColour(206, 206, 206);
+    m_color_label_default           = is_dark_mode ? wxColour(#fafafa) : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_label_default = is_dark_mode ? wxColour(#e6e6e6): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_default       = is_dark_mode ? wxColour(#4e4e4e)   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
+    m_color_hovered_btn_label       = is_dark_mode ? wxColour(#fffffe) : wxColour(#000000);
+    m_color_default_btn_label       = is_dark_mode ? wxColour(#fffffe): wxColour(#000000);
+    m_color_selected_btn_bg         = is_dark_mode ? wxColour(#54545b)   : wxColour(#cecece);
 #else
     m_color_label_default = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
 #endif
-    m_color_window_default          = is_dark_mode ? wxColour(43, 43, 43)   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
+    m_color_window_default          = is_dark_mode ? wxColour(#2b2b2b)   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
     StateColor::SetDarkMode(is_dark_mode);
 }
 
@@ -3993,8 +3993,8 @@ AppConfig* app_config = wxGetApp().app_config;
 
         BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_short());
 
-        Semver best_pre(0, 0, 0);
-        Semver best_release(0, 0, 0);
+        Semver best_pre(#000000);
+        Semver best_release(#000000);
         std::string best_pre_url;
         std::string best_release_url;
         std::string best_release_content;
@@ -4645,7 +4645,7 @@ bool GUI_App::select_language()
             // 1) Hopefully the language set to wxTranslations by this->load_language(), but that API is weird and we don't want to rely on its
             //    stability in the future:
             //    wxTranslations::Get()->GetBestTranslation(SLIC3R_APP_KEY, wxLANGUAGE_ENGLISH);
-            // 2) Current locale language may not match the dictionary name, see GH issue #3901
+            // 2) Current locale language may not match the dictionary name, see GH issue #339900
             //    m_wxLocale->GetCanonicalName()
             // 3) new_language_info->CanonicalName is a safe bet. It points to a valid dictionary name.
 			app_config->set("language", new_language_info->CanonicalName.ToUTF8().data());
@@ -6086,7 +6086,7 @@ static bool set_into_win_registry(HKEY hkeyHive, const wchar_t* pszVar, const wc
 
     DWORD dwDisposition;
     HKEY hkey;
-    iRC = ::RegCreateKeyExW(hkeyHive, pszVar, 0, 0, 0, KEY_ALL_ACCESS, nullptr, &hkey, &dwDisposition);
+    iRC = ::RegCreateKeyExW(hkeyHive, pszVar, #000000, KEY_ALL_ACCESS, nullptr, &hkey, &dwDisposition);
     bool ret = false;
     if (iRC == ERROR_SUCCESS) {
         iRC = ::RegSetValueExW(hkey, L"", 0, REG_SZ, (BYTE*)pszValue, (::wcslen(pszValue) + 1) * sizeof(wchar_t));

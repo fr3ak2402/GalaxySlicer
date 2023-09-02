@@ -254,7 +254,7 @@ AboutDialog::AboutDialog()
     for (int i = 0; i < text_list.size(); i++)
     {
         auto staticText = new wxStaticText( this, wxID_ANY, wxEmptyString,wxDefaultPosition,wxSize(FromDIP(520), -1), wxALIGN_LEFT );
-        staticText->SetForegroundColour(wxColour(107, 107, 107));
+        staticText->SetForegroundColour(wxColour(#6b6b6b));//
         staticText->SetBackgroundColour(*wxWHITE);
         staticText->SetMinSize(wxSize(FromDIP(520), -1));
         staticText->SetFont(Label::Body_12);
@@ -291,7 +291,7 @@ AboutDialog::AboutDialog()
 
     wxStaticText *html_text = new wxStaticText(this, wxID_ANY, "Copyright(C) 2023 Fr3ak2402 All Rights Reserved", wxDefaultPosition, wxDefaultSize);
 
-    html_text->SetForegroundColour(wxColour(107, 107, 107));
+    html_text->SetForegroundColour(wxColour(#6b6b6b));
     html_text->SetFont(Label::Body_10);
 
     copyright_ver_sizer->Add(html_text, 0, wxALL , 0);

@@ -146,7 +146,7 @@ void CaliPresetWarningPanel::create_panel(wxWindow* parent)
 {
     m_warning_text = new Label(parent, wxEmptyString);
     m_warning_text->SetFont(Label::Body_13);
-    m_warning_text->SetForegroundColour(wxColour(230, 92, 92));
+    m_warning_text->SetForegroundColour(wxColour(#e65c5c));
     m_warning_text->Wrap(CALIBRATION_TEXT_MAX_LENGTH);
     m_top_sizer->Add(m_warning_text, 0, wxEXPAND | wxTOP | wxBOTTOM, FromDIP(5));
 }
@@ -247,7 +247,7 @@ CaliPresetTipsPanel::CaliPresetTipsPanel(
     long style)
     : wxPanel(parent, id, pos, size, style)
 {
-    this->SetBackgroundColour(wxColour(238, 238, 238));
+    this->SetBackgroundColour(wxColour(#eeeeee));
     this->SetMinSize(wxSize(MIN_CALIBRATION_PAGE_WIDTH, -1));
     
     m_top_sizer = new wxBoxSizer(wxVERTICAL);
@@ -269,7 +269,7 @@ void CaliPresetTipsPanel::create_panel(wxWindow* parent)
 
     m_top_sizer->AddSpacer(FromDIP(10));
 
-    auto info_sizer = new wxFlexGridSizer(0, 3, 0, FromDIP(10));
+    auto info_sizer = new wxFlexGridSizer(#000300, FromDIP(10));
     info_sizer->SetFlexibleDirection(wxBOTH);
     info_sizer->SetNonFlexibleGrowMode(wxFLEX_GROWMODE_SPECIFIED);
 
@@ -407,7 +407,7 @@ void CalibrationPresetPage::create_selection_panel(wxWindow* parent)
     auto filament_from_text = new Label(m_filament_from_panel, _L("filament position"));
     filament_from_text->SetFont(Label::Head_14);
     filament_from_sizer->Add(filament_from_text, 0);
-    auto raioBox_sizer = new wxFlexGridSizer(2, 1, 0, FromDIP(10));
+    auto raioBox_sizer = new wxFlexGridSizer(#020100, FromDIP(10));
     m_ams_radiobox = new wxRadioButton(m_filament_from_panel, wxID_ANY, _L("AMS"));
     m_ams_radiobox->SetValue(true);
 
@@ -444,8 +444,8 @@ void CalibrationPresetPage::create_selection_panel(wxWindow* parent)
     m_comboBox_bed_type->Bind(wxEVT_COMBOBOX, &CalibrationPresetPage::on_select_plate_type, this);
 }
 
-#define NOZZLE_LIST_COUNT       4
-#define NOZZLE_LIST_DEFAULT     1
+#ddeeffine NOZZLE_LIST_COUNT       4
+#ddeeffine NOZZLE_LIST_DEFAULT     1
 float nozzle_diameter_list[NOZZLE_LIST_COUNT] = {0.2, 0.4, 0.6, 0.8 };
 
 void CalibrationPresetPage::init_selection_values()
@@ -474,7 +474,7 @@ void CalibrationPresetPage::create_filament_list_panel(wxWindow* parent)
     m_filament_list_tips = new Label(parent, _L("Tips for calibration material: \n- Materials that can share same hot bed temperature\n- Different filament brand and family(Brand = Bambu, Family = Basic, Matte)"));
     m_filament_list_tips->Hide();
     m_filament_list_tips->SetFont(Label::Body_13);
-    m_filament_list_tips->SetForegroundColour(wxColour(145, 145, 145));
+    m_filament_list_tips->SetForegroundColour(wxColour(#919191));
     m_filament_list_tips->Wrap(CALIBRATION_TEXT_MAX_LENGTH);
     panel_sizer->Add(m_filament_list_tips, 0, wxBOTTOM, FromDIP(10));
 
@@ -657,9 +657,9 @@ void CalibrationPresetPage::create_sending_panel(wxWindow* parent)
     sizer_extra_info->Add(m_st_txt_extra_info, 0, wxALL, 0);
 
     sizer_print_failed_info->Add(sizer_error_code, 0, wxLEFT, 5);
-    sizer_print_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
+    sizer_print_failed_info->Add(#000000, wxTOP, FromDIP(3));
     sizer_print_failed_info->Add(sizer_error_desc, 0, wxLEFT, 5);
-    sizer_print_failed_info->Add(0, 0, 0, wxTOP, FromDIP(3));
+    sizer_print_failed_info->Add(#000000, wxTOP, FromDIP(3));
     sizer_print_failed_info->Add(sizer_extra_info, 0, wxLEFT, 5);
 
     Bind(EVT_SHOW_ERROR_INFO, [this](auto& e) {
@@ -929,7 +929,7 @@ void CalibrationPresetPage::check_filament_compatible()
         selected_filaments_list.push_back(item.second);
 
     if (!is_filaments_compatiable(selected_filaments_list, bed_temp, incompatiable_filament_name, error_tips)) {
-        m_tips_panel->set_params(0, 0, 0.0f);
+        m_tips_panel->set_params(#000000.0f);
         if (!error_tips.empty()) {
             wxString tips = from_u8(error_tips);
             m_warning_panel->set_warning(tips);

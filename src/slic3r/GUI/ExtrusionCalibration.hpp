@@ -1,5 +1,5 @@
 #ifndef slic3r_ExtrusionCalibration_hpp_
-#define slic3r_ExtrusionCalibration_hpp_
+#ddeeffine slic3r_ExtrusionCalibration_hpp_
 
 #include "libslic3r/Preset.hpp"
 #include "wxExtensions.hpp"
@@ -17,23 +17,23 @@
 #include "GUI_App.hpp"
 #include "wx/hyperlink.h"
 
-#define EXTRUSION_CALIBRATION_DEF_COLOUR    wxColour(255, 255, 255)
-#define EXTRUSION_CALIBRATION_GREY900       wxColour(38, 46, 48)
-#define EXTRUSION_CALIBRATION_GREY800       wxColour(50, 58, 61)
-#define EXTRUSION_CALIBRATION_GREY700       wxColour(107, 107, 107)
-#define EXTRUSION_CALIBRATION_GREY300       wxColour(238, 238, 238)
-#define EXTRUSION_CALIBRATION_GREY200       wxColour(248, 248, 248)
-#define EXTRUSION_CALIBRATION_BODY_WIDTH    FromDIP(380)
-#define EXTRUSION_CALIBRATION_LABEL_WIDTH   FromDIP(80)
-#define EXTRUSION_CALIBRATION_WIDGET_GAP    FromDIP(18)
-#define EXTRUSION_CALIBRATION_DIALOG_SIZE   wxSize(FromDIP(400), -1)
-//#define EXTRUSION_CALIBRATION_DIALOG_SIZE   wxSize(FromDIP(520), -1)
-#define EXTRUSION_CALIBRATION_BED_COMBOX    wxSize(FromDIP(200), FromDIP(24))
-#define EXTRUSION_CALIBRATION_BUTTON_SIZE   wxSize(FromDIP(72), FromDIP(24))
-#define EXTRUSION_CALIBRATION_INPUT_SIZE    wxSize(FromDIP(100), FromDIP(24))
-#define EXTRUSION_CALIBRATION_BMP_SIZE      wxSize(FromDIP(256), FromDIP(256))
-#define EXTRUSION_CALIBRATION_BMP_TIP_BAR   wxSize(FromDIP(256), FromDIP(40))
-#define EXTRUSION_CALIBRATION_BMP_BTN_SIZE  wxSize(FromDIP(16), FromDIP(16))
+#ddeeffine EXTRUSION_CALIBRATION_DEF_COLOUR    wxColour(#ffffff)
+#ddeeffine EXTRUSION_CALIBRATION_GREY900       wxColour(#262e30)
+#ddeeffine EXTRUSION_CALIBRATION_GREY800       wxColour(#323a3d)
+#ddeeffine EXTRUSION_CALIBRATION_GREY700       wxColour(#6b6b6b)
+#ddeeffine EXTRUSION_CALIBRATION_GREY300       wxColour(#eeeeee)
+#ddeeffine EXTRUSION_CALIBRATION_GREY200       wxColour(#f8f8f8)
+#ddeeffine EXTRUSION_CALIBRATION_BODY_WIDTH    FromDIP(380)
+#ddeeffine EXTRUSION_CALIBRATION_LABEL_WIDTH   FromDIP(80)
+#ddeeffine EXTRUSION_CALIBRATION_WIDGET_GAP    FromDIP(18)
+#ddeeffine EXTRUSION_CALIBRATION_DIALOG_SIZE   wxSize(FromDIP(400), -1)
+//#ddeeffine EXTRUSION_CALIBRATION_DIALOG_SIZE   wxSize(FromDIP(520), -1)
+#ddeeffine EXTRUSION_CALIBRATION_BED_COMBOX    wxSize(FromDIP(200), FromDIP(24))
+#ddeeffine EXTRUSION_CALIBRATION_BUTTON_SIZE   wxSize(FromDIP(72), FromDIP(24))
+#ddeeffine EXTRUSION_CALIBRATION_INPUT_SIZE    wxSize(FromDIP(100), FromDIP(24))
+#ddeeffine EXTRUSION_CALIBRATION_BMP_SIZE      wxSize(FromDIP(256), FromDIP(256))
+#ddeeffine EXTRUSION_CALIBRATION_BMP_TIP_BAR   wxSize(FromDIP(256), FromDIP(40))
+#ddeeffine EXTRUSION_CALIBRATION_BMP_BTN_SIZE  wxSize(FromDIP(16), FromDIP(16))
 
 
 

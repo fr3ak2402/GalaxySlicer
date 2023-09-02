@@ -115,7 +115,7 @@ void ExtrusionCalibration::create()
     step_1_sizer->Add(0, EXTRUSION_CALIBRATION_WIDGET_GAP, 0, 0);
 
     // filament info
-    auto info_sizer = new wxFlexGridSizer(0, 3, 0, FromDIP(16));
+    auto info_sizer = new wxFlexGridSizer(#000300, FromDIP(16));
     info_sizer->SetFlexibleDirection(wxBOTH);
     info_sizer->SetNonFlexibleGrowMode(wxFLEX_GROWMODE_SPECIFIED);
 
@@ -165,25 +165,25 @@ void ExtrusionCalibration::create()
 
     m_error_text = new wxStaticText(m_step_1_panel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxST_ELLIPSIZE_END);
     m_error_text->SetFont(Label::Body_12);
-    m_error_text->SetForegroundColour(wxColour(208, 27, 27));
+    m_error_text->SetForegroundColour(wxColour(#d01b1b));
     m_error_text->Hide();
 
     m_button_cali = new Button(m_step_1_panel, _L("Start calibration"));
-    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Disabled), std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Disabled), std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
     m_button_cali->SetBackgroundColor(m_btn_bg_green);
     m_button_cali->SetFont(Label::Body_13);
-    m_button_cali->SetBorderColor({ std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Disabled), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Enabled) });
-    m_button_cali->SetTextColor({ std::pair<wxColour, int>(wxColour(172, 172, 172), StateColor::Disabled), std::pair<wxColour, int>(EXTRUSION_CALIBRATION_GREY200, StateColor::Enabled) });
+    m_button_cali->SetBorderColor({ std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Disabled), std::pair<wxColour, int>(wxColour(#693a71), StateColor::Enabled) });
+    m_button_cali->SetTextColor({ std::pair<wxColour, int>(wxColour(#acacac), StateColor::Disabled), std::pair<wxColour, int>(EXTRUSION_CALIBRATION_GREY200, StateColor::Enabled) });
     m_button_cali->SetCornerRadius(FromDIP(12));
     m_button_cali->SetMinSize(wxSize(-1, FromDIP(24)));
     m_button_cali->Bind(wxEVT_BUTTON, &ExtrusionCalibration::on_click_cali, this);
 
     m_cali_cancel = new Button(m_step_1_panel, _L("Cancel"));
-    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
     m_cali_cancel->SetBackgroundColor(m_btn_bg_green);
-    m_cali_cancel->SetBorderColor(wxColour(105, 58, 113));
+    m_cali_cancel->SetBorderColor(wxColour(#693a71));
     m_cali_cancel->SetTextColor(EXTRUSION_CALIBRATION_GREY200);
     m_cali_cancel->SetMinSize(EXTRUSION_CALIBRATION_BUTTON_SIZE);
     m_cali_cancel->SetCornerRadius(FromDIP(12));
@@ -191,8 +191,8 @@ void ExtrusionCalibration::create()
     m_cali_cancel->Bind(wxEVT_BUTTON, &ExtrusionCalibration::on_click_cancel, this);
 
     m_button_next_step = new Button(m_step_1_panel, _L("Next"));
-    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
-        std::pair<wxColour, int>(wxColour(238, 238, 238), StateColor::Hovered),
+    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour(#cecece), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
+        std::pair<wxColour, int>(wxColour(#eeeeee), StateColor::Hovered),
         std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
     m_button_next_step->SetBackgroundColor(m_btn_bg_gray);
     m_button_next_step->SetFont(Label::Body_13);
@@ -236,7 +236,7 @@ void ExtrusionCalibration::create()
     m_calibration_tips_static_bmp = new wxStaticBitmap(m_step_2_panel, wxID_ANY, wxNullBitmap, wxDefaultPosition, EXTRUSION_CALIBRATION_BMP_SIZE, 0);
     m_calibration_tips_static_bmp->SetMinSize(EXTRUSION_CALIBRATION_BMP_SIZE);
     content_sizer->Add(m_calibration_tips_static_bmp, 1, wxEXPAND | wxSHAPED);
-    content_sizer->Add(EXTRUSION_CALIBRATION_WIDGET_GAP, 0, 0, 0);
+    content_sizer->Add(EXTRUSION_CALIBRATION_WIDGET_GAP, #000000);
     // k/n input value
     auto kn_sizer = new wxBoxSizer(wxVERTICAL);
     auto k_val_text = new wxStaticText(m_step_2_panel, wxID_ANY, _L("Factor K"), wxDefaultPosition, wxDefaultSize, 0);
@@ -255,11 +255,11 @@ void ExtrusionCalibration::create()
 
     // save button
     m_button_save_result = new Button(m_step_2_panel, _L("Save"));
-    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    m_btn_bg_green = StateColor(std::pair<wxColour, int>(wxColour(#c7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(#9c6da4), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour(#693a71), StateColor::Normal));
     m_button_save_result->SetBackgroundColor(m_btn_bg_green);
     m_button_save_result->SetFont(Label::Body_13);
-    m_button_save_result->SetBorderColor(wxColour(105, 58, 113));
+    m_button_save_result->SetBorderColor(wxColour(#693a71));
     m_button_save_result->SetTextColor(EXTRUSION_CALIBRATION_GREY200);
     m_button_save_result->SetMinSize(EXTRUSION_CALIBRATION_BUTTON_SIZE);
     m_button_save_result->SetCornerRadius(FromDIP(12));
@@ -338,8 +338,8 @@ void ExtrusionCalibration::paint(wxPaintEvent&) {
 
     dc.DrawBitmap(m_is_zh ? m_calibration_tips_bmp_zh : m_calibration_tips_bmp_en, wxPoint(0, 0));
 
-    gcdc.SetPen(wxColour(0, 0, 0, 61));
-    gcdc.SetBrush(wxColour(0, 0, 0, 61));
+    gcdc.SetPen(wxColour(#000000));
+    gcdc.SetBrush(wxColour(#000000));
     gcdc.DrawRectangle(wxPoint(0, 0), EXTRUSION_CALIBRATION_BMP_TIP_BAR);
 
     dc.SetBrush(*wxTRANSPARENT_BRUSH);
@@ -348,7 +348,7 @@ void ExtrusionCalibration::paint(wxPaintEvent&) {
     dc.DrawBitmap(m_calibration_tips_open_btn_bmp, open_btn_pos);
 
     gcdc.SetFont(Label::Head_14);
-    gcdc.SetTextForeground(wxColour(255, 255, 255, 224));
+    gcdc.SetTextForeground(wxColour(#ffffff));
     wxSize text_size = wxWindow::GetTextExtent(_L("Example"));
     gcdc.DrawText(_L("Example"), { (EXTRUSION_CALIBRATION_BMP_TIP_BAR.x - text_size.x) / 2, (EXTRUSION_CALIBRATION_BMP_TIP_BAR.y - text_size.y) / 2});
 

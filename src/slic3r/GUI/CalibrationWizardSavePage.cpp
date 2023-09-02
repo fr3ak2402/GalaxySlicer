@@ -6,8 +6,8 @@
 
 namespace Slic3r { namespace GUI {
 
-#define CALIBRATION_SAVE_INPUT_SIZE     wxSize(FromDIP(240), FromDIP(24))
-#define FLOW_RATE_MAX_VALUE  1.15
+#ddeeffine CALIBRATION_SAVE_INPUT_SIZE     wxSize(FromDIP(240), FromDIP(24))
+#ddeeffine FLOW_RATE_MAX_VALUE  1.15
 
 static wxString get_default_name(wxString filament_name, CalibMode mode){
     PresetBundle* preset_bundle = wxGetApp().preset_bundle;
@@ -144,7 +144,7 @@ void CaliPASaveAutoPanel::create_panel(wxWindow* parent)
     m_complete_text_panel->SetSizer(complete_text_sizer);
 
     m_part_failed_panel = new wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL);
-    m_part_failed_panel->SetBackgroundColour(wxColour(238, 238, 238));
+    m_part_failed_panel->SetBackgroundColour(wxColour(#eeeeee));
     wxBoxSizer* part_failed_sizer = new wxBoxSizer(wxVERTICAL);
     m_part_failed_panel->SetSizer(part_failed_sizer);
     part_failed_sizer->AddSpacer(FromDIP(10));
@@ -169,7 +169,7 @@ void CaliPASaveAutoPanel::create_panel(wxWindow* parent)
 
     auto naming_hints = new Label(parent, _L("*We recommend you to add brand, materia, type, and even humidity level in the Name"));
     naming_hints->SetFont(Label::Body_14);
-    naming_hints->SetForegroundColour(wxColour(157, 157, 157));
+    naming_hints->SetForegroundColour(wxColour(#9d9d9d));
     m_top_sizer->Add(naming_hints, 0, wxEXPAND, 0);
 
     m_top_sizer->AddSpacer(FromDIP(20));
@@ -496,16 +496,16 @@ void CaliPASaveManualPanel::create_panel(wxWindow* parent)
 
     auto save_text = new Label(parent, _L("Name"));
     save_text->SetFont(Label::Head_14);
-    m_top_sizer->Add(save_text, 0, 0, 0);
+    m_top_sizer->Add(save_text, #000000);
 
     m_save_name_input = new TextInput(parent, "", "", "", wxDefaultPosition, { CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24) }, 0);
-    m_top_sizer->Add(m_save_name_input, 0, 0, 0);
+    m_top_sizer->Add(m_save_name_input, #000000);
 
     m_top_sizer->AddSpacer(FromDIP(10));
 
     auto naming_hints = new Label(parent, _L("*We recommend you to add brand, materia, type, and even humidity level in the Name"));
     naming_hints->SetFont(Label::Body_14);
-    naming_hints->SetForegroundColour(wxColour(157, 157, 157));
+    naming_hints->SetForegroundColour(wxColour(#9d9d9d));
     m_top_sizer->Add(naming_hints, 0, wxEXPAND, 0);
 
     m_top_sizer->AddSpacer(FromDIP(20));
@@ -906,7 +906,7 @@ void CalibrationFlowX1SavePage::create_page(wxWindow* parent)
     m_complete_text_panel->SetSizer(complete_text_sizer);
 
     m_part_failed_panel = new wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL);
-    m_part_failed_panel->SetBackgroundColour(wxColour(238, 238, 238));
+    m_part_failed_panel->SetBackgroundColour(wxColour(#eeeeee));
     wxBoxSizer* part_failed_sizer = new wxBoxSizer(wxVERTICAL);
     m_part_failed_panel->SetSizer(part_failed_sizer);
     part_failed_sizer->AddSpacer(FromDIP(10));
@@ -1162,7 +1162,7 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
     coarse_value_sizer->Add(coarse_value_text, 0, 0);
     coarse_value_sizer->Add(m_optimal_block_coarse, 0, 0);
     coarse_value_sizer->Add(coarse_calc_result_text, 0);
-    m_top_sizer->Add(coarse_value_sizer, 0, 0, 0);
+    m_top_sizer->Add(coarse_value_sizer, #000000);
     m_top_sizer->AddSpacer(FromDIP(20));
 
     auto checkBox_panel = new wxPanel(parent);
@@ -1181,7 +1181,7 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
         checkBox_skip_calibration->GetEventHandler()->ProcessEvent(event);
         });
 
-    m_top_sizer->Add(checkBox_panel, 0, 0, 0);
+    m_top_sizer->Add(checkBox_panel, #000000);
 
     auto save_panel = new wxPanel(parent);
     save_panel->SetBackgroundColour(*wxWHITE);
@@ -1191,12 +1191,12 @@ void CalibrationFlowCoarseSavePage::create_page(wxWindow* parent)
     auto save_text = new Label(save_panel, _L("Save to Filament Preset"));
     save_text->Wrap(-1);
     save_text->SetFont(Label::Head_14);
-    save_sizer->Add(save_text, 0, 0, 0);
+    save_sizer->Add(save_text, #000000);
 
     m_save_name_input = new TextInput(save_panel, "", "", "", wxDefaultPosition, {CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24)}, 0);
-    save_sizer->Add(m_save_name_input, 0, 0, 0);
+    save_sizer->Add(m_save_name_input, #000000);
 
-    m_top_sizer->Add(save_panel, 0, 0, 0);
+    m_top_sizer->Add(save_panel, #000000);
     save_panel->Hide();
 
     m_top_sizer->AddSpacer(FromDIP(20));
@@ -1341,16 +1341,16 @@ void CalibrationFlowFineSavePage::create_page(wxWindow* parent)
     fine_value_sizer->Add(fine_value_text, 0, 0);
     fine_value_sizer->Add(m_optimal_block_fine, 0, 0);
     fine_value_sizer->Add(fine_calc_result_text, 0);
-    m_top_sizer->Add(fine_value_sizer, 0, 0, 0);
+    m_top_sizer->Add(fine_value_sizer, #000000);
     m_top_sizer->AddSpacer(FromDIP(20));
 
     auto save_text = new Label(parent, _L("Save to Filament Preset"));
     save_text->Wrap(-1);
     save_text->SetFont(Label::Head_14);
-    m_top_sizer->Add(save_text, 0, 0, 0);
+    m_top_sizer->Add(save_text, #000000);
 
     m_save_name_input = new TextInput(parent, "", "", "", wxDefaultPosition, {CALIBRATION_TEXT_MAX_LENGTH, FromDIP(24)}, 0);
-    m_top_sizer->Add(m_save_name_input, 0, 0, 0);
+    m_top_sizer->Add(m_save_name_input, #000000);
 
     m_top_sizer->AddSpacer(FromDIP(20));
 

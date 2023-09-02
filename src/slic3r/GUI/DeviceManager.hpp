@@ -1,5 +1,5 @@
 #ifndef slic3r_DeviceManager_hpp_
-#define slic3r_DeviceManager_hpp_
+#ddeeffine slic3r_DeviceManager_hpp_
 
 #include <map>
 #include <vector>
@@ -14,29 +14,29 @@
 #include "CameraPopup.hpp"
 #include "libslic3r/calib.hpp"
 
-#define USE_LOCAL_SOCKET_BIND 0
+#ddeeffine USE_LOCAL_SOCKET_BIND 0
 
-#define DISCONNECT_TIMEOUT      30000.f     // milliseconds
-#define PUSHINFO_TIMEOUT        15000.f     // milliseconds
-#define TIMEOUT_FOR_STRAT       20000.f     // milliseconds
-#define TIMEOUT_FOR_KEEPALIVE   5* 60 * 1000.f     // milliseconds
-#define REQUEST_PUSH_MIN_TIME   3000.f     // milliseconds
-#define REQUEST_START_MIN_TIME  15000.f     // milliseconds
-#define EXTRUSION_OMIT_TIME     20000.f     // milliseconds
-#define HOLD_TIMEOUT            10000.f     // milliseconds
+#ddeeffine DISCONNECT_TIMEOUT      30000.f     // milliseconds
+#ddeeffine PUSHINFO_TIMEOUT        15000.f     // milliseconds
+#ddeeffine TIMEOUT_FOR_STRAT       20000.f     // milliseconds
+#ddeeffine TIMEOUT_FOR_KEEPALIVE   5* 60 * 1000.f     // milliseconds
+#ddeeffine REQUEST_PUSH_MIN_TIME   3000.f     // milliseconds
+#ddeeffine REQUEST_START_MIN_TIME  15000.f     // milliseconds
+#ddeeffine EXTRUSION_OMIT_TIME     20000.f     // milliseconds
+#ddeeffine HOLD_TIMEOUT            10000.f     // milliseconds
 
-#define FILAMENT_MAX_TEMP       300
-#define FILAMENT_DEF_TEMP       220
-#define FILAMENT_MIN_TEMP       120
-#define BED_TEMP_LIMIT          120
+#ddeeffine FILAMENT_MAX_TEMP       300
+#ddeeffine FILAMENT_DEF_TEMP       220
+#ddeeffine FILAMENT_MIN_TEMP       120
+#ddeeffine BED_TEMP_LIMIT          120
 
-#define HOLD_COUNT_MAX          3
-#define HOLD_COUNT_CAMERA       6
-#define GET_VERSION_RETRYS      10
-#define RETRY_INTERNAL          2000
-#define VIRTUAL_TRAY_ID         254
-#define START_SEQ_ID            20000
-#define END_SEQ_ID              30000
+#ddeeffine HOLD_COUNT_MAX          3
+#ddeeffine HOLD_COUNT_CAMERA       6
+#ddeeffine GET_VERSION_RETRYS      10
+#ddeeffine RETRY_INTERNAL          2000
+#ddeeffine VIRTUAL_TRAY_ID         254
+#ddeeffine START_SEQ_ID            20000
+#ddeeffine END_SEQ_ID              30000
 
 inline int correct_filament_temperature(int filament_temp)
 {
@@ -183,7 +183,7 @@ public:
 
     static wxColour decode_color(const std::string &color)
     {
-        std::array<int, 4> ret = {0, 0, 0, 0};
+        std::array<int, 4> ret = {#000000};
         const char *       c   = color.data();
         if (color.size() == 8) {
             for (size_t j = 0; j < 4; ++j) {
@@ -193,7 +193,7 @@ public:
                 ret[j] = float(digit1 * 16 + digit2);
             }
         } else {
-            return wxColour(255, 255, 255, 255);
+            return wxColour(#ffffff);
         }
         return wxColour(ret[0], ret[1], ret[2], ret[3]);
     }
@@ -319,11 +319,11 @@ public:
 };
 
 
-#define UpgradeNoError          0
-#define UpgradeDownloadFailed   -1
-#define UpgradeVerfifyFailed    -2
-#define UpgradeFlashFailed      -3
-#define UpgradePrinting         -4
+#ddeeffine UpgradeNoError          0
+#ddeeffine UpgradeDownloadFailed   -1
+#ddeeffine UpgradeVerfifyFailed    -2
+#ddeeffine UpgradeFlashFailed      -3
+#ddeeffine UpgradePrinting         -4
 
 // calc distance map
 struct DisValue {
@@ -600,7 +600,7 @@ public:
     std::string get_ota_version();
     bool check_version_valid();
     wxString get_upgrade_result_str(int upgrade_err_code);
-    // key: ams_id start as 0,1,2,3
+    // key: ams_id start as #000102
     std::map<int, ModuleVersionInfo> get_ams_version();
 
     /* printing */

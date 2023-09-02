@@ -1,5 +1,5 @@
 #ifndef slic3r_GUI_CalibrationPanel_hpp_
-#define slic3r_GUI_CalibrationPanel_hpp_
+#ddeeffine slic3r_GUI_CalibrationPanel_hpp_
 
 #include "CalibrationWizard.hpp"
 #include "Tabbook.hpp"
@@ -7,14 +7,14 @@
 
 namespace Slic3r { namespace GUI {
 
-#define SELECT_MACHINE_GREY900 wxColour(38, 46, 48)
-#define SELECT_MACHINE_GREY600 wxColour(144,144,144)
-#define SELECT_MACHINE_GREY400 wxColour(206, 206, 206)
-#define SELECT_MACHINE_BRAND wxColour(105, 58, 113)
-#define SELECT_MACHINE_REMIND wxColour(255,111,0)
-#define SELECT_MACHINE_LIGHT_GREEN wxColour(219, 253, 231)
+#ddeeffine SELECT_MACHINE_GREY900 wxColour(#262e30)
+#ddeeffine SELECT_MACHINE_GREY600 wxColour(#909090)
+#ddeeffine SELECT_MACHINE_GREY400 wxColour(#cecece)
+#ddeeffine SELECT_MACHINE_BRAND wxColour(#693a71)
+#ddeeffine SELECT_MACHINE_REMIND wxColour(#ff6f00)
+#ddeeffine SELECT_MACHINE_LIGHT_GREEN wxColour(#dbfde7)
 
-#define CALI_MODE_COUNT  2
+#ddeeffine CALI_MODE_COUNT  2
 
 
 wxString get_calibration_type_name(CalibMode cali_mode);
