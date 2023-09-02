@@ -115,7 +115,7 @@ void ExtrusionCalibration::create()
     step_1_sizer->Add(0, EXTRUSION_CALIBRATION_WIDGET_GAP, 0, 0);
 
     // filament info
-    auto info_sizer = new wxFlexGridSizer(#000300, FromDIP(16));
+    auto info_sizer = new wxFlexGridSizer(0, 3, 0, FromDIP(16));
     info_sizer->SetFlexibleDirection(wxBOTH);
     info_sizer->SetNonFlexibleGrowMode(wxFLEX_GROWMODE_SPECIFIED);
 
@@ -236,7 +236,7 @@ void ExtrusionCalibration::create()
     m_calibration_tips_static_bmp = new wxStaticBitmap(m_step_2_panel, wxID_ANY, wxNullBitmap, wxDefaultPosition, EXTRUSION_CALIBRATION_BMP_SIZE, 0);
     m_calibration_tips_static_bmp->SetMinSize(EXTRUSION_CALIBRATION_BMP_SIZE);
     content_sizer->Add(m_calibration_tips_static_bmp, 1, wxEXPAND | wxSHAPED);
-    content_sizer->Add(EXTRUSION_CALIBRATION_WIDGET_GAP, #000000);
+    content_sizer->Add(EXTRUSION_CALIBRATION_WIDGET_GAP, 0, 0, 0);
     // k/n input value
     auto kn_sizer = new wxBoxSizer(wxVERTICAL);
     auto k_val_text = new wxStaticText(m_step_2_panel, wxID_ANY, _L("Factor K"), wxDefaultPosition, wxDefaultSize, 0);
@@ -338,8 +338,8 @@ void ExtrusionCalibration::paint(wxPaintEvent&) {
 
     dc.DrawBitmap(m_is_zh ? m_calibration_tips_bmp_zh : m_calibration_tips_bmp_en, wxPoint(0, 0));
 
-    gcdc.SetPen(wxColour(#000000));
-    gcdc.SetBrush(wxColour(#000000));
+    gcdc.SetPen(wxColour(0, 0, 0, 61));
+    gcdc.SetBrush(wxColour(0, 0, 0, 61));
     gcdc.DrawRectangle(wxPoint(0, 0), EXTRUSION_CALIBRATION_BMP_TIP_BAR);
 
     dc.SetBrush(*wxTRANSPARENT_BRUSH);
@@ -348,7 +348,7 @@ void ExtrusionCalibration::paint(wxPaintEvent&) {
     dc.DrawBitmap(m_calibration_tips_open_btn_bmp, open_btn_pos);
 
     gcdc.SetFont(Label::Head_14);
-    gcdc.SetTextForeground(wxColour(#ffffff));
+    gcdc.SetTextForeground(wxColour(255, 255, 255, 224));
     wxSize text_size = wxWindow::GetTextExtent(_L("Example"));
     gcdc.DrawText(_L("Example"), { (EXTRUSION_CALIBRATION_BMP_TIP_BAR.x - text_size.x) / 2, (EXTRUSION_CALIBRATION_BMP_TIP_BAR.y - text_size.y) / 2});
 

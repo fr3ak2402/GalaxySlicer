@@ -1,0 +1,302 @@
+Arch: arm64
+BUILD_TARGET: slicer
+/opt/homebrew/opt/libiconv
+/opt/homebrew/opt/zstd
+building slicer...
+-- SLIC3R_ASAN: OFF
+-- SLIC3R_BUILD_SANDBOXES: OFF
+-- SLIC3R_BUILD_TESTS: OFF
+-- SLIC3R_DESKTOP_INTEGRATION: ON
+-- SLIC3R_ENC_CHECK: ON
+-- SLIC3R_FHS: OFF
+-- SLIC3R_GTK: 2
+-- SLIC3R_GUI: ON
+-- SLIC3R_MSVC_COMPILE_PARALLEL: ON
+-- SLIC3R_MSVC_PDB: ON
+-- SLIC3R_PCH: ON
+-- SLIC3R_PERL_XS: OFF
+-- SLIC3R_PROFILE: OFF
+-- SLIC3R_STATIC: ON
+-- SLIC3R_WX_STABLE: OFF
+-- SLIC3R_STATIC: ON
+-- CMAKE_PREFIX_PATH: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local (from cache or command line)
+-- PROJECT_SOURCE_DIR: /Users/hliebscher/github/GalaxySlicer
+-- CMAKE_MODULE_PATH: /Users/hliebscher/github/GalaxySlicer/cmake/modules/
+-- LIBDIR: /Users/hliebscher/github/GalaxySlicer/src
+-- LIBDIR_BIN: /Users/hliebscher/github/GalaxySlicer/build_arm64/src
+-- Found Boost: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found suitable version "1.78.0", minimum required is "1.66.0") found components: system filesystem thread log locale regex chrono atomic date_time iostreams 
+-- Boost::boost exists
+-- TBB found in /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/cmake/TBB
+-- Found OpenSSL: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libcrypto.a (found version "1.1.1k")  
+-- Found OpenSSL: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libcrypto.a (found suitable version "1.1.1k", minimum required is "1")  
+-- Found ZLIB: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd (found suitable version "1.2.11", minimum required is "1")  
+-- Found ZLIB: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd (found version "1.2.11")  
+-- FindGLEW: did not find GLEW CMake config file. Searching for libraries.
+-- FindGLEW: Found OpenGL Framework.
+-- FindGLEW: OPENGL_LIBRARIES: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/OpenGL.framework
+-- FindGLEW: GLEW_USE_STATIC_LIBS: ON.
+-- FindGLEW: GLEW_INCLUDE_DIR: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include
+-- FindGLEW: GLEW_INCLUDE_DIRS: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include
+-- FindGLEW: CMAKE_FIND_LIBRARY_SUFFIXES for SHARED: .dylib;.so
+-- FindGLEW: CMAKE_FIND_LIBRARY_SUFFIXES for STATIC: .a
+-- FindGLEW: GLEW_SHARED_LIBRARY_RELEASE: GLEW_SHARED_LIBRARY_RELEASE-NOTFOUND
+-- FindGLEW: GLEW_STATIC_LIBRARY_RELEASE: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libGLEW.a
+-- FindGLEW: GLEW_SHARED_LIBRARY_DEBUG: GLEW_SHARED_LIBRARY_DEBUG-NOTFOUND
+-- FindGLEW: GLEW_STATIC_LIBRARY_DEBUG: GLEW_STATIC_LIBRARY_DEBUG-NOTFOUND
+-- FindGLEW: GLEW_SHARED_LIBRARY: GLEW_SHARED_LIBRARY-NOTFOUND
+-- FindGLEW: GLEW_STATIC_LIBRARY: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libGLEW.a
+-- FindGLEW: GLEW_LIBRARIES: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libGLEW.a
+-- FindGLEW: GLEW_VERSION_MAJOR: 2
+-- FindGLEW: GLEW_VERSION_MINOR: 2
+-- FindGLEW: GLEW_VERSION_MICRO: 0
+-- FindGLEW: GLEW_VERSION: 2.2.0
+-- FindGLEW: Creating GLEW::glew_s imported target.
+-- FindGLEW: Creating GLEW::GLEW imported target.
+-- Found NLopt in '/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib'.
+-- Using NLopt include directory '/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include'.
+-- Using NLopt library '/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libnlopt.a'.
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- OpenVDB ABI Version: 8
+-- TBB found in /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/cmake/TBB
+-- Found Boost: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found version "1.78.0") found components: iostreams system 
+-- OpenVDB libraries: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libopenvdb.a
+-- SPNAV library NOT found, Spacenavd not supported
+-- Minilzo using bundled version...
+-- Using qhull from system.
+-- IGL NOT found, using bundled version...
+-- [MCUT] version: 1.2.0
+-- [MCUT] MCUT_INCLUDE_DIR=/Users/hliebscher/github/GalaxySlicer/src/mcut/include
+-- [MCUT] compilation_flags=
+-- [MCUT] preprocessor_defs=-DMCUT_WITH_COMPUTE_HELPER_THREADPOOL=1
+-- [MCUT] extra_libs=Threads::Threads
+-- [MCUT] create target: name=mcut type=STATIC
+-- [MCUT] MCUT_LIB_PATH=$<TARGET_FILE:mcut>
+-- Using header-only CGAL
+-- Targetting Xcode
+-- Using /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ compiler.
+-- DARWIN_VERSION=22
+-- Mac Leopard detected
+-- Generator uses intermediate configuration directory: $(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+-- Found Boost: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/cmake/Boost-1.78.0/BoostConfig.cmake (found suitable version "1.78.0", minimum required is "1.48")  
+-- Boost include dirs: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include/boost-1_78
+-- Boost libraries:    
+-- Adding precompiled header pchheader.hpp to target libslic3r.
+-- PCH skipping sources: MacUtils.mm
+-- wx-config path: /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/bin/wx-config
+-- wx libs: -L/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib;-pthread;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_gl-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_webview-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_aui-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_baseu_net-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_media-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_html-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_osx_cocoau_core-3.1.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libwx_baseu-3.1.a;-framework WebKit;-framework AVFoundation;-framework CoreMedia;-weak_framework AVKit;-lwx_osx_cocoau_core-3.1;-lwx_baseu-3.1;libz.tbd;-framework AudioToolbox;-framework WebKit;libz.tbd;-lwxregexu-3.1;libiconv.tbd;-framework CoreFoundation;-framework Security;-framework Carbon;-framework Cocoa;-framework IOKit;-framework QuartzCore;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libpng.a;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libtiff.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libjpeg.a;/Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/lib/libexpat.a
+-- Adding precompiled header pchheader.hpp to target libslic3r_gui.
+-- PCH skipping sources: Utils/RetinaHelperImpl.mm;Utils/MacDarkMode.mm;GUI/RemovableDriveManagerMM.mm;GUI/Mouse3DHandlerMac.mm;GUI/wxMediaCtrl2.mm
+-- libslic3r-CMAKE_BUILD_TYPE: Release
+-- CMAKE_CURRENT_BINARY_DIR: /Users/hliebscher/github/GalaxySlicer/build_arm64/src
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/hliebscher/github/GalaxySlicer/build_arm64
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project GalaxySlicer.xcodeproj build -target ALL_BUILD -parallelizeTargets -configuration Release -hideShellScriptEnvironment
+
+User defaults from command line:
+    HideShellScriptEnvironment = YES
+    IDEPackageSupportUseBuiltinSCM = YES
+
+Computing target dependency graph and provisioning inputs
+
+Create build description
+Build description signature: 9d063b3b76c5af75b48293185061c4a0
+Build description path: /Users/hliebscher/github/GalaxySlicer/build_arm64/build/XCBuildData/9d063b3b76c5af75b48293185061c4a0.xcbuilddata
+
+note: Building targets in dependency order
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk /var/folders/9x/3_zk2_x95476cntl6cttlcsr0000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
+    cd /Users/hliebscher/github/GalaxySlicer/build_arm64/GalaxySlicer.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o /var/folders/9x/3_zk2_x95476cntl6cttlcsr0000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/hliebscher/github/GalaxySlicer/build_arm64/build/GalaxySlicer.build/Release/ZERO_CHECK.build/Script-966D9AEB6972612094AF9953.sh (in target 'ZERO_CHECK' from project 'GalaxySlicer')
+    cd /Users/hliebscher/github/GalaxySlicer
+    /bin/sh -c /Users/hliebscher/github/GalaxySlicer/build_arm64/build/GalaxySlicer.build/Release/ZERO_CHECK.build/Script-966D9AEB6972612094AF9953.sh
+make: `/Users/hliebscher/github/GalaxySlicer/build_arm64/CMakeFiles/cmake.check_cache' is up to date.
+
+note: Run script build phase 'CMake PostBuild Rules' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'encoding-check-semver' from project 'GalaxySlicer')
+note: Run script build phase 'Generate src/semver/CMakeFiles/encoding-check-semver' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'encoding-check-semver' from project 'GalaxySlicer')
+PhaseScriptExecution Generate\ src/semver/CMakeFiles/encoding-check-semver /Users/hliebscher/github/GalaxySlicer/build_arm64/build/GalaxySlicer.build/Release/encoding-check-semver.build/Script-A12A93FD8A53EC2ECFA5170E.sh (in target 'encoding-check-semver' from project 'GalaxySlicer')
+    cd /Users/hliebscher/github/GalaxySlicer
+    /bin/sh -c /Users/hliebscher/github/GalaxySlicer/build_arm64/build/GalaxySlicer.build/Release/encoding-check-semver.build/Script-A12A93FD8A53EC2ECFA5170E.sh
+
+CompileC /Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/Objects-normal/arm64/MeshBoolean.o /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'libslic3r_cgal' from project 'GalaxySlicer')
+    cd /Users/hliebscher/github/GalaxySlicer
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -ivfsstatcache /var/folders/9x/3_zk2_x95476cntl6cttlcsr0000gn/C/com.apple.DeveloperTools/14.3.1-14E300c/Xcode/SDKStatCaches.noindex/macosx13.3-22E245-.sdkstatcache -target arm64-apple-macos11.3 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wno-implicit-fallthrough -DCMAKE_INTDIR\=\"Release\" -DSLIC3R_GUI -DSLIC3R_DESKTOP_INTEGRATION -DwxUSE_UNICODE -D_UNICODE -DUNICODE -DWXINTL_NO_GETTEXT_MACRO -DwxNO_UNSAFE_WXSTRING_CONV -DOCC_CONVERT_SIGNALS -DHAVE_FREETYPE -DHAVE_OPENGL_EXT -DCGAL_USE_GMPXX\=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/hliebscher/github/GalaxySlicer/build_arm64/src/libslic3r/Release/include -I/Users/hliebscher/github/GalaxySlicer/src -I/Users/hliebscher/github/GalaxySlicer/build_arm64/src/platform -I/Users/hliebscher/github/GalaxySlicer/build_arm64/src/libslic3r -isystem /Users/hliebscher/github/GalaxySlicer/src/eigen -isystem /Users/hliebscher/github/GalaxySlicer/src/libigl -isystem /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include -isystem /Users/hliebscher/github/GalaxySlicer/deps/build_arm64/GalaxySlicer_dep_arm64/usr/local/include/boost-1_78 -I/Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/DerivedSources-normal/arm64 -I/Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/DerivedSources/arm64 -I/Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/DerivedSources -F/Users/hliebscher/github/GalaxySlicer/build_arm64/src/libslic3r/Release -Wall -Wno-reorder -Werror\=partial-availability -Werror\=unguarded-availability -Werror\=unguarded-availability-new -DNDEBUG -std\=gnu++17 -fPIC -fsigned-char -Werror\=return-type -Wno-ignored-attributes -Wno-deprecated-declarations -MMD -MT dependencies -MF /Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/Objects-normal/arm64/MeshBoolean.d --serialize-diagnostics /Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/Objects-normal/arm64/MeshBoolean.dia -c /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp -o /Users/hliebscher/github/GalaxySlicer/build_arm64/build/libslic3r_cgal.build/Release/Objects-normal/arm64/MeshBoolean.o
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:2:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/TriangleMesh.hpp:12:
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/ExPolygon.hpp:163:41: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    if (count_lines == 0) count_lines = count_points(src);
+                                      ~ ^~~~~~~~~~~~~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:348:30: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+            dst.emplace_back(std::move(CGALMesh(out)));
+                             ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:348:30: note: remove std::move call here
+            dst.emplace_back(std::move(CGALMesh(out)));
+                             ^~~~~~~~~~             ~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:367:33: warning: moving a temporary object prevents copy elision [-Wpessimizing-move]
+        out_meshes.emplace_back(std::move(cgal_to_triangle_mesh(outf_cgal_mesh.m)));
+                                ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:367:33: note: remove std::move call here
+        out_meshes.emplace_back(std::move(cgal_to_triangle_mesh(outf_cgal_mesh.m)));
+                                ^~~~~~~~~~                                       ~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:529:64: warning: implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    uint32_t ccVertexCount = mcutmesh.vertexCoordsArray.size() / 3;
+             ~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:533:40: warning: implicit conversion loses integer precision: 'std::vector<unsigned int>::size_type' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+    uint32_t ccFaceCount   = faceSizes.size();
+             ~~~~~~~~~~~     ~~~~~~~~~~^~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:578:13: warning: enumeration values 'MC_DEBUG_SOURCE_FRONTEND', 'MC_DEBUG_SOURCE_IGNORE', and 'MC_DEBUG_SOURCE_ALL' not handled in switch [-Wswitch]
+    switch (source) {
+            ^~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:578:13: note: add missing switch cases
+    switch (source) {
+            ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:587:13: warning: enumeration values 'MC_DEBUG_TYPE_IGNORE' and 'MC_DEBUG_TYPE_ALL' not handled in switch [-Wswitch]
+    switch (type) {
+            ^~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:587:13: note: add missing switch cases
+    switch (type) {
+            ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:599:13: warning: enumeration value 'MC_DEBUG_SEVERITY_ALL' not handled in switch [-Wswitch]
+    switch (severity) {
+            ^~~~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:599:13: note: add missing switch cases
+    switch (severity) {
+            ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:782:15: warning: variable 'err' set but not used [-Wunused-but-set-variable]
+    McResult  err     = mcCreateContext(&context, 0);
+              ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:296:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:9: warning: destructor called on non-final 'Slic3r::Polyline' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+        __p->~_Tp();
+        ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:293:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:13:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator_traits.h:309:13: note: in instantiation of member function 'std::allocator<Slic3r::Polyline>::destroy' requested here
+        __a.destroy(__p);
+            ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:833:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<Slic3r::Polyline>>::destroy<Slic3r::Polyline, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__soon_to_be_end));
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:827:29: note: in instantiation of member function 'std::vector<Slic3r::Polyline>::__base_destruct_at_end' requested here
+  void __clear() _NOEXCEPT {__base_destruct_at_end(this->__begin_);}
+                            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:436:9: note: in instantiation of member function 'std::vector<Slic3r::Polyline>::__clear' requested here
+        __clear();
+        ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:2:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/TriangleMesh.hpp:8:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/BoundingBox.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Polygon.hpp:9:
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/Polyline.hpp:193:15: note: in instantiation of member function 'std::vector<Slic3r::Polyline>::~vector' requested here
+    Polylines out;
+              ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:296:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:15: note: qualify call to silence this warning
+        __p->~_Tp();
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:9: warning: destructor called on non-final 'Slic3r::ThickPolyline' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+        __p->~_Tp();
+        ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:293:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:13:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator_traits.h:309:13: note: in instantiation of member function 'std::allocator<Slic3r::ThickPolyline>::destroy' requested here
+        __a.destroy(__p);
+            ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:833:25: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<Slic3r::ThickPolyline>>::destroy<Slic3r::ThickPolyline, void>' requested here
+        __alloc_traits::destroy(__alloc(), _VSTD::__to_address(--__soon_to_be_end));
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:827:29: note: in instantiation of member function 'std::vector<Slic3r::ThickPolyline>::__base_destruct_at_end' requested here
+  void __clear() _NOEXCEPT {__base_destruct_at_end(this->__begin_);}
+                            ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:436:9: note: in instantiation of member function 'std::vector<Slic3r::ThickPolyline>::__clear' requested here
+        __clear();
+        ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:2:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/TriangleMesh.hpp:8:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/BoundingBox.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Polygon.hpp:9:
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/Polyline.hpp:251:20: note: in instantiation of member function 'std::vector<Slic3r::ThickPolyline>::~vector' requested here
+    ThickPolylines out;
+                   ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:296:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:15: note: qualify call to silence this warning
+        __p->~_Tp();
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:9: warning: destructor called on non-final 'Slic3r::Polygon' that has virtual functions but non-virtual destructor [-Wdelete-non-abstract-non-virtual-dtor]
+        __p->~_Tp();
+        ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:293:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:13:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator_traits.h:309:13: note: in instantiation of member function 'std::allocator<Slic3r::Polygon>::destroy' requested here
+        __a.destroy(__p);
+            ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:296:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:24:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/memory:858:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:22:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:506:32: note: in instantiation of function template specialization 'std::allocator_traits<std::allocator<Slic3r::Polygon>>::destroy<Slic3r::Polygon, void>' requested here
+     allocator_traits<_Alloc>::destroy(__alloc, std::__to_address(__first));
+                               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:517:10: note: in instantiation of function template specialization 'std::__allocator_destroy<std::allocator<Slic3r::Polygon>, std::reverse_iterator<Slic3r::Polygon *>, std::reverse_iterator<Slic3r::Polygon *>>' requested here
+    std::__allocator_destroy(__alloc_, std::reverse_iterator<_Iter>(__last_), std::reverse_iterator<_Iter>(__first_));
+         ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:1031:22: note: in instantiation of function template specialization 'std::__uninitialized_allocator_copy<std::allocator<Slic3r::Polygon>, std::__wrap_iter<const Slic3r::Polygon *>, std::__wrap_iter<const Slic3r::Polygon *>, Slic3r::Polygon *>' requested here
+  __tx.__pos_ = std::__uninitialized_allocator_copy(__alloc(), __first, __last, __tx.__pos_);
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:1891:17: note: in instantiation of function template specialization 'std::vector<Slic3r::Polygon>::__construct_at_end<std::__wrap_iter<const Slic3r::Polygon *>>' requested here
+                __construct_at_end(__m, __last, __n - __diff);
+                ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:2:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.hpp:7:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/TriangleMesh.hpp:8:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/BoundingBox.hpp:7:
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/Polygon.hpp:143:71: note: in instantiation of function template specialization 'std::vector<Slic3r::Polygon>::insert<std::__wrap_iter<const Slic3r::Polygon *>>' requested here
+inline void polygons_append(Polygons &dst, const Polygons &src) { dst.insert(dst.end(), src.begin(), src.end()); }
+                                                                      ^
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:1:
+In file included from /Users/hliebscher/github/GalaxySlicer/src/libslic3r/Exception.hpp:5:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:296:
+In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:20:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocator.h:170:15: note: qualify call to silence this warning
+        __p->~_Tp();
+              ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:170:46: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CGAL::Surface_mesh::size_type' (aka 'unsigned int') [-Wshorten-64-to-32]
+    out.reserve(vertices_count, edges_count, faces_count);
+        ~~~~~~~                              ^~~~~~~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:231:5: note: in instantiation of function template specialization 'Slic3r::MeshBoolean::cgal::triangle_mesh_to_cgal<CGAL::Surface_mesh<CGAL::Point_3<CGAL::Epick>>>' requested here
+    triangle_mesh_to_cgal(V, F, out->m);
+    ^
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:170:33: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CGAL::Surface_mesh::size_type' (aka 'unsigned int') [-Wshorten-64-to-32]
+    out.reserve(vertices_count, edges_count, faces_count);
+        ~~~~~~~                 ^~~~~~~~~~~
+/Users/hliebscher/github/GalaxySlicer/src/libslic3r/MeshBoolean.cpp:170:17: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CGAL::Surface_mesh::size_type' (aka 'unsigned int') [-Wshorten-64-to-32]
+    out.reserve(vertices_count, edges_count, faces_count);
+        ~~~~~~~ ^~~~~~~~~~~~~~

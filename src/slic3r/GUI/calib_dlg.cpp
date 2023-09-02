@@ -11,11 +11,11 @@ wxBoxSizer* create_item_checkbox(wxString title, wxWindow* parent, bool* value, 
 {
     wxBoxSizer* m_sizer_checkbox = new wxBoxSizer(wxHORIZONTAL);
 
-    m_sizer_checkbox->Add(#000000, wxEXPAND | wxLEFT, 5);
+    m_sizer_checkbox->Add(0, 0, 0, wxEXPAND | wxLEFT, 5);
 
     checkbox = new ::CheckBox(parent);
     m_sizer_checkbox->Add(checkbox, 0, wxALIGN_CENTER, 0);
-    m_sizer_checkbox->Add(#000000, wxEXPAND | wxLEFT, 8);
+    m_sizer_checkbox->Add(0, 0, 0, wxEXPAND | wxLEFT, 8);
 
     auto checkbox_title = new wxStaticText(parent, wxID_ANY, title, wxDefaultPosition, wxSize(-1, -1), 0);
     checkbox_title->SetForegroundColour(wxColour(#909090));

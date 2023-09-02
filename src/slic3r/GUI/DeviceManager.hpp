@@ -183,7 +183,7 @@ public:
 
     static wxColour decode_color(const std::string &color)
     {
-        std::array<int, 4> ret = {#000000};
+        std::array<int, 4> ret = {0, 0, 0, 0};
         const char *       c   = color.data();
         if (color.size() == 8) {
             for (size_t j = 0; j < 4; ++j) {
@@ -193,7 +193,7 @@ public:
                 ret[j] = float(digit1 * 16 + digit2);
             }
         } else {
-            return wxColour(#ffffff);
+            return wxColour(255, 255, 255, 255);
         }
         return wxColour(ret[0], ret[1], ret[2], ret[3]);
     }
@@ -600,7 +600,7 @@ public:
     std::string get_ota_version();
     bool check_version_valid();
     wxString get_upgrade_result_str(int upgrade_err_code);
-    // key: ams_id start as #000102
+    // key: ams_id start as 0,1,2,3
     std::map<int, ModuleVersionInfo> get_ams_version();
 
     /* printing */
