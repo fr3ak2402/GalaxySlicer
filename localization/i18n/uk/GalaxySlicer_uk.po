@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 19:45+0800\n"
+"POT-Creation-Date: 2023-09-03 01:32+0200\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -15,8 +15,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.3.2\n"
 
 msgid "Supports Painting"
@@ -569,9 +569,12 @@ msgstr ""
 msgid "V"
 msgstr "V"
 
+msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+msgstr ""
+
 msgid ""
-"GalaxySlicer will terminate because of running out of memory.It may be a bug. "
-"It will be appreciated if you report the issue to our team."
+"GalaxySlicer will terminate because of running out of memory.It may be a "
+"bug. It will be appreciated if you report the issue to our team."
 msgstr ""
 "GalaxySlicer завершить роботу через брак пам'яті. Можливо, це помилка. Ми "
 "будемо вдячні, якщо ви повідомите про проблему нашій команді."
@@ -607,8 +610,17 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Не вдалося підключити %s! [Серійний номер:%s, код=%s]"
 
 msgid ""
-"GalaxySlicer configuration file may be corrupted and is not abled to be parsed."
-"Please delete the file and try again."
+"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"features.\n"
+"Click Yes to install it now."
+msgstr ""
+
+msgid "WebView2 Runtime"
+msgstr ""
+
+msgid ""
+"GalaxySlicer configuration file may be corrupted and is not abled to be "
+"parsed.Please delete the file and try again."
 msgstr ""
 "Файл конфігурації GalaxySlicer може бути пошкоджений і не підлягає розбору. "
 "Видаліть файл і спробуйте ще раз."
@@ -1355,6 +1367,9 @@ msgstr "Автоматична Кайма"
 msgid "Auto"
 msgstr "Авто"
 
+msgid "Mouse ear"
+msgstr ""
+
 msgid "Outer brim only"
 msgstr "кайма зовні"
 
@@ -1878,11 +1893,13 @@ msgstr ""
 msgid "About %s"
 msgstr "Про %s"
 
-msgid "GalaxySlicer "
-msgstr "GalaxySlicer "
+msgid ""
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
+msgstr ""
 
-msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "GalaxySlicer базується на BambuStudio, PrusaSlicer та SuperSlicer."
+msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
+msgstr ""
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
 msgstr "BambuStudio спочатку базується на PrusaSlicer від PrusaResearch."
@@ -2219,6 +2236,9 @@ msgstr ""
 
 msgid "File"
 msgstr "Файл"
+
+msgid "View"
+msgstr "Вигляд"
 
 msgid "Calibration"
 msgstr "Калібрування"
@@ -3443,9 +3463,6 @@ msgstr ""
 msgid "Preferences"
 msgstr "Налаштування"
 
-msgid "View"
-msgstr "Вигляд"
-
 msgid "Help"
 msgstr "Допомога"
 
@@ -3837,6 +3854,24 @@ msgstr "Налаштування 3D-з'єднання"
 
 msgid "Swap Y/Z axes"
 msgstr "Змінити місцями осі Y/Z"
+
+msgid "Invert X axis"
+msgstr ""
+
+msgid "Invert Y axis"
+msgstr ""
+
+msgid "Invert Z axis"
+msgstr ""
+
+msgid "Invert Yaw axis"
+msgstr ""
+
+msgid "Invert Pitch axis"
+msgstr ""
+
+msgid "Invert Roll axis"
+msgstr ""
 
 msgid "Printing Progress"
 msgstr "Хід друку"
@@ -4298,12 +4333,12 @@ msgstr "Немає сумісних філаментів, а синхроніз�
 
 msgid ""
 "There are some unknown filaments mapped to generic preset. Please update "
-"GalaxySlicer or restart GalaxySlicer to check if there is an update to system "
-"presets."
+"GalaxySlicer or restart GalaxySlicer to check if there is an update to "
+"system presets."
 msgstr ""
 "Є кілька невідомих ниток, зіставлених із загальною передустановкою.Будь "
-"ласка, оновіть GalaxySlicer або перезапустіть GalaxySlicer, щоб перевірити, чи "
-"є оновлення для системи пресети."
+"ласка, оновіть GalaxySlicer або перезапустіть GalaxySlicer, щоб перевірити, "
+"чи є оновлення для системи пресети."
 
 #, boost-format
 msgid "Do you want to save changes to \"%1%\"?"
@@ -4630,6 +4665,12 @@ msgid ""
 "will be exported."
 msgstr ""
 
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+
+msgid "Upload and Print"
+msgstr ""
+
 msgid ""
 "Print By Object: \n"
 "Suggest to use auto-arrange to avoid collisions when printing."
@@ -4836,7 +4877,8 @@ msgstr ""
 msgid "Associate .step/.stp files to GalaxySlicer"
 msgstr "Асоціювати файли .step/.stp з GalaxySlicer"
 
-msgid "If enabled, sets GalaxySlicer as default application to open .step files"
+msgid ""
+"If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr ""
 "Якщо включено, встановлює GalaxySlicer як програму за замовчуваннямдля "
 "відкриття файлів .step"
@@ -5568,8 +5610,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "При записі таймлапсу без інструментальної головки рекомендується додати "
 "“Timelapse Wipe Tower” \n"
@@ -5644,6 +5686,9 @@ msgstr "Вихідний G-code"
 
 msgid "Post-processing Scripts"
 msgstr "Сценарії постобробки"
+
+msgid "Notes"
+msgstr ""
 
 msgid "Frequent"
 msgstr "Частий"
@@ -7279,6 +7324,14 @@ msgstr ""
 "Використовуйте лише один периметр на першому шарі, щоб надати більшемісця "
 "для нижнього зразка заповнення"
 
+msgid "Extra perimeters on overhangs"
+msgstr ""
+
+msgid ""
+"Create additional perimeter paths over steep overhangs and areas where "
+"bridges cannot be anchored. "
+msgstr ""
+
 msgid "Classic mode"
 msgstr "Класичний режим"
 
@@ -7327,9 +7380,6 @@ msgid ""
 msgstr ""
 "Це керує формуванням поля на зовнішній та/або внутрішній сторонімоделей. "
 "Auto означає, що ширина поля аналізується та обчислюється автоматично."
-
-msgid "Mouse ear"
-msgstr ""
 
 msgid "Brim-object gap"
 msgstr "Зазор між каймою та об'єктом"
@@ -7722,6 +7772,12 @@ msgstr "Колір філаменту за замовчуванням"
 msgid "Color"
 msgstr "Колір"
 
+msgid "Filament notes"
+msgstr ""
+
+msgid "You can put your notes regarding the filament here."
+msgstr ""
+
 msgid "Required nozzle HRC"
 msgstr "Потрібний HRC сопла"
 
@@ -8106,10 +8162,10 @@ msgstr "Повна швидкість вентилятора на шарі"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "Швидкість вентилятора лінійно збільшується від нуля на "
 "рівні«close_fan_the_first_x_layers» до максимуму на рівні "
@@ -8559,8 +8615,8 @@ msgstr "Максимальне прискорення для відкату (M20
 msgid "Maximum acceleration for travel"
 msgstr "Максимальне прискорення руху"
 
-msgid "Maximum acceleration for travel (M204 T)"
-msgstr "Максимальне прискорення руху (M204 T)"
+msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
+msgstr ""
 
 msgid "Fan speed"
 msgstr "Швидкість вентилятора"
@@ -8616,6 +8672,14 @@ msgstr "Діаметр сопла"
 
 msgid "Diameter of nozzle"
 msgstr "Діаметр сопла"
+
+msgid "Configuration notes"
+msgstr ""
+
+msgid ""
+"You can put here your personal notes. This text will be added to the G-code "
+"header comments."
+msgstr ""
 
 msgid "Host Type"
 msgstr "Тип хоста"
@@ -8721,6 +8785,12 @@ msgstr ""
 "комою. Сценаріям передається абсолютний шлях до файлу G-коду в як перший "
 "аргумент, і вони можуть отримати доступ до налаштувань Slic3r конфігурації "
 "шляхом читання змінних середовища."
+
+msgid "Printer notes"
+msgstr ""
+
+msgid "You can put your notes regarding the printer here."
+msgstr ""
 
 msgid "Raft contact Z distance"
 msgstr "Відстань контакту плоту Z"
@@ -10446,6 +10516,15 @@ msgstr ""
 msgid "Finished"
 msgstr ""
 
+msgid "Multiple resolved IP addresses"
+msgstr ""
+
+#, boost-format
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+
 msgid "Unable to perform boolean operation on selected parts"
 msgstr ""
 
@@ -10485,7 +10564,7 @@ msgstr ""
 msgid "Delete input"
 msgstr ""
 
-msgid "Send to print"
+msgid "Send G-Code to printer host"
 msgstr ""
 
 msgid "Upload to Printer Host with the following filename:"
@@ -10494,14 +10573,11 @@ msgstr ""
 msgid "Use forward slashes ( / ) as a directory separator if needed."
 msgstr ""
 
+msgid "Upload to storage"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
-msgstr ""
-
-msgid "Upload and Print"
-msgstr ""
-
-msgid "Simulate"
 msgstr ""
 
 msgid "Print host upload queue"
@@ -10523,7 +10599,7 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Error Message"
+msgid "Message"
 msgstr ""
 
 msgid "Cancel selected"
@@ -10541,7 +10617,7 @@ msgstr ""
 msgid "Cancelling"
 msgstr ""
 
-msgid "Error uploading to print host:"
+msgid "Error uploading to print host"
 msgstr ""
 
 msgid "PA Calibration"
@@ -10853,8 +10929,8 @@ msgstr ""
 "Відняти деталь\n"
 "Чи знаєте ви, що можна віднімати одну мережу з іншої за допомогою "
 "модифікаторанегативної деталі? Таким чином можна, наприклад, створити "
-"легкоотвори, що змінюються безпосередньо в GalaxySlicer. Додаткова інформацію "
-"наведено в документації."
+"легкоотвори, що змінюються безпосередньо в GalaxySlicer. Додаткова "
+"інформацію наведено в документації."
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
@@ -10995,6 +11071,15 @@ msgstr ""
 "Підвищення міцності\n"
 "Чи знаєте ви, що для підвищення міцності моделі можна використовувати "
 "більшепериметрів та вищу щільність заповнення?"
+
+#~ msgid "GalaxySlicer "
+#~ msgstr "GalaxySlicer "
+
+#~ msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "GalaxySlicer базується на BambuStudio, PrusaSlicer та SuperSlicer."
+
+#~ msgid "Maximum acceleration for travel (M204 T)"
+#~ msgstr "Максимальне прискорення руху (M204 T)"
 
 #~ msgid "Assemble the selected parts to a single part"
 #~ msgstr "Зберіть вибрані деталі в одну деталь"

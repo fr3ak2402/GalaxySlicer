@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 19:45+0800\n"
+"POT-Creation-Date: 2023-09-03 01:32+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -566,9 +566,12 @@ msgstr "구성 파일 \"%1%\"이(가) 로드되었지만 일부 값이 인식되
 msgid "V"
 msgstr "V"
 
+msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+msgstr ""
+
 msgid ""
-"GalaxySlicer will terminate because of running out of memory.It may be a bug. "
-"It will be appreciated if you report the issue to our team."
+"GalaxySlicer will terminate because of running out of memory.It may be a "
+"bug. It will be appreciated if you report the issue to our team."
 msgstr ""
 "메모리 부족으로 GalaxySlicer가 종료됩니다. 버그일 수 있습니다. 저희 팀에 문제"
 "를 보고해 주시면 감사하겠습니다."
@@ -580,8 +583,8 @@ msgid ""
 "GalaxySlicer will terminate because of a localization error. It will be "
 "appreciated if you report the specific scenario this issue happened."
 msgstr ""
-"GalaxySlicer는 현지화 오류로 인해 종료됩니다. 이 문제가 발생한 구체적인 시나리"
-"오를 보고해 주시면 감사하겠습니다."
+"GalaxySlicer는 현지화 오류로 인해 종료됩니다. 이 문제가 발생한 구체적인 시나"
+"리오를 보고해 주시면 감사하겠습니다."
 
 msgid "Critical error"
 msgstr "치명적 오류"
@@ -604,8 +607,17 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "%s 연결 실패! [SN:%s, code=%s]"
 
 msgid ""
-"GalaxySlicer configuration file may be corrupted and is not abled to be parsed."
-"Please delete the file and try again."
+"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"features.\n"
+"Click Yes to install it now."
+msgstr ""
+
+msgid "WebView2 Runtime"
+msgstr ""
+
+msgid ""
+"GalaxySlicer configuration file may be corrupted and is not abled to be "
+"parsed.Please delete the file and try again."
 msgstr ""
 "GalaxySlicer 구성 파일이 손상되어 구문 분석할 수 없습니다. 파일을 삭제하고 다"
 "시 시도하십시오."
@@ -1336,6 +1348,9 @@ msgstr "자동 챙(브림)"
 msgid "Auto"
 msgstr "자동"
 
+msgid "Mouse ear"
+msgstr "생쥐 귀"
+
 msgid "Outer brim only"
 msgstr "외부 챙만"
 
@@ -1854,11 +1869,13 @@ msgstr ""
 msgid "About %s"
 msgstr "About %s"
 
-msgid "GalaxySlicer "
-msgstr "GalaxySlicer "
+msgid ""
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
+msgstr ""
 
-msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
+msgstr ""
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
 msgstr "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
@@ -2177,6 +2194,9 @@ msgstr ""
 
 msgid "File"
 msgstr "파일"
+
+msgid "View"
+msgstr "시점"
 
 msgid "Calibration"
 msgstr "교정"
@@ -3382,9 +3402,6 @@ msgstr "3D 장면에서 객체 오버행 하이라이트 표시"
 msgid "Preferences"
 msgstr "기본 설정"
 
-msgid "View"
-msgstr "시점"
-
 msgid "Help"
 msgstr "도움말"
 
@@ -3757,6 +3774,24 @@ msgstr "3D연결 설정"
 
 msgid "Swap Y/Z axes"
 msgstr "Y/Z 축 바꾸기"
+
+msgid "Invert X axis"
+msgstr ""
+
+msgid "Invert Y axis"
+msgstr ""
+
+msgid "Invert Z axis"
+msgstr ""
+
+msgid "Invert Yaw axis"
+msgstr ""
+
+msgid "Invert Pitch axis"
+msgstr ""
+
+msgid "Invert Roll axis"
+msgstr ""
 
 msgid "Printing Progress"
 msgstr "출력 진행률"
@@ -4211,8 +4246,8 @@ msgstr "호환되는 필라멘트가 없으며 동기화가 수행되지 않습�
 
 msgid ""
 "There are some unknown filaments mapped to generic preset. Please update "
-"GalaxySlicer or restart GalaxySlicer to check if there is an update to system "
-"presets."
+"GalaxySlicer or restart GalaxySlicer to check if there is an update to "
+"system presets."
 msgstr ""
 "일반 사전 설정에 매핑된 알 수 없는 필라멘트가 있습니다. GalaxySlicer를 업데이"
 "트하거나 GalaxySlicer를 다시 시작하여 시스템 사전 설정에 대한 업데이트가 있는"
@@ -4538,6 +4573,12 @@ msgid ""
 msgstr ""
 "모델 메쉬에 부울 연산을 수행할 수 없습니다. 오직 양수 부품만 내보내집니다."
 
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+
+msgid "Upload and Print"
+msgstr "업로드 및 출력"
+
 msgid ""
 "Print By Object: \n"
 "Suggest to use auto-arrange to avoid collisions when printing."
@@ -4603,8 +4644,8 @@ msgid ""
 "\"Fix Model\" feature is currently only on Windows. Please repair the model "
 "on GalaxySlicer(windows) or CAD softwares."
 msgstr ""
-"\"모델 수리\" 기능은 현재 Windows에만 있습니다. GalaxySlicer(Wndows) 또는 CAD "
-"소프트웨어 등에서 모델을 수정하십시오."
+"\"모델 수리\" 기능은 현재 Windows에만 있습니다. GalaxySlicer(Wndows) 또는 "
+"CAD 소프트웨어 등에서 모델을 수정하십시오."
 
 #, c-format, boost-format
 msgid ""
@@ -4724,22 +4765,25 @@ msgstr ".3mf 파일을 GalaxySlicer에 연결"
 
 msgid "If enabled, sets GalaxySlicer as default application to open .3mf files"
 msgstr ""
-"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .3mf 파일을 엽니다"
+"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .3mf 파일을 엽니"
+"다"
 
 msgid "Associate .stl files to GalaxySlicer"
 msgstr ".stl 파일을 GalaxySlicer에 연결"
 
 msgid "If enabled, sets GalaxySlicer as default application to open .stl files"
 msgstr ""
-"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .stl 파일을 엽니다"
+"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .stl 파일을 엽니"
+"다"
 
 msgid "Associate .step/.stp files to GalaxySlicer"
 msgstr ".step/.stp 파일을 GalaxySlicer에 연결"
 
-msgid "If enabled, sets GalaxySlicer as default application to open .step files"
+msgid ""
+"If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr ""
-"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .step 파일을 엽니"
-"다"
+"활성화된 경우 GalaxySlicer를 기본 응용 프로그램으로 설정하여 .step 파일을 엽"
+"니다"
 
 msgid "Online Models"
 msgstr "온라인 모델"
@@ -5465,8 +5509,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "툴헤드 없이 시간 경과를 기록할 경우 \"시간 경과 제거 타워\"를 추가하는 것이 "
 "좋습니다\n"
@@ -5541,6 +5585,9 @@ msgstr "G코드 출력"
 
 msgid "Post-processing Scripts"
 msgstr "사후 처리 스크립트"
+
+msgid "Notes"
+msgstr ""
 
 msgid "Frequent"
 msgstr "빈도"
@@ -7146,6 +7193,14 @@ msgid ""
 msgstr ""
 "첫 레이어에 하나의 벽만 사용하여 하단 표면 패턴에 더 많은 공간을 제공합니다"
 
+msgid "Extra perimeters on overhangs"
+msgstr ""
+
+msgid ""
+"Create additional perimeter paths over steep overhangs and areas where "
+"bridges cannot be anchored. "
+msgstr ""
+
 msgid "Classic mode"
 msgstr "클래식 모드"
 
@@ -7195,9 +7250,6 @@ msgid ""
 msgstr ""
 "모델의 외부 그리고/또는 내부에서 챙(브림)의 생성을 제어합니다. 자동은 챙(브"
 "림) 너비가 자동으로 분석 및 계산됨을 의미합니다."
-
-msgid "Mouse ear"
-msgstr "생쥐 귀"
 
 msgid "Brim-object gap"
 msgstr "챙(브림)-개체 간격"
@@ -7576,6 +7628,12 @@ msgstr "기본 필라멘트 색상"
 msgid "Color"
 msgstr "색상"
 
+msgid "Filament notes"
+msgstr ""
+
+msgid "You can put your notes regarding the filament here."
+msgstr ""
+
 msgid "Required nozzle HRC"
 msgstr "필수 노즐 록웰 경도"
 
@@ -7943,10 +8001,10 @@ msgstr "팬 최대 속도 레이어"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "팬 속도는 \"close_fan_the_first_x_layers\" 의 0에서 \"full_fan_speed_layer\" "
 "의 최고 속도까지 선형적으로 증가합니다. \"full_fan_speed_layer\"가 "
@@ -8382,8 +8440,8 @@ msgstr "퇴출 중 최대 가속도 (M204 R)"
 msgid "Maximum acceleration for travel"
 msgstr "이동 최대 가속도"
 
-msgid "Maximum acceleration for travel (M204 T)"
-msgstr "이동 중 최대 가속도 (M204 T)"
+msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
+msgstr ""
 
 msgid "Fan speed"
 msgstr "팬 속도"
@@ -8437,6 +8495,14 @@ msgstr "노즐 직경"
 
 msgid "Diameter of nozzle"
 msgstr "노즐 직경"
+
+msgid "Configuration notes"
+msgstr ""
+
+msgid ""
+"You can put here your personal notes. This text will be added to the G-code "
+"header comments."
+msgstr ""
 
 msgid "Host Type"
 msgstr "호스트 유형"
@@ -8546,6 +8612,12 @@ msgstr ""
 "십시오. 여러 스크립트는 세미콜론(;)으로 구분합니다. 스크립트는 G코드 파일의 "
 "절대 경로를 첫 번째 인수로 전달하며 환경 변수를 읽어 Slic3r 구성 설정에 접근"
 "할 수 있습니다."
+
+msgid "Printer notes"
+msgstr ""
+
+msgid "You can put your notes regarding the printer here."
+msgstr ""
 
 msgid "Raft contact Z distance"
 msgstr "라프트 접점 Z 거리"
@@ -10252,6 +10324,15 @@ msgstr "장치 검색 중"
 msgid "Finished"
 msgstr "완료됨"
 
+msgid "Multiple resolved IP addresses"
+msgstr ""
+
+#, boost-format
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+
 msgid "Unable to perform boolean operation on selected parts"
 msgstr "선택한 부품에서 부울 연산을 수행할 수 없습니다"
 
@@ -10291,8 +10372,8 @@ msgstr "요소 2"
 msgid "Delete input"
 msgstr "입력개체 삭제"
 
-msgid "Send to print"
-msgstr "프린터로 보내기"
+msgid "Send G-Code to printer host"
+msgstr ""
 
 msgid "Upload to Printer Host with the following filename:"
 msgstr "다음 파일 이름으로 프린터 호스트에 업로드:"
@@ -10300,15 +10381,12 @@ msgstr "다음 파일 이름으로 프린터 호스트에 업로드:"
 msgid "Use forward slashes ( / ) as a directory separator if needed."
 msgstr "필요한 경우 슬래시( / )를 디렉토리 구분 기호로 사용하십시오."
 
+msgid "Upload to storage"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
 msgstr "업로드 파일 이름이 \"%s\"로 끝나지 않습니다. 계속하시겠습니까?"
-
-msgid "Upload and Print"
-msgstr "업로드 및 출력"
-
-msgid "Simulate"
-msgstr "모의실험"
 
 msgid "Print host upload queue"
 msgstr "출력 호스트 업로드 대기열"
@@ -10329,8 +10407,8 @@ msgstr "크기"
 msgid "Filename"
 msgstr "파일 이름"
 
-msgid "Error Message"
-msgstr "에러 메시지"
+msgid "Message"
+msgstr ""
 
 msgid "Cancel selected"
 msgstr "선택 취소"
@@ -10347,8 +10425,8 @@ msgstr "업로드 중"
 msgid "Cancelling"
 msgstr "취소 중"
 
-msgid "Error uploading to print host:"
-msgstr "출력 호스트에 업로드하는 중 오류 발생:"
+msgid "Error uploading to print host"
+msgstr ""
 
 msgid "PA Calibration"
 msgstr "PA 교정"
@@ -10670,8 +10748,8 @@ msgstr ""
 "STEP\n"
 "STL 대신 STEP 파일을 슬라이싱하여 출력 품질을 향상시킬 수 있다는 사실을 알고 "
 "있습니까?\n"
-"GalaxySlicer는 STEP 파일 슬라이싱을 지원하여 저해상도 STL보다 부드러운 결과를 "
-"제공합니다. 시도해 보세요!"
+"GalaxySlicer는 STEP 파일 슬라이싱을 지원하여 저해상도 STL보다 부드러운 결과"
+"를 제공합니다. 시도해 보세요!"
 
 #: resources/data/hints.ini: [hint:Z seam location]
 msgid ""
@@ -10801,102 +10879,26 @@ msgstr ""
 "모델의 강도를 개선하기 위해 더 많은 벽 루프와 더 높은 드문 채우기 밀도를 사용"
 "할 수 있다는 것을 알고 있습니까?"
 
-msgid "Bambu Cube"
-msgstr ""
+#~ msgid "GalaxySlicer "
+#~ msgstr "GalaxySlicer "
 
-msgid "Bambu Cube V2"
-msgstr ""
+#~ msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
 
-msgid "ksr FDMTest"
-msgstr ""
+#~ msgid "Maximum acceleration for travel (M204 T)"
+#~ msgstr "이동 중 최대 가속도 (M204 T)"
 
-#, boost-format
-msgid " plate %1%: "
-msgstr ""
+#~ msgid "Send to print"
+#~ msgstr "프린터로 보내기"
 
-msgid ""
-"There are some unknown or uncompatible filaments mapped to generic preset. "
-"Please update Bambu Studio or restart Bambu Studio to check if there is an "
-"update to system presets."
-msgstr ""
+#~ msgid "Simulate"
+#~ msgstr "모의실험"
 
-msgid "Initial layer flow ratio"
-msgstr ""
+#~ msgid "Error Message"
+#~ msgstr "에러 메시지"
 
-msgid "This factor affects the amount of material for the initial layer"
-msgstr ""
-
-msgid ""
-"Use only one wall on flat top surface, to give more space to the top infill "
-"pattern. Could be applyed on topmost surface or all top surface."
-msgstr ""
-
-msgid "Not apply"
-msgstr ""
-
-msgid ""
-"Enable pressure advance, auto calibration result will be overwriten once "
-"enabled. Useless for Bambu Printer"
-msgstr ""
-
-msgid ""
-"Pressure advance(Klipper) AKA Linear advance factor(Marlin). Useless for "
-"Bambu Printer"
-msgstr ""
-
-msgid "Acceleration of inner walls. 0 means using normal printing acceleration"
-msgstr ""
-
-msgid "Default jerk"
-msgstr ""
-
-msgid "Jerk of infill"
-msgstr ""
-
-msgid "Jerk of top surface"
-msgstr ""
-
-msgid "First layer"
-msgstr ""
-
-msgid "Jerk of first layer"
-msgstr ""
-
-msgid "Jerk of travel"
-msgstr ""
-
-msgid ""
-"Filter out gaps smaller than the threshold specified. This setting won't "
-"affact top/bottom layers"
-msgstr ""
-
-msgid ""
-"Enable this option to add EXCLUDE OBJECT command in g-code for klipper "
-"firmware printer"
-msgstr ""
-
-msgid ""
-"Detect the overhang percentage relative to line width and use different "
-"speed to print. For 100 percent overhang, bridge speed is used."
-msgstr ""
-
-msgid "Direct drive"
-msgstr ""
-
-msgid ""
-"In order to reduce the visibility of the seam in a closed loop extrusion, "
-"the loop is interrupted and shortened by a specified amount.\n"
-"This amount as a percentage of the current extruder diameter. The default "
-"value for this parameter is 15"
-msgstr ""
-
-msgid ""
-"If your firmware requires relative E values, check this, otherwise leave it "
-"unchecked. Must use relative e distance for Bambu printer"
-msgstr ""
-
-msgid "End temp: "
-msgstr ""
+#~ msgid "Error uploading to print host:"
+#~ msgstr "출력 호스트에 업로드하는 중 오류 발생:"
 
 #~ msgid "Assemble the selected parts to a single part"
 #~ msgstr "선택한 부품을 단일 부품으로 조립"
