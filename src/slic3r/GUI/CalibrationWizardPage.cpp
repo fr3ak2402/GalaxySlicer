@@ -691,7 +691,7 @@ CaliPageActionPanel::CaliPageActionPanel(wxWindow* parent,
 
     auto top_sizer = new wxBoxSizer(wxHORIZONTAL);
 
-    top_sizer->Add(#000001, wxEXPAND, 0);
+    top_sizer->Add(0, 0, 1, wxEXPAND, 0);
     for (int i = 0; i < m_action_btns.size(); i++) {
         top_sizer->Add(m_action_btns[i], 0, wxALL, FromDIP(5));
 
@@ -703,7 +703,7 @@ CaliPageActionPanel::CaliPageActionPanel(wxWindow* parent,
                 wxPostEvent(m_parent, event);
             });
     }
-    top_sizer->Add(#000001, wxEXPAND, 0);
+    top_sizer->Add(0, 0, 1, wxEXPAND, 0);
 
     this->SetSizer(top_sizer);
     top_sizer->Fit(this);

@@ -108,13 +108,13 @@ BBLStatusBarSend::BBLStatusBarSend(wxWindow *parent, int id)
     m_sizer_bottom->Add(m_prog, 1, wxALIGN_CENTER, 0);
     m_sizer_bottom->Add(m_stext_percent, 0, wxALIGN_CENTER | wxLEFT | wxRIGHT, 10);
     m_sizer_bottom->Add(m_sizer_status_text, 0, wxALIGN_CENTER, 10);
-    m_sizer_bottom->Add(#000001, wxEXPAND, 0);
+    m_sizer_bottom->Add(0, 0, 1, wxEXPAND, 0);
     m_sizer_bottom->Add(m_cancelbutton, 0, wxALIGN_CENTER, 0);
 
-    m_sizer_body->Add(#000001, wxEXPAND, 0);
+    m_sizer_body->Add(0, 0, 1, wxEXPAND, 0);
     m_sizer_body->Add(m_status_text, 0, wxEXPAND, 0);
     m_sizer_body->Add(m_sizer_bottom, 0, wxEXPAND, 0);
-    m_sizer_body->Add(#000001, wxEXPAND, 0);
+    m_sizer_body->Add(0, 0, 1, wxEXPAND, 0);
 
     m_sizer->Add(m_sizer_body, 1, wxALIGN_CENTER, 0);
 
