@@ -4265,77 +4265,63 @@ Semver get_version(const std::string& str, const std::regex& regexp) {
 
 void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
 {
-AppConfig* app_config = wxGetApp().app_config;
+    AppConfig* app_config = wxGetApp().app_config;
     auto version_check_url = app_config->version_check_url();
-    Http::get(version_check_url).on_error([&](std::string body, std::string error, unsigned http_status) 
-    {
-        (void)body;
-        BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%",
-            version_check_url,
-            http_status,
-            error);
-    })
-    .timeout_connect(1)
-    .on_complete([&](std::string body, unsigned /* http_status */) 
-    {
-         boost::trim(body);
+    Http::get(version_check_url)
+        .on_error([&](std::string body, std::string error, unsigned http_status) {
+          (void)body;
+          BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "check_new_version_sf", http_status,
+                                             error);
+        })
+        .timeout_connect(1)
+        .on_complete([&](std::string body, unsigned http_status) {
+          // Http response OK
+          if (http_status != 200)
+            return;
+          try {
+            boost::trim(body);
+            // SoftFever: parse github release, ported from SS
 
-        // GalaxySlicer: parse github release, ported from SS
-        boost::property_tree::ptree root;
-        std::stringstream json_stream(body);
-        boost::property_tree::read_json(json_stream, root);
-        bool i_am_pre = false;
-            
-        //at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
-        std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
+            boost::property_tree::ptree root;
 
-        Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
+            std::stringstream json_stream(body);
+            boost::property_tree::read_json(json_stream, root);
 
-        BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_short());
+            bool i_am_pre = false;
+            // at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for
+            // metadata
+            std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
-        Semver best_pre(#000000);
-        Semver best_release(#000000);
-        std::string best_pre_url;
-        std::string best_release_url;
-        std::string best_release_content;
-        std::string best_pre_content;
-
-        //go through the complete JSON from the Github API to determine the current version of GalaxySlicer
-        for (auto json_version : root) 
-        {
-            //From the tag_name the version of the release can be determi
-            std::string tag = json_version.second.get<std::string>("tag_name");
-
-            //GalaxySlicer: In the tags of GalaxySlicer a 'V' is used for the version
-            if (tag[0] == 'V') 
-            {
-                //removes the V from the tag
+            Semver current_version = get_version(SoftFever_VERSION, matcher);
+            Semver best_pre(1, 0, 0);
+            Semver best_release(1, 0, 0);
+            std::string best_pre_url;
+            std::string best_release_url;
+            std::string best_release_content;
+            std::string best_pre_content;
+            const std::regex reg_num("([0-9]+)");
+            for (auto json_version : root) {
+              std::string tag = json_version.second.get<std::string>("tag_name");
+              if (tag[0] == 'v')
                 tag.erase(0, 1);
-            }
-
-            Semver tag_version = get_version(tag, matcher);
-
-            if (current_version == tag_version) 
-            {
+              for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num);
+                   it != std::sregex_iterator(); ++it) {
+              }
+              Semver tag_version = get_version(tag, matcher);
+              if (current_version == tag_version)
                 i_am_pre = json_version.second.get<bool>("prerelease");
-            }
-
-            if (json_version.second.get<bool>("prerelease")) 
-            {
-                if (best_pre < tag_version) 
-                {
-                    best_pre = tag_version;
-                    best_pre_url = json_version.second.get<std::string>("html_url");
-                    best_pre_content = json_version.second.get<std::string>("body");
-                    best_pre.set_prerelease("Preview");
+              if (json_version.second.get<bool>("prerelease")) {
+                if (best_pre < tag_version) {
+                  best_pre = tag_version;
+                  best_pre_url = json_version.second.get<std::string>("html_url");
+                  best_pre_content = json_version.second.get<std::string>("body");
+                  best_pre.set_prerelease("Preview");
                 }
-            }
-            else {
-                if (best_release < tag_version) 
-                {
-                    best_release = tag_version;
-                    best_release_url = json_version.second.get<std::string>("html_url");
-                    best_release_content = json_version.second.get<std::string>("body");
+              } else {
+                if (best_release < tag_version) {
+                  best_release = tag_version;
+                  best_release_url = json_version.second.get<std::string>("html_url");
+                  best_release_content = json_version.second.get<std::string>("body");
                 }
               }
             }
@@ -6387,7 +6373,7 @@ static bool set_into_win_registry(HKEY hkeyHive, const wchar_t* pszVar, const wc
 
     DWORD dwDisposition;
     HKEY hkey;
-    iRC = ::RegCreateKeyExW(hkeyHive, pszVar, #000000, KEY_ALL_ACCESS, nullptr, &hkey, &dwDisposition);
+    iRC = ::RegCreateKeyExW(hkeyHive, pszVar, 0, 0, 0, KEY_ALL_ACCESS, nullptr, &hkey, &dwDisposition);
     bool ret = false;
     if (iRC == ERROR_SUCCESS) {
         iRC = ::RegSetValueExW(hkey, L"", 0, REG_SZ, (BYTE*)pszValue, (::wcslen(pszValue) + 1) * sizeof(wchar_t));
@@ -6431,7 +6417,7 @@ void GUI_App::associate_files(std::wstring extend)
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
     std::wstring prog_path = L"\"" + std::wstring(app_path) + L"\"";
-    std::wstring prog_id = L" Orca.Slicer.1";
+    std::wstring prog_id = L" Galaxy.Slicer.1";
     std::wstring prog_desc = L"GalaxySlicer";
     std::wstring prog_command = prog_path + L" \"%1\"";
     std::wstring reg_base = L"Software\\Classes";
@@ -6454,7 +6440,7 @@ void GUI_App::disassociate_files(std::wstring extend)
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
     std::wstring prog_path = L"\"" + std::wstring(app_path) + L"\"";
-    std::wstring prog_id = L" Orca.Slicer.1";
+    std::wstring prog_id = L" Galaxy.Slicer.1";
     std::wstring prog_desc = L"GalaxySlicer";
     std::wstring prog_command = prog_path + L" \"%1\"";
     std::wstring reg_base = L"Software\\Classes";
