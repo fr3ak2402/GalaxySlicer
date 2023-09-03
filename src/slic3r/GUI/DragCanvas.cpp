@@ -8,7 +8,7 @@ namespace Slic3r { namespace GUI {
 #define SHAPE_SIZE FromDIP(20)
 #define SHAPE_GAP (2 * SHAPE_SIZE)
 #define LINE_HEIGHT (SHAPE_SIZE + FromDIP(5))
-static const wxColour CANVAS_BORDER_COLOR = wxColour('#CECECE');
+static const wxColour CANVAS_BORDER_COLOR = wxColour("#CECECE");
 
 DragCanvas::DragCanvas(wxWindow* parent, const std::vector<std::string>& colors, const std::vector<int>& order)
     : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize)

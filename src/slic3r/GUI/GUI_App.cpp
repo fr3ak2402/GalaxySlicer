@@ -284,7 +284,7 @@ public:
         BitmapCache bmp_cache;
         int background_width = FromDIP(562 * m_scale);
         int background_height = FromDIP(238 * m_scale);
-        wxBitmap background_bmp = *bmp_cache.load_svg("splash_background", background_width, background_height);
+        wxBitmap background_bmp = *bmp_cache.load_svg("splash_versioncard", background_width, background_height);
 
         //set XY Position to draw background
         memDc.DrawBitmap(background_bmp, (width - background_width) / 2, (width - background_width) / 2, true);
@@ -4009,8 +4009,8 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
             //TODO 
             Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
-            Semver best_pre(1, 0, 0);
-            Semver best_release(1, 0, 0);
+            Semver best_pre(0, 0, 0);
+            Semver best_release(0, 0, 0);
             std::string best_pre_url;
             std::string best_release_url;
             std::string best_release_content;
@@ -4052,8 +4052,9 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             if ((i_am_pre ? best_pre : best_release) <= current_version)
               return;
 
-            // BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...",
-            // SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
+            //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string_output(): best_release.to_string_output());
+            BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
+            BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
 
             version_info.url = i_am_pre ? best_pre_url : best_release_url;
             version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();

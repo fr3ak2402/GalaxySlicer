@@ -192,14 +192,14 @@ void TempInput::Warning(bool warn, WarningType type)
     if (warning_mode) {
         if (wdialog == nullptr) {
             wdialog = new PopupWindow(this);
-            wdialog->SetBackgroundColour(wxColour('#FFFFFF'));
+            wdialog->SetBackgroundColour(wxColour("#FFFFFF"));
 
             wdialog->SetSizeHints(wxDefaultSize, wxDefaultSize);
 
             wxBoxSizer *sizer_body = new wxBoxSizer(wxVERTICAL);
 
             auto body = new wxPanel(wdialog, wxID_ANY, wxDefaultPosition, {this->GetSize().x - 4, -1}, wxTAB_TRAVERSAL);
-            body->SetBackgroundColour(wxColour('#FFFFFF'));
+            body->SetBackgroundColour(wxColour("#FFFFFF"));
 
 
             wxBoxSizer *sizer_text;

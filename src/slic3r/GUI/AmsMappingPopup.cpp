@@ -684,7 +684,7 @@ void MappingItem::doRender(wxDC &dc)
     }
 
 
-    wxColour side_colour = wxColour('#E4E4E4');
+    wxColour side_colour = wxColour("#E4E4E4");
 
     dc.SetPen(side_colour);
     dc.SetBrush(wxBrush(side_colour));
@@ -872,7 +872,7 @@ AmsHumidityTipPopup::AmsHumidityTipPopup(wxWindow* parent)
     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(199, 172, 203), StateColor::Pressed), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
     m_button_confirm->SetBackgroundColor(btn_bg_green);
     m_button_confirm->SetBorderColor(wxColour(105, 58, 113));
-    m_button_confirm->SetTextColor(wxColour('#FFFFFE'));
+    m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
     m_button_confirm->SetSize(wxSize(FromDIP(72), FromDIP(24)));
     m_button_confirm->SetMinSize(wxSize(FromDIP(72), FromDIP(24)));
     m_button_confirm->SetCornerRadius(FromDIP(12));
@@ -1036,14 +1036,14 @@ AmsIntroducePopup::AmsIntroducePopup(wxWindow* parent)
 
     m_staticText_top = new Label(this, _L("Do not Enable AMS"));
     m_staticText_top->SetFont(::Label::Head_13);
-   // m_staticText_top->SetForegroundColour(wxColour('#323A3D'));
+   // m_staticText_top->SetForegroundColour(wxColour("#323A3D"));
     m_staticText_top->Wrap(-1);
     bSizer4->Add(m_staticText_top, 0, wxALL, 5);
 
     m_staticText_bottom =  new Label(this, _L("Print using materials mounted on the back of the case"));
     m_staticText_bottom->Wrap(-1);
     m_staticText_bottom->SetFont(::Label::Body_13);
-    m_staticText_bottom->SetForegroundColour(wxColour('#6B6B6B'));
+    m_staticText_bottom->SetForegroundColour(wxColour("#6B6B6B"));
     bSizer4->Add(m_staticText_bottom, 0, wxALL, 5);
 
     wxBoxSizer* bSizer5;
@@ -1217,14 +1217,14 @@ void AmsReplaceMaterialDialog::create()
         std::pair<wxColour, int>(AMS_CONTROL_DEF_BLOCK_BK_COLOUR, StateColor::Hovered),
         std::pair<wxColour, int>(AMS_CONTROL_WHITE_COLOUR, StateColor::Normal));
 
-    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
-    StateColor btn_text_white(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    StateColor btn_text_white(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
 
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour('#C7ACCB'), StateColor::Pressed), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour("#C7ACCB"), StateColor::Pressed), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
     m_button_sizer->Add( 0, 0, 1, wxEXPAND, 0 );
 
     m_main_sizer->Add(0,0,0, wxTOP, FromDIP(12));
@@ -1489,7 +1489,7 @@ void AmsRMGroup::doRender(wxDC& dc)
 
         dc.SetPen(*wxTRANSPARENT_PEN);
 
-        if (tray_color == *wxWHITE) dc.SetPen(wxPen(wxColour('#EEEEEE'), 2));
+        if (tray_color == *wxWHITE) dc.SetPen(wxPen(wxColour("#EEEEEE"), 2));
         dc.SetBrush(wxBrush(tray_color));
 
         int x = size.x / 2;
@@ -1535,7 +1535,7 @@ void AmsRMGroup::doRender(wxDC& dc)
         //draw tray
         dc.SetFont(::Label::Body_12);
         auto text_size = dc.GetTextExtent(tray_name);
-        dc.SetTextForeground(tray_color.GetLuminance() < 0.6 ? *wxWHITE : wxColour('#262E30'));
+        dc.SetTextForeground(tray_color.GetLuminance() < 0.6 ? *wxWHITE : wxColour("#262E30"));
         dc.DrawText(tray_name, x_center - text_size.x / 2, size.y - y_center - text_size.y / 2);
 
         //draw split line
@@ -1563,7 +1563,7 @@ void AmsRMGroup::doRender(wxDC& dc)
     //dc.DrawBitmap(bitmap_backup_tips_1.bmp(), wxPoint((size.x - bitmap_backup_tips_1.GetBmpSize().x) / 2, (size.y - bitmap_backup_tips_1.GetBmpSize().y) / 2));
 
     //draw material
-    dc.SetTextForeground(wxColour('#323A3D'));
+    dc.SetTextForeground(wxColour("#323A3D"));
     dc.SetFont(Label::Head_15);
     auto text_size = dc.GetTextExtent(m_material_name);
     dc.DrawText(m_material_name, (size.x - text_size.x) / 2,(size.y - text_size.y) / 2 - FromDIP(12));

@@ -36,18 +36,18 @@ BBLStatusBarSend::BBLStatusBarSend(wxWindow *parent, int id)
     m_prog->SetMinSize(wxSize(m_self->FromDIP(300),m_self->FromDIP(6)));
     m_prog->SetValue(0);
 
-    //StateColor btn_bd_white(std::pair<wxColour, int>(*wxWHITE, StateColor::Disabled), std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    //StateColor btn_bd_white(std::pair<wxColour, int>(*wxWHITE, StateColor::Disabled), std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
     StateColor btn_bt_white(std::pair<wxColour, int>(wxColour(0x90, 0x90, 0x90), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#CECECE'), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour('#EEEEEE'), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour("#CECECE"), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour("#EEEEEE"), StateColor::Hovered),
         std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
 
-    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
 
-    StateColor btn_txt_white(std::pair<wxColour, int>(wxColour("#fffffe"), StateColor::Disabled), std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Normal));
+    StateColor btn_txt_white(std::pair<wxColour, int>(wxColour("#fffffe"), StateColor::Disabled), std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Normal));
 
     m_cancelbutton = new Button(m_self, _L("Cancel"));
     m_cancelbutton->SetSize(wxSize(m_self->FromDIP(58), m_self->FromDIP(22)));
@@ -71,7 +71,7 @@ BBLStatusBarSend::BBLStatusBarSend(wxWindow *parent, int id)
 
     m_sizer_status_text = new wxBoxSizer(wxHORIZONTAL);
     m_link_show_error = new Label(m_self, _L("Check the reason"));
-    m_link_show_error->SetForegroundColour(wxColour('#00AE42'));
+    m_link_show_error->SetForegroundColour(wxColour("#00AE42"));
     m_link_show_error->SetFont(::Label::Head_13);
 
     m_bitmap_show_error_close = create_scaled_bitmap("link_more_error_close", nullptr, 7);

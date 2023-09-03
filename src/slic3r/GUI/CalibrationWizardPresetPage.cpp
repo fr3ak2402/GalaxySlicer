@@ -146,7 +146,7 @@ void CaliPresetWarningPanel::create_panel(wxWindow* parent)
 {
     m_warning_text = new Label(parent, wxEmptyString);
     m_warning_text->SetFont(Label::Body_13);
-    m_warning_text->SetForegroundColour(wxColour('#E65C5C'));
+    m_warning_text->SetForegroundColour(wxColour("#E65C5C"));
     m_warning_text->Wrap(CALIBRATION_TEXT_MAX_LENGTH);
     m_top_sizer->Add(m_warning_text, 0, wxEXPAND | wxTOP | wxBOTTOM, FromDIP(5));
 }
@@ -247,7 +247,7 @@ CaliPresetTipsPanel::CaliPresetTipsPanel(
     long style)
     : wxPanel(parent, id, pos, size, style)
 {
-    this->SetBackgroundColour(wxColour('#EEEEEE'));
+    this->SetBackgroundColour(wxColour("#EEEEEE"));
     this->SetMinSize(wxSize(MIN_CALIBRATION_PAGE_WIDTH, -1));
     
     m_top_sizer = new wxBoxSizer(wxVERTICAL);
@@ -474,7 +474,7 @@ void CalibrationPresetPage::create_filament_list_panel(wxWindow* parent)
     m_filament_list_tips = new Label(parent, _L("Tips for calibration material: \n- Materials that can share same hot bed temperature\n- Different filament brand and family(Brand = Bambu, Family = Basic, Matte)"));
     m_filament_list_tips->Hide();
     m_filament_list_tips->SetFont(Label::Body_13);
-    m_filament_list_tips->SetForegroundColour(wxColour('#919191'));
+    m_filament_list_tips->SetForegroundColour(wxColour("#919191"));
     m_filament_list_tips->Wrap(CALIBRATION_TEXT_MAX_LENGTH);
     panel_sizer->Add(m_filament_list_tips, 0, wxBOTTOM, FromDIP(10));
 

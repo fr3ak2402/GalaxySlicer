@@ -141,27 +141,27 @@ CaliPageButton::CaliPageButton(wxWindow* parent, CaliPageActionType type, wxStri
     : m_action_type(type),
     Button(parent, text)
 {
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour('#CECECE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#C7ACCB'), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour('#9C6DA4'), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour('#693A71'), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour("#CECECE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#C7ACCB"), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour("#9C6DA4"), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour("#693A71"), StateColor::Normal));
 
-    StateColor btn_bg_white(std::pair<wxColour, int>(wxColour('#CECECE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#CECECE'), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour('#EEEEEE'), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour('#FFFFFF'), StateColor::Normal));
+    StateColor btn_bg_white(std::pair<wxColour, int>(wxColour("#CECECE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#CECECE"), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour("#EEEEEE"), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour("#FFFFFF"), StateColor::Normal));
 
-    StateColor btn_bd_green(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#693A71'), StateColor::Enabled));
+    StateColor btn_bd_green(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#693A71"), StateColor::Enabled));
 
-    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    StateColor btn_bd_white(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
-    StateColor btn_text_green(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Enabled));
+    StateColor btn_text_green(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Enabled));
 
-    StateColor btn_text_white(std::pair<wxColour, int>(wxColour('#FFFFFE'), StateColor::Disabled),
-        std::pair<wxColour, int>(wxColour('#262E30'), StateColor::Enabled));
+    StateColor btn_text_white(std::pair<wxColour, int>(wxColour("#FFFFFE"), StateColor::Disabled),
+        std::pair<wxColour, int>(wxColour("#262E30"), StateColor::Enabled));
 
     switch (m_action_type)
     {
@@ -473,7 +473,7 @@ CaliPageStepGuide::CaliPageStepGuide(wxWindow* parent, wxArrayString steps,
     m_step_sizer->AddSpacer(FromDIP(90));
     for (int i = 0; i < m_steps.size(); i++) {
         Label* step_text = new Label(this, m_steps[i]);
-        step_text->SetForegroundColour(wxColour('#CECECE'));
+        step_text->SetForegroundColour(wxColour("#CECECE"));
         m_text_steps.push_back(step_text);
         m_step_sizer->Add(step_text, 0, wxALIGN_CENTER | wxLEFT | wxRIGHT, FromDIP(15));
         if (i != m_steps.size() - 1) {
@@ -495,7 +495,7 @@ CaliPageStepGuide::CaliPageStepGuide(wxWindow* parent, wxArrayString steps,
 void CaliPageStepGuide::set_steps(int index)
 {
     for (Label* text_step : m_text_steps) {
-        text_step->SetForegroundColour(wxColour('#CECECE'));
+        text_step->SetForegroundColour(wxColour("#CECECE"));
     }
     m_text_steps[index]->SetForegroundColour(*wxBLACK);
 
@@ -511,7 +511,7 @@ void CaliPageStepGuide::set_steps_string(wxArrayString steps)
     m_step_sizer->AddSpacer(FromDIP(90));
     for (int i = 0; i < m_steps.size(); i++) {
         Label* step_text = new Label(this, m_steps[i]);
-        step_text->SetForegroundColour(wxColour('#CECECE'));
+        step_text->SetForegroundColour(wxColour("#CECECE"));
         m_text_steps.push_back(step_text);
         m_step_sizer->Add(step_text, 0, wxALIGN_CENTER | wxLEFT | wxRIGHT, FromDIP(15));
         if (i != m_steps.size() - 1) {
@@ -531,7 +531,7 @@ void CaliPageStepGuide::set_steps_string(wxArrayString steps)
 CaliPagePicture::CaliPagePicture(wxWindow* parent, wxWindowID id, const wxPoint& pos, const wxSize& size, long style) 
     : wxPanel(parent, id, pos, size, style)
 {
-    SetBackgroundColour(wxColour('#CECECE'));
+    SetBackgroundColour(wxColour("#CECECE"));
     auto top_sizer = new wxBoxSizer(wxHORIZONTAL);
     top_sizer->AddStretchSpacer();
     m_img = new wxStaticBitmap(this, wxID_ANY, wxNullBitmap);
@@ -551,7 +551,7 @@ PAPageHelpPanel::PAPageHelpPanel(wxWindow* parent, bool ground_panel, wxWindowID
     : wxPanel(parent, id, pos, size, style)
 {
     if (ground_panel)
-        SetBackgroundColour(wxColour('#EEEEEE'));
+        SetBackgroundColour(wxColour("#EEEEEE"));
     else
         SetBackgroundColour(parent->GetBackgroundColour());
     int left_align_padding = ground_panel ? FromDIP(20) : 0;

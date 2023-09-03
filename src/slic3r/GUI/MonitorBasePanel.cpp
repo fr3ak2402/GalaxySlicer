@@ -98,7 +98,7 @@ MonitorBasePanel::MonitorBasePanel(wxWindow* parent, wxWindowID id, const wxPoin
 	bSizerleft->Add(m_panel_printer, 0, wxALL | wxEXPAND, 0);
 
 	m_staticline1 = new StaticLine(m_panel_splitter_left);
-	m_staticline1->SetLineColour(wxColour('#EEEEEE'));
+	m_staticline1->SetLineColour(wxColour("#EEEEEE"));
 	bSizerleft->Add(m_staticline1, 0, wxEXPAND | wxRIGHT | wxLEFT, 14);
 
 	m_panel_status_tab = new wxPanel(m_panel_splitter_left, wxID_ANY, wxDefaultPosition, wxSize(182, 52), wxTAB_TRAVERSAL);
@@ -135,7 +135,7 @@ MonitorBasePanel::MonitorBasePanel(wxWindow* parent, wxWindowID id, const wxPoin
 	bSizerleft->Add(m_panel_status_tab, 0, wxALL | wxEXPAND, 0);
 
 	m_staticline2 = new StaticLine(m_panel_splitter_left);
-	m_staticline2->SetLineColour(wxColour('#EEEEEE'));
+	m_staticline2->SetLineColour(wxColour("#EEEEEE"));
 	bSizerleft->Add(m_staticline2, 0, wxEXPAND | wxRIGHT | wxLEFT, 14);
 
 	m_panel_time_lapse_tab = new wxPanel(m_panel_splitter_left, wxID_ANY, wxDefaultPosition, wxSize(182, 52), wxTAB_TRAVERSAL);
@@ -168,7 +168,7 @@ MonitorBasePanel::MonitorBasePanel(wxWindow* parent, wxWindowID id, const wxPoin
 	bSizerleft->Add(m_panel_time_lapse_tab, 0, wxALL | wxEXPAND, 0);
 
 	m_staticline3 = new StaticLine(m_panel_splitter_left);
-	m_staticline3->SetLineColour(wxColour('#EEEEEE'));
+	m_staticline3->SetLineColour(wxColour("#EEEEEE"));
 	bSizerleft->Add(m_staticline3, 0, wxEXPAND | wxRIGHT | wxLEFT, 14);
 
 	m_panel_video_tab = new wxPanel(m_panel_splitter_left, wxID_ANY, wxDefaultPosition, wxSize(182, 52), wxTAB_TRAVERSAL);
@@ -201,7 +201,7 @@ MonitorBasePanel::MonitorBasePanel(wxWindow* parent, wxWindowID id, const wxPoin
 	bSizerleft->Add(m_panel_video_tab, 0, wxALL | wxEXPAND, 0);
 
 	m_staticline4 = new StaticLine(m_panel_splitter_left);
-	m_staticline4->SetLineColour(wxColour('#EEEEEE'));
+	m_staticline4->SetLineColour(wxColour("#EEEEEE"));
 
 	bSizerleft->Add(m_staticline4, 0, wxEXPAND | wxRIGHT | wxLEFT, 14);
 
@@ -235,7 +235,7 @@ MonitorBasePanel::MonitorBasePanel(wxWindow* parent, wxWindowID id, const wxPoin
 	bSizerleft->Add(m_panel_task_list_tab, 0, wxALL | wxEXPAND, 0);
 
 	m_staticline5 = new StaticLine(m_panel_splitter_left);
-	m_staticline5->SetLineColour(wxColour('#EEEEEE'));
+	m_staticline5->SetLineColour(wxColour("#EEEEEE"));
 	bSizerleft->Add(m_staticline5, 0, wxEXPAND | wxRIGHT | wxLEFT, 14);
 
 
