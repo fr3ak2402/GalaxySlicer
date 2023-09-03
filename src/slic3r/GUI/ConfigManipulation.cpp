@@ -670,7 +670,7 @@ void ConfigManipulation::toggle_print_fff_options(DynamicPrintConfig *config, co
         toggle_line(el, have_arachne);
     toggle_field("detect_thin_wall", !have_arachne);
     
-    // Orca
+    // GalaxySlicer
     auto is_role_based_wipe_speed = config->opt_bool("role_based_wipe_speed");
     toggle_field("wipe_speed",!is_role_based_wipe_speed);
     

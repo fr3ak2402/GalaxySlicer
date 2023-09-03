@@ -65,7 +65,7 @@ wxString get_fail_reason(int code)
      SetBackgroundColour(*wxWHITE);
      wxBoxSizer *m_sizer_main = new wxBoxSizer(wxVERTICAL);
      auto m_line_top = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-     m_line_top->SetBackgroundColour(wxColour(0xa6a9aa));
+     m_line_top->SetBackgroundColour(wxColour(166, 169, 170));
      m_sizer_main->Add(m_line_top, 0, wxEXPAND, 0);
      m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(38));
 
@@ -381,8 +381,8 @@ wxString get_fail_reason(int code)
 
      StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xcecece), StateColor::Disabled),
          std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed),
-         std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
-         std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
+         std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
+         std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
      m_button_bind->SetBackgroundColor(btn_bg_green);
      m_button_bind->SetBorderColor(*wxWHITE);
      m_button_bind->SetTextColor(wxColour("#FFFFFE"));
@@ -391,8 +391,7 @@ wxString get_fail_reason(int code)
      m_button_bind->SetCornerRadius(FromDIP(12));
      m_button_bind->Enable(false);
 
-
-     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(0xcecece), StateColor::Hovered),
+     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
 
      m_button_cancel = new Button(button_panel, _L("Cancel"));
@@ -673,7 +672,7 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      SetBackgroundColour(*wxWHITE);
      wxBoxSizer *m_sizer_main = new wxBoxSizer(wxVERTICAL);
      auto m_line_top = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-     m_line_top->SetBackgroundColour(wxColour(0xa6a9aa));
+     m_line_top->SetBackgroundColour(wxColour(166, 169, 170));
      m_sizer_main->Add(m_line_top, 0, wxEXPAND, 0);
      m_sizer_main->Add(0, 0, 0, wxTOP, FromDIP(38));
 
@@ -731,7 +730,7 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      m_sizer_main->Add(0, 0, 0, wxEXPAND | wxTOP, FromDIP(20));
 
      m_status_text = new wxStaticText(this, wxID_ANY, _L("Would you like to log out the printer?"), wxDefaultPosition, wxSize(BIND_DIALOG_BUTTON_PANEL_SIZE.x, -1), wxST_ELLIPSIZE_END);
-     m_status_text->SetForegroundColour(wxColour(0x6b6b6b));
+     m_status_text->SetForegroundColour(wxColour(107, 107, 107));
      m_status_text->SetFont(::Label::Body_13);
 
 
@@ -740,17 +739,17 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
 
      m_sizer_button->Add(0, 0, 1, wxEXPAND, 5);
      m_button_unbind = new Button(this, _L("Confirm"));
-     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
-                             std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
+     StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
+                             std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
      m_button_unbind->SetBackgroundColor(btn_bg_green);
-     m_button_unbind->SetBorderColor(wxColour(0x693a71));
-     m_button_unbind->SetTextColor(wxColour("#fffffe"));
+     m_button_unbind->SetBorderColor(wxColour(105, 58, 113));
+     m_button_unbind->SetTextColor(wxColour("#FFFFFE"));
      m_button_unbind->SetSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_unbind->SetMinSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_unbind->SetCornerRadius(FromDIP(12));
 
 
-     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(0xcecece), StateColor::Hovered),
+     StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
 
      m_button_cancel = new Button(this, _L("Cancel"));

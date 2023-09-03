@@ -149,13 +149,13 @@ NotificationManager::PopNotification::PopNotification(const NotificationData &n,
 
     m_ErrorColor  = ImVec4(0.9, 0.36, 0.36, 1);
     m_WarnColor   = ImVec4(0.99, 0.69, 0.455, 1);
-    m_NormalColor = ImVec4(0, 0.588, 0.533, 1);
+    m_NormalColor = ImVec4(0.42, 0.28, 0.44, 1);
 
 	m_CurrentColor = m_NormalColor;   //Default
 
 	m_WindowBkgColor = ImVec4(1, 1, 1, 1);
     m_TextColor      = ImVec4(.2f, .2f, .2f, 1.0f);
-    m_HyperTextColor = ImVec4(0, 0.588, 0.533, 1);
+    m_HyperTextColor = ImVec4(0.42, 0.28, 0.44, 1);
 
 	m_WindowRadius = 4.0f * wxGetApp().plater()->get_current_canvas3D()->get_scale();
 }
