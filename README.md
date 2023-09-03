@@ -12,7 +12,7 @@ GalaxySlicer is based on **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer
 
 # Main features
 - Profile Manager (Coming soon)
-- Marlin2 support (Coming soon)
+- Marlin2 support
 - Klipper support
 
 # Supported printers
