@@ -4024,7 +4024,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     best_pre.set_maj(current_version.maj());
                     best_release.set_maj(current_version.maj());
 
-                    BOOST_LOG_TRIVIAL(info) << format("The slicer version is V x.x.x therefore best pre & release was set to %1%.", best_pre.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("The GalaxySlicer version is V x.x.x therefore best pre & release was set to %1%.", best_pre.to_string_output());
                 }
                 //GalaxySlicer:
                 //If the slicer version is Vx.0.0. then the slicer version is set below the major version of the slicer. 
@@ -4034,7 +4034,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     best_pre.set_maj(current_version.maj() - 1);
                     best_release.set_maj(current_version.maj() - 1);
 
-                    BOOST_LOG_TRIVIAL(info) << format("The slicer version is V x.0.0 therefore best pre & release was set to %1%.", best_pre.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("The GalaxySlicer version is V x.0.0 therefore best pre & release was set to %1%.", best_pre.to_string_output());
                 }
 
                 std::string best_pre_url;
