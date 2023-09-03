@@ -2962,16 +2962,16 @@ void GUI_App::init_label_colours()
     m_color_label_sys      = is_dark_mode ? wxColour("#b2b3b5") : wxColour("#363636");
 
 #ifdef _WIN32
-    m_color_label_default           = is_dark_mode ? wxColour(0xfafafa) : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_label_default = is_dark_mode ? wxColour(0xe6e6e6): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
-    m_color_highlight_default       = is_dark_mode ? wxColour(0x4e4e4e)   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
-    m_color_hovered_btn_label       = is_dark_mode ? wxColour(0xfffffe) : wxColour(0x000000);
-    m_color_default_btn_label       = is_dark_mode ? wxColour(0xfffffe): wxColour(0x000000);
-    m_color_selected_btn_bg         = is_dark_mode ? wxColour(0x54545b)   : wxColour(0xcecece);
+    m_color_label_default           = is_dark_mode ? wxColour("#fafafa") : m_color_label_sys; // wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_label_default = is_dark_mode ? wxColour("#e6e6e6"): wxSystemSettings::GetColour(/*wxSYS_COLOUR_HIGHLIGHTTEXT*/wxSYS_COLOUR_WINDOWTEXT);
+    m_color_highlight_default       = is_dark_mode ? wxColour("#4e4e4e")   : wxSystemSettings::GetColour(wxSYS_COLOUR_3DLIGHT);
+    m_color_hovered_btn_label       = is_dark_mode ? wxColour("#fffffe") : wxColour("#000000");
+    m_color_default_btn_label       = is_dark_mode ? wxColour("#fffffe"): wxColour("#000000");
+    m_color_selected_btn_bg         = is_dark_mode ? wxColour("#54545b")   : wxColour("#cecece");
 #else
     m_color_label_default = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
 #endif
-    m_color_window_default          = is_dark_mode ? wxColour(0x2b2b2b)   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
+    m_color_window_default          = is_dark_mode ? wxColour("#2b2b2b")   : wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
     StateColor::SetDarkMode(is_dark_mode);
 }
 
