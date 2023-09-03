@@ -33,12 +33,12 @@
 #include "libslic3r/ProjectTask.hpp"
 #include "wxExtensions.hpp"
 
-#ddeeffine AUFILE_GREY700 wxColour(0x6b6b6b)
-#ddeeffine AUFILE_GREY500 wxColour(0x9e9e9e)
-#ddeeffine AUFILE_GREY300 wxColour(0xeeeeee)
-#ddeeffine AUFILE_GREY200 wxColour(0xf8f8f8)
-#ddeeffine AUFILE_BRAND wxColour(0x693a71)
-#ddeeffine AUFILE_BRAND_TRANSPARENT wxColour(0xd7e8de)
+#define AUFILE_GREY700 wxColour(0x6b6b6b)
+#define AUFILE_GREY500 wxColour(0x9e9e9e)
+#define AUFILE_GREY300 wxColour(0xeeeeee)
+#define AUFILE_GREY200 wxColour(0xf8f8f8)
+#define AUFILE_BRAND wxColour(0x693a71)
+#define AUFILE_BRAND_TRANSPARENT wxColour(0xd7e8de)
 //#define AUFILE_PICTURES_SIZE wxSize(FromDIP(300), FromDIP(300))
 //#define AUFILE_PICTURES_PANEL_SIZE wxSize(FromDIP(300), FromDIP(340))
 #define AUFILE_PICTURES_SIZE wxSize(FromDIP(168), FromDIP(168))
