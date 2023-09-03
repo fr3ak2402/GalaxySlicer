@@ -4024,8 +4024,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     best_pre.set_maj(current_version.maj());
                     best_release.set_maj(current_version.maj());
 
-                    BOOST_LOG_TRIVIAL(info) << format("Pre version: %1%", best_pre.to_string_output());
-                    BOOST_LOG_TRIVIAL(info) << format("Best version: %1%", best_release.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("The slicer version is V x.x.x therefore best pre & release was set to %1%.", best_pre.to_string_output());
                 }
                 //GalaxySlicer:
                 //If the slicer version is Vx.0.0. then the slicer version is set below the major version of the slicer. 
@@ -4035,8 +4034,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     best_pre.set_maj(current_version.maj() - 1);
                     best_release.set_maj(current_version.maj() - 1);
 
-                    BOOST_LOG_TRIVIAL(info) << format("Pre version: %1%", best_pre.to_string_output());
-                    BOOST_LOG_TRIVIAL(info) << format("Best version: %1%", best_release.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("The slicer version is V x.0.0 therefore best pre & release was set to %1%.", best_pre.to_string_output());
                 }
 
                 std::string best_pre_url;
@@ -4055,15 +4053,10 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     {
                         tag.erase(0, 1);
                     }
-
-                    //for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num); it != std::sregex_iterator(); ++it) 
-                    //{
-
-                    //}
               
                     Semver tag_version = get_version(tag, matcher);
 
-                    BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
+                    //BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
 
                     if (current_version == tag_version)
                     {
@@ -4099,8 +4092,8 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                     best_pre_content = best_release_content;
                 }
 
-                BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
-                BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
+                //BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
+                //BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
 
                 // if we're the most recent, don't do anything
                 if ((i_am_pre ? best_pre : best_release) <= current_version)
