@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 01:32+0200\n"
+"POT-Creation-Date: 2023-09-04 00:27+0200\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -614,7 +614,7 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Připojení %s selhalo! [SN:%s, kód=%s]"
 
 msgid ""
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
@@ -6884,6 +6884,21 @@ msgstr ""
 "Čistící věž vyžaduje, aby podpěry měly stejnou výšku vrstvy jako objekt."
 
 msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 "Vynucené podpěry jsou použity, ale podpěry nejsou povoleny. Povolte prosím "
@@ -9395,6 +9410,9 @@ msgstr "Strom Silný"
 msgid "Tree Hybrid"
 msgstr "Strom Hybrid"
 
+msgid "Organic"
+msgstr ""
+
 msgid "Independent support layer height"
 msgstr "Výška nezávislé podpůrné vrstvy"
 
@@ -9429,12 +9447,34 @@ msgstr ""
 "stromu dělat. Pokud se úhel zvětší, větve mohou být vytištěny více "
 "vodorovně, což jim umožní dosáhnout dále."
 
+msgid "Preferred Branch Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+
 msgid "Tree support branch distance"
 msgstr "Vzdálenost větví podpěr stromů"
 
 msgid ""
 "This setting determines the distance between neighboring tree support nodes."
 msgstr "Toto nastavení určuje vzdálenost mezi sousedními uzly podpěr stromů."
+
+msgid "Branch Density"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Density"
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
 
 msgid "Adaptive layer height"
 msgstr "Adaptivní výška vrstvy"
@@ -9462,11 +9502,40 @@ msgstr "Šířka Limce podpěr stromů"
 msgid "Distance from tree branch to the outermost brim line"
 msgstr "Vzdálenost od větve stromu k nejvzdálenější linii Límce"
 
+msgid "Tip Diameter"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Tip Diameter"
+msgid "Branch tip diameter for organic supports."
+msgstr ""
+
 msgid "Tree support branch diameter"
 msgstr "Průměr větve podpěr stromů"
 
 msgid "This setting determines the initial diameter of support nodes."
 msgstr "Toto nastavení určuje počáteční průměr uzlů poděry."
+
+#. TRN PrintSettings: #lmFIXME
+msgid "Branch Diameter Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+
+msgid "Branch Diameter with double walls"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter"
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
 
 msgid "Tree support wall loops"
 msgstr "Stěnové smyčky na podpěry stromů"

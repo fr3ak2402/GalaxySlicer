@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 01:32+0200\n"
+"POT-Creation-Date: 2023-09-04 00:27+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -619,7 +619,7 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Connexion %s échouée ! [SN:%s, code=%s]"
 
 msgid ""
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
@@ -7050,6 +7050,21 @@ msgstr ""
 "l'objet."
 
 msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 "Les supports forcés sont utilisés mais les supports ne sont pas activés. "
@@ -9609,6 +9624,9 @@ msgstr "Arborescents Solides"
 msgid "Tree Hybrid"
 msgstr "Arborescents Hybrides"
 
+msgid "Organic"
+msgstr ""
+
 msgid "Independent support layer height"
 msgstr "Hauteur de la couche indépendante des supports"
 
@@ -9644,12 +9662,34 @@ msgstr ""
 "autorisées à faire. Si l’angle est augmenté, les branches peuvent être "
 "imprimées plus horizontalement, ce qui leur permet de s’étendre plus loin."
 
+msgid "Preferred Branch Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+
 msgid "Tree support branch distance"
 msgstr "Distance des branches"
 
 msgid ""
 "This setting determines the distance between neighboring tree support nodes."
 msgstr "Ce paramètre détermine la distance entre les branches de support."
+
+msgid "Branch Density"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Density"
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
 
 msgid "Adaptive layer height"
 msgstr "Hauteur de couche variable"
@@ -9679,11 +9719,40 @@ msgstr ""
 "Distance entre la branche du support arborescent et la ligne la plus externe "
 "de la bordure"
 
+msgid "Tip Diameter"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Tip Diameter"
+msgid "Branch tip diameter for organic supports."
+msgstr ""
+
 msgid "Tree support branch diameter"
 msgstr "Diamètre des branches"
 
 msgid "This setting determines the initial diameter of support nodes."
 msgstr "Ce paramètre détermine le diamètre initial des branches de support."
+
+#. TRN PrintSettings: #lmFIXME
+msgid "Branch Diameter Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+
+msgid "Branch Diameter with double walls"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter"
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
 
 msgid "Tree support wall loops"
 msgstr "Nombre de parois des branches"

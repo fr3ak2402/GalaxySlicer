@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 01:32+0200\n"
+"POT-Creation-Date: 2023-09-04 00:27+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -597,7 +597,7 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "%s を接続できませんでした　[SN: %s、code = %s]"
 
 msgid ""
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
@@ -6674,6 +6674,21 @@ msgstr ""
 "要があります"
 
 msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 "サポート増強器を有効しましたが、サポート自体は有効されていません。有効にして"
@@ -8927,6 +8942,9 @@ msgstr "ツリーストロング"
 msgid "Tree Hybrid"
 msgstr "ツリーハイブリッド"
 
+msgid "Organic"
+msgstr ""
+
 msgid "Independent support layer height"
 msgstr "独立サポート層ピッチ"
 
@@ -8958,12 +8976,34 @@ msgstr ""
 "ツリータイプのサポートを造形する時の最大オーバーハング最大角度です。この値が"
 "大きくなると、枝部分が繋がりやすくなります。"
 
+msgid "Preferred Branch Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+
 msgid "Tree support branch distance"
 msgstr "ツリーサポート枝間隔"
 
 msgid ""
 "This setting determines the distance between neighboring tree support nodes."
 msgstr "サポートタイプがツリーの時、隣接するノードの距離です。"
+
+msgid "Branch Density"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Density"
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
 
 msgid "Adaptive layer height"
 msgstr "アダプティブ積層ピッチ"
@@ -8987,11 +9027,40 @@ msgstr "Tree support brim width"
 msgid "Distance from tree branch to the outermost brim line"
 msgstr ""
 
+msgid "Tip Diameter"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Tip Diameter"
+msgid "Branch tip diameter for organic supports."
+msgstr ""
+
 msgid "Tree support branch diameter"
 msgstr "ツリーサポート枝直径"
 
 msgid "This setting determines the initial diameter of support nodes."
 msgstr "サポートノードの初期直径です。"
+
+#. TRN PrintSettings: #lmFIXME
+msgid "Branch Diameter Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+
+msgid "Branch Diameter with double walls"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter"
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
 
 msgid "Tree support wall loops"
 msgstr "ツリーサポート壁層数"
