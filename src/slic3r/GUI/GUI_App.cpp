@@ -188,7 +188,7 @@ bool is_associate_files(std::wstring extend)
     wchar_t app_path[MAX_PATH];
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
-    std::wstring prog_id             = L" Orca.Slicer.1";
+    std::wstring prog_id             = L" Galaxy.Slicer.1";
     std::wstring reg_base            = L"Software\\Classes";
     std::wstring reg_extension       = reg_base + L"\\." + extend;
 
@@ -206,7 +206,6 @@ bool is_associate_files(std::wstring extend)
     return false;
 }
 #endif
-
 
 class GalaxySlicerSplashScreen : public wxSplashScreen
 {
@@ -237,7 +236,7 @@ public:
         scale_font(m_constant_text.version_font, 1.2f);
 
         // this font will be used for the action string
-        m_action_font = m_constant_text.credits_font;
+        m_action_font = Label::Body_14;
 
         // draw logo and constant info text
         Decorate(m_main_bitmap);
@@ -253,7 +252,7 @@ public:
             wxMemoryDC memDC;
             memDC.SelectObject(bitmap);
             memDC.SetFont(m_action_font);
-            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(0x909090)));
+            memDC.SetTextForeground(StateColor::darkModeColorFor(wxColour(144, 144, 144)));
             int width = bitmap.GetWidth();
             int text_height = memDC.GetTextExtent(text).GetHeight();
             int text_width = memDC.GetTextExtent(text).GetWidth();
@@ -279,46 +278,32 @@ public:
 
         int top_margin = FromDIP(75 * m_scale);
         int width = bmp.GetWidth();
+        int height = bmp.GetHeight();
 
-        // draw title and version
-        int text_padding = FromDIP(3 * m_scale);
-        memDc.SetFont(m_constant_text.title_font);
-        int title_height = memDc.GetTextExtent(m_constant_text.title).GetHeight();
-        int title_width = memDc.GetTextExtent(m_constant_text.title).GetWidth();
-        memDc.SetFont(m_constant_text.version_font);
-        int version_height = memDc.GetTextExtent(m_constant_text.version).GetHeight();
-        int version_width = memDc.GetTextExtent(m_constant_text.version).GetWidth();
-        int split_width = (width + title_width - version_width) / 2;
-        wxRect title_rect(wxPoint(0, top_margin), wxPoint(split_width - text_padding, top_margin + title_height));
-        memDc.SetTextForeground(StateColor::darkModeColorFor(wxColour(38, 46, 48)));
-        memDc.SetFont(m_constant_text.title_font);
-        memDc.DrawLabel(m_constant_text.title, title_rect, wxALIGN_RIGHT | wxALIGN_BOTTOM);
-        //BBS align bottom of title and version text
-        wxRect version_rect(wxPoint(split_width + text_padding, top_margin), wxPoint(width, top_margin + title_height - text_padding));
-        memDc.SetFont(m_constant_text.version_font);
-        memDc.SetTextForeground(StateColor::darkModeColorFor(wxColor(134, 134, 134)));
-        memDc.DrawLabel(m_constant_text.version, version_rect, wxALIGN_LEFT | wxALIGN_BOTTOM);
-
-        auto bs_version = wxString::Format("Based on BambuStudio and PrusaSlicer").ToStdString();
-        memDc.SetFont(Label::Body_12);
-        wxSize text_rect = memDc.GetTextExtent(bs_version);
-        int start_x = (title_rect.GetLeft() + version_rect.GetRight()) / 2 - text_rect.GetWidth()/2;
-        int start_y = version_rect.GetBottom() + 10;
-        wxRect internal_sign_rect(wxPoint(start_x, start_y), wxSize(text_rect));
-        memDc.DrawLabel(bs_version, internal_sign_rect, wxALIGN_RIGHT);
-
-        // load bitmap for logo
+        //draw background
         BitmapCache bmp_cache;
-        int logo_margin = FromDIP(72 * m_scale);
-        int logo_size = FromDIP(122 * m_scale);
-        int logo_width = FromDIP(94 * m_scale);
-        wxBitmap logo_bmp = *bmp_cache.load_svg("splash_logo", logo_size, logo_size);
-        int logo_y = top_margin + title_rect.GetHeight() + logo_margin;
-        memDc.DrawBitmap(logo_bmp, (width - logo_width) / 2, logo_y, true);
+        int background_width = FromDIP(562 * m_scale);
+        int background_height = FromDIP(238 * m_scale);
+        wxBitmap background_bmp = *bmp_cache.load_svg("splash_background", background_width, background_height);
+
+        //set XY Position to draw background
+        memDc.DrawBitmap(background_bmp, (width - background_width) / 2, (width - background_width) / 2, true);
+
+        //draw based text
+        memDc.SetTextForeground(StateColor::darkModeColorFor(wxColor(38, 46, 48)));
+        memDc.SetFont(m_constant_text.credits_font);
+        int based_height = memDc.GetTextExtent(m_constant_text.credits).GetHeight();
+        int based_width = memDc.GetTextExtent(m_constant_text.credits).GetHeight();
+
+        int based_x = ((width - based_width) / 2) - (based_width / 2);
+        int based_y = height - (based_height + 10);
+
+        wxRect based_rect(wxPoint(0, based_y), wxPoint(width, based_y + based_height));
+        memDc.DrawLabel(m_constant_text.credits, based_rect, wxALIGN_CENTER);
 
         // calculate position for the dynamic text
-        int text_margin = FromDIP(80 * m_scale);
-        m_action_line_y_position = logo_y + logo_size + text_margin;
+        int dynamic_y = (((width - background_width) / 2) * 2) + background_height;
+        m_action_line_y_position = dynamic_y;
     }
 
     static wxBitmap MakeBitmap()
@@ -412,280 +397,11 @@ private:
 
             title_font = Label::Head_16;
             version_font = Label::Body_16;
-            credits_font = init_font;
+            credits_font = Label::Body_10;
         }
     }
     m_constant_text;
 };
-
-class SplashScreen : public wxSplashScreen
-{
-public:
-    SplashScreen(const wxBitmap& bitmap, long splashStyle, int milliseconds, wxPoint pos = wxDefaultPosition)
-        : wxSplashScreen(bitmap, splashStyle, milliseconds, static_cast<wxWindow*>(wxGetApp().mainframe), wxID_ANY, wxDefaultPosition, wxDefaultSize,
-#ifdef __APPLE__
-            wxSIMPLE_BORDER | wxFRAME_NO_TASKBAR | wxSTAY_ON_TOP
-#else
-            wxSIMPLE_BORDER | wxFRAME_NO_TASKBAR
-#endif // !__APPLE__
-        )
-    {
-        wxASSERT(bitmap.IsOk());
-
-        int init_dpi = get_dpi_for_window(this);
-        this->SetPosition(pos);
-        this->CenterOnScreen();
-        int new_dpi = get_dpi_for_window(this);
-
-        m_scale         = (float)(new_dpi) / (float)(init_dpi);
-
-        m_main_bitmap   = bitmap;
-
-        scale_bitmap(m_main_bitmap, m_scale);
-
-        // init constant texts and scale fonts
-        init_constant_text();
-
-        // this font will be used for the action string
-        m_action_font = m_constant_text.credits_font.Bold();
-
-        // draw logo and constant info text
-        Decorate(m_main_bitmap);
-    }
-
-    void SetText(const wxString& text)
-    {
-        set_bitmap(m_main_bitmap);
-        if (!text.empty()) {
-            wxBitmap bitmap(m_main_bitmap);
-
-            wxMemoryDC memDC;
-            memDC.SelectObject(bitmap);
-
-            memDC.SetFont(m_action_font);
-            memDC.SetTextForeground(wxColour(237, 107, 33));
-            memDC.DrawText(text, int(m_scale * 60), m_action_line_y_position);
-
-            memDC.SelectObject(wxNullBitmap);
-            set_bitmap(bitmap);
-#ifdef __WXOSX__
-            // without this code splash screen wouldn't be updated under OSX
-            wxYield();
-#endif
-        }
-    }
-
-    static wxBitmap MakeBitmap(wxBitmap bmp)
-    {
-        if (!bmp.IsOk())
-            return wxNullBitmap;
-
-        // create dark grey background for the splashscreen
-        // It will be 5/3 of the weight of the bitmap
-        int width = lround((double)5 / 3 * bmp.GetWidth());
-        int height = bmp.GetHeight();
-
-        wxImage image(width, height);
-        unsigned char* imgdata_ = image.GetData();
-        for (int i = 0; i < width * height; ++i) {
-            *imgdata_++ = 51;
-            *imgdata_++ = 51;
-            *imgdata_++ = 51;
-        }
-
-        wxBitmap new_bmp(image);
-
-        wxMemoryDC memDC;
-        memDC.SelectObject(new_bmp);
-        memDC.DrawBitmap(bmp, width - bmp.GetWidth(), 0, true);
-
-        return new_bmp;
-    }
-
-    void Decorate(wxBitmap& bmp)
-    {
-        if (!bmp.IsOk())
-            return;
-
-        // draw text to the box at the left of the splashscreen.
-        // this box will be 2/5 of the weight of the bitmap, and be at the left.
-        int width = lround(bmp.GetWidth() * 0.4);
-
-        // load bitmap for logo
-        BitmapCache bmp_cache;
-        int logo_size = lround(width * 0.25);
-        wxBitmap logo_bmp = *bmp_cache.load_svg(wxGetApp().logo_name(), logo_size, logo_size);
-
-        wxCoord margin = int(m_scale * 20);
-
-        wxRect banner_rect(wxPoint(0, logo_size), wxPoint(width, bmp.GetHeight()));
-        banner_rect.Deflate(margin, 2 * margin);
-
-        // use a memory DC to draw directly onto the bitmap
-        wxMemoryDC memDc(bmp);
-
-        // draw logo
-        memDc.DrawBitmap(logo_bmp, margin, margin, true);
-
-        // draw the (white) labels inside of our black box (at the left of the splashscreen)
-        memDc.SetTextForeground(wxColour(255, 255, 255));
-
-        memDc.SetFont(m_constant_text.title_font);
-        memDc.DrawLabel(m_constant_text.title,   banner_rect, wxALIGN_TOP | wxALIGN_LEFT);
-
-        int title_height = memDc.GetTextExtent(m_constant_text.title).GetY();
-        banner_rect.SetTop(banner_rect.GetTop() + title_height);
-        banner_rect.SetHeight(banner_rect.GetHeight() - title_height);
-
-        memDc.SetFont(m_constant_text.version_font);
-        memDc.DrawLabel(m_constant_text.version, banner_rect, wxALIGN_TOP | wxALIGN_LEFT);
-        int version_height = memDc.GetTextExtent(m_constant_text.version).GetY();
-
-        memDc.SetFont(m_constant_text.credits_font);
-        memDc.DrawLabel(m_constant_text.credits, banner_rect, wxALIGN_BOTTOM | wxALIGN_LEFT);
-        int credits_height = memDc.GetMultiLineTextExtent(m_constant_text.credits).GetY();
-        int text_height    = memDc.GetTextExtent("text").GetY();
-
-        // calculate position for the dynamic text
-        int logo_and_header_height = margin + logo_size + title_height + version_height;
-        m_action_line_y_position = logo_and_header_height + 0.5 * (bmp.GetHeight() - margin - credits_height - logo_and_header_height - text_height);
-    }
-
-private:
-    wxBitmap    m_main_bitmap;
-    wxFont      m_action_font;
-    int         m_action_line_y_position;
-    float       m_scale {1.0};
-
-    struct ConstantText
-    {
-        wxString title;
-        wxString version;
-        wxString credits;
-
-        wxFont   title_font;
-        wxFont   version_font;
-        wxFont   credits_font;
-
-        void init(wxFont init_font)
-        {
-            // title
-            title = wxGetApp().is_editor() ? SLIC3R_APP_FULL_NAME : GCODEVIEWER_APP_NAME;
-
-            // dynamically get the version to display
-// #if BBL_INTERNAL_TESTING
-            // version = _L("Internal Version") + " " + std::string(SLIC3R_VERSION);
-// #else
-            // version = _L("") + " " + std::string(SoftFever_VERSION);
-// #endif
-
-            // credits infornation
-            credits =   title;
-
-            title_font = version_font = credits_font = init_font;
-        }
-    }
-    m_constant_text;
-
-    void init_constant_text()
-    {
-        m_constant_text.init(get_default_font(this));
-
-        // As default we use a system font for current display.
-        // Scale fonts in respect to banner width
-
-        int text_banner_width = lround(0.4 * m_main_bitmap.GetWidth()) - roundl(m_scale * 50); // banner_width - margins
-
-        float title_font_scale = (float)text_banner_width / GetTextExtent(m_constant_text.title).GetX();
-        scale_font(m_constant_text.title_font, title_font_scale > 3.5f ? 3.5f : title_font_scale);
-
-        float version_font_scale = (float)text_banner_width / GetTextExtent(m_constant_text.version).GetX();
-        scale_font(m_constant_text.version_font, version_font_scale > 2.f ? 2.f : version_font_scale);
-
-        // The width of the credits information string doesn't respect to the banner width some times.
-        // So, scale credits_font in the respect to the longest string width
-        int   longest_string_width = word_wrap_string(m_constant_text.credits);
-        float font_scale = (float)text_banner_width / longest_string_width;
-        scale_font(m_constant_text.credits_font, font_scale);
-    }
-
-    void set_bitmap(wxBitmap& bmp)
-    {
-        m_window->SetBitmap(bmp);
-        m_window->Refresh();
-        m_window->Update();
-    }
-
-    void scale_bitmap(wxBitmap& bmp, float scale)
-    {
-        if (scale == 1.0)
-            return;
-
-        wxImage image = bmp.ConvertToImage();
-        if (!image.IsOk() || image.GetWidth() == 0 || image.GetHeight() == 0)
-            return;
-
-        int width   = int(scale * image.GetWidth());
-        int height  = int(scale * image.GetHeight());
-        image.Rescale(width, height, wxIMAGE_QUALITY_BILINEAR);
-
-        bmp = wxBitmap(std::move(image));
-    }
-
-    void scale_font(wxFont& font, float scale)
-    {
-#ifdef __WXMSW__
-        // Workaround for the font scaling in respect to the current active display,
-        // not for the primary display, as it's implemented in Font.cpp
-        // See https://github.com/wxWidgets/wxWidgets/blob/master/src/msw/font.cpp
-        // void wxNativeFontInfo::SetFractionalPointSize(float pointSizeNew)
-        wxNativeFontInfo nfi= *font.GetNativeFontInfo();
-        float pointSizeNew  = scale * font.GetPointSize();
-        nfi.lf.lfHeight     = nfi.GetLogFontHeightAtPPI(pointSizeNew, get_dpi_for_window(this));
-        nfi.pointSize       = pointSizeNew;
-        font = wxFont(nfi);
-#else
-        font.Scale(scale);
-#endif //__WXMSW__
-    }
-
-    // wrap a string for the strings no longer then 55 symbols
-    // return extent of the longest string
-    int word_wrap_string(wxString& input)
-    {
-        size_t line_len = 55;// count of symbols in one line
-        int idx = -1;
-        size_t cur_len = 0;
-
-        wxString longest_sub_string;
-        auto get_longest_sub_string = [input](wxString &longest_sub_str, size_t cur_len, size_t i) {
-            if (cur_len > longest_sub_str.Len())
-                longest_sub_str = input.SubString(i - cur_len + 1, i);
-        };
-
-        for (size_t i = 0; i < input.Len(); i++)
-        {
-            cur_len++;
-            if (input[i] == ' ')
-                idx = i;
-            if (input[i] == '\n')
-            {
-                get_longest_sub_string(longest_sub_string, cur_len, i);
-                idx = -1;
-                cur_len = 0;
-            }
-            if (cur_len >= line_len && idx >= 0)
-            {
-                get_longest_sub_string(longest_sub_string, cur_len, i);
-                input[idx] = '\n';
-                cur_len = i - static_cast<size_t>(idx);
-            }
-        }
-
-        return GetTextExtent(longest_sub_string).GetX();
-    }
-};
-
 
 #ifdef __linux__
 bool static check_old_linux_datadir(const wxString& app_name) {
