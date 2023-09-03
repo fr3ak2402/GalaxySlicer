@@ -2091,12 +2091,14 @@ void ImGuiWrapper::init_font(bool compress)
     //FIXME replace with io.Fonts->AddFontFromMemoryTTF(buf_decompressed_data, (int)buf_decompressed_size, m_font_size, nullptr, ranges.Data);
     //https://github.com/ocornut/imgui/issues/220
 
-    // Orca: temp fix for Korean font
+    // SoftFever (OrcaSlicer): temp fix for Korean font
     auto font_name_regular = "HarmonyOS_Sans_SC_Regular.ttf";
     auto font_name_bold = "HarmonyOS_Sans_SC_Bold.ttf";
-    if(m_glyph_ranges == ImGui::GetIO().Fonts->GetGlyphRangesKorean()) {
-        font_name_regular = "NotoSansKR-Regular.otf";
-        font_name_bold = "NotoSansKR-Bold.otf";
+
+    if(m_glyph_ranges == ImGui::GetIO().Fonts->GetGlyphRangesKorean()) 
+    {
+        font_name_regular = "NanumGothic-Regular.ttf";
+        font_name_bold = "NanumGothic-Bold.ttf";
     }
     default_font = io.Fonts->AddFontFromFileTTF((Slic3r::resources_dir() + "/fonts/" + font_name_regular).c_str(), m_font_size, &cfg, ranges.Data);
     if (default_font == nullptr) {
