@@ -300,7 +300,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     m_k_param->SetMinSize(wxSize(FromDIP(80), -1));
     m_k_param->SetMaxSize(wxSize(FromDIP(80), -1));
     m_k_param->SetFont(::Label::Body_13);
-    m_k_param->SetForegroundColour(wxColour(0x323a3d));
+    m_k_param->SetForegroundColour(wxColour(50, 58, 61));
     m_k_param->Wrap(-1);
     kn_val_sizer->Add(m_k_param, 0, wxALL | wxALIGN_CENTER_VERTICAL, FromDIP(0));
 
@@ -314,7 +314,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     wxBoxSizer* n_sizer = new wxBoxSizer(wxHORIZONTAL);
     m_n_param = new wxStaticText(parent, wxID_ANY, _L("Factor N"), wxDefaultPosition, wxDefaultSize, 0);
     m_n_param->SetFont(::Label::Body_13);
-    m_n_param->SetForegroundColour(wxColour(0x323a3d));
+    m_n_param->SetForegroundColour(wxColour(50, 58, 61));
     m_n_param->Wrap(-1);
     kn_val_sizer->Add(m_n_param, 1, wxALL | wxALIGN_CENTER_VERTICAL, FromDIP(5));
     m_input_n_val = new TextInput(parent, wxEmptyString, wxEmptyString, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_CENTRE | wxTE_PROCESS_ENTER);

@@ -561,7 +561,7 @@ void GLGizmoText::push_button_style(bool pressed) {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(43 / 255.f, 64 / 255.f, 54 / 255.f, 1.f));
             ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(43 / 255.f, 64 / 255.f, 54 / 255.f, 1.f));
             ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(43 / 255.f, 64 / 255.f, 54 / 255.f, 1.f));
-            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(0.f, 174 / 255.f, 66 / 255.f, 1.f));
+            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(58 / 255.f, 77 / 255.f, 113 / 255.f, 1.f));
         }
         else {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(45.f / 255.f, 45.f / 255.f, 49.f / 255.f, 1.f));
@@ -575,7 +575,7 @@ void GLGizmoText::push_button_style(bool pressed) {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(219 / 255.f, 253 / 255.f, 231 / 255.f, 1.f));
             ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(219 / 255.f, 253 / 255.f, 231 / 255.f, 1.f));
             ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(219 / 255.f, 253 / 255.f, 231 / 255.f, 1.f));
-            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(0.f, 174 / 255.f, 66 / 255.f, 1.f));
+            ImGui::PushStyleColor(ImGuiCol_Border, ImVec4(58 / 255.f, 77 / 255.f, 113 / 255.f, 1.f));
         }
         else {
             ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(1.f, 1.f, 1.f, 1.f));
@@ -596,10 +596,10 @@ void GLGizmoText::push_combo_style(const float scale) {
         ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 1.0f * scale);
         ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.0f * scale);
         ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BG_DARK);
-        ImGui::PushStyleColor(ImGuiCol_BorderActive, ImVec4(0.00f, 0.68f, 0.26f, 1.00f));
-        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.00f, 0.68f, 0.26f, 0.0f));
-        ImGui::PushStyleColor(ImGuiCol_HeaderActive, ImVec4(0.00f, 0.68f, 0.26f, 1.0f));
-        ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.00f, 0.68f, 0.26f, 1.0f));
+        ImGui::PushStyleColor(ImGuiCol_BorderActive, ImVec4(0.42f, 0.23f, 0.44f, 1.00f));
+        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.62f, 0.43f, 0.64f, 0.00f));
+        ImGui::PushStyleColor(ImGuiCol_HeaderActive, ImVec4(0.62f, 0.43f, 0.64f, 1.00f));
+        ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.62f, 0.43f, 0.64f, 1.00f));
         ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, ImGuiWrapper::COL_WINDOW_BG_DARK);
         ImGui::PushStyleColor(ImGuiCol_Button, { 1.00f, 1.00f, 1.00f, 0.0f });
     }
@@ -607,10 +607,10 @@ void GLGizmoText::push_combo_style(const float scale) {
         ImGui::PushStyleVar(ImGuiStyleVar_FrameRounding, 1.0f * scale);
         ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.0f * scale);
         ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BG);
-        ImGui::PushStyleColor(ImGuiCol_BorderActive, ImVec4(0.00f, 0.68f, 0.26f, 1.00f));
-        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.00f, 0.68f, 0.26f, 0.0f));
-        ImGui::PushStyleColor(ImGuiCol_HeaderActive, ImVec4(0.00f, 0.68f, 0.26f, 1.0f));
-        ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.00f, 0.68f, 0.26f, 1.0f));
+        ImGui::PushStyleColor(ImGuiCol_BorderActive, ImVec4(0.42f, 0.23f, 0.44f, 1.00f));
+        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, ImVec4(0.62f, 0.43f, 0.64f, 0.00f));
+        ImGui::PushStyleColor(ImGuiCol_HeaderActive, ImVec4(0.62f, 0.43f, 0.64f, 1.00f));
+        ImGui::PushStyleColor(ImGuiCol_Header, ImVec4(0.62f, 0.43f, 0.64f, 1.00f));
         ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, ImGuiWrapper::COL_WINDOW_BG);
         ImGui::PushStyleColor(ImGuiCol_Button, { 1.00f, 1.00f, 1.00f, 0.0f });
     }
