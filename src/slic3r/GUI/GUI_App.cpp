@@ -4048,13 +4048,15 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
               best_pre_url = best_release_url;
               best_pre_content = best_release_content;
             }
+
+            BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
+            BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
+
             // if we're the most recent, don't do anything
             if ((i_am_pre ? best_pre : best_release) <= current_version)
               return;
 
             //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string_output(): best_release.to_string_output());
-            BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
-            BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
 
             version_info.url = i_am_pre ? best_pre_url : best_release_url;
             version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
