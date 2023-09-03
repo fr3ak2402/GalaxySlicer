@@ -4011,7 +4011,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                 // at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
                 std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
 
-                //TODO 
+                //Current Slicer version
                 Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
 
                 Semver best_pre(0, 0, 0);
@@ -4056,7 +4056,13 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
               
                     Semver tag_version = get_version(tag, matcher);
 
-                    //BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
+                    //GalaxySlicer: If tag version older than current version, skip
+                    if (tag_version < current_version)
+                    {
+                        continue;
+                    }
+
+                    BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
 
                     if (current_version == tag_version)
                     {

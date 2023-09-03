@@ -7,7 +7,7 @@ else()
 	set(_oneTBB_hash 78fb7bb29b415f53de21a68c4fdf97de8ae035090d9ee9caa221e32c6e79567c)
 endif()
 
-galaxyslicer_add_cmake_project(
+add_to_galaxyslicer_cmake_project(
     TBB
     URL ${_oneTBB_url}
     URL_HASH SHA256=${_oneTBB_hash}

@@ -230,8 +230,8 @@ AboutDialog::AboutDialog()
     main_sizer->Add(m_panel, 1, wxEXPAND | wxALL, 0);
     main_sizer->Add(ver_sizer, 0, wxEXPAND | wxALL, 0);
 
-    // logo
-    m_logo_bitmap = ScalableBitmap(this, "GalaxySlicer_about", 250);
+    // about image
+    m_logo_bitmap = ScalableBitmap(this, "GalaxySlicer_aboutcard", 250);
     m_logo = new wxStaticBitmap(this, wxID_ANY, m_logo_bitmap.bmp(), wxDefaultPosition,wxDefaultSize, 0);
     m_logo->SetSizer(vesizer);
 
