@@ -4022,7 +4022,12 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
                 if (current_version.maj() != 0 && current_version.patch() != 0)
                 {
                     best_pre.set_maj(current_version.maj());
+                    best_pre.set_min(current_version.min());
+                    best_pre.set_patch(current_version.patch());
+
                     best_release.set_maj(current_version.maj());
+                    best_release.set_min(current_version.min());
+                    best_release.set_patch(current_version.patch());
 
                     BOOST_LOG_TRIVIAL(info) << format("The GalaxySlicer version is V x.x.x therefore best pre & release was set to %1%.", best_pre.to_string_output());
                 }
