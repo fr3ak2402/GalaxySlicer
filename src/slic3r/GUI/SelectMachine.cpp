@@ -1110,7 +1110,7 @@ SelectMachineDialog::SelectMachineDialog(Plater *plater)
     m_sizer_backup = new wxBoxSizer(wxHORIZONTAL);
     m_ams_backup_tip = new Label(this, _L("Auto Refill"));
     m_ams_backup_tip->SetFont(::Label::Head_12);
-    m_ams_backup_tip->SetForegroundColour(wxColour(0x693a71));
+    m_ams_backup_tip->SetForegroundColour(wxColour('#693A71'));
     m_ams_backup_tip->SetBackgroundColour(*wxWHITE);
     img_ams_backup = new wxStaticBitmap(this, wxID_ANY, create_scaled_bitmap("automatic_material_renewal", this, 16), wxDefaultPosition, wxSize(FromDIP(16), FromDIP(16)), 0);
     img_ams_backup->SetBackgroundColour(*wxWHITE);
@@ -2379,7 +2379,7 @@ void SelectMachineDialog::on_ok_btn(wxCommandEvent &event)
 void SelectMachineDialog::Enable_Auto_Refill(bool enable)
 {
     if (enable) {
-        m_ams_backup_tip->SetForegroundColour(wxColour(0x693a71));
+        m_ams_backup_tip->SetForegroundColour(wxColour('#693A71'));
     }
     else {
         m_ams_backup_tip->SetForegroundColour(wxColour(0x90, 0x90, 0x90));
@@ -4010,7 +4010,7 @@ EditDevNameDialog::EditDevNameDialog(Plater *plater /*= nullptr*/)
 
 
     m_button_confirm = new Button(this, _L("Confirm"));
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour('#C7ACCB'), StateColor::Pressed), std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
     m_button_confirm->SetBackgroundColor(btn_bg_green);
     m_button_confirm->SetBorderColor(wxColour(105, 58, 113));
     m_button_confirm->SetTextColor(wxColour(255, 255, 255));

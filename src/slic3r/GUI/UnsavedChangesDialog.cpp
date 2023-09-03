@@ -967,7 +967,7 @@ void UnsavedChangesDialog::build(Preset::Type type, PresetCollection *dependent_
 
      // Add Buttons
     wxFont      btn_font = this->GetFont().Scaled(1.4f);
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour('#C7ACCB'), StateColor::Pressed), std::pair<wxColour, int>(wxColour(156, 109, 164), StateColor::Hovered),
                             std::pair<wxColour, int>(wxColour(105, 58, 113), StateColor::Normal));
 
     auto add_btn = [this, m_sizer_button, btn_font, dependent_presets, btn_bg_green](Button **btn, int &btn_id, const std::string &icon_name, Action close_act, const wxString &label,

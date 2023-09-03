@@ -39,8 +39,8 @@ SideButton::SideButton(wxWindow* parent, wxString text, wxString icon, long stly
     text_color.append(0xFEFEFE, StateColor::Normal);
 
     background_color.append(0x6B6B6B, StateColor::Disabled);
-    background_color.append(wxColour(0xc7accb), StateColor::Pressed);
-    background_color.append(wxColour(0x9c6da4), StateColor::Hovered);
+    background_color.append(wxColour('#C7ACCB'), StateColor::Pressed);
+    background_color.append(wxColour('#9C6DA4'), StateColor::Hovered);
     background_color.append(0x693a71, StateColor::Normal);
     background_color.setTakeFocusedAsHovered(false);
 

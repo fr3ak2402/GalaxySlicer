@@ -34,18 +34,18 @@ void AMSMaterialsSetting::create()
     m_sizer_button->Add(0, 0, 1, wxEXPAND, 0);
 
     m_button_confirm = new Button(this, _L("Confirm"));
-    m_btn_bg_green   = StateColor(std::pair<wxColour, int>(wxColour(0xc7accb), StateColor::Pressed), std::pair<wxColour, int>(wxColour(0x9c6da4), StateColor::Hovered),
-                            std::pair<wxColour, int>(wxColour(0x693a71), StateColor::Normal));
+    m_btn_bg_green   = StateColor(std::pair<wxColour, int>(wxColour('#C7ACCB'), StateColor::Pressed), std::pair<wxColour, int>(wxColour('#9C6DA4'), StateColor::Hovered),
+                            std::pair<wxColour, int>(wxColour('#693A71'), StateColor::Normal));
     m_button_confirm->SetBackgroundColor(m_btn_bg_green);
-    m_button_confirm->SetBorderColor(wxColour(0x693a71));
+    m_button_confirm->SetBorderColor(wxColour('#693A71'));
     m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
     m_button_confirm->SetMinSize(AMS_MATERIALS_SETTING_BUTTON_SIZE);
     m_button_confirm->SetCornerRadius(FromDIP(12));
     m_button_confirm->Bind(wxEVT_BUTTON, &AMSMaterialsSetting::on_select_ok, this);
 
     m_button_reset = new Button(this, _L("Reset"));
-    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour(0xcecece), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
-        std::pair<wxColour, int>(wxColour(0xeeeeee), StateColor::Hovered),
+    m_btn_bg_gray = StateColor(std::pair<wxColour, int>(wxColour('#CECECE'), StateColor::Pressed), std::pair<wxColour, int>(*wxWHITE, StateColor::Focused),
+        std::pair<wxColour, int>(wxColour('#EEEEEE'), StateColor::Hovered),
         std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
     m_button_reset->SetBackgroundColor(m_btn_bg_gray);
     m_button_reset->SetBorderColor(AMS_MATERIALS_SETTING_GREY900);
@@ -219,7 +219,7 @@ void AMSMaterialsSetting::create_panel_normal(wxWindow* parent)
         (boost::format(_u8L("The input value should be greater than %1% and less than %2%")) % FILAMENT_MIN_TEMP % FILAMENT_MAX_TEMP).str());
     warning_text = new wxStaticText(parent, wxID_ANY, warning_string, wxDefaultPosition, wxDefaultSize, 0);
     warning_text->SetFont(::Label::Body_13);
-    warning_text->SetForegroundColour(wxColour(0xff6f00));
+    warning_text->SetForegroundColour(wxColour('#FF6F00'));
 
     warning_text->Wrap(AMS_MATERIALS_SETTING_BODY_WIDTH);
     warning_text->SetMinSize(wxSize(AMS_MATERIALS_SETTING_BODY_WIDTH, -1));
@@ -273,7 +273,7 @@ void AMSMaterialsSetting::create_panel_kn(wxWindow* parent)
     auto sizer = new wxBoxSizer(wxVERTICAL);
     // title
     m_ratio_text = new wxStaticText(parent, wxID_ANY, _L("Factors of Flow Dynamics Calibration"));
-    m_ratio_text->SetForegroundColour(wxColour(0x323a3d));
+    m_ratio_text->SetForegroundColour(wxColour('#323A3D'));
     m_ratio_text->SetFont(Label::Head_14);
 
     wxBoxSizer *m_sizer_cali_resutl = new wxBoxSizer(wxHORIZONTAL);
@@ -984,7 +984,7 @@ void AMSMaterialsSetting::on_select_filament(wxCommandEvent &evt)
     }
     else {
         m_button_confirm->SetBackgroundColor(m_btn_bg_green);
-        m_button_confirm->SetBorderColor(wxColour(0x693a71));
+        m_button_confirm->SetBorderColor(wxColour('#693A71'));
         m_button_confirm->SetTextColor(wxColour("#FFFFFE"));
         m_button_confirm->Enable(true);
     }
@@ -1155,7 +1155,7 @@ void ColorPicker::doRender(wxDC& dc)
     }
 
     if (m_show_full) {
-        dc.SetPen(wxPen(wxColour(0x6B6B6B)));
+        dc.SetPen(wxPen(wxColour('#6B6B6B')));
         dc.SetBrush(*wxTRANSPARENT_BRUSH);
         dc.DrawCircle(size.x / 2, size.y / 2, radius);
 
@@ -1195,30 +1195,30 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     :PopupWindow(parent, wxBORDER_NONE)
 {
     m_def_colors.clear();
-    m_def_colors.push_back(wxColour(0xFFFFFF));
-    m_def_colors.push_back(wxColour(0xfff144));
-    m_def_colors.push_back(wxColour(0xDCF478));
-    m_def_colors.push_back(wxColour(0x0ACC38));
-    m_def_colors.push_back(wxColour(0x057748));
-    m_def_colors.push_back(wxColour(0x0d6284));
-    m_def_colors.push_back(wxColour(0x0EE2A0));
-    m_def_colors.push_back(wxColour(0x76D9F4));
-    m_def_colors.push_back(wxColour(0x46a8f9));
-    m_def_colors.push_back(wxColour(0x2850E0));
-    m_def_colors.push_back(wxColour(0x443089));
-    m_def_colors.push_back(wxColour(0xA03CF7));
-    m_def_colors.push_back(wxColour(0xF330F9));
-    m_def_colors.push_back(wxColour(0xD4B1DD));
-    m_def_colors.push_back(wxColour(0xf95d73));
-    m_def_colors.push_back(wxColour(0xf72323));
-    m_def_colors.push_back(wxColour(0x7c4b00));
-    m_def_colors.push_back(wxColour(0xf98c36));
-    m_def_colors.push_back(wxColour(0xfcecd6));
-    m_def_colors.push_back(wxColour(0xD3C5A3));
-    m_def_colors.push_back(wxColour(0xAF7933));
-    m_def_colors.push_back(wxColour(0x898989));
-    m_def_colors.push_back(wxColour(0xBCBCBC));
-    m_def_colors.push_back(wxColour(0x161616));
+    m_def_colors.push_back(wxColour('#FFFFFF'));
+    m_def_colors.push_back(wxColour('#FFF144'));
+    m_def_colors.push_back(wxColour('#DCF478'));
+    m_def_colors.push_back(wxColour('#0ACC38'));
+    m_def_colors.push_back(wxColour('#057748'));
+    m_def_colors.push_back(wxColour('#0D6284'));
+    m_def_colors.push_back(wxColour('#0EE2A0'));
+    m_def_colors.push_back(wxColour('#76D9F4'));
+    m_def_colors.push_back(wxColour('#46A8F9'));
+    m_def_colors.push_back(wxColour('#2850E0'));
+    m_def_colors.push_back(wxColour('#443089'));
+    m_def_colors.push_back(wxColour('#A03CF7'));
+    m_def_colors.push_back(wxColour('#F330F9'));
+    m_def_colors.push_back(wxColour('#D4B1DD'));
+    m_def_colors.push_back(wxColour('#F95D73'));
+    m_def_colors.push_back(wxColour('#F72323'));
+    m_def_colors.push_back(wxColour('#7C4B00'));
+    m_def_colors.push_back(wxColour('#F98C36'));
+    m_def_colors.push_back(wxColour('#FCECD6'));
+    m_def_colors.push_back(wxColour('#D3C5A3'));
+    m_def_colors.push_back(wxColour('#AF7933'));
+    m_def_colors.push_back(wxColour('#898989'));
+    m_def_colors.push_back(wxColour('#BCBCBC'));
+    m_def_colors.push_back(wxColour('#161616'));
 
 
     SetBackgroundColour(wxColour(*wxWHITE));
@@ -1233,7 +1233,7 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     m_title_ams->SetBackgroundColour(wxColour(238, 238, 238));
     m_sizer_ams->Add(m_title_ams, 0, wxALL, 5);
     auto ams_line = new wxPanel(m_def_color_box, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-    ams_line->SetBackgroundColour(wxColour(0xCECECE));
+    ams_line->SetBackgroundColour(wxColour('#CECECE'));
     ams_line->SetMinSize(wxSize(-1, 1));
     ams_line->SetMaxSize(wxSize(-1, 1));
     m_sizer_ams->Add(ams_line, 1, wxALIGN_CENTER, 0);
@@ -1280,16 +1280,16 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     auto other_line = new wxPanel(m_def_color_box, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
     other_line->SetMinSize(wxSize(-1, 1));
     other_line->SetMaxSize(wxSize(-1, 1));
-    other_line->SetBackgroundColour(wxColour(0xCECECE));
+    other_line->SetBackgroundColour(wxColour('#CECECE'));
     m_sizer_other->Add(other_line, 1, wxALIGN_CENTER, 0);
 
     //custom color
     wxBoxSizer* m_sizer_custom = new wxBoxSizer(wxHORIZONTAL);
     auto m_title_custom = new wxStaticText(m_def_color_box, wxID_ANY, _L("Custom Color"), wxDefaultPosition, wxDefaultSize, 0);
     m_title_custom->SetFont(::Label::Body_14);
-    m_title_custom->SetBackgroundColour(wxColour(0xeeeeee));
+    m_title_custom->SetBackgroundColour(wxColour('#EEEEEE'));
     auto custom_line = new wxPanel(m_def_color_box, wxID_ANY, wxDefaultPosition, wxSize(-1, 1), wxTAB_TRAVERSAL);
-    custom_line->SetBackgroundColour(wxColour(0xCECECE));
+    custom_line->SetBackgroundColour(wxColour('#CECECE'));
     custom_line->SetMinSize(wxSize(-1, 1));
     custom_line->SetMaxSize(wxSize(-1, 1));
     m_sizer_custom->Add(m_title_custom, 0, wxALL, 5);
@@ -1299,7 +1299,7 @@ ColorPickerPopup::ColorPickerPopup(wxWindow* parent)
     m_custom_cp->SetSize(FromDIP(60), FromDIP(25));
     m_custom_cp->SetMinSize(wxSize(FromDIP(60), FromDIP(25)));
     m_custom_cp->SetMaxSize(wxSize(FromDIP(60), FromDIP(25)));
-    m_custom_cp->SetBorderColor(StateColor(std::pair<wxColour, int>(wxColour(0xeeeeee), StateColor::Normal)));
+    m_custom_cp->SetBorderColor(StateColor(std::pair<wxColour, int>(wxColour('#EEEEEE'), StateColor::Normal)));
     m_custom_cp->Bind(wxEVT_LEFT_DOWN, &ColorPickerPopup::on_custom_clr_picker, this);
     m_custom_cp->Bind(wxEVT_ENTER_WINDOW, [this](auto& e) {
         SetCursor(wxCURSOR_HAND);

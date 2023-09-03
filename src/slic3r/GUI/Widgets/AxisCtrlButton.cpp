@@ -8,7 +8,7 @@ static const wxColour BUTTON_BG_COL = wxColour("#EEEEEE");
 static const wxColour BUTTON_IN_BG_COL = wxColour("#CECECE");
 
 static const wxColour bd = wxColour(105, 58, 113);
-static const wxColour text_num_color = wxColour(0x898989);
+static const wxColour text_num_color = wxColour('#898989');
 static const wxColour BUTTON_PRESS_COL = wxColour(172, 172, 172);
 static const double sqrt2 = std::sqrt(2);
 

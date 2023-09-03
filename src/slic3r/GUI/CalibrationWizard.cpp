@@ -50,7 +50,7 @@ CalibrationWizard::CalibrationWizard(wxWindow* parent, CalibMode mode, wxWindowI
     : wxPanel(parent, id, pos, size, style) 
     , m_mode(mode)
 {
-    SetBackgroundColour(wxColour(0xEEEEEE));
+    SetBackgroundColour(wxColour('#EEEEEE'));
 
     wxBoxSizer* main_sizer = new wxBoxSizer(wxVERTICAL);
 
