@@ -14,10 +14,11 @@ endif()
 
 set(GalaxySlicer_VERSION "1.0.0-alpha")
 
-string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"GalaxySlicer_VERSION_MATCH ${GalaxySlicer_VERSION})
+string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"
+       GalaxySlicer_VERSION_MATCH ${GalaxySlicer_VERSION})
 
 set(SLIC3R_VERSION_MAJOR ${CMAKE_MATCH_1})
 set(SLIC3R_VERSION_MINOR ${CMAKE_MATCH_2})
 set(SLIC3R_VERSION_PATCH ${CMAKE_MATCH_3})
 
-set(SLIC3R_VERSION "01.07.04.52")
+set(SLIC3R_VERSION "01.07.01.62")

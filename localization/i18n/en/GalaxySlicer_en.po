@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 19:45+0800\n"
+"POT-Creation-Date: 2023-09-03 01:32+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -564,9 +564,12 @@ msgstr ""
 msgid "V"
 msgstr "V"
 
+msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+msgstr ""
+
 msgid ""
-"GalaxySlicer will terminate because of running out of memory.It may be a bug. "
-"It will be appreciated if you report the issue to our team."
+"GalaxySlicer will terminate because of running out of memory.It may be a "
+"bug. It will be appreciated if you report the issue to our team."
 msgstr ""
 
 msgid "Fatal error"
@@ -598,8 +601,17 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Connect %s failed! [SN:%s, code=%s]"
 
 msgid ""
-"GalaxySlicer configuration file may be corrupted and is not abled to be parsed."
-"Please delete the file and try again."
+"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"features.\n"
+"Click Yes to install it now."
+msgstr ""
+
+msgid "WebView2 Runtime"
+msgstr ""
+
+msgid ""
+"GalaxySlicer configuration file may be corrupted and is not abled to be "
+"parsed.Please delete the file and try again."
 msgstr ""
 
 #, c-format, boost-format
@@ -1334,6 +1346,9 @@ msgstr "Auto Brim"
 msgid "Auto"
 msgstr "Auto"
 
+msgid "Mouse ear"
+msgstr ""
+
 msgid "Outer brim only"
 msgstr "Outer brim only"
 
@@ -1853,10 +1868,12 @@ msgstr ""
 msgid "About %s"
 msgstr "About %s"
 
-msgid "GalaxySlicer "
+msgid ""
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
 msgstr ""
 
-msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
 msgstr ""
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
@@ -2184,6 +2201,9 @@ msgstr ""
 
 msgid "File"
 msgstr "File"
+
+msgid "View"
+msgstr "View"
 
 msgid "Calibration"
 msgstr "Calibration"
@@ -3399,9 +3419,6 @@ msgstr "Show object overhang highlight in 3D scene"
 msgid "Preferences"
 msgstr "Preferences"
 
-msgid "View"
-msgstr "View"
-
 msgid "Help"
 msgstr "Help"
 
@@ -3777,6 +3794,24 @@ msgstr "3Dconnexion settings"
 
 msgid "Swap Y/Z axes"
 msgstr "Swap Y/Z axes"
+
+msgid "Invert X axis"
+msgstr ""
+
+msgid "Invert Y axis"
+msgstr ""
+
+msgid "Invert Z axis"
+msgstr ""
+
+msgid "Invert Yaw axis"
+msgstr ""
+
+msgid "Invert Pitch axis"
+msgstr ""
+
+msgid "Invert Roll axis"
+msgstr ""
 
 msgid "Printing Progress"
 msgstr "Printing progress"
@@ -4233,8 +4268,8 @@ msgstr "There are no compatible filaments, and sync is not performed."
 
 msgid ""
 "There are some unknown filaments mapped to generic preset. Please update "
-"GalaxySlicer or restart GalaxySlicer to check if there is an update to system "
-"presets."
+"GalaxySlicer or restart GalaxySlicer to check if there is an update to "
+"system presets."
 msgstr ""
 
 #, boost-format
@@ -4562,6 +4597,12 @@ msgstr ""
 "Unable to perform boolean operation on model meshes. Only positive parts "
 "will be exported."
 
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+
+msgid "Upload and Print"
+msgstr ""
+
 msgid ""
 "Print By Object: \n"
 "Suggest to use auto-arrange to avoid collisions when printing."
@@ -4763,7 +4804,8 @@ msgstr ""
 msgid "Associate .step/.stp files to GalaxySlicer"
 msgstr "Associate .step/.stp files to GalaxySlicer"
 
-msgid "If enabled, sets GalaxySlicer as default application to open .step files"
+msgid ""
+"If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr ""
 "If enabled, this sets GalaxySlicer as the default application to open .step "
 "files."
@@ -5507,13 +5549,13 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 
 msgid "Line width"
 msgstr "Line width"
@@ -5583,6 +5625,9 @@ msgstr "G-code output"
 
 msgid "Post-processing Scripts"
 msgstr "Post-processing Scripts"
+
+msgid "Notes"
+msgstr ""
 
 msgid "Frequent"
 msgstr "Frequent"
@@ -7195,6 +7240,14 @@ msgid ""
 "pattern"
 msgstr ""
 
+msgid "Extra perimeters on overhangs"
+msgstr ""
+
+msgid ""
+"Create additional perimeter paths over steep overhangs and areas where "
+"bridges cannot be anchored. "
+msgstr ""
+
 msgid "Classic mode"
 msgstr ""
 
@@ -7244,9 +7297,6 @@ msgid ""
 msgstr ""
 "This controls the generation of the brim at outer and/or inner side of "
 "models. Auto means the brim width is analyzed and calculated automatically."
-
-msgid "Mouse ear"
-msgstr ""
 
 msgid "Brim-object gap"
 msgstr "Brim-object gap"
@@ -7624,6 +7674,12 @@ msgstr "Default filament color"
 msgid "Color"
 msgstr "Color"
 
+msgid "Filament notes"
+msgstr ""
+
+msgid "You can put your notes regarding the filament here."
+msgstr ""
+
 msgid "Required nozzle HRC"
 msgstr "Required nozzle HRC"
 
@@ -7969,10 +8025,10 @@ msgstr "Full fan speed at layer"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 
 msgid "Support interface fan speed"
@@ -8385,8 +8441,8 @@ msgstr "Maximum acceleration for retracting (M204 R)"
 msgid "Maximum acceleration for travel"
 msgstr "Maximum acceleration for travel"
 
-msgid "Maximum acceleration for travel (M204 T)"
-msgstr "Maximum acceleration for travel (M204 T)"
+msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
+msgstr ""
 
 msgid "Fan speed"
 msgstr "Fan speed"
@@ -8441,6 +8497,14 @@ msgstr "Nozzle diameter"
 
 msgid "Diameter of nozzle"
 msgstr "The diameter of the nozzle"
+
+msgid "Configuration notes"
+msgstr ""
+
+msgid ""
+"You can put here your personal notes. This text will be added to the G-code "
+"header comments."
+msgstr ""
 
 msgid "Host Type"
 msgstr "Host Type"
@@ -8540,6 +8604,12 @@ msgid ""
 "Scripts will be passed the absolute path to the G-code file as the first "
 "argument, and they can access the Slic3r config settings by reading "
 "environment variables."
+msgstr ""
+
+msgid "Printer notes"
+msgstr ""
+
+msgid "You can put your notes regarding the printer here."
 msgstr ""
 
 msgid "Raft contact Z distance"
@@ -10245,6 +10315,15 @@ msgstr ""
 msgid "Finished"
 msgstr "Finished"
 
+msgid "Multiple resolved IP addresses"
+msgstr ""
+
+#, boost-format
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+
 msgid "Unable to perform boolean operation on selected parts"
 msgstr ""
 
@@ -10284,7 +10363,7 @@ msgstr ""
 msgid "Delete input"
 msgstr ""
 
-msgid "Send to print"
+msgid "Send G-Code to printer host"
 msgstr ""
 
 msgid "Upload to Printer Host with the following filename:"
@@ -10293,14 +10372,11 @@ msgstr ""
 msgid "Use forward slashes ( / ) as a directory separator if needed."
 msgstr ""
 
+msgid "Upload to storage"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
-msgstr ""
-
-msgid "Upload and Print"
-msgstr ""
-
-msgid "Simulate"
 msgstr ""
 
 msgid "Print host upload queue"
@@ -10322,7 +10398,7 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Error Message"
+msgid "Message"
 msgstr ""
 
 msgid "Cancel selected"
@@ -10340,7 +10416,7 @@ msgstr "Uploading"
 msgid "Cancelling"
 msgstr ""
 
-msgid "Error uploading to print host:"
+msgid "Error uploading to print host"
 msgstr ""
 
 msgid "PA Calibration"
@@ -10770,110 +10846,8 @@ msgstr ""
 "Did you know that you can use more wall loops and higher sparse infill "
 "density to improve the strength of the model?"
 
-msgid "Bambu Cube"
-msgstr ""
-
-msgid "Bambu Cube V2"
-msgstr ""
-
-msgid "ksr FDMTest"
-msgstr ""
-
-#, boost-format
-msgid " plate %1%: "
-msgstr ""
-
-msgid ""
-"There are some unknown or uncompatible filaments mapped to generic preset. "
-"Please update Bambu Studio or restart Bambu Studio to check if there is an "
-"update to system presets."
-msgstr ""
-
-msgid "Initial layer flow ratio"
-msgstr ""
-
-msgid "This factor affects the amount of material for the initial layer"
-msgstr ""
-
-msgid ""
-"Use only one wall on flat top surface, to give more space to the top infill "
-"pattern. Could be applyed on topmost surface or all top surface."
-msgstr ""
-
-msgid "Not apply"
-msgstr ""
-
-msgid ""
-"If enabled, Studio will generate support loops under the contours of "
-"internal bridges.These support loops could prevent internal bridges from "
-"extruding over the air and improve the top surface quality, especially when "
-"the sparse infill density is low.This value determines the thickness of the "
-"support loops. 0 means disable this feature"
-msgstr ""
-
-msgid ""
-"Enable pressure advance, auto calibration result will be overwriten once "
-"enabled. Useless for Bambu Printer"
-msgstr ""
-
-msgid ""
-"Pressure advance(Klipper) AKA Linear advance factor(Marlin). Useless for "
-"Bambu Printer"
-msgstr ""
-
-msgid "Acceleration of inner walls. 0 means using normal printing acceleration"
-msgstr ""
-
-msgid "Default jerk"
-msgstr ""
-
-msgid "Jerk of infill"
-msgstr ""
-
-msgid "Jerk of top surface"
-msgstr ""
-
-msgid "First layer"
-msgstr ""
-
-msgid "Jerk of first layer"
-msgstr ""
-
-msgid "Jerk of travel"
-msgstr ""
-
-msgid ""
-"Filter out gaps smaller than the threshold specified. This setting won't "
-"affact top/bottom layers"
-msgstr ""
-
-msgid ""
-"Enable this option to add EXCLUDE OBJECT command in g-code for klipper "
-"firmware printer"
-msgstr ""
-
-msgid ""
-"Detect the overhang percentage relative to line width and use different "
-"speed to print. For 100 percent overhang, bridge speed is used."
-msgstr ""
-
-msgid "Direct drive"
-msgstr ""
-
-msgid ""
-"In order to reduce the visibility of the seam in a closed loop extrusion, "
-"the loop is interrupted and shortened by a specified amount.\n"
-"This amount as a percentage of the current extruder diameter. The default "
-"value for this parameter is 15"
-msgstr ""
-
-msgid ""
-"If your firmware requires relative E values, check this, otherwise leave it "
-"unchecked. Must use relative e distance for Bambu printer"
-msgstr ""
-
-msgid "End temp: "
-msgstr ""
+#~ msgid "Maximum acceleration for travel (M204 T)"
+#~ msgstr "Maximum acceleration for travel (M204 T)"
 
 #~ msgid "Assemble the selected parts to a single part"
 #~ msgstr "Assemble the selected parts into a single part"

@@ -273,13 +273,13 @@ void HistoryWindow::sync_history_data() {
             });
 
         auto edit_button = new Button(m_history_data_panel, _L("Edit"));
-        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-            std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-            std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+        StateColor btn_bg_green(std::pair<wxColour, int>(wxColour("#C7ACCB"), StateColor::Pressed),
+            std::pair<wxColour, int>(wxColour("#9C6DA4"), StateColor::Hovered),
+            std::pair<wxColour, int>(wxColour("#693A71"), StateColor::Normal));
         edit_button->SetBackgroundColour(*wxWHITE);
         edit_button->SetBackgroundColor(btn_bg_green);
-        edit_button->SetBorderColor(wxColour(0, 150, 136));
-        edit_button->SetTextColor(wxColour("#FFFFFE"));
+        edit_button->SetBorderColor(wxColour("#693a71"));
+        edit_button->SetTextColor(wxColour("#fffffe"));
         edit_button->SetMinSize(wxSize(-1, FromDIP(24)));
         edit_button->SetCornerRadius(FromDIP(12));
         edit_button->Bind(wxEVT_BUTTON, [this, result, k_value, name_value, edit_button](auto& e) {
@@ -407,13 +407,13 @@ EditCalibrationHistoryDialog::EditCalibrationHistoryDialog(wxWindow* parent, con
 
     auto btn_sizer = new wxBoxSizer(wxHORIZONTAL);
     Button* save_btn = new Button(top_panel, _L("Save"));
-    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour(0, 137, 123), StateColor::Pressed),
-        std::pair<wxColour, int>(wxColour(38, 166, 154), StateColor::Hovered),
-        std::pair<wxColour, int>(wxColour(0, 150, 136), StateColor::Normal));
+    StateColor btn_bg_green(std::pair<wxColour, int>(wxColour("#C7ACCB"), StateColor::Pressed),
+        std::pair<wxColour, int>(wxColour("#9C6DA4"), StateColor::Hovered),
+        std::pair<wxColour, int>(wxColour("#693A71"), StateColor::Normal));
     save_btn->SetBackgroundColour(*wxWHITE);
     save_btn->SetBackgroundColor(btn_bg_green);
-    save_btn->SetBorderColor(wxColour(0, 150, 136));
-    save_btn->SetTextColor(wxColour("#FFFFFE"));
+    save_btn->SetBorderColor(wxColour("#693A71"));
+    save_btn->SetTextColor(wxColour("#fffffe"));
     save_btn->SetMinSize(wxSize(-1, FromDIP(24)));
     save_btn->SetCornerRadius(FromDIP(12));
     Button* cancel_btn = new Button(top_panel, _L("Cancel"));

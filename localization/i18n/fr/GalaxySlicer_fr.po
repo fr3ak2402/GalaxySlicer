@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 19:45+0800\n"
+"POT-Creation-Date: 2023-09-03 01:32+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -577,12 +577,15 @@ msgstr ""
 msgid "V"
 msgstr "V"
 
-msgid ""
-"GalaxySlicer will terminate because of running out of memory.It may be a bug. "
-"It will be appreciated if you report the issue to our team."
+msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
 msgstr ""
-"GalaxySlicer va s'arrêter à cause d'un manque de mémoire. Il peut s'agir d'un "
-"bogue. Il sera apprécié de signaler le problème à notre équipe."
+
+msgid ""
+"GalaxySlicer will terminate because of running out of memory.It may be a "
+"bug. It will be appreciated if you report the issue to our team."
+msgstr ""
+"GalaxySlicer va s'arrêter à cause d'un manque de mémoire. Il peut s'agir "
+"d'un bogue. Il sera apprécié de signaler le problème à notre équipe."
 
 msgid "Fatal error"
 msgstr "Erreur fatale"
@@ -616,11 +619,20 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Connexion %s échouée ! [SN:%s, code=%s]"
 
 msgid ""
-"GalaxySlicer configuration file may be corrupted and is not abled to be parsed."
-"Please delete the file and try again."
+"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"features.\n"
+"Click Yes to install it now."
 msgstr ""
-"Le fichier de configuration de GalaxySlicer est peut-être corrompu et ne peut "
-"pas être analysé. Veuillez supprimer le fichier et réessayer."
+
+msgid "WebView2 Runtime"
+msgstr ""
+
+msgid ""
+"GalaxySlicer configuration file may be corrupted and is not abled to be "
+"parsed.Please delete the file and try again."
+msgstr ""
+"Le fichier de configuration de GalaxySlicer est peut-être corrompu et ne "
+"peut pas être analysé. Veuillez supprimer le fichier et réessayer."
 
 #, c-format, boost-format
 msgid ""
@@ -692,8 +704,8 @@ msgid ""
 "The version of GalaxySlicer is too low and needs to be updated to the latest "
 "version before it can be used normally"
 msgstr ""
-"La version de GalaxySlicer est trop ancienne et doit être mise à jour vers la "
-"dernière version afin qu’il puisse être utilisé normalement"
+"La version de GalaxySlicer est trop ancienne et doit être mise à jour vers "
+"la dernière version afin qu’il puisse être utilisé normalement"
 
 msgid "Privacy Policy Update"
 msgstr "Mise à jour de la politique de confidentialité"
@@ -1369,6 +1381,9 @@ msgstr "Bordure automatique"
 msgid "Auto"
 msgstr "Automatique"
 
+msgid "Mouse ear"
+msgstr ""
+
 msgid "Outer brim only"
 msgstr "Bordure extérieure uniquement"
 
@@ -1885,8 +1900,8 @@ msgid ""
 "by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro Ranellucci and "
 "the RepRap community"
 msgstr ""
-"GalaxySlicer est basé sur GalaxySlicer de Bambulab qui a été développé sur la "
-"base de PrusaSlicer de Prusa Research, qui est lui même développé sur la "
+"GalaxySlicer est basé sur GalaxySlicer de Bambulab qui a été développé sur "
+"la base de PrusaSlicer de Prusa Research, qui est lui même développé sur la "
 "base de Slic3r par Alessandro Ranelucci et la communauté RepRap"
 
 msgid "Libraries"
@@ -1903,11 +1918,13 @@ msgstr ""
 msgid "About %s"
 msgstr "À propos de %s"
 
-msgid "GalaxySlicer "
-msgstr "GalaxySlicer"
+msgid ""
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
+msgstr ""
 
-msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr "GalaxySlicer est basé sur BambuStudio, PrusaSlicer, et SuperSlicer."
+msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
+msgstr ""
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
 msgstr "GalaxySlicer est basé sur PrusaSlicer de PrusaResearch."
@@ -2248,6 +2265,9 @@ msgstr ""
 
 msgid "File"
 msgstr "Fichier"
+
+msgid "View"
+msgstr "Vue"
 
 msgid "Calibration"
 msgstr "Calibration"
@@ -3483,9 +3503,6 @@ msgstr "Afficher la surbrillance des surplombs d'un objet dans la scène 3D"
 msgid "Preferences"
 msgstr "Préférences"
 
-msgid "View"
-msgstr "Vue"
-
 msgid "Help"
 msgstr "Aide"
 
@@ -3874,6 +3891,24 @@ msgstr "Paramètres de connexion 3D"
 
 msgid "Swap Y/Z axes"
 msgstr "Permuter les axes Y/Z"
+
+msgid "Invert X axis"
+msgstr ""
+
+msgid "Invert Y axis"
+msgstr ""
+
+msgid "Invert Z axis"
+msgstr ""
+
+msgid "Invert Yaw axis"
+msgstr ""
+
+msgid "Invert Pitch axis"
+msgstr ""
+
+msgid "Invert Roll axis"
+msgstr ""
 
 msgid "Printing Progress"
 msgstr "Progression de l'impression"
@@ -4334,8 +4369,8 @@ msgstr ""
 
 msgid ""
 "There are some unknown filaments mapped to generic preset. Please update "
-"GalaxySlicer or restart GalaxySlicer to check if there is an update to system "
-"presets."
+"GalaxySlicer or restart GalaxySlicer to check if there is an update to "
+"system presets."
 msgstr ""
 "Il existe des filaments inconnus mappés sur un préréglage générique. "
 "Veuillez mettre à jour ou redémarrer GalaxySlicer pour vérifier s'il existe "
@@ -4681,6 +4716,12 @@ msgstr ""
 "Impossible d'effectuer une opération booléenne sur les maillages du modèle. "
 "Seules les parties positives seront exportées."
 
+msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
+msgstr ""
+
+msgid "Upload and Print"
+msgstr ""
+
 msgid ""
 "Print By Object: \n"
 "Suggest to use auto-arrange to avoid collisions when printing."
@@ -4892,7 +4933,8 @@ msgstr ""
 msgid "Associate .step/.stp files to GalaxySlicer"
 msgstr "Associer les fichiers .step/.stp à GalaxySlicer"
 
-msgid "If enabled, sets GalaxySlicer as default application to open .step files"
+msgid ""
+"If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr ""
 "Si activé, définit GalaxySlicer comme application par défaut pour ouvrir les "
 "fichiers .step/.stp"
@@ -5686,8 +5728,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Lors de l'enregistrement d'un Timelapse sans tête d'outil, il est recommandé "
 "d'ajouter une \"Tour d’essuyage Timelapse\"\n"
@@ -5763,6 +5805,9 @@ msgstr "G-code"
 
 msgid "Post-processing Scripts"
 msgstr "Scripts de post-traitement"
+
+msgid "Notes"
+msgstr ""
 
 msgid "Frequent"
 msgstr "Fréquent"
@@ -7452,6 +7497,14 @@ msgstr ""
 "Utiliser qu’une seule paroi sur la première couche, pour donner plus "
 "d’espace au motif de remplissage inférieur"
 
+msgid "Extra perimeters on overhangs"
+msgstr ""
+
+msgid ""
+"Create additional perimeter paths over steep overhangs and areas where "
+"bridges cannot be anchored. "
+msgstr ""
+
 msgid "Classic mode"
 msgstr "Classique"
 
@@ -7500,9 +7553,6 @@ msgstr ""
 "Cela contrôle la génération de la bordure extérieure et/ou intérieure des "
 "modèles. Automatique signifie que la largeur de la bordure est analysée et "
 "calculée automatiquement."
-
-msgid "Mouse ear"
-msgstr ""
 
 msgid "Brim-object gap"
 msgstr "Distance entre la bordure et l'objet"
@@ -7893,6 +7943,12 @@ msgstr "Couleur du filament par défaut"
 
 msgid "Color"
 msgstr "Couleur"
+
+msgid "Filament notes"
+msgstr ""
+
+msgid "You can put your notes regarding the filament here."
+msgstr ""
 
 msgid "Required nozzle HRC"
 msgstr "HRC de la buse nécessaire"
@@ -8289,10 +8345,10 @@ msgstr "Vitesse maximale du ventilateur à la couche"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "La vitesse du ventilateur augmentera de manière linéaire à partir de zéro à "
 "la couche \"close_fan_the_first_x_layers\" jusqu’au maximum à la couche "
@@ -8753,8 +8809,8 @@ msgstr "Accélération maximale de la rétraction (M204 R)"
 msgid "Maximum acceleration for travel"
 msgstr "Accélération maximale de déplacement"
 
-msgid "Maximum acceleration for travel (M204 T)"
-msgstr "Accélération maximale de déplacement (M204 T)"
+msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
+msgstr ""
 
 msgid "Fan speed"
 msgstr "Vitesse du ventilateur"
@@ -8812,6 +8868,14 @@ msgstr "Diamètre de la buse"
 
 msgid "Diameter of nozzle"
 msgstr "Diamètre de la buse"
+
+msgid "Configuration notes"
+msgstr ""
+
+msgid ""
+"You can put here your personal notes. This text will be added to the G-code "
+"header comments."
+msgstr ""
 
 msgid "Host Type"
 msgstr "Type d'hôte"
@@ -8922,6 +8986,12 @@ msgstr ""
 "un point-virgule. Les scripts recevront le chemin absolu vers le fichier G-"
 "code comme premier argument, et ils peuvent accéder aux paramètres de "
 "configuration Slic3r en lisant les variables d’environnement."
+
+msgid "Printer notes"
+msgstr ""
+
+msgid "You can put your notes regarding the printer here."
+msgstr ""
 
 msgid "Raft contact Z distance"
 msgstr "Distance Z de contact du radeau"
@@ -10703,6 +10773,15 @@ msgstr ""
 msgid "Finished"
 msgstr "Terminé"
 
+msgid "Multiple resolved IP addresses"
+msgstr ""
+
+#, boost-format
+msgid ""
+"There are several IP addresses resolving to hostname %1%.\n"
+"Please select one that should be used."
+msgstr ""
+
 msgid "Unable to perform boolean operation on selected parts"
 msgstr ""
 
@@ -10742,7 +10821,7 @@ msgstr ""
 msgid "Delete input"
 msgstr ""
 
-msgid "Send to print"
+msgid "Send G-Code to printer host"
 msgstr ""
 
 msgid "Upload to Printer Host with the following filename:"
@@ -10751,14 +10830,11 @@ msgstr ""
 msgid "Use forward slashes ( / ) as a directory separator if needed."
 msgstr ""
 
+msgid "Upload to storage"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
-msgstr ""
-
-msgid "Upload and Print"
-msgstr ""
-
-msgid "Simulate"
 msgstr ""
 
 msgid "Print host upload queue"
@@ -10780,7 +10856,7 @@ msgstr ""
 msgid "Filename"
 msgstr ""
 
-msgid "Error Message"
+msgid "Message"
 msgstr ""
 
 msgid "Cancel selected"
@@ -10798,7 +10874,7 @@ msgstr "Téléversement"
 msgid "Cancelling"
 msgstr ""
 
-msgid "Error uploading to print host:"
+msgid "Error uploading to print host"
 msgstr ""
 
 msgid "PA Calibration"
@@ -11263,110 +11339,14 @@ msgstr ""
 "Saviez-vous que vous pouvez utiliser plus de parois et une densité de "
 "remplissage plus élevée pour améliorer la résistance du modèle ?"
 
-msgid "Bambu Cube"
-msgstr ""
+#~ msgid "GalaxySlicer "
+#~ msgstr "GalaxySlicer"
 
-msgid "Bambu Cube V2"
-msgstr ""
+#~ msgid "GalaxySlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr "GalaxySlicer est basé sur BambuStudio, PrusaSlicer, et SuperSlicer."
 
-msgid "ksr FDMTest"
-msgstr ""
-
-#, boost-format
-msgid " plate %1%: "
-msgstr ""
-
-msgid ""
-"There are some unknown or uncompatible filaments mapped to generic preset. "
-"Please update Bambu Studio or restart Bambu Studio to check if there is an "
-"update to system presets."
-msgstr ""
-
-msgid "Initial layer flow ratio"
-msgstr ""
-
-msgid "This factor affects the amount of material for the initial layer"
-msgstr ""
-
-msgid ""
-"Use only one wall on flat top surface, to give more space to the top infill "
-"pattern. Could be applyed on topmost surface or all top surface."
-msgstr ""
-
-msgid "Not apply"
-msgstr ""
-
-msgid ""
-"If enabled, Studio will generate support loops under the contours of "
-"internal bridges.These support loops could prevent internal bridges from "
-"extruding over the air and improve the top surface quality, especially when "
-"the sparse infill density is low.This value determines the thickness of the "
-"support loops. 0 means disable this feature"
-msgstr ""
-
-msgid ""
-"Enable pressure advance, auto calibration result will be overwriten once "
-"enabled. Useless for Bambu Printer"
-msgstr ""
-
-msgid ""
-"Pressure advance(Klipper) AKA Linear advance factor(Marlin). Useless for "
-"Bambu Printer"
-msgstr ""
-
-msgid "Acceleration of inner walls. 0 means using normal printing acceleration"
-msgstr ""
-
-msgid "Default jerk"
-msgstr ""
-
-msgid "Jerk of infill"
-msgstr ""
-
-msgid "Jerk of top surface"
-msgstr ""
-
-msgid "First layer"
-msgstr ""
-
-msgid "Jerk of first layer"
-msgstr ""
-
-msgid "Jerk of travel"
-msgstr ""
-
-msgid ""
-"Filter out gaps smaller than the threshold specified. This setting won't "
-"affact top/bottom layers"
-msgstr ""
-
-msgid ""
-"Enable this option to add EXCLUDE OBJECT command in g-code for klipper "
-"firmware printer"
-msgstr ""
-
-msgid ""
-"Detect the overhang percentage relative to line width and use different "
-"speed to print. For 100 percent overhang, bridge speed is used."
-msgstr ""
-
-msgid "Direct drive"
-msgstr ""
-
-msgid ""
-"In order to reduce the visibility of the seam in a closed loop extrusion, "
-"the loop is interrupted and shortened by a specified amount.\n"
-"This amount as a percentage of the current extruder diameter. The default "
-"value for this parameter is 15"
-msgstr ""
-
-msgid ""
-"If your firmware requires relative E values, check this, otherwise leave it "
-"unchecked. Must use relative e distance for Bambu printer"
-msgstr ""
-
-msgid "End temp: "
-msgstr ""
+#~ msgid "Maximum acceleration for travel (M204 T)"
+#~ msgstr "Accélération maximale de déplacement (M204 T)"
 
 #~ msgid "Assemble the selected parts to a single part"
 #~ msgstr "Assembler les pièces sélectionnées en une seule pièce"

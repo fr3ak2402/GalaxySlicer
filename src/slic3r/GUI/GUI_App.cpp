@@ -188,7 +188,7 @@ bool is_associate_files(std::wstring extend)
     wchar_t app_path[MAX_PATH];
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
-    std::wstring prog_id             = L" Orca.Slicer.1";
+    std::wstring prog_id             = L" Galaxy.Slicer.1";
     std::wstring reg_base            = L"Software\\Classes";
     std::wstring reg_extension       = reg_base + L"\\." + extend;
 
@@ -206,7 +206,6 @@ bool is_associate_files(std::wstring extend)
     return false;
 }
 #endif
-
 
 class GalaxySlicerSplashScreen : public wxSplashScreen
 {
@@ -285,7 +284,7 @@ public:
         BitmapCache bmp_cache;
         int background_width = FromDIP(562 * m_scale);
         int background_height = FromDIP(238 * m_scale);
-        wxBitmap background_bmp = *bmp_cache.load_svg("splash_background", background_width, background_height);
+        wxBitmap background_bmp = *bmp_cache.load_svg("splash_versioncard", background_width, background_height);
 
         //set XY Position to draw background
         memDc.DrawBitmap(background_bmp, (width - background_width) / 2, (width - background_width) / 2, true);
@@ -646,7 +645,7 @@ static void register_win32_device_notification_event()
 static void generic_exception_handle()
 {
     // Note: Some wxWidgets APIs use wxLogError() to report errors, eg. wxImage
-    // - see https://docs.wxwidgets.org/3.1/classwx_image.html#aa249e657259fe6518d68a5208b9043d0
+    // - see https://docs.wxwidgets.org/3.1/classwx_image.html#aa249e7259fe6518d68a5208b9043d0
     //
     // wxLogError typically goes around exception handling and display an error dialog some time
     // after an error is logged even if exception handling and OnExceptionInMainLoop() take place.
@@ -656,7 +655,7 @@ static void generic_exception_handle()
     //
     // If a custom error message window (or some other solution) were to be used, it would be necessary
     // to turn off wxLogError() usage in wx APIs, most notably in wxImage
-    // - see https://docs.wxwidgets.org/trunk/classwx_image.html#aa32e5d3507cc0f8c3330135bc0befc6a
+    // - see https://docs.wxwidgets.org/trunk/classwx_image.html#aa32e5507cc0f8c3330135bc0befc6a
 /*#ifdef WIN32
     //LPEXCEPTION_POINTERS exception_pointers = nullptr;
     __try {
@@ -1013,6 +1012,9 @@ GUI_App::GUI_App()
 	//app config initializes early becasuse it is used in instance checking in GalaxySlicer.cpp
     this->init_app_config();
     this->init_download_path();
+#if wxUSE_WEBVIEW_EDGE
+    this->init_webview_runtime();
+#endif
 
     reset_to_active();
 }
@@ -1763,6 +1765,20 @@ void GUI_App::init_download_path()
     }
 }
 
+#if wxUSE_WEBVIEW_EDGE
+void GUI_App::init_webview_runtime()
+{
+    // Check WebView Runtime
+    if (!WebView::CheckWebViewRuntime()) {
+        int nRet = wxMessageBox(_L("GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain features.\nClick Yes to install it now."),
+                                _L("WebView2 Runtime"), wxYES_NO);
+        if (nRet == wxYES) {
+            WebView::DownloadAndInstallWebViewRuntime();
+        }
+    }
+}
+#endif
+
 void GUI_App::init_app_config()
 {
 	// Profiles for the alpha are stored into the PrusaSlicer-alpha directory to not mix with the current release.
@@ -1982,7 +1998,7 @@ bool GUI_App::on_init_inner()
     wxLog::SetLogLevel(wxLOG_Message);
 #endif
 
-    // Set initialization of image handlers before any UI actions - See GH issue #7469
+    // Set initialization of image handlers before any UI actions - See GH issue #774466
     wxInitAllImageHandlers();
 #ifdef NDEBUG
     wxImage::SetDefaultLoadFlags(0); // ignore waring in release build
@@ -1995,7 +2011,7 @@ bool GUI_App::on_init_inner()
 
     // Forcing back menu icons under gtk2 and gtk3. Solution is based on:
     // https://docs.gtk.org/gtk3/class.Settings.html
-    // see also https://docs.wxwidgets.org/3.0/classwx_menu_item.html#a2b5d6bcb820b992b1e4709facbf6d4fb
+    // see also https://docs.wxwidgets.org/3.0/classwx_menu_item.html#a2b5d6b820b992b1e4709facbf6d4fb
     // TODO: Find workaround for GTK4
 #if defined(__WXGTK20__) || defined(__WXGTK3__)
     g_object_set (gtk_settings_get_default (), "gtk-menu-images", TRUE, NULL);
@@ -2180,7 +2196,6 @@ bool GUI_App::on_init_inner()
 #endif // __WXMSW__
 
         preset_updater = new PresetUpdater();
-#if orca_todo
         Bind(EVT_SLIC3R_VERSION_ONLINE, [this](const wxCommandEvent& evt) {
             if (this->plater_ != nullptr) {
                 // this->plater_->get_notification_manager()->push_notification(NotificationType::NewAppAvailable);
@@ -2269,7 +2284,6 @@ bool GUI_App::on_init_inner()
             });
             dlg.ShowModal();
         });
-#endif
     }
     else {
 #ifdef __WXMSW__
@@ -2431,7 +2445,7 @@ bool GUI_App::on_init_inner()
         //use m_post_initialized instead
         //static bool update_gui_after_init = true;
 
-        // An ugly solution to GH #5537 in which GUI_App::init_opengl (normally called from events wxEVT_PAINT
+        // An ugly solution to GH #555533 in which GUI_App::init_opengl (normally called from events wxEVT_PAINT
         // and wxEVT_SET_FOCUS before GUI_App::post_init is called) wasn't called before GUI_App::post_init and OpenGL wasn't initialized.
 //#ifdef __linux__
 //        if (!m_post_initialized && m_opengl_initialized) {
@@ -3965,105 +3979,145 @@ Semver get_version(const std::string& str, const std::regex& regexp) {
 
 void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
 {
-AppConfig* app_config = wxGetApp().app_config;
+    AppConfig* app_config = wxGetApp().app_config;
     auto version_check_url = app_config->version_check_url();
-    Http::get(version_check_url).on_error([&](std::string body, std::string error, unsigned http_status) 
-    {
-        (void)body;
-        BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%",
-            version_check_url,
-            http_status,
-            error);
-    })
-    .timeout_connect(1)
-    .on_complete([&](std::string body, unsigned /* http_status */) 
-    {
-         boost::trim(body);
 
-        // GalaxySlicer: parse github release, ported from SS
-        boost::property_tree::ptree root;
-        std::stringstream json_stream(body);
-        boost::property_tree::read_json(json_stream, root);
-        bool i_am_pre = false;
-            
-        //at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
-        std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
-
-        Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
-
-        BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_short());
-
-        Semver best_pre(0, 0, 0);
-        Semver best_release(0, 0, 0);
-        std::string best_pre_url;
-        std::string best_release_url;
-        std::string best_release_content;
-        std::string best_pre_content;
-
-        //go through the complete JSON from the Github API to determine the current version of GalaxySlicer
-        for (auto json_version : root) 
+    Http::get(version_check_url)
+        .on_error([&](std::string body, std::string error, unsigned http_status) 
         {
-            //From the tag_name the version of the release can be determi
-            std::string tag = json_version.second.get<std::string>("tag_name");
-
-            //GalaxySlicer: In the tags of GalaxySlicer a 'V' is used for the version
-            if (tag[0] == 'V') 
-            {
-                //removes the V from the tag
-                tag.erase(0, 1);
-            }
-
-            Semver tag_version = get_version(tag, matcher);
-
-            if (current_version == tag_version) 
-            {
-                i_am_pre = json_version.second.get<bool>("prerelease");
-            }
-
-            if (json_version.second.get<bool>("prerelease")) 
-            {
-                if (best_pre < tag_version) 
-                {
-                    best_pre = tag_version;
-                    best_pre_url = json_version.second.get<std::string>("html_url");
-                    best_pre_content = json_version.second.get<std::string>("body");
-                    best_pre.set_prerelease("Preview");
-                }
-            }
-            else {
-                if (best_release < tag_version) 
-                {
-                    best_release = tag_version;
-                    best_release_url = json_version.second.get<std::string>("html_url");
-                    best_release_content = json_version.second.get<std::string>("body");
-                }
-            }
-        }
-
-        //if release is more recent than beta, use release anyway
-        if (best_pre < best_release) 
+            (void)body;
+            BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "check_new_galaxyslicer_version", http_status, error);
+        })
+        .timeout_connect(1)
+        .on_complete([&](std::string body, unsigned http_status) 
         {
-            best_pre = best_release;
-            best_pre_url = best_release_url;
-            best_pre_content = best_release_content;
-        }
+            // Http response OK
+            if (http_status != 200)
+            {
+                return;
+            }
 
-        //if we're the most recent, don't do anything
-        if ((i_am_pre ? best_pre : best_release) <= current_version)
-            return;
+            try 
+            {
+                boost::trim(body);
+                // SoftFever (OrcaSlicer): parse github release, ported from SS
 
-        BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string(): best_release.to_string());
+                boost::property_tree::ptree root;
 
-        version_info.url = i_am_pre ? best_pre_url : best_release_url;
-        version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
-        version_info.description = i_am_pre ? best_pre_content : best_release_content;
-        version_info.force_upgrade = false;
+                std::stringstream json_stream(body);
+                boost::property_tree::read_json(json_stream, root);
 
-        wxCommandEvent* evt = new wxCommandEvent(EVT_SLIC3R_VERSION_ONLINE);
-        evt->SetString((i_am_pre ? best_pre : best_release).to_string());
-         GUI::wxGetApp().QueueEvent(evt);
-    })
-    .perform_sync();
+                bool i_am_pre = false;
+                // at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
+                std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
+
+                //TODO 
+                Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
+
+                Semver best_pre(0, 0, 0);
+                Semver best_release(0, 0, 0);
+
+                //GalaxySlicer:
+                //If the slicer version is not Vx.0.0, then the major version of the release is taken from the slicer version. 
+                if (current_version.maj() != 0 && current_version.patch() != 0)
+                {
+                    best_pre.set_maj(current_version.maj());
+                    best_release.set_maj(current_version.maj());
+
+                    BOOST_LOG_TRIVIAL(info) << format("The GalaxySlicer version is V x.x.x therefore best pre & release was set to %1%.", best_pre.to_string_output());
+                }
+                //GalaxySlicer:
+                //If the slicer version is Vx.0.0. then the slicer version is set below the major version of the slicer. 
+                //This makes it possible to use Vx.0.0 as well
+                else
+                {
+                    best_pre.set_maj(current_version.maj() - 1);
+                    best_release.set_maj(current_version.maj() - 1);
+
+                    BOOST_LOG_TRIVIAL(info) << format("The GalaxySlicer version is V x.0.0 therefore best pre & release was set to %1%.", best_pre.to_string_output());
+                }
+
+                std::string best_pre_url;
+                std::string best_release_url;
+                std::string best_release_content;
+                std::string best_pre_content;
+
+                const std::regex reg_num("([0-9]+)");
+
+                for (auto json_version : root) 
+                {
+                    std::string tag = json_version.second.get<std::string>("tag_name");
+
+                    //GalaxySlicer: Github tags use a capital V instead of a small v
+                    if (tag[0] == 'V')
+                    {
+                        tag.erase(0, 1);
+                    }
+              
+                    Semver tag_version = get_version(tag, matcher);
+
+                    //BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
+
+                    if (current_version == tag_version)
+                    {
+                        i_am_pre = json_version.second.get<bool>("prerelease");
+                    }
+
+                    if (json_version.second.get<bool>("prerelease")) 
+                    {
+                        if (best_pre < tag_version) 
+                        {
+                            best_pre = tag_version;
+                            best_pre_url = json_version.second.get<std::string>("html_url");
+                            best_pre_content = json_version.second.get<std::string>("body");
+                            best_pre.set_prerelease("Preview");
+                        }
+                    } 
+                    else 
+                    {
+                        if (best_release < tag_version) 
+                        {
+                            best_release = tag_version;
+                            best_release_url = json_version.second.get<std::string>("html_url");
+                            best_release_content = json_version.second.get<std::string>("body");
+                        }
+                    }
+                }
+
+                // if release is more recent than beta, use release anyway
+                if (best_pre < best_release) 
+                {
+                    best_pre = best_release;
+                    best_pre_url = best_release_url;
+                    best_pre_content = best_release_content;
+                }
+
+                //BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
+                //BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
+
+                // if we're the most recent, don't do anything
+                if ((i_am_pre ? best_pre : best_release) <= current_version)
+                {
+                    return;
+                }
+
+                //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string_output(): best_release.to_string_output());
+
+                version_info.url = i_am_pre ? best_pre_url : best_release_url;
+                version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
+                version_info.description = i_am_pre ? best_pre_content : best_release_content;
+                version_info.force_upgrade = false;
+
+                wxCommandEvent *evt = new wxCommandEvent(EVT_SLIC3R_VERSION_ONLINE);
+                evt->SetString((i_am_pre ? best_pre : best_release).to_string());
+                GUI::wxGetApp().QueueEvent(evt);
+            } 
+            catch (...) 
+            {
+
+            }
+        })
+    .perform();
 }
 
 //BBS pop up a dialog and download files
@@ -4645,7 +4699,7 @@ bool GUI_App::select_language()
             // 1) Hopefully the language set to wxTranslations by this->load_language(), but that API is weird and we don't want to rely on its
             //    stability in the future:
             //    wxTranslations::Get()->GetBestTranslation(SLIC3R_APP_KEY, wxLANGUAGE_ENGLISH);
-            // 2) Current locale language may not match the dictionary name, see GH issue #3901
+            // 2) Current locale language may not match the dictionary name, see GH issue #339900
             //    m_wxLocale->GetCanonicalName()
             // 3) new_language_info->CanonicalName is a safe bet. It points to a valid dictionary name.
 			app_config->set("language", new_language_info->CanonicalName.ToUTF8().data());
@@ -6130,7 +6184,7 @@ void GUI_App::associate_files(std::wstring extend)
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
     std::wstring prog_path = L"\"" + std::wstring(app_path) + L"\"";
-    std::wstring prog_id = L" Orca.Slicer.1";
+    std::wstring prog_id = L" Galaxy.Slicer.1";
     std::wstring prog_desc = L"GalaxySlicer";
     std::wstring prog_command = prog_path + L" \"%1\"";
     std::wstring reg_base = L"Software\\Classes";
@@ -6153,7 +6207,7 @@ void GUI_App::disassociate_files(std::wstring extend)
     ::GetModuleFileNameW(nullptr, app_path, sizeof(app_path));
 
     std::wstring prog_path = L"\"" + std::wstring(app_path) + L"\"";
-    std::wstring prog_id = L" Orca.Slicer.1";
+    std::wstring prog_id = L" Galaxy.Slicer.1";
     std::wstring prog_desc = L"GalaxySlicer";
     std::wstring prog_command = prog_path + L" \"%1\"";
     std::wstring reg_base = L"Software\\Classes";

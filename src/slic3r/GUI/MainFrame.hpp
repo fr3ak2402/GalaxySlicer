@@ -341,7 +341,7 @@ public:
     void        refresh_plugin_tips();
     void RunScript(wxString js);
 
-    //SoftFever (OrcaSlicer)
+    //SoftFever
     void show_device(bool bBBLPrinter);
 
     PA_Calibration_Dlg* m_pa_calib_dlg{ nullptr };
