@@ -8,7 +8,7 @@ verzeichnis = '/Users/hliebscher/github/GalaxySlicer/src'
 ausgabedatei = 'gefundene_wxcolor_zeilen.txt'
 
 # Das reguläre Ausdrucksmuster, um nach den gesuchten Ausdrücken zu suchen
-suchmuster = r'wxColour\([^)]+\)'
+suchmuster = r'wxColour\('
 
 
 # Öffnen Sie die Ausgabedatei im Schreibmodus
@@ -16,7 +16,7 @@ with open(ausgabedatei, 'w') as ausgabe:
     # Durchsuchen Sie das Verzeichnis und seine Unterverzeichnisse nach CPP-Dateien
     for ordnerpfad, _, dateien in os.walk(verzeichnis):
         for datei in dateien:
-            if datei.endswith('.*pp'):
+            if datei.endswith('pp'):
                 dateipfad = os.path.join(ordnerpfad, datei)
                 # Öffnen Sie jede CPP-Datei zum Lesen
                 #log ausgabe welche datei geöffnet wird
