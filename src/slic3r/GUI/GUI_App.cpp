@@ -2196,7 +2196,6 @@ bool GUI_App::on_init_inner()
 #endif // __WXMSW__
 
         preset_updater = new PresetUpdater();
-#if orca_todo
         Bind(EVT_SLIC3R_VERSION_ONLINE, [this](const wxCommandEvent& evt) {
             if (this->plater_ != nullptr) {
                 // this->plater_->get_notification_manager()->push_notification(NotificationType::NewAppAvailable);
@@ -2285,7 +2284,6 @@ bool GUI_App::on_init_inner()
             });
             dlg.ShowModal();
         });
-#endif
     }
     else {
 #ifdef __WXMSW__
@@ -3983,93 +3981,150 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
 {
     AppConfig* app_config = wxGetApp().app_config;
     auto version_check_url = app_config->version_check_url();
+
     Http::get(version_check_url)
-        .on_error([&](std::string body, std::string error, unsigned http_status) {
-          (void)body;
-          BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "check_new_galaxyslicer_version", http_status,
-                                             error);
+        .on_error([&](std::string body, std::string error, unsigned http_status) 
+        {
+            (void)body;
+            BOOST_LOG_TRIVIAL(error) << format("Error getting: `%1%`: HTTP %2%, %3%", "check_new_galaxyslicer_version", http_status, error);
         })
         .timeout_connect(1)
-        .on_complete([&](std::string body, unsigned http_status) {
-          // Http response OK
-          if (http_status != 200)
-            return;
-          try {
-            boost::trim(body);
-            // SoftFever: parse github release, ported from SS
-
-            boost::property_tree::ptree root;
-
-            std::stringstream json_stream(body);
-            boost::property_tree::read_json(json_stream, root);
-
-            bool i_am_pre = false;
-            // at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for
-            // metadata
-            std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
-            //TODO 
-            Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
-            Semver best_pre(0, 0, 0);
-            Semver best_release(0, 0, 0);
-            std::string best_pre_url;
-            std::string best_release_url;
-            std::string best_release_content;
-            std::string best_pre_content;
-            const std::regex reg_num("([0-9]+)");
-            for (auto json_version : root) {
-              std::string tag = json_version.second.get<std::string>("tag_name");
-              if (tag[0] == 'v')
-                tag.erase(0, 1);
-              for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num);
-                   it != std::sregex_iterator(); ++it) {
-              }
-              Semver tag_version = get_version(tag, matcher);
-              if (current_version == tag_version)
-                i_am_pre = json_version.second.get<bool>("prerelease");
-              if (json_version.second.get<bool>("prerelease")) {
-                if (best_pre < tag_version) {
-                  best_pre = tag_version;
-                  best_pre_url = json_version.second.get<std::string>("html_url");
-                  best_pre_content = json_version.second.get<std::string>("body");
-                  best_pre.set_prerelease("Preview");
-                }
-              } else {
-                if (best_release < tag_version) {
-                  best_release = tag_version;
-                  best_release_url = json_version.second.get<std::string>("html_url");
-                  best_release_content = json_version.second.get<std::string>("body");
-                }
-              }
+        .on_complete([&](std::string body, unsigned http_status) 
+        {
+            // Http response OK
+            if (http_status != 200)
+            {
+                return;
             }
 
-            // if release is more recent than beta, use release anyway
-            if (best_pre < best_release) {
-              best_pre = best_release;
-              best_pre_url = best_release_url;
-              best_pre_content = best_release_content;
+            try 
+            {
+                boost::trim(body);
+                // SoftFever (OrcaSlicer): parse github release, ported from SS
+
+                boost::property_tree::ptree root;
+
+                std::stringstream json_stream(body);
+                boost::property_tree::read_json(json_stream, root);
+
+                bool i_am_pre = false;
+                // at least two number, use '.' as separator. can be followed by -Az23 for prereleased and +Az42 for metadata
+                std::regex matcher("[0-9]+\\.[0-9]+(\\.[0-9]+)*(-[A-Za-z0-9]+)?(\\+[A-Za-z0-9]+)?");
+
+                //TODO 
+                Semver current_version = get_version(GalaxySlicer_VERSION, matcher);
+
+                Semver best_pre(0, 0, 0);
+                Semver best_release(0, 0, 0);
+
+                //GalaxySlicer:
+                //If the slicer version is not Vx.0.0, then the major version of the release is taken from the slicer version. 
+                if (current_version.maj() != 0 && current_version.patch() != 0)
+                {
+                    best_pre.set_maj(current_version.maj());
+                    best_release.set_maj(current_version.maj());
+
+                    BOOST_LOG_TRIVIAL(info) << format("Pre version: %1%", best_pre.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("Best version: %1%", best_release.to_string_output());
+                }
+                //GalaxySlicer:
+                //If the slicer version is Vx.0.0. then the slicer version is set below the major version of the slicer. 
+                //This makes it possible to use Vx.0.0 as well
+                else
+                {
+                    best_pre.set_maj(current_version.maj() - 1);
+                    best_release.set_maj(current_version.maj() - 1);
+
+                    BOOST_LOG_TRIVIAL(info) << format("Pre version: %1%", best_pre.to_string_output());
+                    BOOST_LOG_TRIVIAL(info) << format("Best version: %1%", best_release.to_string_output());
+                }
+
+                std::string best_pre_url;
+                std::string best_release_url;
+                std::string best_release_content;
+                std::string best_pre_content;
+
+                const std::regex reg_num("([0-9]+)");
+
+                for (auto json_version : root) 
+                {
+                    std::string tag = json_version.second.get<std::string>("tag_name");
+
+                    //GalaxySlicer: Github tags use a capital V instead of a small v
+                    if (tag[0] == 'V')
+                    {
+                        tag.erase(0, 1);
+                    }
+
+                    //for (std::regex_iterator it = std::sregex_iterator(tag.begin(), tag.end(), reg_num); it != std::sregex_iterator(); ++it) 
+                    //{
+
+                    //}
+              
+                    Semver tag_version = get_version(tag, matcher);
+
+                    BOOST_LOG_TRIVIAL(info) << format("Tag version: %1%", tag_version.to_string_output());
+
+                    if (current_version == tag_version)
+                    {
+                        i_am_pre = json_version.second.get<bool>("prerelease");
+                    }
+
+                    if (json_version.second.get<bool>("prerelease")) 
+                    {
+                        if (best_pre < tag_version) 
+                        {
+                            best_pre = tag_version;
+                            best_pre_url = json_version.second.get<std::string>("html_url");
+                            best_pre_content = json_version.second.get<std::string>("body");
+                            best_pre.set_prerelease("Preview");
+                        }
+                    } 
+                    else 
+                    {
+                        if (best_release < tag_version) 
+                        {
+                            best_release = tag_version;
+                            best_release_url = json_version.second.get<std::string>("html_url");
+                            best_release_content = json_version.second.get<std::string>("body");
+                        }
+                    }
+                }
+
+                // if release is more recent than beta, use release anyway
+                if (best_pre < best_release) 
+                {
+                    best_pre = best_release;
+                    best_pre_url = best_release_url;
+                    best_pre_content = best_release_content;
+                }
+
+                BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
+                BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
+
+                // if we're the most recent, don't do anything
+                if ((i_am_pre ? best_pre : best_release) <= current_version)
+                {
+                    return;
+                }
+
+                //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string_output(): best_release.to_string_output());
+
+                version_info.url = i_am_pre ? best_pre_url : best_release_url;
+                version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
+                version_info.description = i_am_pre ? best_pre_content : best_release_content;
+                version_info.force_upgrade = false;
+
+                wxCommandEvent *evt = new wxCommandEvent(EVT_SLIC3R_VERSION_ONLINE);
+                evt->SetString((i_am_pre ? best_pre : best_release).to_string());
+                GUI::wxGetApp().QueueEvent(evt);
+            } 
+            catch (...) 
+            {
+
             }
-
-            BOOST_LOG_TRIVIAL(info) << format("Current version: %1%", current_version.to_string_output());
-            BOOST_LOG_TRIVIAL(info) << format("Online version: %1%", best_pre.to_string_output());
-
-            // if we're the most recent, don't do anything
-            if ((i_am_pre ? best_pre : best_release) <= current_version)
-              return;
-
-            //BOOST_LOG_TRIVIAL(info) << format("Got %1% online version: `%2%`. Sending to GUI thread...", SLIC3R_APP_NAME, i_am_pre ? best_pre.to_string_output(): best_release.to_string_output());
-
-            version_info.url = i_am_pre ? best_pre_url : best_release_url;
-            version_info.version_str = i_am_pre ? best_pre.to_string_output() : best_release.to_string_output();
-            version_info.description = i_am_pre ? best_pre_content : best_release_content;
-            version_info.force_upgrade = false;
-
-            wxCommandEvent *evt = new wxCommandEvent(EVT_SLIC3R_VERSION_ONLINE);
-            evt->SetString((i_am_pre ? best_pre : best_release).to_string());
-            GUI::wxGetApp().QueueEvent(evt);
-          } catch (...) {
-          }
         })
-        .perform();
+    .perform();
 }
 
 //BBS pop up a dialog and download files
