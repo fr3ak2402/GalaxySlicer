@@ -1525,9 +1525,7 @@ var LangText = {
 		"t104": "Discord",
 		"t105": "Resmi sunucu"
 	}
-	
 };
-
 
 var LANG_COOKIE_NAME = "BambuWebLang";
 var LANG_COOKIE_EXPIRESECOND = 365 * 86400;
