@@ -244,7 +244,7 @@ var LangText={
 			"t50":"Uitloggen",
 			"t52":"Overslaan",
 			"t53":"Doe mee",
-			"t54":"In de 3D-printgemeenschap leren we van elkaars successen en mislukkingen om onze eigen sliceparameters en instellingen aan te passen. GalaxySlicer volgt hetzelfde principe en gebruikt machinaal leren om zijn prestaties te verbeteren op basis van de successen en mislukkingen van de grote hoeveelheid afdrukken van onze gebruikers. We trainen GalaxySlicer om slimmer te worden door hen echte wereldgegevens te voeden. Als u bereid bent, zal deze service informatie uit uw foutenlogboeken en gebruikslogboeken raadplegen, inclusief informatie die wordt beschreven in het ",
+			"t54":"In de 3D Printing gemeenschap leren we van elkaars successen en mislukkingen om onze eigen snijparameters en instellingen aan te passen. GalaxySlicer volgt hetzelfde principe en gebruikt machine learning om zijn prestaties te verbeteren op basis van de successen en mislukkingen van het enorme aantal prints door onze gebruikers. We trainen GalaxySlicer om slimmer te worden door ze te voeden met gegevens uit de echte wereld. Als je daartoe bereid bent, krijgt deze service toegang tot informatie uit je foutenlogboeken en gebruikslogboeken, die informatie kunnen bevatten zoals beschreven in ",
 			"t55":"Privacybeleid",
 			"t56":". We verzamelen geen persoonlijke gegevens waarmee een individu direct of indirect kan worden geïdentificeerd, inclusief maar niet beperkt tot namen, adressen, betaalinformatie of telefoonnummers. Door deze service in te schakelen, gaat u akkoord met deze voorwaarden en de verklaring over het privacybeleid.",
 			"t57":"",
