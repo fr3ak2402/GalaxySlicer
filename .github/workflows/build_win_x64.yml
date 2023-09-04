@@ -46,7 +46,7 @@ jobs:
       
       - name: Build GalaxySlicer
         working-directory: ${{ github.workspace }}
-        run: .\build_release_vs2022.bat studio
+        run: .\build_release_vs2022.bat slicer
 
       - name: Upload GalaxySlicer
         uses: actions/upload-artifact@v3
