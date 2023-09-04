@@ -71,7 +71,7 @@ BBLStatusBarSend::BBLStatusBarSend(wxWindow *parent, int id)
 
     m_sizer_status_text = new wxBoxSizer(wxHORIZONTAL);
     m_link_show_error = new Label(m_self, _L("Check the reason"));
-    m_link_show_error->SetForegroundColour(wxColour("#00AE42"));
+    m_link_show_error->SetForegroundColour(wxColour("#9C6DA4")); //TODO 0x9C6DA4 0x00AE42
     m_link_show_error->SetFont(::Label::Head_13);
 
     m_bitmap_show_error_close = create_scaled_bitmap("link_more_error_close", nullptr, 7);

@@ -2765,7 +2765,7 @@ ObjectTablePanel::ObjectTablePanel( wxWindow* parent, wxWindowID id, const wxPoi
     m_page_sizer->Add(m_object_settings->get_sizer(), 1, wxEXPAND | wxALL, 2 );
 
     auto m_line_left = new wxPanel(this, wxID_ANY, wxDefaultPosition, wxSize(2, -1), wxTAB_TRAVERSAL);
-    m_line_left->SetBackgroundColour(wxColour(0xA6, 0xa9, 0xAA));
+    m_line_left->SetBackgroundColour(wxColour(0xA6, 0xa9, 0xAA)); //#46a9aa
 
 
     m_top_sizer->Add(m_object_grid, 1, wxEXPAND,0);

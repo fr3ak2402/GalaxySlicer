@@ -2,7 +2,7 @@ import os
 import re
 
 # Das Verzeichnis, in dem Sie nach CPP-Dateien suchen möchten
-verzeichnis = '/Users/hliebscher/github/GalaxySlicer/src'
+verzeichnis = '/Users/hliebscher/github/GalaxySlicer/'
 
 # Die Datei, in der Sie die Tabelle speichern möchten
 ausgabedatei = 'gefundene_wxcolor_werte.txt'
