@@ -1,6 +1,7 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev/LICENSE.txt)
+[![Version: 1.0.0-alpha2](https://img.shields.io/badge/version-1.0.0--alpha2-693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![Build Win x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
 [![Build macOS x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_x64.yml)
 [![Build macOS arm64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml)
