@@ -36,6 +36,11 @@
 			},
 			{
 				"type": "po",
+				"pattern": "localization/i18n/tr/GalaxySlicer_tr.po",
+				"lang": "tr"
+			},
+			{
+				"type": "po",
 				"pattern": "localization/i18n/hu/GalaxySlicer_hu.po",
 				"lang": "hu"
 			},

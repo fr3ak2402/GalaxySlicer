@@ -76,11 +76,6 @@
 
 static constexpr const float TRACKBALLSIZE = 0.8f;
 
-static const float SLIDER_DEFAULT_RIGHT_MARGIN  = 10.0f;
-static const float SLIDER_DEFAULT_BOTTOM_MARGIN = 10.0f;
-static const float SLIDER_RIGHT_MARGIN          = 124.0f;
-static const float SLIDER_BOTTOM_MARGIN         = 64.0f;
-
 float GLCanvas3D::DEFAULT_BG_LIGHT_COLOR[3] = { 0.906f, 0.906f, 0.906f };
 float GLCanvas3D::DEFAULT_BG_LIGHT_COLOR_DARK[3] = { 0.329f, 0.329f, 0.353f };
 float GLCanvas3D::ERROR_BG_LIGHT_COLOR[3] = { 0.753f, 0.192f, 0.039f };
@@ -2034,8 +2029,9 @@ void GLCanvas3D::render(bool only_init)
         float right_margin = SLIDER_DEFAULT_RIGHT_MARGIN;
         float bottom_margin = SLIDER_DEFAULT_BOTTOM_MARGIN;
         if (m_canvas_type == ECanvasType::CanvasPreview) {
-            right_margin = SLIDER_RIGHT_MARGIN;
-            bottom_margin = SLIDER_BOTTOM_MARGIN;
+            const float scale_factor = get_scale();
+            right_margin = SLIDER_RIGHT_MARGIN * scale_factor * GCODE_VIEWER_SLIDER_SCALE;
+            bottom_margin = SLIDER_BOTTOM_MARGIN * scale_factor * GCODE_VIEWER_SLIDER_SCALE;
         }
         wxGetApp().plater()->get_notification_manager()->render_notifications(*this, get_overlay_window_width(), bottom_margin, right_margin);
     }
@@ -6876,7 +6872,8 @@ void GLCanvas3D::_render_objects(GLVolumeCollection::ERenderType type, bool with
 //BBS: GUI refactor: add canvas size as parameters
 void GLCanvas3D::_render_gcode(int canvas_width, int canvas_height)
 {
-    m_gcode_viewer.render(canvas_width, canvas_height, SLIDER_RIGHT_MARGIN);
+    float scale_factor = get_scale() * GCODE_VIEWER_SLIDER_SCALE;
+    m_gcode_viewer.render(canvas_width, canvas_height, SLIDER_RIGHT_MARGIN * GCODE_VIEWER_SLIDER_SCALE);
     IMSlider *layers_slider = m_gcode_viewer.get_layers_slider();
     IMSlider *moves_slider  = m_gcode_viewer.get_moves_slider();
 
@@ -6945,21 +6942,17 @@ void GLCanvas3D::_render_selection_center() const
 void GLCanvas3D::_check_and_update_toolbar_icon_scale()
 {
     // Don't update a toolbar scale, when we are on a Preview
-    if (wxGetApp().plater()->is_preview_shown())
-    {
+    if (wxGetApp().plater()->is_preview_shown()) {
+        IMSlider   *m_layers_slider = get_gcode_viewer().get_layers_slider();
+        IMSlider   *m_moves_slider  = get_gcode_viewer().get_moves_slider();
+        const float sc              = get_scale();
 
-#if ENABLE_RETINA_GL
-        IMSlider* m_layers_slider = get_gcode_viewer().get_layers_slider();
-        IMSlider* m_moves_slider = get_gcode_viewer().get_moves_slider();
-        const float sc = m_retina_helper->get_scale_factor();
-        m_layers_slider->set_scale(sc);
-        m_moves_slider->set_scale(sc);
+        m_layers_slider->set_scale(sc * GCODE_VIEWER_SLIDER_SCALE);
+        m_moves_slider->set_scale(sc * GCODE_VIEWER_SLIDER_SCALE);
         m_gcode_viewer.set_scale(sc);
 
-        auto* m_notification = wxGetApp().plater()->get_notification_manager();
+        auto *m_notification = wxGetApp().plater()->get_notification_manager();
         m_notification->set_scale(sc);
-
-#endif
         return;
     }
 

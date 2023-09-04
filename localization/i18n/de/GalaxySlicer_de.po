@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 01:32+0200\n"
+"POT-Creation-Date: 2023-09-04 03:31+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -573,7 +573,7 @@ msgid "V"
 msgstr "V"
 
 msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-msgstr ""
+msgstr "Basierend auf OrcaSlicer, BambuStudio und PrusaSlicer"
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -613,13 +613,16 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "Verbindung zu %s fehlgeschlagen! [SN:%s, code=%s]"
 
 msgid ""
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
+"GalaxySlicer benötigt die Microsoft WebView2-Runtime, um bestimmte "
+"Funktionen auszuführen.\n"
+"Klicken Sie auf Ja, um sie jetzt zu installieren."
 
 msgid "WebView2 Runtime"
-msgstr ""
+msgstr "WebView2-Runtime"
 
 msgid ""
 "GalaxySlicer configuration file may be corrupted and is not abled to be "
@@ -856,10 +859,10 @@ msgid "Orca Cube"
 msgstr "Orca Würfel"
 
 msgid "3DBenchy"
-msgstr ""
+msgstr "3DBenchy"
 
 msgid "Autodesk FDM Test"
-msgstr ""
+msgstr "Autodesk FDM Test"
 
 msgid "Voron Cube"
 msgstr "Voron Würfel"
@@ -976,10 +979,10 @@ msgid "Assemble the selected objects to an object with single part"
 msgstr "Zusammenfügen der ausgewählten Objekte zu einem Objekt mit einem Teil"
 
 msgid "Mesh boolean"
-msgstr ""
+msgstr "Volumenoperationen"
 
 msgid "Mesh boolean operations including union and subtraction"
-msgstr ""
+msgstr "Volumenoperationen einschließlich Vereinigung und Subtraktion"
 
 msgid "Along X axis"
 msgstr "Entlang der X Achse"
@@ -1106,7 +1109,7 @@ msgid "Lock"
 msgstr "Sperren"
 
 msgid "Edit Plate Name"
-msgstr ""
+msgstr "Editiere Plattenname"
 
 msgid "Name"
 msgstr "Name"
@@ -1179,7 +1182,7 @@ msgid "Error!"
 msgstr "Fehler!"
 
 msgid "Failed to get the model data in the current file."
-msgstr ""
+msgstr "Fehler beim Abrufen der Modellinformationen in der aktuellen Datei."
 
 msgid "Generic"
 msgstr "Generisch"
@@ -1548,7 +1551,7 @@ msgid "AMS"
 msgstr "AMS"
 
 msgid "Auto Refill"
-msgstr ""
+msgstr "Automatisch nachfüllen"
 
 msgid "AMS not connected"
 msgstr "AMS nicht verbunden"
@@ -1794,7 +1797,7 @@ msgstr "Erfolgreich gesendet. Springt automatisch auf die Geräteseite in %ss"
 
 #, c-format, boost-format
 msgid "Successfully sent. Will automatically jump to the next page in %ss"
-msgstr ""
+msgstr "Erfolgreich gesendet. Springt automatisch auf die nächste Seite in %ss"
 
 msgid "An SD card needs to be inserted before printing via LAN."
 msgstr "Vor dem Drucken über LAN muss eine MicroSD-Karte eingelegt werden."
@@ -1932,9 +1935,11 @@ msgid ""
 "GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
 "SuperSlicer."
 msgstr ""
+"GalaxySlicer basiert auf OrcaSlicer, BambuStudio, PrusaSlicer und "
+"SuperSlicer."
 
 msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
-msgstr ""
+msgstr "OrcaSlicer basiert ursprünglich auf BambuStudio von BambuLab."
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
 msgstr "BambuStudio basiert ursprünglich auf PrusaSlicer von PrusaResearch."
@@ -1988,10 +1993,10 @@ msgstr ""
 "unterstützt."
 
 msgid "Factors of Flow Dynamics Calibration"
-msgstr ""
+msgstr "Faktoren der Flussdynamik-Kalibrierung"
 
 msgid "PA Profile"
-msgstr ""
+msgstr "PA-Profil"
 
 msgid "Factor K"
 msgstr "Faktor K"
@@ -2190,6 +2195,8 @@ msgid ""
 "When the current material run out, the printer will continue to print in the "
 "following order."
 msgstr ""
+"Wenn das aktuelle Material leer ist, druckt der Drucker in folgender "
+"Reihenfolge weiter."
 
 msgid "Group"
 msgstr "Gruppe"
@@ -2200,6 +2207,10 @@ msgid ""
 "(Currently supporting automatic supply of consumables with the same brand, "
 "material type, and color)"
 msgstr ""
+"Derzeit sind keine identischen Ersatzverbrauchsmaterialien verfügbar, und "
+"eine automatische Auffüllung ist derzeit nicht möglich. \n"
+"(Derzeit wird die automatische Versorgung mit Verbrauchsmaterialien der "
+"gleichen Marke, des gleichen Materialtyps und der gleichen Farbe unterstützt)"
 
 msgid "AMS Settings"
 msgstr "AMS-Einstellungen"
@@ -2745,26 +2756,30 @@ msgid "Failed to start printing job"
 msgstr "Druckauftrag konnte nicht gestartet werden"
 
 msgid "Invalid nozzle diameter"
-msgstr ""
+msgstr "Falscher Düsendurchmesser"
 
 msgid "Calibration error"
-msgstr ""
+msgstr "Kalibrierungsfehler"
 
 msgid "TPU is not supported by AMS."
-msgstr ""
+msgstr "TPU wird von AMS nicht unterstützt."
 
 msgid "Bambu PET-CF/PA6-CF is not supported by AMS."
-msgstr ""
+msgstr "Bambu PET-CF/PA6-CF wird von AMS nicht unterstützt."
 
 msgid ""
 "Damp PVA will become flexible and get stuck inside AMS,please take care to "
 "dry it before use."
 msgstr ""
+"Damp PVA wird flexibel und bleibt im AMS stecken, bitte trocknen Sie es "
+"vorher."
 
 msgid ""
 "CF/GF filaments are hard and brittle, It's easy to break or get stuck in "
 "AMS, please use with caution."
 msgstr ""
+"CF/GF-Filamente sind hart und spröde. Sie brechen leicht oder bleiben im AMS "
+"stecken. Bitte verwenden Sie sie mit Vorsicht."
 
 msgid "default"
 msgstr "Standard"
@@ -3709,6 +3724,8 @@ msgstr "Laden..."
 
 msgid "Initialize failed (Not supported on the current printer version)!"
 msgstr ""
+"Initialisierung fehlgeschlagen (Nicht unterstützt in der aktuellen "
+"Druckerversion)!"
 
 msgid "Initialize failed (Not accessible in LAN-only mode)!"
 msgstr "Initialisierung fehlgeschlagen (Kein Zugriff im reinen LAN-Modus)!"
@@ -3865,6 +3882,8 @@ msgid ""
 "The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
 "and export a new .gcode.3mf file."
 msgstr ""
+"Die .gcode.3mf-Datei enthält keine G-Code-Daten. Bitte slicen Sie sie mit "
+"Bambu Studio und exportieren Sie eine neue .gcode.3mf-Datei."
 
 #, c-format, boost-format
 msgid "File '%s' was lost! Please download it again."
@@ -3888,10 +3907,10 @@ msgid "Downloading %d%%..."
 msgstr "%d%% wird heruntergeladen..."
 
 msgid "Not supported on the current printer version."
-msgstr ""
+msgstr "Nicht unterstützt in der aktuellen Druckerversion."
 
 msgid "Storage unavailable, insert SD card."
-msgstr ""
+msgstr "Speicher nicht verfügbar, MicroSD-Karte einlegen."
 
 msgid "Speed:"
 msgstr "Geschwindigkeit:"
@@ -3915,22 +3934,22 @@ msgid "Swap Y/Z axes"
 msgstr "Y/Z-Achsen vertauschen"
 
 msgid "Invert X axis"
-msgstr ""
+msgstr "Invertiere X-Achse"
 
 msgid "Invert Y axis"
-msgstr ""
+msgstr "Invertiere Y-Achse"
 
 msgid "Invert Z axis"
-msgstr ""
+msgstr "Invertiere Z-Achse"
 
 msgid "Invert Yaw axis"
-msgstr ""
+msgstr "Invertiere Yaw-Achse"
 
 msgid "Invert Pitch axis"
-msgstr ""
+msgstr "Invertiere Pitch-Achse"
 
 msgid "Invert Roll axis"
-msgstr ""
+msgstr "Invertiere Roll-Achse"
 
 msgid "Printing Progress"
 msgstr "Druckprozess"
@@ -4745,6 +4764,7 @@ msgstr ""
 
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
 msgstr ""
+"Ist der Drucker bereit? Ist die Druckplatte eingelegt, leer und sauber?"
 
 msgid "Upload and Print"
 msgstr "Hochladen und Drucken"
@@ -4883,7 +4903,7 @@ msgid "Login Region"
 msgstr "Login-Region"
 
 msgid "Stealth Mode"
-msgstr ""
+msgstr "Stealth-Modus"
 
 msgid "Metric"
 msgstr "Metrisch"
@@ -5141,7 +5161,7 @@ msgid "Incompatible"
 msgstr "Inkompatibel"
 
 msgid "The selected preset is null!"
-msgstr ""
+msgstr "Das ausgewählte Profil ist null!"
 
 msgid "Plate name"
 msgstr "Platten-Name"
@@ -5153,10 +5173,10 @@ msgid "Print sequence"
 msgstr "Druckreihenfolge"
 
 msgid "Customize"
-msgstr ""
+msgstr "Anpassen"
 
 msgid "First layer filament sequence"
-msgstr ""
+msgstr "erste Filament-Schichtsequenz"
 
 msgid "Same as Global Plate Type"
 msgstr "Entspricht dem globalen Plattentyp"
@@ -5338,7 +5358,7 @@ msgid "Bed Leveling"
 msgstr "Druckbettnivellierung"
 
 msgid "Flow Dynamics Calibration"
-msgstr ""
+msgstr "Flussdynamik-Kalibrierung"
 
 msgid "Can't connect to the printer"
 msgstr "Es kann keine Verbindung zum Drucker hergestellt werden"
@@ -5440,7 +5460,7 @@ msgid "An SD card needs to be inserted before printing."
 msgstr "Vor dem Drucken muss eine MicroSD-Karte eingelegt werden."
 
 msgid "The selected printer is incompatible with the chosen printer presets."
-msgstr ""
+msgstr "Der ausgewählte Drucker ist mit den gewählten Druckerprofilen nicht "
 
 msgid "An SD card needs to be inserted to record timelapse."
 msgstr ""
@@ -5497,6 +5517,8 @@ msgstr ""
 msgid ""
 "Connecting to the printer. Unable to cancel during the connection process."
 msgstr ""
+"Verbindung zum Drucker wird hergestellt. Abbruch während des "
+"Verbindungsvorgangs nicht möglich."
 
 msgid "Preparing print job"
 msgstr "Druckauftrag vorbereiten"
@@ -5511,9 +5533,11 @@ msgid ""
 "Caution to use! Flow calibration on Textured PEI Plate may fail due to the "
 "scattered surface."
 msgstr ""
+"Vorsicht bei der Verwendung! Die Flusskalibrierung auf einer strukturierten "
+"PEI-Platte kann aufgrund der unregelmäßigen Oberfläche fehlschlagen."
 
 msgid "Automatic flow calibration using Micro Lidar"
-msgstr ""
+msgstr "Automatische Flusskalibrierung mit Micro Lidar"
 
 msgid "Modifying the device name"
 msgstr "Den Gerätenamen ändern"
@@ -5816,7 +5840,7 @@ msgid "Post-processing Scripts"
 msgstr "Post-Processing Scripts"
 
 msgid "Notes"
-msgstr ""
+msgstr "Notizen"
 
 msgid "Frequent"
 msgstr "Häufig"
@@ -6818,7 +6842,7 @@ msgid "Gap infill"
 msgstr "Lückenfüllung"
 
 msgid "Skirt"
-msgstr ""
+msgstr "Saum"
 
 msgid "Support interface"
 msgstr "Stützstruktur-Schnittstelle"
@@ -7047,6 +7071,27 @@ msgstr ""
 "Schichthöhe wie das Objekt haben."
 
 msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+"Der Durchmesser der Spitze des organischen Stützbaums darf nicht kleiner "
+"sein als die Extrusionsbreite des Stützmaterials."
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+"Der Durchmesser des organischen Stützbaums darf nicht kleiner sein als das 2-"
+"fache der Extrusionsbreite des Stützmaterials."
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+"Organischer Stützbaumzweigdurchmesser darf nicht kleiner sein als der "
+"Durchmesser der Spitze des Stützbaums."
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr ""
 "Stützerzwinger werden verwendet, aber die Stützstrukturen sind nicht "
@@ -7060,16 +7105,23 @@ msgid ""
 "each layer to prevent loss of floating point accuracy. Add \"G92 E0\" to "
 "layer_gcode."
 msgstr ""
+"Relative Extruderadressierung erfordert das Zurücksetzen der "
+"Extruderposition bei jeder Schicht, um einen Verlust der Genauigkeit der "
+"Gleitkommazahl zu verhindern. Fügen Sie \"G92 E0\" zu layer_gcode hinzu."
 
 msgid ""
 "\"G92 E0\" was found in before_layer_gcode, which is incompatible with "
 "absolute extruder addressing."
 msgstr ""
+"\"G92 E0\" wurde in before_layer_gcode gefunden, was mit absoluter "
+"Extruderadressierung nicht kompatibel ist."
 
 msgid ""
 "\"G92 E0\" was found in layer_gcode, which is incompatible with absolute "
 "extruder addressing."
 msgstr ""
+"\"G92 E0\" wurde in layer_gcode gefunden, was mit absoluter "
+"Extruderadressierung nicht kompatibel ist."
 
 #, c-format, boost-format
 msgid "Plate %d: %s does not support filament %s"
@@ -7327,7 +7379,7 @@ msgid "Engineering Plate"
 msgstr "Technische Druckplatte"
 
 msgid "First layer print sequence"
-msgstr ""
+msgstr "First Layer Druck Sequence"
 
 msgid "This G-code is inserted at every layer change before lifting z"
 msgstr ""
@@ -7504,12 +7556,14 @@ msgstr ""
 "Füllung mehr Platz zu geben"
 
 msgid "Extra perimeters on overhangs"
-msgstr ""
+msgstr "extra Umfänge bei Überhängen"
 
 msgid ""
 "Create additional perimeter paths over steep overhangs and areas where "
 "bridges cannot be anchored. "
 msgstr ""
+"Erstellen Sie zusätzliche Umfangspfade über steile Überhänge und Bereiche, "
+"in denen Brücken nicht verankert werden können."
 
 msgid "Classic mode"
 msgstr "Klassicher Modus"
@@ -7973,10 +8027,10 @@ msgid "Color"
 msgstr "Farbe"
 
 msgid "Filament notes"
-msgstr ""
+msgstr "Filamentnotizen"
 
 msgid "You can put your notes regarding the filament here."
-msgstr ""
+msgstr "Sie können hier Ihre Notizen zum Filament eintragen."
 
 msgid "Required nozzle HRC"
 msgstr "Erforderliche Düse HRC"
@@ -8845,7 +8899,7 @@ msgid "Maximum acceleration for travel"
 msgstr "Maximale Fahrgeschwindigkeit"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
-msgstr ""
+msgstr "Maximale Fahrgeschwindigkeit (M204 T), gilt nur für Marlin 2"
 
 msgid "Fan speed"
 msgstr "Lüftergeschwindigkeit"
@@ -8907,12 +8961,14 @@ msgid "Diameter of nozzle"
 msgstr "Düsendurchmesser"
 
 msgid "Configuration notes"
-msgstr ""
+msgstr "Konfigurationsnotizen"
 
 msgid ""
 "You can put here your personal notes. This text will be added to the G-code "
 "header comments."
 msgstr ""
+"Hier können Sie Ihre persönlichen Notizen eintragen. Dieser Text wird den "
+"Kommentaren im G-Code-Kopf hinzugefügt."
 
 msgid "Host Type"
 msgstr "Host-Typ"
@@ -9031,10 +9087,10 @@ msgstr ""
 "Konfigurationseinstellungen durch Lesen von Umgebungsvariablen abrufen."
 
 msgid "Printer notes"
-msgstr ""
+msgstr "Printer Notizen"
 
 msgid "You can put your notes regarding the printer here."
-msgstr ""
+msgstr "Sie können hier Ihre Notizen zum Drucker eintragen."
 
 msgid "Raft contact Z distance"
 msgstr "Z Abstand Objekt Druckbasis "
@@ -9670,6 +9726,9 @@ msgstr "Baum stark"
 msgid "Tree Hybrid"
 msgstr "Baum-Hybrid"
 
+msgid "Organic"
+msgstr "Organisch"
+
 msgid "Independent support layer height"
 msgstr "Unabhängige Stützstruktur-Schichthöhe"
 
@@ -9705,6 +9764,20 @@ msgstr ""
 "Baumstütze haben dürfen: Je größer der Winkel, desto horizontaler können die "
 "Äste gedruckt werden und desto weiter reichen sie."
 
+msgid "Preferred Branch Angle"
+msgstr "bevorzugter Astwinkel"
+
+#. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+"Der bevorzugte Winkel der Äste, wenn sie das Modell nicht vermeiden müssen. "
+"Verwenden Sie einen niedrigeren Winkel, um sie vertikaler und stabiler zu "
+"machen. Verwenden Sie einen höheren Winkel, damit die Äste schneller "
+"zusammenwachsen."
+
 msgid "Tree support branch distance"
 msgstr "Abstand der Baumstützenäste"
 
@@ -9713,6 +9786,23 @@ msgid ""
 msgstr ""
 "Mit dieser Einstellung wird der Abstand zwischen benachbarten Baum-"
 "Stützknoten festgelegt."
+
+msgid "Branch Density"
+msgstr "Baumstützenastdichte"
+
+#. TRN PrintSettings: "Organic supports" > "Branch Density"
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
+"Stellt die Dichte der Stützstruktur ein, die zum Erzeugen der Spitzen der "
+"Äste verwendet wird. Ein höherer Wert führt zu besseren Überhängen, aber die "
+"Stützen sind schwerer zu entfernen. Daher wird empfohlen, stattdessen obere "
+"Stützschnittstellen zu aktivieren, wenn dichte Schnittstellen erforderlich "
+"sind."
 
 msgid "Adaptive layer height"
 msgstr "Adaptive Schichthöhe"
@@ -9740,11 +9830,47 @@ msgstr "Baumsupport mit Füllung"
 msgid "Distance from tree branch to the outermost brim line"
 msgstr "Abstand vom Modell zur äußersten Randlinie"
 
+msgid "Tip Diameter"
+msgstr "Tippdurchmesser"
+
+#. TRN PrintSettings: "Organic supports" > "Tip Diameter"
+msgid "Branch tip diameter for organic supports."
+msgstr "Tippdurchmesser des Astes für organische Stützen."
+
 msgid "Tree support branch diameter"
 msgstr "Durchmesser des Stützastes eines Baumes"
 
 msgid "This setting determines the initial diameter of support nodes."
 msgstr "Diese Einstellung bestimmt den Anfangsdurchmesser der Stützknoten."
+
+#. TRN PrintSettings: #lmFIXME
+msgid "Branch Diameter Angle"
+msgstr "Branch Diameter Winkeleinstellung"
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+"Der Winkel des Durchmessers der Äste, da sie sich allmählich zum Boden "
+"verdicken. Ein Winkel von 0 führt dazu, dass die Äste über ihre Länge eine "
+"gleichmäßige Dicke haben. Ein kleiner Winkel kann die Stabilität der "
+"organischen Stütze erhöhen."
+
+msgid "Branch Diameter with double walls"
+msgstr "Branch Diameter mit doppelten Wänden"
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter"
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
+"Äste mit einer Fläche, die größer ist als die Fläche eines Kreises mit "
+"diesem Durchmesser, werden mit doppelten Wänden für die Stabilität gedruckt. "
+"Setzen Sie diesen Wert auf Null, um keine doppelten Wände zu erhalten."
 
 msgid "Tree support wall loops"
 msgstr "Wandschleifen für Baumstützen"
@@ -10074,6 +10200,18 @@ msgstr ""
 "Mindestfeaturegröße sind, auf die Mindestwandbreite verbreitert werden. "
 "Bezogen als Prozentsatz auf Düsendurchmesser."
 
+msgid "First layer minimum wall width"
+msgstr "erste Schicht minimale Wandbreite"
+
+msgid ""
+"The minimum wall width that should be used for the first layer is "
+"recommended to be set to the same size as the nozzle. This adjustment is "
+"expected to enhance adhesion."
+msgstr ""
+"Die minimale Wandbreite, die für die erste Schicht verwendet werden soll, "
+"sollte auf die gleiche Größe wie die Düse eingestellt werden. Diese "
+"Anpassung soll die Haftung verbessern."
+
 msgid "Minimum wall width"
 msgstr "Minimale Wandbreite"
 
@@ -10136,7 +10274,7 @@ msgid "Load cached slicing data from directory"
 msgstr "Zwischengespeicherte Slicing-Daten aus dem Verzeichnis laden"
 
 msgid "Export STL"
-msgstr ""
+msgstr "Export STL"
 
 msgid "Export the objects as multiple STL."
 msgstr "Die Objekte als mehrere STL-Dateien exportieren."
@@ -10425,126 +10563,138 @@ msgid "This OBJ file couldn't be read because it's empty."
 msgstr "Diese OBJ-Datei konnte nicht gelesen werden, da sie leer ist."
 
 msgid "Flow Rate Calibration"
-msgstr ""
+msgstr "Durchflusskalibrierung"
 
 msgid "Max Volumetric Speed Calibration"
-msgstr ""
+msgstr "Maximale volumetrische Geschwindigkeitskalibrierung"
 
 msgid "Manage Result"
-msgstr ""
+msgstr "Verwalten Sie das Ergebnis"
 
 msgid "Manual Calibration"
-msgstr ""
+msgstr "Manuelle Kalibrierung"
 
 msgid "Result can be read by human eyes."
-msgstr ""
+msgstr "Ergebnis kann mit bloßem Auge gelesen werden."
 
 msgid "Auto-Calibration"
-msgstr ""
+msgstr "Automatische Kalibrierung"
 
 msgid "We would use Lidar to read the calibration result"
-msgstr ""
+msgstr "Wir würden Lidar verwenden, um das Kalibrierungsergebnis zu lesen"
 
 msgid "Prev"
-msgstr ""
+msgstr "Vorherige"
 
 msgid "Recalibration"
-msgstr ""
+msgstr "Rekalibrierung"
 
 msgid "Calibrate"
-msgstr ""
+msgstr "Kalibrieren"
 
 msgid "Finish"
 msgstr "Fertig"
 
 msgid "Wiki"
-msgstr ""
+msgstr "Wiki"
 
 msgid "How to use calibration result?"
-msgstr ""
+msgstr "Wie verwende ich das Kalibrierungsergebnis?"
 
 msgid ""
 "You could change the Flow Dynamics Calibration Factor in material editing"
 msgstr ""
+"Sie können den Durchflussdynamik-Kalibrierungsfaktor in der "
+"Materialbearbeitung ändern"
 
 msgid ""
 "The current firmware version of the printer does not support calibration.\n"
 "Please upgrade the printer firmware."
 msgstr ""
+"Die aktuelle Firmware-Version des Druckers unterstützt keine Kalibrierung.\n"
+"Bitte aktualisieren Sie die Drucker-Firmware."
 
 msgid "Calibration not supported"
-msgstr ""
+msgstr "K"
 
 msgid "Flow Dynamics"
-msgstr ""
+msgstr "Flussdynamik"
 
 msgid "Flow Rate"
-msgstr ""
+msgstr "Durchflussrate"
 
 msgid "Max Volumetric Speed"
-msgstr ""
+msgstr "Maximale volumetrische Geschwindigkeit"
 
 msgid "Please enter the name you want to save to printer."
 msgstr ""
+"Bitte geben Sie den Namen ein, unter dem Sie ihn auf dem Drucker speichern "
+"möchten."
 
 msgid "The name cannot exceed 40 characters."
-msgstr ""
+msgstr "Der Name darf 40 Zeichen nicht überschreiten."
 
 msgid "The name cannot be empty."
-msgstr ""
+msgstr "Der Name darf nicht leer sein."
 
 #, boost-format
 msgid "The selected preset: %1% is not found."
-msgstr ""
+msgstr "Die ausgewählte Voreinstellung: %1% wurde nicht gefunden."
 
 msgid "The name cannot be the same as the system preset name."
 msgstr ""
+"Der Name darf nicht mit dem Namen der Systemvoreinstellung übereinstimmen."
 
 msgid "The name is the same as another existing preset name"
 msgstr ""
+"Der Name ist identisch mit einem anderen vorhandenen Voreinstellungsnamen"
 
 msgid "create new preset failed."
-msgstr ""
+msgstr "erstellen einer neuen Voreinstellung fehlgeschlagen."
 
 msgid ""
 "Are you sure to cancel the current calibration and return to the home page?"
 msgstr ""
+"Sind Sie sicher, dass Sie die aktuelle Kalibrierung abbrechen und zur "
+"Startseite zurückkehren möchten?"
 
 msgid "No Printer Connected!"
-msgstr ""
+msgstr "kein Drucker angeschlossen!"
 
 msgid "Printer is not connected yet."
-msgstr ""
+msgstr "Der Drucker ist noch nicht angeschlossen."
 
 msgid "Please select filament to calibrate."
-msgstr ""
+msgstr "Bitte wählen Sie das Filament zur Kalibrierung aus."
 
 msgid "Connecting to printer..."
-msgstr ""
+msgstr "Verbindung zum Drucker wird hergestellt..."
 
 msgid "The failed test result has been dropped."
-msgstr ""
+msgstr "Das fehlgeschlagene Testergebnis wurde verworfen."
 
 msgid "Flow Dynamics Calibration result has been saved to the printer"
-msgstr ""
+msgstr "Flussdynamik-Kalibrierungsergebnis wurde auf dem Drucker gespeichert"
 
 msgid "Internal Error"
-msgstr ""
+msgstr "Interner Fehler"
 
 msgid "Please select at least one filament for calibration"
-msgstr ""
+msgstr "Bitte wählen Sie mindestens ein Filament zur Kalibrierung aus"
 
 msgid "Flow rate calibration result has been saved to preset"
-msgstr ""
+msgstr "Flussratenkalibrierungsergebnis wurde in Voreinstellung gespeichert"
 
 msgid "The input value size must be 3."
-msgstr ""
+msgstr "Die Eingabewertgröße muss 3 sein."
 
 msgid "Max volumetric speed calibration result has been saved to preset"
 msgstr ""
+"Das Ergebnis der Kalibrierung der maximalen volumetrischen Geschwindigkeit "
+"wurde in der Voreinstellung gespeichert"
 
 msgid "When do you need Flow Dynamics Calibration"
-msgstr ""
+msgstr "Wann benötigen Sie die Flussdynamik-Kalibrierung"
 
 msgid ""
 "We now have added the auto-calibration for different filaments, which is "
@@ -10556,9 +10706,18 @@ msgid ""
 "3. If the max volumetric speed or print temperature is changed in the "
 "filament setting."
 msgstr ""
+"Wir haben jetzt die automatische Kalibrierung für verschiedene Filamente "
+"hinzugefügt, die vollautomatisch ist und das Ergebnis für die zukünftige "
+"Verwendung im Drucker gespeichert wird. Sie müssen die Kalibrierung nur in "
+"den folgenden begrenzten Fällen durchführen:\n"
+"1. Wenn Sie ein neues Filament verschiedener Marken/Modelle einführen oder "
+"das Filament feucht ist;\n"
+"2. wenn die Düse abgenutzt ist oder durch eine neue ersetzt wird;\n"
+"3. Wenn die maximale volumetrische Geschwindigkeit oder die Drucktemperatur "
+"in der Filament-Einstellung geändert wird."
 
 msgid "About this calibration"
-msgstr ""
+msgstr "Über diese Kalibrierung"
 
 msgid ""
 "Please find the details of Flow Dynamics Calibration from our wiki.\n"
@@ -10579,9 +10738,29 @@ msgid ""
 "cause the result not exactly the same in each calibration. We are still "
 "investigating the root cause to do improvements with new updates."
 msgstr ""
+"Bitte finden Sie die Details der Flussdynamik-Kalibrierung in unserem Wiki.\n"
+"\n"
+"Normalerweise ist die Kalibrierung nicht erforderlich. Wenn Sie einen Einzel-"
+"Farb-/Materialdruck mit der Option \"Flussdynamik-Kalibrierung\" im "
+"Druckstartmenü starten, folgt der Drucker dem alten Weg und kalibriert das "
+"Filament vor dem Druck; Wenn Sie einen Mehrfarben-/Materialdruck starten, "
+"verwendet der Drucker den Standard-Kompensationsparameter für das Filament "
+"während jedes Filamentwechsels, was in den meisten Fällen zu einem guten "
+"Ergebnis führt.\n"
+"\n"
+"Bitte beachten Sie, dass es einige Fälle gibt, in denen das Kalibrierungs-"
+"Ergebnis nicht zuverlässig ist: Verwendung einer Texturplatte zur "
+"Kalibrierung; Die Bauplatte hat keine gute Haftung (bitte waschen Sie die "
+"Bauplatte oder tragen Sie Klebestift auf!) ... Sie finden mehr in unserem "
+"Wiki.\n"
+"\n"
+"Die Kalibrierungsergebnisse haben in unserem Test etwa 10 Prozent "
+"Schwankungen, was dazu führen kann, dass das Ergebnis nicht genau bei jeder "
+"Kalibrierung gleich ist. Wir untersuchen noch die Ursache, um mit neuen "
+"Updates Verbesserungen vorzunehmen."
 
 msgid "When to use Flow Rate Calibration"
-msgstr ""
+msgstr "wann die Durchflusskalibrierung verwenden"
 
 msgid ""
 "After using Flow Dynamics Calibration, there might still be some extrusion "
@@ -10594,12 +10773,27 @@ msgid ""
 "4. Weak Structural Integrity: Prints break easily or don't seem as sturdy as "
 "they should be."
 msgstr ""
+"Nach der Verwendung der Flussdynamik-Kalibrierung kann es immer noch zu "
+"einigen Extrusionsproblemen kommen, wie z.B.:\n"
+"1. Überextrusion: Überschüssiges Material auf Ihrem gedruckten Objekt, das "
+"Klumpen oder Pickel bildet, oder die Schichten scheinen dicker als erwartet "
+"und nicht gleichmäßig zu sein.\n"
+"2. Unterextrusion: Sehr dünne Schichten, schwache Füllstärke oder Lücken in "
+"der oberen Schicht des Modells, auch wenn langsam gedruckt wird.\n"
+"3. Schlechte Oberflächenqualität: Die Oberfläche Ihrer Drucke scheint rau "
+"oder uneben zu sein.\n"
+"4. Schwache strukturelle Integrität: Drucke brechen leicht oder scheinen "
+"nicht so robust zu sein, wie sie sein sollten."
 
 msgid ""
 "In addition, Flow Rate Calibration is crucial for foaming materials like LW-"
 "PLA used in RC planes. These materials expand greatly when heated, and "
 "calibration provides a useful reference flow rate."
 msgstr ""
+"Darüber hinaus ist die Durchflusskalibrierung für schäumende Materialien wie "
+"LW-PLA, die in RC-Flugzeugen verwendet werden, von entscheidender Bedeutung. "
+"Diese Materialien dehnen sich stark aus, wenn sie erhitzt werden, und die "
+"Kalibrierung bietet eine nützliche Referenzflussrate."
 
 msgid ""
 "Flow Rate Calibration measures the ratio of expected to actual extrusion "
@@ -10609,6 +10803,13 @@ msgid ""
 "you still see the listed defects after you have done other calibrations. For "
 "more details, please check out the wiki article."
 msgstr ""
+"Die Durchflusskalibrierung misst das Verhältnis von erwartetem zu "
+"tatsächlichem Extrusionsvolumen. Die Standardeinstellung funktioniert gut in "
+"Bambu Lab-Druckern und offiziellen Filamenten, da sie vorab kalibriert und "
+"feinabgestimmt wurden. Für ein normales Filament müssen Sie normalerweise "
+"keine Durchflusskalibrierung durchführen, es sei denn, Sie sehen die "
+"aufgeführten Mängel immer noch, nachdem Sie andere Kalibrierungen "
+"durchgeführt haben. Weitere Details finden Sie im Wiki-Artikel."
 
 msgid ""
 "Auto Flow Rate Calibration utilizes Bambu Lab's Micro-Lidar technology, "
@@ -10628,34 +10829,61 @@ msgid ""
 "can lead to sub-par prints or printer damage. Please make sure to carefully "
 "read and understand the process before doing it."
 msgstr ""
+"Die automatische Durchflusskalibrierung nutzt die Micro-Lidar-Technologie "
+"von Bambu Lab, um die Kalibrierungsmuster direkt zu messen. Bitte beachten "
+"Sie jedoch, dass die Wirksamkeit und Genauigkeit dieser Methode bei "
+"bestimmten Materialtypen beeinträchtigt sein kann. Insbesondere Filamente, "
+"die transparent oder halbtransparent, funkelnd oder hochreflektierend sind, "
+"sind möglicherweise nicht für diese Kalibrierung geeignet und können weniger "
+"als wünschenswerte Ergebnisse liefern.\n"
+"\n"
+"Die Kalibrierungsergebnisse können zwischen jeder Kalibrierung oder jedem "
+"Filament variieren. Wir verbessern die Genauigkeit und Kompatibilität dieser "
+"Kalibrierung jedoch im Laufe der Zeit durch Firmware-Updates.\n"
+"\n"
+"Vorsicht: Die Durchflusskalibrierung ist ein fortgeschrittener Prozess, der "
+"nur von Personen durchgeführt werden sollte, die ihren Zweck und ihre "
+"Auswirkungen vollständig verstehen. Eine falsche Verwendung kann zu "
+"unterdurchschnittlichen Drucken oder zu Beschädigungen des Druckers führen. "
+"Bitte lesen und verstehen Sie den Prozess sorgfältig, bevor Sie ihn "
+"durchführen."
 
 msgid "When you need Max Volumetric Speed Calibration"
 msgstr ""
+"wann Sie die Kalibrierung der maximalen volumetrischen Geschwindigkeit "
+"benötigen"
 
 msgid "Over-extrusion or under extrusion"
-msgstr ""
+msgstr "Überextrusion oder Unterextrusion"
 
 msgid "Max Volumetric Speed calibration is recommended when you print with:"
 msgstr ""
+"Maximale volumetrische Geschwindigkeitskalibrierung wird empfohlen, wenn Sie "
+"mit drucken:"
 
 msgid "material with significant thermal shrinkage/expansion, such as..."
 msgstr ""
+"Material mit signifikanter thermischer Schrumpfung/Expansion, wie z.B..."
 
 msgid "materials with inaccurate filament diameter"
-msgstr ""
+msgstr "Materialien mit ungenauem Filamentdurchmesser"
 
 msgid "We found the best Flow Dynamics Calibration Factor"
-msgstr ""
+msgstr "Wir haben den besten Flussdynamik-Kalibrierungsfaktor gefunden"
 
 msgid ""
 "Part of the calibration failed! You may clean the plate and retry. The "
 "failed test result would be dropped."
 msgstr ""
+"Ein Teil der Kalibrierung ist fehlgeschlagen! Sie können die Platte reinigen "
+"und es erneut versuchen. Das fehlgeschlagene Testergebnis wird verworfen."
 
 msgid ""
 "*We recommend you to add brand, materia, type, and even humidity level in "
 "the Name"
 msgstr ""
+"*Wir empfehlen Ihnen, Marke, Material, Typ und sogar Feuchtigkeitsgehalt in "
+"den Namen aufzunehmen"
 
 msgid "Failed"
 msgstr "Fehlgeschlagen"
@@ -10664,6 +10892,8 @@ msgid ""
 "Only one of the results with the same name will be saved. Are you sure you "
 "want to overrides the other results?"
 msgstr ""
+"Nur eines der Ergebnisse mit demselben Namen wird gespeichert. Sind Sie "
+"sicher, dass Sie die anderen Ergebnisse überschreiben möchten?"
 
 #, c-format, boost-format
 msgid ""
@@ -10671,148 +10901,161 @@ msgid ""
 "Only one of the results with the same name is saved. Are you sure you want "
 "to overrides the historical result?"
 msgstr ""
+"Es gibt bereits ein historisches Kalibrierungsergebnis mit demselben Namen: "
+"%s. Nur eines der Ergebnisse mit demselben Namen wird gespeichert. Sind Sie "
+"sicher, dass Sie das historische Ergebnis überschreiben möchten?"
 
 msgid "Please find the best line on your plate"
-msgstr ""
+msgstr "Bitte finden Sie die beste Linie auf Ihrer Platte"
 
 msgid "Input Value"
-msgstr ""
+msgstr "input Wert"
 
 msgid "Save to Filament Preset"
-msgstr ""
+msgstr "Speichern in Filament-Voreinstellung"
 
 msgid "Preset"
-msgstr ""
+msgstr "Voreinstellung"
 
 msgid "Record Factor"
-msgstr ""
+msgstr "Aufzeichnungsfaktor"
 
 msgid "We found the best flow ratio for you"
-msgstr ""
+msgstr "Wir haben das beste Flussverhältnis für Sie gefunden"
 
 msgid "Flow Ratio"
-msgstr ""
+msgstr "Flussverhältnis"
 
 msgid "Please input a valid value (0.0 < flow ratio < 2.0)"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Wert ein (0,0 < Flussverhältnis < 2,0)"
 
 msgid "Please enter the name of the preset you want to save."
 msgstr ""
+"Bitte geben Sie den Namen der Voreinstellung ein, die Sie speichern möchten."
 
 msgid "Calibration1"
-msgstr ""
+msgstr "Kalibrierung1"
 
 msgid "Calibration2"
-msgstr ""
+msgstr "Kalibrierung2"
 
 msgid "Please find the best object on your plate"
-msgstr ""
+msgstr "Bitte finden Sie das beste Objekt auf Ihrer Platte"
 
 msgid "Fill in the value above the block with smoothest top surface"
-msgstr ""
+msgstr "füllen Sie den Wert über dem Block mit der glattesten Oberfläche aus"
 
 msgid "Skip Calibration2"
-msgstr ""
+msgstr "Überspringen Sie die Kalibrierung2"
 
 #, c-format, boost-format
 msgid "flow ratio : %s "
-msgstr ""
+msgstr "Flussverhältnis: %s"
 
 msgid "Please choose a block with smoothest top surface"
-msgstr ""
+msgstr "Bitte wählen Sie einen Block mit glattester Oberfläche"
 
 msgid "Please choose a block with smoothest top surface."
-msgstr ""
+msgstr "Bitte wählen Sie einen Block mit glattester Oberfläche."
 
 msgid "Please input a valid value (0 <= Max Volumetric Speed <= 60)"
 msgstr ""
+"Bitte geben Sie einen gültigen Wert ein (0 <= maximale volumetrische "
+"Geschwindigkeit <= 60)"
 
 msgid "Calibration Type"
-msgstr ""
+msgstr "Kalibrierungstyp"
 
 msgid "Complete Calibration"
-msgstr ""
+msgstr "Komplette Kalibrierung"
 
 msgid "Fine Calibration based on flow ratio"
-msgstr ""
+msgstr "Feinkalibrierung basierend auf dem Flussverhältnis"
 
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 msgid ""
 "A test model will be printed. Please clear the build plate and place it back "
 "to the hot bed before calibration."
 msgstr ""
+"Ein Testmodell wird gedruckt. Bitte reinigen Sie die Bauplatte und legen Sie "
+"sie vor der Kalibrierung wieder auf das Heizbett."
 
 msgid "Printing Parameters"
-msgstr ""
+msgstr "Druckparameter"
 
 msgid "- ℃"
-msgstr ""
+msgstr "- ℃"
 
 msgid " ℃"
-msgstr ""
+msgstr " ℃"
 
 msgid "Plate Type"
 msgstr "Druckbetttyp"
 
 msgid "filament position"
-msgstr ""
+msgstr "Filamentposition"
 
 msgid "External Spool"
-msgstr ""
+msgstr "Externe Spule"
 
 msgid "Filament For Calibration"
-msgstr ""
+msgstr "Filament zur Kalibrierung"
 
 msgid ""
 "Tips for calibration material: \n"
 "- Materials that can share same hot bed temperature\n"
 "- Different filament brand and family(Brand = Bambu, Family = Basic, Matte)"
 msgstr ""
+"Tipps für Kalibrierungsmaterial:\n"
+"- Materialien, die dieselbe Heizbetttemperatur haben können\n"
+"- Verschiedene Filamentmarken und -familien (Marke = Bambu, Familie = Basic, "
+"Matte)"
 
 msgid "Error desc"
-msgstr ""
+msgstr "Fehlerbeschreibung"
 
 msgid "Extra info"
-msgstr ""
+msgstr "Extra Info"
 
 #, c-format, boost-format
 msgid "%s is not compatible with %s"
-msgstr ""
+msgstr "%s ist nicht kompatibel mit %s"
 
 msgid "TPU is not supported for Flow Dynamics Auto-Calibration."
 msgstr ""
+"TPU wird nicht für die automatische Flussdynamik-Kalibrierung unterstützt."
 
 msgid "Connecting to printer"
-msgstr ""
+msgstr "Verbindung zum Drucker"
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
-msgstr ""
+msgstr "Der Düsendurchmesser wurde aus den Druckereinstellungen synchronisiert"
 
 msgid "From Volumetric Speed"
-msgstr ""
+msgstr "Von Volumetrische Geschwindigkeit"
 
 msgid "To Volumetric Speed"
-msgstr ""
+msgstr "zu Volumetrische Geschwindigkeit"
 
 msgid "Flow Dynamics Calibration Result"
-msgstr ""
+msgstr "Flussdynamik-Kalibrierungsergebnis"
 
 msgid "No History Result"
-msgstr ""
+msgstr "Kein historisches Ergebnis"
 
 msgid "Success to get history result"
-msgstr ""
+msgstr "Erfolg beim Abrufen des historischen Ergebnisses"
 
 msgid "Refreshing the historical Flow Dynamics Calibration records"
-msgstr ""
+msgstr "Erneuern der historischen Flussdynamik-Kalibrierungsdatensätze"
 
 msgid "Action"
-msgstr ""
+msgstr "Aktion"
 
 msgid "Edit Flow Dynamics Calibration"
-msgstr ""
+msgstr "Bearbeiten Sie die Flussdynamik-Kalibrierung"
 
 msgid "Network lookup"
 msgstr "Netzwerk durchsuchen"
@@ -10821,7 +11064,7 @@ msgid "Address"
 msgstr "IP Adresse"
 
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 msgid "Service name"
 msgstr "Service Name"
@@ -10836,13 +11079,15 @@ msgid "Finished"
 msgstr "Erledigt"
 
 msgid "Multiple resolved IP addresses"
-msgstr ""
+msgstr "Mehrere aufgelöste IP-Adressen"
 
 #, boost-format
 msgid ""
 "There are several IP addresses resolving to hostname %1%.\n"
 "Please select one that should be used."
 msgstr ""
+"Es gibt mehrere IP-Adressen, die zu Hostname %1% auflösen.\n"
+"Bitte wählen Sie eine aus, die verwendet werden soll."
 
 msgid "Unable to perform boolean operation on selected parts"
 msgstr ""
@@ -10877,16 +11122,16 @@ msgid "selected"
 msgstr "Ausgewählt"
 
 msgid "Part 1"
-msgstr ""
+msgstr "Teil 1"
 
 msgid "Part 2"
-msgstr ""
+msgstr "Teil 2"
 
 msgid "Delete input"
 msgstr "Eingabe löschen"
 
 msgid "Send G-Code to printer host"
-msgstr ""
+msgstr "Senden Sie G-Code an den Drucker-Host"
 
 msgid "Upload to Printer Host with the following filename:"
 msgstr "Mit folgendem Dateinamen auf den Drucker-Host hochladen:"
@@ -10896,7 +11141,7 @@ msgstr ""
 "Verwenden Sie bei Bedarf Schrägstriche (/) als Verzeichnistrennzeichen."
 
 msgid "Upload to storage"
-msgstr ""
+msgstr "Hochladen in den Speicher"
 
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
@@ -10905,26 +11150,26 @@ msgstr ""
 "fortsetzen?"
 
 msgid "Print host upload queue"
-msgstr ""
+msgstr "Druck-Host-Upload-Warteschlange"
 
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 msgid "Progress"
 msgstr "Fortschritt"
 
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 msgctxt "OfFile"
 msgid "Size"
-msgstr ""
+msgstr "Größe"
 
 msgid "Filename"
-msgstr ""
+msgstr "Dateiname"
 
 msgid "Message"
-msgstr ""
+msgstr "Mitteilung"
 
 msgid "Cancel selected"
 msgstr "Ausgewählten abbrechen"
@@ -10942,7 +11187,7 @@ msgid "Cancelling"
 msgstr "Wird abgebrochen"
 
 msgid "Error uploading to print host"
-msgstr ""
+msgstr "Fehler beim Hochladen zum Druck-Host"
 
 msgid "PA Calibration"
 msgstr "PA Kalibrierung"
@@ -11083,7 +11328,7 @@ msgid "End retraction length: "
 msgstr "Ende Rückzugslänge"
 
 msgid "mm/mm"
-msgstr ""
+msgstr "mm/mm"
 
 #, fuzzy
 msgid "Physical Printer"
@@ -11093,7 +11338,7 @@ msgid "Print Host upload"
 msgstr "Hochladen zum Druck-Host"
 
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
 msgid "Could not get a valid Printer Host reference"
 msgstr "Konnte keine gültige Referenz zum Druck-Host erhalten"

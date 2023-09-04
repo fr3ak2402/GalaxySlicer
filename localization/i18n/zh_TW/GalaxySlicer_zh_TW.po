@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-03 01:32+0200\n"
+"POT-Creation-Date: 2023-09-04 02:34+0200\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Chun <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -603,7 +603,7 @@ msgid "Connect %s failed! [SN:%s, code=%s]"
 msgstr "連接 %s 失敗。[SN:%s, code=%s]"
 
 msgid ""
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
@@ -6590,6 +6590,21 @@ msgid ""
 msgstr "擦拭塔要求支撐和對象採用同樣的層高。"
 
 msgid ""
+"Organic support tree tip diameter must not be smaller than support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than 2x support material "
+"extrusion width."
+msgstr ""
+
+msgid ""
+"Organic support branch diameter must not be smaller than support tree tip "
+"diameter."
+msgstr ""
+
+msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
 msgstr "使用了支撐添加器但沒有打開支撐。請打開支撐。"
 
@@ -8823,6 +8838,9 @@ msgstr "粗壯樹"
 msgid "Tree Hybrid"
 msgstr "混合樹"
 
+msgid "Organic"
+msgstr ""
+
 msgid "Independent support layer height"
 msgstr "支撐獨立層高"
 
@@ -8853,12 +8871,34 @@ msgstr ""
 "此設置確定了允許樹狀支撐的最大懸垂角度。如果角度增加，可以更水平地列印分支，"
 "使它們可以到達更遠的地方。"
 
+msgid "Preferred Branch Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
+msgid ""
+"The preferred angle of the branches, when they do not have to avoid the "
+"model. Use a lower angle to make them more vertical and more stable. Use a "
+"higher angle for branches to merge faster."
+msgstr ""
+
 msgid "Tree support branch distance"
 msgstr "樹狀支撐分支距離"
 
 msgid ""
 "This setting determines the distance between neighboring tree support nodes."
 msgstr "此設置確定了樹狀支撐的相鄰節點之間的距離。"
+
+msgid "Branch Density"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Density"
+msgid ""
+"Adjusts the density of the support structure used to generate the tips of "
+"the branches. A higher value results in better overhangs but the supports "
+"are harder to remove, thus it is recommended to enable top support "
+"interfaces instead of a high branch density value if dense interfaces are "
+"needed."
+msgstr ""
 
 msgid "Adaptive layer height"
 msgstr "自適應層高"
@@ -8882,11 +8922,40 @@ msgstr "樹狀支撐裙邊寬度"
 msgid "Distance from tree branch to the outermost brim line"
 msgstr "從樹狀支撐分支到最外層裙邊線的距離"
 
+msgid "Tip Diameter"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Tip Diameter"
+msgid "Branch tip diameter for organic supports."
+msgstr ""
+
 msgid "Tree support branch diameter"
 msgstr "樹狀支撐分支直徑"
 
 msgid "This setting determines the initial diameter of support nodes."
 msgstr "此設置確定了樹狀支撐節點的初始直徑。"
+
+#. TRN PrintSettings: #lmFIXME
+msgid "Branch Diameter Angle"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
+msgid ""
+"The angle of the branches' diameter as they gradually become thicker towards "
+"the bottom. An angle of 0 will cause the branches to have uniform thickness "
+"over their length. A bit of an angle can increase stability of the organic "
+"support."
+msgstr ""
+
+msgid "Branch Diameter with double walls"
+msgstr ""
+
+#. TRN PrintSettings: "Organic supports" > "Branch Diameter"
+msgid ""
+"Branches with area larger than the area of a circle of this diameter will be "
+"printed with double walls for stability. Set this value to zero for no "
+"double walls."
+msgstr ""
 
 msgid "Tree support wall loops"
 msgstr "樹狀支撐外牆層數"
@@ -9168,6 +9237,15 @@ msgid ""
 msgstr ""
 "薄壁特徵的最小厚度。比這個數值還薄的特徵將不被列印，而比最小特徵厚度還厚的特"
 "征將被加寬到牆最小寬度。參數值表示為相對噴嘴直徑的百分比"
+
+msgid "First layer minimum wall width"
+msgstr ""
+
+msgid ""
+"The minimum wall width that should be used for the first layer is "
+"recommended to be set to the same size as the nozzle. This adjustment is "
+"expected to enhance adhesion."
+msgstr ""
 
 msgid "Minimum wall width"
 msgstr "牆最小線寬"
