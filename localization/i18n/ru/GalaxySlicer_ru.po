@@ -1,13 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: OrcaSlicer V1.6.6\n"
+"Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:34+0200\n"
+"POT-Creation-Date: 2023-09-05 23:59+0200\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"

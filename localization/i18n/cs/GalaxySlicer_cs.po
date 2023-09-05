@@ -1,13 +1,8 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-04 02:34+0200\n"
+"POT-Creation-Date: 2023-09-05 23:59+0200\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -574,7 +569,7 @@ msgid "V"
 msgstr "V"
 
 msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-msgstr ""
+msgstr "Založeno na OrcaSlicer, BambuStudio a PrusaSlicer"
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -618,9 +613,12 @@ msgid ""
 "features.\n"
 "Click Yes to install it now."
 msgstr ""
+"GalaxySlicer vyžaduje Microsoft WebView2 Runtime pro provoz některých "
+"funkcí.\n"
+"Klikněte na Ano, abyste jej nyní nainstalovali."
 
 msgid "WebView2 Runtime"
-msgstr ""
+msgstr "WebView2 Runtime"
 
 msgid ""
 "GalaxySlicer configuration file may be corrupted and is not abled to be "
@@ -1901,9 +1899,11 @@ msgid ""
 "GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
 "SuperSlicer."
 msgstr ""
+"GalaxySlicer je založen na OrcaSlicer, BambuStudio, PrusaSlicer a "
+"SuperSlicer."
 
 msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
-msgstr ""
+msgstr "OrcaSlicer je původně založen na BambuStudio od BambuLab."
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
 msgstr "BambuStudio je původně založeno na PrusaSlicer od PrusaResearch."
@@ -3849,22 +3849,22 @@ msgid "Swap Y/Z axes"
 msgstr "Zaměnit osy Y/Z"
 
 msgid "Invert X axis"
-msgstr ""
+msgstr "invertovat osu X"
 
 msgid "Invert Y axis"
-msgstr ""
+msgstr "invertovat osu Y"
 
 msgid "Invert Z axis"
-msgstr ""
+msgstr "invertovat osu Z"
 
 msgid "Invert Yaw axis"
-msgstr ""
+msgstr "invertovat osu Yaw"
 
 msgid "Invert Pitch axis"
-msgstr ""
+msgstr "invertovat osu Pitch"
 
 msgid "Invert Roll axis"
-msgstr ""
+msgstr "invertovat osu Roll"
 
 msgid "Printing Progress"
 msgstr "Průběh tisku"
@@ -4658,7 +4658,7 @@ msgstr ""
 "kladné části."
 
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
-msgstr ""
+msgstr "Je tiskárna připravena? Je tiskový list na místě, prázdný a čistý?"
 
 msgid "Upload and Print"
 msgstr "Nahrát a Tisknout"
@@ -5690,7 +5690,7 @@ msgid "Post-processing Scripts"
 msgstr "Post-processing Scripts"
 
 msgid "Notes"
-msgstr ""
+msgstr "Note"
 
 msgid "Frequent"
 msgstr "Časté"
@@ -6887,16 +6887,22 @@ msgid ""
 "Organic support tree tip diameter must not be smaller than support material "
 "extrusion width."
 msgstr ""
+"Průměr špičky organické podpory stromu nesmí být menší než šířka extruze "
+"materiálu podpory."
 
 msgid ""
 "Organic support branch diameter must not be smaller than 2x support material "
 "extrusion width."
 msgstr ""
+"Průměr větve organické podpory nesmí být menší než 2x šířka extruze "
+"materiálu podpory."
 
 msgid ""
 "Organic support branch diameter must not be smaller than support tree tip "
 "diameter."
 msgstr ""
+"Průměr větve organické podpory nesmí být menší než průměr špičky stromu "
+"podpory."
 
 msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
@@ -7343,12 +7349,14 @@ msgstr ""
 "pro spodní výplňový vzor"
 
 msgid "Extra perimeters on overhangs"
-msgstr ""
+msgstr "Další obvody na převisy"
 
 msgid ""
 "Create additional perimeter paths over steep overhangs and areas where "
 "bridges cannot be anchored. "
 msgstr ""
+"Vytvořte další obvodové cesty přes strmé převisy a oblasti, kde mosty "
+"nemohou být ukotveny."
 
 msgid "Classic mode"
 msgstr "Klasický režim"
@@ -7796,10 +7804,10 @@ msgid "Color"
 msgstr "Barva"
 
 msgid "Filament notes"
-msgstr ""
+msgstr "Poznámky k filamentu"
 
 msgid "You can put your notes regarding the filament here."
-msgstr ""
+msgstr "Zde můžete vložit poznámky týkající se filamentu."
 
 msgid "Required nozzle HRC"
 msgstr "Požadovaná tryska HRC"
@@ -8630,6 +8638,7 @@ msgstr "Maximální zrychlení pro cestování"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+"maximální zrychlení pro cestování (M204 T), používá se pouze pro Marlin 2"
 
 msgid "Fan speed"
 msgstr "Rychlost ventilátoru"
@@ -8687,12 +8696,14 @@ msgid "Diameter of nozzle"
 msgstr "Průměr trysky"
 
 msgid "Configuration notes"
-msgstr ""
+msgstr "Poznámky k nastavení"
 
 msgid ""
 "You can put here your personal notes. This text will be added to the G-code "
 "header comments."
 msgstr ""
+"Sem můžete vložit své osobní poznámky. Tento text bude přidán do komentářů "
+"hlavičky G-kódu."
 
 msgid "Host Type"
 msgstr "Typ tiskového serveru"
@@ -8805,10 +8816,10 @@ msgstr ""
 "k nastavení konfigurace Slic3r čtením proměnných prostředí."
 
 msgid "Printer notes"
-msgstr ""
+msgstr "Poznámky k tiskárně"
 
 msgid "You can put your notes regarding the printer here."
-msgstr ""
+msgstr "Sem můžete vložit poznámky týkající se tiskárny."
 
 msgid "Raft contact Z distance"
 msgstr "Mezera mezi objektem a raftem v ose Z"
@@ -9411,7 +9422,7 @@ msgid "Tree Hybrid"
 msgstr "Strom Hybrid"
 
 msgid "Organic"
-msgstr ""
+msgstr "Organický"
 
 msgid "Independent support layer height"
 msgstr "Výška nezávislé podpůrné vrstvy"
@@ -9448,7 +9459,7 @@ msgstr ""
 "vodorovně, což jim umožní dosáhnout dále."
 
 msgid "Preferred Branch Angle"
-msgstr ""
+msgstr "Preferovaný úhel větve"
 
 #. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
 msgid ""
@@ -9456,6 +9467,8 @@ msgid ""
 "model. Use a lower angle to make them more vertical and more stable. Use a "
 "higher angle for branches to merge faster."
 msgstr ""
+"Preferovaný úhel větví, když se nemusí vyhýbat modelu. Použijte nižší úhel, "
+"aby byly větve stabilnější. Použijte vyšší úhel pro rychlejší spojení větví."
 
 msgid "Tree support branch distance"
 msgstr "Vzdálenost větví podpěr stromů"
@@ -9465,7 +9478,7 @@ msgid ""
 msgstr "Toto nastavení určuje vzdálenost mezi sousedními uzly podpěr stromů."
 
 msgid "Branch Density"
-msgstr ""
+msgstr "Hustota větví"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Density"
 msgid ""
@@ -9475,6 +9488,10 @@ msgid ""
 "interfaces instead of a high branch density value if dense interfaces are "
 "needed."
 msgstr ""
+"Umožňuje nastavit hustotu podpůrné struktury použité k vytvoření špiček "
+"větví. Vyšší hodnota vede k lepším převisům, ale podpěry je těžší odstranit, "
+"proto se doporučuje povolit horní kontaktní vrstvy místo vysoké hodnoty "
+"hustoty větví, pokud jsou potřebné husté rozhraní."
 
 msgid "Adaptive layer height"
 msgstr "Adaptivní výška vrstvy"
@@ -9503,11 +9520,11 @@ msgid "Distance from tree branch to the outermost brim line"
 msgstr "Vzdálenost od větve stromu k nejvzdálenější linii Límce"
 
 msgid "Tip Diameter"
-msgstr ""
+msgstr "Průměr špičky"
 
 #. TRN PrintSettings: "Organic supports" > "Tip Diameter"
 msgid "Branch tip diameter for organic supports."
-msgstr ""
+msgstr "Průměr špičky větve pro organické podpěry."
 
 msgid "Tree support branch diameter"
 msgstr "Průměr větve podpěr stromů"
@@ -9517,7 +9534,7 @@ msgstr "Toto nastavení určuje počáteční průměr uzlů poděry."
 
 #. TRN PrintSettings: #lmFIXME
 msgid "Branch Diameter Angle"
-msgstr ""
+msgstr "Úhel průměru větve"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
 msgid ""
@@ -9526,9 +9543,12 @@ msgid ""
 "over their length. A bit of an angle can increase stability of the organic "
 "support."
 msgstr ""
+"Úhel průměru větví, protože se postupně zesilují směrem dolů. Úhel 0 "
+"způsobí, že větve budou mít stejnou tloušťku po celé délce. Trochu úhlu může "
+"zvýšit stabilitu organické podpěry."
 
 msgid "Branch Diameter with double walls"
-msgstr ""
+msgstr "Průměr větve s dvojitými stěnami"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter"
 msgid ""
@@ -9536,6 +9556,9 @@ msgid ""
 "printed with double walls for stability. Set this value to zero for no "
 "double walls."
 msgstr ""
+"Větve s plochou větší než plocha kruhu tohoto průměru budou tisknuty s "
+"dvojitými stěnami pro stabilitu. Nastavte tuto hodnotu na nulu pro žádné "
+"dvojité stěny."
 
 msgid "Tree support wall loops"
 msgstr "Stěnové smyčky na podpěry stromů"
@@ -9853,13 +9876,16 @@ msgstr ""
 "průměru trysky"
 
 msgid "First layer minimum wall width"
-msgstr ""
+msgstr "Minimální šířka stěny první vrstvy"
 
 msgid ""
 "The minimum wall width that should be used for the first layer is "
 "recommended to be set to the same size as the nozzle. This adjustment is "
 "expected to enhance adhesion."
 msgstr ""
+"Minimální šířka stěny, která by měla být použita pro první vrstvu, se "
+"doporučuje nastavit na stejnou velikost jako tryska. Tato úprava by měla "
+"zlepšit přilnavost."
 
 msgid "Minimum wall width"
 msgstr "Minimální šířka stěny"
@@ -10693,13 +10719,15 @@ msgid "Finished"
 msgstr "Dokončeno"
 
 msgid "Multiple resolved IP addresses"
-msgstr ""
+msgstr "Více vyřešených IP adres"
 
 #, boost-format
 msgid ""
 "There are several IP addresses resolving to hostname %1%.\n"
 "Please select one that should be used."
 msgstr ""
+"K názvu hostitele %1% se přiřazuje několik IP adres.\n"
+"Vyberte prosím jednu, která by měla být použita."
 
 msgid "Unable to perform boolean operation on selected parts"
 msgstr "Nelze provést booleovskou operaci na vybraných částech"
@@ -10741,7 +10769,7 @@ msgid "Delete input"
 msgstr "Smazat vstup"
 
 msgid "Send G-Code to printer host"
-msgstr ""
+msgstr "Odeslat G-Code na tiskový server"
 
 msgid "Upload to Printer Host with the following filename:"
 msgstr "Nahrát do tiskového serveru s následujícím názvem souboru:"
@@ -10750,7 +10778,7 @@ msgid "Use forward slashes ( / ) as a directory separator if needed."
 msgstr "Pokud je to nutné, použijte pro oddělení složek lomítko (/)."
 
 msgid "Upload to storage"
-msgstr ""
+msgstr "Nahrát do úložiště"
 
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
@@ -10776,7 +10804,7 @@ msgid "Filename"
 msgstr "Název souboru"
 
 msgid "Message"
-msgstr ""
+msgstr "Zpráva"
 
 msgid "Cancel selected"
 msgstr "Zrušit vybrané"
@@ -10794,7 +10822,7 @@ msgid "Cancelling"
 msgstr "Ruší se"
 
 msgid "Error uploading to print host"
-msgstr ""
+msgstr "Chyba při nahrávání na tiskový server"
 
 msgid "PA Calibration"
 msgstr "PA Kalibrace"
