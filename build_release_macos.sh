@@ -78,6 +78,9 @@ cd build_$ARCH
 echo "building slicer..."
 cmake .. -GXcode -DBBL_RELEASE_TO_PUBLIC=1 -DCMAKE_PREFIX_PATH="$DEPS/usr/local" -DCMAKE_INSTALL_PREFIX="$PWD/GalaxySlicer" -DCMAKE_BUILD_TYPE=Release -DCMAKE_MACOSX_RPATH=ON -DCMAKE_INSTALL_RPATH="$DEPS/usr/local" -DCMAKE_MACOSX_BUNDLE=ON -DCMAKE_OSX_ARCHITECTURES=${ARCH}
 cmake --build . --config Release --target ALL_BUILD 
+cd ..
+run_gettext.sh
+cd build_$ARCH
 mkdir -p GalaxySlicer
 cd GalaxySlicer
 rm -r ./GalaxySlicer.app
@@ -88,7 +91,7 @@ cp -R $resources_path ./GalaxySlicer.app/Contents/Resources
 # delete .DS_Store file
 find ./GalaxySlicer.app/ -name '.DS_Store' -delete
 # extract version
-# export ver=$(grep '^#define GalaxySlicer_VERSION' ../src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
+# export ver=$(grep '^#define SoftFever_VERSION' ../src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
 # ver="_V${ver//\"}"
 # echo $PWD
 # if [ "1." != "$NIGHTLY_BUILD". ];
