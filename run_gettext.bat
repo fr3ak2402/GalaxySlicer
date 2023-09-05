@@ -19,6 +19,8 @@ goto :eof
     set "dir=%~dp1"
     set "name=%~n1"
     set "lang=%name:GalaxySlicer_=%"
-    msgmerge -N -o "%file%" "%file%" "%pot_file%"
+        msgmerge -N -o "%file%" "%file%" "%pot_file%"
+    )
     msgfmt --check-format -o "./resources/i18n/%lang%/GalaxySlicer.mo" "%file%"
+    if not exist "./resources/i18n/%lang%" mkdir "./resources/i18n/%lang%"
 goto :eof
