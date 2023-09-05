@@ -4,6 +4,7 @@
     "from": "system",
     "instantiation": "false",
     "printer_technology": "FFF",
+    "printer_notes": "GalaxySlicer",
     "deretraction_speed": [
         "80"
     ],

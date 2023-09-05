@@ -95,6 +95,7 @@
     ],
     "printer_settings_id": "",
     "printer_technology": "FFF",
+    "printer_notes": "GalaxySlicer",
     "printer_variant": "0.4",
     "retraction_minimum_travel": [
         "1"

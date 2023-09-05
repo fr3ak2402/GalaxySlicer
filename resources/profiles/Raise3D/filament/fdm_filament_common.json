@@ -134,5 +134,8 @@
     ],
     "temperature_vitrification": [
         "100"
+    ],
+    "filament_notes": [
+        "GalaxySlicer"
     ]
 }
