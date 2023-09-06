@@ -4108,7 +4108,13 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
 
                 // if we're the most recent, don't do anything
                 if ((i_am_pre ? best_pre : best_release) <= current_version)
-                {
+                {   
+                    //GalaxySlicer: if the user runs a new version check by himself and there is no new version, a message should be displayed to the user.
+                    /*if (by_user == 1)
+                    {
+                        this->no_new_version();
+                    }*/
+                    
                     return;
                 }
 
