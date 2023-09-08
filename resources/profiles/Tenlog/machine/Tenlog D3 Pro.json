@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Tenlog D3 Pro",
+    "model_id": "Tenlog-D3-Pro",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Tenlog",
+    "bed_model": "tenlog_d3pro_buildplate_model.stl",
+    "bed_texture": "tenlog_d3pro_buildplate_texture.png",
+    "hotend_model": "",
+	"default_materials": "Tenlog Generic PLA @0.2 nozzle;Tenlog Generic PETG @0.2 nozzle;Tenlog Generic ABS @0.2 nozzle;Tenlog Generic PLA @0.4 nozzle;Tenlog Generic PETG @0.4 nozzle;Tenlog Generic ABS @0.4 nozzle;Tenlog Generic PLA @0.6 nozzle;Tenlog Generic PETG @0.6 nozzle;Tenlog Generic ABS @0.6 nozzle;Tenlog Generic PLA @0.8 nozzle;Tenlog Generic PETG @0.8 nozzle;Tenlog Generic ABS @0.8 nozzle"
+}

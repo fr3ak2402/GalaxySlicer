@@ -1,0 +1,18 @@
+{
+    "type": "filament",
+    "filament_id": "GFB99",
+    "setting_id": "GFSA04",
+    "name": "Wanhao Generic ABS @0.8 nozzle",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "Wanhao Generic ABS @base",
+    "filament_flow_ratio": [
+        "0.926"
+    ],
+    "filament_max_volumetric_speed": [
+        "12"
+    ],
+	"compatible_printers": [
+		"Wanhao D12 (0.8 nozzle) (Dual)"
+	]
+}
