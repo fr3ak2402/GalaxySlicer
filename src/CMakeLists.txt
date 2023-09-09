@@ -103,7 +103,7 @@ endif()
 
 # Create a slic3r executable
 # Process mainfests for various platforms.
-set(MACOSX_BUNDLE_COPYRIGHT "Copyright(C) 2022-2023 Li Jiang All Rights Reserved")
+set(MACOSX_BUNDLE_COPYRIGHT "Copyright(C) 2023 fr3ak2402 All Rights Reserved")
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/GalaxySlicer.rc.in ${CMAKE_CURRENT_BINARY_DIR}/GalaxySlicer.rc @ONLY)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/msw/GalaxySlicer.manifest.in ${CMAKE_CURRENT_BINARY_DIR}/GalaxySlicer.manifest @ONLY)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/osx/Info.plist.in ${CMAKE_CURRENT_BINARY_DIR}/Info.plist @ONLY)
@@ -239,10 +239,10 @@ else ()
     endif ()
     if (CMAKE_MACOSX_BUNDLE)
         set(BIN_RESOURCES_DIR "${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>/GalaxySlicer.app/Contents/Resources")
-        set(MACOSX_BUNDLE_ICON_FILE Icon.icns)
+        set(MACOSX_BUNDLE_ICON_FILE GalaxySlicer.icns)
         set(MACOSX_BUNDLE_BUNDLE_NAME "GalaxySlicer")
         set(MACOSX_BUNDLE_SHORT_VERSION_STRING ${GalaxySlicer_VERSION})
-        set(MACOSX_BUNDLE_COPYRIGHT "Copyright(C) 2022-2023 Li Jiang All Rights Reserved")
+        set(MACOSX_BUNDLE_COPYRIGHT "Copyright(C) 2023 fr3ak2402 All Rights Reserved")
     endif()
     add_custom_command(TARGET GalaxySlicer POST_BUILD
         COMMAND ln -sfn "${SLIC3R_RESOURCES_DIR}" "${BIN_RESOURCES_DIR}"

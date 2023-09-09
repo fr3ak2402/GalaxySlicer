@@ -3,9 +3,15 @@ cd deps
 mkdir build
 cd build
 set DEPS=%CD%/GalaxySlicer_dep
+
 if "%1"=="slicer" (
     GOTO :slicer
 )
+
+if "%1"=="dev" (
+    GOTO :dev
+)
+
 echo "building deps.."
 cmake ../ -G "Visual Studio 17 2022" -A x64 -DDESTDIR="%CD%/GalaxySlicer_dep" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release --target deps -- -m
@@ -21,6 +27,18 @@ cd build
 cmake .. -G "Visual Studio 17 2022" -A x64 -DBBL_RELEASE_TO_PUBLIC=1 -DCMAKE_PREFIX_PATH="%DEPS%/usr/local" -DCMAKE_INSTALL_PREFIX="./GalaxySlicer" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release --target ALL_BUILD -- -m
 cd ..
-run_gettext.bat
+call run_gettext.bat
 cd build
+cmake --build . --target install --config Release
+
+if "%1"=="slicer" exit /b 0
+
+:dev
+echo "building GalaxySlicer..."
+cd %WP%
+mkdir build 
+cd build
+
+cmake .. -G "Visual Studio 17 2022" -A x64 -DBBL_RELEASE_TO_PUBLIC=1 -DCMAKE_PREFIX_PATH="%DEPS%/usr/local" -DCMAKE_INSTALL_PREFIX="./GalaxySlicer" -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release --target ALL_BUILD -- -m
 cmake --build . --target install --config Release
