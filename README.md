@@ -2,6 +2,7 @@
 -------------------------------------
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev/LICENSE.txt)
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/fr3ak2402/GalaxySlicer?label=Version&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
+[![GitHub release downloads (latest)](https://img.shields.io/github/downloads/Fr3ak2402/GalaxySlicer/latest/total?label=Downloads&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![Build Win x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
 [![Build macOS x64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_x64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_x64.yml)
 [![Build macOS arm64](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml/badge.svg)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml)
