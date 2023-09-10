@@ -1,6 +1,6 @@
 {
     "type": "process",
-    "name": "fdm_process_Vzbot_common_0.6_nozzle",
+    "name": "fdm_process_vzbot_common_0.6_nozzle",
     "from": "system",
     "instantiation": "false",
     "inherits": "fdm_process_common_0.6_nozzle",
@@ -12,7 +12,6 @@
     "bottom_shell_thickness": "0",
     "bridge_flow": "0.95",
     "bridge_speed": "150",
-    "internal_bridge_speed" : "100%",
     "brim_width": "5",
     "brim_object_gap": "0.1",
     "compatible_printers_condition": "",
