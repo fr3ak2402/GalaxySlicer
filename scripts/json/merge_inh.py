@@ -25,7 +25,8 @@ def suche_json_dateien_mit_inherits(verzeichnis):
                     daten = json.load(datei)
                     if "inherits" in daten:
                         inherits_wert = daten["inherits"]
-                        inherits_dateiname = inherits_wert + ".json"
+                        # Entferne eventuelle Schrägstriche oder umgekehrte Schrägstriche aus dem Dateinamen
+                        inherits_dateiname = inherits_wert.replace("/", "").replace("\\", "") + ".json"
                         inherits_datei_pfad = os.path.join(verzeichnis_pfad, inherits_dateiname)
                         gefunden.append((datei_pfad, inherits_datei_pfad))
 
@@ -53,7 +54,7 @@ gefundene_paare = suche_json_dateien_mit_inherits(verzeichnis)
 
 if gefundene_paare:
     print("Gefundene Schlüsselpaare (Datei, Inherits-Wert):")
-    for basis_datei, inherited_datei in gefundene_paare:
+    for basis_datei, inherited_datei in gefundene_paaren:
         print(f"Datei 1: {basis_datei}")
         print(f"Datei 2: {inherited_datei}")
         vergleiche_und_entferne_doppelte(basis_datei, inherited_datei)
