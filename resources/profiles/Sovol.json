@@ -25,8 +25,12 @@
       "sub_path": "machine/Sovol SV06.json"
   },
   {
-      "name": "Sovol SV07",
-      "sub_path": "machine/Sovol SV07.json"
+      "name": "Sovol SV07 Plus",
+      "sub_path": "machine/Sovol SV07 Plus.json"
+  },
+  {
+    "name": "Sovol SV07",
+    "sub_path": "machine/Sovol SV07.json"
   }
   ],
 "process_list":   [
@@ -437,6 +441,22 @@
   {
       "name": "Sovol SV07 (0.8 nozzle)",
       "sub_path": "machine/Sovol SV07 (0.8 nozzle).json"
+  },
+  {
+      "name": "Sovol SV07 Plus (0.2 nozzle)",
+      "sub_path": "machine/Sovol SV07 Plus (0.2 nozzle).json"
+  },
+  {
+      "name": "Sovol SV07 Plus (0.4 nozzle)",
+      "sub_path": "machine/Sovol SV07 Plus (0.4 nozzle).json"
+  },
+  {
+      "name": "Sovol SV07 Plus (0.6 nozzle)",
+      "sub_path": "machine/Sovol SV07 Plus (0.6 nozzle).json"
+  },
+  {
+      "name": "Sovol SV07 Plus (0.8 nozzle)",
+      "sub_path": "machine/Sovol SV07 Plus (0.8 nozzle).json"
   }
   ]
 }
