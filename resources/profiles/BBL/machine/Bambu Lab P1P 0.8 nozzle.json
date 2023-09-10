@@ -21,7 +21,6 @@
     "min_layer_height": [
         "0.16"
     ],
-    "nozzle_hrc": "55",
     "nozzle_type": "hardened_steel",
     "retract_length_toolchange": [
         "3"
@@ -30,7 +29,9 @@
         "3"
     ],
     "upward_compatible_machine": [
+        "Bambu Lab P1S 0.8 nozzle",
         "Bambu Lab X1 0.8 nozzle",
         "Bambu Lab X1 Carbon 0.8 nozzle"
-    ]
+    ],
+    "version": "01.07.00.18"
 }

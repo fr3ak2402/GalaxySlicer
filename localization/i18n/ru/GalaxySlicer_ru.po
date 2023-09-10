@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 23:59+0200\n"
+"POT-Creation-Date: 2023-09-10 15:02+0200\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -5890,6 +5890,21 @@ msgstr "Стартовый G-код прутка"
 msgid "Filament end G-code"
 msgstr "Завершающий G-код прутка"
 
+msgid "Multimaterial"
+msgstr ""
+
+msgid "Wipe tower parameters"
+msgstr ""
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr ""
+
+msgid "Ramming settings"
+msgstr ""
+
+msgid "Toolchange parameters with multi extruder MM printers"
+msgstr ""
+
 msgid "Printable space"
 msgstr "Область печати"
 
@@ -5943,6 +5958,15 @@ msgstr "Ограничение ускорений"
 
 msgid "Jerk limitation"
 msgstr "Ограничение рывка"
+
+msgid "Single extruder multimaterial setup"
+msgstr ""
+
+msgid "Wipe tower"
+msgstr ""
+
+msgid "Single extruder multimaterial parameters"
+msgstr ""
 
 msgid "Layer height limits"
 msgstr "Ограничение высоты слоя"
@@ -6184,6 +6208,36 @@ msgstr "Обновления отсутствуют."
 
 msgid "The configuration is up to date."
 msgstr "Текущая конфигурация не требует обновления."
+
+msgid "Ramming customization"
+msgstr ""
+
+msgid ""
+"Ramming denotes the rapid extrusion just before a tool change in a single-"
+"extruder MM printer. Its purpose is to properly shape the end of the "
+"unloaded filament so it does not prevent insertion of the new filament and "
+"can itself be reinserted later. This phase is important and different "
+"materials can require different extrusion speeds to get the good shape. For "
+"this reason, the extrusion rates during ramming are adjustable.\n"
+"\n"
+"This is an expert-level setting, incorrect adjustment will likely lead to "
+"jams, extruder wheel grinding into filament etc."
+msgstr ""
+
+msgid "Total ramming time"
+msgstr ""
+
+msgid "s"
+msgstr "с"
+
+msgid "Total rammed volume"
+msgstr ""
+
+msgid "Ramming line width"
+msgstr ""
+
+msgid "Ramming line spacing"
+msgstr ""
 
 msgid "Auto-Calc"
 msgstr "Авторасчёт"
@@ -7886,9 +7940,6 @@ msgstr ""
 "минимальной и максимальной скоростями вентилятора зависимости от времени "
 "печати слоя."
 
-msgid "s"
-msgstr "с"
-
 msgid "Default color"
 msgstr "Цвет по умолчанию"
 
@@ -7926,22 +7977,6 @@ msgstr ""
 
 msgid "mm³/s"
 msgstr "мм³/с"
-
-msgid "Minimal purge on wipe tower"
-msgstr "Мин. объём сброса на черновой башне"
-
-msgid ""
-"After a tool change, the exact position of the newly loaded filament inside "
-"the nozzle may not be known, and the filament pressure is likely not yet "
-"stable. Before purging the print head into an infill or a sacrificial "
-"object, Slic3r will always prime this amount of material into the wipe tower "
-"to produce successive infill or sacrificial object extrusions reliably."
-msgstr ""
-"После смены инструмента, точное положение вновь загруженного прутка внутри "
-"него может быть неизвестно, и давление прутка, вероятно, ещё не стабильно. "
-"Перед тем, как очистить печатающую головку в заполнение или в «жертвенную» "
-"модель Slic3r всегда будет выдавливать это количество материала на черновую "
-"башню, чтобы обеспечить надёжную печать заполнения или «жертвенной» модели."
 
 msgid "Filament load time"
 msgstr "Время загрузки прутка"
@@ -7982,6 +8017,120 @@ msgstr ""
 "периметра.\n"
 "Убедитесь, что между моделями достаточно места, так как эта компенсация "
 "выполняется после проверок."
+
+msgid "Loading speed"
+msgstr ""
+
+msgid "Speed used for loading the filament on the wipe tower."
+msgstr ""
+
+msgid "Loading speed at the start"
+msgstr ""
+
+msgid "Speed used at the very beginning of loading phase."
+msgstr ""
+
+msgid "Unloading speed"
+msgstr ""
+
+msgid ""
+"Speed used for unloading the filament on the wipe tower (does not affect  "
+"initial part of unloading just after ramming)."
+msgstr ""
+
+msgid "Unloading speed at the start"
+msgstr ""
+
+msgid ""
+"Speed used for unloading the tip of the filament immediately after ramming."
+msgstr ""
+
+msgid "Delay after unloading"
+msgstr ""
+
+msgid ""
+"Time to wait after the filament is unloaded. May help to get reliable "
+"toolchanges with flexible materials that may need more time to shrink to "
+"original dimensions."
+msgstr ""
+
+msgid "Number of cooling moves"
+msgstr ""
+
+msgid ""
+"Filament is cooled by being moved back and forth in the cooling tubes. "
+"Specify desired number of these moves."
+msgstr ""
+
+msgid "Speed of the first cooling move"
+msgstr ""
+
+msgid "Cooling moves are gradually accelerating beginning at this speed."
+msgstr ""
+
+msgid "Minimal purge on wipe tower"
+msgstr "Мин. объём сброса на черновой башне"
+
+msgid ""
+"After a tool change, the exact position of the newly loaded filament inside "
+"the nozzle may not be known, and the filament pressure is likely not yet "
+"stable. Before purging the print head into an infill or a sacrificial "
+"object, Slic3r will always prime this amount of material into the wipe tower "
+"to produce successive infill or sacrificial object extrusions reliably."
+msgstr ""
+"После смены инструмента, точное положение вновь загруженного прутка внутри "
+"него может быть неизвестно, и давление прутка, вероятно, ещё не стабильно. "
+"Перед тем, как очистить печатающую головку в заполнение или в «жертвенную» "
+"модель Slic3r всегда будет выдавливать это количество материала на черновую "
+"башню, чтобы обеспечить надёжную печать заполнения или «жертвенной» модели."
+
+msgid "Speed of the last cooling move"
+msgstr ""
+
+msgid "Cooling moves are gradually accelerating towards this speed."
+msgstr ""
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to load a new "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+
+msgid "Ramming parameters"
+msgstr ""
+
+msgid ""
+"This string is edited by RammingDialog and contains ramming specific "
+"parameters."
+msgstr ""
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to unload a "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+
+msgid "Enable ramming for multitool setups"
+msgstr ""
+
+msgid ""
+"Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
+"Multimaterial' in Printer Settings is unchecked). When checked, a small "
+"amount of filament is rapidly extruded on the wipe tower just before the "
+"toolchange. This option is only used when the wipe tower is enabled."
+msgstr ""
+
+msgid "Multitool ramming volume"
+msgstr ""
+
+msgid "The volume to be rammed before the toolchange."
+msgstr ""
+
+msgid "Multitool ramming flow"
+msgstr ""
+
+msgid "Flow used for ramming the filament before the toolchange."
+msgstr ""
 
 msgid "Density"
 msgstr "Плотность"
@@ -8842,6 +8991,45 @@ msgstr "Объём сопла"
 msgid "Volume of nozzle between the cutter and the end of nozzle"
 msgstr "Объём сопла между резцом прутка и кончиком сопла."
 
+msgid "Cooling tube position"
+msgstr ""
+
+msgid "Distance of the center-point of the cooling tube from the extruder tip."
+msgstr ""
+
+msgid "Cooling tube length"
+msgstr ""
+
+msgid "Length of the cooling tube to limit space for cooling moves inside it."
+msgstr ""
+
+msgid "High extruder current on filament swap"
+msgstr ""
+
+msgid ""
+"It may be beneficial to increase the extruder motor current during the "
+"filament exchange sequence to allow for rapid ramming feed rates and to "
+"overcome resistance when loading a filament with an ugly shaped tip."
+msgstr ""
+
+msgid "Filament parking position"
+msgstr ""
+
+msgid ""
+"Distance of the extruder tip from the position where the filament is parked "
+"when unloaded. This should match the value in printer firmware."
+msgstr ""
+
+msgid "Extra loading distance"
+msgstr ""
+
+msgid ""
+"When set to zero, the distance the filament is moved from parking position "
+"during load is exactly the same as it was moved back during unload. When "
+"positive, it is loaded further,  if negative, the loading move is shorter "
+"than unloading."
+msgstr ""
+
 msgid "Start end points"
 msgstr "Начальные и конечные точки"
 
@@ -9322,6 +9510,39 @@ msgstr "G-код выполняемый при каждом запуске пе�
 msgid "Start G-code when start the printing of this filament"
 msgstr ""
 "Стартовый G-код выполняемый при запуске печати с текущей пластиковой нитью."
+
+msgid "Single Extruder Multi Material"
+msgstr ""
+
+msgid "Use single nozzle to print multi filament"
+msgstr ""
+
+msgid "Purge in prime tower"
+msgstr ""
+
+msgid "Purge remaining filament into prime tower"
+msgstr ""
+
+msgid "Enable filament ramming"
+msgstr ""
+
+msgid "No sparse layers (EXPERIMENTAL)"
+msgstr ""
+
+msgid ""
+"If enabled, the wipe tower will not be printed on layers with no "
+"toolchanges. On layers with a toolchange, extruder will travel downward to "
+"print the wipe tower. User is responsible for ensuring there is no collision "
+"with the print."
+msgstr ""
+
+msgid "Prime all printing extruders"
+msgstr ""
+
+msgid ""
+"If enabled, all printing extruders will be primed at the front edge of the "
+"print bed at the start of the print."
+msgstr ""
 
 msgid "Slice gap closing radius"
 msgstr "Радиус закрытия пробелов при нарезке"
@@ -9865,6 +10086,43 @@ msgstr "Ширина"
 msgid "Width of prime tower"
 msgstr "Ширина черновой башни."
 
+msgid "Wipe tower rotation angle"
+msgstr ""
+
+msgid "Wipe tower rotation angle with respect to x-axis."
+msgstr ""
+
+msgid "Stabilization cone apex angle"
+msgstr ""
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr ""
+
+msgid "Wipe tower purge lines spacing"
+msgstr ""
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr ""
+
+msgid "Wipe tower extruder"
+msgstr ""
+
+msgid ""
+"The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
+"use the one that is available (non-soluble would be preferred)."
+msgstr ""
+
+msgid "Purging volumes - load/unload volumes"
+msgstr ""
+
+msgid ""
+"This vector saves required volumes to change from/to each tool used on the "
+"wipe tower. These values are used to simplify creation of the full purging "
+"volumes below."
+msgstr ""
+
 msgid ""
 "Purging after filament change will be done inside objects' infills. This may "
 "lower the amount of waste and decrease the print time. If the walls are "
@@ -9892,6 +10150,12 @@ msgstr ""
 "Эта модель будет использоваться для очистки сопла после смены материала для "
 "его экономии и сокращения времени печати. В результате цвета будут "
 "смешиваться. Это не будет действовать, если не будет включена черновая башня."
+
+msgid "Maximal bridging distance"
+msgstr ""
+
+msgid "Maximal distance between supports on sparse infill sections."
+msgstr ""
 
 msgid "X-Y hole compensation"
 msgstr "Коррекция размеров отверстий по XY"
@@ -11092,13 +11356,9 @@ msgstr "Шаг температуры: "
 msgid ""
 "Please input valid values:\n"
 "Start temp: <= 350\n"
-"End temp: >= 180\n"
+"End temp: >= 170\n"
 "Start temp > End temp + 5)"
 msgstr ""
-"Введите допустимые значения:\n"
-"Начальная температура: <= 350\n"
-"Конечная температура: >= 180\n"
-"Начальная температура > Конечная температура + 5)"
 
 msgid "Max volumetric speed test"
 msgstr "Тест макс. объёмной скорости"
@@ -11458,6 +11718,17 @@ msgstr ""
 "Увеличение прочности\n"
 "Знаете ли вы, что для повышения прочности модели можно увеличить количество "
 "периметров и плотность заполнения?"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "Start temp: <= 350\n"
+#~ "End temp: >= 180\n"
+#~ "Start temp > End temp + 5)"
+#~ msgstr ""
+#~ "Введите допустимые значения:\n"
+#~ "Начальная температура: <= 350\n"
+#~ "Конечная температура: >= 180\n"
+#~ "Начальная температура > Конечная температура + 5)"
 
 #~ msgid "The configuration may be generated by a newer version of OrcaSlicer."
 #~ msgstr "Возможно, эта конфигурация создана в более новой версии OrcaSlicer."

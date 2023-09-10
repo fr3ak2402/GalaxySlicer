@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 23:59+0200\n"
+"POT-Creation-Date: 2023-09-10 15:02+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -5984,6 +5984,21 @@ msgstr "Filament Start G-Code"
 msgid "Filament end G-code"
 msgstr "Filament End G-Code"
 
+msgid "Multimaterial"
+msgstr "Multimaterial"
+
+msgid "Wipe tower parameters"
+msgstr "Parameter für den Reinigungsturm"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr "Toolchange-Parameter mit Single-Extruder-MM-Druckern"
+
+msgid "Ramming settings"
+msgstr "Ramming-Einstellungen"
+
+msgid "Toolchange parameters with multi extruder MM printers"
+msgstr "Toolchange-Parameter mit Multi-Extruder-MM-Druckern"
+
 msgid "Printable space"
 msgstr "Druckbarer Raum"
 
@@ -6039,6 +6054,15 @@ msgstr "Beschleunigungsbegrenzung"
 
 msgid "Jerk limitation"
 msgstr "Jerkbegrenzung"
+
+msgid "Single extruder multimaterial setup"
+msgstr "Single-Extruder-Multimaterial-Einstellung"
+
+msgid "Wipe tower"
+msgstr "Wisch-Turm"
+
+msgid "Single extruder multimaterial parameters"
+msgstr "Single-Extruder-Multimaterial-Parameter"
 
 msgid "Layer height limits"
 msgstr "Höhenbegrenzungen für Schichten"
@@ -6290,6 +6314,47 @@ msgstr "Keine Updates verfügbar."
 
 msgid "The configuration is up to date."
 msgstr "Die Konfiguration ist auf dem neuesten Stand."
+
+msgid "Ramming customization"
+msgstr "Ramming-Anpassung"
+
+msgid ""
+"Ramming denotes the rapid extrusion just before a tool change in a single-"
+"extruder MM printer. Its purpose is to properly shape the end of the "
+"unloaded filament so it does not prevent insertion of the new filament and "
+"can itself be reinserted later. This phase is important and different "
+"materials can require different extrusion speeds to get the good shape. For "
+"this reason, the extrusion rates during ramming are adjustable.\n"
+"\n"
+"This is an expert-level setting, incorrect adjustment will likely lead to "
+"jams, extruder wheel grinding into filament etc."
+msgstr ""
+"Ramming bezeichnet die schnelle Extrusion kurz vor einem Werkzeugwechsel in "
+"einem Single-Extruder-MM-Drucker. Sein Zweck ist es, das Ende des entladenen "
+"Filaments so zu formen, dass es das Einsetzen des neuen Filaments nicht "
+"verhindert und selbst später wieder eingeführt werden kann. Diese Phase ist "
+"wichtig und verschiedene Materialien können unterschiedliche "
+"Extrusionsgeschwindigkeiten erfordern, um die gute Form zu erhalten. Aus "
+"diesem Grund sind die Extrusionsraten während des Ramming einstellbar.\n"
+"\n"
+"Dies ist eine Einstellung auf Expertenebene. Eine falsche Einstellung führt "
+"wahrscheinlich zu Verstopfungen, Schleifen des Extruderrads in das Filament "
+"usw."
+
+msgid "Total ramming time"
+msgstr "Summe der Ramming-Zeit"
+
+msgid "s"
+msgstr "s"
+
+msgid "Total rammed volume"
+msgstr "Summe des Ramming-Volumens"
+
+msgid "Ramming line width"
+msgstr "Ramming-Linienbreite"
+
+msgid "Ramming line spacing"
+msgstr "Ramming-Linienabstand"
 
 msgid "Auto-Calc"
 msgstr "Automatisch berechnen"
@@ -8014,9 +8079,6 @@ msgstr ""
 "und maximalen Geschwindigkeit entsprechend der Druckzeit der Schicht "
 "interpoliert."
 
-msgid "s"
-msgstr "s"
-
 msgid "Default color"
 msgstr "Standardfarbe"
 
@@ -8054,24 +8116,6 @@ msgstr ""
 
 msgid "mm³/s"
 msgstr "mm³/s"
-
-msgid "Minimal purge on wipe tower"
-msgstr "Minimale Wischmenge im Wischturm"
-
-msgid ""
-"After a tool change, the exact position of the newly loaded filament inside "
-"the nozzle may not be known, and the filament pressure is likely not yet "
-"stable. Before purging the print head into an infill or a sacrificial "
-"object, Slic3r will always prime this amount of material into the wipe tower "
-"to produce successive infill or sacrificial object extrusions reliably."
-msgstr ""
-"Nach einem Werkzeugwechsel ist die genaue Position des neu geladenen "
-"Filaments im Düsenkopf möglicherweise unbekannt und der Filamentdruck ist "
-"wahrscheinlich noch nicht stabil. Bevor Slic3r den Druckkopf in ein Infill "
-"oder ein opferbares Objekt spült, wird immer diese Menge Material in den "
-"Wipe-Turm gefüllt, um zuverlässige nachfolgende Infill- oder opferbare "
-"Objekt-Extrusionen zu erzeugen. So wird sichergestellt, dass das Drucken "
-"nicht gestört wird und die Qualität des Drucks erhalten bleibt."
 
 msgid "Filament load time"
 msgstr "Ladedauer des Filaments"
@@ -8113,6 +8157,149 @@ msgstr ""
 "wird, wird berücksichtigt.Stelle sicher, dass genügend Platz zwischen den "
 "Objekten vorhanden ist, da diese Kompensation nach den Überprüfungen "
 "durchgeführt wird."
+
+msgid "Loading speed"
+msgstr "Lade-Geschwindigkeit"
+
+msgid "Speed used for loading the filament on the wipe tower."
+msgstr ""
+"Geschwindigkeit, die zum Laden des Filaments auf den Wischturm verwendet "
+
+msgid "Loading speed at the start"
+msgstr "Lade-Geschwindigkeit am Anfang"
+
+msgid "Speed used at the very beginning of loading phase."
+msgstr "Geschwindigkeit, die am Anfang der Lade-Phase verwendet wird."
+
+msgid "Unloading speed"
+msgstr "Entlade-Geschwindigkeit"
+
+msgid ""
+"Speed used for unloading the filament on the wipe tower (does not affect  "
+"initial part of unloading just after ramming)."
+msgstr ""
+"Geschwindigkeit, die zum Entladen des Filaments auf den Wischturm verwendet "
+"wird (beeinflusst nicht den Anfang des Entladens direkt nach dem Rammen)."
+
+msgid "Unloading speed at the start"
+msgstr "Entlade-Geschwindigkeit am Anfang"
+
+msgid ""
+"Speed used for unloading the tip of the filament immediately after ramming."
+msgstr ""
+"Geschwindigkeit, die zum Entladen der Spitze des Filaments unmittelbar nach "
+"dem Rammen verwendet wird."
+
+msgid "Delay after unloading"
+msgstr "Verzögerung nach dem Entladen"
+
+msgid ""
+"Time to wait after the filament is unloaded. May help to get reliable "
+"toolchanges with flexible materials that may need more time to shrink to "
+"original dimensions."
+msgstr ""
+"Zeit, die nach dem Entladen des Filaments gewartet werden soll. Kann helfen, "
+"zuverlässige Werkzeugwechsel mit flexiblen Materialien zu erhalten, die "
+"möglicherweise mehr Zeit benötigen, um auf die ursprünglichen Abmessungen "
+"zurückzuschrumpfen."
+
+msgid "Number of cooling moves"
+msgstr "Anzahl der Kühlbewegungen"
+
+msgid ""
+"Filament is cooled by being moved back and forth in the cooling tubes. "
+"Specify desired number of these moves."
+msgstr ""
+"Das Filament wird gekühlt, indem es in den Kühlrohren hin und her bewegt "
+"wird. Geben Sie die gewünschte Anzahl dieser Bewegungen an."
+
+msgid "Speed of the first cooling move"
+msgstr "Geschwindigkeit der ersten Kühlbewegung"
+
+msgid "Cooling moves are gradually accelerating beginning at this speed."
+msgstr "Kühlbewegungen beschleunigen allmählich ab dieser Geschwindigkeit."
+
+msgid "Minimal purge on wipe tower"
+msgstr "Minimale Wischmenge im Wischturm"
+
+msgid ""
+"After a tool change, the exact position of the newly loaded filament inside "
+"the nozzle may not be known, and the filament pressure is likely not yet "
+"stable. Before purging the print head into an infill or a sacrificial "
+"object, Slic3r will always prime this amount of material into the wipe tower "
+"to produce successive infill or sacrificial object extrusions reliably."
+msgstr ""
+"Nach einem Werkzeugwechsel ist die genaue Position des neu geladenen "
+"Filaments im Düsenkopf möglicherweise unbekannt und der Filamentdruck ist "
+"wahrscheinlich noch nicht stabil. Bevor Slic3r den Druckkopf in ein Infill "
+"oder ein opferbares Objekt spült, wird immer diese Menge Material in den "
+"Wipe-Turm gefüllt, um zuverlässige nachfolgende Infill- oder opferbare "
+"Objekt-Extrusionen zu erzeugen. So wird sichergestellt, dass das Drucken "
+"nicht gestört wird und die Qualität des Drucks erhalten bleibt."
+
+msgid "Speed of the last cooling move"
+msgstr "Geschwindigkeit der letzten Kühlbewegung"
+
+msgid "Cooling moves are gradually accelerating towards this speed."
+msgstr "Kühlbewegungen beschleunigen allmählich auf diese Geschwindigkeit."
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to load a new "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+"Zeit für die Drucker-Firmware (oder die Multi Material Unit 2.0), um ein "
+"neues Filament während eines Werkzeugwechsels zu laden (wenn der T-Code "
+"ausgeführt wird). Diese Zeit wird von der G-Code-Zeitschätzung zur Gesamt-"
+"Druckzeit hinzugefügt."
+
+msgid "Ramming parameters"
+msgstr "Ramming-Parameter"
+
+msgid ""
+"This string is edited by RammingDialog and contains ramming specific "
+"parameters."
+msgstr ""
+"Dieser String wird von RammingDialog bearbeitet und enthält ramming-"
+"spezifische Parameter."
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to unload a "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+"Zeit für die Drucker-Firmware (oder die Multi Material Unit 2.0), um ein "
+"Filament während eines Werkzeugwechsels zu entladen (wenn der T-Code "
+"ausgeführt wird). Diese Zeit wird von der G-Code-Zeitschätzung zur Gesamt-"
+"Druckzeit hinzugefügt."
+
+msgid "Enable ramming for multitool setups"
+msgstr "Ramming für Multitool-Setups aktivieren"
+
+msgid ""
+"Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
+"Multimaterial' in Printer Settings is unchecked). When checked, a small "
+"amount of filament is rapidly extruded on the wipe tower just before the "
+"toolchange. This option is only used when the wipe tower is enabled."
+msgstr ""
+"Ramming durchführen, wenn ein Multitool-Drucker verwendet wird (d.h. wenn "
+"\"Single Extruder Multimaterial\" in den Druckereinstellungen nicht "
+"ausgewählt ist). Wenn diese Option aktiviert ist, wird eine kleine Menge "
+"Filament kurz vor dem Werkzeugwechsel schnell auf den Wischturm extrudiert. "
+"Diese Option wird nur verwendet, wenn der Wischturm aktiviert ist."
+
+msgid "Multitool ramming volume"
+msgstr "Volumen für Multitool-Ramming"
+
+msgid "The volume to be rammed before the toolchange."
+msgstr "Das Volumen, das vor dem Werkzeugwechsel gerammt werden soll."
+
+msgid "Multitool ramming flow"
+msgstr "Multitool-Ramming-Fluss"
+
+msgid "Flow used for ramming the filament before the toolchange."
+msgstr ""
+"Fluss, der zum Rammen des Filaments vor dem Werkzeugwechsel verwendet wird."
 
 msgid "Density"
 msgstr "Dichte"
@@ -8986,6 +9173,58 @@ msgstr "Volumen der Düse"
 msgid "Volume of nozzle between the cutter and the end of nozzle"
 msgstr "Volumen der Düse zwischen dem Messer und dem Ende der Düse"
 
+msgid "Cooling tube position"
+msgstr "Kühlrohrposition"
+
+msgid "Distance of the center-point of the cooling tube from the extruder tip."
+msgstr "Der Abstand des Mittelpunkts des Kühlrohrs von der Düsenspitze."
+
+msgid "Cooling tube length"
+msgstr "Kühlrohrlänge"
+
+msgid "Length of the cooling tube to limit space for cooling moves inside it."
+msgstr ""
+"Länge des Kühlrohrs, um den Platz für Kühlbewegungen darin zu begrenzen."
+
+msgid "High extruder current on filament swap"
+msgstr "Hoher Extruderstrom beim Filamentwechsel"
+
+msgid ""
+"It may be beneficial to increase the extruder motor current during the "
+"filament exchange sequence to allow for rapid ramming feed rates and to "
+"overcome resistance when loading a filament with an ugly shaped tip."
+msgstr ""
+"Es kann vorteilhaft sein, den Extrudermotorstrom während der Filamentwechsel-"
+"Sequenz zu erhöhen, um schnelle Vorschubgeschwindigkeiten zu ermöglichen und "
+"um den Widerstand beim Laden eines Filaments mit einer unförmigen Spitze zu "
+"überwinden."
+
+msgid "Filament parking position"
+msgstr "Filament-Parkposition"
+
+msgid ""
+"Distance of the extruder tip from the position where the filament is parked "
+"when unloaded. This should match the value in printer firmware."
+msgstr ""
+"Abstand der Düsenspitze von der Position, an der das Filament geparkt wird, "
+"wenn es entladen wird. Dies sollte dem Wert in der Drucker-Firmware "
+"entsprechen."
+
+msgid "Extra loading distance"
+msgstr "Zusätzliche Länge beim Laden"
+
+msgid ""
+"When set to zero, the distance the filament is moved from parking position "
+"during load is exactly the same as it was moved back during unload. When "
+"positive, it is loaded further,  if negative, the loading move is shorter "
+"than unloading."
+msgstr ""
+"Wenn der Wert auf Null gesetzt ist, ist die Entfernung, die das Filament "
+"während des Ladevorgangs von der Parkposition bewegt wird, genau die gleiche "
+"wie beim Rückwärtsbewegen während des Entladens. Wenn der Wert positiv ist, "
+"wird weiter geladen, wenn er negativ ist, ist die Ladebewegung kürzer als "
+"die Entladung."
+
 msgid "Start end points"
 msgstr "Anfangs- und Endpunkte"
 
@@ -9477,6 +9716,45 @@ msgstr "G-Code hinzufügen, wenn der Druckvorgang beginnt"
 
 msgid "Start G-code when start the printing of this filament"
 msgstr "G-Code hinzufügen, wenn der Druck dieses Filaments beginnt"
+
+msgid "Single Extruder Multi Material"
+msgstr "Single Extruder Multi Material"
+
+msgid "Use single nozzle to print multi filament"
+msgstr "Verwenden Sie eine einzelne Düse zum Drucken von mehreren Filamenten"
+
+msgid "Purge in prime tower"
+msgstr "Auswerfen in den Reinigungsturm"
+
+msgid "Purge remaining filament into prime tower"
+msgstr "Restliches Filament in den Reinigungsturm auswerfen"
+
+msgid "Enable filament ramming"
+msgstr "Filamentrammen aktivieren"
+
+msgid "No sparse layers (EXPERIMENTAL)"
+msgstr "Keine dünnen Schichten (EXPERIMENTELL)"
+
+msgid ""
+"If enabled, the wipe tower will not be printed on layers with no "
+"toolchanges. On layers with a toolchange, extruder will travel downward to "
+"print the wipe tower. User is responsible for ensuring there is no collision "
+"with the print."
+msgstr ""
+"Wenn aktiviert, wird der Reinigungsturm nicht auf Schichten ohne "
+"Werkzeugwechsel gedruckt. Auf Schichten mit einem Werkzeugwechsel wird der "
+"Extruder nach unten fahren, um den Reinigungsturm zu drucken. Der Benutzer "
+"ist dafür verantwortlich, dass es keine Kollision mit dem Druck gibt."
+
+msgid "Prime all printing extruders"
+msgstr "Alle Druckextruder reinigen"
+
+msgid ""
+"If enabled, all printing extruders will be primed at the front edge of the "
+"print bed at the start of the print."
+msgstr ""
+"Wenn aktiviert, werden alle Druckextruder am vorderen Rand des Druckbetts am "
+"Anfang des Drucks gereinigt."
 
 msgid "Slice gap closing radius"
 msgstr "Slice-Lückenschlussradius"
@@ -10026,6 +10304,52 @@ msgstr "Breite"
 msgid "Width of prime tower"
 msgstr "Breite des Reinigungsturms."
 
+msgid "Wipe tower rotation angle"
+msgstr "Winkel der Reinigungsturmdrehung"
+
+msgid "Wipe tower rotation angle with respect to x-axis."
+msgstr "Winkel der Reinigungsturmdrehung in Bezug auf die X-Achse."
+
+msgid "Stabilization cone apex angle"
+msgstr "Winkel des Stabilisierungskegels"
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr ""
+"Winkel an der Spitze des Kegels, der zur Stabilisierung des Reinigungsturms "
+"verwendet wird. Ein größerer Winkel bedeutet eine breitere Basis."
+
+msgid "Wipe tower purge lines spacing"
+msgstr "Abstand der Reinigungsturm Auswurflinien"
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr "Abstand der Auswurflinien auf dem Reinigungsturm."
+
+msgid "Wipe tower extruder"
+msgstr "Extruder des Reinigungsturms"
+
+msgid ""
+"The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
+"use the one that is available (non-soluble would be preferred)."
+msgstr ""
+"Düse, die zum Drucken des Umfangs des Reinigungsturms verwendet werden soll. "
+"Setzen Sie den Wert auf 0, um die verfügbare Düse zu verwenden (nicht "
+"lösliche Düse wird bevorzugt)."
+
+msgid "Purging volumes - load/unload volumes"
+msgstr "Reinigungsvolumen - Lade-/Entladevolumen"
+
+msgid ""
+"This vector saves required volumes to change from/to each tool used on the "
+"wipe tower. These values are used to simplify creation of the full purging "
+"volumes below."
+msgstr ""
+"Dieser Vektor speichert die erforderlichen Volumina, um von / zu jedem "
+"Werkzeug zu wechseln, das auf dem Reinigungsturm verwendet wird. Diese Werte "
+"werden verwendet, um die Erstellung der vollständigen Reinigungsvolumen zu "
+"vereinfachen."
+
 msgid ""
 "Purging after filament change will be done inside objects' infills. This may "
 "lower the amount of waste and decrease the print time. If the walls are "
@@ -10057,6 +10381,12 @@ msgstr ""
 "reinigen, Filament zu sparen und die Druckzeit zu verkürzen. Die Farben der "
 "Objekte werden dadurch gemischt. Dies wird nur wirksam, wenn der "
 "Reinigungsturm aktiviert ist."
+
+msgid "Maximal bridging distance"
+msgstr "Maximale Brückenlänge"
+
+msgid "Maximal distance between supports on sparse infill sections."
+msgstr "Maximaler Abstand zwischen Stützstrukturen auf dünnem Infill."
 
 msgid "X-Y hole compensation"
 msgstr "X-Y-Loch-Kompensation"
@@ -11272,13 +11602,13 @@ msgstr "Temp Schrittweite"
 msgid ""
 "Please input valid values:\n"
 "Start temp: <= 350\n"
-"End temp: >= 180\n"
+"End temp: >= 170\n"
 "Start temp > End temp + 5)"
 msgstr ""
 "Bitte geben Sie gültige Werte ein:\n"
-"Start Temp: <= 350\n"
-"End Temp: >= 180\n"
-"Start Temp > End Temp + 5)"
+"Starttemperatur: <= 350\n"
+"Endtemperatur: >= 170\n"
+"Starttemperatur > Endtemperatur + 5)"
 
 msgid "Max volumetric speed test"
 msgstr "Test zur maximalen Volumengeschwindigkeit"
@@ -11654,6 +11984,17 @@ msgstr ""
 "Festigkeit verbessern\n"
 "Wussten Sie, dass Sie die Festigkeit des Modells durch mehr Wandschleifen "
 "und eine höhere Dichte der Füllung verbessern können?"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "Start temp: <= 350\n"
+#~ "End temp: >= 180\n"
+#~ "Start temp > End temp + 5)"
+#~ msgstr ""
+#~ "Bitte geben Sie gültige Werte ein:\n"
+#~ "Start Temp: <= 350\n"
+#~ "End Temp: >= 180\n"
+#~ "Start Temp > End Temp + 5)"
 
 #~ msgid "GalaxySlicer "
 #~ msgstr "GalaxySlicer "

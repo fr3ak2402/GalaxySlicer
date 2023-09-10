@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-05 23:59+0200\n"
+"POT-Creation-Date: 2023-09-10 15:02+0200\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Chun <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -5586,6 +5586,21 @@ msgstr "耗材絲起始G-code"
 msgid "Filament end G-code"
 msgstr "耗材絲結束G-code"
 
+msgid "Multimaterial"
+msgstr ""
+
+msgid "Wipe tower parameters"
+msgstr "色塔參數"
+
+msgid "Toolchange parameters with single extruder MM printers"
+msgstr ""
+
+msgid "Ramming settings"
+msgstr ""
+
+msgid "Toolchange parameters with multi extruder MM printers"
+msgstr ""
+
 msgid "Printable space"
 msgstr "可列印區域"
 
@@ -5639,6 +5654,15 @@ msgstr "加速度限制"
 
 msgid "Jerk limitation"
 msgstr "抖動限制"
+
+msgid "Single extruder multimaterial setup"
+msgstr ""
+
+msgid "Wipe tower"
+msgstr "色塔"
+
+msgid "Single extruder multimaterial parameters"
+msgstr ""
 
 msgid "Layer height limits"
 msgstr "層高限制"
@@ -5867,6 +5891,36 @@ msgstr "沒有可用的更新。"
 
 msgid "The configuration is up to date."
 msgstr "當前配置已經是最新版本。"
+
+msgid "Ramming customization"
+msgstr ""
+
+msgid ""
+"Ramming denotes the rapid extrusion just before a tool change in a single-"
+"extruder MM printer. Its purpose is to properly shape the end of the "
+"unloaded filament so it does not prevent insertion of the new filament and "
+"can itself be reinserted later. This phase is important and different "
+"materials can require different extrusion speeds to get the good shape. For "
+"this reason, the extrusion rates during ramming are adjustable.\n"
+"\n"
+"This is an expert-level setting, incorrect adjustment will likely lead to "
+"jams, extruder wheel grinding into filament etc."
+msgstr ""
+
+msgid "Total ramming time"
+msgstr ""
+
+msgid "s"
+msgstr "秒"
+
+msgid "Total rammed volume"
+msgstr ""
+
+msgid "Ramming line width"
+msgstr ""
+
+msgid "Ramming line spacing"
+msgstr ""
 
 msgid "Auto-Calc"
 msgstr "自動計算"
@@ -7385,9 +7439,6 @@ msgstr ""
 "當層預估列印時間小於該數值時，部件冷卻風扇將會被開啟。風扇轉速將根據層列印時"
 "間在最大和最小風扇轉速之間插值獲得"
 
-msgid "s"
-msgstr "秒"
-
 msgid "Default color"
 msgstr "預設顏色"
 
@@ -7422,17 +7473,6 @@ msgstr ""
 msgid "mm³/s"
 msgstr "mm³/s"
 
-msgid "Minimal purge on wipe tower"
-msgstr "擦拭塔上的最小清理量"
-
-msgid ""
-"After a tool change, the exact position of the newly loaded filament inside "
-"the nozzle may not be known, and the filament pressure is likely not yet "
-"stable. Before purging the print head into an infill or a sacrificial "
-"object, Slic3r will always prime this amount of material into the wipe tower "
-"to produce successive infill or sacrificial object extrusions reliably."
-msgstr ""
-
 msgid "Filament load time"
 msgstr "載入耗材絲的時間"
 
@@ -7465,6 +7505,115 @@ msgstr ""
 "94%)\n"
 "補償將按比例縮放xy軸該補償僅考慮牆壁所使用的耗材\n"
 "請確保物體之間有足夠的間距，因為補償是在邊界檢查之後進行"
+
+msgid "Loading speed"
+msgstr ""
+
+msgid "Speed used for loading the filament on the wipe tower."
+msgstr ""
+
+msgid "Loading speed at the start"
+msgstr ""
+
+msgid "Speed used at the very beginning of loading phase."
+msgstr ""
+
+msgid "Unloading speed"
+msgstr ""
+
+msgid ""
+"Speed used for unloading the filament on the wipe tower (does not affect  "
+"initial part of unloading just after ramming)."
+msgstr ""
+
+msgid "Unloading speed at the start"
+msgstr ""
+
+msgid ""
+"Speed used for unloading the tip of the filament immediately after ramming."
+msgstr ""
+
+msgid "Delay after unloading"
+msgstr ""
+
+msgid ""
+"Time to wait after the filament is unloaded. May help to get reliable "
+"toolchanges with flexible materials that may need more time to shrink to "
+"original dimensions."
+msgstr ""
+
+msgid "Number of cooling moves"
+msgstr ""
+
+msgid ""
+"Filament is cooled by being moved back and forth in the cooling tubes. "
+"Specify desired number of these moves."
+msgstr ""
+
+msgid "Speed of the first cooling move"
+msgstr ""
+
+msgid "Cooling moves are gradually accelerating beginning at this speed."
+msgstr ""
+
+msgid "Minimal purge on wipe tower"
+msgstr "擦拭塔上的最小清理量"
+
+msgid ""
+"After a tool change, the exact position of the newly loaded filament inside "
+"the nozzle may not be known, and the filament pressure is likely not yet "
+"stable. Before purging the print head into an infill or a sacrificial "
+"object, Slic3r will always prime this amount of material into the wipe tower "
+"to produce successive infill or sacrificial object extrusions reliably."
+msgstr ""
+
+msgid "Speed of the last cooling move"
+msgstr ""
+
+msgid "Cooling moves are gradually accelerating towards this speed."
+msgstr ""
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to load a new "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+
+msgid "Ramming parameters"
+msgstr ""
+
+msgid ""
+"This string is edited by RammingDialog and contains ramming specific "
+"parameters."
+msgstr ""
+
+msgid ""
+"Time for the printer firmware (or the Multi Material Unit 2.0) to unload a "
+"filament during a tool change (when executing the T code). This time is "
+"added to the total print time by the G-code time estimator."
+msgstr ""
+
+msgid "Enable ramming for multitool setups"
+msgstr ""
+
+msgid ""
+"Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
+"Multimaterial' in Printer Settings is unchecked). When checked, a small "
+"amount of filament is rapidly extruded on the wipe tower just before the "
+"toolchange. This option is only used when the wipe tower is enabled."
+msgstr ""
+
+msgid "Multitool ramming volume"
+msgstr ""
+
+msgid "The volume to be rammed before the toolchange."
+msgstr ""
+
+msgid "Multitool ramming flow"
+msgstr ""
+
+msgid "Flow used for ramming the filament before the toolchange."
+msgstr ""
 
 msgid "Density"
 msgstr "密度"
@@ -8208,6 +8357,45 @@ msgstr "噴嘴內腔體積"
 msgid "Volume of nozzle between the cutter and the end of nozzle"
 msgstr "從切刀位置到噴嘴尖端的內腔體積"
 
+msgid "Cooling tube position"
+msgstr ""
+
+msgid "Distance of the center-point of the cooling tube from the extruder tip."
+msgstr ""
+
+msgid "Cooling tube length"
+msgstr ""
+
+msgid "Length of the cooling tube to limit space for cooling moves inside it."
+msgstr ""
+
+msgid "High extruder current on filament swap"
+msgstr ""
+
+msgid ""
+"It may be beneficial to increase the extruder motor current during the "
+"filament exchange sequence to allow for rapid ramming feed rates and to "
+"overcome resistance when loading a filament with an ugly shaped tip."
+msgstr ""
+
+msgid "Filament parking position"
+msgstr ""
+
+msgid ""
+"Distance of the extruder tip from the position where the filament is parked "
+"when unloaded. This should match the value in printer firmware."
+msgstr ""
+
+msgid "Extra loading distance"
+msgstr ""
+
+msgid ""
+"When set to zero, the distance the filament is moved from parking position "
+"during load is exactly the same as it was moved back during unload. When "
+"positive, it is loaded further,  if negative, the loading move is shorter "
+"than unloading."
+msgstr ""
+
 msgid "Start end points"
 msgstr "起始終止點"
 
@@ -8619,6 +8807,39 @@ msgstr "整個列印開始前的起始G-code"
 
 msgid "Start G-code when start the printing of this filament"
 msgstr "開始使用這個耗材絲列印的起始G-code"
+
+msgid "Single Extruder Multi Material"
+msgstr "單擠出機多材料"
+
+msgid "Use single nozzle to print multi filament"
+msgstr "使用單噴嘴列印多耗材"
+
+msgid "Purge in prime tower"
+msgstr ""
+
+msgid "Purge remaining filament into prime tower"
+msgstr ""
+
+msgid "Enable filament ramming"
+msgstr ""
+
+msgid "No sparse layers (EXPERIMENTAL)"
+msgstr ""
+
+msgid ""
+"If enabled, the wipe tower will not be printed on layers with no "
+"toolchanges. On layers with a toolchange, extruder will travel downward to "
+"print the wipe tower. User is responsible for ensuring there is no collision "
+"with the print."
+msgstr ""
+
+msgid "Prime all printing extruders"
+msgstr ""
+
+msgid ""
+"If enabled, all printing extruders will be primed at the front edge of the "
+"print bed at the start of the print."
+msgstr ""
 
 msgid "Slice gap closing radius"
 msgstr "切片間隙閉合半徑"
@@ -9093,6 +9314,43 @@ msgstr "寬度"
 msgid "Width of prime tower"
 msgstr "擦拭塔寬度"
 
+msgid "Wipe tower rotation angle"
+msgstr ""
+
+msgid "Wipe tower rotation angle with respect to x-axis."
+msgstr ""
+
+msgid "Stabilization cone apex angle"
+msgstr ""
+
+msgid ""
+"Angle at the apex of the cone that is used to stabilize the wipe tower. "
+"Larger angle means wider base."
+msgstr ""
+
+msgid "Wipe tower purge lines spacing"
+msgstr ""
+
+msgid "Spacing of purge lines on the wipe tower."
+msgstr ""
+
+msgid "Wipe tower extruder"
+msgstr ""
+
+msgid ""
+"The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
+"use the one that is available (non-soluble would be preferred)."
+msgstr ""
+
+msgid "Purging volumes - load/unload volumes"
+msgstr "清理量 - 加載/卸載量"
+
+msgid ""
+"This vector saves required volumes to change from/to each tool used on the "
+"wipe tower. These values are used to simplify creation of the full purging "
+"volumes below."
+msgstr ""
+
 msgid ""
 "Purging after filament change will be done inside objects' infills. This may "
 "lower the amount of waste and decrease the print time. If the walls are "
@@ -9118,6 +9376,12 @@ msgid ""
 msgstr ""
 "換料後的過渡料會被用來列印這個對象。這樣可以減少材料浪費和縮短列印時間，但是"
 "這個對象的外觀會是混色的。該功能只有在啟用料塔的時候才生效。"
+
+msgid "Maximal bridging distance"
+msgstr ""
+
+msgid "Maximal distance between supports on sparse infill sections."
+msgstr ""
 
 msgid "X-Y hole compensation"
 msgstr "X-Y 孔洞尺寸補償"
@@ -10213,7 +10477,7 @@ msgstr "溫度步距"
 msgid ""
 "Please input valid values:\n"
 "Start temp: <= 350\n"
-"End temp: >= 180\n"
+"End temp: >= 170\n"
 "Start temp > End temp + 5)"
 msgstr ""
 
@@ -13586,9 +13850,6 @@ msgstr ""
 #~ "支撐使用獨立於對象的層高。這樣就可以支持任意支撐間隙，但是可能會造成額外的"
 #~ "材料"
 
-#~ msgid "Purging volumes - load/unload volumes"
-#~ msgstr "清理量 - 加載/卸載量"
-
 #~ msgid "Purging volumes - matrix"
 #~ msgstr "清理量 - 矩陣"
 
@@ -13780,9 +14041,6 @@ msgstr ""
 
 #~ msgid "Compare this preset with some another"
 #~ msgstr "配置集對比"
-
-#~ msgid "Wipe tower parameters"
-#~ msgstr "色塔參數"
 
 #~ msgid "New printer preset selected"
 #~ msgstr "選擇了新的配置集"
@@ -14024,12 +14282,6 @@ msgstr ""
 #~ msgid "Minimum thickness of a top / bottom shell"
 #~ msgstr "頂部和底部殼體的最小厚度"
 
-#~ msgid "Single Extruder Multi Material"
-#~ msgstr "單擠出機多材料"
-
-#~ msgid "Use single nozzle to print multi filament"
-#~ msgstr "使用單噴嘴列印多耗材"
-
 #~ msgid "Bottom contact Z distance"
 #~ msgstr "底部Z距離"
 
@@ -14151,9 +14403,6 @@ msgstr ""
 
 #~ msgid "Printing by object gcode"
 #~ msgstr "逐件列印 G-code"
-
-#~ msgid "Wipe tower"
-#~ msgstr "色塔"
 
 #~ msgid "First layer height"
 #~ msgstr "第一層高度"
