@@ -37,11 +37,8 @@
     "small_perimeter_speed": "35",
     "support_interface_speed": "35",
     "support_speed": "100",
-    
-    
-    
     "post_process": [
         "~/sm2uploader -fix -host J1X1",
         "\n"
-      ]
+    ]
 }

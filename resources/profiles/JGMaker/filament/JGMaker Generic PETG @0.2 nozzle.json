@@ -42,8 +42,8 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"JGMaker Artist-D (0.2 nozzle) (IDEX)",
-		"JGMaker Artist-D Pro (0.2 nozzle) (IDEX)"
-	]
+    "compatible_printers": [
+        "JGMaker Artist-D (0.2 nozzle) (IDEX)",
+        "JGMaker Artist-D Pro (0.2 nozzle) (IDEX)"
+    ]
 }

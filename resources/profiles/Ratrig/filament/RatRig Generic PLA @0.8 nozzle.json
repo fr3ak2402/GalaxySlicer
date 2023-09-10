@@ -12,13 +12,13 @@
     "filament_max_volumetric_speed": [
         "20"
     ],
-	"filament_z_hop": [
+    "filament_z_hop": [
         "0"
     ],
-	"enable_pressure_advance": [
+    "enable_pressure_advance": [
         "1"
     ],
-	"pressure_advance": [
+    "pressure_advance": [
         "0.05"
     ],
     "slow_down_layer_time": [
@@ -31,11 +31,11 @@
         "200"
     ],
     "compatible_printers": [
-	  "RatRig V-Core 3 200 (0.8 nozzle)",
-	  "RatRig V-Core 3 300 (0.8 nozzle)",
-	  "RatRig V-Core 3 400 (0.8 nozzle)",
-	  "RatRig V-Core 3 500 (0.8 nozzle)",
-	  "RatRig V-Minion (0.8 nozzle)",
-	  "RatRig V-Cast (0.8 nozzle) (IDEX)"
+        "RatRig V-Core 3 200 (0.8 nozzle)",
+        "RatRig V-Core 3 300 (0.8 nozzle)",
+        "RatRig V-Core 3 400 (0.8 nozzle)",
+        "RatRig V-Core 3 500 (0.8 nozzle)",
+        "RatRig V-Minion (0.8 nozzle)",
+        "RatRig V-Cast (0.8 nozzle) (IDEX)"
     ]
 }

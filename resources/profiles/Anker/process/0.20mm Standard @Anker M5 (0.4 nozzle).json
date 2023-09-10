@@ -1,10 +1,10 @@
 {
-	"type": "process",
-	"setting_id": "GP004",
-	"name": "0.20mm Standard @Anker M5 (0.4 nozzle)",
-	"from": "system",
-	"instantiation": "true",
-	"inherits": "fdm_process_common",
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.20mm Standard @Anker M5 (0.4 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_common",
     "adaptive_layer_height": "0",
     "reduce_crossing_wall": "0",
     "max_travel_detour_distance": "0",
@@ -24,7 +24,7 @@
     "bridge_no_support": "0",
     "draft_shield": "disabled",
     "elefant_foot_compensation": "0",
-	"outer_wall_line_width": "0.4",
+    "outer_wall_line_width": "0.4",
     "wall_infill_order": "inner wall/outer wall/infill",
     "line_width": "0.4",
     "infill_direction": "45",
@@ -101,11 +101,11 @@
     "top_surface_speed": "150",
     "gap_infill_speed": "40",
     "travel_speed": "250",
-	"default_jerk": "12",
-	"travel_jerk": "9",
+    "default_jerk": "12",
+    "travel_jerk": "9",
     "enable_arc_fitting": "0",
-	"small_perimeter_speed": "50%",
-	"compatible_printers": [
-		"Anker M5 (0.4 nozzle)"
-	]
+    "small_perimeter_speed": "50%",
+    "compatible_printers": [
+        "Anker M5 (0.4 nozzle)"
+    ]
 }

@@ -10,11 +10,11 @@
     ],
     "extruder_colour": [
         "#FCE94F",
-		"#FCE94F"
+        "#FCE94F"
     ],
     "extruder_offset": [
         "0x0",
-		"0x0"
+        "0x0"
     ],
     "gcode_flavor": "reprapfirmware",
     "silent_mode": "0",

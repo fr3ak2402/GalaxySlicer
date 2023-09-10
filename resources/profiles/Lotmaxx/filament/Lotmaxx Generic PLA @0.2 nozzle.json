@@ -15,7 +15,7 @@
     "slow_down_layer_time": [
         "8"
     ],
-	"compatible_printers": [
-		"Lotmaxx SC-10 (0.2 nozzle)"
-	]
+    "compatible_printers": [
+        "Lotmaxx SC-10 (0.2 nozzle)"
+    ]
 }

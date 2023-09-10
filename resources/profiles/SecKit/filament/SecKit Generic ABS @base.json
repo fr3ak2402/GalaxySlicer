@@ -12,16 +12,16 @@
     "filament_max_volumetric_speed": [
         "18"
     ],
-	"filament_z_hop": [
+    "filament_z_hop": [
         "0"
     ],
-	"enable_pressure_advance": [
+    "enable_pressure_advance": [
         "1"
     ],
-	"pressure_advance": [
+    "pressure_advance": [
         "0.03"
     ],
-    "hot_plate_temp_initial_layer" : [
+    "hot_plate_temp_initial_layer": [
         "108"
     ],
     "nozzle_temperature_initial_layer": [

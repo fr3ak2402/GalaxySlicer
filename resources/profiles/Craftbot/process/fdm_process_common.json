@@ -8,7 +8,6 @@
     "bridge_flow": "0.95",
     "bridge_speed": "10",
     "brim_width": "5",
-    
     "print_sequence": "by layer",
     "default_acceleration": "0",
     "bridge_no_support": "0",

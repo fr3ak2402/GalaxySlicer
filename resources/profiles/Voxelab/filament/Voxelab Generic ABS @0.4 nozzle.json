@@ -12,8 +12,8 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-	"compatible_printers": [
-		"Voxelab Aquila X2 (0.4 nozzle)",
-		"Voxelab Aries (0.4 nozzle)"
-	]
+    "compatible_printers": [
+        "Voxelab Aquila X2 (0.4 nozzle)",
+        "Voxelab Aries (0.4 nozzle)"
+    ]
 }

@@ -39,13 +39,13 @@
     "filament_max_volumetric_speed": [
         "11"
     ],
-	"filament_z_hop": [
+    "filament_z_hop": [
         "0"
     ],
-	"enable_pressure_advance": [
+    "enable_pressure_advance": [
         "1"
     ],
-	"pressure_advance": [
+    "pressure_advance": [
         "0.045"
     ],
     "nozzle_temperature_initial_layer": [
@@ -58,7 +58,7 @@
         "250"
     ],
     "compatible_printers": [
-		"SecKit SK-Tank (0.4 nozzle)",
-		"SecKit Go3 (0.4 nozzle)"
+        "SecKit SK-Tank (0.4 nozzle)",
+        "SecKit Go3 (0.4 nozzle)"
     ]
 }

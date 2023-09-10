@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "Voxelab Generic PETG @0.4 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "Voxelab Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -39,8 +39,8 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"Voxelab Aquila X2 (0.4 nozzle)",
-		"Voxelab Aries (0.4 nozzle)"
-	]
+    "compatible_printers": [
+        "Voxelab Aquila X2 (0.4 nozzle)",
+        "Voxelab Aries (0.4 nozzle)"
+    ]
 }

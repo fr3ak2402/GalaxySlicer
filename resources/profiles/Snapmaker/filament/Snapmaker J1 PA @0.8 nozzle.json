@@ -15,7 +15,7 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-     "compatible_printers": [
+    "compatible_printers": [
         "Snapmaker J1 (0.8 nozzle) (IDEX)"
     ]
 }

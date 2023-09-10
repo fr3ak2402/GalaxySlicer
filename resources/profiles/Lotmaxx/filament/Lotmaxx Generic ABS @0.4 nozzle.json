@@ -12,7 +12,7 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-	"compatible_printers": [
-		"Lotmaxx SC-10 (0.4 nozzle)"
-	]
+    "compatible_printers": [
+        "Lotmaxx SC-10 (0.4 nozzle)"
+    ]
 }

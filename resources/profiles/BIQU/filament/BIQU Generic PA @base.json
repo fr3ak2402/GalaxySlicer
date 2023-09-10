@@ -7,15 +7,15 @@
     "instantiation": "false",
     "inherits": "fdm_filament_pa",
     "required_nozzle_HRC": [
-      "3"
+        "3"
     ],
     "nozzle_temperature_initial_layer": [
-      "280"
+        "280"
     ],
     "nozzle_temperature": [
-      "280"
+        "280"
     ],
     "filament_max_volumetric_speed": [
-      "16"
+        "16"
     ]
 }

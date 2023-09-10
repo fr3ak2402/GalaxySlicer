@@ -12,7 +12,7 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-	"compatible_printers": [
-		"Wanhao D12 (0.2 nozzle) (Dual)"
-	]
+    "compatible_printers": [
+        "Wanhao D12 (0.2 nozzle) (Dual)"
+    ]
 }

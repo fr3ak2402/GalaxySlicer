@@ -6,15 +6,15 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "BIQU Generic ASA @base",
-	"filament_max_volumetric_speed": [
+    "filament_max_volumetric_speed": [
         "12"
     ],
     "filament_flow_ratio": [
         "0.926"
     ],
     "compatible_printers": [
-	  "BIQU BX (0.8 nozzle)",
-	  "BIQU B1 (0.8 nozzle)",
-	  "BIQU Hurakan (0.8 nozzle)"
+        "BIQU BX (0.8 nozzle)",
+        "BIQU B1 (0.8 nozzle)",
+        "BIQU Hurakan (0.8 nozzle)"
     ]
 }

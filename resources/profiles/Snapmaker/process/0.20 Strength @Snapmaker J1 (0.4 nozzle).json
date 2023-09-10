@@ -33,5 +33,5 @@
     "post_process": [
         "~/sm2uploader -fix -host J1X2",
         "\n"
-      ]
+    ]
 }

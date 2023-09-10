@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "BIQU Generic PETG @0.8 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "BIQU Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -43,8 +43,8 @@
         "; filament start gcode\n"
     ],
     "compatible_printers": [
-	  "BIQU BX (0.8 nozzle)",
-	  "BIQU B1 (0.8 nozzle)",
-	  "BIQU Hurakan (0.8 nozzle)"
+        "BIQU BX (0.8 nozzle)",
+        "BIQU B1 (0.8 nozzle)",
+        "BIQU Hurakan (0.8 nozzle)"
     ]
 }

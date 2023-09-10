@@ -15,8 +15,8 @@
     "slow_down_layer_time": [
         "8"
     ],
-	"compatible_printers": [
-		"JGMaker Artist-D (0.4 nozzle) (IDEX)",
-		"JGMaker Artist-D Pro (0.4 nozzle) (IDEX)"
-	]
+    "compatible_printers": [
+        "JGMaker Artist-D (0.4 nozzle) (IDEX)",
+        "JGMaker Artist-D Pro (0.4 nozzle) (IDEX)"
+    ]
 }

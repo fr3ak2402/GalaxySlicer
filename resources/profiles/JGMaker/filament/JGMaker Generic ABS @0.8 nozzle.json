@@ -12,8 +12,8 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-	"compatible_printers": [
-		"JGMaker Artist-D (0.8 nozzle) (IDEX)",
-		"JGMaker Artist-D Pro (0.8 nozzle) (IDEX)"
-	]
+    "compatible_printers": [
+        "JGMaker Artist-D (0.8 nozzle) (IDEX)",
+        "JGMaker Artist-D Pro (0.8 nozzle) (IDEX)"
+    ]
 }

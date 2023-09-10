@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "UltiMaker Generic PETG @0.6 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "UltiMaker Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -39,9 +39,9 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"UltiMaker 2 (0.6 nozzle)",
-		"UltiMaker 2+ (0.6 nozzle)",
-		"UltiMaker 2+ Extended (0.6 nozzle)"
-	]
+    "compatible_printers": [
+        "UltiMaker 2 (0.6 nozzle)",
+        "UltiMaker 2+ (0.6 nozzle)",
+        "UltiMaker 2+ Extended (0.6 nozzle)"
+    ]
 }

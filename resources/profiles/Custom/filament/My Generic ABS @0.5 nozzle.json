@@ -13,9 +13,9 @@
         "12"
     ],
     "compatible_printers": [
-	  "Generic Klipper Printer (0.5 nozzle)",
-	  "Generic RepRap Printer (0.5 nozzle)",
-	  "Generic Marlin Printer (0.5 nozzle)",
-	  "Generic Marlin 2 Printer (0.5 nozzle)"
+        "Generic Klipper Printer (0.5 nozzle)",
+        "Generic RepRap Printer (0.5 nozzle)",
+        "Generic Marlin Printer (0.5 nozzle)",
+        "Generic Marlin 2 Printer (0.5 nozzle)"
     ]
 }

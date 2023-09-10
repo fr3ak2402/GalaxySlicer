@@ -12,7 +12,7 @@
     "filament_flow_ratio": [
         "0.94"
     ],
-     "compatible_printers": [
-		"Snapmaker J1 (0.4 nozzle) (IDEX)"
+    "compatible_printers": [
+        "Snapmaker J1 (0.4 nozzle) (IDEX)"
     ]
 }

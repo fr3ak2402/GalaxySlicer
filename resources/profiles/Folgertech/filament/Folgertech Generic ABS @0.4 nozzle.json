@@ -13,8 +13,8 @@
         "12"
     ],
     "compatible_printers": [
-	  "Folgertech FT-5 (0.4 nozzle)",
-	  "Folgertech FT-6 (0.4 nozzle) (Dual)",
-	  "Folgertech i3 (0.4 nozzle)"
+        "Folgertech FT-5 (0.4 nozzle)",
+        "Folgertech FT-6 (0.4 nozzle) (Dual)",
+        "Folgertech i3 (0.4 nozzle)"
     ]
 }

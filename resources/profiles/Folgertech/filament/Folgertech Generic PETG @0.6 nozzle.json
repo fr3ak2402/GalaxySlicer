@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "Folgertech Generic PETG @0.6 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "Folgertech Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -43,8 +43,8 @@
         "; filament start gcode\n"
     ],
     "compatible_printers": [
-	  "Folgertech FT-5 (0.6 nozzle)",
-	  "Folgertech FT-6 (0.6 nozzle) (Dual)",
-	  "Folgertech i3 (0.6 nozzle)"
+        "Folgertech FT-5 (0.6 nozzle)",
+        "Folgertech FT-6 (0.6 nozzle) (Dual)",
+        "Folgertech i3 (0.6 nozzle)"
     ]
 }

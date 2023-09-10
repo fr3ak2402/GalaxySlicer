@@ -10,15 +10,15 @@
     "nozzle_diameter": [
         "0.2"
     ],
-	"printer_variant": "0.2",
+    "printer_variant": "0.2",
     "bed_exclude_area": [
-      "0x0"
+        "0x0"
     ],
     "printable_area": [
-      "0x0",
-      "320x0",
-      "320x350",
-      "0x350"
+        "0x0",
+        "320x0",
+        "320x350",
+        "0x350"
     ],
     "printable_height": "330",
     "before_layer_change_gcode": "; Before Layer Change >>>\n; ----- layer_num: [layer_num]\nG92 E0\n; <<< Before Layer Change\n",
@@ -31,5 +31,4 @@
     "scan_first_layer": "0",
     "nozzle_type": "hardened_steel",
     "auxiliary_fan": "0"
-  }
-  
+}

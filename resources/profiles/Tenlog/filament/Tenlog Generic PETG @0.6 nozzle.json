@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "Tenlog Generic PETG @0.6 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "Tenlog Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -39,7 +39,7 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"Tenlog D3 Pro (0.6 nozzle) (IDEX)"
-	]
+    "compatible_printers": [
+        "Tenlog D3 Pro (0.6 nozzle) (IDEX)"
+    ]
 }

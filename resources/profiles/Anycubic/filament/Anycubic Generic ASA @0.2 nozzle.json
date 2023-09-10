@@ -13,13 +13,13 @@
         "12"
     ],
     "compatible_printers": [
-		"Anycubic i3 Mega S (0.2 nozzle)",
-		"Anycubic Chiron (0.2 nozzle)",
-		"Anycubic Vyper (0.2 nozzle)",
-		"Anycubic Kobra Plus (0.2 nozzle)",
-		"Anycubic Kobra Max (0.2 nozzle)",
-		"Anycubic Kobra 2 (0.2 nozzle)",
-		"Anycubic 4Max Pro (0.2 nozzle)",
-		"Anycubic 4Max Pro 2 (0.2 nozzle)"
+        "Anycubic i3 Mega S (0.2 nozzle)",
+        "Anycubic Chiron (0.2 nozzle)",
+        "Anycubic Vyper (0.2 nozzle)",
+        "Anycubic Kobra Plus (0.2 nozzle)",
+        "Anycubic Kobra Max (0.2 nozzle)",
+        "Anycubic Kobra 2 (0.2 nozzle)",
+        "Anycubic 4Max Pro (0.2 nozzle)",
+        "Anycubic 4Max Pro 2 (0.2 nozzle)"
     ]
 }

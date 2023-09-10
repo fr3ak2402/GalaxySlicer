@@ -42,7 +42,7 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"Lotmaxx SC-10 (0.6 nozzle)"
-	]
+    "compatible_printers": [
+        "Lotmaxx SC-10 (0.6 nozzle)"
+    ]
 }

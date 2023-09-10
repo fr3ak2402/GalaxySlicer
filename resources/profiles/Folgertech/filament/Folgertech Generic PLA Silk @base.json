@@ -1,6 +1,6 @@
 {
     "type": "filament",
-	"filament_id": "GFA05",
+    "filament_id": "GFA05",
     "setting_id": "GFSL99_01",
     "name": "Folgertech Generic PLA Silk @base",
     "from": "system",
@@ -12,8 +12,8 @@
     "filament_retraction_length": [
         "0.5"
     ],
-	"filament_flow_ratio": [
-      "0.98"
+    "filament_flow_ratio": [
+        "0.98"
     ],
     "slow_down_layer_time": [
         "8"

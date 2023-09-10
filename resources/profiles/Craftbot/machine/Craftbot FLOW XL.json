@@ -8,5 +8,5 @@
     "bed_model": "craftbot_flowxl_buildplate_model.stl",
     "bed_texture": "craftbot_flowxl_buildplate_texture.png",
     "hotend_model": "",
-	"default_materials": "Craftbot Generic PLA @0.2 nozzle;Craftbot Generic PETG @0.2 nozzle;Craftbot Generic ABS @0.2 nozzle;Craftbot Generic PLA @0.4 nozzle;Craftbot Generic PETG @0.4 nozzle;Craftbot Generic ABS @0.4 nozzle;Craftbot Generic PLA @0.6 nozzle;Craftbot Generic PETG @0.6 nozzle;Craftbot Generic ABS @0.6 nozzle;Craftbot Generic PLA @0.8 nozzle;Craftbot Generic PETG @0.8 nozzle;Craftbot Generic ABS @0.8 nozzle"
+    "default_materials": "Craftbot Generic PLA @0.2 nozzle;Craftbot Generic PETG @0.2 nozzle;Craftbot Generic ABS @0.2 nozzle;Craftbot Generic PLA @0.4 nozzle;Craftbot Generic PETG @0.4 nozzle;Craftbot Generic ABS @0.4 nozzle;Craftbot Generic PLA @0.6 nozzle;Craftbot Generic PETG @0.6 nozzle;Craftbot Generic ABS @0.6 nozzle;Craftbot Generic PLA @0.8 nozzle;Craftbot Generic PETG @0.8 nozzle;Craftbot Generic ABS @0.8 nozzle"
 }

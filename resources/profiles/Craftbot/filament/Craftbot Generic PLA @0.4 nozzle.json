@@ -15,21 +15,21 @@
     "slow_down_layer_time": [
         "8"
     ],
-	"compatible_printers": [
-		"Craftbot FLOW (0.4 nozzle)",
-		"Craftbot FLOW XL (0.4 nozzle)",
-		"Craftbot FLOW Wide XL (0.4 nozzle)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Dual)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Left)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Right)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Mirror)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Parallel)",
-		"Craftbot FLOW IDEX (0.4 nozzle) (Backup)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Dual)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Left)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Right)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Mirror)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Parallel)",
-		"Craftbot FLOW IDEX XL (0.4 nozzle) (Backup)"
-	]
+    "compatible_printers": [
+        "Craftbot FLOW (0.4 nozzle)",
+        "Craftbot FLOW XL (0.4 nozzle)",
+        "Craftbot FLOW Wide XL (0.4 nozzle)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Dual)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Left)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Right)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Mirror)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Parallel)",
+        "Craftbot FLOW IDEX (0.4 nozzle) (Backup)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Dual)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Left)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Right)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Mirror)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Parallel)",
+        "Craftbot FLOW IDEX XL (0.4 nozzle) (Backup)"
+    ]
 }

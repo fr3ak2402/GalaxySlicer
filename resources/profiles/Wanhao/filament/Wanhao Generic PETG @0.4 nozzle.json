@@ -1,12 +1,12 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "Wanhao Generic PETG @0.4 nozzle",
     "from": "system",
     "instantiation": "true",
     "inherits": "Wanhao Generic PETG @base",
-	"reduce_fan_stop_start_freq": [
+    "reduce_fan_stop_start_freq": [
         "1"
     ],
     "slow_down_for_layer_cooling": [
@@ -39,7 +39,7 @@
     "filament_start_gcode": [
         "; filament start gcode\n"
     ],
-	"compatible_printers": [
-		"Wanhao D12 (0.4 nozzle) (Dual)"
-	]
+    "compatible_printers": [
+        "Wanhao D12 (0.4 nozzle) (Dual)"
+    ]
 }
