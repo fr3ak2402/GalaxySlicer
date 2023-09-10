@@ -45,8 +45,8 @@
         "5000"
     ],
     "machine_max_acceleration_travel": [
-        "9000",
-        "9000"
+        "20000",
+        "20000"
     ],
     "machine_max_acceleration_x": [
         "20000",
@@ -101,7 +101,7 @@
         "0"
     ],
     "max_layer_height": [
-        "0.28"
+        "0.32"
     ],
     "min_layer_height": [
         "0.08"
@@ -160,5 +160,7 @@
     "machine_pause_gcode": "M400 U1",
     "wipe": [
         "1"
-    ]
+    ],
+    "purge_in_prime_tower": "0",
+    "enable_filament_ramming": "0"
 }
