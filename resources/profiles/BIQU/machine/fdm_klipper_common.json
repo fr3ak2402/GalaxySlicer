@@ -6,6 +6,7 @@
     "inherits": "fdm_machine_common",
     "gcode_flavor": "klipper",
     "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
     "machine_max_acceleration_e": [
         "5000",
         "5000"
