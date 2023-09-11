@@ -20,7 +20,5 @@
         "220x220",
         "0x220"
     ],
-    "printable_height": "250",
-    "nozzle_type": "undefine",
-    "auxiliary_fan": "0"
+    "printable_height": "250"
 }

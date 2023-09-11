@@ -7,10 +7,6 @@
     "inherits": "fdm_machine_common",
     "printer_model": "Sovol SV05",
     "default_print_profile": "0.20mm Standard @Sovol SV05 (0.4 nozzle)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "220x0",
@@ -79,26 +75,10 @@
     "max_layer_height": [
         "0.32"
     ],
-    "min_layer_height": [
-        "0.08"
-    ],
     "printer_settings_id": "Sovol",
-    "retraction_minimum_travel": [
-        "2"
-    ],
-    "retract_before_wipe": [
-        "70%"
-    ],
     "retraction_length": [
         "2"
     ],
-    "retract_length_toolchange": [
-        "1"
-    ],
-    "deretraction_speed": [
-        "40"
-    ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "M0",
     "default_filament_profile": [

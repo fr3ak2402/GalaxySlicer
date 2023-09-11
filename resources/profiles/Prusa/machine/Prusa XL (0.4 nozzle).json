@@ -10,10 +10,6 @@
         "Prusa Generic PLA @0.4 nozzle"
     ],
     "default_print_profile": "0.20mm Standard @Prusa XL (0.4 nozzle)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "bed_exclude_area": [
         "0x0"
     ],
@@ -34,10 +30,6 @@
     "machine_max_acceleration_retracting": [
         "1200",
         "1200"
-    ],
-    "machine_max_acceleration_travel": [
-        "3000",
-        "3000"
     ],
     "machine_max_acceleration_x": [
         "5000",
@@ -83,38 +75,12 @@
         "2",
         "2"
     ],
-    "machine_min_extruding_rate": [
-        "0",
-        "0"
-    ],
-    "machine_min_travel_rate": [
-        "0",
-        "0"
-    ],
-    "max_layer_height": [
-        "0.3"
-    ],
-    "min_layer_height": [
-        "0.08"
-    ],
     "printable_height": "360",
     "retraction_minimum_travel": [
         "1.5"
     ],
     "retract_before_wipe": [
         "80%"
-    ],
-    "retract_when_changing_layer": [
-        "1"
-    ],
-    "retraction_length": [
-        "0.8"
-    ],
-    "retract_length_toolchange": [
-        "2"
-    ],
-    "retract_restart_extra_toolchange": [
-        "0"
     ],
     "retraction_speed": [
         "35"

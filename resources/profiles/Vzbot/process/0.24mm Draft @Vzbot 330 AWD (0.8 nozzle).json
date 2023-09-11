@@ -6,7 +6,6 @@
     "instantiation": "true",
     "inherits": "fdm_process_vzbot_common_0.8_nozzle",
     "layer_height": "0.24",
-    "bottom_shell_layers": "3",
     "top_shell_layers": "4",
     "compatible_printers": [
         "Vzbot 330 AWD (0.8 nozzle)"

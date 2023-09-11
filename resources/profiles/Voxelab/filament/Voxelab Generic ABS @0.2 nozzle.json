@@ -6,12 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Voxelab Generic ABS @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Voxelab Aquila X2 (0.2 nozzle)",
         "Voxelab Aries (0.2 nozzle)"

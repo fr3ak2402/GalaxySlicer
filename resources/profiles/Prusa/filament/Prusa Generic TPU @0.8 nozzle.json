@@ -6,9 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Prusa Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
     "compatible_printers": [
         "Prusa MINI (0.8 nozzle)",
         "Prusa MK3S (0.8 nozzle)",

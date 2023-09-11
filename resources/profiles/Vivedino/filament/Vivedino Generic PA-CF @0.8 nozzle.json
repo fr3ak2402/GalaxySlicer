@@ -6,18 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Vivedino Generic PA-CF @base",
-    "filament_type": [
-        "PA-CF"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "8"
-    ],
     "compatible_printers": [
         "Vivedino Troodon 2 (Klipper) (0.8 nozzle)",
         "Vivedino Troodon 2 (RRF) (0.8 nozzle)"

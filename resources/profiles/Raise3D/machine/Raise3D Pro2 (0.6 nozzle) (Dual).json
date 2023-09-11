@@ -138,7 +138,6 @@
         "1",
         "1"
     ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M2000",
     "machine_pause_gcode": "; pause print\nM2000",
     "default_filament_profile": [

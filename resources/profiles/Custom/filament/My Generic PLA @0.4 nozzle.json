@@ -6,15 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "My Generic PLA @base",
-    "filament_flow_ratio": [
-        "0.98"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "slow_down_layer_time": [
-        "8"
-    ],
     "compatible_printers": [
         "Generic Klipper Printer (0.4 nozzle)",
         "Generic RepRap Printer (0.4 nozzle)",

@@ -9,15 +9,6 @@
     "filament_type": [
         "PA-CF"
     ],
-    "nozzle_temperature_initial_layer": [
-        "290"
-    ],
-    "nozzle_temperature": [
-        "290"
-    ],
-    "filament_max_volumetric_speed": [
-        "8"
-    ],
     "fan_max_speed": [
         "30"
     ],

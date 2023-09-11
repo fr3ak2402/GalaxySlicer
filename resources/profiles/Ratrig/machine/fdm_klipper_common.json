@@ -79,20 +79,9 @@
     "min_layer_height": [
         "0.05"
     ],
-    "printable_height": "500",
     "extruder_clearance_radius": "45",
     "extruder_clearance_height_to_rod": "25",
-    "extruder_clearance_height_to_lid": "140",
-    "printer_settings_id": "",
-    "printer_technology": "FFF",
-    "printer_variant": "0.4",
     "retraction_minimum_travel": [
-        "1"
-    ],
-    "retract_before_wipe": [
-        "70%"
-    ],
-    "retract_when_changing_layer": [
         "1"
     ],
     "retraction_length": [
@@ -104,12 +93,6 @@
     "z_hop": [
         "0.4"
     ],
-    "retract_restart_extra": [
-        "0"
-    ],
-    "retract_restart_extra_toolchange": [
-        "0"
-    ],
     "retraction_speed": [
         "40"
     ],
@@ -117,13 +100,9 @@
         "30"
     ],
     "z_hop_types": "Normal Lift",
-    "silent_mode": "0",
     "single_extruder_multi_material": "1",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "M601",
-    "wipe": [
-        "1"
-    ],
     "default_filament_profile": [
         "RatRig Generic ABS @0.4 nozzle"
     ],
@@ -133,7 +112,6 @@
     "machine_start_gcode": "START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]",
     "machine_end_gcode": "END_PRINT",
     "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
-    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
     "scan_first_layer": "0",
     "nozzle_type": "undefine",
     "auxiliary_fan": "0"

@@ -6,15 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Anycubic Generic PLA @base",
-    "filament_flow_ratio": [
-        "0.98"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "slow_down_layer_time": [
-        "8"
-    ],
     "compatible_printers": [
         "Anycubic i3 Mega S (0.6 nozzle)",
         "Anycubic Chiron (0.6 nozzle)",

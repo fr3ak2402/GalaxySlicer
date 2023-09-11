@@ -6,9 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Anker Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
     "compatible_printers": [
         "Anker M5 (0.8 nozzle)",
         "Anker M5C (0.8 nozzle)"

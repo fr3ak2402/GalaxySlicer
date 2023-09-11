@@ -17,7 +17,6 @@
         "300x200",
         "0x200"
     ],
-    "printable_height": "250",
     "nozzle_type": "undefine",
     "auxiliary_fan": "0",
     "machine_max_acceleration_e": [
@@ -102,22 +101,12 @@
     "retract_when_changing_layer": [
         "0"
     ],
-    "retract_restart_extra": [
-        "0"
-    ],
-    "retract_restart_extra_toolchange": [
-        "0"
-    ],
     "retraction_speed": [
         "40"
     ],
     "deretraction_speed": [
         "0"
     ],
-    "wipe": [
-        "1"
-    ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "M25; pause print",
     "default_filament_profile": [
@@ -125,7 +114,6 @@
     ],
     "machine_start_gcode": "G28 X0 Y0\nG28 Z0\nG0 Z10 F1800",
     "machine_end_gcode": "M104 S0 ; turn off temperature\nM140 S0\nG91\nG0 Z15 F2000\nG90\nG28 X0 Y0\nG0 Y200 F2000\nM84; disable motors",
-    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
     "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\n",
     "toolchange_gcode": "; Custom tool change G-code",
     "scan_first_layer": "0"

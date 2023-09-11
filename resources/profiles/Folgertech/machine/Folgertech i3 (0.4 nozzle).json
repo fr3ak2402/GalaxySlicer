@@ -9,7 +9,6 @@
     "nozzle_diameter": [
         "0.4"
     ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "200x0",
@@ -17,7 +16,5 @@
         "0x200"
     ],
     "printable_height": "175",
-    "nozzle_type": "undefine",
-    "auxiliary_fan": "0",
     "default_print_profile": "0.20mm Standard @Folgertech i3 (0.4 nozzle)"
 }

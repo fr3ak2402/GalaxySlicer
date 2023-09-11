@@ -12,9 +12,6 @@
     "required_nozzle_HRC": [
         "40"
     ],
-    "filament_flow_ratio": [
-        "0.98"
-    ],
     "filament_density": [
         "1.22"
     ],
@@ -38,30 +35,6 @@
     ],
     "nozzle_temperature": [
         "230"
-    ],
-    "eng_plate_temp": [
-        "55"
-    ],
-    "hot_plate_temp": [
-        "55"
-    ],
-    "textured_plate_temp": [
-        "55"
-    ],
-    "cool_plate_temp": [
-        "55"
-    ],
-    "cool_plate_temp_initial_layer": [
-        "55"
-    ],
-    "eng_plate_temp_initial_layer": [
-        "55"
-    ],
-    "hot_plate_temp_initial_layer": [
-        "55"
-    ],
-    "textured_plate_temp_initial_layer": [
-        "55"
     ],
     "type": "filament",
     "from": "system"

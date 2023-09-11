@@ -12,9 +12,6 @@
     "filament_density": [
         "1.31"
     ],
-    "filament_flow_ratio": [
-        "0.98"
-    ],
     "filament_max_volumetric_speed": [
         "22"
     ],

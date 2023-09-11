@@ -13,14 +13,11 @@
     "nozzle_diameter": [
         "0.4"
     ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "235x0",
         "235x235",
         "0x235"
     ],
-    "printable_height": "280",
-    "nozzle_type": "undefine",
-    "auxiliary_fan": "0"
+    "printable_height": "280"
 }

@@ -39,9 +39,6 @@
     "fan_max_speed": [
         "30"
     ],
-    "fan_min_speed": [
-        "10"
-    ],
     "overhang_fan_speed": [
         "30"
     ]

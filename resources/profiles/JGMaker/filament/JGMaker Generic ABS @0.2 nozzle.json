@@ -6,12 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "JGMaker Generic ABS @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "JGMaker Artist-D (0.2 nozzle) (IDEX)",
         "JGMaker Artist-D Pro (0.2 nozzle) (IDEX)"

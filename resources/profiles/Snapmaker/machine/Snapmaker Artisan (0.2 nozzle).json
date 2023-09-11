@@ -80,16 +80,10 @@
         "0.4",
         "0.4"
     ],
-    "max_layer_height": [
-        "0.3"
-    ],
     "min_layer_height": [
         "0.07"
     ],
     "printer_settings_id": "Snapmaker",
-    "retraction_minimum_travel": [
-        "1"
-    ],
     "retract_before_wipe": [
         "0%"
     ],
@@ -102,11 +96,7 @@
     "retraction_speed": [
         "25"
     ],
-    "deretraction_speed": [
-        "30"
-    ],
     "single_extruder_multi_material": "0",
-    "change_filament_gcode": "",
     "machine_pause_gcode": "",
     "default_filament_profile": [
         "Snapmaker PLA"
@@ -114,6 +104,5 @@
     "machine_start_gcode": "G28 ;Home\nG1 Z15.0 F6000 ;Move the platform down 15mm\n;Prime the extruder\nG92 E0\nG1 F200 E3\nG92 E0",
     "machine_end_gcode": "M104 S0\nM140 S0\n;Retract the filament\nG92 E1\nG1 E-1 F300\nG28 X0 Y0\nM84",
     "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\nG92 E0.0\n;[layer_z]\n\n",
-    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
     "scan_first_layer": "0"
 }

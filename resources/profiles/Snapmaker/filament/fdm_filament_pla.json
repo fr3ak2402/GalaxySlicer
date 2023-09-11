@@ -11,9 +11,6 @@
     "filament_max_volumetric_speed": [
         "12"
     ],
-    "filament_type": [
-        "PLA"
-    ],
     "filament_density": [
         "1.24"
     ],
@@ -50,16 +47,7 @@
     "reduce_fan_stop_start_freq": [
         "1"
     ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
-    "fan_max_speed": [
-        "100"
-    ],
     "fan_min_speed": [
-        "100"
-    ],
-    "overhang_fan_speed": [
         "100"
     ],
     "overhang_fan_threshold": [
@@ -82,9 +70,6 @@
     ],
     "slow_down_min_speed": [
         "15"
-    ],
-    "slow_down_layer_time": [
-        "8"
     ],
     "additional_cooling_fan_speed": [
         "70"

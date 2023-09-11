@@ -6,12 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Voron Generic ASA @base",
-    "filament_flow_ratio": [
-        "0.93"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Voron 2.4 250 (0.6 nozzle)",
         "Voron 2.4 300 (0.6 nozzle)",

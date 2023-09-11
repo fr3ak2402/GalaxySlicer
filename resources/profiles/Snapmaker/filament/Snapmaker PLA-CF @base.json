@@ -15,9 +15,6 @@
     "filament_flow_ratio": [
         "0.95"
     ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "slow_down_layer_time": [
         "7"
     ],
@@ -26,12 +23,6 @@
     ],
     "temperature_vitrification": [
         "150"
-    ],
-    "nozzle_temperature_range_low": [
-        "190"
-    ],
-    "nozzle_temperature_range_high": [
-        "240"
     ],
     "eng_plate_temp": [
         "60"

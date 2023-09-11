@@ -19,7 +19,6 @@
         "0.4",
         "0.4"
     ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "300x0",
@@ -122,7 +121,6 @@
         "0",
         "0"
     ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "M601",
     "default_filament_profile": [

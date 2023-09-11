@@ -6,15 +6,10 @@
     "instantiation": "true",
     "inherits": "fdm_machine_common",
     "printer_model": "Tronxy X5SA 400 (Marlin)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "400x0",
         "400x400",
         "0x400"
-    ],
-    "printable_height": "400"
+    ]
 }

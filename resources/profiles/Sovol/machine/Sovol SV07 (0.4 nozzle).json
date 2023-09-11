@@ -7,17 +7,12 @@
     "inherits": "fdm_machine_common",
     "printer_model": "Sovol SV07",
     "default_print_profile": "0.20mm Standard @Sovol SV07 (0.4 nozzle)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "220x0",
         "220x220",
         "0x220"
     ],
-    "printable_height": "250",
     "nozzle_type": "undefine",
     "auxiliary_fan": "0",
     "machine_max_acceleration_extruding": [
@@ -101,7 +96,6 @@
     "deretraction_speed": [
         "30"
     ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600\nG1 E0.4 F1500 ; prime after color change",
     "machine_pause_gcode": "M601",
     "default_filament_profile": [

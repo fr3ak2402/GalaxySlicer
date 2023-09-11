@@ -6,15 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Anker Generic PA @base",
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Anker M5 (0.2 nozzle)",
         "Anker M5C (0.2 nozzle)"

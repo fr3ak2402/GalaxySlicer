@@ -6,9 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "My Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
     "compatible_printers": [
         "Generic Klipper Printer (0.6 nozzle)",
         "Generic RepRap Printer (0.6 nozzle)",

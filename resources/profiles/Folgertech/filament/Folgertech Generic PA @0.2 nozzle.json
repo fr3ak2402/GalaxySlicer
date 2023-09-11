@@ -6,18 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Folgertech Generic PA @base",
-    "required_nozzle_HRC": [
-        "3"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "16"
-    ],
     "compatible_printers": [
         "Folgertech FT-5 (0.2 nozzle)",
         "Folgertech FT-6 (0.2 nozzle) (Dual)",

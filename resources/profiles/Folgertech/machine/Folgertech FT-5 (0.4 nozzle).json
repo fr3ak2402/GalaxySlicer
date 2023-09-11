@@ -17,8 +17,6 @@
         "0x300"
     ],
     "printable_height": "400",
-    "nozzle_type": "undefine",
-    "auxiliary_fan": "0",
     "retraction_length": [
         "4.5"
     ],

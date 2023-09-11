@@ -6,18 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "FLSun Generic PA-CF @base",
-    "filament_type": [
-        "PA-CF"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "8"
-    ],
     "compatible_printers": [
         "FLSun Q5 (0.2 nozzle)",
         "FLSun QQ-S Pro (0.2 nozzle)",

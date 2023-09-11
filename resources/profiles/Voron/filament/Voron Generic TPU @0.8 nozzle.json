@@ -6,9 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Voron Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
     "compatible_printers": [
         "Voron 2.4 250 (0.8 nozzle)",
         "Voron 2.4 300 (0.8 nozzle)",

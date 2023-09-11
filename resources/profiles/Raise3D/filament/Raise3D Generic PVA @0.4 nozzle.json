@@ -6,18 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Raise3D Generic PVA @base",
-    "filament_flow_ratio": [
-        "0.95"
-    ],
-    "filament_max_volumetric_speed": [
-        "4"
-    ],
-    "slow_down_layer_time": [
-        "7"
-    ],
-    "slow_down_min_speed": [
-        "10"
-    ],
     "compatible_printers": [
         "Raise3D E2 (0.4 nozzle) (IDEX)",
         "Raise3D Pro2 (0.4 nozzle) (Dual)",

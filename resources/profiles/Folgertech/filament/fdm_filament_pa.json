@@ -31,12 +31,6 @@
     "textured_plate_temp_initial_layer": [
         "100"
     ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
-    "close_fan_the_first_x_layers": [
-        "3"
-    ],
     "fan_cooling_layer_time": [
         "4"
     ],
@@ -54,9 +48,6 @@
     ],
     "nozzle_temperature_initial_layer": [
         "290"
-    ],
-    "reduce_fan_stop_start_freq": [
-        "0"
     ],
     "fan_max_speed": [
         "60"
@@ -78,9 +69,6 @@
     ],
     "nozzle_temperature_range_high": [
         "300"
-    ],
-    "slow_down_min_speed": [
-        "10"
     ],
     "slow_down_layer_time": [
         "2"

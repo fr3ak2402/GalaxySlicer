@@ -15,9 +15,6 @@
     "filament_type": [
         "PLA-CF"
     ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "slow_down_layer_time": [
         "7"
     ],
@@ -26,9 +23,6 @@
     ],
     "temperature_vitrification": [
         "55"
-    ],
-    "nozzle_temperature_range_low": [
-        "190"
     ],
     "nozzle_temperature_range_high": [
         "240"

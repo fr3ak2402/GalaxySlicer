@@ -29,12 +29,6 @@
         "0x0",
         "0x0"
     ],
-    "fan_speedup_time": [
-        "0.3"
-    ],
-    "fan_speedup_overhangs": [
-        "0"
-    ],
     "retract_length_toolchange": [
         "2",
         "2"

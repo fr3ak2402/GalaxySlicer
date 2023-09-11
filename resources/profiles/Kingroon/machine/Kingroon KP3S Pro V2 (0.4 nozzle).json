@@ -7,10 +7,6 @@
     "inherits": "fdm_machine_kingroon",
     "printer_model": "Kingroon KP3S Pro V2",
     "default_print_profile": "0.20mm Standard @Kingroon KP3SProV2 (0.4 nozzle)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "200x0",
@@ -79,16 +75,7 @@
     "max_layer_height": [
         "0.3"
     ],
-    "min_layer_height": [
-        "0.08"
-    ],
     "printer_settings_id": "Kingroon",
-    "retraction_minimum_travel": [
-        "2"
-    ],
-    "retract_before_wipe": [
-        "70%"
-    ],
     "retraction_length": [
         "1"
     ],
@@ -101,7 +88,6 @@
     "deretraction_speed": [
         "30"
     ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "PAUSE",
     "default_filament_profile": [

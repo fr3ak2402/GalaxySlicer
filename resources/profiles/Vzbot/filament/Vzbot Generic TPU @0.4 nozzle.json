@@ -6,9 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Vzbot Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "50"
-    ],
     "compatible_printers": [
         "Vzbot 235 AWD (0.4 nozzle)",
         "Vzbot 330 AWD (0.4 nozzle)"

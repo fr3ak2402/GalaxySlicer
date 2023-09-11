@@ -6,15 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Snapmaker J1 PA @base",
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Snapmaker J1 (0.2 nozzle) (IDEX)"
     ]

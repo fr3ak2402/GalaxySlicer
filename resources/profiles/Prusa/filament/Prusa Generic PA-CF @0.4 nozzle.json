@@ -6,18 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Prusa Generic PA-CF @base",
-    "filament_type": [
-        "PA-CF"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "8"
-    ],
     "compatible_printers": [
         "Prusa MINI (0.4 nozzle)",
         "Prusa MK3S (0.4 nozzle)",

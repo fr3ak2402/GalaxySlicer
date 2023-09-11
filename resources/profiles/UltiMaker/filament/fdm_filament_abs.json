@@ -28,17 +28,8 @@
     "textured_plate_temp_initial_layer": [
         "80"
     ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
-    "close_fan_the_first_x_layers": [
-        "3"
-    ],
     "fan_cooling_layer_time": [
         "30"
-    ],
-    "filament_max_volumetric_speed": [
-        "0"
     ],
     "filament_type": [
         "ABS"
@@ -78,9 +69,6 @@
     ],
     "nozzle_temperature_range_high": [
         "240"
-    ],
-    "slow_down_min_speed": [
-        "10"
     ],
     "slow_down_layer_time": [
         "15"

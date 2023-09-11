@@ -3,9 +3,6 @@
     "instantiation": "false",
     "filament_id": "SMF60",
     "inherits": "fdm_filament_pla",
-    "default_filament_colour": [
-        "#F8C827"
-    ],
     "nozzle_temperature": [
         "220"
     ],

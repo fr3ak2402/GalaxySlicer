@@ -7,14 +7,9 @@
     "inherits": "fdm_machine_common",
     "printer_model": "FLSun Q5",
     "default_print_profile": "0.20mm Standard @FLSun Q5 (0.4 nozzle)",
-    "gcode_flavor": "marlin",
     "thumbnails": [
         "260x260"
     ],
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "99.6195x8.71557",
         "98.4808x17.3648",
@@ -155,15 +150,9 @@
     "max_layer_height": [
         "0.32"
     ],
-    "min_layer_height": [
-        "0.08"
-    ],
     "printer_settings_id": "FLSun",
     "retraction_minimum_travel": [
         "2"
-    ],
-    "retract_before_wipe": [
-        "70%"
     ],
     "retraction_length": [
         "3"
@@ -171,15 +160,10 @@
     "retract_length_toolchange": [
         "1"
     ],
-    "retraction_speed": [
-        "30"
-    ],
     "deretraction_speed": [
         "40"
     ],
     "single_extruder_multi_material": "0",
-    "change_filament_gcode": "",
-    "machine_pause_gcode": "M400 U1\n",
     "default_filament_profile": [
         "FLSun Generic PLA @0.4 nozzle"
     ],

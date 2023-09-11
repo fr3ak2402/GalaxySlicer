@@ -14,8 +14,5 @@
     ],
     "slow_down_layer_time": [
         "7"
-    ],
-    "slow_down_min_speed": [
-        "10"
     ]
 }

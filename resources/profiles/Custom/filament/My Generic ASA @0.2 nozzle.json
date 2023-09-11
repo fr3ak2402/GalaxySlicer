@@ -6,12 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "My Generic ASA @base",
-    "filament_flow_ratio": [
-        "0.93"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Generic Klipper Printer (0.2 nozzle)",
         "Generic RepRap Printer (0.2 nozzle)",

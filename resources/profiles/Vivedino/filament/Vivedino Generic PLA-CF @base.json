@@ -12,9 +12,6 @@
     "filament_type": [
         "PLA-CF"
     ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "slow_down_layer_time": [
         "7"
     ]

@@ -54,12 +54,6 @@
     "nozzle_temperature_range_high": [
         "270"
     ],
-    "nozzle_temperature_initial_layer": [
-        "255"
-    ],
-    "nozzle_temperature": [
-        "255"
-    ],
     "filament_cost": [
         "34.99"
     ],
@@ -77,8 +71,5 @@
     ],
     "slow_down_layer_time": [
         "6"
-    ],
-    "fan_cooling_layer_time": [
-        "20"
     ]
 }

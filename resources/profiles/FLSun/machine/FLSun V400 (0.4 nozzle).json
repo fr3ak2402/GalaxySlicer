@@ -8,10 +8,6 @@
     "printer_model": "FLSun V400",
     "default_print_profile": "0.20mm Standard @FLSun V400 (0.4 nozzle)",
     "gcode_flavor": "klipper",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "bed_exclude_area": [
         "0x0"
     ],

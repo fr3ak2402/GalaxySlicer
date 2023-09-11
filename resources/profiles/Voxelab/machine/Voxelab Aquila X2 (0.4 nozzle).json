@@ -7,17 +7,12 @@
     "inherits": "fdm_machine_common",
     "printer_model": "Voxelab Aquila X2",
     "default_print_profile": "0.20mm Standard @Voxelab AquilaX2 (0.4 nozzle)",
-    "nozzle_diameter": [
-        "0.4"
-    ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "220x0",
         "220x220",
         "0x220"
     ],
-    "printable_height": "250",
     "nozzle_type": "undefine",
     "auxiliary_fan": "0",
     "machine_max_acceleration_extruding": [
@@ -76,29 +71,7 @@
         "0.4",
         "0.4"
     ],
-    "max_layer_height": [
-        "0.28"
-    ],
-    "min_layer_height": [
-        "0.08"
-    ],
     "printer_settings_id": "Voxelab",
-    "retraction_minimum_travel": [
-        "2"
-    ],
-    "retract_before_wipe": [
-        "70%"
-    ],
-    "retraction_length": [
-        "5"
-    ],
-    "retract_length_toolchange": [
-        "1"
-    ],
-    "deretraction_speed": [
-        "40"
-    ],
-    "single_extruder_multi_material": "0",
     "change_filament_gcode": "M600",
     "machine_pause_gcode": "M0",
     "default_filament_profile": [

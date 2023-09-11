@@ -6,12 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Qidi Generic ASA @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
         "Qidi X-Plus (0.6 nozzle)",
         "Qidi X-Max (0.6 nozzle)",

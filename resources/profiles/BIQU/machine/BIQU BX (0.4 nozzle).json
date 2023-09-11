@@ -10,20 +10,15 @@
     "nozzle_diameter": [
         "0.4"
     ],
-    "printer_variant": "0.4",
     "printable_area": [
         "0x0",
         "250x0",
         "250x250",
         "0x250"
     ],
-    "printable_height": "250",
-    "nozzle_type": "undefine",
-    "auxiliary_fan": "0",
     "deretraction_speed": [
         "70"
     ],
-    "gcode_flavor": "marlin",
     "machine_max_acceleration_e": [
         "10000"
     ],
@@ -65,9 +60,6 @@
     ],
     "machine_max_jerk_z": [
         "0.3"
-    ],
-    "max_layer_height": [
-        "0.32"
     ],
     "min_layer_height": [
         "0.10"

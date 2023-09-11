@@ -6,15 +6,6 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Elegoo Generic ABS @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "245"
-    ],
     "compatible_printers": [
         "Elegoo Neptune (0.2 nozzle)",
         "Elegoo Neptune X (0.2 nozzle)",
