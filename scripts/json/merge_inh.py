@@ -18,6 +18,10 @@ def suche_json_dateien_mit_inherits(verzeichnis):
     gefunden = []
 
     for verzeichnis_pfad, _, dateien in os.walk(verzeichnis):
+        # Überprüfe, ob das Verzeichnis oder Dateiname "BBL" enthält und überspringe es
+        if "BBL" in verzeichnis_pfad.split(os.path.sep) or "BBL" in dateien:
+            continue
+
         for dateiname in dateien:
             if dateiname.endswith(".json"):
                 datei_pfad = os.path.join(verzeichnis_pfad, dateiname)
@@ -54,7 +58,7 @@ gefundene_paare = suche_json_dateien_mit_inherits(verzeichnis)
 
 if gefundene_paare:
     print("Gefundene Schlüsselpaare (Datei, Inherits-Wert):")
-    for basis_datei, inherited_datei in gefundene_paaren:
+    for basis_datei, inherited_datei in gefundene_paare:
         print(f"Datei 1: {basis_datei}")
         print(f"Datei 2: {inherited_datei}")
         vergleiche_und_entferne_doppelte(basis_datei, inherited_datei)
