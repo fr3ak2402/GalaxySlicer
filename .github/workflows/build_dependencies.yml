@@ -82,8 +82,9 @@ jobs:
       - name: Export zstd env variable
         if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
         run: |
-            export ZSTD_LIB_DIR=/usr/local/opt/zstd/lib
-            export ZSTD_INCLUDE_DIR=/usr/local/opt/zstd/include
+            brew --prefix libiconv
+            brew --prefix zstd
+            export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
 
       - name: Cleaning up the macOS x64 Build Directory
         if: matrix.os == 'macos-13' && matrix.arch == 'x86_64'
