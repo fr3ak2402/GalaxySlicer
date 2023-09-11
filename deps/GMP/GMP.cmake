@@ -57,7 +57,7 @@ else ()
     endif ()
 
     ExternalProject_Add(dep_GMP
-        URL https://gmplib.org/download/gmp/gmp-6.3.0.tar.gz
+        URL https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/September_23/gmp-6.3.0.tar.gz
         URL_HASH SHA256=e56fd59d76810932a0555aa15a14b61c16bed66110d3c75cc2ac49ddaa9ab24c
         DOWNLOAD_DIR ${DEP_DOWNLOAD_DIR}/GMP
         BUILD_IN_SOURCE ON 
