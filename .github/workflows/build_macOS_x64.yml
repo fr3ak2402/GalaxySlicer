@@ -32,6 +32,13 @@ jobs:
       - run: mkdir -p ${{ github.workspace }}/deps/build_x86_64
       - run: mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
 
+      - name: Install tools
+        working-directory: ${{ github.workspace }}
+        run: |
+          brew install cmake git gettext zstd
+          mkdir -p ${{ github.workspace }}/deps/build_x86_64
+          mkdir -p ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
+          
       - name: Download and extract GalaxySlicer deps
         working-directory: ${{ github.workspace }}
         run: |
@@ -40,7 +47,7 @@ jobs:
           chown -R $(id -u):$(id -g) ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
           ls -l ${{ github.workspace }}/deps/build_x86_64/GalaxySlicer_dep_x86_64
           rm GalaxySlicer_dep_macOS_x64_12-09-23.tar.gz
-          
+                      
       - name: Build GalaxySlicer
         working-directory: ${{ github.workspace }}
         run: |
