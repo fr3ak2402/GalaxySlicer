@@ -25,15 +25,10 @@
     "initial_layer_speed": "40",
     "initial_layer_infill_speed": "70",
     "sparse_infill_speed": "100",
-    "top_surface_speed": "150",
     "gap_infill_speed": "120",
     "inner_wall_speed": "200",
-    "internal_solid_infill_speed": "200",
-    "ironing_speed": "30",
-    "outer_wall_speed": "100",
     "small_perimeter_speed": "35",
     "support_interface_speed": "40",
-    "support_speed": "100",
     "overhang_1_4_speed": "60",
     "overhang_2_4_speed": "30",
     "overhang_3_4_speed": "10",
@@ -41,5 +36,5 @@
     "post_process": [
         "~/sm2uploader -fix -host J1X2",
         "\n"
-      ]
+    ]
 }

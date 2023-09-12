@@ -8,7 +8,7 @@
     "layer_height": "0.12",
     "bottom_shell_layers": "5",
     "top_shell_layers": "6",
-	"compatible_printers": [
-	  "Vzbot 330 AWD (0.8 nozzle)"
+    "compatible_printers": [
+        "Vzbot 330 AWD (0.8 nozzle)"
     ]
 }

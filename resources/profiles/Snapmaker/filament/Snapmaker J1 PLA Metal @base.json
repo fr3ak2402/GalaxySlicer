@@ -6,17 +6,11 @@
     "default_filament_colour": [
         "#767A7E"
     ],
-    "filament_flow_ratio": [
-        "0.98"
-    ],
     "filament_density": [
         "1.25"
     ],
     "filament_max_volumetric_speed": [
         "21"
-    ],
-    "slow_down_layer_time": [
-        "8"
     ],
     "nozzle_temperature": [
         "220"

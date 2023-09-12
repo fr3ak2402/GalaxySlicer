@@ -53,16 +53,7 @@
     "reduce_fan_stop_start_freq": [
         "1"
     ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
-    "fan_max_speed": [
-        "100"
-    ],
     "fan_min_speed": [
-        "100"
-    ],
-    "overhang_fan_speed": [
         "100"
     ],
     "additional_cooling_fan_speed": [

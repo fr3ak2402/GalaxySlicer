@@ -5,13 +5,12 @@
     "compatible_printers": [
         "Snapmaker A250 (0.2 nozzle)",
         "Snapmaker A350 (0.2 nozzle)",
-		"Snapmaker Artisan (0.2 nozzle)"
+        "Snapmaker Artisan (0.2 nozzle)"
     ],
     "type": "process",
     "from": "system",
     "setting_id": "0.06_standard_snapmaker_(0.2_nozzle)",
     "bottom_shell_layers": "5",
-    "bridge_flow": "1",
     "initial_layer_line_width": "0.25",
     "initial_layer_print_height": "0.1",
     "inner_wall_line_width": "0.22",
@@ -28,7 +27,6 @@
     "gap_infill_speed": "85",
     "inner_wall_speed": "120",
     "internal_solid_infill_speed": "120",
-    "ironing_speed": "30",
     "outer_wall_speed": "100",
     "small_perimeter_speed": "35",
     "support_interface_speed": "40",
@@ -36,6 +34,5 @@
     "travel_speed": "110",
     "overhang_1_4_speed": "60",
     "overhang_2_4_speed": "30",
-    "overhang_3_4_speed": "10",
-    "overhang_4_4_speed": "10"
+    "overhang_3_4_speed": "10"
 }

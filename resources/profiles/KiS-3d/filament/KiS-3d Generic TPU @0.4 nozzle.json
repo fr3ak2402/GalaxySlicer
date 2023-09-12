@@ -6,10 +6,7 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "KiS-3d Generic TPU @base",
-    "filament_max_volumetric_speed": [
-        "3.2"
-    ],
     "compatible_printers": [
-      "KiS-3d S235 EVO (0.4 nozzle)"
+        "KiS-3d S235 EVO (0.4 nozzle)"
     ]
 }

@@ -6,13 +6,7 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "KiS-3d Generic ABS @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
     "compatible_printers": [
-	  "KiS-3d S235 EVO (0.8 nozzle)"
+        "KiS-3d S235 EVO (0.8 nozzle)"
     ]
 }

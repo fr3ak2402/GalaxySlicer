@@ -6,16 +6,10 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Prusa Generic PC @base",
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "filament_flow_ratio": [
-        "0.94"
-    ],
     "compatible_printers": [
-		"Prusa MINI (0.4 nozzle)",
-		"Prusa MK3S (0.4 nozzle)",
-		"Prusa MK4 (0.4 nozzle)",
-		"Prusa XL (0.4 nozzle)"
+        "Prusa MINI (0.4 nozzle)",
+        "Prusa MK3S (0.4 nozzle)",
+        "Prusa MK4 (0.4 nozzle)",
+        "Prusa XL (0.4 nozzle)"
     ]
 }

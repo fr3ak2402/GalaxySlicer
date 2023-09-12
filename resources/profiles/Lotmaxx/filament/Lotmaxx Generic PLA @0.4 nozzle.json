@@ -6,16 +6,10 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Lotmaxx Generic PLA @base",
-    "filament_flow_ratio": [
-        "0.98"
-    ],
     "filament_max_volumetric_speed": [
         "12"
     ],
-    "slow_down_layer_time": [
-        "8"
-    ],
-	"compatible_printers": [
-		"Lotmaxx SC-10 (0.4 nozzle)"
-	]
+    "compatible_printers": [
+        "Lotmaxx SC-10 (0.4 nozzle)"
+    ]
 }

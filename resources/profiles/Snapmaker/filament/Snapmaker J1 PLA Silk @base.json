@@ -6,9 +6,6 @@
     "default_filament_colour": [
         "#CF942B"
     ],
-    "filament_flow_ratio": [
-        "0.98"
-    ],
     "filament_density": [
         "1.32"
     ],
@@ -17,9 +14,6 @@
     ],
     "nozzle_temperature": [
         "230"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
     ],
     "slow_down_layer_time": [
         "8"

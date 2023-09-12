@@ -96,6 +96,8 @@
     "printer_settings_id": "",
     "printer_technology": "FFF",
     "printer_notes": "GalaxySlicer",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+    "use_relative_e_distances": "1",
     "printer_variant": "0.4",
     "retraction_minimum_travel": [
         "1"

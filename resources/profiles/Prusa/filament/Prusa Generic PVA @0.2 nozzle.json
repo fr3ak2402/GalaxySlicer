@@ -6,22 +6,10 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Prusa Generic PVA @base",
-    "filament_flow_ratio": [
-        "0.95"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "slow_down_layer_time": [
-        "7"
-    ],
-    "slow_down_min_speed": [
-        "10"
-    ],
     "compatible_printers": [
-		"Prusa MINI (0.2 nozzle)",
-		"Prusa MK3S (0.2 nozzle)",
-		"Prusa MK4 (0.2 nozzle)",
-		"Prusa XL (0.2 nozzle)"
+        "Prusa MINI (0.2 nozzle)",
+        "Prusa MK3S (0.2 nozzle)",
+        "Prusa MK4 (0.2 nozzle)",
+        "Prusa XL (0.2 nozzle)"
     ]
 }

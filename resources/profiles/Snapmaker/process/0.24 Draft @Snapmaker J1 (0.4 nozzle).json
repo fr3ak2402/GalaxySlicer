@@ -15,18 +15,12 @@
     "top_shell_thickness": "0.6",
     "bridge_flow": "1",
     "support_threshold_angle": "35",
-    "initial_layer_infill_speed": "65",
     "inner_wall_speed": "190",
     "internal_solid_infill_speed": "190",
-    "outer_wall_speed": "100",
     "sparse_infill_speed": "160",
     "top_surface_speed": "160",
     "gap_infill_speed": "160",
-    "initial_layer_speed": "50",
-    "ironing_speed": "30",
     "small_perimeter_speed": "35",
-    "support_interface_speed": "50",
-    "support_speed": "100",
     "overhang_1_4_speed": "60",
     "overhang_2_4_speed": "30",
     "overhang_3_4_speed": "10",
@@ -34,5 +28,5 @@
     "post_process": [
         "~/sm2uploader -fix -host J1X2",
         "\n"
-      ]
+    ]
 }

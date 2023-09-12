@@ -1,151 +1,150 @@
 {
-"name": "Tenlog",
-"version": "01.00.00.00",
-"force_update": "0",
-"description": "Tenlog configurations",
-"machine_model_list":   [
-  {
-      "name": "Tenlog D3 Pro",
-      "sub_path": "machine/Tenlog D3 Pro.json"
-  }
-  ],
-"process_list":   [
-  {
-      "name": "fdm_process_common",
-      "sub_path": "process/fdm_process_common.json"
-  },
-  {
-      "name": "0.16mm Optimal @Tenlog D3Pro (0.2 nozzle)",
-      "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.2 nozzle).json"
-  },
-  {
-      "name": "0.16mm Optimal @Tenlog D3Pro (0.4 nozzle)",
-      "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.4 nozzle).json"
-  },
-  {
-      "name": "0.16mm Optimal @Tenlog D3Pro (0.6 nozzle)",
-      "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.6 nozzle).json"
-  },
-  {
-      "name": "0.16mm Optimal @Tenlog D3Pro (0.8 nozzle)",
-      "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Tenlog D3Pro (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Tenlog D3Pro (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Tenlog D3Pro (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @Tenlog D3Pro (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.8 nozzle).json"
-  }
-  ],
-"filament_list":   [
-  {
-      "name": "fdm_filament_common",
-      "sub_path": "filament/fdm_filament_common.json"
-  },
-  {
-      "name": "fdm_filament_abs",
-      "sub_path": "filament/fdm_filament_abs.json"
-  },
-  {
-      "name": "fdm_filament_pet",
-      "sub_path": "filament/fdm_filament_pet.json"
-  },
-  {
-      "name": "fdm_filament_pla",
-      "sub_path": "filament/fdm_filament_pla.json"
-  },
-  {
-      "name": "Tenlog Generic PLA @base",
-      "sub_path": "filament/Tenlog Generic PLA @base.json"
-  },
-  {
-      "name": "Tenlog Generic PLA @0.8 nozzle",
-      "sub_path": "filament/Tenlog Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PLA @0.6 nozzle",
-      "sub_path": "filament/Tenlog Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PLA @0.4 nozzle",
-      "sub_path": "filament/Tenlog Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PLA @0.2 nozzle",
-      "sub_path": "filament/Tenlog Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PETG @base",
-      "sub_path": "filament/Tenlog Generic PETG @base.json"
-  },
-  {
-      "name": "Tenlog Generic PETG @0.8 nozzle",
-      "sub_path": "filament/Tenlog Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PETG @0.6 nozzle",
-      "sub_path": "filament/Tenlog Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PETG @0.4 nozzle",
-      "sub_path": "filament/Tenlog Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic PETG @0.2 nozzle",
-      "sub_path": "filament/Tenlog Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic ABS @base",
-      "sub_path": "filament/Tenlog Generic ABS @base.json"
-  },
-  {
-      "name": "Tenlog Generic ABS @0.8 nozzle",
-      "sub_path": "filament/Tenlog Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic ABS @0.6 nozzle",
-      "sub_path": "filament/Tenlog Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic ABS @0.4 nozzle",
-      "sub_path": "filament/Tenlog Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "Tenlog Generic ABS @0.2 nozzle",
-      "sub_path": "filament/Tenlog Generic ABS @0.2 nozzle.json"
-  }
-  ],
-"machine_list":   [
-  {
-      "name": "fdm_machine_common",
-      "sub_path": "machine/fdm_machine_common.json"
-  },
-  {
-      "name": "Tenlog D3 Pro (0.2 nozzle) (IDEX)",
-      "sub_path": "machine/Tenlog D3 Pro (0.2 nozzle) (IDEX).json"
-  },
-  {
-      "name": "Tenlog D3 Pro (0.4 nozzle) (IDEX)",
-      "sub_path": "machine/Tenlog D3 Pro (0.4 nozzle) (IDEX).json"
-  },
-  {
-      "name": "Tenlog D3 Pro (0.6 nozzle) (IDEX)",
-      "sub_path": "machine/Tenlog D3 Pro (0.6 nozzle) (IDEX).json"
-  },
-  {
-      "name": "Tenlog D3 Pro (0.8 nozzle) (IDEX)",
-      "sub_path": "machine/Tenlog D3 Pro (0.8 nozzle) (IDEX).json"
-  }
-  ]
+    "name": "Tenlog",
+    "version": "01.00.00.00",
+    "force_update": "0",
+    "description": "Tenlog configurations",
+    "machine_model_list": [
+        {
+            "name": "Tenlog D3 Pro",
+            "sub_path": "machine/Tenlog D3 Pro.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "process/fdm_process_common.json"
+        },
+        {
+            "name": "0.16mm Optimal @Tenlog D3Pro (0.2 nozzle)",
+            "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.2 nozzle).json"
+        },
+        {
+            "name": "0.16mm Optimal @Tenlog D3Pro (0.4 nozzle)",
+            "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.4 nozzle).json"
+        },
+        {
+            "name": "0.16mm Optimal @Tenlog D3Pro (0.6 nozzle)",
+            "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.6 nozzle).json"
+        },
+        {
+            "name": "0.16mm Optimal @Tenlog D3Pro (0.8 nozzle)",
+            "sub_path": "process/0.16mm Optimal @Tenlog D3Pro (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Tenlog D3Pro (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Tenlog D3Pro (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Tenlog D3Pro (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @Tenlog D3Pro (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @Tenlog D3Pro (0.8 nozzle).json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "fdm_filament_common",
+            "sub_path": "filament/fdm_filament_common.json"
+        },
+        {
+            "name": "fdm_filament_abs",
+            "sub_path": "filament/fdm_filament_abs.json"
+        },
+        {
+            "name": "fdm_filament_pet",
+            "sub_path": "filament/fdm_filament_pet.json"
+        },
+        {
+            "name": "fdm_filament_pla",
+            "sub_path": "filament/fdm_filament_pla.json"
+        },
+        {
+            "name": "Tenlog Generic PLA @base",
+            "sub_path": "filament/Tenlog Generic PLA @base.json"
+        },
+        {
+            "name": "Tenlog Generic PLA @0.8 nozzle",
+            "sub_path": "filament/Tenlog Generic PLA @0.8 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PLA @0.6 nozzle",
+            "sub_path": "filament/Tenlog Generic PLA @0.6 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PLA @0.4 nozzle",
+            "sub_path": "filament/Tenlog Generic PLA @0.4 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PLA @0.2 nozzle",
+            "sub_path": "filament/Tenlog Generic PLA @0.2 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PETG @base",
+            "sub_path": "filament/Tenlog Generic PETG @base.json"
+        },
+        {
+            "name": "Tenlog Generic PETG @0.8 nozzle",
+            "sub_path": "filament/Tenlog Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PETG @0.6 nozzle",
+            "sub_path": "filament/Tenlog Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PETG @0.4 nozzle",
+            "sub_path": "filament/Tenlog Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic PETG @0.2 nozzle",
+            "sub_path": "filament/Tenlog Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic ABS @base",
+            "sub_path": "filament/Tenlog Generic ABS @base.json"
+        },
+        {
+            "name": "Tenlog Generic ABS @0.8 nozzle",
+            "sub_path": "filament/Tenlog Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic ABS @0.6 nozzle",
+            "sub_path": "filament/Tenlog Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic ABS @0.4 nozzle",
+            "sub_path": "filament/Tenlog Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "Tenlog Generic ABS @0.2 nozzle",
+            "sub_path": "filament/Tenlog Generic ABS @0.2 nozzle.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "machine/fdm_machine_common.json"
+        },
+        {
+            "name": "Tenlog D3 Pro (0.2 nozzle) (IDEX)",
+            "sub_path": "machine/Tenlog D3 Pro (0.2 nozzle) (IDEX).json"
+        },
+        {
+            "name": "Tenlog D3 Pro (0.4 nozzle) (IDEX)",
+            "sub_path": "machine/Tenlog D3 Pro (0.4 nozzle) (IDEX).json"
+        },
+        {
+            "name": "Tenlog D3 Pro (0.6 nozzle) (IDEX)",
+            "sub_path": "machine/Tenlog D3 Pro (0.6 nozzle) (IDEX).json"
+        },
+        {
+            "name": "Tenlog D3 Pro (0.8 nozzle) (IDEX)",
+            "sub_path": "machine/Tenlog D3 Pro (0.8 nozzle) (IDEX).json"
+        }
+    ]
 }
-

@@ -6,19 +6,7 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Tronxy Generic PA-CF @base",
-    "filament_type": [
-        "PA-CF"
-    ],
-    "nozzle_temperature_initial_layer": [
-        "280"
-    ],
-    "nozzle_temperature": [
-        "280"
-    ],
-    "filament_max_volumetric_speed": [
-        "8"
-    ],
     "compatible_printers": [
-	  "Tronxy X5SA 400 (Marlin) (0.2 nozzle)"
+        "Tronxy X5SA 400 (Marlin) (0.2 nozzle)"
     ]
 }

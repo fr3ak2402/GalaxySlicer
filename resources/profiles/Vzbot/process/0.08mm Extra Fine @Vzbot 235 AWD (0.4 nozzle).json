@@ -4,11 +4,11 @@
     "name": "0.08mm Extra Fine @Vzbot 235 AWD (0.4 nozzle)",
     "from": "system",
     "instantiation": "true",
-    "inherits": "fdm_process_vzbot_common_0.4_nozzle" ,
+    "inherits": "fdm_process_vzbot_common_0.4_nozzle",
     "layer_height": "0.08",
     "bottom_shell_layers": "7",
     "top_shell_layers": "9",
-	"compatible_printers": [
-	  "Vzbot 235 AWD (0.4 nozzle)"
+    "compatible_printers": [
+        "Vzbot 235 AWD (0.4 nozzle)"
     ]
 }

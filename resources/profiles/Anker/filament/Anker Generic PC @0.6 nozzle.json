@@ -6,14 +6,8 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Anker Generic PC @base",
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-    "filament_flow_ratio": [
-        "0.94"
-    ],
     "compatible_printers": [
-	  "Anker M5 (0.6 nozzle)",
-	  "Anker M5C (0.6 nozzle)"
+        "Anker M5 (0.6 nozzle)",
+        "Anker M5C (0.6 nozzle)"
     ]
 }

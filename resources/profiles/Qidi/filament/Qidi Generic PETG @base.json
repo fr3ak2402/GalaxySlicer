@@ -1,17 +1,11 @@
 {
     "type": "filament",
-	"filament_id": "GFG99",
+    "filament_id": "GFG99",
     "setting_id": "GFSG99",
     "name": "Qidi Generic PETG @base",
     "from": "system",
     "instantiation": "false",
     "inherits": "fdm_filament_pet",
-	"reduce_fan_stop_start_freq": [
-        "1"
-    ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
     "fan_cooling_layer_time": [
         "30"
     ],
@@ -38,8 +32,5 @@
     ],
     "filament_max_volumetric_speed": [
         "10"
-    ],
-    "filament_start_gcode": [
-        "; filament start gcode\n"
     ]
 }

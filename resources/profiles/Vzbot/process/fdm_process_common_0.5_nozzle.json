@@ -37,7 +37,7 @@
     "print_settings_id": "",
     "raft_layers": "0",
     "seam_position": "nearest",
-	"seam_gap": "2%",
+    "seam_gap": "2%",
     "skirt_distance": "2",
     "skirt_height": "2",
     "minimum_sparse_infill_area": "0",

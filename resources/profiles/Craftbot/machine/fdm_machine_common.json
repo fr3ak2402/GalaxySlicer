@@ -5,16 +5,18 @@
     "instantiation": "false",
     "printer_technology": "FFF",
     "printer_notes": "GalaxySlicer",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+    "use_relative_e_distances": "1",
     "deretraction_speed": [
         "40"
     ],
     "extruder_colour": [
         "#FCE94F",
-		"#FCE94F"
+        "#FCE94F"
     ],
     "extruder_offset": [
         "0x0",
-		"0x0"
+        "0x0"
     ],
     "gcode_flavor": "reprapfirmware",
     "silent_mode": "0",

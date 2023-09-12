@@ -8,5 +8,5 @@
     "bed_model": "wanhao_d12_buildplate_model.stl",
     "bed_texture": "wanhao_d12_buildplate_texture.png",
     "hotend_model": "",
-	"default_materials": "Wanhao Generic PLA @0.2 nozzle;Wanhao Generic PETG @0.2 nozzle;Wanhao Generic ABS @0.2 nozzle;Wanhao Generic PLA @0.4 nozzle;Wanhao Generic PETG @0.4 nozzle;Wanhao Generic ABS @0.4 nozzle;Wanhao Generic PLA @0.6 nozzle;Wanhao Generic PETG @0.6 nozzle;Wanhao Generic ABS @0.6 nozzle;Wanhao Generic PLA @0.8 nozzle;Wanhao Generic PETG @0.8 nozzle;Wanhao Generic ABS @0.8 nozzle"
+    "default_materials": "Wanhao Generic PLA @0.2 nozzle;Wanhao Generic PETG @0.2 nozzle;Wanhao Generic ABS @0.2 nozzle;Wanhao Generic PLA @0.4 nozzle;Wanhao Generic PETG @0.4 nozzle;Wanhao Generic ABS @0.4 nozzle;Wanhao Generic PLA @0.6 nozzle;Wanhao Generic PETG @0.6 nozzle;Wanhao Generic ABS @0.6 nozzle;Wanhao Generic PLA @0.8 nozzle;Wanhao Generic PETG @0.8 nozzle;Wanhao Generic ABS @0.8 nozzle"
 }

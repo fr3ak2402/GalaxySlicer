@@ -1,116 +1,111 @@
 {
-	"type": "machine",
-	"setting_id": "GM001",
-	"name": "Kingroon KP5M (0.6 nozzle)",
-	"from": "system",
-	"instantiation": "true",
-	"inherits": "fdm_machine_kingroon",
-	"printer_model": "Kingroon KP5M",
-	"default_print_profile": "0.20mm Standard @Kingroon KP5M (0.6 nozzle)",
-	"nozzle_diameter": [
-		"0.6"
-	],
-	"printer_variant": "0.6",
-	"printable_area": [
-		"0x0",
-		"230x0",
-		"230x230",
-		"0x230"
-	],
-	"printable_height": "230",
-	"nozzle_type": "undefine",
-	"auxiliary_fan": "0",
-	"machine_max_acceleration_extruding": [
-		"1250",
-		"1250"
-	],
-	"machine_max_acceleration_retracting": [
-		"1250",
-		"1250"
-	],
-	"machine_max_acceleration_travel": [
-		"1500",
-		"1500"
-	],
-	"machine_max_acceleration_x": [
-		"1000",
-		"960"
-	],
-	"machine_max_acceleration_y": [
-		"1000",
-		"960"
-	],
-	"machine_max_acceleration_z": [
-		"200",
-		"200"
-	],
-	"machine_max_speed_e": [
-		"120",
-		"100"
-	],
-	"machine_max_speed_x": [
-		"200",
-		"100"
-	],
-	"machine_max_speed_y": [
-		"200",
-		"100"
-	],
-	"machine_max_speed_z": [
-		"12",
-		"12"
-	],
-	"machine_max_jerk_e": [
-		"2.5",
-		"2.5"
-	],
-	"machine_max_jerk_x": [
-		"10",
-		"10"
-	],
-	"machine_max_jerk_y": [
-		"10",
-		"10"
-	],
-	"machine_max_jerk_z": [
-		"0.2",
-		"0.2"
-	],
-	"max_layer_height": [
-		"0.3"
-	],
-	"min_layer_height": [
-		"0.08"
-	],
-	"printer_settings_id": "Kingroon",
-	"retraction_minimum_travel": [
-		"1"
-	],
-	"retract_before_wipe": [
-		"15%"
-	],
-	"retraction_length": [
-		"1"
-	],
-	"retract_length_toolchange": [
-		"4"
-	],
-	"retraction_speed": [
-		"80"
-	],
-	"deretraction_speed": [
-		"50"
-	],
-	"single_extruder_multi_material": "0",
-	"change_filament_gcode": "M600",
-	"machine_pause_gcode": "M601",
-	"default_filament_profile": [
-		"Kingroon Generic PLA @0.8 nozzle"
-	],
-	"gcode_flavor": "marlin",
-	"machine_end_gcode": "G4 ; wait\nM104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+30, max_print_height)}{endif} ; Move print head up\nG1 X0 Y200 F3000 ; home X axis\nM84 ; disable motors",
-	"machine_start_gcode": "M115 U3.9.3 ; tell printer latest fw version\nG90 ; use absolute coordinates\nM83 ; extruder relative mode\nM104 S[first_layer_temperature] ; set extruder temp\nM140 S[first_layer_bed_temperature] ; set bed temp\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] ; wait for extruder temp\nG28 W ; home all without mesh bed level\nG80 ; mesh bed leveling\nG92 E0.0\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X10.1 Y20 Z0.28 F5000.0 ;Move to start position\nG1 X10.1 Y200.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X10.4 Y200.0 Z0.28 F5000.0 ;Move to side a little\nG1 X10.4 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0.0\nG1 Z2.0 F3000 ;Move Z Axis up",
-	"layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
-	"before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\nG92 E0.0\n;[layer_z]\n\n",
-	"scan_first_layer": "0"
+    "type": "machine",
+    "setting_id": "GM001",
+    "name": "Kingroon KP5M (0.6 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_machine_kingroon",
+    "printer_model": "Kingroon KP5M",
+    "default_print_profile": "0.20mm Standard @Kingroon KP5M (0.6 nozzle)",
+    "nozzle_diameter": [
+        "0.6"
+    ],
+    "printer_variant": "0.6",
+    "printable_area": [
+        "0x0",
+        "230x0",
+        "230x230",
+        "0x230"
+    ],
+    "printable_height": "230",
+    "nozzle_type": "undefine",
+    "auxiliary_fan": "0",
+    "machine_max_acceleration_extruding": [
+        "1250",
+        "1250"
+    ],
+    "machine_max_acceleration_retracting": [
+        "1250",
+        "1250"
+    ],
+    "machine_max_acceleration_travel": [
+        "1500",
+        "1500"
+    ],
+    "machine_max_acceleration_x": [
+        "1000",
+        "960"
+    ],
+    "machine_max_acceleration_y": [
+        "1000",
+        "960"
+    ],
+    "machine_max_acceleration_z": [
+        "200",
+        "200"
+    ],
+    "machine_max_speed_e": [
+        "120",
+        "100"
+    ],
+    "machine_max_speed_x": [
+        "200",
+        "100"
+    ],
+    "machine_max_speed_y": [
+        "200",
+        "100"
+    ],
+    "machine_max_speed_z": [
+        "12",
+        "12"
+    ],
+    "machine_max_jerk_e": [
+        "2.5",
+        "2.5"
+    ],
+    "machine_max_jerk_x": [
+        "10",
+        "10"
+    ],
+    "machine_max_jerk_y": [
+        "10",
+        "10"
+    ],
+    "machine_max_jerk_z": [
+        "0.2",
+        "0.2"
+    ],
+    "max_layer_height": [
+        "0.3"
+    ],
+    "printer_settings_id": "Kingroon",
+    "retraction_minimum_travel": [
+        "1"
+    ],
+    "retract_before_wipe": [
+        "15%"
+    ],
+    "retraction_length": [
+        "1"
+    ],
+    "retract_length_toolchange": [
+        "4"
+    ],
+    "retraction_speed": [
+        "80"
+    ],
+    "deretraction_speed": [
+        "50"
+    ],
+    "change_filament_gcode": "M600",
+    "machine_pause_gcode": "M601",
+    "default_filament_profile": [
+        "Kingroon Generic PLA @0.8 nozzle"
+    ],
+    "machine_end_gcode": "G4 ; wait\nM104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+30, max_print_height)}{endif} ; Move print head up\nG1 X0 Y200 F3000 ; home X axis\nM84 ; disable motors",
+    "machine_start_gcode": "M115 U3.9.3 ; tell printer latest fw version\nG90 ; use absolute coordinates\nM83 ; extruder relative mode\nM104 S[first_layer_temperature] ; set extruder temp\nM140 S[first_layer_bed_temperature] ; set bed temp\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] ; wait for extruder temp\nG28 W ; home all without mesh bed level\nG80 ; mesh bed leveling\nG92 E0.0\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X10.1 Y20 Z0.28 F5000.0 ;Move to start position\nG1 X10.1 Y200.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X10.4 Y200.0 Z0.28 F5000.0 ;Move to side a little\nG1 X10.4 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0.0\nG1 Z2.0 F3000 ;Move Z Axis up",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\nG92 E0.0\n;[layer_z]\n\n",
+    "scan_first_layer": "0"
 }

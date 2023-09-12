@@ -19,7 +19,6 @@
     "gap_infill_speed": "150",
     "support_speed": "100",
     "support_interface_speed": "50",
-    "ironing_speed": "30",
     "travel_speed": "240",
     "travel_speed_z": "10",
     "default_acceleration": "10000",

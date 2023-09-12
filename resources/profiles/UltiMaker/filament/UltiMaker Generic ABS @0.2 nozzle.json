@@ -6,15 +6,9 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "UltiMaker Generic ABS @base",
-    "filament_flow_ratio": [
-        "0.926"
-    ],
-    "filament_max_volumetric_speed": [
-        "2"
-    ],
-	"compatible_printers": [
-		"UltiMaker 2 (0.2 nozzle)",
-		"UltiMaker 2+ (0.2 nozzle)",
-		"UltiMaker 2+ Extended (0.2 nozzle)"
-	]
+    "compatible_printers": [
+        "UltiMaker 2 (0.2 nozzle)",
+        "UltiMaker 2+ (0.2 nozzle)",
+        "UltiMaker 2+ Extended (0.2 nozzle)"
+    ]
 }

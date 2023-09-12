@@ -1,134 +1,133 @@
 {
-	"type": "machine",
-	"setting_id": "GM001",
-	"name": "Tenlog D3 Pro (0.6 nozzle) (IDEX)",
-	"from": "system",
-	"instantiation": "true",
-	"inherits": "fdm_machine_common",
-	"printer_model": "Tenlog D3 Pro",
-	"default_print_profile": "0.20mm Standard @Tenlog D3Pro (0.6 nozzle)",
-	"extruder_colour": [
+    "type": "machine",
+    "setting_id": "GM001",
+    "name": "Tenlog D3 Pro (0.6 nozzle) (IDEX)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_machine_common",
+    "printer_model": "Tenlog D3 Pro",
+    "default_print_profile": "0.20mm Standard @Tenlog D3Pro (0.6 nozzle)",
+    "extruder_colour": [
         "#FCE94F",
-		"#FCE94F"
+        "#FCE94F"
     ],
     "extruder_offset": [
         "0x0",
-		"0x0"
+        "0x0"
     ],
-	"nozzle_diameter": [
-		"0.6",
-		"0.6"
-	],
-	"printer_variant": "0.6",
-	"printable_area": [
-		"0x0",
-		"300x0",
-		"300x300",
-		"0x300"
-	],
-	"printable_height": "350",
-	"nozzle_type": "undefine",
-	"auxiliary_fan": "0",
-	"machine_max_acceleration_e": [
-		"1000",
+    "nozzle_diameter": [
+        "0.6",
+        "0.6"
+    ],
+    "printer_variant": "0.6",
+    "printable_area": [
+        "0x0",
+        "300x0",
+        "300x300",
+        "0x300"
+    ],
+    "printable_height": "350",
+    "nozzle_type": "undefine",
+    "auxiliary_fan": "0",
+    "machine_max_acceleration_e": [
+        "1000",
         "5000"
     ],
-	"machine_max_acceleration_extruding": [
-		"500",
-		"500"
-	],
-	"machine_max_acceleration_retracting": [
-		"500",
-		"1250"
-	],
-	"machine_max_acceleration_travel": [
-		"500",
-		"1250"
-	],
-	"machine_max_acceleration_x": [
-		"500",
-		"1000"
-	],
-	"machine_max_acceleration_y": [
-		"500",
-		"1000"
-	],
-	"machine_max_acceleration_z": [
-		"100",
-		"200"
-	],
-	"machine_max_speed_e": [
-		"25",
-		"120"
-	],
-	"machine_max_speed_x": [
-		"80",
-		"200"
-	],
-	"machine_max_speed_y": [
-		"80",
-		"200"
-	],
-	"machine_max_speed_z": [
-		"3",
-		"12"
-	],
-	"machine_max_jerk_e": [
-		"5",
-		"2.5"
-	],
-	"machine_max_jerk_x": [
-		"20",
-		"10"
-	],
-	"machine_max_jerk_y": [
-		"20",
-		"10"
-	],
-	"machine_max_jerk_z": [
-		"0.4",
-		"0.4"
-	],
-	"max_layer_height": [
-		"0.28",
-		"0.28"
-	],
-	"min_layer_height": [
-		"0.08",
-		"0.08"
-	],
-	"printer_settings_id": "Tenlog",
-	"retraction_minimum_travel": [
-		"2",
-		"2"
-	],
-	"retract_before_wipe": [
-		"0%",
-		"0%"
-	],
-	"retraction_length": [
-		"2",
-		"2"
-	],
-	"retract_length_toolchange": [
-		"10",
-		"10"
-	],
-	"retraction_speed": [
-		"60",
-		"60"
-	],
-	"deretraction_speed": [
-		"0",
-		"0"
-	],
-	"single_extruder_multi_material": "0",
-	"change_filament_gcode": "M600",
-	"machine_pause_gcode": "M601",
-	"default_filament_profile": [
-		"Tenlog Generic PLA @0.6 nozzle"
-	],
-	"machine_start_gcode": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Move to min endstops\nG1 Z15.0 F9000 ;move the platform down 15mm\nM117 Printing...",
-	"machine_end_gcode": "M104 T0 S0 ;1st extruder heater off\nM104 T1 S0 ;2nd extruder heater off\nM140 S0 ;heated bed heater off (if you have it)\nG91 ;relative positioning\nG1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure\nG1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more\nG28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way\nM84 ;steppers off\nG90 ;absolute positioning",
-	"scan_first_layer": "0"
+    "machine_max_acceleration_extruding": [
+        "500",
+        "500"
+    ],
+    "machine_max_acceleration_retracting": [
+        "500",
+        "1250"
+    ],
+    "machine_max_acceleration_travel": [
+        "500",
+        "1250"
+    ],
+    "machine_max_acceleration_x": [
+        "500",
+        "1000"
+    ],
+    "machine_max_acceleration_y": [
+        "500",
+        "1000"
+    ],
+    "machine_max_acceleration_z": [
+        "100",
+        "200"
+    ],
+    "machine_max_speed_e": [
+        "25",
+        "120"
+    ],
+    "machine_max_speed_x": [
+        "80",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "80",
+        "200"
+    ],
+    "machine_max_speed_z": [
+        "3",
+        "12"
+    ],
+    "machine_max_jerk_e": [
+        "5",
+        "2.5"
+    ],
+    "machine_max_jerk_x": [
+        "20",
+        "10"
+    ],
+    "machine_max_jerk_y": [
+        "20",
+        "10"
+    ],
+    "machine_max_jerk_z": [
+        "0.4",
+        "0.4"
+    ],
+    "max_layer_height": [
+        "0.28",
+        "0.28"
+    ],
+    "min_layer_height": [
+        "0.08",
+        "0.08"
+    ],
+    "printer_settings_id": "Tenlog",
+    "retraction_minimum_travel": [
+        "2",
+        "2"
+    ],
+    "retract_before_wipe": [
+        "0%",
+        "0%"
+    ],
+    "retraction_length": [
+        "2",
+        "2"
+    ],
+    "retract_length_toolchange": [
+        "10",
+        "10"
+    ],
+    "retraction_speed": [
+        "60",
+        "60"
+    ],
+    "deretraction_speed": [
+        "0",
+        "0"
+    ],
+    "change_filament_gcode": "M600",
+    "machine_pause_gcode": "M601",
+    "default_filament_profile": [
+        "Tenlog Generic PLA @0.6 nozzle"
+    ],
+    "machine_start_gcode": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 ;Move to min endstops\nG1 Z15.0 F9000 ;move the platform down 15mm\nM117 Printing...",
+    "machine_end_gcode": "M104 T0 S0 ;1st extruder heater off\nM104 T1 S0 ;2nd extruder heater off\nM140 S0 ;heated bed heater off (if you have it)\nG91 ;relative positioning\nG1 E-1 F300  ;retract the filament a bit before lifting the nozzle, to release some of the pressure\nG1 Z+0.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more\nG28 X0 Y0 ;move X/Y to min endstops, so the head is out of the way\nM84 ;steppers off\nG90 ;absolute positioning",
+    "scan_first_layer": "0"
 }

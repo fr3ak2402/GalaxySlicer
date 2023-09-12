@@ -1,975 +1,974 @@
 {
-"name": "Custom",
-"version": "01.00.00.00",
-"force_update": "0",
-"description": "Custom configurations",
-"machine_model_list":   [
-  {
-      "name": "Generic Klipper Printer",
-      "sub_path": "machine/Generic Klipper Printer.json"
-  },
-  {
-      "name": "Generic Marlin Printer",
-      "sub_path": "machine/Generic Marlin Printer.json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer",
-      "sub_path": "machine/Generic Marlin 2 Printer.json"
-  },
-  {
-      "name": "Generic RepRap Printer",
-      "sub_path": "machine/Generic RepRap Printer.json"
-  }
-  ],
-"process_list":   [
-  {
-      "name": "fdm_process_common",
-      "sub_path": "process/fdm_process_common.json"
-  },
-  {
-      "name": "fdm_process_klipper_common",
-      "sub_path": "process/fdm_process_klipper_common.json"
-  },
-  {
-      "name": "fdm_process_marlin_common",
-      "sub_path": "process/fdm_process_marlin_common.json"
-  },
-  {
-      "name": "fdm_process_marlin2_common",
-      "sub_path": "process/fdm_process_marlin2_common.json"
-  },
-  {
-      "name": "fdm_process_reprap_common",
-      "sub_path": "process/fdm_process_reprap_common.json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.08mm Extra Fine @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.12mm Fine @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.12mm Fine @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.15mm Optimal @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.15mm Optimal @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.20mm Standard @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.20mm Standard @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.24mm Draft @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.24mm Draft @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (0.2 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.2 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (0.4 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.4 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (0.5 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.5 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (0.6 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.6 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (0.8 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.8 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyKlipper (1.0 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyKlipper (1.0 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (0.2 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.2 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (0.4 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.4 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (0.5 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.5 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (0.6 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.6 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (0.8 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.8 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin (1.0 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin (1.0 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (0.2 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.2 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (0.4 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.4 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (0.5 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.5 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (0.6 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.6 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (0.8 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.8 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyMarlin2 (1.0 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (1.0 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (0.2 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.2 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (0.4 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.4 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (0.5 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.5 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (0.6 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.6 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (0.8 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.8 nozzle).json"
-  },
-  {
-      "name": "0.28mm Extra Draft @MyRepRap (1.0 nozzle)",
-      "sub_path": "process/0.28mm Extra Draft @MyRepRap (1.0 nozzle).json"
-  }
-  ],
-"filament_list":   [
-  {
-      "name": "fdm_filament_common",
-      "sub_path": "filament/fdm_filament_common.json"
-  },
-  {
-      "name": "fdm_filament_abs",
-      "sub_path": "filament/fdm_filament_abs.json"
-  },
-  {
-      "name": "fdm_filament_asa",
-      "sub_path": "filament/fdm_filament_asa.json"
-  },
-  {
-      "name": "fdm_filament_pa",
-      "sub_path": "filament/fdm_filament_pa.json"
-  },
-  {
-      "name": "fdm_filament_pc",
-      "sub_path": "filament/fdm_filament_pc.json"
-  },
-  {
-      "name": "fdm_filament_pet",
-      "sub_path": "filament/fdm_filament_pet.json"
-  },
-  {
-      "name": "fdm_filament_pla",
-      "sub_path": "filament/fdm_filament_pla.json"
-  },
-  {
-      "name": "fdm_filament_pva",
-      "sub_path": "filament/fdm_filament_pva.json"
-  },
-  {
-      "name": "fdm_filament_tpu",
-      "sub_path": "filament/fdm_filament_tpu.json"
-  },
-  {
-      "name": "My Generic TPU @base",
-      "sub_path": "filament/My Generic TPU @base.json"
-  },
-  {
-      "name": "My Generic TPU @1.0 nozzle",
-      "sub_path": "filament/My Generic TPU @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic TPU @0.8 nozzle",
-      "sub_path": "filament/My Generic TPU @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic TPU @0.6 nozzle",
-      "sub_path": "filament/My Generic TPU @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic TPU @0.5 nozzle",
-      "sub_path": "filament/My Generic TPU @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic TPU @0.4 nozzle",
-      "sub_path": "filament/My Generic TPU @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic TPU @0.2 nozzle",
-      "sub_path": "filament/My Generic TPU @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @base",
-      "sub_path": "filament/My Generic PVA @base.json"
-  },
-  {
-      "name": "My Generic PVA @1.0 nozzle",
-      "sub_path": "filament/My Generic PVA @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @0.8 nozzle",
-      "sub_path": "filament/My Generic PVA @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @0.6 nozzle",
-      "sub_path": "filament/My Generic PVA @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @0.5 nozzle",
-      "sub_path": "filament/My Generic PVA @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @0.4 nozzle",
-      "sub_path": "filament/My Generic PVA @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PVA @0.2 nozzle",
-      "sub_path": "filament/My Generic PVA @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @base",
-      "sub_path": "filament/My Generic PLA-CF @base.json"
-  },
-  {
-      "name": "My Generic PLA-CF @1.0 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @0.8 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @0.6 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @0.5 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @0.4 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA-CF @0.2 nozzle",
-      "sub_path": "filament/My Generic PLA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @base",
-      "sub_path": "filament/My Generic PLA @base.json"
-  },
-  {
-      "name": "My Generic PLA @1.0 nozzle",
-      "sub_path": "filament/My Generic PLA @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @0.8 nozzle",
-      "sub_path": "filament/My Generic PLA @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @0.6 nozzle",
-      "sub_path": "filament/My Generic PLA @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @0.5 nozzle",
-      "sub_path": "filament/My Generic PLA @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @0.4 nozzle",
-      "sub_path": "filament/My Generic PLA @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PLA @0.2 nozzle",
-      "sub_path": "filament/My Generic PLA @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @base",
-      "sub_path": "filament/My Generic PETG @base.json"
-  },
-  {
-      "name": "My Generic PETG @1.0 nozzle",
-      "sub_path": "filament/My Generic PETG @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @0.8 nozzle",
-      "sub_path": "filament/My Generic PETG @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @0.6 nozzle",
-      "sub_path": "filament/My Generic PETG @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @0.5 nozzle",
-      "sub_path": "filament/My Generic PETG @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @0.4 nozzle",
-      "sub_path": "filament/My Generic PETG @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PETG @0.2 nozzle",
-      "sub_path": "filament/My Generic PETG @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @base",
-      "sub_path": "filament/My Generic PC @base.json"
-  },
-  {
-      "name": "My Generic PC @1.0 nozzle",
-      "sub_path": "filament/My Generic PC @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @0.8 nozzle",
-      "sub_path": "filament/My Generic PC @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @0.6 nozzle",
-      "sub_path": "filament/My Generic PC @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @0.5 nozzle",
-      "sub_path": "filament/My Generic PC @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @0.4 nozzle",
-      "sub_path": "filament/My Generic PC @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PC @0.2 nozzle",
-      "sub_path": "filament/My Generic PC @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @base",
-      "sub_path": "filament/My Generic PA-CF @base.json"
-  },
-  {
-      "name": "My Generic PA-CF @1.0 nozzle",
-      "sub_path": "filament/My Generic PA-CF @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @0.8 nozzle",
-      "sub_path": "filament/My Generic PA-CF @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @0.6 nozzle",
-      "sub_path": "filament/My Generic PA-CF @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @0.5 nozzle",
-      "sub_path": "filament/My Generic PA-CF @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @0.4 nozzle",
-      "sub_path": "filament/My Generic PA-CF @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PA-CF @0.2 nozzle",
-      "sub_path": "filament/My Generic PA-CF @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @base",
-      "sub_path": "filament/My Generic PA @base.json"
-  },
-  {
-      "name": "My Generic PA @1.0 nozzle",
-      "sub_path": "filament/My Generic PA @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @0.8 nozzle",
-      "sub_path": "filament/My Generic PA @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @0.6 nozzle",
-      "sub_path": "filament/My Generic PA @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @0.5 nozzle",
-      "sub_path": "filament/My Generic PA @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @0.4 nozzle",
-      "sub_path": "filament/My Generic PA @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic PA @0.2 nozzle",
-      "sub_path": "filament/My Generic PA @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @base",
-      "sub_path": "filament/My Generic ASA @base.json"
-  },
-  {
-      "name": "My Generic ASA @1.0 nozzle",
-      "sub_path": "filament/My Generic ASA @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @0.8 nozzle",
-      "sub_path": "filament/My Generic ASA @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @0.6 nozzle",
-      "sub_path": "filament/My Generic ASA @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @0.5 nozzle",
-      "sub_path": "filament/My Generic ASA @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @0.4 nozzle",
-      "sub_path": "filament/My Generic ASA @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic ASA @0.2 nozzle",
-      "sub_path": "filament/My Generic ASA @0.2 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @base",
-      "sub_path": "filament/My Generic ABS @base.json"
-  },
-  {
-      "name": "My Generic ABS @1.0 nozzle",
-      "sub_path": "filament/My Generic ABS @1.0 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @0.8 nozzle",
-      "sub_path": "filament/My Generic ABS @0.8 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @0.6 nozzle",
-      "sub_path": "filament/My Generic ABS @0.6 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @0.5 nozzle",
-      "sub_path": "filament/My Generic ABS @0.5 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @0.4 nozzle",
-      "sub_path": "filament/My Generic ABS @0.4 nozzle.json"
-  },
-  {
-      "name": "My Generic ABS @0.2 nozzle",
-      "sub_path": "filament/My Generic ABS @0.2 nozzle.json"
-  }
-  ],
-"machine_list":   [
-  {
-      "name": "fdm_machine_common",
-      "sub_path": "machine/fdm_machine_common.json"
-  },
-  {
-      "name": "fdm_marlin2_common",
-      "sub_path": "machine/fdm_marlin2_common.json"
-  },
-  {
-      "name": "fdm_klipper_common",
-      "sub_path": "machine/fdm_klipper_common.json"
-  },
-  {
-      "name": "fdm_reprap_common",
-      "sub_path": "machine/fdm_reprap_common.json"
-  },
-  {
-      "name": "Generic Klipper Printer (0.2 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (0.2 nozzle).json"
-  },
-  {
-      "name": "Generic Klipper Printer (0.4 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (0.4 nozzle).json"
-  },
-  {
-      "name": "Generic Klipper Printer (0.5 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (0.5 nozzle).json"
-  },
-  {
-      "name": "Generic Klipper Printer (0.6 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (0.6 nozzle).json"
-  },
-  {
-      "name": "Generic Klipper Printer (0.8 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (0.8 nozzle).json"
-  },
-  {
-      "name": "Generic Klipper Printer (1.0 nozzle)",
-      "sub_path": "machine/Generic Klipper Printer (1.0 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (0.2 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (0.2 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (0.4 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (0.4 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (0.5 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (0.5 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (0.6 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (0.6 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (0.8 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (0.8 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin Printer (1.0 nozzle)",
-      "sub_path": "machine/Generic Marlin Printer (1.0 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (0.2 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (0.2 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (0.4 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (0.4 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (0.5 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (0.5 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (0.6 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (0.6 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (0.8 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (0.8 nozzle).json"
-  },
-  {
-      "name": "Generic Marlin 2 Printer (1.0 nozzle)",
-      "sub_path": "machine/Generic Marlin 2 Printer (1.0 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (0.2 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (0.2 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (0.4 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (0.4 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (0.5 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (0.5 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (0.6 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (0.6 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (0.8 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (0.8 nozzle).json"
-  },
-  {
-      "name": "Generic RepRap Printer (1.0 nozzle)",
-      "sub_path": "machine/Generic RepRap Printer (1.0 nozzle).json"
-  }
-  ]
+    "name": "Custom",
+    "version": "01.00.00.00",
+    "force_update": "0",
+    "description": "Custom configurations",
+    "machine_model_list": [
+        {
+            "name": "Generic Klipper Printer",
+            "sub_path": "machine/Generic Klipper Printer.json"
+        },
+        {
+            "name": "Generic Marlin Printer",
+            "sub_path": "machine/Generic Marlin Printer.json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer",
+            "sub_path": "machine/Generic Marlin 2 Printer.json"
+        },
+        {
+            "name": "Generic RepRap Printer",
+            "sub_path": "machine/Generic RepRap Printer.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "process/fdm_process_common.json"
+        },
+        {
+            "name": "fdm_process_klipper_common",
+            "sub_path": "process/fdm_process_klipper_common.json"
+        },
+        {
+            "name": "fdm_process_marlin_common",
+            "sub_path": "process/fdm_process_marlin_common.json"
+        },
+        {
+            "name": "fdm_process_marlin2_common",
+            "sub_path": "process/fdm_process_marlin2_common.json"
+        },
+        {
+            "name": "fdm_process_reprap_common",
+            "sub_path": "process/fdm_process_reprap_common.json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.08mm Extra Fine @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.08mm Extra Fine @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.12mm Fine @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.12mm Fine @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.15mm Optimal @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.15mm Optimal @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.20mm Standard @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.20mm Standard @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.24mm Draft @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.24mm Draft @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (0.2 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.2 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (0.4 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.4 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (0.5 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.5 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (0.6 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.6 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (0.8 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (0.8 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyKlipper (1.0 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyKlipper (1.0 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (0.2 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.2 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (0.4 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.4 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (0.5 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.5 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (0.6 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.6 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (0.8 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (0.8 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin (1.0 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin (1.0 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (0.2 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.2 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (0.4 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.4 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (0.5 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.5 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (0.6 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.6 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (0.8 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (0.8 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyMarlin2 (1.0 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyMarlin2 (1.0 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (0.2 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.2 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (0.4 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.4 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (0.5 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.5 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (0.6 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.6 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (0.8 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (0.8 nozzle).json"
+        },
+        {
+            "name": "0.28mm Extra Draft @MyRepRap (1.0 nozzle)",
+            "sub_path": "process/0.28mm Extra Draft @MyRepRap (1.0 nozzle).json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "fdm_filament_common",
+            "sub_path": "filament/fdm_filament_common.json"
+        },
+        {
+            "name": "fdm_filament_abs",
+            "sub_path": "filament/fdm_filament_abs.json"
+        },
+        {
+            "name": "fdm_filament_asa",
+            "sub_path": "filament/fdm_filament_asa.json"
+        },
+        {
+            "name": "fdm_filament_pa",
+            "sub_path": "filament/fdm_filament_pa.json"
+        },
+        {
+            "name": "fdm_filament_pc",
+            "sub_path": "filament/fdm_filament_pc.json"
+        },
+        {
+            "name": "fdm_filament_pet",
+            "sub_path": "filament/fdm_filament_pet.json"
+        },
+        {
+            "name": "fdm_filament_pla",
+            "sub_path": "filament/fdm_filament_pla.json"
+        },
+        {
+            "name": "fdm_filament_pva",
+            "sub_path": "filament/fdm_filament_pva.json"
+        },
+        {
+            "name": "fdm_filament_tpu",
+            "sub_path": "filament/fdm_filament_tpu.json"
+        },
+        {
+            "name": "My Generic TPU @base",
+            "sub_path": "filament/My Generic TPU @base.json"
+        },
+        {
+            "name": "My Generic TPU @1.0 nozzle",
+            "sub_path": "filament/My Generic TPU @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.8 nozzle",
+            "sub_path": "filament/My Generic TPU @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.6 nozzle",
+            "sub_path": "filament/My Generic TPU @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.5 nozzle",
+            "sub_path": "filament/My Generic TPU @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.4 nozzle",
+            "sub_path": "filament/My Generic TPU @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic TPU @0.2 nozzle",
+            "sub_path": "filament/My Generic TPU @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @base",
+            "sub_path": "filament/My Generic PVA @base.json"
+        },
+        {
+            "name": "My Generic PVA @1.0 nozzle",
+            "sub_path": "filament/My Generic PVA @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.8 nozzle",
+            "sub_path": "filament/My Generic PVA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.6 nozzle",
+            "sub_path": "filament/My Generic PVA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.5 nozzle",
+            "sub_path": "filament/My Generic PVA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.4 nozzle",
+            "sub_path": "filament/My Generic PVA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PVA @0.2 nozzle",
+            "sub_path": "filament/My Generic PVA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @base",
+            "sub_path": "filament/My Generic PLA-CF @base.json"
+        },
+        {
+            "name": "My Generic PLA-CF @1.0 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.8 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.6 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.5 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.4 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA-CF @0.2 nozzle",
+            "sub_path": "filament/My Generic PLA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @base",
+            "sub_path": "filament/My Generic PLA @base.json"
+        },
+        {
+            "name": "My Generic PLA @1.0 nozzle",
+            "sub_path": "filament/My Generic PLA @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @0.8 nozzle",
+            "sub_path": "filament/My Generic PLA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @0.6 nozzle",
+            "sub_path": "filament/My Generic PLA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @0.5 nozzle",
+            "sub_path": "filament/My Generic PLA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @0.4 nozzle",
+            "sub_path": "filament/My Generic PLA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PLA @0.2 nozzle",
+            "sub_path": "filament/My Generic PLA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @base",
+            "sub_path": "filament/My Generic PETG @base.json"
+        },
+        {
+            "name": "My Generic PETG @1.0 nozzle",
+            "sub_path": "filament/My Generic PETG @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.8 nozzle",
+            "sub_path": "filament/My Generic PETG @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.6 nozzle",
+            "sub_path": "filament/My Generic PETG @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.5 nozzle",
+            "sub_path": "filament/My Generic PETG @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.4 nozzle",
+            "sub_path": "filament/My Generic PETG @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PETG @0.2 nozzle",
+            "sub_path": "filament/My Generic PETG @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @base",
+            "sub_path": "filament/My Generic PC @base.json"
+        },
+        {
+            "name": "My Generic PC @1.0 nozzle",
+            "sub_path": "filament/My Generic PC @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.8 nozzle",
+            "sub_path": "filament/My Generic PC @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.6 nozzle",
+            "sub_path": "filament/My Generic PC @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.5 nozzle",
+            "sub_path": "filament/My Generic PC @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.4 nozzle",
+            "sub_path": "filament/My Generic PC @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PC @0.2 nozzle",
+            "sub_path": "filament/My Generic PC @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @base",
+            "sub_path": "filament/My Generic PA-CF @base.json"
+        },
+        {
+            "name": "My Generic PA-CF @1.0 nozzle",
+            "sub_path": "filament/My Generic PA-CF @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.8 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.6 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.5 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.4 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PA-CF @0.2 nozzle",
+            "sub_path": "filament/My Generic PA-CF @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @base",
+            "sub_path": "filament/My Generic PA @base.json"
+        },
+        {
+            "name": "My Generic PA @1.0 nozzle",
+            "sub_path": "filament/My Generic PA @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.8 nozzle",
+            "sub_path": "filament/My Generic PA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.6 nozzle",
+            "sub_path": "filament/My Generic PA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.5 nozzle",
+            "sub_path": "filament/My Generic PA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.4 nozzle",
+            "sub_path": "filament/My Generic PA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic PA @0.2 nozzle",
+            "sub_path": "filament/My Generic PA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @base",
+            "sub_path": "filament/My Generic ASA @base.json"
+        },
+        {
+            "name": "My Generic ASA @1.0 nozzle",
+            "sub_path": "filament/My Generic ASA @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.8 nozzle",
+            "sub_path": "filament/My Generic ASA @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.6 nozzle",
+            "sub_path": "filament/My Generic ASA @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.5 nozzle",
+            "sub_path": "filament/My Generic ASA @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.4 nozzle",
+            "sub_path": "filament/My Generic ASA @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic ASA @0.2 nozzle",
+            "sub_path": "filament/My Generic ASA @0.2 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @base",
+            "sub_path": "filament/My Generic ABS @base.json"
+        },
+        {
+            "name": "My Generic ABS @1.0 nozzle",
+            "sub_path": "filament/My Generic ABS @1.0 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.8 nozzle",
+            "sub_path": "filament/My Generic ABS @0.8 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.6 nozzle",
+            "sub_path": "filament/My Generic ABS @0.6 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.5 nozzle",
+            "sub_path": "filament/My Generic ABS @0.5 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.4 nozzle",
+            "sub_path": "filament/My Generic ABS @0.4 nozzle.json"
+        },
+        {
+            "name": "My Generic ABS @0.2 nozzle",
+            "sub_path": "filament/My Generic ABS @0.2 nozzle.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "machine/fdm_machine_common.json"
+        },
+        {
+            "name": "fdm_marlin2_common",
+            "sub_path": "machine/fdm_marlin2_common.json"
+        },
+        {
+            "name": "fdm_klipper_common",
+            "sub_path": "machine/fdm_klipper_common.json"
+        },
+        {
+            "name": "fdm_reprap_common",
+            "sub_path": "machine/fdm_reprap_common.json"
+        },
+        {
+            "name": "Generic Klipper Printer (0.2 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (0.2 nozzle).json"
+        },
+        {
+            "name": "Generic Klipper Printer (0.4 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (0.4 nozzle).json"
+        },
+        {
+            "name": "Generic Klipper Printer (0.5 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (0.5 nozzle).json"
+        },
+        {
+            "name": "Generic Klipper Printer (0.6 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (0.6 nozzle).json"
+        },
+        {
+            "name": "Generic Klipper Printer (0.8 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (0.8 nozzle).json"
+        },
+        {
+            "name": "Generic Klipper Printer (1.0 nozzle)",
+            "sub_path": "machine/Generic Klipper Printer (1.0 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (0.2 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (0.2 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (0.4 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (0.4 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (0.5 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (0.5 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (0.6 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (0.6 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (0.8 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (0.8 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin Printer (1.0 nozzle)",
+            "sub_path": "machine/Generic Marlin Printer (1.0 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (0.2 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (0.2 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (0.4 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (0.4 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (0.5 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (0.5 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (0.6 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (0.6 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (0.8 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (0.8 nozzle).json"
+        },
+        {
+            "name": "Generic Marlin 2 Printer (1.0 nozzle)",
+            "sub_path": "machine/Generic Marlin 2 Printer (1.0 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (0.2 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (0.2 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (0.4 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (0.4 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (0.5 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (0.5 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (0.6 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (0.6 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (0.8 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (0.8 nozzle).json"
+        },
+        {
+            "name": "Generic RepRap Printer (1.0 nozzle)",
+            "sub_path": "machine/Generic RepRap Printer (1.0 nozzle).json"
+        }
+    ]
 }
-

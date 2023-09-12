@@ -6,23 +6,11 @@
     "from": "system",
     "instantiation": "false",
     "inherits": "fdm_filament_pet",
-    "reduce_fan_stop_start_freq": [
-        "1"
-    ],
-    "slow_down_for_layer_cooling": [
-        "1"
-    ],
     "fan_cooling_layer_time": [
         "10"
     ],
-    "overhang_fan_speed": [
-        "100"
-    ],
     "overhang_fan_threshold": [
         "25%"
-    ],
-    "fan_max_speed": [
-        "100"
     ],
     "fan_min_speed": [
         "40"
@@ -39,13 +27,13 @@
     "filament_max_volumetric_speed": [
         "11"
     ],
-	"filament_z_hop": [
+    "filament_z_hop": [
         "0"
     ],
-	"enable_pressure_advance": [
+    "enable_pressure_advance": [
         "1"
     ],
-	"pressure_advance": [
+    "pressure_advance": [
         "0.045"
     ],
     "nozzle_temperature_initial_layer": [

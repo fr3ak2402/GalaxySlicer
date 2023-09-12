@@ -6,20 +6,14 @@
     "from": "system",
     "instantiation": "true",
     "inherits": "Sovol Generic ASA @base",
-    "filament_flow_ratio": [
-        "0.93"
-    ],
-    "filament_max_volumetric_speed": [
-        "12"
-    ],
-	"compatible_printers": [
-		"Sovol SV01 Pro (0.4 nozzle)",
-		"Sovol SV02 (0.4 nozzle) (Dual)",
-		"Sovol SV02 (0.4 nozzle) (Mixer)",
-		"Sovol SV05 (0.4 nozzle)",
-		"Sovol SV06 (0.4 nozzle)",
-		"Sovol SV06 Plus (0.4 nozzle)",
-		"Sovol SV07 (0.4 nozzle)",
-		"Sovol SV07 Plus (0.4 nozzle)"
-	]
+    "compatible_printers": [
+        "Sovol SV01 Pro (0.4 nozzle)",
+        "Sovol SV02 (0.4 nozzle) (Dual)",
+        "Sovol SV02 (0.4 nozzle) (Mixer)",
+        "Sovol SV05 (0.4 nozzle)",
+        "Sovol SV06 (0.4 nozzle)",
+        "Sovol SV06 Plus (0.4 nozzle)",
+        "Sovol SV07 (0.4 nozzle)",
+        "Sovol SV07 Plus (0.4 nozzle)"
+    ]
 }

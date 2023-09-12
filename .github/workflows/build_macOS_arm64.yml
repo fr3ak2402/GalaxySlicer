@@ -38,11 +38,11 @@ jobs:
       - name: Download and extract GalaxySlicer deps
         working-directory: ${{ github.workspace }}
         run: |
-          curl -LJO https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/August_23/GalaxySlicer_dep_Mac_arm64_07-08-23.tar.gz
-          tar -zxf GalaxySlicer_dep_Mac_arm64_07-08-23.tar.gz -C ${{ github.workspace }}/deps/build_arm64
+          curl -LJO https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/September_23/GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz
+          tar -zxf GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz -C ${{ github.workspace }}/deps/build_arm64
           chown -R $(id -u):$(id -g) ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
           ls -l ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-          rm GalaxySlicer_dep_Mac_arm64_07-08-23.tar.gz
+          rm GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz
           
       - name: Build GalaxySlicer
         working-directory: ${{ github.workspace }}

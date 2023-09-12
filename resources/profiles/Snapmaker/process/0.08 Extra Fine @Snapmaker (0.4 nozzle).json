@@ -5,13 +5,12 @@
     "compatible_printers": [
         "Snapmaker A250 (0.4 nozzle)",
         "Snapmaker A350 (0.4 nozzle)",
-		"Snapmaker Artisan (0.4 nozzle)"
+        "Snapmaker Artisan (0.4 nozzle)"
     ],
     "type": "process",
     "from": "system",
     "setting_id": "0.08_extra_fine_snapmaker_(0.4_nozzle)",
     "bottom_shell_layers": "7",
-    "bridge_flow": "1",
     "elefant_foot_compensation": "0.15",
     "ironing_flow": "8%",
     "layer_height": "0.08",
@@ -27,10 +26,8 @@
     "overhang_1_4_speed": "55",
     "overhang_2_4_speed": "30",
     "overhang_3_4_speed": "10",
-    "overhang_4_4_speed": "10",
     "sparse_infill_speed": "90",
     "top_surface_speed": "70",
-    "ironing_speed": "30",
     "small_perimeter_speed": "35",
     "support_interface_speed": "50",
     "support_speed": "100",
