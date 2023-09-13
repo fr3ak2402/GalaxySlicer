@@ -8,6 +8,7 @@
     "inherits": "Raise3D Generic ASA @base",
     "compatible_printers": [
         "Raise3D E2 (0.6 nozzle) (IDEX)",
+		"Raise3D E2CF (0.6 nozzle) (IDEX)",
         "Raise3D Pro2 (0.6 nozzle) (Dual)",
         "Raise3D Pro2 (0.6 nozzle) (Left)",
         "Raise3D Pro2 (0.6 nozzle) (Right)",
