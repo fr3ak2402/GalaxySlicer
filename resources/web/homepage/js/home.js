@@ -12,6 +12,9 @@ function OnInit()
 
 	SendMsg_GetLoginInfo();
 	SendMsg_GetRecentFile();
+	SendMsg_GetStaffPick();
+	
+	//InitStaffPick();
 }
 
 //------最佳打开文件的右键菜单功能----------
@@ -19,7 +22,7 @@ var RightBtnFilePath='';
 
 var MousePosX=0;
 var MousePosY=0;
-
+var sImages = {};
 function Set_RecentFile_MouseRightBtn_Event()
 {
 	$("#FileList .FileItem").mousedown(
@@ -118,6 +121,11 @@ function HandleStudio( pVal )
 			$("#NoPluginTip").hide();
 		}
 	}
+	else if( strCmd=="modelmall_model_advise_get")
+	{
+		//alert('hot');
+		ShowStaffPick( pVal['hits'] );
+	}
 }
 
 function GotoMenu( strMenu )
@@ -177,10 +185,11 @@ function ShowRecentFileList( pList )
 	{
 		let OneFile=pList[n];
 		
-		let sImg=OneFile["image"];
 		let sPath=OneFile['path'];
+		let sImg=OneFile["image"] || sImages[sPath];
 		let sTime=OneFile['time'];
 		let sName=OneFile['project_name'];
+		sImages[sPath] = sImg;
 		
 		//let index=sPath.lastIndexOf('\\')>0?sPath.lastIndexOf('\\'):sPath.lastIndexOf('\/');
 		//let sShortName=sPath.substring(index+1,sPath.length);
