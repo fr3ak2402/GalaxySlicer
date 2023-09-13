@@ -1,0 +1,131 @@
+{
+    "type": "machine",
+    "setting_id": "GM001",
+    "name": "Flashforge Creator 3 Pro (0.4 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_machine_common",
+    "printer_model": "Flashforge Creator 3 Pro",
+    "default_print_profile": "0.20mm Standard @Flashforge Creator3Pro (0.4 nozzle)",
+    "extruder_colour": [
+        "#FCE94F",
+        "#FCE94F"
+    ],
+    "extruder_offset": [
+        "0x0",
+        "0x0"
+    ],
+    "nozzle_diameter": [
+        "0.4",
+		"0.4"
+    ],
+    "printer_variant": "0.4",
+    "printable_area": [
+        "0x0",
+        "300x0",
+        "300x250",
+        "0x250"
+    ],
+    "printable_height": "200",
+    "nozzle_type": "undefine",
+    "auxiliary_fan": "0",
+    "machine_max_acceleration_extruding": [
+        "1500",
+        "1500"
+    ],
+    "machine_max_acceleration_retracting": [
+        "1500",
+        "1500"
+    ],
+    "machine_max_acceleration_travel": [
+        "1500",
+        "1500"
+    ],
+    "machine_max_acceleration_x": [
+        "9000",
+        "9000"
+    ],
+    "machine_max_acceleration_y": [
+        "9000",
+        "9000"
+    ],
+    "machine_max_acceleration_z": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_e": [
+        "120",
+        "120"
+    ],
+    "machine_max_speed_x": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "7",
+        "7"
+    ],
+    "machine_max_jerk_e": [
+        "5",
+        "5"
+    ],
+    "machine_max_jerk_x": [
+        "8",
+        "8"
+    ],
+    "machine_max_jerk_y": [
+        "8",
+        "8"
+    ],
+    "machine_max_jerk_z": [
+        "0.4",
+        "0.4"
+    ],
+    "max_layer_height": [
+        "0.28"
+    ],
+    "min_layer_height": [
+        "0.08"
+    ],
+    "printer_settings_id": "Flashforge",
+    "retraction_minimum_travel": [
+        "2",
+		"2"
+    ],
+    "retract_before_wipe": [
+        "0%",
+		"0%"
+    ],
+    "retraction_length": [
+        "2",
+		"2"
+    ],
+    "retract_length_toolchange": [
+        "10",
+		"10"
+    ],
+    "retraction_speed": [
+        "30",
+        "30"
+    ],
+    "deretraction_speed": [
+        "40",
+		"40"
+    ],
+    "single_extruder_multi_material": "0",
+    "change_filament_gcode": "M600",
+    "machine_pause_gcode": "M0",
+    "default_filament_profile": [
+        "Flashforge Generic PLA @0.4 nozzle"
+    ],
+    "machine_start_gcode": "; **** Start of Start GCode: FlashForge Creator 3 ****\nM118 X150.00 Y125.00 Z200.00 T0 T1\n; todo: need to post process Active extruders in m118\n\nG90 ; absolute positioning\nM108 T{initial_extruder} ; tool change\nG1 X{(initial_extruder == 0 ? 187.0 : -187.0)} Y0.000 F{travel_speed * 60} ; Move initial extruder over anti-ooze plate (9-point Bed Levelling sometimes leaves it off plate)\n\n; Set Filament Z-Offset\nG1 Z0.000 F{travel_speed_z * 60} ;\n;FFPP-UNCOMMENT; G92 Z-<FFPP-filament_extra_z_offset> ; Value substituted by FFPP script (FFPP-filament_extra_z_offset)(negative is printing higher in air)\n\nM140 S{first_layer_bed_temperature[initial_extruder]} T0 ; set bed temperature\nM104 S{first_layer_temperature[0]} T0 ; set right extruder temp\nM104 S{first_layer_temperature[1]} T1 ; set left extruder temp\n\nM7 T0 ; wait for platform\nM6 T0 ; wait for temp\nM6 T1 ; wait for temp\n\nM106 ; Extruder/Heat Break fan on\nM651 S255 ; chassis fan on (after heating reached to speed up heating)\n\n; Purge Filament (gets rid of any curling filament too)\nG1 X{(initial_extruder == 0 ? 172.0 : -172.0)} F{travel_speed * 60} ; Move initial extruder off anti-ooze plate\nG92 E0 ; reset extrusion distance \nG1 F150 E20 ; feed 20mm of feed stock \nG92 E0 ; reset extrusion distance\n\n\n; M652 ; chassis fan off \n; M109 T1/2 only if dupe or mirror\n\n;layer_count: <FFPP-calculated-total_layer_count> ; Value substituted by FFPP script (FFPP-calculated-total_layer_count)\n; **** End of Start GCode: FlashForge Creator 3 ****",
+	"machine_end_gcode": "; **** Start of End GCode: FlashForge Creator 3 ****\nM108 T0 ; tool change\nG92 E0 ; reset extrusion distance\nG1 E-10 F1800 ;\nG92 E0 ; reset extrusion distance \nG1 X187.000 Y0.000 F{travel_speed * 60} ; Move Extruder over anti-ooze plate\n\nM107 ; Extruder/Heat Break fan off\n\n;end gcode\nM104 S0 T1 ; cool down left extruder\nM104 S0 T0 ; cool down right extruder\nM140 S0 T0 ; cool down bed\n\nG162 Z F1800 ; Go to max Z position\n\nM652 ; chassis fan OFF\nG91 ; relative positioning\nM18 ; disable steppers\n; **** End of End GCode: FlashForge Creator 3 ****"",
+	"toolchange_gcode ":"; **** Start of Tool Change GCode: FlashForge Creator 3 ****\nM108 T[next_extruder]\n; **** End of Tool Change GCode: FlashForge Creator 3 ****",
+    "before_layer_change_gcode": "; **** Start of Before Layer Change GCode: FlashForge Creator 3 ****\n; FFPP-layer_z_height: {layer_z} ; Value parsed by FFPP script\n;layer:<FFPP-calculated-next_layer_height> ; Value substituted by FFPP script (FFPP-calculated-next_layer_height)\n; **** End of Before Layer Change GCode: FlashForge Creator 3 ****",
+	"layer_change_gcode": "; **** Start of After Layer Change GCode: FlashForge Creator 3 ****\n; **** End of After Layer Change GCode: FlashForge Creator 3 ****",
+	"scan_first_layer": "0"
+}
