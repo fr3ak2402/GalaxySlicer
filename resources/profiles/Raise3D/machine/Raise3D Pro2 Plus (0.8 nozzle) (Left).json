@@ -22,9 +22,9 @@
     ],
     "printable_area": [
         "0x0",
-        "340x0",
-        "340x300",
-        "0x300"
+        "305x0",
+        "305x305",
+        "0x305"
     ],
     "printable_height": "605",
     "nozzle_type": "hardened_steel",
