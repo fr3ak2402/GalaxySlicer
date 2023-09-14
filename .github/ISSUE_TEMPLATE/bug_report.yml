@@ -84,7 +84,7 @@ body:
     attributes:
       label: Expected results
       description: What should happen after the above steps?
-      validations:
+    validations:
       required: true
   - type: markdown
     id: file_required
