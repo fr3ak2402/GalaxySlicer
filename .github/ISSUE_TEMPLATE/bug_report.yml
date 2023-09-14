@@ -36,7 +36,7 @@ body:
       description: Which OS architecture are you using?
       multiple: false
       options:
-        - x64 (Default)
+        - x64
         - arm64
       validations:
       required: true
