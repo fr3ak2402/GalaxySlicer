@@ -13,7 +13,7 @@ body:
       label: GalaxySlicer Version
       description: Which version of GalaxySlicer are you running? You can see the full version in `Help` -> `About GalaxySlicer`.
       placeholder: e.g. V1.0.0-alpha
-      validations:
+    validations:
       required: true
   - type: dropdown
     id: os_info
