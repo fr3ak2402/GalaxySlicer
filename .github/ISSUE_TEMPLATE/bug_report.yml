@@ -27,7 +27,7 @@ body:
         - macOS 14
         - Windows 10
         - Windows 11
-      validations:
+    validations:
       required: true
   - type: dropdown
     id: os_arch
@@ -38,7 +38,8 @@ body:
       options:
         - x64
         - arm64
-      validations:
+      default: 0
+    validations:
       required: true
   - type: textarea
     id: system_info
@@ -83,7 +84,7 @@ body:
     attributes:
       label: Expected results
       description: What should happen after the above steps?
-    validations:
+      validations:
       required: true
   - type: markdown
     id: file_required
