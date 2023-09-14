@@ -1,4 +1,4 @@
-name: Custom issue template
+name: Custom report
 description: For generic ideas such as enhancement of a feature, some questions, and etc.
 labels: bug
 body:
