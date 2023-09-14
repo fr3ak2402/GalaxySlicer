@@ -1,29 +1,29 @@
 name: Custom issue template
 description: For generic ideas such as enhancement of a feature, some questions, and etc.
 body:
-  - type: input
-    id: version
-    attributes:
-      label: GalaxySlicer Version
-      description: Which version of GalaxySlicer are you running? You can see the full version in `Help` -> `About GalaxySlicer`.
-      placeholder: e.g. V1.0.0-alpha
-    validations:
-      required: true
+- type: input
+  id: version
+  attributes:
+    label: GalaxySlicer Version
+    description: Which version of GalaxySlicer are you running? You can see the full version in `Help` -> `About GalaxySlicer`.
+    placeholder: e.g. V1.0.0-alpha
+  validations:
+    required: true
       
-  - type: dropdown
-    id: os_info
-    attributes:
-      label: OS version
-      description: Which OS version are you using?
-      multiple: false
-      options:
-        - macOS 12
-        - macOS 13
-        - macOS 14
-        - Windows 10
-        - Windows 11
-    validations:
-      required: true
+- type: dropdown
+  id: os_info
+  attributes:
+    label: OS version
+    description: Which OS version are you using?
+    multiple: false
+    options:
+      - macOS 12
+      - macOS 13
+      - macOS 14
+      - Windows 10
+      - Windows 11
+  validations:
+    required: true
       
   - type: dropdown
     id: os_arch
