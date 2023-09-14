@@ -9,31 +9,3 @@ body:
     placeholder: e.g. V1.0.0-alpha
   validations:
     required: true
-      
-- type: dropdown
-  id: os_info
-  attributes:
-    label: OS version
-    description: Which OS version are you using?
-    multiple: false
-    options:
-      - macOS 12
-      - macOS 13
-      - macOS 14
-      - Windows 10
-      - Windows 11
-  validations:
-    required: true
-      
-  - type: dropdown
-    id: os_arch
-    attributes:
-      label: OS architecture
-      description: Which OS architecture are you using?
-      multiple: false
-      options:
-        - x64
-        - arm64
-      default: 0
-    validations:
-      required: true
