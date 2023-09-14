@@ -37,3 +37,24 @@ body:
       default: 0
     validations:
       required: true
+      
+  - type: textarea
+    id: feature_solution
+    attributes:
+      label: Describe your request
+      description: Please describe.
+      placeholder: |
+        A clear and concise description of what you want to happen.
+        Ex. enhancement of a feature, some questions, [...]
+    validations:
+      required: true
+      
+  - type: textarea
+    id: feature_context
+    attributes:
+      label: Additional context
+      description: Please describe.
+      placeholder: |
+        Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
