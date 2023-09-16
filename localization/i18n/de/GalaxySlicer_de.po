@@ -674,7 +674,7 @@ msgid "Choose one file (3mf):"
 msgstr "Wählen sie eine Datei (3mf):"
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
-msgstr ""
+msgstr "Wählen sie eine oder mehrere Dateien (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf):"
 msgstr "Wählen sie eine oder mehrere Dateien (3mf/step/stl/svg/obj/amf):"
@@ -5831,7 +5831,7 @@ msgid "Support filament"
 msgstr "Supportfilament"
 
 msgid "Tree supports"
-msgstr ""
+msgstr "Baumstützen"
 
 msgid "Prime tower"
 msgstr "Reinigungsturm"
@@ -7651,12 +7651,14 @@ msgstr ""
 "verlangsamen"
 
 msgid "Slow down for curled perimeters"
-msgstr ""
+msgstr "Langsamer Druck für gekrümmte Umfänge"
 
 msgid ""
 "Enable this option to slow printing down in areas where potential curled "
 "perimeters may exist"
 msgstr ""
+"Aktivieren Sie diese Option, um den Druck in Bereichen zu verlangsamen, in "
+"denen potenziell gekrümmte Umfänge vorhanden sein können"
 
 msgid "mm/s or %"
 msgstr "mm/s o. %"
