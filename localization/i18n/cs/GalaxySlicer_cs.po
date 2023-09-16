@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-15 17:58+0200\n"
+"POT-Creation-Date: 2023-09-16 19:21+0200\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -7429,6 +7429,14 @@ msgstr "Zpomalení u převisů"
 
 msgid "Enable this option to slow printing down for different overhang degree"
 msgstr "Povolte tuto volbu pro zpomalení tisku pro různé stupně převisů"
+
+msgid "Slow down for curled perimeters"
+msgstr ""
+
+msgid ""
+"Enable this option to slow printing down in areas where potential curled "
+"perimeters may exist"
+msgstr ""
 
 msgid "mm/s or %"
 msgstr "mm/s or %"

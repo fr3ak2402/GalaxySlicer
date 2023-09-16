@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-15 17:58+0200\n"
+"POT-Creation-Date: 2023-09-16 19:21+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -7588,6 +7588,14 @@ msgstr "Ralentir lors des surplombs"
 
 msgid "Enable this option to slow printing down for different overhang degree"
 msgstr "Permet de ralentir l'impression pour différents degrés de surplomb"
+
+msgid "Slow down for curled perimeters"
+msgstr ""
+
+msgid ""
+"Enable this option to slow printing down in areas where potential curled "
+"perimeters may exist"
+msgstr ""
 
 msgid "mm/s or %"
 msgstr "mm/s ou %"

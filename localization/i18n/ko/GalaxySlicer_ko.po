@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-15 17:58+0200\n"
+"POT-Creation-Date: 2023-09-16 19:21+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -7290,6 +7290,14 @@ msgstr "돌출부에서 감속"
 
 msgid "Enable this option to slow printing down for different overhang degree"
 msgstr "돌출부 정도에 따라 출력 속도를 낮추려면 이 옵션을 활성화합니다"
+
+msgid "Slow down for curled perimeters"
+msgstr ""
+
+msgid ""
+"Enable this option to slow printing down in areas where potential curled "
+"perimeters may exist"
+msgstr ""
 
 msgid "mm/s or %"
 msgstr "mm/s or %"
