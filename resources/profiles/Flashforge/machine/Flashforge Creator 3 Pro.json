@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Flashforge Creator 3 Pro",
+    "model_id": "Flashforge-Creator3-Pro",
+    "nozzle_diameter": "0.2;0.4;0.6;0.8",
+    "machine_tech": "FFF",
+    "family": "Flashforge",
+    "bed_model": "flashforge_creator3pro_buildplate_model.stl",
+    "bed_texture": "flashforge_creator3pro_buildplate_texture.png",
+    "hotend_model": "",
+    "default_materials": "Flashforge Generic PLA @0.2 nozzle;Flashforge Generic PETG @0.2 nozzle;Flashforge Generic ABS @0.2 nozzle;Flashforge Generic PLA @0.4 nozzle;Flashforge Generic PETG @0.4 nozzle;Flashforge Generic ABS @0.4 nozzle;Flashforge Generic PLA @0.6 nozzle;Flashforge Generic PETG @0.6 nozzle;Flashforge Generic ABS @0.6 nozzle;Flashforge Generic PLA @0.8 nozzle;Flashforge Generic PETG @0.8 nozzle;Flashforge Generic ABS @0.8 nozzle"
+}

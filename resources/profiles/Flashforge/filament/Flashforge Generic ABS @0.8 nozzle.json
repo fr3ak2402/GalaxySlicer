@@ -13,6 +13,7 @@
         "12"
     ],
     "compatible_printers": [
+		"Flashforge Creator 3 Pro (0.8 nozzle)",
         "Flashforge Creator 3 V2 (0.8 nozzle)"
     ]
 }

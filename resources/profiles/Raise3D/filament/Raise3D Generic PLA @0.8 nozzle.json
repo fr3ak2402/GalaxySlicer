@@ -8,6 +8,7 @@
     "inherits": "Raise3D Generic PLA @base",
     "compatible_printers": [
         "Raise3D E2 (0.8 nozzle) (IDEX)",
+		"Raise3D E2CF (0.8 nozzle) (IDEX)",
         "Raise3D Pro2 (0.8 nozzle) (Dual)",
         "Raise3D Pro2 (0.8 nozzle) (Left)",
         "Raise3D Pro2 (0.8 nozzle) (Right)",

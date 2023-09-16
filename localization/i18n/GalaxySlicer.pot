@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 16:53+0200\n"
+"POT-Creation-Date: 2023-09-16 19:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -645,6 +645,9 @@ msgid "Loading a mode view"
 msgstr ""
 
 msgid "Choose one file (3mf):"
+msgstr ""
+
+msgid "Choose one or more files (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
 msgstr ""
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf):"
@@ -5304,6 +5307,9 @@ msgstr ""
 msgid "Support filament"
 msgstr ""
 
+msgid "Tree supports"
+msgstr ""
+
 msgid "Prime tower"
 msgstr ""
 
@@ -6865,6 +6871,14 @@ msgid "Slow down for overhang"
 msgstr ""
 
 msgid "Enable this option to slow printing down for different overhang degree"
+msgstr ""
+
+msgid "Slow down for curled perimeters"
+msgstr ""
+
+msgid ""
+"Enable this option to slow printing down in areas where potential curled "
+"perimeters may exist"
 msgstr ""
 
 msgid "mm/s or %"
@@ -8756,9 +8770,10 @@ msgid ""
 "Style and shape of the support. For normal support, projecting the supports "
 "into a regular grid will create more stable supports (default), while snug "
 "support towers will save material and reduce object scarring.\n"
-"For tree support, slim style will merge branches more aggressively and save "
-"a lot of material (default), while hybrid style will create similar "
-"structure to normal support under large flat overhangs."
+"For tree support, slim and organic style will merge branches more "
+"aggressively and save a lot of material (default organic), while hybrid "
+"style will create similar structure to normal support under large flat "
+"overhangs."
 msgstr ""
 
 msgid "Snug"

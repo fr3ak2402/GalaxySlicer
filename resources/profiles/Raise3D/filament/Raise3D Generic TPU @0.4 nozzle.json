@@ -8,6 +8,7 @@
     "inherits": "Raise3D Generic TPU @base",
     "compatible_printers": [
         "Raise3D E2 (0.4 nozzle) (IDEX)",
+		"Raise3D E2CF (0.4 nozzle) (IDEX)",
         "Raise3D Pro2 (0.4 nozzle) (Dual)",
         "Raise3D Pro2 (0.4 nozzle) (Left)",
         "Raise3D Pro2 (0.4 nozzle) (Right)",
