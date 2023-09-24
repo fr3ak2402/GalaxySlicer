@@ -493,7 +493,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
             {
                 std::vector<boost::filesystem::path> input_files;
                 std::string file_name = item;
-                
+
                 if (file_name == L("Galaxy Cube")) {
                     file_name = "GalaxyCube.step";
                 }
@@ -520,8 +520,11 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
             },
             "", menu);
     }
+
     sub_menu->AppendSeparator();
-    for (auto &item : {L("Cube"), L("Cylinder"), L("Sphere"), L("Cone")}) {
+    
+    for (auto &item : {L("Cube"), L("Cylinder"), L("Sphere"), L("Cone")}) 
+    {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
             [type, item](wxCommandEvent &) {
