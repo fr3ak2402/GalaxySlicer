@@ -485,27 +485,38 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
         sub_menu->AppendSeparator();
     }
 
-    for (auto &item : {L("Orca Cube"), L("3DBenchy"), L("Autodesk FDM Test"),
-                       L("Voron Cube")}) {
+    for (auto &item : {L("Galaxy Cube"), L("Orca Cube"), L("Voron Cube"), L("3DBenchy"), L("Autodesk FDM Test")}) 
+    {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
-            [type, item](wxCommandEvent &) {
-              std::vector<boost::filesystem::path> input_files;
-              std::string file_name = item;
-              if (file_name == L("Orca Cube"))
-                file_name = "OrcaCube_v2.3mf";
-              else if (file_name == L("3DBenchy"))
-                file_name = "3DBenchy.stl";
-              else if (file_name == L("Autodesk FDM Test"))
-                file_name = "ksr_fdmtest_v4.stl";
-              else if (file_name == L("Voron Cube"))
-                file_name = "Voron_Design_Cube_v7.stl";
-              else
-                return;
-              input_files.push_back(
-                  (boost::filesystem::path(Slic3r::resources_dir()) /
-                   "handy_models" / file_name));
-              plater()->load_files(input_files, LoadStrategy::LoadModel);
+            [type, item](wxCommandEvent &) 
+            {
+                std::vector<boost::filesystem::path> input_files;
+                std::string file_name = item;
+                
+                if (file_name == L("Galaxy Cube")) {
+                    file_name = "GalaxyCube.step";
+                }
+                else if (file_name == L("Orca Cube")) {
+                    file_name = "OrcaCube_v2.3mf";
+                }
+                else if (file_name == L("Voron Cube")) {
+                    file_name = "Voron_Design_Cube_v7.stl";
+                }
+                else if (file_name == L("3DBenchy")) {
+                    file_name = "3DBenchy.stl";
+                }
+                else if (file_name == L("Autodesk FDM Test")) {
+                    file_name = "ksr_fdmtest_v4.stl";
+                }
+                else {
+                    return;
+                }
+                
+                input_files.push_back(
+                    (boost::filesystem::path(Slic3r::resources_dir()) /
+                    "handy_models" / file_name));
+                plater()->load_files(input_files, LoadStrategy::LoadModel);
             },
             "", menu);
     }
