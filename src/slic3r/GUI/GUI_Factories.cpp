@@ -497,7 +497,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
                 if (file_name == L("Galaxy Cube")) {
                     file_name = "GalaxyCube.step";
                 }
-                else if (file_name == L("Orca Flower")) {
+                else if (file_name == L("Galaxy Flower")) {
                     file_name = "GalaxyFlower.step";
                 }
                 else if (file_name == L("Orca Cube")) {
