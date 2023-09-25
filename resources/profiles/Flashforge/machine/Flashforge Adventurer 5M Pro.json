@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Flashforge Adventurer 5M Pro",
+    "model_id": "Flashforge-Adventurer5M-Pro",
+    "nozzle_diameter": "0.4;0.6",
+    "machine_tech": "FFF",
+    "family": "Flashforge",
+    "bed_model": "",
+    "bed_texture": "",
+    "hotend_model": "flashforge_adventurer5m_series_hotend.stl",
+    "default_materials": ""
+}
