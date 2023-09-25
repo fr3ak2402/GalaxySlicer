@@ -1,0 +1,15 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.16mm Optimal @Elegoo Neptune4Plus (0.4 nozzle)",
+    "from": "system",
+    "inherits": "fdm_process_elegoo_common",
+    "instantiation": "true",
+    "layer_height": "0.16",
+    "bottom_shell_layers": "4",
+    "support_top_z_distance": "0.16",
+    "top_shell_layers": "5",
+    "compatible_printers": [
+        "Elegoo Neptune 4 Plus (0.4 nozzle)"
+    ]
+}

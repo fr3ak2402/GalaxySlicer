@@ -1,0 +1,20 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.20mm Standard @Elegoo Neptune4Max (0.2 nozzle)",
+    "from": "system",
+    "inherits": "fdm_process_elegoo_common",
+    "instantiation": "true",
+    "layer_height": "0.2",
+    "bottom_shell_layers": "4",
+    "outer_wall_line_width": "0.2",
+    "line_width": "0.2",
+    "initial_layer_line_width": "0.22",
+    "sparse_infill_line_width": "0.25",
+    "inner_wall_line_width": "0.25",
+    "internal_solid_infill_line_width": "0.25",
+    "top_shell_layers": "5",
+    "compatible_printers": [
+        "Elegoo Neptune 4 Max (0.2 nozzle)"
+    ]
+}
