@@ -1,2 +1,9 @@
+**Type of PR Content**
+
+- [ ] New Feature
+- [ ] Enhancement
+- [ ] Bug fix
+- [ ] New Profile
+
 **Describe the PR**
-A clear and concise description of what the bug is.
+
