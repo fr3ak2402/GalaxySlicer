@@ -2075,7 +2075,7 @@ def = this->add("filament_loading_speed", coFloats);
     //GalaxySlicer: Chamber fan
     def = this->add("chamber_fan", coBool);
     def->label = L("Chamber cooling fan");
-    def->tooltip = L("Enable this option if machine has chamber cooling fan");
+    def->tooltip = L("Enable this option if machine has chamber cooling fan. (For BBL printer it overwrites the Chamber fan values)");
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionBool(false));
 
