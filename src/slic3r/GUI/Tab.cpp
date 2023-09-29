@@ -2825,6 +2825,10 @@ void TabFilament::build()
         optgroup = page->new_optgroup(L("Auxiliary part cooling fan"), L"param_cooling_fan");
         optgroup->append_single_option_line("additional_cooling_fan_speed");
 
+        //GalaxySlicer: Chamber fan
+        optgroup = page->new_optgroup(L("Chamber cooling fan"), L"param_cooling_fan");
+        optgroup->append_single_option_line("additional_chamber_fan_speed");
+
         //BBS
         add_filament_overrides_page();
         const int gcode_field_height = 15; // 150
@@ -2977,6 +2981,11 @@ void TabFilament::toggle_options()
       toggle_option(
           "additional_cooling_fan_speed",
           m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("auxiliary_fan")->value);
+
+      //GalaxySlicer: Chamber fan
+      toggle_option(
+          "additional_chamber_fan_speed",
+          m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("chamber_fan")->value);
     }
     if (m_active_page->title() == L("Filament"))
     {
@@ -3144,6 +3153,9 @@ void TabPrinter::build_fff()
         optgroup->append_single_option_line("nozzle_type");
         optgroup->append_single_option_line("nozzle_hrc");
         optgroup->append_single_option_line("auxiliary_fan");
+
+        //GalaxySlicer: Chamber fan
+        optgroup->append_single_option_line("chamber_fan");
 
     const int gcode_field_height = 15; // 150
     const int notes_field_height = 25; // 250

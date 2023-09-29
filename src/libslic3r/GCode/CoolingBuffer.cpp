@@ -39,6 +39,10 @@ void CoolingBuffer::reset(const Vec3d &position)
     m_current_pos[4] = float(m_config.travel_speed.value);
     m_fan_speed = -1;
     m_additional_fan_speed = -1;
+
+    //GalaxySlicer
+    m_additional_chamber_fan_speed = -1;
+
     m_current_fan_speed = -1;
 }
 
@@ -738,6 +742,10 @@ std::string CoolingBuffer::apply_layer_cooldown(
         //BBS
         int additional_fan_speed_new = EXTRUDER_CONFIG(additional_cooling_fan_speed);
         int close_fan_the_first_x_layers = EXTRUDER_CONFIG(close_fan_the_first_x_layers);
+
+        //GalaxySlicer: additional chamber fan speed
+         int additional_chamber_fan_speed_new = EXTRUDER_CONFIG(additional_chamber_fan_speed);
+
         // Is the fan speed ramp enabled?
         int full_fan_speed_layer = EXTRUDER_CONFIG(full_fan_speed_layer);
         supp_interface_fan_speed = EXTRUDER_CONFIG(support_material_interface_fan_speed);
@@ -780,6 +788,10 @@ std::string CoolingBuffer::apply_layer_cooldown(
             overhang_fan_speed   = 0;
             fan_speed_new      = 0;
             additional_fan_speed_new = 0;
+
+            //GalaxySlicer: additional chamber fan speed
+            additional_chamber_fan_speed_new = 0;
+
             supp_interface_fan_control= false;
             supp_interface_fan_speed   = 0;
         }
@@ -794,6 +806,13 @@ std::string CoolingBuffer::apply_layer_cooldown(
             m_additional_fan_speed = additional_fan_speed_new;
             if (immediately_apply && m_config.auxiliary_fan.value)
                 new_gcode += GCodeWriter::set_additional_fan(m_additional_fan_speed);
+        }
+
+        //GalaxySlicer: additional chamber fan speed
+        if (additional_chamber_fan_speed_new != m_additional_chamber_fan_speed) {
+            m_additional_chamber_fan_speed = additional_chamber_fan_speed_new;
+            if (immediately_apply && m_config.chamber_fan.value)
+                new_gcode += GCodeWriter::set_additional_chamber_fan(m_additional_chamber_fan_speed);
         }
     };
 
@@ -848,6 +867,10 @@ std::string CoolingBuffer::apply_layer_cooldown(
             }
             if (m_additional_fan_speed != -1 && m_config.auxiliary_fan.value)
                 new_gcode += GCodeWriter::set_additional_fan(m_additional_fan_speed);
+
+            //GalaxySlicer
+            if (m_additional_chamber_fan_speed != -1 && m_config.chamber_fan.value)
+                new_gcode += GCodeWriter::set_additional_chamber_fan(m_additional_chamber_fan_speed);
         }
         else if (line->type & CoolingLine::TYPE_EXTRUDE_END) {
             // Just remove this comment.

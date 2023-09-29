@@ -182,6 +182,8 @@ bool Print::invalidate_state_by_config_options(const ConfigOptionResolver & /* n
         "nozzle_hrc",
         "required_nozzle_HRC",
         "upward_compatible_machine",
+        //GalaxySlicer
+        "additional_chamber_fan_speed",
         // SoftFever
         "seam_gap",
         "role_based_wipe_speed",

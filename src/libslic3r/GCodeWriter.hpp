@@ -90,6 +90,8 @@ public:
     std::string set_fan(unsigned int speed) const;
     //BBS: set additional fan speed for BBS machine only
     static std::string set_additional_fan(unsigned int speed);
+    //GalaxySlicer: set addditional chamber fan speed for BBS machine only
+    static std::string set_additional_chamber_fan(unsigned int speed);
     //BBS
     void set_object_start_str(std::string start_string) { m_gcode_label_objects_start = start_string; }
     bool is_object_start_str_empty() { return m_gcode_label_objects_start.empty(); }

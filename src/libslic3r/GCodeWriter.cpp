@@ -784,6 +784,22 @@ std::string GCodeWriter::set_additional_fan(unsigned int speed)
     return gcode.str();
 }
 
+//GalaxySlicer: set additional chamber fan speed for BBS machine only
+std::string GCodeWriter::set_additional_chamber_fan(unsigned int speed)
+{
+    std::ostringstream gcode;
+
+    gcode << "M106 " << "P3 " << "S" << (int)(255.0 * speed / 100.0);
+    if (GCodeWriter::full_gcode_comment) {
+        if (speed == 0)
+            gcode << " ; disable additional chamber fan ";
+        else
+            gcode << " ; enable additional chamber fan ";
+    }
+    gcode << "\n";
+    return gcode.str();
+}
+
 void GCodeWriter::add_object_start_labels(std::string& gcode)
 {
     if (!m_gcode_label_objects_start.empty()) {

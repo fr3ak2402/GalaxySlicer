@@ -789,6 +789,8 @@ static std::vector<std::string> s_Preset_filament_options {
     //BBS
     "filament_wipe_distance", "additional_cooling_fan_speed",
     "bed_temperature_difference", "nozzle_temperature_range_low", "nozzle_temperature_range_high",
+    //GalaxySlicer
+    "additional_chamber_fan_speed",
     //SoftFever
     "enable_pressure_advance", "pressure_advance","chamber_temperature", "filament_shrink", "support_material_interface_fan_speed", "filament_notes" /*,"filament_seam_gap"*/,
     "filament_loading_speed", "filament_loading_speed_start", "filament_load_time",
@@ -816,6 +818,8 @@ static std::vector<std::string> s_Preset_printer_options {
     // BBS
     "scan_first_layer", "machine_load_filament_time", "machine_unload_filament_time", "machine_pause_gcode", "template_custom_gcode",
     "nozzle_type", "nozzle_hrc","auxiliary_fan", "nozzle_volume","upward_compatible_machine", "z_hop_types", "retract_lift_enforce",
+    //GalaxySlicer
+    "chamber_fan",
     //SoftFever (OrcaSlicer)
     "host_type", "print_host", "printhost_apikey",
     "print_host_webui",

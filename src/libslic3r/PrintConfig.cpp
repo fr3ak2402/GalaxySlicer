@@ -2072,6 +2072,13 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionBool(false));
 
+    //GalaxySlicer: Chamber fan
+    def = this->add("chamber_fan", coBool);
+    def->label = L("Chamber cooling fan");
+    def->tooltip = L("Enable this option if machine has chamber cooling fan");
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionBool(false));
+
     def = this->add("fan_speedup_time", coFloat);
 	// Label is set in Tab.cpp in the Line object.
     //def->label = L("Fan speed-up time");
@@ -2515,6 +2522,16 @@ def = this->add("filament_loading_speed", coFloats);
     def->label = L("Fan speed");
     def->tooltip = L("Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed during printing except the first several layers "
                      "which is defined by no cooling layers");
+    def->sidetext = L("%");
+    def->min = 0;
+    def->max = 100;
+    def->mode = comSimple;
+    def->set_default_value(new ConfigOptionInts { 0 });
+
+    //GalaxySlicer: Chamber fan
+    def = this->add("additional_chamber_fan_speed", coInts);
+    def->label = L("Fan speed");
+    def->tooltip = L("Speed of chamber cooling fan. Chamber fan will run at this speed during printing.");
     def->sidetext = L("%");
     def->min = 0;
     def->max = 100;

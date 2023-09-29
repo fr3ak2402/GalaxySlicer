@@ -912,6 +912,8 @@ PRINT_CONFIG_CLASS_DEFINE(
     ((ConfigOptionEnum<NozzleType>,    nozzle_type))
     ((ConfigOptionInt,                 nozzle_hrc))
     ((ConfigOptionBool,                auxiliary_fan))
+    //GalaxySlicer
+    ((ConfigOptionBool,                chamber_fan))
     // SoftFever
     ((ConfigOptionBool,                use_firmware_retraction))
     ((ConfigOptionBool,                use_relative_e_distances))
@@ -1084,8 +1086,8 @@ PRINT_CONFIG_CLASS_DERIVED_DEFINE(
     ((ConfigOptionStrings,            filament_notes))
     ((ConfigOptionString,             notes))
     ((ConfigOptionString,             printer_notes))
-
-
+    //GalaxySlicer
+    ((ConfigOptionInts,               additional_chamber_fan_speed))
 
 )
 
