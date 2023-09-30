@@ -70,8 +70,6 @@ function HandleModelList( pVal )
 				sVV="Bambu Lab";
 			if( sVV=="Custom")
 				sVV="Custom Printer";
-			if( sVV=="Other")
-				sVV="Orca colosseum";
 
 			let HtmlNewVendor='<div class="OneVendorBlock" Vendor="'+strVendor+'" VendorName="'+sVV+'">'+
 '<div class="BlockBanner">'+
@@ -85,7 +83,7 @@ function HandleModelList( pVal )
 '</div>'+
 '</div>';
 			
-			$('#Content').append(HtmlNewVendor);
+			$('[name="fff_tab"]').append(HtmlNewVendor);
 		}
 		
 		//GalaxySlicer: Sort Vendors
