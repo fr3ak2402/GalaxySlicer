@@ -1,6 +1,6 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
-[![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=Lizenz&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=Licentie&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/fr3ak2402/GalaxySlicer?style=flat-square&label=Version&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![GitHub release downloads (latest)](https://img.shields.io/github/downloads/Fr3ak2402/GalaxySlicer/latest/total?style=flat-square&label=Downloads&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![Build Win x64](https://img.shields.io/github/actions/workflow/status/Fr3ak2402/GalaxySlicer/build_win_x64.yml?style=flat-square&logo=Windows11&label=Build%20Win%20x64&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
@@ -8,27 +8,27 @@
 [![Build macOS arm64](https://img.shields.io/github/actions/workflow/status/Fr3ak2402/GalaxySlicer/build_macOS_arm64.yml?style=flat-square&logo=Apple&label=Build%20macOS%20arm64&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_macOS_arm64.yml)
 -------------------------------------
 
-GalaxySlicer ist eine erweiterte Version des Orca Slicer.
+GalaxySlicer is een verbeterde versie van Orca Slicer.
 
-GalaxySlicer basiert auf **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer)** von SoftFever, der wiederum auf **[Bambu Studio](https://github.com/bambulab/BambuStudio)** von BambuLab basiert. Bambu Studio basiert auf **[PrusaSlicer](https://github.com/prusa3d/PrusaSlicer)** von Prusa Research, das aus **[Slic3r](https://github.com/Slic3r/Slic3r)** von Alessandro Ranellucci und der RepRap-Community hervorgegangen ist. Orca Slicer enthält viele Funktionen von **[Super Slicer](https://github.com/supermerill/SuperSlicer)** von supermerill
+GalaxySlicer is gebaseerd op **[Orca Slicer](https://github.com/SoftFever/OrcaSlicer)** van SoftFever, dat op zijn beurt is gebaseerd op **[Bambu Studio](https://github.com/bambulab/BambuStudio)** van BambuLab. Bambu Studio is gebaseerd op **[PrusaSlicer](https://github.com/prusa3d/PrusaSlicer)** van Prusa Research, dat is voortgekomen uit **[Slic3r](https://github.com/Slic3r/Slic3r)** van Alessandro Ranellucci en de RepRap-gemeenschap. Orca Slicer bevat veel functies van **[Super Slicer](https://github.com/supermerill/SuperSlicer)** van supermerill.
 
-# Hauptmerkmale
-- Profil-Manager (demnächst verfügbar)
-- Marlin2-Unterstützung
-- Klipper-Unterstützung
+# Belangrijkste functies
+- Profielmanager (binnenkort beschikbaar)
+- Marlin2 ondersteuning
+- Klipper ondersteuning
 
-# Unterstützte Drucker
+# Ondersteunde printers
 
-Die folgenden Drucker werden derzeit von GalaxySlicer unterstützt: **[Druckerliste](https://github.com/fr3ak2402/GalaxySlicer-Profile-Library/wiki/Supported-printers)**
+De volgende printers worden momenteel ondersteund door GalaxySlicer: **[Printerlijst](https://github.com/fr3ak2402/GalaxySlicer-Profile-Library/wiki/Supported-printers)**
 
-# Vorkompilierte Versionen
-Derzeit sind nur Windows, macOS x64 & arm64 Versionen vorkompiliert.
+# Voorgecompileerde versies
+Momenteel zijn alleen Windows, macOS x64 & arm64 versies voorgecompileerd.
 
-Alle kompilierten Versionen können unter folgendem Link gefunden werden: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
+Alle gecompileerde versies kunnen worden gevonden op de volgende link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
 
-# Unterstützte Betriebssysteme
+# Ondersteunde besturingssystemen
 
-GalaxySlicer wurde unter den folgenden Betriebssystemen getestet, so dass die volle Funktionalität gewährleistet werden kann. Für alle nicht aufgeführten Betriebssysteme kann keine vollständige Funktionalität garantiert werden
+GalaxySlicer is getest onder de volgende besturingssystemen zodat volledige functionaliteit kan worden gegarandeerd. Voor alle besturingssystemen die niet in de lijst staan, kan volledige functionaliteit niet worden gegarandeerd.
 
 ![macOS 12: x64](https://img.shields.io/badge/Apple-x64-blue?style=flat-square&logo=Apple&label=macOS%2012&labelColor=black&color=gray)
 ![macOS 12: arm64](https://img.shields.io/badge/Apple-arm64-blue?style=flat-square&logo=Apple&label=macOS%2012&labelColor=black&color=gray)
@@ -39,29 +39,29 @@ GalaxySlicer wurde unter den folgenden Betriebssystemen getestet, so dass die vo
 ![Windows 10: x64](https://img.shields.io/badge/Windows-x64-blue?style=flat-square&logo=Windows10&label=Windows%2010&labelColor=blue&color=gray)
 ![Windows 11: x64](https://img.shields.io/badge/Windows-x64-blue?style=flat-square&logo=Windows11&label=Windows%2011&labelColor=blue&color=gray)
 
-_Linux-Distributionen werden von uns zur Zeit nicht unterstützt._
+_Linux-distributies worden op dit moment niet door ons ondersteund._
 
-# How to Wiki-Artikel
-Im GalaxySlicer-Wiki werden How to-Beiträge gepflegt, diese Artikel zeigen die erforderlichen Schritte. 
+# Wiki artikelen
+Hoe te artikelen worden onderhouden in de GalaxySlicer wiki, deze artikelen laten de benodigde stappen zien. 
 
-Die folgenden How to Artikel sind im Wiki zu finden:
+De volgende How to artikelen zijn te vinden op de wiki:
 
-* **[GalaxySlicer installieren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Install-GalaxySlicer)**
-* **[Übersetzungsanleitung](https://github.com/fr3ak2402/GalaxySlicer/wiki/Translation-guide)**
-* **[GalaxySlicer kompilieren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Compile-GalaxySlicer)**
-* **[sm2uploader konfigurieren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Configuring-sm2uploader)**
+* **[GalaxySlicer installeren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Install-GalaxySlicer)**
+* **[Vertaalinstructies](https://github.com/fr3ak2402/GalaxySlicer/wiki/Translation-guide)**
+* **[GalaxySlicer compileren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Compile-GalaxySlicer)**
+* **[Sm2uploader configureren](https://github.com/fr3ak2402/GalaxySlicer/wiki/Configuring-sm2uploader)**
 
-# Lizenz
-GalaxySlicer ist lizenziert unter der GNU Affero General Public License, Version 3. GalaxySlicer basiert auf Orca Slicer von SoftFever.
+# Licentie
+GalaxySlicer is gelicentieerd onder de GNU Affero General Public License, versie 3. GalaxySlicer is gebaseerd op Orca Slicer van SoftFever.
 
-Orca Slicer ist lizenziert unter der GNU Affero General Public License, Version 3. Orca Slicer basiert auf Bambu Studio von BambuLab.
+Orca Slicer is gelicentieerd onder de GNU Affero General Public License, versie 3. Orca Slicer is gebaseerd op Bambu Studio van BambuLab.
 
-Bambu Studio ist lizensiert unter der GNU Affero General Public License, Version 3. Bambu Studio basiert auf PrusaSlicer von PrusaResearch.
+Bambu Studio valt onder de GNU Affero General Public License, versie 3. Bambu Studio is gebaseerd op PrusaSlicer van PrusaResearch.
 
-PrusaSlicer ist lizensiert unter der GNU Affero General Public License, Version 3. PrusaSlicer ist Eigentum von Prusa Research. PrusaSlicer basiert ursprünglich auf Slic3r von Alessandro Ranellucci.
+PrusaSlicer is gelicentieerd onder de GNU Affero General Public License, versie 3. PrusaSlicer is eigendom van Prusa Research. PrusaSlicer is oorspronkelijk gebaseerd op Slic3r van Alessandro Ranellucci.
 
-Slic3r ist lizenziert unter der GNU Affero General Public License, Version 3. Slic3r wurde von Alessandro Ranellucci mit der Hilfe von vielen anderen Mitwirkenden entwickelt.
+Slic3r is gelicenseerd onder de GNU Affero General Public License, versie 3. Slic3r is gemaakt door Alessandro Ranellucci met de hulp van vele andere medewerkers.
 
-Die GNU Affero General Public License, Version 3 stellt sicher, dass, wenn Sie irgendeinen Teil dieser Software in irgendeiner Weise verwenden (auch hinter einem Webserver), Ihre Software unter der gleichen Lizenz veröffentlicht werden muss.
+De GNU Affero General Public License, versie 3 zorgt ervoor dat als je een deel van deze software op welke manier dan ook gebruikt (zelfs achter een webserver), je software onder dezelfde licentie uitgebracht moet worden.
 
-Das bambu Networking Plugin basiert auf unfreien Bibliotheken. Es ist optional zum Orca Slicer und bietet erweiterte Funktionalitäten für Benutzer.
+De bambu netwerk plugin is gebaseerd op niet-vrije bibliotheken. Het is optioneel voor de Orca Slicer en biedt uitgebreide functionaliteiten voor gebruikers.
