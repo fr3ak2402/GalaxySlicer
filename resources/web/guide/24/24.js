@@ -329,8 +329,36 @@ function FilterVendor()
     }
 }
 
-$(document).ready(function() 
+function SwitchTab(evt, tabName)
 {
+    var i, tab_buttons, tablinks;
+	
+    tab_buttons = document.getElementsByClassName("TabButton");
+		
+    for (i = 0; i < tab_buttons.length; i++) 
+	{
+		tab_buttons[i].classList.remove("TabActive");
+    }
+	
+	if(tabName === "FFF")
+	{
+		$('#TabButtonFFF').addClass('TabActive');
+		$('[name="fff_tab"]').show();
+		$('[name="sla_tab"]').hide();
+	}
+	else
+	{
+		$('#TabButtonSLA').addClass('TabActive');
+		$('[name="sla_tab"]').show();
+		$('[name="fff_tab"]').hide();
+	}
+}
+
+$(document).ready(function()
+{
+	$('#TabButtonFFF').addClass('TabActive');
+	$('[name="sla_tab"]').hide();
+		
     $('#Search').on('input', function() 
 	{
         FilterVendor();
