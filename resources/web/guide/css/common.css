@@ -145,10 +145,18 @@ body
 {
     height: 5%;
     display: flex;
-    align-items: center;
+    align-items: end;
 	padding-left: 10mm;
 	padding-right: 10mm;
 	padding-bottom: 1.5mm;
+}
+
+#TabBarSpacer 
+{
+	margin-right: 2px;
+	flex-grow: 1;
+	border-bottom: 1.5px solid #693A71;
+	border-bottom-width: 1.5px;
 }
 
 .TabButton
