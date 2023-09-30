@@ -1,6 +1,6 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
-[![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=License&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
+[![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=Lizenz&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/fr3ak2402/GalaxySlicer?style=flat-square&label=Version&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![GitHub release downloads (latest)](https://img.shields.io/github/downloads/Fr3ak2402/GalaxySlicer/latest/total?style=flat-square&label=Downloads&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
 [![Build Win x64](https://img.shields.io/github/actions/workflow/status/Fr3ak2402/GalaxySlicer/build_win_x64.yml?style=flat-square&logo=Windows11&label=Build%20Win%20x64&color=%23693A71)](https://github.com/fr3ak2402/GalaxySlicer/actions/workflows/build_win_x64.yml)
