@@ -1,3 +1,7 @@
+[![Static Badge](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&logo=https%3A%2F%2Fgithub.com%2Fhampusborgos%2Fcountry-flags%2Fblob%2Fmain%2Fsvg%2Fnl.svg&label=DE)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/.github/readmes/README.de_DE.md)
+[![Static Badge](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&logo=https%3A%2F%2Fgithub.com%2Fhampusborgos%2Fcountry-flags%2Fblob%2Fmain%2Fsvg%2Fnl.svg&label=NL)
+](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/.github/readmes/README.nl_NL.md)
+
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
 -------------------------------------
 [![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=License&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
