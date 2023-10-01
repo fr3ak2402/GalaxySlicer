@@ -473,7 +473,6 @@ std::string PresetBundle::get_texture_for_printer_model(std::string model_name)
     if (!texture_name.empty())
     {
         out = Slic3r::data_dir() + "/vendor/" + vendor_name + "/" + texture_name;
-
         if (!boost::filesystem::exists(boost::filesystem::path(out)))
         {
             //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_textures.
@@ -513,7 +512,6 @@ std::string PresetBundle::get_stl_model_for_printer_model(std::string model_name
     if (!stl_name.empty())
     {
         out = Slic3r::data_dir() + "/vendor/" + vendor_name + "/" + stl_name;
-
         if (!boost::filesystem::exists(boost::filesystem::path(out)))
         {
             //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_models.
@@ -552,7 +550,6 @@ std::string PresetBundle::get_hotend_model_for_printer_model(std::string model_n
     if (!hotend_stl.empty())
     {
         out = Slic3r::data_dir() + "/vendor/" + vendor_name + "/" + hotend_stl;
-
         if (!boost::filesystem::exists(boost::filesystem::path(out)))
         {
             //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the hotend_models.
@@ -2864,6 +2861,7 @@ void PresetBundle::load_config_file_config(const std::string &name_or_path, bool
 std::pair<PresetsConfigSubstitutions, size_t> PresetBundle::load_vendor_configs_from_json(
     const std::string &path, const std::string &vendor_name, LoadConfigBundleAttributes flags, ForwardCompatibilitySubstitutionRule compatibility_rule)
 {
+    CNumericLocalesSetter locales_setter;
     // Enable substitutions for user config bundle, throw an exception when loading a system profile.
     ConfigSubstitutionContext  substitution_context { compatibility_rule };
     PresetsConfigSubstitutions substitutions;

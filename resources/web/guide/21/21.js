@@ -70,8 +70,6 @@ function HandleModelList( pVal )
 				sVV="Bambu Lab";
 			if( sVV=="Custom")
 				sVV="Custom Printer";
-			if( sVV=="Other")
-				sVV="Orca colosseum";
 
 			let HtmlNewVendor='<div class="OneVendorBlock" Vendor="'+strVendor+'" VendorName="'+sVV+'">'+
 '<div class="BlockBanner">'+
@@ -85,7 +83,7 @@ function HandleModelList( pVal )
 '</div>'+
 '</div>';
 			
-			$('#Content').append(HtmlNewVendor);
+			$('[name="fff_tab"]').append(HtmlNewVendor);
 		}
 		
 		//GalaxySlicer: Sort Vendors
@@ -311,8 +309,36 @@ function FilterVendor()
     }
 }
 
-$(document).ready(function() 
+function SwitchTab(evt, tabName)
 {
+    var i, tab_buttons, tablinks;
+	
+    tab_buttons = document.getElementsByClassName("TabButton");
+		
+    for (i = 0; i < tab_buttons.length; i++) 
+	{
+		tab_buttons[i].classList.remove("TabActive");
+    }
+	
+	if(tabName === "FFF")
+	{
+		$('#TabButtonFFF').addClass('TabActive');
+		$('[name="fff_tab"]').show();
+		$('[name="sla_tab"]').hide();
+	}
+	else
+	{
+		$('#TabButtonSLA').addClass('TabActive');
+		$('[name="sla_tab"]').show();
+		$('[name="fff_tab"]').hide();
+	}
+}
+
+$(document).ready(function()
+{
+	$('#TabButtonFFF').addClass('TabActive');
+	$('[name="sla_tab"]').hide();
+		
     $('#Search').on('input', function() 
 	{
         FilterVendor();

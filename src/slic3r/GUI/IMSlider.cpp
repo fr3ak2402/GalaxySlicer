@@ -234,7 +234,7 @@ void IMSlider::SetTicksValues(const Info &custom_gcode_per_print_z)
     m_ticks.ticks.clear();
     const std::vector<CustomGCode::Item> &heights = custom_gcode_per_print_z.gcodes;
     for (auto h : heights) {
-        int tick = get_tick_from_value(h.print_z);
+        int tick = get_tick_from_value(h.print_z, true);
         if (tick >= 0) m_ticks.ticks.emplace(TickCode{tick, h.type, h.extruder, h.color, h.extra});
     }
 
@@ -1112,7 +1112,7 @@ void IMSlider::render_input_custom_gcode(std::string custom_gcode)
 }
 
 void IMSlider::do_go_to_layer(size_t layer_number) {
-    clamp((int)layer_number, m_min_value, m_max_value);
+    layer_number = clamp((int)layer_number, m_min_value, m_max_value);
     GetSelection() == ssLower ? SetLowerValue(layer_number) : SetHigherValue(layer_number);
 }
 
@@ -1431,7 +1431,7 @@ std::string IMSlider::get_label(int tick, LabelType label_type)
     const size_t value = tick;
 
     if (m_label_koef == 1.0 && m_values.empty()) {
-        std::to_string(value);
+        return std::to_string(value);
     }
     if (value >= m_values.size()) return "error";
 

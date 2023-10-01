@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 19:20+0200\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -841,17 +841,23 @@ msgstr "Изменить текст"
 msgid "Load..."
 msgstr "Загрузить…"
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
 msgstr "Куб Orca Design"
+
+msgid "Voron Cube"
+msgstr "Куб Voron Design"
 
 msgid "3DBenchy"
 msgstr "3DBenchy"
 
 msgid "Autodesk FDM Test"
 msgstr "FDM тест от Autodesk"
-
-msgid "Voron Cube"
-msgstr "Куб Voron Design"
 
 msgid "Cube"
 msgstr "Куб"
@@ -1517,6 +1523,9 @@ msgstr "Подключение..."
 msgid "?"
 msgstr "?"
 
+msgid "/"
+msgstr ""
+
 msgid "Empty"
 msgstr "Пусто"
 
@@ -1528,12 +1537,6 @@ msgstr "Автодозаправка"
 
 msgid "AMS not connected"
 msgstr "АСПП не подключена"
-
-msgid "Cali"
-msgstr "Калиб."
-
-msgid "Calibration of extrusion"
-msgstr "Калибровка экструзии"
 
 msgid "Load Filament"
 msgstr "Загрузить пруток"
@@ -1566,6 +1569,9 @@ msgstr "Повторить калибровку"
 msgid "Cancel calibration"
 msgstr "Отменить калибровку"
 
+msgid "Idling..."
+msgstr ""
+
 msgid "Heat the nozzle"
 msgstr "Нагрев сопла"
 
@@ -1581,8 +1587,14 @@ msgstr "Вставка нового прутка в экструдер"
 msgid "Purge old filament"
 msgstr "Очистка от старого материала"
 
-msgid "Push new filament into the extruder"
-msgstr "Вставка нового прутка в экструдер"
+msgid "Feed Filament"
+msgstr ""
+
+msgid "Confirm extruded"
+msgstr ""
+
+msgid "Check filament location"
+msgstr ""
 
 msgid "Grab new filament"
 msgstr "Загрузка нового прутка"
@@ -2447,33 +2459,19 @@ msgstr ""
 "Рекомендуемая температура сопла для данного типа пластиковой нити составляет "
 "[%d, %d] градусов Цельсия."
 
-#, c-format, boost-format
-msgid ""
-"Bed temperature of other layer is lower than bed temperature of initial "
-"layer for more than %d degree centigrade.\n"
-"This may cause model broken free from build plate during printing"
-msgstr ""
-"Температура стола для последующих слоёв слишком низкая по сравнению с "
-"температурой первого слоя, более чем на %d градусов Цельсия.\n"
-"Это может привести к отрыву модели от стола во время печати."
-
-msgid ""
-"Bed temperature is higher than vitrification temperature of this filament.\n"
-"This may cause nozzle blocked and printing failure\n"
-"Please keep the printer open during the printing process to ensure air "
-"circulation or reduce the temperature of the hot bed"
-msgstr ""
-"Температура стола выше температуры стеклования этой пластиковой нити.\n"
-"Это может привести к засорению сопла и сбою печати.\n"
-"Пожалуйста, держите принтер открытым во время печати, чтобы обеспечить "
-"циркуляцию воздуха или снизить температуру стола."
-
 msgid ""
 "Too small max volumetric speed.\n"
 "Reset to 0.5"
 msgstr ""
 "Слишком маленькая максимальная объёмная скорость.\n"
 "Сбросьте до 0,5."
+
+#, c-format, boost-format
+msgid ""
+"Current chamber temperature is higher than the material's safe temperature,"
+"it may result in material softening and clogging.The maximum safe "
+"temperature for the material is %d"
+msgstr ""
 
 msgid ""
 "Too small layer height.\n"
@@ -2541,6 +2539,9 @@ msgstr ""
 "- плотность заполнения 0%\n"
 "- отключено «Обнаружение тонких стенок»\n"
 "- Режим записи таймлапсов - обычный режим"
+
+msgid " But machines with I3 structure will not generate timelapse videos."
+msgstr ""
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2672,6 +2673,36 @@ msgstr "Пауза при неисправности температуры со
 msgid "Paused due to heat bed temperature malfunction"
 msgstr "Пауза при неисправности температуры стола"
 
+msgid "Filament unloading"
+msgstr ""
+
+msgid "Skip step pause"
+msgstr ""
+
+msgid "Filament loading"
+msgstr ""
+
+msgid "Motor noise calibration"
+msgstr ""
+
+msgid "Paused due to AMS lost"
+msgstr ""
+
+msgid "Paused due to low speed of the heat break fan"
+msgstr ""
+
+msgid "Paused due to chamber temperature control error"
+msgstr ""
+
+msgid "Cooling chamber"
+msgstr ""
+
+msgid "Paused by the Gcode inserted by user"
+msgstr ""
+
+msgid "Motor noise showoff"
+msgstr ""
+
 msgid "MC"
 msgstr "Плата управления"
 
@@ -2707,6 +2738,24 @@ msgstr "Ошибка идентификации."
 
 msgid "Update failed."
 msgstr "Сбой обновления."
+
+msgid ""
+"The current chamber temperature or the target chamber temperature exceeds "
+"45℃.In order to avoid extruder clogging,low temperature filament(PLA/PETG/"
+"TPU) is not allowed to be loaded."
+msgstr ""
+
+msgid ""
+"Low temperature filament(PLA/PETG/TPU) is loaded in the extruder.In order to "
+"avoid extruder clogging,it is not allowed to set the chamber temperature "
+"above 45℃."
+msgstr ""
+
+msgid ""
+"When you set the chamber temperature below 40℃, the chamber temperature "
+"control will not be activated. And the target chamber temperature will "
+"automatically be set to 0℃."
+msgstr ""
 
 msgid "Failed to start printing job"
 msgstr "Не удалось запустить задание на печать."
@@ -2840,11 +2889,14 @@ msgstr "Очищено"
 msgid "Total"
 msgstr "Общее"
 
-msgid "Total Time Estimation"
-msgstr "Оценка общего времени"
+msgid "Total Estimation"
+msgstr "Общая оценка"
 
 msgid "Total time"
 msgstr "Общее время печати"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "до"
@@ -2932,9 +2984,6 @@ msgstr "Профиль принтера"
 
 msgid "Print settings"
 msgstr "Настройки печати"
-
-msgid "Total Estimation"
-msgstr "Общая оценка"
 
 msgid "Time Estimation"
 msgstr "Оценка времени"
@@ -3044,6 +3093,9 @@ msgstr "Разрешить использование нескольких ма�
 msgid "Avoid extrusion calibration region"
 msgstr "Избегать зону калибровки экструзии"
 
+msgid "Align to Y axis"
+msgstr ""
+
 msgid "Add"
 msgstr "Добавить"
 
@@ -3101,7 +3153,7 @@ msgstr "Объём:"
 msgid "Size:"
 msgstr "Размер:"
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3140,8 +3192,11 @@ msgstr "Калибровка микролидаром"
 msgid "Bed leveling"
 msgstr "Выравнивание стола"
 
-msgid "Resonance frequency identification"
-msgstr "Идентификация резонансной частоты"
+msgid "Vibration compensation"
+msgstr ""
+
+msgid "Motor noise cancellation"
+msgstr ""
 
 msgid "Calibration program"
 msgstr "Программа калибровки"
@@ -3160,6 +3215,9 @@ msgstr "Калибровка потока"
 
 msgid "Start Calibration"
 msgstr "Запустить калибровку"
+
+msgid "No step selected"
+msgstr ""
 
 msgid "Completed"
 msgstr "Завершено"
@@ -3236,9 +3294,6 @@ msgstr "Нет"
 
 msgid "will be closed before creating a new model. Do you want to continue?"
 msgstr "будет закрыт перед созданием новой модели. Хотите продолжить?"
-
-msgid "Upload"
-msgstr "Загрузить"
 
 msgid "Slice plate"
 msgstr "Нарезать стол"
@@ -3825,8 +3880,8 @@ msgid "Failed to parse model infomations."
 msgstr "Не удалось проанализировать информацию о модели."
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 "Файл .gcode.3mf не содержит G-кода. Пожалуйста, нарежьте его в программе "
 "Bambu Studio и экспортируйте новый файл .gcode.3mf."
@@ -3911,11 +3966,19 @@ msgstr "0"
 msgid "Layer: N/A"
 msgstr "Слой: Н/Д"
 
-msgid "Immediately score"
-msgstr "Оценить сейчас"
-
 msgid "Clear"
 msgstr "Очистить"
+
+msgid "How do you like this printing file?"
+msgstr ""
+
+msgid ""
+"(The model has already been rated. Your rating will overwrite the previous "
+"rating.)"
+msgstr ""
+
+msgid "Rate"
+msgstr ""
 
 msgid "Camera"
 msgstr "Камера"
@@ -3982,13 +4045,6 @@ msgstr "Количество заданий в очереди на облачн�
 msgid "Layer: %s"
 msgstr "Слой: %s"
 
-msgid "Please give a score for your favorite Bambu Market model."
-msgstr ""
-"Пожалуйста, поставьте оценку вашей любимой модели в магазине Bambu Market."
-
-msgid "Score"
-msgstr "Рейтинг"
-
 #, c-format, boost-format
 msgid "Layer: %d/%d"
 msgstr "Слой: %d/%d"
@@ -4031,6 +4087,97 @@ msgstr "Сумасшедший"
 
 msgid "Can't start this without SD card."
 msgstr "Невозможно запустить без SD-карты."
+
+msgid "Rate the Print Profile"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Rate this print"
+msgstr ""
+
+msgid "Add Photo"
+msgstr ""
+
+msgid "Delete Photo"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Please click on the star first."
+msgstr ""
+
+msgid "InFo"
+msgstr ""
+
+msgid "Get oss config failed."
+msgstr ""
+
+msgid "Upload Pictrues"
+msgstr ""
+
+msgid "Number of images successfully uploaded"
+msgstr ""
+
+msgid " upload failed"
+msgstr ""
+
+msgid " upload config prase failed\n"
+msgstr ""
+
+msgid " No corresponding storage bucket\n"
+msgstr ""
+
+msgid " can not be opened\n"
+msgstr ""
+
+msgid ""
+"The following issues occurred during the process of uploading images. Do you "
+"want to ignore them?\n"
+"\n"
+msgstr ""
+
+msgid "info"
+msgstr "Информация"
+
+msgid "Synchronizing the printing results. Please retry a few seconds later."
+msgstr ""
+
+msgid "Upload failed\n"
+msgstr ""
+
+msgid "obtaining instance_id failed\n"
+msgstr ""
+
+msgid ""
+"Your comment result cannot be uploaded due to some reasons. As follows:\n"
+"\n"
+"  error code: "
+msgstr ""
+
+msgid "error message: "
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+"Would you like to redirect to the webpage for rating?"
+msgstr ""
+
+msgid ""
+"Some of your images failed to upload. Would you like to redirect to the "
+"webpage for rating?"
+msgstr ""
+
+msgid "You can select up to 16 images."
+msgstr ""
+
+msgid ""
+"At least one successful print record of this print profile is required \n"
+"to give a positive rating(4 or 5stars)."
+msgstr ""
 
 msgid "Status"
 msgstr "Статус"
@@ -4161,6 +4308,9 @@ msgstr "Предупреждение:"
 msgid "Export successfully."
 msgstr "Успешно экспортировано."
 
+msgid "Model file downloaded."
+msgstr ""
+
 msgid "Serious warning:"
 msgstr "Серьезное предупреждение:"
 
@@ -4246,6 +4396,9 @@ msgstr "Проверка первого слоя"
 
 msgid "Auto-recovery from step loss"
 msgstr "Автовосстановление после потери шагов"
+
+msgid "Allow Prompt Sound"
+msgstr ""
 
 msgid "Global"
 msgstr "Общие"
@@ -4400,6 +4553,11 @@ msgstr ""
 "Твердость сопла, установленного по умолчанию, не достаточна для печати "
 "данной пластиковой нитью. Замените сопло на закаленное или смените "
 "пластиковую нить. В противном случае сопло будет изношено или повреждено."
+
+msgid ""
+"Enabling traditional timelapse photography may cause surface imperfections. "
+"It is recommended to change to smooth mode."
+msgstr ""
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4617,6 +4775,11 @@ msgstr "скачивание проекта..."
 #, c-format, boost-format
 msgid "Project downloaded %d%%"
 msgstr "Проект загружен %d%%"
+
+msgid ""
+"Importing to Bambu Studio failed. Please download the file and manually "
+"import it."
+msgstr ""
 
 msgid "The selected file"
 msgstr "В выбранном файле"
@@ -5007,9 +5170,6 @@ msgstr "ошибка"
 msgid "warning"
 msgstr "предупреждение"
 
-msgid "info"
-msgstr "Информация"
-
 msgid "debug"
 msgstr "отладка"
 
@@ -5264,11 +5424,17 @@ msgstr "Не нагреваемая пластина Bamabu"
 msgid "PLA Plate"
 msgstr "PLA пластина"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Инженерная пластина Bamabu"
+msgid "Bambu Engineering Plate"
+msgstr ""
 
-msgid "Bamabu High Temperature Plate"
-msgstr "Высокотемпературная пластина Bamabu"
+msgid "Bambu Smooth PEI Plate"
+msgstr ""
+
+msgid "High temperature Plate"
+msgstr ""
+
+msgid "Bambu Textured PEI Plate"
+msgstr ""
 
 msgid "Send print job to"
 msgstr "Отправка задания на печать"
@@ -5282,8 +5448,8 @@ msgstr "Выравнивание стола"
 msgid "Flow Dynamics Calibration"
 msgstr "Калибровка динамики потока"
 
-msgid "Can't connect to the printer"
-msgstr "Не удаётся подключиться к принтеру"
+msgid "Click here if you can't connect to the printer"
+msgstr ""
 
 msgid "send completed"
 msgstr "отправка завершена"
@@ -5398,6 +5564,16 @@ msgstr "Невозможно отправить задание на печать
 
 msgid "This printer does not support printing all plates"
 msgstr "Данный принтер не поддерживает печать на всех типах печатных пластин."
+
+msgid ""
+"When enable spiral vase mode, machines with I3 structure will not generate "
+"timelapse videos."
+msgstr ""
+
+msgid ""
+"When print by object, machines with I3 structure will not generate timelapse "
+"videos."
+msgstr ""
 
 msgid "Errors"
 msgstr "Ошибок"
@@ -5795,9 +5971,6 @@ msgstr ""
 "Рекомендуемый диапазон температуры сопла для данной пластиковой нити. 0 "
 "значит не задано."
 
-msgid "Recommended temperature range"
-msgstr "Рекомендуемый диапазон температур"
-
 msgid "Print temperature"
 msgstr "Температура печати"
 
@@ -5828,16 +6001,14 @@ msgstr ""
 "означает, что пластиковая нить не поддерживает печать на этой печатной "
 "пластине."
 
-msgid "High Temp Plate"
-msgstr "Высокотемпературная пластина"
+msgid "Smooth PEI Plate / High Temp Plate"
+msgstr ""
 
 msgid ""
-"Bed temperature when high temperature plate is installed. Value 0 means the "
-"filament does not support to print on the High Temp Plate"
+"Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
+"Value 0 means the filament does not support to print on the Smooth PEI Plate/"
+"High Temp Plate"
 msgstr ""
-"Температура стола при установленной высокотемпературной печатной пластине. 0 "
-"означает, что пластиковая нить не поддерживает печать на этой печатной "
-"пластине."
 
 msgid "Textured PEI Plate"
 msgstr "Текстурированная PEI пластина"
@@ -5890,6 +6061,15 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Вспомогательный вентилятор для охлаждения моделей"
 
+msgid "Exhaust fan"
+msgstr ""
+
+msgid "During print"
+msgstr ""
+
+msgid "Complete print"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "Стартовый G-код прутка"
 
@@ -5940,6 +6120,9 @@ msgstr "G-код выполняемый перед сменой слоя"
 
 msgid "Layer change G-code"
 msgstr "G-код выполняемый при смене слоя"
+
+msgid "Time lapse G-code"
+msgstr ""
 
 msgid "Change filament G-code"
 msgstr "G-код выполняемый при смене прутка"
@@ -6805,6 +6988,11 @@ msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr ""
 "Не удалось вычислить ширину линии %1%. Не удается получить значение \"%2%\". "
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "неопределённая ошибка"
 
@@ -6970,6 +7158,24 @@ msgstr ""
 "Режим «Спиральная ваза» не работает, когда модель печатается несколькими "
 "материалами."
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "Черновая башня не поддерживается при печати в режиме «По очереди»."
 
@@ -7116,6 +7322,19 @@ msgid ""
 msgstr ""
 "Уменьшение первого слоя в плоскости XY на заданное значение, чтобы "
 "компенсировать эффект слоновьей ноги."
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "слой(-я)"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7666,6 +7885,23 @@ msgid "Default process profile when switch to this machine profile"
 msgstr ""
 "Профиль процесса по умолчанию при переключении на этот профиль принтера."
 
+msgid "Activate air filtration"
+msgstr ""
+
+msgid "Activate for better air filtration"
+msgstr ""
+
+msgid "Fan speed"
+msgstr "Скорость вентилятора"
+
+msgid ""
+"Speed of exhuast fan during printing.This speed will overwrite the speed in "
+"filament custom gcode"
+msgstr ""
+
+msgid "Speed of exhuast fan after printing completes"
+msgstr ""
+
 msgid "No cooling for the first"
 msgstr "Не включать вентилятор на первых"
 
@@ -7676,9 +7912,6 @@ msgstr ""
 "Вы можете задать положительное значение, чтобы отключить все вентиляторы "
 "охлаждения модели при печати первых нескольких слоёв, чтобы не ухудшить "
 "адгезию к столу."
-
-msgid "layers"
-msgstr "слой(-я)"
 
 msgid "Don't support bridges"
 msgstr "Не печатать поддержки под мостами"
@@ -7732,22 +7965,6 @@ msgid ""
 msgstr ""
 "Добавление сплошного заполнения вблизи наклонных поверхностей для "
 "обеспечения вертикальной толщины оболочки (верхний+нижний сплошные слои)."
-
-msgid "Internal bridge support thickness"
-msgstr "Толщина поддержки внутреннего моста"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
-"Если включено, под контурами внутренних мостов будут создаваться петли "
-"поддержки. Эти петли поддержки могут препятствовать выдавливанию внутренних "
-"мостов в воздух и улучшить качество поверхности сверху, особенно при низкой "
-"плотности заполнения. Это значение определяет толщину петель поддержки. "
-"Установите 0 для отключения."
 
 msgid "Top surface pattern"
 msgstr "Шаблон заполнения верхней поверхности"
@@ -8383,11 +8600,14 @@ msgstr ""
 msgid "accel_to_decel"
 msgstr "ограничение ускорение зигзагов"
 
-#, fuzzy, c-format, boost-format
-msgid "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+#, c-format, boost-format
+msgid ""
+"Klipper's max_accel_to_decel will be adjusted to this %% of acceleration"
 msgstr ""
-"Значение Klipper-а max_accel_to_decel (ограничение ускорения зигзагов) будет "
-"скорректировано на данное ускорение: %"
+
+#, c-format, boost-format
+msgid "%%"
+msgstr ""
 
 msgid "Jerk of outer walls"
 msgstr "Рывок для внешних периметров."
@@ -8608,6 +8828,30 @@ msgstr ""
 msgid "HRC"
 msgstr "HRC"
 
+msgid "Printer structure"
+msgstr ""
+
+msgid "The physical arrangement and components of a printing device"
+msgstr ""
+
+msgid "CoreXY"
+msgstr ""
+
+msgid "I3"
+msgstr ""
+
+msgid "Hbot"
+msgstr ""
+
+msgid "Delta"
+msgstr ""
+
+msgid "Best object position"
+msgstr ""
+
+msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
+msgstr ""
+
 msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr ""
 "Включите, если в принтере имеет вспомогательный вентилятор для охлаждения "
@@ -8656,6 +8900,28 @@ msgstr ""
 "недостаточен для запуска вентилятора после остановки или для более быстрого "
 "увеличения скорости его вращения.\n"
 "Установите 0 для отключения."
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
+msgstr ""
+
+msgid "Support control chamber temperature"
+msgstr ""
+
+msgid ""
+"This option is enabled if machine support controlling chamber temperature"
+msgstr ""
+
+msgid "Support air filtration"
+msgstr ""
+
+msgid "Enable this if printer support air filtration"
+msgstr ""
 
 msgid "G-code flavor"
 msgstr "Тип G-кода"
@@ -8924,9 +9190,6 @@ msgstr "Максимальное ускорение при перемещени�
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Скорость вентилятора"
-
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
 "is the maximum speed limitation of part cooling fan"
@@ -8944,6 +9207,55 @@ msgid ""
 msgstr ""
 "Это наибольшая высота печатаемого слоя для этого экструдера, которая "
 "используется для ограничения функции «Переменная высота слоёв»."
+
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
 
 msgid "Minimum speed for part cooling fan"
 msgstr "Минимальная скорость вентилятора обдува модели."
@@ -9245,6 +9557,22 @@ msgstr ""
 "когда срабатывает откат. Это предотвращает задевание соплом печатаемой "
 "модели при перемещении. Использование спирального типа подъёма оси Z может "
 "предотвратить образование паутины."
+
+msgid "Z hop lower boundary"
+msgstr ""
+
+msgid ""
+"Z hop will only come into effect when Z is above this value and is below the "
+"parameter: \"Z hop upper boundary\""
+msgstr ""
+
+msgid "Z hop upper boundary"
+msgstr ""
+
+msgid ""
+"If this value is positive, Z hop will only come into effect when Z is above "
+"the parameter: \"Z hop lower boundary\" and is below this value"
+msgstr ""
 
 msgid "Z hop type"
 msgstr "Тип подъёма оси Z"
@@ -9955,23 +10283,18 @@ msgstr ""
 msgid "Chamber temperature"
 msgstr "Температура термокамеры"
 
-msgid "Target chamber temperature"
-msgstr "Температура, которую необходимо поддерживать внутри принтера."
+msgid ""
+"Higher chamber temperature can help suppress or reduce warping and "
+"potentially lead to higher interlayer bonding strength for high temperature "
+"materials like ABS, ASA, PC, PA and so on.At the same time, the air "
+"filtration of ABS and ASA will get worse.While for PLA, PETG, TPU, PVA and "
+"other low temperature materials,the actual chamber temperature should not be "
+"high to avoid cloggings, so 0 which stands for turning off is highly "
+"recommended"
+msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one"
 msgstr "Температура сопла при печати для слоёв после первого."
-
-msgid "Bed temperature difference"
-msgstr "Разница температур подогреваемого стола"
-
-msgid ""
-"Do not recommend bed temperature of other layer to be lower than initial "
-"layer for more than this threshold. Too low bed temperature of other layer "
-"may cause the model broken free from build plate"
-msgstr ""
-"Не рекомендуется, чтобы температура последующих слоёв была ниже температуры "
-"первого слоя, более чем на это пороговое значение. Слишком низкая "
-"температура последующих слоёв может привести к отрыву модели от стола."
 
 msgid "Detect thin wall"
 msgstr "Обнаружение тонких стенок"
@@ -10407,6 +10730,12 @@ msgstr "Загрузка материалов по умолчанию"
 msgid "Load first filament as default for those not loaded"
 msgstr "Использовать первый материал по умолчанию, если не загружен другой"
 
+msgid "Minimum save"
+msgstr ""
+
+msgid "export 3mf with minimum size."
+msgstr ""
+
 msgid "mtcpp"
 msgstr "mtcpp"
 
@@ -10465,14 +10794,39 @@ msgstr "Количество повторений"
 msgid "Repetions count of the whole model"
 msgstr "Количество повторений для всей модели"
 
+msgid "Ensure on bed"
+msgstr ""
+
+msgid ""
+"Lift the object above the bed when it is partially below. Disabled by default"
+msgstr ""
+
 msgid "Convert Unit"
 msgstr "Преобразовать единицу измерения"
 
 msgid "Convert the units of model"
 msgstr "Преобразование единиц измерения модели"
 
-msgid "Orient the model"
-msgstr "Ориентация модели"
+msgid "Orient Options"
+msgstr ""
+
+msgid "Orient options: 0-disable, 1-enable, others-auto"
+msgstr ""
+
+msgid "Rotation angle around the Z axis in degrees."
+msgstr ""
+
+msgid "Rotate around X"
+msgstr ""
+
+msgid "Rotation angle around the X axis in degrees."
+msgstr ""
+
+msgid "Rotate around Y"
+msgstr ""
+
+msgid "Rotation angle around the Y axis in degrees."
+msgstr ""
 
 msgid "Scale the model by a float factor"
 msgstr "Масштабирование модели с помощью коэффициента."
@@ -10535,6 +10889,12 @@ msgstr ""
 "Задаёт параметр чувствительности записи событий в журнал. \\\"0: "
 "Неустранимая ошибка, 1: Ошибка, 2: Предупреждение, 3: Информация, 4: "
 "Отладка, 5: Трассировка\n"
+
+msgid "Load custom gcode"
+msgstr ""
+
+msgid "Load custom gcode from json"
+msgstr ""
 
 msgid "Error in zip archive"
 msgstr "Ошибка с zip-архивом"
@@ -10740,6 +11100,15 @@ msgstr "Введите имя, который хотите сохранить н
 msgid "The name cannot exceed 40 characters."
 msgstr "Максимальная длина имени 40 символов."
 
+#, c-format, boost-format
+msgid ""
+"Please input valid values:\n"
+"Start value: >= %.1f\n"
+"End value: <= %.1f\n"
+"End value: > Start value\n"
+"Value step: >= %.3f)"
+msgstr ""
+
 msgid "The name cannot be empty."
 msgstr "Имя не может быть пустым."
 
@@ -10771,6 +11140,9 @@ msgstr "Принтер ещё не подключен."
 msgid "Please select filament to calibrate."
 msgstr "Пожалуйста, выберите пруток для калибровки."
 
+msgid "The input value size must be 3."
+msgstr "Размер входного значения должен быть равен 3."
+
 msgid "Connecting to printer..."
 msgstr "Подключение к принтеру..."
 
@@ -10788,9 +11160,6 @@ msgstr "Выберите хотя бы один пруток для калибр
 
 msgid "Flow rate calibration result has been saved to preset"
 msgstr "Результат калибровки динамики потока был сохранён в профиль"
-
-msgid "The input value size must be 3."
-msgstr "Размер входного значения должен быть равен 3."
 
 msgid "Max volumetric speed calibration result has been saved to preset"
 msgstr "Результат калибровки максимальной объёмной скорости сохранен в профиль"
@@ -11006,6 +11375,9 @@ msgstr ""
 msgid "Please find the best line on your plate"
 msgstr "Пожалуйста, найдите лучшую линию на столе"
 
+msgid "Please find the cornor with perfect degree of extrusion"
+msgstr ""
+
 msgid "Input Value"
 msgstr "Входное значение"
 
@@ -11114,6 +11486,12 @@ msgstr "Описание ошибки"
 msgid "Extra info"
 msgstr "Доп. информация"
 
+msgid "Pattern"
+msgstr ""
+
+msgid "Method"
+msgstr "Метод"
+
 #, c-format, boost-format
 msgid "%s is not compatible with %s"
 msgstr "%s не совместима с %s"
@@ -11123,6 +11501,21 @@ msgstr "Автоматическая калибровка динамики по�
 
 msgid "Connecting to printer"
 msgstr "Подключением к принтеру"
+
+msgid "From k Value"
+msgstr ""
+
+msgid "To k Value"
+msgstr ""
+
+msgid "Step value"
+msgstr ""
+
+msgid "0.5"
+msgstr ""
+
+msgid "0.005"
+msgstr ""
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
 msgstr "Диаметр сопла был синхронизирован с настройками принтера"
@@ -11239,6 +11632,9 @@ msgstr ""
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
 msgstr "Имя загружаемого файла не заканчивается на \"%s\". Хотите продолжить?"
 
+msgid "Upload"
+msgstr "Загрузить"
+
 msgid "Print host upload queue"
 msgstr "Очередь загрузки на хост печати"
 
@@ -11299,9 +11695,6 @@ msgstr "Линии"
 
 msgid "PA Pattern"
 msgstr "Шаблон"
-
-msgid "Method"
-msgstr "Метод"
 
 msgid "Start PA: "
 msgstr "Начальный коэффициент PA: "
@@ -11380,12 +11773,10 @@ msgstr "Шаг изменения: "
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
-"Введите допустимые значения:\n"
-"start > 0 step >= 0\n"
-"end > start + step)"
 
 msgid "VFA test"
 msgstr "Тест на вертикальные артефакты (VFA)"
@@ -11398,12 +11789,10 @@ msgstr "Конечная скорость: "
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
-"Введите допустимые значения:\n"
-"start > 10 step >= 0\n"
-"end > start + step)"
 
 msgid "Start retraction length: "
 msgstr "Начальная длина отката: "
@@ -11463,6 +11852,17 @@ msgstr ""
 msgid "Connection to printers connected via the print host failed."
 msgstr ""
 "Не удалось подключиться к принтерам, подключенным через через хост печати."
+
+msgid "The start, end or step is not valid value."
+msgstr ""
+
+msgid ""
+"Unable to calibrate: maybe because the set calibration value range is too "
+"large, or the step is too small"
+msgstr ""
+
+msgid "Need select printer"
+msgstr ""
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
 msgid ""
@@ -11724,6 +12124,136 @@ msgstr ""
 "Увеличение прочности\n"
 "Знаете ли вы, что для повышения прочности модели можно увеличить количество "
 "периметров и плотность заполнения?"
+
+#~ msgid "Cali"
+#~ msgstr "Калиб."
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "Калибровка экструзии"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Вставка нового прутка в экструдер"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "Температура стола для последующих слоёв слишком низкая по сравнению с "
+#~ "температурой первого слоя, более чем на %d градусов Цельсия.\n"
+#~ "Это может привести к отрыву модели от стола во время печати."
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "Температура стола выше температуры стеклования этой пластиковой нити.\n"
+#~ "Это может привести к засорению сопла и сбою печати.\n"
+#~ "Пожалуйста, держите принтер открытым во время печати, чтобы обеспечить "
+#~ "циркуляцию воздуха или снизить температуру стола."
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "Идентификация резонансной частоты"
+
+#~ msgid "Immediately score"
+#~ msgstr "Оценить сейчас"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr ""
+#~ "Пожалуйста, поставьте оценку вашей любимой модели в магазине Bambu Market."
+
+#~ msgid "Score"
+#~ msgstr "Рейтинг"
+
+#~ msgid "Bamabu Engineering Plate"
+#~ msgstr "Инженерная пластина Bamabu"
+
+#~ msgid "Bamabu High Temperature Plate"
+#~ msgstr "Высокотемпературная пластина Bamabu"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "Не удаётся подключиться к принтеру"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "Рекомендуемый диапазон температур"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "Высокотемпературная пластина"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "Температура стола при установленной высокотемпературной печатной "
+#~ "пластине. 0 означает, что пластиковая нить не поддерживает печать на этой "
+#~ "печатной пластине."
+
+#, fuzzy, c-format, boost-format
+#~ msgid ""
+#~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+#~ msgstr ""
+#~ "Значение Klipper-а max_accel_to_decel (ограничение ускорения зигзагов) "
+#~ "будет скорректировано на данное ускорение: %"
+
+#~ msgid "Target chamber temperature"
+#~ msgstr "Температура, которую необходимо поддерживать внутри принтера."
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "Разница температур подогреваемого стола"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "Не рекомендуется, чтобы температура последующих слоёв была ниже "
+#~ "температуры первого слоя, более чем на это пороговое значение. Слишком "
+#~ "низкая температура последующих слоёв может привести к отрыву модели от "
+#~ "стола."
+
+#~ msgid "Orient the model"
+#~ msgstr "Ориентация модели"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Оценка общего времени"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Толщина поддержки внутреннего моста"
+
+#~ msgid ""
+#~ "If enabled, support loops will be generated under the contours of "
+#~ "internal bridges.These support loops could prevent internal bridges from "
+#~ "extruding over the air and improve the top surface quality, especially "
+#~ "when the sparse infill density is low.This value determines the thickness "
+#~ "of the support loops. 0 means disable this feature"
+#~ msgstr ""
+#~ "Если включено, под контурами внутренних мостов будут создаваться петли "
+#~ "поддержки. Эти петли поддержки могут препятствовать выдавливанию "
+#~ "внутренних мостов в воздух и улучшить качество поверхности сверху, "
+#~ "особенно при низкой плотности заполнения. Это значение определяет толщину "
+#~ "петель поддержки. Установите 0 для отключения."
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 0 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "Введите допустимые значения:\n"
+#~ "start > 0 step >= 0\n"
+#~ "end > start + step)"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 10 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "Введите допустимые значения:\n"
+#~ "start > 10 step >= 0\n"
+#~ "end > start + step)"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "

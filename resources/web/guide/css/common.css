@@ -139,6 +139,61 @@ body
     margin-left: 10px; /* Adjust the margin as needed */
 }
 
+/*--TabBar--*/
+
+#TabBar 
+{
+    height: 5%;
+    display: flex;
+    align-items: end;
+	padding-left: 10mm;
+	padding-right: 10mm;
+	padding-bottom: 1.5mm;
+}
+
+#TabBarSpacer 
+{
+	margin-right: 2px;
+	flex-grow: 1;
+	border-bottom: 1.5px solid #693A71;
+	border-bottom-width: 1.5px;
+}
+
+.TabButton
+{
+	padding: 8px 30px;
+	cursor: pointer;
+	margin-left: 2px;
+	margin-right: 8px;
+	background: none;
+	border-bottom: 1.5px solid #b0b0b0;
+	border-bottom-width: 1.5px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	
+	font-size: 16px;
+    line-height: 16px;
+    color: #b0b0b0;
+    text-align: center;
+}
+
+.TabButton:hover
+{
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	background-color: #F0F0F0;
+}
+
+.TabActive
+{
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	background-color: #F0F0F0;
+	border-bottom: 1.5px solid #693A71;
+	color: #693A71;
+}
+
 /*--SearchField--*/
 input[type=search] {
 	padding: 8px 20px;

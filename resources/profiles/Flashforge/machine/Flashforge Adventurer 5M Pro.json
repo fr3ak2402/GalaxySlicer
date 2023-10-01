@@ -1,0 +1,12 @@
+{
+    "type": "machine_model",
+    "name": "Flashforge Adventurer 5M Pro",
+    "model_id": "Flashforge-Adventurer5M-Pro",
+    "nozzle_diameter": "0.4;0.6",
+    "machine_tech": "FFF",
+    "family": "Flashforge",
+    "bed_model": "flashforge_adventurer5m_series_buildplate_model.stl",
+    "bed_texture": "flashforge_adventurer5m_series_buildplate_texture.png",
+    "hotend_model": "flashforge_adventurer5m_series_hotend.stl",
+    "default_materials": "Flashforge Generic ABS @0.4 nozzle;Flashforge Generic ASA @0.4 nozzle;Flashforge Generic HS PLA @0.4 nozzle;Flashforge Generic PETG @0.4 nozzle;Flashforge Generic PETG-CF10 @0.4 nozzle;Flashforge Generic PLA @0.4 nozzle;Flashforge Generic PLA-CF10 @0.4 nozzle;Flashforge Generic TPU @0.4 nozzle;Flashforge Generic ABS @0.6 nozzle;Flashforge Generic ASA @0.6 nozzle;Flashforge Generic HS PLA @0.6 nozzle;Flashforge Generic PETG @0.6 nozzle;Flashforge Generic PETG-CF10 @0.6 nozzle;Flashforge Generic PLA @0.6 nozzle;Flashforge Generic PLA-CF10 @0.6 nozzle;Flashforge Generic TPU @0.6 nozzle"
+}

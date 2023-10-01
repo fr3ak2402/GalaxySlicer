@@ -3,11 +3,9 @@ cd deps
 mkdir build
 cd build
 set DEPS=%CD%/GalaxySlicer_dep
-
 if "%1"=="slicer" (
     GOTO :slicer
 )
-
 echo "building deps.."
 cmake ../ -G "Visual Studio 17 2022" -A x64 -DDESTDIR="%CD%/GalaxySlicer_dep" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release --target deps -- -m

@@ -104,6 +104,11 @@
     "default_filament_profile": [
         "Creality Generic PLA @0.4 nozzle"
     ],
+	"thumbnails": [
+        "96x96",
+        "300x300"
+    ],
     "machine_start_gcode": "M140 S0\nM104 S0 \nSTART_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]",
-    "machine_end_gcode": "END_PRINT"
+    "machine_end_gcode": "END_PRINT",
+	"auxiliary_fan": "1"
 }
