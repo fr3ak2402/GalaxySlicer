@@ -5,6 +5,7 @@
 #include <boost/log/trivial.hpp>
 #include <iostream>
 #include <float.h>
+#include <system_error>
 #include <unordered_map>
 
 #if 0
@@ -39,10 +40,6 @@ void CoolingBuffer::reset(const Vec3d &position)
     m_current_pos[4] = float(m_config.travel_speed.value);
     m_fan_speed = -1;
     m_additional_fan_speed = -1;
-
-    //GalaxySlicer
-    m_additional_chamber_fan_speed = -1;
-
     m_current_fan_speed = -1;
 }
 
@@ -466,22 +463,24 @@ std::vector<PerExtruderAdjustments> CoolingBuffer::parse_layer_gcode(const std::
             line.type = CoolingLine::TYPE_EXTRUDE_END;
             active_speed_modifier = size_t(-1);
         } else if (boost::starts_with(sline, m_toolchange_prefix)) {
-            unsigned int new_extruder = (unsigned int)atoi(sline.c_str() + m_toolchange_prefix.size());
-            // Only change extruder in case the number is meaningful. User could provide an out-of-range index through custom gcodes - those shall be ignored.
-            if (new_extruder < map_extruder_to_per_extruder_adjustment.size()) {
-                if (new_extruder != current_extruder) {
-                    // Switch the tool.
-                    line.type = CoolingLine::TYPE_SET_TOOL;
-                    current_extruder = new_extruder;
-                    adjustment         = &per_extruder_adjustments[map_extruder_to_per_extruder_adjustment[current_extruder]];
+            unsigned int new_extruder = 0;
+            auto ret = std::from_chars(sline.data() + m_toolchange_prefix.size(), sline.data() + sline.size(), new_extruder);
+            if (std::errc::invalid_argument != ret.ec) {
+                // Only change extruder in case the number is meaningful. User could provide an out-of-range index through custom gcodes -
+                // those shall be ignored.
+                if (new_extruder < map_extruder_to_per_extruder_adjustment.size()) {
+                    if (new_extruder != current_extruder) {
+                        // Switch the tool.
+                        line.type        = CoolingLine::TYPE_SET_TOOL;
+                        current_extruder = new_extruder;
+                        adjustment       = &per_extruder_adjustments[map_extruder_to_per_extruder_adjustment[current_extruder]];
+                    }
+                } else {
+                    // Only log the error in case of MM printer. Single extruder printers likely ignore any T anyway.
+                    if (map_extruder_to_per_extruder_adjustment.size() > 1)
+                        BOOST_LOG_TRIVIAL(error) << "CoolingBuffer encountered an invalid toolchange, maybe from a custom gcode: " << sline;
                 }
             }
-            else {
-                // Only log the error in case of MM printer. Single extruder printers likely ignore any T anyway.
-                if (map_extruder_to_per_extruder_adjustment.size() > 1)
-                    BOOST_LOG_TRIVIAL(error) << "CoolingBuffer encountered an invalid toolchange, maybe from a custom gcode: " << sline;
-            }
-
         } else if (boost::starts_with(sline, ";_OVERHANG_FAN_START")) {
             line.type = CoolingLine::TYPE_OVERHANG_FAN_START;
         } else if (boost::starts_with(sline, ";_OVERHANG_FAN_END")) {
@@ -742,10 +741,6 @@ std::string CoolingBuffer::apply_layer_cooldown(
         //BBS
         int additional_fan_speed_new = EXTRUDER_CONFIG(additional_cooling_fan_speed);
         int close_fan_the_first_x_layers = EXTRUDER_CONFIG(close_fan_the_first_x_layers);
-
-        //GalaxySlicer: additional chamber fan speed
-         int additional_chamber_fan_speed_new = EXTRUDER_CONFIG(additional_chamber_fan_speed);
-
         // Is the fan speed ramp enabled?
         int full_fan_speed_layer = EXTRUDER_CONFIG(full_fan_speed_layer);
         supp_interface_fan_speed = EXTRUDER_CONFIG(support_material_interface_fan_speed);
@@ -788,10 +783,6 @@ std::string CoolingBuffer::apply_layer_cooldown(
             overhang_fan_speed   = 0;
             fan_speed_new      = 0;
             additional_fan_speed_new = 0;
-
-            //GalaxySlicer: additional chamber fan speed
-            additional_chamber_fan_speed_new = 0;
-
             supp_interface_fan_control= false;
             supp_interface_fan_speed   = 0;
         }
@@ -806,13 +797,6 @@ std::string CoolingBuffer::apply_layer_cooldown(
             m_additional_fan_speed = additional_fan_speed_new;
             if (immediately_apply && m_config.auxiliary_fan.value)
                 new_gcode += GCodeWriter::set_additional_fan(m_additional_fan_speed);
-        }
-
-        //GalaxySlicer: additional chamber fan speed
-        if (additional_chamber_fan_speed_new != m_additional_chamber_fan_speed) {
-            m_additional_chamber_fan_speed = additional_chamber_fan_speed_new;
-            if (immediately_apply && m_config.chamber_fan.value)
-                new_gcode += GCodeWriter::set_additional_chamber_fan(m_additional_chamber_fan_speed);
         }
     };
 
@@ -833,10 +817,13 @@ std::string CoolingBuffer::apply_layer_cooldown(
         if (line_start > pos)
             new_gcode.append(pos, line_start - pos);
         if (line->type & CoolingLine::TYPE_SET_TOOL) {
-            unsigned int new_extruder = (unsigned int)atoi(line_start + m_toolchange_prefix.size());
-            if (new_extruder != m_current_extruder) {
-                m_current_extruder = new_extruder;
-                change_extruder_set_fan(false); //BBS: will force to resume fan speed when filament change is finished
+            unsigned int new_extruder = 0;
+            auto ret = std::from_chars(line_start + m_toolchange_prefix.size(), line_end, new_extruder);
+            if (std::errc::invalid_argument != ret.ec) {
+                if (new_extruder != m_current_extruder) {
+                    m_current_extruder = new_extruder;
+                    change_extruder_set_fan(true);
+                }
             }
             new_gcode.append(line_start, line_end - line_start);
         } else if (line->type & CoolingLine::TYPE_OVERHANG_FAN_START) {
@@ -867,10 +854,6 @@ std::string CoolingBuffer::apply_layer_cooldown(
             }
             if (m_additional_fan_speed != -1 && m_config.auxiliary_fan.value)
                 new_gcode += GCodeWriter::set_additional_fan(m_additional_fan_speed);
-
-            //GalaxySlicer
-            if (m_additional_chamber_fan_speed != -1 && m_config.chamber_fan.value)
-                new_gcode += GCodeWriter::set_additional_chamber_fan(m_additional_chamber_fan_speed);
         }
         else if (line->type & CoolingLine::TYPE_EXTRUDE_END) {
             // Just remove this comment.

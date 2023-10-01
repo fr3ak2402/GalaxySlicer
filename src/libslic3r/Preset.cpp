@@ -791,8 +791,6 @@ static std::vector<std::string> s_Preset_filament_options {
     //BBS
     "filament_wipe_distance", "additional_cooling_fan_speed",
     "nozzle_temperature_range_low", "nozzle_temperature_range_high",
-    //GalaxySlicer
-    "additional_chamber_fan_speed",
     //SoftFever
     "enable_pressure_advance", "pressure_advance","chamber_temperature", "filament_shrink", "support_material_interface_fan_speed", "filament_notes" /*,"filament_seam_gap"*/,
     "filament_loading_speed", "filament_loading_speed_start", "filament_load_time",
@@ -821,8 +819,6 @@ static std::vector<std::string> s_Preset_printer_options {
     "scan_first_layer", "machine_load_filament_time", "machine_unload_filament_time","time_cost", "machine_pause_gcode", "template_custom_gcode",
     "nozzle_type", "nozzle_hrc","auxiliary_fan", "nozzle_volume","upward_compatible_machine", "z_hop_types", "retract_lift_enforce","support_chamber_temp_control","support_air_filtration","printer_structure",
     "best_object_pos",
-    //GalaxySlicer
-    "chamber_fan",
     //SoftFever
     "host_type", "print_host", "printhost_apikey",
     "print_host_webui",
@@ -3188,7 +3184,6 @@ namespace PresetUtils {
         if (pm != nullptr && !pm->bed_model.empty()) 
         {
             out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->bed_model;
-
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
             {
                 //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_models.
@@ -3210,11 +3205,9 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-
         if (pm != nullptr && !pm->bed_texture.empty()) 
         {
             out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->bed_texture;
-
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
             {
                 //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the stl_textures.
@@ -3236,11 +3229,9 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-        
         if (pm != nullptr && !pm->hotend_model.empty()) 
         {
             out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->hotend_model;
-
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
             {
                 //all third party printers (with profile version (2.x)) have a folder assets for the storage location of the hotend_models.

@@ -800,7 +800,7 @@ PRINT_CONFIG_CLASS_DEFINE(
     ((ConfigOptionFloatOrPercent,       overhang_4_4_speed))
     ((ConfigOptionBool,                 only_one_wall_top))
 
-    //SoftFever (OrcaSlicer)
+    //SoftFever
     ((ConfigOptionFloatOrPercent,       min_width_top_surface))
     ((ConfigOptionBool,                 only_one_wall_first_layer))
     ((ConfigOptionFloat,                print_flow_ratio))
@@ -928,8 +928,6 @@ PRINT_CONFIG_CLASS_DEFINE(
     ((ConfigOptionBool,                support_chamber_temp_control))
 
 
-    //GalaxySlicer
-    ((ConfigOptionBool,                chamber_fan))
     // SoftFever
     ((ConfigOptionBool,                use_firmware_retraction))
     ((ConfigOptionBool,                use_relative_e_distances))
@@ -1105,8 +1103,8 @@ PRINT_CONFIG_CLASS_DERIVED_DEFINE(
     ((ConfigOptionStrings,            filament_notes))
     ((ConfigOptionString,             notes))
     ((ConfigOptionString,             printer_notes))
-    //GalaxySlicer
-    ((ConfigOptionInts,               additional_chamber_fan_speed))
+
+
 
 )
 

@@ -249,7 +249,7 @@ std::string GCodeWriter::set_pressure_advance(double pa) const
     if (pa < 0)
         return gcode.str();
     if(m_is_bbl_printers){
-        //SoftFever (OrcaSlicer): set L1000 to use linear model
+        //SoftFever: set L1000 to use linear model
         gcode << "M900 K" <<std::setprecision(4)<< pa << " L1000 M10 ; Override pressure advance value\n";
     }
     else{
@@ -798,22 +798,6 @@ std::string GCodeWriter::set_additional_fan(unsigned int speed)
             gcode << " ; disable additional fan ";
         else
             gcode << " ; enable additional fan ";
-    }
-    gcode << "\n";
-    return gcode.str();
-}
-
-//GalaxySlicer: set additional chamber fan speed for BBS machine only
-std::string GCodeWriter::set_additional_chamber_fan(unsigned int speed)
-{
-    std::ostringstream gcode;
-
-    gcode << "M106 " << "P3 " << "S" << (int)(255.0 * speed / 100.0);
-    if (GCodeWriter::full_gcode_comment) {
-        if (speed == 0)
-            gcode << " ; disable additional chamber fan ";
-        else
-            gcode << " ; enable additional chamber fan ";
     }
     gcode << "\n";
     return gcode.str();

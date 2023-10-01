@@ -1356,12 +1356,10 @@ int GuideFrame::LoadProfileFamily(std::string strVendor, std::string strFilePath
 
             // wxString strCoverPath = wxString::Format("%s\\%s\\%s_cover.png", strFolder, strVendor, std::string(s1.mb_str()));
             std::string             cover_file = s1 + "_cover.png";
-
             //As of the profile version (2.x), the covers are stored in an separate assets folder.
             boost::filesystem::path cover_path = boost::filesystem::absolute(boost::filesystem::path(resources_dir()) / "/profiles/" / strVendor / "/assets/cover/" / cover_file).make_preferred();
             
             if (!boost::filesystem::exists(cover_path)) {
-
                 //Under the profile version (1.x) the covers are not yet managed in an assets folder
                 cover_path = (boost::filesystem::absolute(boost::filesystem::path(resources_dir()) / "/profiles/" / strVendor / cover_file)).make_preferred();
 
@@ -1371,7 +1369,6 @@ int GuideFrame::LoadProfileFamily(std::string strVendor, std::string strFilePath
                     cover_path = (boost::filesystem::absolute(boost::filesystem::path(resources_dir()) / "/web/image/printer/") / cover_file).make_preferred();
                 }
             }
-
             OneModel["cover"]                  = cover_path.string();
 
             OneModel["nozzle_selected"] = "";

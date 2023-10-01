@@ -181,8 +181,6 @@ bool Print::invalidate_state_by_config_options(const ConfigOptionResolver & /* n
         "nozzle_hrc",
         "required_nozzle_HRC",
         "upward_compatible_machine",
-        //GalaxySlicer
-        "additional_chamber_fan_speed",
         // SoftFever
         "chamber_temperature",
         "thumbnails",
@@ -2221,7 +2219,7 @@ std::vector<Point> Print::first_layer_wipe_tower_corners(bool check_wipe_tower_e
     return corners;
 }
 
-//SoftFever (OrcaSlicer)
+//SoftFever
 Vec2d Print::translate_to_print_space(const Vec2d &point) const {
     //const BoundingBoxf bed_bbox(config().printable_area.values);
     return Vec2d(point(0) - m_origin(0), point(1) - m_origin(1));

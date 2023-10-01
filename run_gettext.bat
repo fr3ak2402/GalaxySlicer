@@ -32,5 +32,4 @@ goto :eof
     )
     if not exist "./resources/i18n/%lang%" mkdir "./resources/i18n/%lang%"
     msgfmt --check-format -o "./resources/i18n/%lang%/GalaxySlicer.mo" "%file%"
-    if not exist "./resources/i18n/%lang%" mkdir "./resources/i18n/%lang%"
 goto :eof

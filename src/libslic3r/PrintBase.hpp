@@ -517,7 +517,7 @@ public:
     bool get_no_check_flag() const { return m_no_check; }
     void set_no_check_flag(bool no_check) { m_no_check = no_check; }
 
-    //SoftFever (OrcaSlicer) plate name
+    //SoftFever plate name
     std::string get_plate_name() const { return m_plate_name; }
     void set_plate_name(const std::string& name) { m_plate_name = name; }
 protected:

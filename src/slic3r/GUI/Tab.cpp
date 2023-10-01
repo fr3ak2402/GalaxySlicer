@@ -2625,7 +2625,7 @@ void TabFilament::add_filament_overrides_page()
                                         //BBS
                                         "filament_wipe_distance",
                                         "filament_retract_before_wipe",
-                                        //SoftFever (OrcaSlicer)
+                                        //SoftFever
                                         // "filament_seam_gap"
                                      })
         append_single_option_line(opt_key, extruder_idx);
@@ -2662,7 +2662,7 @@ void TabFilament::update_filament_overrides_page()
                                             //BBS
                                             "filament_wipe_distance",
                                             "filament_retract_before_wipe",
-                                            //SoftFever (OrcaSlicer)
+                                            //SoftFever
                                             // "filament_seam_gap"
                                         };
 
@@ -2839,10 +2839,6 @@ void TabFilament::build()
         line = {L("Complete print"), L("")};
         line.append_option(optgroup->get_option("complete_print_exhaust_fan_speed"));
         optgroup->append_line(line);
-        //GalaxySlicer: Chamber fan
-        optgroup = page->new_optgroup(L("Chamber cooling fan"), L"param_cooling_fan");
-        optgroup->append_single_option_line("additional_chamber_fan_speed");
-
         //BBS
         add_filament_overrides_page();
         const int gcode_field_height = 15; // 150
@@ -2995,11 +2991,6 @@ void TabFilament::toggle_options()
       toggle_option(
           "additional_cooling_fan_speed",
           m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("auxiliary_fan")->value);
-
-      //GalaxySlicer: Chamber fan
-      toggle_option(
-          "additional_chamber_fan_speed",
-          m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("chamber_fan")->value);
     }
     if (m_active_page->title() == L("Filament"))
     {
@@ -3173,9 +3164,6 @@ void TabPrinter::build_fff()
         optgroup->append_single_option_line("auxiliary_fan");
         optgroup->append_single_option_line("support_chamber_temp_control");
         optgroup->append_single_option_line("support_air_filtration");
-
-        //GalaxySlicer: Chamber fan
-        optgroup->append_single_option_line("chamber_fan");
 
     const int gcode_field_height = 15; // 150
     const int notes_field_height = 25; // 250

@@ -313,7 +313,7 @@ static std::vector<Vec2d> get_path_of_change_filament(const Print& print)
         // Shorten the retraction length by the amount already retracted before wipe.
         length *= (1. - gcodegen.writer().extruder()->retract_before_wipe());
 
-        //SoftFever (OrcaSlicer): allow 100% retract before wipe
+        //SoftFever: allow 100% retract before wipe
         if (length >= 0)
         {
             /*  Calculate how long we need to travel in order to consume the required
@@ -345,7 +345,7 @@ static std::vector<Vec2d> get_path_of_change_filament(const Print& print)
                 // add tag for processor
                 gcode += ";" + GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Wipe_Start) + "\n";
                 //BBS: don't need to enable cooling makers when this is the last wipe. Because no more cooling layer will clean this "_WIPE"
-                //SoftFever (OrcaSlicer): 
+                //Softfever: 
                 std::string cooling_mark = "";
                 if (gcodegen.enable_cooling_markers() && !is_last)
                     cooling_mark = /*gcodegen.config().role_based_wipe_speed ? ";_EXTERNAL_PERIMETER" : */";_WIPE";
@@ -2147,13 +2147,6 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
         file.write(m_writer.set_fan(0));
         //BBS: disable additional fan
         file.write(m_writer.set_additional_fan(0));
-    }
-
-    //GalaxySlicer: disable chamber fan
-    if (m_config.chamber_fan.value) {
-        file.write(m_writer.set_fan(0));
-        //BBS: disable additional fan
-        file.write(m_writer.set_additional_chamber_fan(0));
     }
 
     // Update output variables after the extruders were initialized.
