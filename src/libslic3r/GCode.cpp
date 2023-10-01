@@ -2516,11 +2516,6 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
     //BBS: make sure the additional fan is closed when end
     if(m_config.auxiliary_fan.value)
         file.write(m_writer.set_additional_fan(0));
-
-    //GalaxySlicer: make sure the additional chamber fan is closed when end
-    if (m_config.chamber_fan.value)
-        file.write(m_writer.set_additional_chamber_fan(0));
-
     if (is_bbl_printers) {
         //BBS: close spaghetti detector
         //Note: M981 is also used to tell xcam the last layer is finished, so we need always send it even if spaghetti option is disabled.
