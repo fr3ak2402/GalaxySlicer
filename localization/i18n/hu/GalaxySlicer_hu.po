@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 10:10+0200\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -838,16 +838,22 @@ msgstr "Edit Text"
 msgid "Load..."
 msgstr "Betöltés..."
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
+msgstr ""
+
+msgid "Voron Cube"
 msgstr ""
 
 msgid "3DBenchy"
 msgstr ""
 
 msgid "Autodesk FDM Test"
-msgstr ""
-
-msgid "Voron Cube"
 msgstr ""
 
 msgid "Cube"
@@ -2799,11 +2805,14 @@ msgstr "Öblített"
 msgid "Total"
 msgstr "Összesen"
 
-msgid "Total Time Estimation"
-msgstr "Total Time Estimation"
+msgid "Total Estimation"
+msgstr "Összesített becslés"
 
 msgid "Total time"
 msgstr "Teljes idő"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "legfeljebb"
@@ -2891,9 +2900,6 @@ msgstr "Nyomtató"
 
 msgid "Print settings"
 msgstr "Nyomtatási beállítások"
-
-msgid "Total Estimation"
-msgstr "Összesített becslés"
 
 msgid "Time Estimation"
 msgstr "Időbecslés"
@@ -3060,7 +3066,7 @@ msgstr "Térfogat:"
 msgid "Size:"
 msgstr "Méret:"
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3773,8 +3779,8 @@ msgid "Failed to parse model infomations."
 msgstr "Failed to parse model infomation"
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 
 #, c-format, boost-format
@@ -5815,6 +5821,9 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Kiegészítő tárgyhűtő ventilátor"
 
+msgid "Chamber cooling fan"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "Filament kezdő G-kód"
 
@@ -6733,6 +6742,11 @@ msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr ""
 "Nem sikerült kiszámítani %1% vonalszélességét. “%2%” értéke nem érhető el "
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "meghatározatlan hiba"
 
@@ -6897,6 +6911,24 @@ msgstr ""
 "A spirál (váza) mód nem működik, ha egy objektum egynél több anyagot "
 "tartalmaz."
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "A prime tower is not supported in “By object” print."
 
@@ -7032,6 +7064,19 @@ msgid ""
 msgstr ""
 "Zsugorítja a kezdőréteget a tárgyasztalon, hogy kompenzálja az elefántláb-"
 "hatást"
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "réteg"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7562,9 +7607,6 @@ msgstr ""
 "Kikapcsolja a hűtést a megadott első pár rétegnél. A hűtés kikapcsolása "
 "segítheti a jobb tárgyasztalhoz való tapadást"
 
-msgid "layers"
-msgstr "réteg"
-
 msgid "Don't support bridges"
 msgstr "Ne támassza alá az áthidalásokat"
 
@@ -7619,17 +7661,6 @@ msgid ""
 msgstr ""
 "A függőleges héjvastagság biztosítása érdekében szilárd kitöltést alkalmaz a "
 "lejtős felületek közelében."
-
-msgid "Internal bridge support thickness"
-msgstr "Belső áthidalások támaszának vastagsága"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Felső felület mintázata"
@@ -8419,6 +8450,11 @@ msgstr ""
 "ventilátorral"
 
 msgid ""
+"Enable this option if machine has chamber cooling fan. (For BBL printer it "
+"overwrites the Chamber fan values)"
+msgstr ""
+
+msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
 "estimation, and will only take into account G1 and G0 moves (arc fitting is "
@@ -8445,6 +8481,15 @@ msgid ""
 "This is useful for fans where a low PWM/power may be insufficient to get the "
 "fan started spinning from a stop, or to get the fan up to speed faster.\n"
 "Set to 0 to deactivate."
+msgstr ""
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
 msgstr ""
 
 msgid "G-code flavor"
@@ -8721,6 +8766,55 @@ msgstr ""
 "rétegmagasság korlátozására szolgál, ha az adaptív rétegmagasság "
 "engedélyezve van."
 
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
+
 msgid "Minimum speed for part cooling fan"
 msgstr "Tárgyhűtő ventilátor minimum fordulatszáma"
 
@@ -8732,6 +8826,11 @@ msgstr ""
 "A kiegészítő tárgyhűtő ventilátor fordulatszáma. A kiegészítő ventilátor "
 "ezen a fordulatszámon fog működni a nyomtatás során, kivéve az első néhány "
 "réteget, amelynél kikapcsolt hűtés van megadva"
+
+msgid ""
+"Speed of chamber cooling fan. Chamber fan will run at this speed during "
+"printing."
+msgstr ""
 
 msgid "Min"
 msgstr "Min"
@@ -10965,7 +11064,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -10980,7 +11080,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -11293,6 +11394,12 @@ msgstr ""
 "Szilárdság javítása\n"
 "Tudtad, hogy több fal vagy nagyobb kitöltés használatával javíthatod a "
 "modell szilárdságát?"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Total Time Estimation"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Belső áthidalások támaszának vastagsága"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 10:10+0200\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -834,16 +834,22 @@ msgstr "Modifica testo"
 msgid "Load..."
 msgstr "Caricamento..."
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
+msgstr ""
+
+msgid "Voron Cube"
 msgstr ""
 
 msgid "3DBenchy"
 msgstr ""
 
 msgid "Autodesk FDM Test"
-msgstr ""
-
-msgid "Voron Cube"
 msgstr ""
 
 msgid "Cube"
@@ -2794,11 +2800,14 @@ msgstr "Spurgo"
 msgid "Total"
 msgstr "Totale"
 
-msgid "Total Time Estimation"
-msgstr "Stima del tempo totale"
+msgid "Total Estimation"
+msgstr "Total estimation"
 
 msgid "Total time"
 msgstr "Tempo totale"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "fino a"
@@ -2886,9 +2895,6 @@ msgstr "Stampante"
 
 msgid "Print settings"
 msgstr "Impostazioni di stampa"
-
-msgid "Total Estimation"
-msgstr "Total estimation"
 
 msgid "Time Estimation"
 msgstr "Tempo stimato"
@@ -3055,7 +3061,7 @@ msgstr "Volume:"
 msgid "Size:"
 msgstr "Size:"
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3768,8 +3774,8 @@ msgid "Failed to parse model infomations."
 msgstr "Analisi delle informazioni sul modello non riuscita"
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 
 #, c-format, boost-format
@@ -5805,6 +5811,9 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Auxiliary part cooling fan"
 
+msgid "Chamber cooling fan"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "Filament start G-code"
 
@@ -6714,6 +6723,11 @@ msgstr "Multiple"
 msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr "Failed to calculate line width of %1%. Cannot get value of “%2%” "
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "errore non definito"
 
@@ -6874,6 +6888,24 @@ msgstr ""
 "Spiral (vase) mode does not work when an object contains more than one "
 "material."
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "A prime tower is not supported in “By object” print."
 
@@ -7009,6 +7041,19 @@ msgid ""
 msgstr ""
 "This shrinks the first layer on the build plate to compensate for elephant "
 "foot effect."
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "layer"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7540,9 +7585,6 @@ msgstr ""
 "Turn off all cooling fans for the first few layers. This can be used to "
 "improve bed adhesion."
 
-msgid "layers"
-msgstr "layer"
-
 msgid "Don't support bridges"
 msgstr "Non supportare i bridge"
 
@@ -7597,17 +7639,6 @@ msgstr ""
 "Aggiunge un riempimento solido in prossimità delle superfici inclinate per "
 "garantire lo spessore verticale del guscio (layers solidi superiori e "
 "inferiori)."
-
-msgid "Internal bridge support thickness"
-msgstr "Spessore supporto interno del ponte"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Top surface pattern"
@@ -8396,6 +8427,11 @@ msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr "Enable this option if the machine has an auxiliary part cooling fan"
 
 msgid ""
+"Enable this option if machine has chamber cooling fan. (For BBL printer it "
+"overwrites the Chamber fan values)"
+msgstr ""
+
+msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
 "estimation, and will only take into account G1 and G0 moves (arc fitting is "
@@ -8422,6 +8458,15 @@ msgid ""
 "This is useful for fans where a low PWM/power may be insufficient to get the "
 "fan started spinning from a stop, or to get the fan up to speed faster.\n"
 "Set to 0 to deactivate."
+msgstr ""
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
 msgstr ""
 
 msgid "G-code flavor"
@@ -8695,6 +8740,55 @@ msgstr ""
 "The highest printable layer height for the extruder: this is used to limit "
 "the maximum layer height when adaptive layer height is enabled."
 
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
+
 msgid "Minimum speed for part cooling fan"
 msgstr "Minimum speed for part cooling fan"
 
@@ -8706,6 +8800,11 @@ msgstr ""
 "This is the speed of auxiliary part cooling fan. The auxiliary fan will run "
 "at this speed during printing except for during the first several layers "
 "which may be set to have no part cooling."
+
+msgid ""
+"Speed of chamber cooling fan. Chamber fan will run at this speed during "
+"printing."
+msgstr ""
 
 msgid "Min"
 msgstr "Minimo"
@@ -10942,7 +11041,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -10957,7 +11057,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -11271,6 +11372,12 @@ msgstr ""
 "Migliorare la resistenza\n"
 "Sapevate che è possibile utilizzare un maggior numero di anelli a parete e "
 "una maggiore densità riempimento per migliorare la resistenza del modello?"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Stima del tempo totale"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Spessore supporto interno del ponte"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "

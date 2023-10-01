@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 10:10+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -850,17 +850,23 @@ msgstr "텍스트 편집"
 msgid "Load..."
 msgstr "불러오기..."
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
 msgstr "Orca Cube"
+
+msgid "Voron Cube"
+msgstr "Voron Cube"
 
 msgid "3DBenchy"
 msgstr "3DBenchy"
 
 msgid "Autodesk FDM Test"
 msgstr "Autodesk FDM Test"
-
-msgid "Voron Cube"
-msgstr "Voron Cube"
 
 msgid "Cube"
 msgstr "정육면체"
@@ -2761,11 +2767,14 @@ msgstr "쏟기(플러쉬)"
 msgid "Total"
 msgstr "합계"
 
-msgid "Total Time Estimation"
-msgstr "추정 시간 합계"
+msgid "Total Estimation"
+msgstr "추정치 합계"
 
 msgid "Total time"
 msgstr "시간 합계"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "까지"
@@ -2853,9 +2862,6 @@ msgstr "프린터"
 
 msgid "Print settings"
 msgstr "프린터 설정"
-
-msgid "Total Estimation"
-msgstr "추정치 합계"
 
 msgid "Time Estimation"
 msgstr "추정 시간"
@@ -3022,7 +3028,7 @@ msgstr "용량:"
 msgid "Size:"
 msgstr "크기:"
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3730,8 +3736,8 @@ msgid "Failed to parse model infomations."
 msgstr "모델 정보를 해석하지 못했습니다."
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 
 #, c-format, boost-format
@@ -5722,6 +5728,9 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "보조 출력물 냉각 팬"
 
+msgid "Chamber cooling fan"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "Filament start G-code"
 
@@ -6627,6 +6636,11 @@ msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr ""
 "%1%의 선 너비를 계산하지 못했습니다. \"%2%\"의 값을 가져올 수 없습니다 "
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "정의되지 않은 오류"
 
@@ -6782,6 +6796,24 @@ msgid ""
 msgstr ""
 "개체에 둘 이상의 재료가 포함된 경우 나선 꽃병 모드가 작동하지 않습니다."
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "프라임 타워는 \"개체별\" 출력에서 지원되지 않습니다."
 
@@ -6916,6 +6948,19 @@ msgid ""
 msgstr ""
 "코끼리 발 효과(Elephant foot effect)를 보정하기 위해 빌드 플레이트의 초기 레"
 "이어를 축소합니다"
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "레이어"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7447,9 +7492,6 @@ msgstr ""
 "빌드 플레이트의 접착력 향상을 위해 첫 레이어부터 특정 레이어까지의 모든 냉각 "
 "팬을 정지합니다"
 
-msgid "layers"
-msgstr "레이어"
-
 msgid "Don't support bridges"
 msgstr "다리 지지대 미생성"
 
@@ -7501,21 +7543,6 @@ msgid ""
 msgstr ""
 "경사진 표면 근처에 꽉찬 채우기를 추가하여 수직 쉘 두께를 보장합니다(상단+하"
 "단 꽉찬 레이어)"
-
-msgid "Internal bridge support thickness"
-msgstr "내부 다리 지지대 두께"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
-"활성화된 경우 내부 다리의 윤곽선 아래에 지지대 루프를 생성합니다. 이러한 지지"
-"대 루프는 내부 다리를 공중에서 압출하는 것을 방지하고, 특히 드문 채우기 밀도"
-"가 낮을 때 상단 표면 품질을 향상시킬 수 있습니다. 이 값은 지지대 루프의 두께"
-"를 결정하며 0은 이 기능을 사용하지 않음을 의미합니다"
 
 msgid "Top surface pattern"
 msgstr "상단 표면 패턴"
@@ -8327,6 +8354,11 @@ msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr "기계에 보조 출력물 냉각 팬이 있는 경우 이 옵션 사용"
 
 msgid ""
+"Enable this option if machine has chamber cooling fan. (For BBL printer it "
+"overwrites the Chamber fan values)"
+msgstr ""
+
+msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
 "estimation, and will only take into account G1 and G0 moves (arc fitting is "
@@ -8366,6 +8398,15 @@ msgstr ""
 "이 기능은 낮은 PWM/전력으로는 팬이 정지 상태에서 회전을 시작하거나 팬의 속도"
 "를 빠르게 향상시키기에 부족할 수 있는 팬에게 유용합니다.\n"
 "비활성화하려면 0으로 설정합니다."
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
+msgstr ""
 
 msgid "G-code flavor"
 msgstr "G코드 호환(Flavor)"
@@ -8644,6 +8685,55 @@ msgstr ""
 "압출기의 출력 가능한 최대 레이어 높이입니다. 사용된 값은 적응형 레이어 높이"
 "를 활성화할 때 최대 레이어 높이를 제한합니다"
 
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
+
 msgid "Minimum speed for part cooling fan"
 msgstr "출력물 냉각 팬의 최소 속도"
 
@@ -8654,6 +8744,11 @@ msgid ""
 msgstr ""
 "보조 출력 냉각 팬의 속도입니다. 냉각 중지 레이어로 정의된 처음 몇 개의 레이어"
 "를 제외하고 출력 중에 보조 팬이 이 속도로 작동됩니다"
+
+msgid ""
+"Speed of chamber cooling fan. Chamber fan will run at this speed during "
+"printing."
+msgstr ""
 
 msgid "Min"
 msgstr "최소"
@@ -10884,12 +10979,10 @@ msgstr "단계: "
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
-"유효한 값을 입력하십시오:\n"
-"시작 > 0 단계 >= 0\n"
-"끝 > 시작 + 단계)"
 
 msgid "VFA test"
 msgstr "VFA 테스트(VFA test)"
@@ -10902,12 +10995,10 @@ msgstr "종료 속도: "
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
-"유효한 값을 입력하십시오:\n"
-"시작 > 10 단계 >= 0\n"
-"끝 > 시작 + 단계)"
 
 msgid "Start retraction length: "
 msgstr "퇴출 시작 길이: "
@@ -11229,6 +11320,42 @@ msgstr ""
 "강도 향상\n"
 "모델의 강도를 개선하기 위해 더 많은 벽 루프와 더 높은 드문 채우기 밀도를 사용"
 "할 수 있다는 것을 알고 있습니까?"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "추정 시간 합계"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "내부 다리 지지대 두께"
+
+#~ msgid ""
+#~ "If enabled, support loops will be generated under the contours of "
+#~ "internal bridges.These support loops could prevent internal bridges from "
+#~ "extruding over the air and improve the top surface quality, especially "
+#~ "when the sparse infill density is low.This value determines the thickness "
+#~ "of the support loops. 0 means disable this feature"
+#~ msgstr ""
+#~ "활성화된 경우 내부 다리의 윤곽선 아래에 지지대 루프를 생성합니다. 이러한 "
+#~ "지지대 루프는 내부 다리를 공중에서 압출하는 것을 방지하고, 특히 드문 채우"
+#~ "기 밀도가 낮을 때 상단 표면 품질을 향상시킬 수 있습니다. 이 값은 지지대 루"
+#~ "프의 두께를 결정하며 0은 이 기능을 사용하지 않음을 의미합니다"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 0 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "유효한 값을 입력하십시오:\n"
+#~ "시작 > 0 단계 >= 0\n"
+#~ "끝 > 시작 + 단계)"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 10 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "유효한 값을 입력하십시오:\n"
+#~ "시작 > 10 단계 >= 0\n"
+#~ "끝 > 시작 + 단계)"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "

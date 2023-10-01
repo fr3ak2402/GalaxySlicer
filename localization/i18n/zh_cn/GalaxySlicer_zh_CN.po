@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 10:10+0200\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -831,17 +831,23 @@ msgstr "编辑文字"
 msgid "Load..."
 msgstr "加载..."
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
 msgstr "Orca逆方块"
+
+msgid "Voron Cube"
+msgstr "Voron方块"
 
 msgid "3DBenchy"
 msgstr "小船"
 
 msgid "Autodesk FDM Test"
 msgstr "欧特克FDM测试"
-
-msgid "Voron Cube"
-msgstr "Voron方块"
 
 msgid "Cube"
 msgstr "立方体"
@@ -2689,11 +2695,14 @@ msgstr "冲刷"
 msgid "Total"
 msgstr "总计"
 
-msgid "Total Time Estimation"
-msgstr "总时间预估"
+msgid "Total Estimation"
+msgstr "总预估"
 
 msgid "Total time"
 msgstr "总时间"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "达到"
@@ -2781,9 +2790,6 @@ msgstr "打印机"
 
 msgid "Print settings"
 msgstr "打印设置"
-
-msgid "Total Estimation"
-msgstr "总预估"
 
 msgid "Time Estimation"
 msgstr "时间预估"
@@ -2951,7 +2957,7 @@ msgstr "体积："
 msgid "Size:"
 msgstr "尺寸："
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3657,8 +3663,8 @@ msgid "Failed to parse model infomations."
 msgstr "解析模型信息失败。"
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 ".gcode.3mf文件中不包含G-code数据。请使用Bambu Studio进行切片并导出新的."
 "gcode.3mf文件。"
@@ -5583,6 +5589,9 @@ msgstr "当预计的层打印时间比设置值要短时，部件冷却风扇转
 msgid "Auxiliary part cooling fan"
 msgstr "辅助部件冷却风扇"
 
+msgid "Chamber cooling fan"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "耗材丝起始G-code"
 
@@ -6461,6 +6470,11 @@ msgstr "多个"
 msgid "Failed to calculate line width of %1%. Can not get value of \"%2%\" "
 msgstr "计算 %1%的线宽失败。无法获得 \"%2%\" 的值"
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "未定义错误"
 
@@ -6607,6 +6621,24 @@ msgid ""
 "materials."
 msgstr "不支持在包含多个材料的打印中使用旋转花瓶模式。"
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "擦拭塔不支持在逐件打印模式下使用。"
 
@@ -6727,6 +6759,19 @@ msgid ""
 "Shrink the initial layer on build plate to compensate for elephant foot "
 "effect"
 msgstr "将首层收缩用于补偿象脚效应"
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "层"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7209,9 +7254,6 @@ msgid ""
 msgstr ""
 "对开始的一些层关闭所有的部件冷却风扇。通常关闭首层冷却用来获得更好的热床粘接"
 
-msgid "layers"
-msgstr "层"
-
 msgid "Don't support bridges"
 msgstr "不支撑桥接"
 
@@ -7260,20 +7302,6 @@ msgid ""
 "Add solid infill near sloping surfaces to guarantee the vertical shell "
 "thickness (top+bottom solid layers)"
 msgstr "在斜面表面附近添加实心填充，以保证垂直外壳厚度（顶部+底部实心层）"
-
-msgid "Internal bridge support thickness"
-msgstr "内部桥接支撑厚度"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
-"如果开启，逆戟鲸切片会沿着内部桥接的边沿在其下方生成支撑轮廓。这些支撑轮廓可"
-"以防止悬空地打印内部桥接并提高顶面质量，特别是在填充密度较低的情况下。这个设"
-"置用于调整支撑轮廓的厚度，0表示关闭此特性。"
 
 msgid "Top surface pattern"
 msgstr "顶面图案"
@@ -8024,6 +8052,11 @@ msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr "如果机器有辅助部件冷却风扇，勾选该选项"
 
 msgid ""
+"Enable this option if machine has chamber cooling fan. (For BBL printer it "
+"overwrites the Chamber fan values)"
+msgstr ""
+
+msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
 "estimation, and will only take into account G1 and G0 moves (arc fitting is "
@@ -8055,6 +8088,15 @@ msgid ""
 msgstr ""
 "让风扇满速运行指定时间以帮助风扇顺利启动\n"
 "设为0禁用此选项"
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
+msgstr ""
 
 msgid "G-code flavor"
 msgstr "G-code风格"
@@ -8315,6 +8357,55 @@ msgid ""
 "layer hight when enable adaptive layer height"
 msgstr "挤出头最大可打印的层高。用于限制开启自适应层高时的最大层高。"
 
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
+
 msgid "Minimum speed for part cooling fan"
 msgstr "部件冷却风扇的最小转速"
 
@@ -8325,6 +8416,11 @@ msgid ""
 msgstr ""
 "辅助部件冷却风扇的转速。辅助部件冷却风扇将一直运行在该速度，除了设置的无需冷"
 "却的前若干层"
+
+msgid ""
+"Speed of chamber cooling fan. Chamber fan will run at this speed during "
+"printing."
+msgstr ""
 
 msgid "Min"
 msgstr "最小"
@@ -10503,7 +10599,8 @@ msgstr "步距"
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -10518,7 +10615,8 @@ msgstr "结束速度"
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -10818,6 +10916,23 @@ msgid ""
 msgstr ""
 "提高强度\n"
 "你知道吗？你可以使用更多的墙层数和更高的疏散填充密度来提高模型的强度。"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "总时间预估"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "内部桥接支撑厚度"
+
+#~ msgid ""
+#~ "If enabled, support loops will be generated under the contours of "
+#~ "internal bridges.These support loops could prevent internal bridges from "
+#~ "extruding over the air and improve the top surface quality, especially "
+#~ "when the sparse infill density is low.This value determines the thickness "
+#~ "of the support loops. 0 means disable this feature"
+#~ msgstr ""
+#~ "如果开启，逆戟鲸切片会沿着内部桥接的边沿在其下方生成支撑轮廓。这些支撑轮廓"
+#~ "可以防止悬空地打印内部桥接并提高顶面质量，特别是在填充密度较低的情况下。这"
+#~ "个设置用于调整支撑轮廓的厚度，0表示关闭此特性。"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "

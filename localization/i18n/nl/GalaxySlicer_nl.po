@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-16 19:21+0200\n"
+"POT-Creation-Date: 2023-10-01 10:10+0200\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -842,16 +842,22 @@ msgstr "Edit Text"
 msgid "Load..."
 msgstr "Laden..."
 
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
+
 msgid "Orca Cube"
+msgstr ""
+
+msgid "Voron Cube"
 msgstr ""
 
 msgid "3DBenchy"
 msgstr ""
 
 msgid "Autodesk FDM Test"
-msgstr ""
-
-msgid "Voron Cube"
 msgstr ""
 
 msgid "Cube"
@@ -2824,11 +2830,14 @@ msgstr "Flushed"
 msgid "Total"
 msgstr "Totaal"
 
-msgid "Total Time Estimation"
-msgstr "Total Time Estimation"
+msgid "Total Estimation"
+msgstr "Schatting totaal"
 
 msgid "Total time"
 msgstr "Totale tijd"
+
+msgid "Total cost"
+msgstr ""
 
 msgid "up to"
 msgstr "tot"
@@ -2916,9 +2925,6 @@ msgstr "Printer"
 
 msgid "Print settings"
 msgstr "Print instellingen"
-
-msgid "Total Estimation"
-msgstr "Schatting totaal"
 
 msgid "Time Estimation"
 msgstr "Geschatte duur"
@@ -3085,7 +3091,7 @@ msgstr "Volume:"
 msgid "Size:"
 msgstr "Maat:"
 
-#, c-format, boost-format
+#, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -3797,8 +3803,8 @@ msgid "Failed to parse model infomations."
 msgstr "Failed to parse model infomation"
 
 msgid ""
-"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
-"and export a new .gcode.3mf file."
+"The .gcode.3mf file contains no G-code data.Please slice it with "
+"GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 
 #, c-format, boost-format
@@ -5878,6 +5884,9 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Extra koel ventilator"
 
+msgid "Chamber cooling fan"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "Filament start G-code"
 
@@ -6806,6 +6815,11 @@ msgstr ""
 "Kan de lijndikte van %1% niet berekenen omdat de waarde van \"%2%\" niet "
 "opgehaald kan worden"
 
+msgid ""
+"Invalid spacing supplied to Flow::with_spacing(), check your layer height "
+"and extrusion width"
+msgstr ""
+
 msgid "undefined error"
 msgstr "Onbekende fout"
 
@@ -6969,6 +6983,24 @@ msgid ""
 msgstr ""
 "Spiraal (vaas) modus werkt niet als een object meer dan 1 filament bevalt."
 
+#, boost-format
+msgid "The object %1% exceeds the maximum build volume height."
+msgstr ""
+
+#, boost-format
+msgid ""
+"While the object %1% itself fits the build volume, its last layer exceeds "
+"the maximum build volume height."
+msgstr ""
+
+msgid ""
+"You might want to reduce the size of your model or change current print "
+"settings and retry."
+msgstr ""
+
+msgid "Variable layer height is not supported with Organic supports."
+msgstr ""
+
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "Een prime-toren wordt niet ondersteund bij het \"per object\" printen."
 
@@ -7107,6 +7139,19 @@ msgid ""
 msgstr ""
 "Hierdoor krimpt de eerste laag op de bouwplaat om het \"elephant foot\" "
 "effect te compenseren."
+
+msgid "Elephant foot compensation layers"
+msgstr ""
+
+msgid ""
+"The number of layers on which the elephant foot compensation will be active. "
+"The first layer will be shrunk by the elephant foot compensation value, then "
+"the next layers will be linearly shrunk less, up to the layer indicated by "
+"this value."
+msgstr ""
+
+msgid "layers"
+msgstr "Lagen"
 
 msgid ""
 "Slicing height for each layer. Smaller layer height means more accurate and "
@@ -7643,9 +7688,6 @@ msgstr ""
 "de koel ventilator voor de eerste laag  uit te schakelen om een betere "
 "hechting met het printbed te krijgen"
 
-msgid "layers"
-msgstr "Lagen"
-
 msgid "Don't support bridges"
 msgstr "Geen support bij bruggen toepassen"
 
@@ -7701,17 +7743,6 @@ msgid ""
 msgstr ""
 "Voeg dichte vulling toe in de buurt van hellende oppervlakken om de "
 "verticale schaaldikte te garanderen (boven+onder vaste lagen)."
-
-msgid "Internal bridge support thickness"
-msgstr "Dikte interne brugondersteuning"
-
-msgid ""
-"If enabled, support loops will be generated under the contours of internal "
-"bridges.These support loops could prevent internal bridges from extruding "
-"over the air and improve the top surface quality, especially when the sparse "
-"infill density is low.This value determines the thickness of the support "
-"loops. 0 means disable this feature"
-msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Patroon bovenvlak"
@@ -8510,6 +8541,11 @@ msgstr ""
 "Schakel deze optie in als de machine een ventilator voor de enclosure heeft"
 
 msgid ""
+"Enable this option if machine has chamber cooling fan. (For BBL printer it "
+"overwrites the Chamber fan values)"
+msgstr ""
+
+msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
 "estimation, and will only take into account G1 and G0 moves (arc fitting is "
@@ -8536,6 +8572,15 @@ msgid ""
 "This is useful for fans where a low PWM/power may be insufficient to get the "
 "fan started spinning from a stop, or to get the fan up to speed faster.\n"
 "Set to 0 to deactivate."
+msgstr ""
+
+msgid "Time cost"
+msgstr ""
+
+msgid "The printer cost per hour"
+msgstr ""
+
+msgid "money/h"
 msgstr ""
 
 msgid "G-code flavor"
@@ -8814,6 +8859,55 @@ msgstr ""
 "De hoogste printbare laaghoogte voor de extruder: dit wordt gebruikt om de "
 "maximale laaghoogte te beperken wanneer adaptieve laaghoogte is ingeschakeld."
 
+msgid "Extrusion rate smoothing"
+msgstr ""
+
+msgid ""
+"This parameter smooths out sudden extrusion rate changes that happen when "
+"the printer transitions from printing a high flow (high speed/larger width) "
+"extrusion to a lower flow (lower speed/smaller width) extrusion and vice "
+"versa.\n"
+"\n"
+"It defines the maximum rate by which the extruded volumetric flow in mm3/sec "
+"can change over time. Higher values mean higher extrusion rate changes are "
+"allowed, resulting in faster speed transitions.\n"
+"\n"
+"A value of 0 disables the feature. \n"
+"\n"
+"For a high speed, high flow direct drive printer (like the Bambu lab or "
+"Voron) this value is usually not needed. However it can provide some "
+"marginal benefit in certain cases where feature speeds vary greatly. For "
+"example, when there are aggressive slowdowns due to overhangs. In these "
+"cases a high value of around 300-350mm3/s2 is recommended as this allows for "
+"just enough smoothing to assist pressure advance achieve a smoother flow "
+"transition.\n"
+"\n"
+"For slower printers without pressure advance, the value should be set much "
+"lower. A value of 10-15mm3/s2 is a good starting point for direct drive "
+"extruders and 5-10mm3/s2 for Bowden style. \n"
+"\n"
+"This feature is known as Pressure Equalizer in Prusa slicer.\n"
+"\n"
+"Note: this parameter disables arc fitting."
+msgstr ""
+
+msgid "mm³/s²"
+msgstr ""
+
+msgid "Smoothing segment length"
+msgstr ""
+
+msgid ""
+"A lower value results in smoother extrusion rate transitions. However, this "
+"results in a significantly larger gcode file and more instructions for the "
+"printer to process. \n"
+"\n"
+"Default value of 3 works well for most cases. If your printer is stuttering, "
+"increase this value to reduce the number of adjustments made\n"
+"\n"
+"Allowed values: 1-5"
+msgstr ""
+
 msgid "Minimum speed for part cooling fan"
 msgstr "Minimale snelheid voor de printkop ventilator"
 
@@ -8825,6 +8919,11 @@ msgstr ""
 "Snelheid van de auxiliary part ventilator. De auxiliary ventilator draait op "
 "deze snelheid tijdens het afdrukken, behalve de eerste paar lagen, die "
 "worden gedefinieerd door geen koellagen"
+
+msgid ""
+"Speed of chamber cooling fan. Chamber fan will run at this speed during "
+"printing."
+msgstr ""
 
 msgid "Min"
 msgstr "Minimaal"
@@ -11077,7 +11176,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 0 step >= 0\n"
+"start > 0 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -11092,7 +11192,8 @@ msgstr ""
 
 msgid ""
 "Please input valid values:\n"
-"start > 10 step >= 0\n"
+"start > 10 \n"
+"step >= 0\n"
 "end > start + step)"
 msgstr ""
 
@@ -11405,6 +11506,12 @@ msgstr ""
 "Stekte verbeteren\n"
 "Wist je dat je meer wandlussen en een hogere dunne invuldichtheid kunt "
 "gebruiken om de sterkte van het model te verbeteren?"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Total Time Estimation"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Dikte interne brugondersteuning"
 
 #~ msgid ""
 #~ "Style and shape of the support. For normal support, projecting the "
