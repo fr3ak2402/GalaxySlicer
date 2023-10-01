@@ -145,6 +145,4 @@ src/slic3r/GUI/Gizmos/GLGizmoMeshBoolean.cpp
 src/slic3r/GUI/PrintHostDialogs.cpp
 src/slic3r/GUI/calib_dlg.cpp
 src/slic3r/GUI/PhysicalPrinterDialog.cpp
-src/libslic3r/Format/ModeliO.hpp
-src/libslic3r/Format/ModeliO.mm 
 src/slic3r/Utils/CalibUtils.cpp

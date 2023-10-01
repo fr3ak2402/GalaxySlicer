@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 10:10+0200\n"
+"POT-Creation-Date: 2023-10-01 17:20+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -1510,6 +1510,9 @@ msgstr "연결 중..."
 msgid "?"
 msgstr "?"
 
+msgid "/"
+msgstr ""
+
 msgid "Empty"
 msgstr "비어 있음"
 
@@ -1521,12 +1524,6 @@ msgstr ""
 
 msgid "AMS not connected"
 msgstr "AMS가 연결되지 않음"
-
-msgid "Cali"
-msgstr "교정"
-
-msgid "Calibration of extrusion"
-msgstr "압출 교정"
 
 msgid "Load Filament"
 msgstr "필라멘트 넣기"
@@ -1558,6 +1555,9 @@ msgstr "다시 교정"
 msgid "Cancel calibration"
 msgstr "교정 취소"
 
+msgid "Idling..."
+msgstr ""
+
 msgid "Heat the nozzle"
 msgstr "노즐 가열"
 
@@ -1573,8 +1573,14 @@ msgstr "새로운 필라멘트를 압출기에 밀어 넣습니다"
 msgid "Purge old filament"
 msgstr "오래된 필라멘트 제거"
 
-msgid "Push new filament into the extruder"
-msgstr "새 필라멘트를 압출기에 밀어 넣으세요."
+msgid "Feed Filament"
+msgstr ""
+
+msgid "Confirm extruded"
+msgstr ""
+
+msgid "Check filament location"
+msgstr ""
 
 msgid "Grab new filament"
 msgstr "새 필라멘트 가져오기"
@@ -2392,32 +2398,19 @@ msgid ""
 "centigrade"
 msgstr "이 필라멘트 유형의 권장 노즐 온도는 [%d, %d]°C입니다"
 
-#, c-format, boost-format
-msgid ""
-"Bed temperature of other layer is lower than bed temperature of initial "
-"layer for more than %d degree centigrade.\n"
-"This may cause model broken free from build plate during printing"
-msgstr ""
-"다른 레이어의 베드 온도가 초기 레이어의 베드 온도보다 %d°C 이상 낮습니다.\n"
-"이로 인해 출력 중에 모델이 빌드 플레이트에서 탈출할 수 있습니다"
-
-msgid ""
-"Bed temperature is higher than vitrification temperature of this filament.\n"
-"This may cause nozzle blocked and printing failure\n"
-"Please keep the printer open during the printing process to ensure air "
-"circulation or reduce the temperature of the hot bed"
-msgstr ""
-"침대 온도가 이 필라멘트의 유리화 온도보다 높습니다.\n"
-"노즐이 막히고 출력 오류가 발생할 수 있습니다\n"
-"출력 과정 중에는 프린터를 열어두어 공기가 순환되도록 하거나 핫 베드의 온도를 "
-"낮추십시오"
-
 msgid ""
 "Too small max volumetric speed.\n"
 "Reset to 0.5"
 msgstr ""
 "최대 체적 속도가 너무 작습니다.\n"
 "0.5로 재설정"
+
+#, c-format, boost-format
+msgid ""
+"Current chamber temperature is higher than the material's safe temperature,"
+"it may result in material softening and clogging.The maximum safe "
+"temperature for the material is %d"
+msgstr ""
 
 msgid ""
 "Too small layer height.\n"
@@ -2475,6 +2468,9 @@ msgid ""
 msgstr ""
 "나선 모드는 벽 루프 1, 지지대 비활성화, 상단 셸 레이어 0, 드문 채우기 밀도 "
 "0, 시간 경과 유형 기존인 경우에만 작동합니다."
+
+msgid " But machines with I3 structure will not generate timelapse videos."
+msgstr ""
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2603,6 +2599,36 @@ msgstr "노즐 온도 오작동으로 일시 정지됨"
 msgid "Paused due to heat bed temperature malfunction"
 msgstr "히트 베드 온도 오작동으로 일시 정지됨"
 
+msgid "Filament unloading"
+msgstr ""
+
+msgid "Skip step pause"
+msgstr ""
+
+msgid "Filament loading"
+msgstr ""
+
+msgid "Motor noise calibration"
+msgstr ""
+
+msgid "Paused due to AMS lost"
+msgstr ""
+
+msgid "Paused due to low speed of the heat break fan"
+msgstr ""
+
+msgid "Paused due to chamber temperature control error"
+msgstr ""
+
+msgid "Cooling chamber"
+msgstr ""
+
+msgid "Paused by the Gcode inserted by user"
+msgstr ""
+
+msgid "Motor noise showoff"
+msgstr ""
+
 msgid "MC"
 msgstr "MC"
 
@@ -2638,6 +2664,24 @@ msgstr "확인에 실패했습니다."
 
 msgid "Update failed."
 msgstr "업데이트에 실패했습니다."
+
+msgid ""
+"The current chamber temperature or the target chamber temperature exceeds "
+"45℃.In order to avoid extruder clogging,low temperature filament(PLA/PETG/"
+"TPU) is not allowed to be loaded."
+msgstr ""
+
+msgid ""
+"Low temperature filament(PLA/PETG/TPU) is loaded in the extruder.In order to "
+"avoid extruder clogging,it is not allowed to set the chamber temperature "
+"above 45℃."
+msgstr ""
+
+msgid ""
+"When you set the chamber temperature below 40℃, the chamber temperature "
+"control will not be activated. And the target chamber temperature will "
+"automatically be set to 0℃."
+msgstr ""
 
 msgid "Failed to start printing job"
 msgstr "출력 작업을 시작하지 못했습니다"
@@ -2971,6 +3015,9 @@ msgstr "동일한 플레이트에 여러 재료 허용"
 msgid "Avoid extrusion calibration region"
 msgstr "압출 교정 영역을 피하십시오"
 
+msgid "Align to Y axis"
+msgstr ""
+
 msgid "Add"
 msgstr "추가"
 
@@ -3066,8 +3113,11 @@ msgstr "마이크로 레이더 교정"
 msgid "Bed leveling"
 msgstr "베드 레벨링"
 
-msgid "Resonance frequency identification"
-msgstr "공진 주파수 식별"
+msgid "Vibration compensation"
+msgstr ""
+
+msgid "Motor noise cancellation"
+msgstr ""
 
 msgid "Calibration program"
 msgstr "교정 프로그램"
@@ -3085,6 +3135,9 @@ msgstr "교정 흐름"
 
 msgid "Start Calibration"
 msgstr "교정 시작"
+
+msgid "No step selected"
+msgstr ""
 
 msgid "Completed"
 msgstr "완료"
@@ -3161,9 +3214,6 @@ msgstr "아니오"
 
 msgid "will be closed before creating a new model. Do you want to continue?"
 msgstr "새 모델을 생성하기 전에 닫힙니다. 계속하시겠습니까?"
-
-msgid "Upload"
-msgstr "업로드"
 
 msgid "Slice plate"
 msgstr "슬라이스 플레이트"
@@ -3820,11 +3870,19 @@ msgstr "0"
 msgid "Layer: N/A"
 msgstr "레이어: N/A"
 
-msgid "Immediately score"
-msgstr "즉시 점수 매기기"
-
 msgid "Clear"
 msgstr "지우기"
+
+msgid "How do you like this printing file?"
+msgstr ""
+
+msgid ""
+"(The model has already been rated. Your rating will overwrite the previous "
+"rating.)"
+msgstr ""
+
+msgid "Rate"
+msgstr ""
 
 msgid "Camera"
 msgstr "카메라"
@@ -3891,12 +3949,6 @@ msgstr "클라우드 슬라이싱 대기열에는 %s개의 작업이 앞에 있�
 msgid "Layer: %s"
 msgstr "레이어: %s"
 
-msgid "Please give a score for your favorite Bambu Market model."
-msgstr "좋아하는 Bambu Market 모델에 점수를 매겨주세요."
-
-msgid "Score"
-msgstr "점수"
-
 #, c-format, boost-format
 msgid "Layer: %d/%d"
 msgstr "레이어: %d/%d"
@@ -3937,6 +3989,97 @@ msgstr "루더크러스"
 
 msgid "Can't start this without SD card."
 msgstr "SD 카드가 없으면 시작할 수 없습니다."
+
+msgid "Rate the Print Profile"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Rate this print"
+msgstr ""
+
+msgid "Add Photo"
+msgstr ""
+
+msgid "Delete Photo"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Please click on the star first."
+msgstr ""
+
+msgid "InFo"
+msgstr ""
+
+msgid "Get oss config failed."
+msgstr ""
+
+msgid "Upload Pictrues"
+msgstr ""
+
+msgid "Number of images successfully uploaded"
+msgstr ""
+
+msgid " upload failed"
+msgstr ""
+
+msgid " upload config prase failed\n"
+msgstr ""
+
+msgid " No corresponding storage bucket\n"
+msgstr ""
+
+msgid " can not be opened\n"
+msgstr ""
+
+msgid ""
+"The following issues occurred during the process of uploading images. Do you "
+"want to ignore them?\n"
+"\n"
+msgstr ""
+
+msgid "info"
+msgstr "정보"
+
+msgid "Synchronizing the printing results. Please retry a few seconds later."
+msgstr ""
+
+msgid "Upload failed\n"
+msgstr ""
+
+msgid "obtaining instance_id failed\n"
+msgstr ""
+
+msgid ""
+"Your comment result cannot be uploaded due to some reasons. As follows:\n"
+"\n"
+"  error code: "
+msgstr ""
+
+msgid "error message: "
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+"Would you like to redirect to the webpage for rating?"
+msgstr ""
+
+msgid ""
+"Some of your images failed to upload. Would you like to redirect to the "
+"webpage for rating?"
+msgstr ""
+
+msgid "You can select up to 16 images."
+msgstr ""
+
+msgid ""
+"At least one successful print record of this print profile is required \n"
+"to give a positive rating(4 or 5stars)."
+msgstr ""
 
 msgid "Status"
 msgstr "상태"
@@ -4061,6 +4204,9 @@ msgstr "경고:"
 msgid "Export successfully."
 msgstr "내보내기 성공."
 
+msgid "Model file downloaded."
+msgstr ""
+
 msgid "Serious warning:"
 msgstr "심각한 경고:"
 
@@ -4147,6 +4293,9 @@ msgstr "첫 레이어 검사"
 
 msgid "Auto-recovery from step loss"
 msgstr "손실 단계부터 자동 복구"
+
+msgid "Allow Prompt Sound"
+msgstr ""
 
 msgid "Global"
 msgstr "전역"
@@ -4302,6 +4451,11 @@ msgstr ""
 "필라멘트에 필요한 노즐 경도가 프린터의 기본 노즐 경도보다 높습니다. "
 "\"Hardened\" 노즐을 사용하거나 필라멘트를 교체하십시오. 그렇지 않으면 노즐이 "
 "마모되거나 손상됩니다."
+
+msgid ""
+"Enabling traditional timelapse photography may cause surface imperfections. "
+"It is recommended to change to smooth mode."
+msgstr ""
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4512,6 +4666,11 @@ msgstr "프로젝트 다운로드 중 ..."
 #, c-format, boost-format
 msgid "Project downloaded %d%%"
 msgstr "프로젝트 다운로드 %d%%"
+
+msgid ""
+"Importing to Bambu Studio failed. Please download the file and manually "
+"import it."
+msgstr ""
 
 msgid "The selected file"
 msgstr "선택한 파일"
@@ -4897,9 +5056,6 @@ msgstr "오류"
 msgid "warning"
 msgstr "경고"
 
-msgid "info"
-msgstr "정보"
-
 msgid "debug"
 msgstr "디버그"
 
@@ -5149,11 +5305,17 @@ msgstr "Bambu Cool Plate"
 msgid "PLA Plate"
 msgstr "PLA 플레이트"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Bamabu Engineering Plate"
+msgid "Bambu Engineering Plate"
+msgstr ""
 
-msgid "Bamabu High Temperature Plate"
-msgstr "Bamabu High Temperature Plate"
+msgid "Bambu Smooth PEI Plate"
+msgstr ""
+
+msgid "High temperature Plate"
+msgstr ""
+
+msgid "Bambu Textured PEI Plate"
+msgstr ""
 
 msgid "Send print job to"
 msgstr "출력 작업 보내기"
@@ -5167,8 +5329,8 @@ msgstr "베드 레벨링"
 msgid "Flow Dynamics Calibration"
 msgstr ""
 
-msgid "Can't connect to the printer"
-msgstr "프린터에 연결할 수 없습니다"
+msgid "Click here if you can't connect to the printer"
+msgstr ""
 
 msgid "send completed"
 msgstr "전송 완료"
@@ -5272,6 +5434,16 @@ msgstr "빈 플레이트에 대한 출력 작업을 보낼 수 없습니다"
 
 msgid "This printer does not support printing all plates"
 msgstr "이 프린터는 모든 플레이트 출력을 지원하지 않습니다"
+
+msgid ""
+"When enable spiral vase mode, machines with I3 structure will not generate "
+"timelapse videos."
+msgstr ""
+
+msgid ""
+"When print by object, machines with I3 structure will not generate timelapse "
+"videos."
+msgstr ""
 
 msgid "Errors"
 msgstr "오류"
@@ -5639,9 +5811,6 @@ msgstr "권장 노즐 온도"
 msgid "Recommended nozzle temperature range of this filament. 0 means no set"
 msgstr "이 필라멘트의 권장 노즐 온도 범위. 0은 설정하지 않음을 의미합니다"
 
-msgid "Recommended temperature range"
-msgstr "권장 온도 범위"
-
 msgid "Print temperature"
 msgstr "출력 온도"
 
@@ -5671,15 +5840,14 @@ msgstr ""
 "엔지니어링 플레이트가 설치 시 베드 온도. 값 0은 필라멘트가 엔지니어링 플레이"
 "트에 출력하는 것을 지원하지 않음을 의미합니다"
 
-msgid "High Temp Plate"
-msgstr "고온 플레이트"
+msgid "Smooth PEI Plate / High Temp Plate"
+msgstr ""
 
 msgid ""
-"Bed temperature when high temperature plate is installed. Value 0 means the "
-"filament does not support to print on the High Temp Plate"
+"Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
+"Value 0 means the filament does not support to print on the Smooth PEI Plate/"
+"High Temp Plate"
 msgstr ""
-"고온 플레이트 설치 시 베드 온도. 값 0은 필라멘트가 고온 플레이트에 출력하는 "
-"것을 지원하지 않음을 의미합니다"
 
 msgid "Textured PEI Plate"
 msgstr "텍스처 PEI 플레이트"
@@ -5728,7 +5896,13 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "보조 출력물 냉각 팬"
 
-msgid "Chamber cooling fan"
+msgid "Exhaust fan"
+msgstr ""
+
+msgid "During print"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Filament start G-code"
@@ -5781,6 +5955,9 @@ msgstr "Before layer change G-code"
 
 msgid "Layer change G-code"
 msgstr "Layer change G-code"
+
+msgid "Time lapse G-code"
+msgstr ""
 
 msgid "Change filament G-code"
 msgstr "Change filament G-code"
@@ -7482,6 +7659,23 @@ msgstr "기본 프로세스 프로필"
 msgid "Default process profile when switch to this machine profile"
 msgstr "이 장비 프로필로 전환할 때의 기본 프로세스 프로필"
 
+msgid "Activate air filtration"
+msgstr ""
+
+msgid "Activate for better air filtration"
+msgstr ""
+
+msgid "Fan speed"
+msgstr "팬 속도"
+
+msgid ""
+"Speed of exhuast fan during printing.This speed will overwrite the speed in "
+"filament custom gcode"
+msgstr ""
+
+msgid "Speed of exhuast fan after printing completes"
+msgstr ""
+
 msgid "No cooling for the first"
 msgstr "냉각 중지: 첫레이어~"
 
@@ -8137,8 +8331,13 @@ msgid "accel_to_decel"
 msgstr "가속/감속"
 
 #, c-format, boost-format
-msgid "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
-msgstr "Klipper의 max_accel_to_decel이 이 가속도 % o로 조정됩니다"
+msgid ""
+"Klipper's max_accel_to_decel will be adjusted to this %% of acceleration"
+msgstr ""
+
+#, c-format, boost-format
+msgid "%%"
+msgstr ""
 
 msgid "Jerk of outer walls"
 msgstr "외벽 저크"
@@ -8350,13 +8549,32 @@ msgstr ""
 msgid "HRC"
 msgstr "록웰 경도(HRC)"
 
+msgid "Printer structure"
+msgstr ""
+
+msgid "The physical arrangement and components of a printing device"
+msgstr ""
+
+msgid "CoreXY"
+msgstr ""
+
+msgid "I3"
+msgstr ""
+
+msgid "Hbot"
+msgstr ""
+
+msgid "Delta"
+msgstr ""
+
+msgid "Best object position"
+msgstr ""
+
+msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
+msgstr ""
+
 msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr "기계에 보조 출력물 냉각 팬이 있는 경우 이 옵션 사용"
-
-msgid ""
-"Enable this option if machine has chamber cooling fan. (For BBL printer it "
-"overwrites the Chamber fan values)"
-msgstr ""
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -8406,6 +8624,19 @@ msgid "The printer cost per hour"
 msgstr ""
 
 msgid "money/h"
+msgstr ""
+
+msgid "Support control chamber temperature"
+msgstr ""
+
+msgid ""
+"This option is enabled if machine support controlling chamber temperature"
+msgstr ""
+
+msgid "Support air filtration"
+msgstr ""
+
+msgid "Enable this if printer support air filtration"
 msgstr ""
 
 msgid "G-code flavor"
@@ -8665,9 +8896,6 @@ msgstr "이동 최대 가속도"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "팬 속도"
-
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
 "is the maximum speed limitation of part cooling fan"
@@ -8744,11 +8972,6 @@ msgid ""
 msgstr ""
 "보조 출력 냉각 팬의 속도입니다. 냉각 중지 레이어로 정의된 처음 몇 개의 레이어"
 "를 제외하고 출력 중에 보조 팬이 이 속도로 작동됩니다"
-
-msgid ""
-"Speed of chamber cooling fan. Chamber fan will run at this speed during "
-"printing."
-msgstr ""
 
 msgid "Min"
 msgstr "최소"
@@ -9025,6 +9248,22 @@ msgstr ""
 "퇴출 동작을 할 때마다 노즐을 약간 들어 올려 노즐과 출력물 사이의 간격을 만듭"
 "니다. 이동(트레블) 시 노즐이 출력물에 부딪히는 것을 방지합니다. 나선 라인"
 "(Spiral line)을 사용하여 Z를 올리면 실 발생을 방지할 수 있습니다"
+
+msgid "Z hop lower boundary"
+msgstr ""
+
+msgid ""
+"Z hop will only come into effect when Z is above this value and is below the "
+"parameter: \"Z hop upper boundary\""
+msgstr ""
+
+msgid "Z hop upper boundary"
+msgstr ""
+
+msgid ""
+"If this value is positive, Z hop will only come into effect when Z is above "
+"the parameter: \"Z hop lower boundary\" and is below this value"
+msgstr ""
 
 msgid "Z hop type"
 msgstr "Z 올리기 유형"
@@ -9690,23 +9929,18 @@ msgstr ""
 msgid "Chamber temperature"
 msgstr "챔버 온도"
 
-msgid "Target chamber temperature"
-msgstr "설정할 챔버 온도"
+msgid ""
+"Higher chamber temperature can help suppress or reduce warping and "
+"potentially lead to higher interlayer bonding strength for high temperature "
+"materials like ABS, ASA, PC, PA and so on.At the same time, the air "
+"filtration of ABS and ASA will get worse.While for PLA, PETG, TPU, PVA and "
+"other low temperature materials,the actual chamber temperature should not be "
+"high to avoid cloggings, so 0 which stands for turning off is highly "
+"recommended"
+msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one"
 msgstr "초기 레이어 이후의 노즐 온도"
-
-msgid "Bed temperature difference"
-msgstr "베드 온도차"
-
-msgid ""
-"Do not recommend bed temperature of other layer to be lower than initial "
-"layer for more than this threshold. Too low bed temperature of other layer "
-"may cause the model broken free from build plate"
-msgstr ""
-"이 임계값 이상으로 다른 레이어의 베드 온도를 초기 레이어보다 낮추는 것을 권장"
-"하지 않습니다. 다른 레이어의 베드 온도가 너무 낮으면 빌드 플레이트에서 모델"
-"이 깨질 수 있습니다"
 
 msgid "Detect thin wall"
 msgstr "얇은 벽 감지"
@@ -10113,6 +10347,12 @@ msgstr "기본 필라멘트 로드"
 msgid "Load first filament as default for those not loaded"
 msgstr "로드되지 않은 경우 기본값으로 첫 번째 필라멘트 로드"
 
+msgid "Minimum save"
+msgstr ""
+
+msgid "export 3mf with minimum size."
+msgstr ""
+
 msgid "mtcpp"
 msgstr "mtcpp"
 
@@ -10167,14 +10407,39 @@ msgstr "반복 횟수"
 msgid "Repetions count of the whole model"
 msgstr "전체 모델의 반복 횟수"
 
+msgid "Ensure on bed"
+msgstr ""
+
+msgid ""
+"Lift the object above the bed when it is partially below. Disabled by default"
+msgstr ""
+
 msgid "Convert Unit"
 msgstr "단위 변환"
 
 msgid "Convert the units of model"
 msgstr "모델의 단위를 변환"
 
-msgid "Orient the model"
-msgstr "모델 방향 설정"
+msgid "Orient Options"
+msgstr ""
+
+msgid "Orient options: 0-disable, 1-enable, others-auto"
+msgstr ""
+
+msgid "Rotation angle around the Z axis in degrees."
+msgstr ""
+
+msgid "Rotate around X"
+msgstr ""
+
+msgid "Rotation angle around the X axis in degrees."
+msgstr ""
+
+msgid "Rotate around Y"
+msgstr ""
+
+msgid "Rotation angle around the Y axis in degrees."
+msgstr ""
 
 msgid "Scale the model by a float factor"
 msgstr "부동 소수점 계수로 모델 크기 조정"
@@ -10232,6 +10497,12 @@ msgid ""
 msgstr ""
 "디버그 로깅 수준을 설정합니다. 0:치명적, 1:오류, 2:경고, 3:정보, 4:디버그, 5:"
 "추적\n"
+
+msgid "Load custom gcode"
+msgstr ""
+
+msgid "Load custom gcode from json"
+msgstr ""
 
 msgid "Error in zip archive"
 msgstr "Zip 아카이브 오류"
@@ -10429,6 +10700,15 @@ msgstr ""
 msgid "The name cannot exceed 40 characters."
 msgstr ""
 
+#, c-format, boost-format
+msgid ""
+"Please input valid values:\n"
+"Start value: >= %.1f\n"
+"End value: <= %.1f\n"
+"End value: > Start value\n"
+"Value step: >= %.3f)"
+msgstr ""
+
 msgid "The name cannot be empty."
 msgstr ""
 
@@ -10458,6 +10738,9 @@ msgstr ""
 msgid "Please select filament to calibrate."
 msgstr ""
 
+msgid "The input value size must be 3."
+msgstr ""
+
 msgid "Connecting to printer..."
 msgstr ""
 
@@ -10474,9 +10757,6 @@ msgid "Please select at least one filament for calibration"
 msgstr ""
 
 msgid "Flow rate calibration result has been saved to preset"
-msgstr ""
-
-msgid "The input value size must be 3."
 msgstr ""
 
 msgid "Max volumetric speed calibration result has been saved to preset"
@@ -10614,6 +10894,9 @@ msgstr ""
 msgid "Please find the best line on your plate"
 msgstr ""
 
+msgid "Please find the cornor with perfect degree of extrusion"
+msgstr ""
+
 msgid "Input Value"
 msgstr ""
 
@@ -10716,6 +10999,12 @@ msgstr ""
 msgid "Extra info"
 msgstr ""
 
+msgid "Pattern"
+msgstr ""
+
+msgid "Method"
+msgstr "방법"
+
 #, c-format, boost-format
 msgid "%s is not compatible with %s"
 msgstr ""
@@ -10724,6 +11013,21 @@ msgid "TPU is not supported for Flow Dynamics Auto-Calibration."
 msgstr ""
 
 msgid "Connecting to printer"
+msgstr ""
+
+msgid "From k Value"
+msgstr ""
+
+msgid "To k Value"
+msgstr ""
+
+msgid "Step value"
+msgstr ""
+
+msgid "0.5"
+msgstr ""
+
+msgid "0.005"
 msgstr ""
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
@@ -10838,6 +11142,9 @@ msgstr ""
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
 msgstr "업로드 파일 이름이 \"%s\"로 끝나지 않습니다. 계속하시겠습니까?"
 
+msgid "Upload"
+msgstr "업로드"
+
 msgid "Print host upload queue"
 msgstr "출력 호스트 업로드 대기열"
 
@@ -10898,9 +11205,6 @@ msgstr "PA Line"
 
 msgid "PA Pattern"
 msgstr "PA Pattern"
-
-msgid "Method"
-msgstr "방법"
 
 msgid "Start PA: "
 msgstr "시작 PA: "
@@ -11056,6 +11360,17 @@ msgstr ""
 
 msgid "Connection to printers connected via the print host failed."
 msgstr "출력 호스트를 통해 연결된 프린터에 연결하지 못했습니다."
+
+msgid "The start, end or step is not valid value."
+msgstr ""
+
+msgid ""
+"Unable to calibrate: maybe because the set calibration value range is too "
+"large, or the step is too small"
+msgstr ""
+
+msgid "Need select printer"
+msgstr ""
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
 msgid ""
@@ -11320,6 +11635,94 @@ msgstr ""
 "강도 향상\n"
 "모델의 강도를 개선하기 위해 더 많은 벽 루프와 더 높은 드문 채우기 밀도를 사용"
 "할 수 있다는 것을 알고 있습니까?"
+
+#~ msgid "Cali"
+#~ msgstr "교정"
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "압출 교정"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "새 필라멘트를 압출기에 밀어 넣으세요."
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "다른 레이어의 베드 온도가 초기 레이어의 베드 온도보다 %d°C 이상 낮습니"
+#~ "다.\n"
+#~ "이로 인해 출력 중에 모델이 빌드 플레이트에서 탈출할 수 있습니다"
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "침대 온도가 이 필라멘트의 유리화 온도보다 높습니다.\n"
+#~ "노즐이 막히고 출력 오류가 발생할 수 있습니다\n"
+#~ "출력 과정 중에는 프린터를 열어두어 공기가 순환되도록 하거나 핫 베드의 온도"
+#~ "를 낮추십시오"
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "공진 주파수 식별"
+
+#~ msgid "Immediately score"
+#~ msgstr "즉시 점수 매기기"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "좋아하는 Bambu Market 모델에 점수를 매겨주세요."
+
+#~ msgid "Score"
+#~ msgstr "점수"
+
+#~ msgid "Bamabu Engineering Plate"
+#~ msgstr "Bamabu Engineering Plate"
+
+#~ msgid "Bamabu High Temperature Plate"
+#~ msgstr "Bamabu High Temperature Plate"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "프린터에 연결할 수 없습니다"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "권장 온도 범위"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "고온 플레이트"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "고온 플레이트 설치 시 베드 온도. 값 0은 필라멘트가 고온 플레이트에 출력하"
+#~ "는 것을 지원하지 않음을 의미합니다"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+#~ msgstr "Klipper의 max_accel_to_decel이 이 가속도 % o로 조정됩니다"
+
+#~ msgid "Target chamber temperature"
+#~ msgstr "설정할 챔버 온도"
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "베드 온도차"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "이 임계값 이상으로 다른 레이어의 베드 온도를 초기 레이어보다 낮추는 것을 "
+#~ "권장하지 않습니다. 다른 레이어의 베드 온도가 너무 낮으면 빌드 플레이트에"
+#~ "서 모델이 깨질 수 있습니다"
+
+#~ msgid "Orient the model"
+#~ msgstr "모델 방향 설정"
 
 #~ msgid "Total Time Estimation"
 #~ msgstr "추정 시간 합계"

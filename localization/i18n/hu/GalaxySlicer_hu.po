@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 10:10+0200\n"
+"POT-Creation-Date: 2023-10-01 17:20+0200\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1518,6 +1518,9 @@ msgstr "Csatlakozás..."
 msgid "?"
 msgstr "?"
 
+msgid "/"
+msgstr ""
+
 msgid "Empty"
 msgstr "Üres"
 
@@ -1529,12 +1532,6 @@ msgstr ""
 
 msgid "AMS not connected"
 msgstr "Az AMS nincs csatlakoztatva"
-
-msgid "Cali"
-msgstr "Kali"
-
-msgid "Calibration of extrusion"
-msgstr "Extrudálás kalibrálása"
 
 msgid "Load Filament"
 msgstr "Filament betöltés"
@@ -1568,6 +1565,9 @@ msgstr "Kalibrálja újra"
 msgid "Cancel calibration"
 msgstr "Kalibrálás megszakítása"
 
+msgid "Idling..."
+msgstr ""
+
 msgid "Heat the nozzle"
 msgstr "Fűtsd fel a fúvókát"
 
@@ -1583,8 +1583,14 @@ msgstr "Új filament betöltése az extruderbe"
 msgid "Purge old filament"
 msgstr "Régi filament kiöblítése"
 
-msgid "Push new filament into the extruder"
-msgstr "Push new filament into the extruder"
+msgid "Feed Filament"
+msgstr ""
+
+msgid "Confirm extruded"
+msgstr ""
+
+msgid "Check filament location"
+msgstr ""
 
 msgid "Grab new filament"
 msgstr "Grab new filament"
@@ -2426,33 +2432,19 @@ msgid ""
 msgstr ""
 "Az ajánlott fúvóka hőmérséklet ehhez a filament típushoz [%d, %d] Celsius-fok"
 
-#, c-format, boost-format
-msgid ""
-"Bed temperature of other layer is lower than bed temperature of initial "
-"layer for more than %d degree centigrade.\n"
-"This may cause model broken free from build plate during printing"
-msgstr ""
-"A többi réteg asztalhőmérséklete több mint %d Celsius-fokkal alacsonyabb, "
-"mint a kezdőréteg hőmérséklete.\n"
-"Ez azt okozhatja, hogy a modell a nyomtatás során leválik a tárgyasztalról"
-
-msgid ""
-"Bed temperature is higher than vitrification temperature of this filament.\n"
-"This may cause nozzle blocked and printing failure\n"
-"Please keep the printer open during the printing process to ensure air "
-"circulation or reduce the temperature of the hot bed"
-msgstr ""
-"Az asztalhőmérséklet magasabb, mint a filament üvegesedési hőmérséklete.\n"
-"Ez a fúvóka eltömődését és nyomtatási hibákat okozhat.\n"
-"Kérjük, hogy a nyomtatás során tartsd nyitva a nyomtatót, vagy csökkentsd az "
-"asztalhőmérsékletet."
-
 msgid ""
 "Too small max volumetric speed.\n"
 "Reset to 0.5"
 msgstr ""
 "Túl alacsony max. volumetrikus sebesség.\n"
 "Az értéke 0,5-re állt vissza"
+
+#, c-format, boost-format
+msgid ""
+"Current chamber temperature is higher than the material's safe temperature,"
+"it may result in material softening and clogging.The maximum safe "
+"temperature for the material is %d"
+msgstr ""
 
 msgid ""
 "Too small layer height.\n"
@@ -2511,6 +2503,9 @@ msgid ""
 msgstr ""
 "Spiral mode only works when wall loops is 1, support is disabled, top shell "
 "layers is 0, sparse infill density is 0 and timelapse type is traditional."
+
+msgid " But machines with I3 structure will not generate timelapse videos."
+msgstr ""
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2641,6 +2636,36 @@ msgstr "Szüneteltetve a fúvóka hőmérsékletének rendellenessége miatt"
 msgid "Paused due to heat bed temperature malfunction"
 msgstr "Szüneteltetve a tárgyasztal hőmérsékletének rendellenessége miatt"
 
+msgid "Filament unloading"
+msgstr ""
+
+msgid "Skip step pause"
+msgstr ""
+
+msgid "Filament loading"
+msgstr ""
+
+msgid "Motor noise calibration"
+msgstr ""
+
+msgid "Paused due to AMS lost"
+msgstr ""
+
+msgid "Paused due to low speed of the heat break fan"
+msgstr ""
+
+msgid "Paused due to chamber temperature control error"
+msgstr ""
+
+msgid "Cooling chamber"
+msgstr ""
+
+msgid "Paused by the Gcode inserted by user"
+msgstr ""
+
+msgid "Motor noise showoff"
+msgstr ""
+
 msgid "MC"
 msgstr "MC"
 
@@ -2676,6 +2701,24 @@ msgstr "Sikertelen ellenőrzés."
 
 msgid "Update failed."
 msgstr "A frissítés sikertelen."
+
+msgid ""
+"The current chamber temperature or the target chamber temperature exceeds "
+"45℃.In order to avoid extruder clogging,low temperature filament(PLA/PETG/"
+"TPU) is not allowed to be loaded."
+msgstr ""
+
+msgid ""
+"Low temperature filament(PLA/PETG/TPU) is loaded in the extruder.In order to "
+"avoid extruder clogging,it is not allowed to set the chamber temperature "
+"above 45℃."
+msgstr ""
+
+msgid ""
+"When you set the chamber temperature below 40℃, the chamber temperature "
+"control will not be activated. And the target chamber temperature will "
+"automatically be set to 0℃."
+msgstr ""
 
 msgid "Failed to start printing job"
 msgstr "Nem sikerült elindítani a nyomtatási feladatot"
@@ -3009,6 +3052,9 @@ msgstr "Többféle anyag használata egy tálcán"
 msgid "Avoid extrusion calibration region"
 msgstr "Extrudáláskalibráció környékének elkerülése"
 
+msgid "Align to Y axis"
+msgstr ""
+
 msgid "Add"
 msgstr "Hozzáadás"
 
@@ -3103,8 +3149,11 @@ msgstr "Micro Lidar kalibrálás"
 msgid "Bed leveling"
 msgstr "Asztalszintezés"
 
-msgid "Resonance frequency identification"
-msgstr "Rezonanciafrekvencia meghatározása"
+msgid "Vibration compensation"
+msgstr ""
+
+msgid "Motor noise cancellation"
+msgstr ""
 
 msgid "Calibration program"
 msgstr "Kalibrációs program"
@@ -3123,6 +3172,9 @@ msgstr "Kalibrációs anyagáramlás"
 
 msgid "Start Calibration"
 msgstr "Kalibrálás"
+
+msgid "No step selected"
+msgstr ""
 
 msgid "Completed"
 msgstr "Befejezve"
@@ -3199,9 +3251,6 @@ msgstr "Nem"
 
 msgid "will be closed before creating a new model. Do you want to continue?"
 msgstr "will be closed before creating a new model. Do you want to continue?"
-
-msgid "Upload"
-msgstr ""
 
 msgid "Slice plate"
 msgstr "Tálca szeletelése"
@@ -3863,11 +3912,19 @@ msgstr "0"
 msgid "Layer: N/A"
 msgstr "Layer: N/A"
 
-msgid "Immediately score"
-msgstr "Immediately score"
-
 msgid "Clear"
 msgstr "Törlés"
+
+msgid "How do you like this printing file?"
+msgstr ""
+
+msgid ""
+"(The model has already been rated. Your rating will overwrite the previous "
+"rating.)"
+msgstr ""
+
+msgid "Rate"
+msgstr ""
 
 msgid "Camera"
 msgstr "Kamera"
@@ -3934,12 +3991,6 @@ msgstr "In Cloud Slicing Queue, there are %s tasks ahead of you."
 msgid "Layer: %s"
 msgstr "Layer: %s"
 
-msgid "Please give a score for your favorite Bambu Market model."
-msgstr "Please give a score for your favorite Bambu Market model."
-
-msgid "Score"
-msgstr "Score"
-
 #, c-format, boost-format
 msgid "Layer: %d/%d"
 msgstr "Layer: %d/%d"
@@ -3980,6 +4031,97 @@ msgstr "Őrült"
 
 msgid "Can't start this without SD card."
 msgstr "MicroSD kártya nélkül nem indítható."
+
+msgid "Rate the Print Profile"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Rate this print"
+msgstr ""
+
+msgid "Add Photo"
+msgstr ""
+
+msgid "Delete Photo"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Please click on the star first."
+msgstr ""
+
+msgid "InFo"
+msgstr ""
+
+msgid "Get oss config failed."
+msgstr ""
+
+msgid "Upload Pictrues"
+msgstr ""
+
+msgid "Number of images successfully uploaded"
+msgstr ""
+
+msgid " upload failed"
+msgstr ""
+
+msgid " upload config prase failed\n"
+msgstr ""
+
+msgid " No corresponding storage bucket\n"
+msgstr ""
+
+msgid " can not be opened\n"
+msgstr ""
+
+msgid ""
+"The following issues occurred during the process of uploading images. Do you "
+"want to ignore them?\n"
+"\n"
+msgstr ""
+
+msgid "info"
+msgstr "infó"
+
+msgid "Synchronizing the printing results. Please retry a few seconds later."
+msgstr ""
+
+msgid "Upload failed\n"
+msgstr ""
+
+msgid "obtaining instance_id failed\n"
+msgstr ""
+
+msgid ""
+"Your comment result cannot be uploaded due to some reasons. As follows:\n"
+"\n"
+"  error code: "
+msgstr ""
+
+msgid "error message: "
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+"Would you like to redirect to the webpage for rating?"
+msgstr ""
+
+msgid ""
+"Some of your images failed to upload. Would you like to redirect to the "
+"webpage for rating?"
+msgstr ""
+
+msgid "You can select up to 16 images."
+msgstr ""
+
+msgid ""
+"At least one successful print record of this print profile is required \n"
+"to give a positive rating(4 or 5stars)."
+msgstr ""
 
 msgid "Status"
 msgstr "Állapot"
@@ -4107,6 +4249,9 @@ msgstr "Figyelem:"
 msgid "Export successfully."
 msgstr "Sikeresen exportálva"
 
+msgid "Model file downloaded."
+msgstr ""
+
 msgid "Serious warning:"
 msgstr ""
 
@@ -4194,6 +4339,9 @@ msgstr "Kezdőréteg ellenőrzése"
 
 msgid "Auto-recovery from step loss"
 msgstr "Automatikus helyreállítás lépésvesztésből"
+
+msgid "Allow Prompt Sound"
+msgstr ""
 
 msgid "Global"
 msgstr "Globális"
@@ -4347,6 +4495,11 @@ msgstr ""
 "Ez a filament nagyobb keménységű fúvókát igényel. Kérjük, cseréld ki a "
 "fúvókát vagy válassz másik filamentet, különben előfordulhat, hogy a fúvóka "
 "idő előtt elhasználódik vagy megsérül."
+
+msgid ""
+"Enabling traditional timelapse photography may cause surface imperfections. "
+"It is recommended to change to smooth mode."
+msgstr ""
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4564,6 +4717,11 @@ msgstr "projekt letöltése ..."
 #, c-format, boost-format
 msgid "Project downloaded %d%%"
 msgstr "Projekt letöltve %d%%"
+
+msgid ""
+"Importing to Bambu Studio failed. Please download the file and manually "
+"import it."
+msgstr ""
 
 msgid "The selected file"
 msgstr "A kiválasztott fájl"
@@ -4957,9 +5115,6 @@ msgstr "hiba"
 msgid "warning"
 msgstr "figyelmeztetés"
 
-msgid "info"
-msgstr "infó"
-
 msgid "debug"
 msgstr "debug"
 
@@ -5209,11 +5364,17 @@ msgstr "Bambu Cool Plate"
 msgid "PLA Plate"
 msgstr "PLA Plate"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Bambu Engineering Plate"
+msgid "Bambu Engineering Plate"
+msgstr ""
 
-msgid "Bamabu High Temperature Plate"
-msgstr "Bambu High Temperature Plate"
+msgid "Bambu Smooth PEI Plate"
+msgstr ""
+
+msgid "High temperature Plate"
+msgstr ""
+
+msgid "Bambu Textured PEI Plate"
+msgstr ""
 
 msgid "Send print job to"
 msgstr "Nyomtatási feladat küldése"
@@ -5227,8 +5388,8 @@ msgstr "Asztalszintezés"
 msgid "Flow Dynamics Calibration"
 msgstr ""
 
-msgid "Can't connect to the printer"
-msgstr "Nem lehet csatlakozni a nyomtatóhoz"
+msgid "Click here if you can't connect to the printer"
+msgstr ""
 
 msgid "send completed"
 msgstr "küldés befejezve"
@@ -5341,6 +5502,16 @@ msgstr "Nem küldhetsz nyomtatási feladatot egy üres tálcával."
 
 msgid "This printer does not support printing all plates"
 msgstr "Ez a nyomtató nem támogatja az összes tálcára való nyomtatást"
+
+msgid ""
+"When enable spiral vase mode, machines with I3 structure will not generate "
+"timelapse videos."
+msgstr ""
+
+msgid ""
+"When print by object, machines with I3 structure will not generate timelapse "
+"videos."
+msgstr ""
 
 msgid "Errors"
 msgstr "Hibák"
@@ -5727,9 +5898,6 @@ msgstr ""
 "Az ajánlott fúvóka hőmérséklet-tartomány ehhez a filamenthez. A 0 azt "
 "jelenti, hogy nincs beállítva"
 
-msgid "Recommended temperature range"
-msgstr "Ajánlott hőmérséklet-tartomány"
-
 msgid "Print temperature"
 msgstr "Nyomtatási hőmérséklet"
 
@@ -5759,16 +5927,14 @@ msgstr ""
 "Asztalhőmérséklet a mérnöki tálca használatával. A 0 érték azt jelenti, hogy "
 "a filament nem támogatja az Engineering Plate-re történő nyomtatást"
 
-msgid "High Temp Plate"
-msgstr "High Temp Plate"
+msgid "Smooth PEI Plate / High Temp Plate"
+msgstr ""
 
 msgid ""
-"Bed temperature when high temperature plate is installed. Value 0 means the "
-"filament does not support to print on the High Temp Plate"
+"Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
+"Value 0 means the filament does not support to print on the Smooth PEI Plate/"
+"High Temp Plate"
 msgstr ""
-"Asztalhőmérséklet a magas hőmérsékletű tálca használatával. A 0 érték azt "
-"jelenti, hogy a filament nem támogatja a High Temp Plate-re történő "
-"nyomtatást"
 
 msgid "Textured PEI Plate"
 msgstr "Textured PEI Plate"
@@ -5821,7 +5987,13 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Kiegészítő tárgyhűtő ventilátor"
 
-msgid "Chamber cooling fan"
+msgid "Exhaust fan"
+msgstr ""
+
+msgid "During print"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Filament start G-code"
@@ -5874,6 +6046,9 @@ msgstr "Rétegváltás előtti G-kód"
 
 msgid "Layer change G-code"
 msgstr "Rétegváltás G-kód"
+
+msgid "Time lapse G-code"
+msgstr ""
 
 msgid "Change filament G-code"
 msgstr "Filament csere G-kód"
@@ -7597,6 +7772,23 @@ msgstr "Alapértelmezett folyamat profil"
 msgid "Default process profile when switch to this machine profile"
 msgstr "Alapértelmezett folyamat profil, ha erre a gép profilra váltasz"
 
+msgid "Activate air filtration"
+msgstr ""
+
+msgid "Activate for better air filtration"
+msgstr ""
+
+msgid "Fan speed"
+msgstr "Ventilátor fordulatszám"
+
+msgid ""
+"Speed of exhuast fan during printing.This speed will overwrite the speed in "
+"filament custom gcode"
+msgstr ""
+
+msgid "Speed of exhuast fan after printing completes"
+msgstr ""
+
 msgid "No cooling for the first"
 msgstr "Nincs hűtés az első"
 
@@ -8239,7 +8431,12 @@ msgid "accel_to_decel"
 msgstr ""
 
 #, c-format, boost-format
-msgid "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+msgid ""
+"Klipper's max_accel_to_decel will be adjusted to this %% of acceleration"
+msgstr ""
+
+#, c-format, boost-format
+msgid "%%"
 msgstr ""
 
 msgid "Jerk of outer walls"
@@ -8444,15 +8641,34 @@ msgstr ""
 msgid "HRC"
 msgstr "HRC"
 
+msgid "Printer structure"
+msgstr ""
+
+msgid "The physical arrangement and components of a printing device"
+msgstr ""
+
+msgid "CoreXY"
+msgstr ""
+
+msgid "I3"
+msgstr ""
+
+msgid "Hbot"
+msgstr ""
+
+msgid "Delta"
+msgstr ""
+
+msgid "Best object position"
+msgstr ""
+
+msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
+msgstr ""
+
 msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr ""
 "Engedélyezd ezt az opciót, ha a gép rendelkezik kiegészítő tárgyhűtő "
 "ventilátorral"
-
-msgid ""
-"Enable this option if machine has chamber cooling fan. (For BBL printer it "
-"overwrites the Chamber fan values)"
-msgstr ""
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -8490,6 +8706,19 @@ msgid "The printer cost per hour"
 msgstr ""
 
 msgid "money/h"
+msgstr ""
+
+msgid "Support control chamber temperature"
+msgstr ""
+
+msgid ""
+"This option is enabled if machine support controlling chamber temperature"
+msgstr ""
+
+msgid "Support air filtration"
+msgstr ""
+
+msgid "Enable this if printer support air filtration"
 msgstr ""
 
 msgid "G-code flavor"
@@ -8745,9 +8974,6 @@ msgstr "Maximális gyorsulás a mozgáshoz"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Ventilátor fordulatszám"
-
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
 "is the maximum speed limitation of part cooling fan"
@@ -8826,11 +9052,6 @@ msgstr ""
 "A kiegészítő tárgyhűtő ventilátor fordulatszáma. A kiegészítő ventilátor "
 "ezen a fordulatszámon fog működni a nyomtatás során, kivéve az első néhány "
 "réteget, amelynél kikapcsolt hűtés van megadva"
-
-msgid ""
-"Speed of chamber cooling fan. Chamber fan will run at this speed during "
-"printing."
-msgstr ""
 
 msgid "Min"
 msgstr "Min"
@@ -9106,6 +9327,22 @@ msgstr ""
 "nyomtatott tárgy között rés keletkezzen. Ez megakadályozza, hogy a fúvóka "
 "nagyobb mozgás közben a tárgynak ütközzön. A Z tengely emelésekor használt "
 "körkörös mozgás megelőzheti a szálazást."
+
+msgid "Z hop lower boundary"
+msgstr ""
+
+msgid ""
+"Z hop will only come into effect when Z is above this value and is below the "
+"parameter: \"Z hop upper boundary\""
+msgstr ""
+
+msgid "Z hop upper boundary"
+msgstr ""
+
+msgid ""
+"If this value is positive, Z hop will only come into effect when Z is above "
+"the parameter: \"Z hop lower boundary\" and is below this value"
+msgstr ""
 
 msgid "Z hop type"
 msgstr ""
@@ -9769,24 +10006,18 @@ msgstr ""
 msgid "Chamber temperature"
 msgstr ""
 
-msgid "Target chamber temperature"
+msgid ""
+"Higher chamber temperature can help suppress or reduce warping and "
+"potentially lead to higher interlayer bonding strength for high temperature "
+"materials like ABS, ASA, PC, PA and so on.At the same time, the air "
+"filtration of ABS and ASA will get worse.While for PLA, PETG, TPU, PVA and "
+"other low temperature materials,the actual chamber temperature should not be "
+"high to avoid cloggings, so 0 which stands for turning off is highly "
+"recommended"
 msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one"
 msgstr "Fúvóka hőmérséklete az első réteg után"
-
-msgid "Bed temperature difference"
-msgstr "Asztalhőmérséklet különbség"
-
-msgid ""
-"Do not recommend bed temperature of other layer to be lower than initial "
-"layer for more than this threshold. Too low bed temperature of other layer "
-"may cause the model broken free from build plate"
-msgstr ""
-"Nem ajánlott, hogy a kezdőréteget követő többi réteg asztalhőmérséklete "
-"alacsonyabb legyen ennél a küszöbértéknél. Ha a többi rétegnél túl alacsony "
-"asztalhőmérsékletet használsz, előfordulhat, hogy a tárgy leválik az "
-"asztalról nyomtatás közben"
 
 msgid "Detect thin wall"
 msgstr "Vékony fal felismerése"
@@ -10205,6 +10436,12 @@ msgstr ""
 msgid "Load first filament as default for those not loaded"
 msgstr ""
 
+msgid "Minimum save"
+msgstr ""
+
+msgid "export 3mf with minimum size."
+msgstr ""
+
 msgid "mtcpp"
 msgstr "mtcpp"
 
@@ -10259,14 +10496,39 @@ msgstr ""
 msgid "Repetions count of the whole model"
 msgstr ""
 
+msgid "Ensure on bed"
+msgstr ""
+
+msgid ""
+"Lift the object above the bed when it is partially below. Disabled by default"
+msgstr ""
+
 msgid "Convert Unit"
 msgstr "Mértékegység átváltása"
 
 msgid "Convert the units of model"
 msgstr "Modell mértékegységének átváltása"
 
-msgid "Orient the model"
-msgstr "Modell orientációja"
+msgid "Orient Options"
+msgstr ""
+
+msgid "Orient options: 0-disable, 1-enable, others-auto"
+msgstr ""
+
+msgid "Rotation angle around the Z axis in degrees."
+msgstr ""
+
+msgid "Rotate around X"
+msgstr ""
+
+msgid "Rotation angle around the X axis in degrees."
+msgstr ""
+
+msgid "Rotate around Y"
+msgstr ""
+
+msgid "Rotation angle around the Y axis in degrees."
+msgstr ""
 
 msgid "Scale the model by a float factor"
 msgstr "A modell méretezése egy lebegő tényezővel"
@@ -10321,6 +10583,12 @@ msgid ""
 msgstr ""
 "A hibakeresési naplózási szint beállítása. 0:fatal, 1:error, 2:warning, 3:"
 "info, 4:debug, 5:trace\n"
+
+msgid "Load custom gcode"
+msgstr ""
+
+msgid "Load custom gcode from json"
+msgstr ""
 
 msgid "Error in zip archive"
 msgstr "Hiba a zip fájlban"
@@ -10518,6 +10786,15 @@ msgstr ""
 msgid "The name cannot exceed 40 characters."
 msgstr ""
 
+#, c-format, boost-format
+msgid ""
+"Please input valid values:\n"
+"Start value: >= %.1f\n"
+"End value: <= %.1f\n"
+"End value: > Start value\n"
+"Value step: >= %.3f)"
+msgstr ""
+
 msgid "The name cannot be empty."
 msgstr ""
 
@@ -10547,6 +10824,9 @@ msgstr ""
 msgid "Please select filament to calibrate."
 msgstr ""
 
+msgid "The input value size must be 3."
+msgstr ""
+
 msgid "Connecting to printer..."
 msgstr ""
 
@@ -10563,9 +10843,6 @@ msgid "Please select at least one filament for calibration"
 msgstr ""
 
 msgid "Flow rate calibration result has been saved to preset"
-msgstr ""
-
-msgid "The input value size must be 3."
 msgstr ""
 
 msgid "Max volumetric speed calibration result has been saved to preset"
@@ -10703,6 +10980,9 @@ msgstr ""
 msgid "Please find the best line on your plate"
 msgstr ""
 
+msgid "Please find the cornor with perfect degree of extrusion"
+msgstr ""
+
 msgid "Input Value"
 msgstr ""
 
@@ -10805,6 +11085,12 @@ msgstr ""
 msgid "Extra info"
 msgstr ""
 
+msgid "Pattern"
+msgstr ""
+
+msgid "Method"
+msgstr ""
+
 #, c-format, boost-format
 msgid "%s is not compatible with %s"
 msgstr ""
@@ -10813,6 +11099,21 @@ msgid "TPU is not supported for Flow Dynamics Auto-Calibration."
 msgstr ""
 
 msgid "Connecting to printer"
+msgstr ""
+
+msgid "From k Value"
+msgstr ""
+
+msgid "To k Value"
+msgstr ""
+
+msgid "Step value"
+msgstr ""
+
+msgid "0.5"
+msgstr ""
+
+msgid "0.005"
 msgstr ""
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
@@ -10927,6 +11228,9 @@ msgstr ""
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
 msgstr ""
 
+msgid "Upload"
+msgstr ""
+
 msgid "Print host upload queue"
 msgstr ""
 
@@ -10986,9 +11290,6 @@ msgid "PA Line"
 msgstr ""
 
 msgid "PA Pattern"
-msgstr ""
-
-msgid "Method"
 msgstr ""
 
 msgid "Start PA: "
@@ -11135,6 +11436,17 @@ msgid ""
 msgstr ""
 
 msgid "Connection to printers connected via the print host failed."
+msgstr ""
+
+msgid "The start, end or step is not valid value."
+msgstr ""
+
+msgid ""
+"Unable to calibrate: maybe because the set calibration value range is too "
+"large, or the step is too small"
+msgstr ""
+
+msgid "Need select printer"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
@@ -11394,6 +11706,88 @@ msgstr ""
 "Szilárdság javítása\n"
 "Tudtad, hogy több fal vagy nagyobb kitöltés használatával javíthatod a "
 "modell szilárdságát?"
+
+#~ msgid "Cali"
+#~ msgstr "Kali"
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "Extrudálás kalibrálása"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Push new filament into the extruder"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "A többi réteg asztalhőmérséklete több mint %d Celsius-fokkal alacsonyabb, "
+#~ "mint a kezdőréteg hőmérséklete.\n"
+#~ "Ez azt okozhatja, hogy a modell a nyomtatás során leválik a tárgyasztalról"
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "Az asztalhőmérséklet magasabb, mint a filament üvegesedési hőmérséklete.\n"
+#~ "Ez a fúvóka eltömődését és nyomtatási hibákat okozhat.\n"
+#~ "Kérjük, hogy a nyomtatás során tartsd nyitva a nyomtatót, vagy csökkentsd "
+#~ "az asztalhőmérsékletet."
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "Rezonanciafrekvencia meghatározása"
+
+#~ msgid "Immediately score"
+#~ msgstr "Immediately score"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "Please give a score for your favorite Bambu Market model."
+
+#~ msgid "Score"
+#~ msgstr "Score"
+
+#~ msgid "Bamabu Engineering Plate"
+#~ msgstr "Bambu Engineering Plate"
+
+#~ msgid "Bamabu High Temperature Plate"
+#~ msgstr "Bambu High Temperature Plate"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "Nem lehet csatlakozni a nyomtatóhoz"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "Ajánlott hőmérséklet-tartomány"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "High Temp Plate"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "Asztalhőmérséklet a magas hőmérsékletű tálca használatával. A 0 érték azt "
+#~ "jelenti, hogy a filament nem támogatja a High Temp Plate-re történő "
+#~ "nyomtatást"
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "Asztalhőmérséklet különbség"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "Nem ajánlott, hogy a kezdőréteget követő többi réteg asztalhőmérséklete "
+#~ "alacsonyabb legyen ennél a küszöbértéknél. Ha a többi rétegnél túl "
+#~ "alacsony asztalhőmérsékletet használsz, előfordulhat, hogy a tárgy "
+#~ "leválik az asztalról nyomtatás közben"
+
+#~ msgid "Orient the model"
+#~ msgstr "Modell orientációja"
 
 #~ msgid "Total Time Estimation"
 #~ msgstr "Total Time Estimation"

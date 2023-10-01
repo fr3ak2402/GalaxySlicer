@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 10:10+0200\n"
+"POT-Creation-Date: 2023-10-01 17:20+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1546,6 +1546,9 @@ msgstr "Conectando…"
 msgid "?"
 msgstr "?"
 
+msgid "/"
+msgstr ""
+
 msgid "Empty"
 msgstr "Vacío"
 
@@ -1557,12 +1560,6 @@ msgstr "Auto Rellenado"
 
 msgid "AMS not connected"
 msgstr "AMS no conectado"
-
-msgid "Cali"
-msgstr "Cali"
-
-msgid "Calibration of extrusion"
-msgstr "Calibración de extrusión"
 
 msgid "Load Filament"
 msgstr "Cargar"
@@ -1596,6 +1593,9 @@ msgstr "Calibrar de nuevo"
 msgid "Cancel calibration"
 msgstr "Cancelar  calibración"
 
+msgid "Idling..."
+msgstr ""
+
 msgid "Heat the nozzle"
 msgstr "Calentar la boquilla"
 
@@ -1611,8 +1611,14 @@ msgstr "Introducir nuevo filamento en el extrusor"
 msgid "Purge old filament"
 msgstr "Purgar el filamento viejo"
 
-msgid "Push new filament into the extruder"
-msgstr "Push new filament into the extruder"
+msgid "Feed Filament"
+msgstr ""
+
+msgid "Confirm extruded"
+msgstr ""
+
+msgid "Check filament location"
+msgstr ""
 
 msgid "Grab new filament"
 msgstr "Grab new filament"
@@ -2477,36 +2483,19 @@ msgstr ""
 "La temperatura recomendada de la boquilla de este tipo de filamento es de "
 "[%d, %d] grados centígrados"
 
-#, c-format, boost-format
-msgid ""
-"Bed temperature of other layer is lower than bed temperature of initial "
-"layer for more than %d degree centigrade.\n"
-"This may cause model broken free from build plate during printing"
-msgstr ""
-"La temperatura del lecho de la otra capa es inferior a la temperatura del "
-"lecho de la primera capa durante más de %d grados centígrados.\n"
-"Esto puede hacer que el modelo se desprenda de la bandeja durante la "
-"impresión"
-
-msgid ""
-"Bed temperature is higher than vitrification temperature of this filament.\n"
-"This may cause nozzle blocked and printing failure\n"
-"Please keep the printer open during the printing process to ensure air "
-"circulation or reduce the temperature of the hot bed"
-msgstr ""
-"La temperatura de capa es superior que la temperatura de vitrificación de "
-"este filamento. \n"
-" Esto podría causar que la boquilla se bloquee y produzca un fallo de "
-"impresión. Por favor, mantenga la impresora abierta durante el proceso para "
-"garantizar la circulación de aire o reducir la temperatura de la cama "
-"caliente"
-
 msgid ""
 "Too small max volumetric speed.\n"
 "Reset to 0.5"
 msgstr ""
 "Velocidad volumétrica máxima demasiado baja.\n"
 "Reajustar a 0.5"
+
+#, c-format, boost-format
+msgid ""
+"Current chamber temperature is higher than the material's safe temperature,"
+"it may result in material softening and clogging.The maximum safe "
+"temperature for the material is %d"
+msgstr ""
 
 msgid ""
 "Too small layer height.\n"
@@ -2569,6 +2558,9 @@ msgstr ""
 "El modo espiral sólo funciona cuando los bucles de perímetro son 1, el "
 "soporte está desactivado, las capas superiores de la cáscara son 0, la "
 "densidad de relleno disperso es 0 y el tipo de timelapse es tradicional."
+
+msgid " But machines with I3 structure will not generate timelapse videos."
+msgstr ""
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2703,6 +2695,36 @@ msgstr ""
 "Se ha interrumpido debido a un mal funcionamiento de la temperatura de la "
 "cama caliente"
 
+msgid "Filament unloading"
+msgstr ""
+
+msgid "Skip step pause"
+msgstr ""
+
+msgid "Filament loading"
+msgstr ""
+
+msgid "Motor noise calibration"
+msgstr ""
+
+msgid "Paused due to AMS lost"
+msgstr ""
+
+msgid "Paused due to low speed of the heat break fan"
+msgstr ""
+
+msgid "Paused due to chamber temperature control error"
+msgstr ""
+
+msgid "Cooling chamber"
+msgstr ""
+
+msgid "Paused by the Gcode inserted by user"
+msgstr ""
+
+msgid "Motor noise showoff"
+msgstr ""
+
 msgid "MC"
 msgstr "MC"
 
@@ -2738,6 +2760,24 @@ msgstr "Verificación fallida."
 
 msgid "Update failed."
 msgstr "Actualización fallida."
+
+msgid ""
+"The current chamber temperature or the target chamber temperature exceeds "
+"45℃.In order to avoid extruder clogging,low temperature filament(PLA/PETG/"
+"TPU) is not allowed to be loaded."
+msgstr ""
+
+msgid ""
+"Low temperature filament(PLA/PETG/TPU) is loaded in the extruder.In order to "
+"avoid extruder clogging,it is not allowed to set the chamber temperature "
+"above 45℃."
+msgstr ""
+
+msgid ""
+"When you set the chamber temperature below 40℃, the chamber temperature "
+"control will not be activated. And the target chamber temperature will "
+"automatically be set to 0℃."
+msgstr ""
 
 msgid "Failed to start printing job"
 msgstr "Fallo iniciando el trabajo de impresión"
@@ -3075,6 +3115,9 @@ msgstr "Permitir varios materiales en la misma bandeja"
 msgid "Avoid extrusion calibration region"
 msgstr "Evitar la zona de calibración del extrusor"
 
+msgid "Align to Y axis"
+msgstr ""
+
 msgid "Add"
 msgstr "Añadir"
 
@@ -3171,8 +3214,11 @@ msgstr "Calibración Micro lidar"
 msgid "Bed leveling"
 msgstr "Nivelación de la cama"
 
-msgid "Resonance frequency identification"
-msgstr "Identificación de frecuencia de resonancia"
+msgid "Vibration compensation"
+msgstr ""
+
+msgid "Motor noise cancellation"
+msgstr ""
 
 msgid "Calibration program"
 msgstr "Programa de calibración"
@@ -3191,6 +3237,9 @@ msgstr "Calibración del Caudal"
 
 msgid "Start Calibration"
 msgstr "Iniciar Calibración"
+
+msgid "No step selected"
+msgstr ""
 
 msgid "Completed"
 msgstr "Completado"
@@ -3267,9 +3316,6 @@ msgstr "No"
 
 msgid "will be closed before creating a new model. Do you want to continue?"
 msgstr "se cerrará antes de crear un nuevo modelo. ¿Quiere continuar?"
-
-msgid "Upload"
-msgstr "Cargar"
 
 msgid "Slice plate"
 msgstr "Laminar bandeja"
@@ -3941,11 +3987,19 @@ msgstr "0"
 msgid "Layer: N/A"
 msgstr "Capa: N/A"
 
-msgid "Immediately score"
-msgstr "Immediately score"
-
 msgid "Clear"
 msgstr "Vaciar"
+
+msgid "How do you like this printing file?"
+msgstr ""
+
+msgid ""
+"(The model has already been rated. Your rating will overwrite the previous "
+"rating.)"
+msgstr ""
+
+msgid "Rate"
+msgstr ""
 
 msgid "Camera"
 msgstr "Cámara"
@@ -4012,12 +4066,6 @@ msgstr "Hay %s tareas por delante, en la Cola de Laminado en la Nube."
 msgid "Layer: %s"
 msgstr "Capa: %s"
 
-msgid "Please give a score for your favorite Bambu Market model."
-msgstr "Please give a score for your favorite Bambu Market model."
-
-msgid "Score"
-msgstr "Score"
-
 #, c-format, boost-format
 msgid "Layer: %d/%d"
 msgstr "Capa:  %d/%d"
@@ -4059,6 +4107,97 @@ msgstr "Lúdico"
 
 msgid "Can't start this without SD card."
 msgstr "No puede iniciarse sin una tarjeta SD."
+
+msgid "Rate the Print Profile"
+msgstr ""
+
+msgid "Comment"
+msgstr ""
+
+msgid "Rate this print"
+msgstr ""
+
+msgid "Add Photo"
+msgstr ""
+
+msgid "Delete Photo"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Please click on the star first."
+msgstr ""
+
+msgid "InFo"
+msgstr ""
+
+msgid "Get oss config failed."
+msgstr ""
+
+msgid "Upload Pictrues"
+msgstr ""
+
+msgid "Number of images successfully uploaded"
+msgstr ""
+
+msgid " upload failed"
+msgstr ""
+
+msgid " upload config prase failed\n"
+msgstr ""
+
+msgid " No corresponding storage bucket\n"
+msgstr ""
+
+msgid " can not be opened\n"
+msgstr ""
+
+msgid ""
+"The following issues occurred during the process of uploading images. Do you "
+"want to ignore them?\n"
+"\n"
+msgstr ""
+
+msgid "info"
+msgstr "información"
+
+msgid "Synchronizing the printing results. Please retry a few seconds later."
+msgstr ""
+
+msgid "Upload failed\n"
+msgstr ""
+
+msgid "obtaining instance_id failed\n"
+msgstr ""
+
+msgid ""
+"Your comment result cannot be uploaded due to some reasons. As follows:\n"
+"\n"
+"  error code: "
+msgstr ""
+
+msgid "error message: "
+msgstr ""
+
+msgid ""
+"\n"
+"\n"
+"Would you like to redirect to the webpage for rating?"
+msgstr ""
+
+msgid ""
+"Some of your images failed to upload. Would you like to redirect to the "
+"webpage for rating?"
+msgstr ""
+
+msgid "You can select up to 16 images."
+msgstr ""
+
+msgid ""
+"At least one successful print record of this print profile is required \n"
+"to give a positive rating(4 or 5stars)."
+msgstr ""
 
 msgid "Status"
 msgstr "Estado"
@@ -4186,6 +4325,9 @@ msgstr "Advertencia:"
 msgid "Export successfully."
 msgstr "Exportación exitosa."
 
+msgid "Model file downloaded."
+msgstr ""
+
 msgid "Serious warning:"
 msgstr "Seria advertencia:"
 
@@ -4272,6 +4414,9 @@ msgstr "Inspección de Primera Capa"
 
 msgid "Auto-recovery from step loss"
 msgstr "Autorecuperar desde pérdida de paso"
+
+msgid "Allow Prompt Sound"
+msgstr ""
 
 msgid "Global"
 msgstr "Global"
@@ -4430,6 +4575,11 @@ msgstr ""
 "dureza por defecto de la impresora. Por favor, reemplace la boquilla "
 "endurecida y el filamento, de otra forma, la boquilla se atascará o se "
 "dañará."
+
+msgid ""
+"Enabling traditional timelapse photography may cause surface imperfections. "
+"It is recommended to change to smooth mode."
+msgstr ""
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4652,6 +4802,11 @@ msgstr "descargando proyecto..."
 #, c-format, boost-format
 msgid "Project downloaded %d%%"
 msgstr "Proyecto descargado %d%%"
+
+msgid ""
+"Importing to Bambu Studio failed. Please download the file and manually "
+"import it."
+msgstr ""
 
 msgid "The selected file"
 msgstr "El archivo seleccionado"
@@ -5051,9 +5206,6 @@ msgstr "error"
 msgid "warning"
 msgstr "advertencia"
 
-msgid "info"
-msgstr "información"
-
 msgid "debug"
 msgstr "depurar"
 
@@ -5308,11 +5460,17 @@ msgstr "Bandeja frío Bambu"
 msgid "PLA Plate"
 msgstr "PLA Plate"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Bandeja de Ingeniería Bambú"
+msgid "Bambu Engineering Plate"
+msgstr ""
 
-msgid "Bamabu High Temperature Plate"
-msgstr "Bandeja de Alta Temperatura Bambú"
+msgid "Bambu Smooth PEI Plate"
+msgstr ""
+
+msgid "High temperature Plate"
+msgstr ""
+
+msgid "Bambu Textured PEI Plate"
+msgstr ""
 
 msgid "Send print job to"
 msgstr "Enviar el trabajo de impresión a"
@@ -5326,8 +5484,8 @@ msgstr "Nivelación de la cama"
 msgid "Flow Dynamics Calibration"
 msgstr "Calibración de Dinámicas de Flujo"
 
-msgid "Can't connect to the printer"
-msgstr "No se puede conectar a la impresora"
+msgid "Click here if you can't connect to the printer"
+msgstr ""
 
 msgid "send completed"
 msgstr "envío completo"
@@ -5442,6 +5600,16 @@ msgstr "No es posible enviar el trabajo de impresión a una bandeja vacía"
 
 msgid "This printer does not support printing all plates"
 msgstr "Esta impresora no soporta la impresión en todas las bandejas"
+
+msgid ""
+"When enable spiral vase mode, machines with I3 structure will not generate "
+"timelapse videos."
+msgstr ""
+
+msgid ""
+"When print by object, machines with I3 structure will not generate timelapse "
+"videos."
+msgstr ""
 
 msgid "Errors"
 msgstr "Errores"
@@ -5835,9 +6003,6 @@ msgstr ""
 "Rango de temperatura de boquilla recomendado para este filamento. 0 "
 "significa que no se ajusta"
 
-msgid "Recommended temperature range"
-msgstr "Rango de temperatura recomendado"
-
 msgid "Print temperature"
 msgstr "Temperatura de impresión"
 
@@ -5869,16 +6034,14 @@ msgstr ""
 "instalada. Un valor de 0 significa que el filamento no admite la impresión "
 "en la Bandeja de Ingeniería"
 
-msgid "High Temp Plate"
-msgstr "Bandeja de Alta Temperatura"
+msgid "Smooth PEI Plate / High Temp Plate"
+msgstr ""
 
 msgid ""
-"Bed temperature when high temperature plate is installed. Value 0 means the "
-"filament does not support to print on the High Temp Plate"
+"Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
+"Value 0 means the filament does not support to print on the Smooth PEI Plate/"
+"High Temp Plate"
 msgstr ""
-"Esta es la temperatura de la cama cuando la bandeja de alta temperatura está "
-"instalada. Un valor de 0 significa que el filamento no admite la impresión "
-"en la bandeja de alta temperatura"
 
 msgid "Textured PEI Plate"
 msgstr "Bandeja PEI Texturizada"
@@ -5932,7 +6095,13 @@ msgstr ""
 msgid "Auxiliary part cooling fan"
 msgstr "Ventilador de parte auxiliar"
 
-msgid "Chamber cooling fan"
+msgid "Exhaust fan"
+msgstr ""
+
+msgid "During print"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Filament start G-code"
@@ -5985,6 +6154,9 @@ msgstr "G-Code para antes del cambio de capa"
 
 msgid "Layer change G-code"
 msgstr "Cambiar el G-Code tras el cambio de capa"
+
+msgid "Time lapse G-code"
+msgstr ""
 
 msgid "Change filament G-code"
 msgstr "G-Code para el cambio de filamento"
@@ -7766,6 +7938,23 @@ msgid "Default process profile when switch to this machine profile"
 msgstr ""
 "Perfil de proceso por defecto cuando se cambia a este perfil de máquina"
 
+msgid "Activate air filtration"
+msgstr ""
+
+msgid "Activate for better air filtration"
+msgstr ""
+
+msgid "Fan speed"
+msgstr "Velocidad del ventilador"
+
+msgid ""
+"Speed of exhuast fan during printing.This speed will overwrite the speed in "
+"filament custom gcode"
+msgstr ""
+
+msgid "Speed of exhuast fan after printing completes"
+msgstr ""
+
 msgid "No cooling for the first"
 msgstr "No refrigerar las primeras"
 
@@ -8466,8 +8655,13 @@ msgid "accel_to_decel"
 msgstr "accel_to_decel"
 
 #, c-format, boost-format
-msgid "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
-msgstr "El max_accel_to_decel de Klipper se ajustará a este % o de aceleración"
+msgid ""
+"Klipper's max_accel_to_decel will be adjusted to this %% of acceleration"
+msgstr ""
+
+#, c-format, boost-format
+msgid "%%"
+msgstr ""
 
 msgid "Jerk of outer walls"
 msgstr "Jerk de los perímetros externos"
@@ -8689,15 +8883,34 @@ msgstr ""
 msgid "HRC"
 msgstr "HRC"
 
+msgid "Printer structure"
+msgstr ""
+
+msgid "The physical arrangement and components of a printing device"
+msgstr ""
+
+msgid "CoreXY"
+msgstr ""
+
+msgid "I3"
+msgstr ""
+
+msgid "Hbot"
+msgstr ""
+
+msgid "Delta"
+msgstr ""
+
+msgid "Best object position"
+msgstr ""
+
+msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
+msgstr ""
+
 msgid "Enable this option if machine has auxiliary part cooling fan"
 msgstr ""
 "Habilite esta opción si la máquina tiene un ventilador auxiliar de "
 "refrigeración de piezas"
-
-msgid ""
-"Enable this option if machine has chamber cooling fan. (For BBL printer it "
-"overwrites the Chamber fan values)"
-msgstr ""
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -8752,6 +8965,19 @@ msgid "The printer cost per hour"
 msgstr ""
 
 msgid "money/h"
+msgstr ""
+
+msgid "Support control chamber temperature"
+msgstr ""
+
+msgid ""
+"This option is enabled if machine support controlling chamber temperature"
+msgstr ""
+
+msgid "Support air filtration"
+msgstr ""
+
+msgid "Enable this if printer support air filtration"
 msgstr ""
 
 msgid "G-code flavor"
@@ -9022,9 +9248,6 @@ msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 "Máxima aceleración para el desplazamiento (M204 T), solo se aplica a Marlin 2"
 
-msgid "Fan speed"
-msgstr "Velocidad del ventilador"
-
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
 "is the maximum speed limitation of part cooling fan"
@@ -9103,11 +9326,6 @@ msgstr ""
 "Velocidad del ventilador de la parte auxiliar. El ventilador auxiliar "
 "funcionará a esta velocidad durante la impresión, excepto en las primeras "
 "capas, que se define por la ausencia de capas de refrigeración"
-
-msgid ""
-"Speed of chamber cooling fan. Chamber fan will run at this speed during "
-"printing."
-msgstr ""
 
 msgid "Min"
 msgstr "Mín"
@@ -9400,6 +9618,22 @@ msgstr ""
 "crear un espacio libre entre la boquilla y la impresión. Esto evita que la "
 "boquilla golpee la impresión cuando se desplaza. El uso de la línea espiral "
 "para levantar z puede evitar el encordado"
+
+msgid "Z hop lower boundary"
+msgstr ""
+
+msgid ""
+"Z hop will only come into effect when Z is above this value and is below the "
+"parameter: \"Z hop upper boundary\""
+msgstr ""
+
+msgid "Z hop upper boundary"
+msgstr ""
+
+msgid ""
+"If this value is positive, Z hop will only come into effect when Z is above "
+"the parameter: \"Z hop lower boundary\" and is below this value"
+msgstr ""
 
 msgid "Z hop type"
 msgstr "Tipo de salto Z"
@@ -10116,23 +10350,18 @@ msgstr ""
 msgid "Chamber temperature"
 msgstr "Temperatura de cámara"
 
-msgid "Target chamber temperature"
-msgstr "Temperatura objetivo de la cámara"
+msgid ""
+"Higher chamber temperature can help suppress or reduce warping and "
+"potentially lead to higher interlayer bonding strength for high temperature "
+"materials like ABS, ASA, PC, PA and so on.At the same time, the air "
+"filtration of ABS and ASA will get worse.While for PLA, PETG, TPU, PVA and "
+"other low temperature materials,the actual chamber temperature should not be "
+"high to avoid cloggings, so 0 which stands for turning off is highly "
+"recommended"
+msgstr ""
 
 msgid "Nozzle temperature for layers after the initial one"
 msgstr "Temperatura de la boquilla después de la primera capa"
-
-msgid "Bed temperature difference"
-msgstr "Diferencia de temperatura de la cama"
-
-msgid ""
-"Do not recommend bed temperature of other layer to be lower than initial "
-"layer for more than this threshold. Too low bed temperature of other layer "
-"may cause the model broken free from build plate"
-msgstr ""
-"No se recomienda que la temperatura de la otra capa sea inferior a la de la "
-"primera capa por encima de este umbral. Una temperatura demasiado baja de la "
-"otra capa puede hacer que el modelo se desprenda de la bandeja de impresión"
 
 msgid "Detect thin wall"
 msgstr "Detección de perímetros delgados"
@@ -10571,6 +10800,12 @@ msgstr "Cargar los filamentos por defecto"
 msgid "Load first filament as default for those not loaded"
 msgstr "Carga el primer filamento por defecto para los no cargados"
 
+msgid "Minimum save"
+msgstr ""
+
+msgid "export 3mf with minimum size."
+msgstr ""
+
 msgid "mtcpp"
 msgstr "mtcpp"
 
@@ -10627,14 +10862,39 @@ msgstr "Cantidad de repeticiones"
 msgid "Repetions count of the whole model"
 msgstr "Cantidad de repeticiones del modelo completo"
 
+msgid "Ensure on bed"
+msgstr ""
+
+msgid ""
+"Lift the object above the bed when it is partially below. Disabled by default"
+msgstr ""
+
 msgid "Convert Unit"
 msgstr "Convertir Unidad"
 
 msgid "Convert the units of model"
 msgstr "Convertir las unidades del modelo"
 
-msgid "Orient the model"
-msgstr "Orientar el modelo"
+msgid "Orient Options"
+msgstr ""
+
+msgid "Orient options: 0-disable, 1-enable, others-auto"
+msgstr ""
+
+msgid "Rotation angle around the Z axis in degrees."
+msgstr ""
+
+msgid "Rotate around X"
+msgstr ""
+
+msgid "Rotation angle around the X axis in degrees."
+msgstr ""
+
+msgid "Rotate around Y"
+msgstr ""
+
+msgid "Rotation angle around the Y axis in degrees."
+msgstr ""
 
 msgid "Scale the model by a float factor"
 msgstr "Escala el modelo por un factor de flotación"
@@ -10696,6 +10956,12 @@ msgid ""
 msgstr ""
 "Ajusta el nivel de registro de depuración. 0:fatal, 1:error, 2:advertencia, "
 "3:información, 4:depuración, 5:rastreo\n"
+
+msgid "Load custom gcode"
+msgstr ""
+
+msgid "Load custom gcode from json"
+msgstr ""
 
 msgid "Error in zip archive"
 msgstr "Error en el archivo zip"
@@ -10896,6 +11162,15 @@ msgstr "Por favor, introduzca el nombre que quiera asignar a la impresora."
 msgid "The name cannot exceed 40 characters."
 msgstr "El nombre no puede exceder de 40 caracteres."
 
+#, c-format, boost-format
+msgid ""
+"Please input valid values:\n"
+"Start value: >= %.1f\n"
+"End value: <= %.1f\n"
+"End value: > Start value\n"
+"Value step: >= %.3f)"
+msgstr ""
+
 msgid "The name cannot be empty."
 msgstr "El nombre no puede estar vacío."
 
@@ -10927,6 +11202,9 @@ msgstr "La impresora no está conectada todavía."
 msgid "Please select filament to calibrate."
 msgstr "Por favor, seleccione el filamento para calibrar."
 
+msgid "The input value size must be 3."
+msgstr "El valor de tamaño de entrada debe ser 3."
+
 msgid "Connecting to printer..."
 msgstr "Conectando a la impresora."
 
@@ -10948,9 +11226,6 @@ msgid "Flow rate calibration result has been saved to preset"
 msgstr ""
 "El resultado de la calibración del ratio de caudal se ha guardado en los "
 "ajustes"
-
-msgid "The input value size must be 3."
-msgstr "El valor de tamaño de entrada debe ser 3."
 
 msgid "Max volumetric speed calibration result has been saved to preset"
 msgstr ""
@@ -11167,6 +11442,9 @@ msgstr ""
 msgid "Please find the best line on your plate"
 msgstr "Por favor encuentre la mejor línea en su bandeja"
 
+msgid "Please find the cornor with perfect degree of extrusion"
+msgstr ""
+
 msgid "Input Value"
 msgstr "Valor de entrada"
 
@@ -11278,6 +11556,12 @@ msgstr "Error en la descripción"
 msgid "Extra info"
 msgstr "Información extra"
 
+msgid "Pattern"
+msgstr ""
+
+msgid "Method"
+msgstr "Método"
+
 #, c-format, boost-format
 msgid "%s is not compatible with %s"
 msgstr "%s no es compatible con %s"
@@ -11289,6 +11573,21 @@ msgstr ""
 
 msgid "Connecting to printer"
 msgstr "Conectando a la impresora"
+
+msgid "From k Value"
+msgstr ""
+
+msgid "To k Value"
+msgstr ""
+
+msgid "Step value"
+msgstr ""
+
+msgid "0.5"
+msgstr ""
+
+msgid "0.005"
+msgstr ""
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
 msgstr ""
@@ -11411,6 +11710,9 @@ msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
 msgstr ""
 "El nombre de archivo que va a cargar no acaba en \"%s\". ¿Desea continuar?"
 
+msgid "Upload"
+msgstr "Cargar"
+
 msgid "Print host upload queue"
 msgstr "Imprimir cola de carga del host"
 
@@ -11471,9 +11773,6 @@ msgstr "Línea PA"
 
 msgid "PA Pattern"
 msgstr "Modelo PA"
-
-msgid "Method"
-msgstr "Método"
 
 msgid "Start PA: "
 msgstr "Iniciar PA: "
@@ -11633,6 +11932,17 @@ msgid "Connection to printers connected via the print host failed."
 msgstr ""
 "Ha fallado la conexión a impresoras conectadas a través del host de "
 "impresión."
+
+msgid "The start, end or step is not valid value."
+msgstr ""
+
+msgid ""
+"Unable to calibrate: maybe because the set calibration value range is too "
+"large, or the step is too small"
+msgstr ""
+
+msgid "Need select printer"
+msgstr ""
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
 msgid ""
@@ -11903,6 +12213,100 @@ msgstr ""
 "Mejorar la resistencia\n"
 "¿Sabías que puedes utilizar más bucles de perímetro y mayor densidad de "
 "relleno disperso para mejorar la resistencia del modelo?"
+
+#~ msgid "Cali"
+#~ msgstr "Cali"
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "Calibración de extrusión"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Push new filament into the extruder"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "La temperatura del lecho de la otra capa es inferior a la temperatura del "
+#~ "lecho de la primera capa durante más de %d grados centígrados.\n"
+#~ "Esto puede hacer que el modelo se desprenda de la bandeja durante la "
+#~ "impresión"
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "La temperatura de capa es superior que la temperatura de vitrificación de "
+#~ "este filamento. \n"
+#~ " Esto podría causar que la boquilla se bloquee y produzca un fallo de "
+#~ "impresión. Por favor, mantenga la impresora abierta durante el proceso "
+#~ "para garantizar la circulación de aire o reducir la temperatura de la "
+#~ "cama caliente"
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "Identificación de frecuencia de resonancia"
+
+#~ msgid "Immediately score"
+#~ msgstr "Immediately score"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "Please give a score for your favorite Bambu Market model."
+
+#~ msgid "Score"
+#~ msgstr "Score"
+
+#~ msgid "Bamabu Engineering Plate"
+#~ msgstr "Bandeja de Ingeniería Bambú"
+
+#~ msgid "Bamabu High Temperature Plate"
+#~ msgstr "Bandeja de Alta Temperatura Bambú"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "No se puede conectar a la impresora"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "Rango de temperatura recomendado"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "Bandeja de Alta Temperatura"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "Esta es la temperatura de la cama cuando la bandeja de alta temperatura "
+#~ "está instalada. Un valor de 0 significa que el filamento no admite la "
+#~ "impresión en la bandeja de alta temperatura"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+#~ msgstr ""
+#~ "El max_accel_to_decel de Klipper se ajustará a este % o de aceleración"
+
+#~ msgid "Target chamber temperature"
+#~ msgstr "Temperatura objetivo de la cámara"
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "Diferencia de temperatura de la cama"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "No se recomienda que la temperatura de la otra capa sea inferior a la de "
+#~ "la primera capa por encima de este umbral. Una temperatura demasiado baja "
+#~ "de la otra capa puede hacer que el modelo se desprenda de la bandeja de "
+#~ "impresión"
+
+#~ msgid "Orient the model"
+#~ msgstr "Orientar el modelo"
 
 #~ msgid "Total Time Estimation"
 #~ msgstr "Tiempo Total Estimado"
