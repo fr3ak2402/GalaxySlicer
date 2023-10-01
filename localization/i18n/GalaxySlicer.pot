@@ -10704,7 +10704,7 @@ msgid "Printing Silk Filament\nDid you know that Silk filament needs special con
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Brim for better adhesion]
-msgid "Brim for better adhesion\nDid you know that when printing models have a small contact interface with the printing surface, it's recommended to use a brim?"
+msgid "Brim for better adhesion\nDid you know that when printing models have a small contact interface with the printing surface, it is recommended to use a brim?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Set parameters for multiple objects]
