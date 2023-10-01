@@ -11,9 +11,7 @@ endif()
 if(NOT DEFINED BBL_INTERNAL_TESTING)
 set(BBL_INTERNAL_TESTING "1")
 endif()
-
 set(GalaxySlicer_VERSION "1.0.0-beta2")
-
 string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"
        GalaxySlicer_VERSION_MATCH ${GalaxySlicer_VERSION})
 
