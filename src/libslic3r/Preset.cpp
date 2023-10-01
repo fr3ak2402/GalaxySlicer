@@ -820,6 +820,7 @@ static std::vector<std::string> s_Preset_printer_options {
     // BBS
     "scan_first_layer", "machine_load_filament_time", "machine_unload_filament_time","time_cost", "machine_pause_gcode", "template_custom_gcode",
     "nozzle_type", "nozzle_hrc","auxiliary_fan", "nozzle_volume","upward_compatible_machine", "z_hop_types", "retract_lift_enforce","support_chamber_temp_control","support_air_filtration","printer_structure",
+    "best_object_pos",
     //GalaxySlicer
     "chamber_fan",
     //SoftFever
