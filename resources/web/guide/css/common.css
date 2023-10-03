@@ -153,6 +153,7 @@ body
 
 #TabBarSpacer 
 {
+	margin-left: 2px;
 	margin-right: 2px;
 	flex-grow: 1;
 	border-bottom: 1.5px solid #693A71;
