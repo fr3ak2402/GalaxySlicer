@@ -2831,14 +2831,19 @@ void TabFilament::build()
 
         optgroup->append_single_option_line("activate_air_filtration");
 
-        line = {L("During print"), L("")};
+        /*line = {L("During print"), L("")};
         line.append_option(optgroup->get_option("during_print_exhaust_fan_speed"));
         optgroup->append_line(line);
 
 
         line = {L("Complete print"), L("")};
         line.append_option(optgroup->get_option("complete_print_exhaust_fan_speed"));
-        optgroup->append_line(line);
+        optgroup->append_line(line);*/
+
+        //GalaxySlicer: add option for exhaust fan speed
+        optgroup->append_single_option_line("during_print_exhaust_fan_speed");
+        optgroup->append_single_option_line("complete_print_exhaust_fan_speed");
+
         //BBS
         add_filament_overrides_page();
         const int gcode_field_height = 15; // 150

@@ -1063,7 +1063,9 @@ void PrintConfigDef::init_fff_params()
     def->set_default_value(new ConfigOptionBools{false});
 
     def = this->add("during_print_exhaust_fan_speed", coInts);
-    def->label   = L("Fan speed");
+    //def->label   = L("Fan speed");
+    //GalaxySlicer
+    def->label   = L("During print");
     def->tooltip=L("Speed of exhuast fan during printing.This speed will overwrite the speed in filament custom gcode");
     def->sidetext = L("%");
     def->min=0;
@@ -1072,7 +1074,9 @@ void PrintConfigDef::init_fff_params()
     def->set_default_value(new ConfigOptionInts{60});
 
     def = this->add("complete_print_exhaust_fan_speed", coInts);
-    def->label = L("Fan speed");
+    //def->label   = L("Fan speed");
+    //GalaxySlicer
+    def->label   = L("Complete print");
     def->sidetext = L("%");
     def->tooltip=L("Speed of exhuast fan after printing completes");
     def->min=0;
