@@ -218,6 +218,19 @@ const std::string& resources_dir()
     return g_resources_dir;
 }
 
+//GalaxySlicer: python dir
+static std::string g_python_dir;
+
+void set_python_dir(const std::string &dir)
+{
+	g_python_dir = dir;
+}
+
+const std::string& python_dir()
+{
+	return g_python_dir;
+}
+
 //BBS: add temporary dir
 static std::string g_temporary_dir;
 void set_temporary_dir(const std::string &dir)

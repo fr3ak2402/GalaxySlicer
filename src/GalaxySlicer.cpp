@@ -2767,11 +2767,19 @@ bool CLI::setup(int argc, char **argv)
     // The application is packed in the .dmg archive as 'Slic3r.app/Contents/MacOS/Slic3r'
     // The resources are packed to 'Slic3r.app/Contents/Resources'
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Resources";
+
+    //GalaxySlicer: Path to Python
+    boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Python";
+
 #elif defined _WIN32
     // The application is packed in the .zip archive in the root,
     // The resources are packed to 'resources'
     // Path from Slic3r binary to resources:
     boost::filesystem::path path_resources = path_to_binary.parent_path() / "resources";
+
+    //GalaxySlicer: Path to Python
+    boost::filesystem::path path_python = path_to_binary.parent_path() / "python";
+
 #elif defined SLIC3R_FHS
     // The application is packaged according to the Linux Filesystem Hierarchy Standard
     // Resources are set to the 'Architecture-independent (shared) data', typically /usr/share or /usr/local/share
@@ -2781,12 +2789,18 @@ bool CLI::setup(int argc, char **argv)
     // The resources are packed to 'resources'
     // Path from Slic3r binary to resources:
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "resources";
+
+    //GalaxySlicer: Path to Python
+    boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "python";
 #endif
 
     set_resources_dir(path_resources.string());
     set_var_dir((path_resources / "images").string());
     set_local_dir((path_resources / "i18n").string());
     set_sys_shapes_dir((path_resources / "shapes").string());
+
+    //GalaxySlicer: set python dir
+    set_python_dir(path_python.string());
 
     // Parse all command line options into a DynamicConfig.
     // If any option is unsupported, print usage and abort immediately.

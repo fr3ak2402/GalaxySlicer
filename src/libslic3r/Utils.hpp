@@ -97,6 +97,11 @@ void set_resources_dir(const std::string &path);
 // Return a full path to the resources directory.
 const std::string& resources_dir();
 
+//GalaxySlicer: add python dir
+void set_python_dir(const std::string &path);
+// Return a full path to the python directory.
+const std::string& python_dir();
+
 //BBS: add temp dir
 void set_temporary_dir(const std::string &path);
 const std::string& temporary_dir();
