@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -6002,12 +6002,6 @@ msgstr "Вентилятор охолодження допоміжних дет�
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "G-код початку Філаменту"
 
@@ -7783,12 +7777,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Швидкість вентилятора"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -8908,6 +8905,9 @@ msgstr "Весь суцільний шар"
 msgid "Ironing Pattern"
 msgstr ""
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "Плавний потік"
 
@@ -8930,6 +8930,14 @@ msgstr "Швидкість розглажування"
 
 msgid "Print speed of ironing lines"
 msgstr "Швидкість друку прасувальних ліній"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr "Ця частина gcode вставляється при кожній зміні шару після підйому z"
@@ -9058,6 +9066,9 @@ msgstr "Максимальне прискорення руху"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+
+msgid "Fan speed"
+msgstr "Швидкість вентилятора"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "

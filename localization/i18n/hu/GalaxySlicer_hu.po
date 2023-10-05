@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5990,12 +5990,6 @@ msgstr "Kiegészítő tárgyhűtő ventilátor"
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "Filament kezdő G-kód"
 
@@ -7778,12 +7772,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Ventilátor fordulatszám"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -8822,6 +8819,9 @@ msgstr "Összes szilárd réteg"
 msgid "Ironing Pattern"
 msgstr "Ironing Pattern"
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "Vasalás áramlási sebesség"
 
@@ -8843,6 +8843,14 @@ msgstr "Vasalás sebessége"
 
 msgid "Print speed of ironing lines"
 msgstr "A vasalási vonalak nyomtatási sebessége"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr ""
@@ -8973,6 +8981,9 @@ msgstr "Maximális gyorsulás a mozgáshoz"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+
+msgid "Fan speed"
+msgstr "Ventilátor fordulatszám"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "

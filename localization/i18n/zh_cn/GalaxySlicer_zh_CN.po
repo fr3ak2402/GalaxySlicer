@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -5764,12 +5764,6 @@ msgstr "辅助部件冷却风扇"
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "耗材丝起始G-code"
 
@@ -7432,12 +7426,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "风扇速度"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -8431,6 +8428,9 @@ msgstr "所有实心层"
 msgid "Ironing Pattern"
 msgstr "熨烫模式"
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "熨烫流量"
 
@@ -8450,6 +8450,14 @@ msgstr "熨烫速度"
 
 msgid "Print speed of ironing lines"
 msgstr "熨烫的打印速度"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr "在每次换层抬升Z高度之后插入这段G-code。"
@@ -8574,6 +8582,9 @@ msgstr "空驶最大加速度"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+
+msgid "Fan speed"
+msgstr "风扇速度"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "

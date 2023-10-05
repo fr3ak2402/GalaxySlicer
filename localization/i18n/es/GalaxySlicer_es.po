@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -6098,12 +6098,6 @@ msgstr "Ventilador de parte auxiliar"
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "G-Code de inicio de filamento"
 
@@ -7944,12 +7938,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Velocidad del ventilador"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -9095,6 +9092,9 @@ msgstr "Todas la capas sólidas"
 msgid "Ironing Pattern"
 msgstr "Patrón de Alisado"
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "Flujo de alisado"
 
@@ -9117,6 +9117,14 @@ msgstr "Velocidad de alisado"
 
 msgid "Print speed of ironing lines"
 msgstr "Velocidad de impresión de las líneas de alisado"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr ""
@@ -9247,6 +9255,9 @@ msgstr "Aceleración máxima para el desplazamiento"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 "Máxima aceleración para el desplazamiento (M204 T), solo se aplica a Marlin 2"
+
+msgid "Fan speed"
+msgstr "Velocidad del ventilador"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "

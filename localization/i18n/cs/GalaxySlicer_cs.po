@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -6006,12 +6006,6 @@ msgstr "Přídavný ventilátor chlazení"
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "Filament Začátek G-kók"
 
@@ -7803,12 +7797,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "Rychlost ventilátoru"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -8921,6 +8918,9 @@ msgstr "Všechny pevné vrstvy"
 msgid "Ironing Pattern"
 msgstr "Vzor Žehlení"
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "Průtok žehlení"
 
@@ -8943,6 +8943,14 @@ msgstr "Rychlost žehlení"
 
 msgid "Print speed of ironing lines"
 msgstr "Rychlost tisku žehlících linek"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr "Tato část gcode je vložena při každé změně vrstvy po zvednutí z"
@@ -9072,6 +9080,9 @@ msgstr "Maximální zrychlení pro cestování"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 "maximální zrychlení pro cestování (M204 T), používá se pouze pro Marlin 2"
+
+msgid "Fan speed"
+msgstr "Rychlost ventilátoru"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 19:20+0200\n"
+"POT-Creation-Date: 2023-10-05 16:00+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -5899,12 +5899,6 @@ msgstr "보조 출력물 냉각 팬"
 msgid "Exhaust fan"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
-msgid "Complete print"
-msgstr ""
-
 msgid "Filament start G-code"
 msgstr "Filament start G-code"
 
@@ -7665,12 +7659,15 @@ msgstr ""
 msgid "Activate for better air filtration"
 msgstr ""
 
-msgid "Fan speed"
-msgstr "팬 속도"
+msgid "During print"
+msgstr ""
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
+msgstr ""
+
+msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -8748,6 +8745,9 @@ msgstr "모든 꽉찬 레이어"
 msgid "Ironing Pattern"
 msgstr "다림질 패턴"
 
+msgid "The pattern that will be used when ironing"
+msgstr ""
+
 msgid "Ironing flow"
 msgstr "다림질 유량"
 
@@ -8769,6 +8769,14 @@ msgstr "다림질 속도"
 
 msgid "Print speed of ironing lines"
 msgstr "다림질 선의 출력 속도"
+
+msgid "Ironing angle"
+msgstr ""
+
+msgid ""
+"The angle ironing is done at. A negative number disables this function and "
+"uses the default method."
+msgstr ""
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr "이 G코드는 Z올리기 이후 모든 레이어 변경에 삽입됩니다"
@@ -8895,6 +8903,9 @@ msgstr "이동 최대 가속도"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+
+msgid "Fan speed"
+msgstr "팬 속도"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
