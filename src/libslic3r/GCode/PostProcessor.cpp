@@ -440,6 +440,7 @@ std::string build_python_command(std::string &script_line)
 #else
 std::string build_python_command(std::string &script_line)
 {
+    std::string python_command;
     //If it looks like the following, then it is System post processor: Vendor#postprocessor.py printername
     if (script_line.find("#") != std::string::npos && script_line.find("python3") == std::string::npos)
     {
