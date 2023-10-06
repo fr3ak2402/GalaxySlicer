@@ -2769,7 +2769,7 @@ bool CLI::setup(int argc, char **argv)
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Resources";
 
     //GalaxySlicer: Path to Python
-    boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Python";
+    //boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Python";
 
 #elif defined _WIN32
     // The application is packed in the .zip archive in the root,
@@ -2791,7 +2791,7 @@ bool CLI::setup(int argc, char **argv)
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "resources";
 
     //GalaxySlicer: Path to Python
-    boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "python";
+    //boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "python";
 #endif
 
     set_resources_dir(path_resources.string());
@@ -2799,8 +2799,10 @@ bool CLI::setup(int argc, char **argv)
     set_local_dir((path_resources / "i18n").string());
     set_sys_shapes_dir((path_resources / "shapes").string());
 
+#ifdef WIN32
     //GalaxySlicer: set python dir
     set_python_dir(path_python.string());
+#endif
 
     // Parse all command line options into a DynamicConfig.
     // If any option is unsupported, print usage and abort immediately.

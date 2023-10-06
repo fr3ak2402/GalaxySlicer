@@ -218,6 +218,7 @@ const std::string& resources_dir()
     return g_resources_dir;
 }
 
+#ifdef WIN32
 //GalaxySlicer: python dir
 static std::string g_python_dir;
 
@@ -230,6 +231,7 @@ const std::string& python_dir()
 {
 	return g_python_dir;
 }
+#endif
 
 //BBS: add temporary dir
 static std::string g_temporary_dir;
