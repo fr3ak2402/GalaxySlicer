@@ -407,7 +407,7 @@ std::string build_python_command(std::string &script_line)
 {
     std::string python_command;
     //if it looks like the following, then it is System post processor: Vendor#postprocessor.py printername
-    if (script_line.find("#") != std::string::npos)
+    if (script_line.find("#") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
     {
         std::vector<std::string> script_infos;
 
@@ -417,13 +417,13 @@ std::string build_python_command(std::string &script_line)
         python_command = python_dir() + "/python.exe \"" + resources_dir() + "/profiles/" + script_infos[0] + "/postprocessor/" + script_infos[1] + "\"";
     }
     //if it looks like the following, then it is Non-system post processor: /path/to/postprocessor.py
-    else if (script_line.find("/") != std::string::npos)
+    else if (script_line.find("/") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
     {
         //build python command for non-system post processor
         python_command = python_dir() + "/python.exe \"" + script_line + "\"";
     }
     //if it looks like the following, then it is Non-system post processor: \path\to\postprocessor.py
-    else if (script_line.find("\\") != std::string::npos)
+    else if (script_line.find("\\") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
     {
         //build python command for non-system post processor
         script_line = boost::replace_all_copy(script_line, "\\", "/");
