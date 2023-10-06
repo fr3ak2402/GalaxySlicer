@@ -406,7 +406,7 @@ bool run_post_process_scripts(std::string &src_path, bool make_copy, const std::
 std::string build_python_command(std::string &script_line)
 {
     std::string python_command;
-    //if it looks like the following, then it is System post processor: Vendor#postprocessor.py printername
+    //if it looks like the following, then it is System post processor: Vendor#postprocessor.py
     if (script_line.find("#") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
     {
         std::vector<std::string> script_infos;
@@ -441,7 +441,7 @@ std::string build_python_command(std::string &script_line)
 std::string build_python_command(std::string &script_line)
 {
     std::string python_command;
-    //If it looks like the following, then it is System post processor: Vendor#postprocessor.py printername
+    //If it looks like the following, then it is System post processor: Vendor#postprocessor.py
     if (script_line.find("#") != std::string::npos && script_line.find("python3") == std::string::npos)
     {
         std::vector<std::string> script_infos;
@@ -462,6 +462,8 @@ std::string build_python_command(std::string &script_line)
     {
         python_command = script_line;
     }
+
+    BOOST_LOG_TRIVIAL(info) << "Python command: " << python_command;
 
     return python_command;
 }
