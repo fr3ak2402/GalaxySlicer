@@ -75,6 +75,9 @@
     "xy_hole_compensation": "0",
     "xy_contour_compensation": "0",
     "gcode_label_objects": "0",
+	"post_process": [
+        "Creality#postprocessor.py"
+    ],
     "compatible_printers": [
         "Creality K1 (0.6 nozzle)"
     ]

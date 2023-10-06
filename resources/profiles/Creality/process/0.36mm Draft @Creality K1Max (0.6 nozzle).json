@@ -48,6 +48,9 @@
     "travel_speed": "500",
     "enable_prime_tower": "1",
     "gcode_label_objects": "0",
+	"post_process": [
+        "Creality#postprocessor.py"
+    ],
     "compatible_printers": [
         "Creality K1 Max (0.6 nozzle)"
     ]

@@ -2,6 +2,15 @@
 include(ProcessorCount)
 ProcessorCount(NPROC)
 
+# Use OpenSSL 1.1.1k for Windows
+if (WIN32)
+	set(_openssl_url "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1k.tar.gz")
+	set(_openssl_hash b92f9d3d12043c02860e5e602e50a73ed21a69947bcc74d391f41148e9f6aa95)
+else()
+    set(_openssl_url "https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.2.tar.gz")
+    set(_openssl_hash 8c776993154652d0bb393f506d850b811517c8bd8d24b1008aef57fbe55d3f31)
+endif()
+
 if(DEFINED OPENSSL_ARCH)
     set(_cross_arch ${OPENSSL_ARCH})
 else()
@@ -40,10 +49,8 @@ endif()
 
 ExternalProject_Add(dep_OpenSSL
     #EXCLUDE_FROM_ALL ON
-    #URL "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1k.tar.gz"
-    URL "https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.2.tar.gz"
-    #URL_HASH SHA256=b92f9d3d12043c02860e5e602e50a73ed21a69947bcc74d391f41148e9f6aa95
-    URL_HASH SHA256=8c776993154652d0bb393f506d850b811517c8bd8d24b1008aef57fbe55d3f31
+    URL ${_openssl_url}
+    URL_HASH SHA256=${_openssl_hash}
     DOWNLOAD_DIR ${DEP_DOWNLOAD_DIR}/OpenSSL
 	CONFIGURE_COMMAND ${_conf_cmd} ${_cross_arch}
         "--openssldir=${DESTDIR}/usr/local"

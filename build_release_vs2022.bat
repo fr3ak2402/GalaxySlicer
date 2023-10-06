@@ -47,8 +47,11 @@ echo "copying Python..."
 
 cd %WP%/build/GalaxySlicer
 mkdir python
+cd python
 
 set PY_DEST=%CD%
-set PY_DEPS=%DEPS%/python
+set PY_DEPS=%WP%\deps\build\GalaxySlicer_dep\python
 
-xcopy %PY_DEPS% %PY_DEST%\python /E /I
+powershell -command "Copy-Item -Path %PY_DEPS%\* -Destination %PY_DEST% -Recurse"
+
+echo "building complete..."

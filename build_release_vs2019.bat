@@ -3,9 +3,11 @@ cd deps
 mkdir build
 cd build
 set DEPS=%CD%/GalaxySlicer_dep
+
 if "%1"=="slicer" (
     GOTO :slicer
 )
+
 echo "building deps.."
 cmake ../ -G "Visual Studio 16 2019" -DDESTDIR="%CD%/GalaxySlicer_dep" -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release --target deps -- -m
@@ -30,7 +32,6 @@ if "%1"=="deps" exit /b 0
 
 :slicer
 echo "building GalaxySlicer..."
-
 cd %WP%
 mkdir build 
 cd build
@@ -46,8 +47,11 @@ echo "copying Python..."
 
 cd %WP%/build/GalaxySlicer
 mkdir python
+cd python
 
 set PY_DEST=%CD%
-set PY_DEPS=%DEPS%/python
+set PY_DEPS=%WP%\deps\build\GalaxySlicer_dep\python
 
-xcopy %PY_DEPS% %PY_DEST%\python /E /I
+powershell -command "Copy-Item -Path %PY_DEPS%\* -Destination %PY_DEST% -Recurse"
+
+echo "building complete..."
