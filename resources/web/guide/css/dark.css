@@ -37,6 +37,17 @@ input[type=search] {
 	color: black;
 }
 
+/*--TabBar--*/
+.TabButton:hover
+{
+	background-color: #B9B9BC;
+}
+
+.TabActive
+{
+	background-color: #B9B9BC;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #3E3E45;
   opacity: 1; /* Firefox */
