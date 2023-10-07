@@ -462,9 +462,7 @@ std::string build_python_command(std::string &script_line)
     {
         python_command = script_line;
     }
-
-    BOOST_LOG_TRIVIAL(info) << "Python command: " << python_command;
-
+    
     return python_command;
 }
 #endif
