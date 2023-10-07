@@ -41,6 +41,8 @@ input[type=search] {
 .TabButton:hover
 {
 	background-color: #B9B9BC;
+	border-bottom: 1.5px solid #252525;
+	color: #252525;
 }
 
 .TabActive
