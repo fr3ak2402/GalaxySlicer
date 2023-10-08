@@ -2,7 +2,7 @@ import sys
 import re
 import os
 
-def update_signature_and_replace(source_file):
+def process_gcode(source_file):
     # Check if the source file exists
     if not os.path.isfile(source_file):
         print(f"The file '{source_file}' does not exist.")
@@ -60,5 +60,5 @@ if __name__ == "__main__":
     
     # Get the source file path from the command-line arguments and call the update function
     source_file = sys.argv[1]
-    update_signature_and_replace(source_file)
+    process_gcode(source_file)
 
