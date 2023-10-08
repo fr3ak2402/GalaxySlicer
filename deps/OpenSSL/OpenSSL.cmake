@@ -4,8 +4,8 @@ ProcessorCount(NPROC)
 
 # Use OpenSSL 1.1.1k for Windows
 if (WIN32)
-	set(_openssl_url "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1k.tar.gz")
-	set(_openssl_hash b92f9d3d12043c02860e5e602e50a73ed21a69947bcc74d391f41148e9f6aa95)
+	set(_openssl_url "https://github.com/openssl/openssl/archive/OpenSSL_1_1_1w.tar.gz")
+	set(_openssl_hash 2130e8c2fb3b79d1086186f78e59e8bc8d1a6aedf17ab3907f4cb9ae20918c41)
 else()
     set(_openssl_url "https://github.com/openssl/openssl/archive/refs/tags/openssl-3.1.2.tar.gz")
     set(_openssl_hash 8c776993154652d0bb393f506d850b811517c8bd8d24b1008aef57fbe55d3f31)
