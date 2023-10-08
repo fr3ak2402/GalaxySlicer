@@ -1,0 +1,20 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.28mm Extra Draft @Voron Switchwire (0.8 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_voron_common",
+    "outer_wall_line_width": "0.8",
+    "line_width": "0.8",
+    "sparse_infill_line_width": "0.85",
+    "layer_height": "0.28",
+    "inner_wall_line_width": "0.85",
+    "internal_solid_infill_line_width": "0.8",
+    "support_line_width": "0.8",
+    "top_surface_line_width": "0.85",
+    "top_shell_layers": "4",
+    "compatible_printers": [
+        "Voron Switchwire (0.8 nozzle)"
+    ]
+}

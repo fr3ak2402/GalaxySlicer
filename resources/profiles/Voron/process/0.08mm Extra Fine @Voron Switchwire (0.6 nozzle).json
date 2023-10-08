@@ -1,0 +1,21 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.08mm Extra Fine @Voron Switchwire (0.6 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_voron_common",
+    "bottom_shell_layers": "7",
+    "outer_wall_line_width": "0.6",
+    "line_width": "0.6",
+    "sparse_infill_line_width": "0.65",
+    "layer_height": "0.08",
+    "inner_wall_line_width": "0.65",
+    "internal_solid_infill_line_width": "0.6",
+    "support_line_width": "0.6",
+    "top_surface_line_width": "0.6",
+    "top_shell_layers": "9",
+    "compatible_printers": [
+        "Voron Switchwire (0.6 nozzle)"
+    ]
+}

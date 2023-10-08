@@ -1,0 +1,19 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.20mm Standard @Voron Switchwire (0.8 nozzle)",
+    "from": "system",
+    "inherits": "fdm_process_voron_common",
+    "instantiation": "true",
+    "outer_wall_line_width": "0.8",
+    "line_width": "0.8",
+    "sparse_infill_line_width": "0.85",
+    "inner_wall_line_width": "0.85",
+    "internal_solid_infill_line_width": "0.8",
+    "support_line_width": "0.8",
+    "top_surface_line_width": "0.8",
+    "top_shell_layers": "4",
+    "compatible_printers": [
+        "Voron Switchwire (0.8 nozzle)"
+    ]
+}
