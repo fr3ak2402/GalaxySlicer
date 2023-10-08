@@ -25,7 +25,9 @@ set(_curl_platform_flags
 )
 
 if (WIN32)
-  set(_curl_platform_flags  ${_curl_platform_flags} -DCMAKE_USE_SCHANNEL=ON)
+  #set(_curl_platform_flags  ${_curl_platform_flags} -DCMAKE_USE_SCHANNEL=ON)
+  set(_curl_platform_flags  ${_curl_platform_flags} -DCMAKE_USE_OPENSSL=ON -DCURL_CA_PATH:STRING=none)
+
 elseif (APPLE)
   set(_curl_platform_flags 
     
@@ -75,5 +77,5 @@ if (APPLE OR (CMAKE_SYSTEM_NAME STREQUAL "Linux"))
 endif ()
 
 if (MSVC)
-    add_debug_dep(dep_CURL)
+  add_debug_dep(dep_CURL)
 endif ()
