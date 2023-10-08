@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 16:00+0200\n"
+"POT-Creation-Date: 2023-10-08 12:02+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -10156,6 +10156,34 @@ msgstr ""
 "개체의 윤곽은 구성된 값에 의해 XY 평면에서 커지거나 줄어듭니다. 양수 값은 윤"
 "곽선을 더 크게 만듭니다. 음수 값은 윤곽선을 더 작게 만듭니다. 이 기능은 개체"
 "의 조립 문제가 있을 때 크기를 약간 조정하는 데 사용됩니다"
+
+msgid "Convert holes to polyholes"
+msgstr ""
+
+msgid ""
+"Search for almost-circular holes that span more than one layer and convert "
+"the geometry to polyholes. Use the nozzle size and the (biggest) diameter to "
+"compute the polyhole.\n"
+"See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
+msgstr ""
+
+msgid "Polyhole detection margin"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"Maximum defection of a point to the estimated radius of the circle.\n"
+"As cylinders are often exported as triangles of varying size, points may not "
+"be on the circle circumference. This setting allows you some leway to "
+"broaden the detection.\n"
+"In mm or in % of the radius."
+msgstr ""
+
+msgid "Polyhole twist"
+msgstr ""
+
+msgid "Rotate the polyhole every layer."
+msgstr ""
 
 msgid "G-code thumbnails"
 msgstr "G코드 미리보기(썸네일)"

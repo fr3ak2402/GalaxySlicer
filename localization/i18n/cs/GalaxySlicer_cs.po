@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 16:00+0200\n"
+"POT-Creation-Date: 2023-10-08 12:02+0200\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -10375,6 +10375,34 @@ msgstr ""
 "hodnotu. Kladná hodnota zvětší obrys. Záporná hodnota zmenší obrys. Tato "
 "funkce se používá k mírné úpravě velikosti, když má objekt problém se "
 "sestavováním"
+
+msgid "Convert holes to polyholes"
+msgstr ""
+
+msgid ""
+"Search for almost-circular holes that span more than one layer and convert "
+"the geometry to polyholes. Use the nozzle size and the (biggest) diameter to "
+"compute the polyhole.\n"
+"See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
+msgstr ""
+
+msgid "Polyhole detection margin"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"Maximum defection of a point to the estimated radius of the circle.\n"
+"As cylinders are often exported as triangles of varying size, points may not "
+"be on the circle circumference. This setting allows you some leway to "
+"broaden the detection.\n"
+"In mm or in % of the radius."
+msgstr ""
+
+msgid "Polyhole twist"
+msgstr ""
+
+msgid "Rotate the polyhole every layer."
+msgstr ""
 
 msgid "G-code thumbnails"
 msgstr "Náhledy G-kódu"

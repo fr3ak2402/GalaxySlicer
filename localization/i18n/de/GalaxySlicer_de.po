@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-05 16:00+0200\n"
+"POT-Creation-Date: 2023-10-08 12:02+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -10872,6 +10872,34 @@ msgstr ""
 "vergrößert oder verkleinert. Positive Werte vergrößern Konturen, negative "
 "Werte verkleinern Konturen. Diese Funktion wird verwendet, um die Größe "
 "geringfügig anzupassen, wenn Objekte Probleme bei der Montage haben."
+
+msgid "Convert holes to polyholes"
+msgstr ""
+
+msgid ""
+"Search for almost-circular holes that span more than one layer and convert "
+"the geometry to polyholes. Use the nozzle size and the (biggest) diameter to "
+"compute the polyhole.\n"
+"See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
+msgstr ""
+
+msgid "Polyhole detection margin"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"Maximum defection of a point to the estimated radius of the circle.\n"
+"As cylinders are often exported as triangles of varying size, points may not "
+"be on the circle circumference. This setting allows you some leway to "
+"broaden the detection.\n"
+"In mm or in % of the radius."
+msgstr ""
+
+msgid "Polyhole twist"
+msgstr ""
+
+msgid "Rotate the polyhole every layer."
+msgstr ""
 
 msgid "G-code thumbnails"
 msgstr "G-Code Vorschaubilder"
