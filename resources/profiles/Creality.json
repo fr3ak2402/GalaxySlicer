@@ -1,6 +1,6 @@
 {
 "name": "Creality",
-"version": "01.01.00.00",
+"version": "01.00.00.00",
 "force_update": "0",
 "description": "Creality configurations",
 "machine_model_list":   [
@@ -33,6 +33,10 @@
       "sub_path": "machine/Creality CR-M4.json"
   },
   {
+      "name": "Creality Ender-3 Max Neo",
+      "sub_path": "machine/Creality Ender-3 Max Neo.json"
+  },
+  {
       "name": "Creality Ender-3 S1 Pro",
       "sub_path": "machine/Creality Ender-3 S1 Pro.json"
   },
@@ -43,6 +47,14 @@
   {
       "name": "Creality Ender-3 V2",
       "sub_path": "machine/Creality Ender-3 V2.json"
+  },
+  {
+      "name": "Creality Ender-3 V3 SE",
+      "sub_path": "machine/Creality Ender-3 V3 SE.json"
+  },
+  {
+      "name": "Creality Ender-3",
+      "sub_path": "machine/Creality Ender-3.json"
   },
   {
       "name": "Creality Ender-5 Plus",
@@ -123,6 +135,38 @@
       "sub_path": "process/0.12mm Fine @Creality CR6SE (0.4 nozzle).json"
   },
   {
+      "name": "0.12mm Fine @Creality Ender3 (0.2 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3 (0.4 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3 (0.6 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3 (0.8 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3MaxNeo (0.2 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3MaxNeo (0.2 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3MaxNeo (0.4 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3MaxNeo (0.4 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3MaxNeo (0.6 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3MaxNeo (0.6 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3MaxNeo (0.8 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3MaxNeo (0.8 nozzle).json"
+  },
+  {
       "name": "0.12mm Fine @Creality Ender3V2 (0.2 nozzle)",
       "sub_path": "process/0.12mm Fine @Creality Ender3V2 (0.2 nozzle).json"
   },
@@ -137,6 +181,22 @@
   {
       "name": "0.12mm Fine @Creality Ender3V2 (0.8 nozzle)",
       "sub_path": "process/0.12mm Fine @Creality Ender3V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3V3SE (0.2 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3V3SE (0.2 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3V3SE (0.4 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3V3SE (0.4 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3V3SE (0.6 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3V3SE (0.6 nozzle).json"
+  },
+  {
+      "name": "0.12mm Fine @Creality Ender3V3SE (0.8 nozzle)",
+      "sub_path": "process/0.12mm Fine @Creality Ender3V3SE (0.8 nozzle).json"
   },
   {
       "name": "0.12mm Fine @Creality Ender5Pro (2019) (0.2 nozzle)",
@@ -179,6 +239,38 @@
       "sub_path": "process/0.15mm Optimal @Creality CR10Max (0.8 nozzle).json"
   },
   {
+      "name": "0.15mm Optimal @Creality Ender3 (0.2 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3 (0.4 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3 (0.6 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3 (0.8 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3MaxNeo (0.2 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3MaxNeo (0.2 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3MaxNeo (0.4 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3MaxNeo (0.4 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3MaxNeo (0.6 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3MaxNeo (0.6 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3MaxNeo (0.8 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3MaxNeo (0.8 nozzle).json"
+  },
+  {
       "name": "0.15mm Optimal @Creality Ender3V2 (0.2 nozzle)",
       "sub_path": "process/0.15mm Optimal @Creality Ender3V2 (0.2 nozzle).json"
   },
@@ -193,6 +285,22 @@
   {
       "name": "0.15mm Optimal @Creality Ender3V2 (0.8 nozzle)",
       "sub_path": "process/0.15mm Optimal @Creality Ender3V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3V3SE (0.2 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3V3SE (0.2 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3V3SE (0.4 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3V3SE (0.4 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3V3SE (0.6 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3V3SE (0.6 nozzle).json"
+  },
+  {
+      "name": "0.15mm Optimal @Creality Ender3V3SE (0.8 nozzle)",
+      "sub_path": "process/0.15mm Optimal @Creality Ender3V3SE (0.8 nozzle).json"
   },
   {
       "name": "0.15mm Optimal @Creality Ender5Pro (2019) (0.2 nozzle)",
@@ -531,6 +639,38 @@
       "sub_path": "process/0.20mm Standard @Creality CRM4 (0.8 nozzle).json"
   },
   {
+      "name": "0.20mm Standard @Creality Ender3 (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3 (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3 (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3 (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3MaxNeo (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3MaxNeo (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3MaxNeo (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3MaxNeo (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3MaxNeo (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3MaxNeo (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3MaxNeo (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3MaxNeo (0.8 nozzle).json"
+  },
+  {
       "name": "0.20mm Standard @Creality Ender3S1 (0.2 nozzle)",
       "sub_path": "process/0.20mm Standard @Creality Ender3S1 (0.2 nozzle).json"
   },
@@ -577,6 +717,22 @@
   {
       "name": "0.20mm Standard @Creality Ender3V2 (0.8 nozzle)",
       "sub_path": "process/0.20mm Standard @Creality Ender3V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3V3SE (0.2 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3V3SE (0.2 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3V3SE (0.4 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3V3SE (0.4 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3V3SE (0.6 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3V3SE (0.6 nozzle).json"
+  },
+  {
+      "name": "0.20mm Standard @Creality Ender3V3SE (0.8 nozzle)",
+      "sub_path": "process/0.20mm Standard @Creality Ender3V3SE (0.8 nozzle).json"
   },
   {
       "name": "0.20mm Standard @Creality Ender5 (0.2 nozzle)",
@@ -723,6 +879,38 @@
       "sub_path": "process/0.24mm Draft @Creality CR6SE (0.4 nozzle).json"
   },
   {
+      "name": "0.24mm Draft @Creality Ender3 (0.2 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3 (0.2 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3 (0.4 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3 (0.4 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3 (0.6 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3 (0.6 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3 (0.8 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3MaxNeo (0.2 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3MaxNeo (0.2 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3MaxNeo (0.4 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3MaxNeo (0.4 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3MaxNeo (0.6 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3MaxNeo (0.6 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3MaxNeo (0.8 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3MaxNeo (0.8 nozzle).json"
+  },
+  {
       "name": "0.24mm Draft @Creality Ender3V2 (0.2 nozzle)",
       "sub_path": "process/0.24mm Draft @Creality Ender3V2 (0.2 nozzle).json"
   },
@@ -737,6 +925,22 @@
   {
       "name": "0.24mm Draft @Creality Ender3V2 (0.8 nozzle)",
       "sub_path": "process/0.24mm Draft @Creality Ender3V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3V3SE (0.2 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3V3SE (0.2 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3V3SE (0.4 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3V3SE (0.4 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3V3SE (0.6 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3V3SE (0.6 nozzle).json"
+  },
+  {
+      "name": "0.24mm Draft @Creality Ender3V3SE (0.8 nozzle)",
+      "sub_path": "process/0.24mm Draft @Creality Ender3V3SE (0.8 nozzle).json"
   },
   {
       "name": "0.24mm Draft @Creality Ender5Pro (2019) (0.2 nozzle)",
@@ -1091,6 +1295,38 @@
       "sub_path": "machine/Creality CR-M4 (0.8 nozzle).json"
   },
   {
+      "name": "Creality Ender-3 (0.2 nozzle)",
+      "sub_path": "machine/Creality Ender-3 (0.2 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 (0.4 nozzle)",
+      "sub_path": "machine/Creality Ender-3 (0.4 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 (0.6 nozzle)",
+      "sub_path": "machine/Creality Ender-3 (0.6 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 (0.8 nozzle)",
+      "sub_path": "machine/Creality Ender-3 (0.8 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 Max Neo (0.2 nozzle)",
+      "sub_path": "machine/Creality Ender-3 Max Neo (0.2 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 Max Neo (0.4 nozzle)",
+      "sub_path": "machine/Creality Ender-3 Max Neo (0.4 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 Max Neo (0.6 nozzle)",
+      "sub_path": "machine/Creality Ender-3 Max Neo (0.6 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 Max Neo (0.8 nozzle)",
+      "sub_path": "machine/Creality Ender-3 Max Neo (0.8 nozzle).json"
+  },
+  {
       "name": "Creality Ender-3 S1 (0.2 nozzle)",
       "sub_path": "machine/Creality Ender-3 S1 (0.2 nozzle).json"
   },
@@ -1137,6 +1373,22 @@
   {
       "name": "Creality Ender-3 V2 (0.8 nozzle)",
       "sub_path": "machine/Creality Ender-3 V2 (0.8 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 V3 SE (0.2 nozzle)",
+      "sub_path": "machine/Creality Ender-3 V3 SE (0.2 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 V3 SE (0.4 nozzle)",
+      "sub_path": "machine/Creality Ender-3 V3 SE (0.4 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 V3 SE (0.6 nozzle)",
+      "sub_path": "machine/Creality Ender-3 V3 SE (0.6 nozzle).json"
+  },
+  {
+      "name": "Creality Ender-3 V3 SE (0.8 nozzle)",
+      "sub_path": "machine/Creality Ender-3 V3 SE (0.8 nozzle).json"
   },
   {
       "name": "Creality Ender-5 (0.2 nozzle)",
