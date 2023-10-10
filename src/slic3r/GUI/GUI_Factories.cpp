@@ -485,7 +485,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
         sub_menu->AppendSeparator();
     }
 
-    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("3DBenchy"), L("Autodesk FDM Test")}) 
+    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) 
     {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
@@ -505,6 +505,9 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
                 }
                 else if (file_name == L("Voron Cube")) {
                     file_name = "Voron_Design_Cube_v7.stl";
+                }
+                else if (file_name == L("Disc")) {
+                    file_name = "Disc.stl";
                 }
                 else if (file_name == L("3DBenchy")) {
                     file_name = "3DBenchy.stl";
