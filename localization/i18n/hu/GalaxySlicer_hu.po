@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 09:39+0200\n"
+"POT-Creation-Date: 2023-10-10 10:39+0200\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -11792,22 +11792,6 @@ msgid ""
 "Please delete the file and try again."
 msgstr ""
 
-msgid "The Orca Slicer needs an upgrade"
-msgstr "A Orca Slicert frissíteni kell"
-
-msgid ""
-"The version of Orca Slicer is too low and needs to be updated to the latest "
-"version before it can be used normally"
-msgstr ""
-"A Orca Slicer ezen verziója túl régi és a legfrissebb verzióra kell "
-"frissíteni, mielőtt rendesen használható lenne"
-
-msgid "Orca Slicer GUI initialization failed"
-msgstr "Nem sikerült a Orca Slicer GUI inicializálása"
-
-msgid "Orca Slicer is licensed under "
-msgstr "A Orca Slicer a következő licencet használja "
-
 msgid ""
 "Orca Slicer is based on BambuStudio by Bambulab, which is from PrusaSlicer "
 "by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro Ranellucci and "
@@ -11842,33 +11826,6 @@ msgid ""
 "on Orca Slicer(windows) or CAD softwares."
 msgstr ""
 
-msgid "Associate files to OrcaSlicer"
-msgstr "Fájlok társítása a OrcaSlicerhoz"
-
-msgid "Associate .3mf files to OrcaSlicer"
-msgstr ".3mf fájlok társítása a OrcaSlicerhoz"
-
-msgid "If enabled, sets OrcaSlicer as default application to open .3mf files"
-msgstr ""
-"Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
-"alkalmazásként a .3mf fájlok megnyitásához"
-
-msgid "Associate .stl files to OrcaSlicer"
-msgstr ".stl fájlok társítása a OrcaSlicerhoz"
-
-msgid "If enabled, sets OrcaSlicer as default application to open .stl files"
-msgstr ""
-"Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
-"alkalmazásként az .stl fájlok megnyitásához"
-
-msgid "Associate .step/.stp files to OrcaSlicer"
-msgstr ".step/.stp fájlok társítása a OrcaSlicerhoz"
-
-msgid "If enabled, sets OrcaSlicer as default application to open .step files"
-msgstr ""
-"Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
-"alkalmazásként a .step fájlok megnyitásához"
-
 #: resources/data/hints.ini: [hint:Subtract a Part]
 msgid ""
 "Subtract a Part\n"
@@ -11886,15 +11843,60 @@ msgid ""
 "lower resolution STL. Give it a try!"
 msgstr ""
 
-#: resources/data/hints.ini: [hint:Brim for better adhesion]
-msgid ""
-"Brim for better adhesion\n"
-"Did you know that when printing models have a small contact interface with "
-"the printing surface, it's recommended to use a brim?"
-msgstr ""
-"Perem a jobb tapadás érdekében\n"
-"Tudtad, hogy a ha a nyomtatott modell csak kis felületen érintkezik az "
-"asztallal, akkor ajánlott peremet használni?"
+#~ msgid "The Orca Slicer needs an upgrade"
+#~ msgstr "A Orca Slicert frissíteni kell"
+
+#~ msgid ""
+#~ "The version of Orca Slicer is too low and needs to be updated to the "
+#~ "latest version before it can be used normally"
+#~ msgstr ""
+#~ "A Orca Slicer ezen verziója túl régi és a legfrissebb verzióra kell "
+#~ "frissíteni, mielőtt rendesen használható lenne"
+
+#~ msgid "Orca Slicer GUI initialization failed"
+#~ msgstr "Nem sikerült a Orca Slicer GUI inicializálása"
+
+#~ msgid "Orca Slicer is licensed under "
+#~ msgstr "A Orca Slicer a következő licencet használja "
+
+#~ msgid "Associate files to OrcaSlicer"
+#~ msgstr "Fájlok társítása a OrcaSlicerhoz"
+
+#~ msgid "Associate .3mf files to OrcaSlicer"
+#~ msgstr ".3mf fájlok társítása a OrcaSlicerhoz"
+
+#~ msgid ""
+#~ "If enabled, sets OrcaSlicer as default application to open .3mf files"
+#~ msgstr ""
+#~ "Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
+#~ "alkalmazásként a .3mf fájlok megnyitásához"
+
+#~ msgid "Associate .stl files to OrcaSlicer"
+#~ msgstr ".stl fájlok társítása a OrcaSlicerhoz"
+
+#~ msgid ""
+#~ "If enabled, sets OrcaSlicer as default application to open .stl files"
+#~ msgstr ""
+#~ "Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
+#~ "alkalmazásként az .stl fájlok megnyitásához"
+
+#~ msgid "Associate .step/.stp files to OrcaSlicer"
+#~ msgstr ".step/.stp fájlok társítása a OrcaSlicerhoz"
+
+#~ msgid ""
+#~ "If enabled, sets OrcaSlicer as default application to open .step files"
+#~ msgstr ""
+#~ "Ha engedélyezve van, a OrcaSlicer-t állítja be alapértelmezett "
+#~ "alkalmazásként a .step fájlok megnyitásához"
+
+#~ msgid ""
+#~ "Brim for better adhesion\n"
+#~ "Did you know that when printing models have a small contact interface "
+#~ "with the printing surface, it's recommended to use a brim?"
+#~ msgstr ""
+#~ "Perem a jobb tapadás érdekében\n"
+#~ "Tudtad, hogy a ha a nyomtatott modell csak kis felületen érintkezik az "
+#~ "asztallal, akkor ajánlott peremet használni?"
 
 #~ msgid "Cali"
 #~ msgstr "Kali"
