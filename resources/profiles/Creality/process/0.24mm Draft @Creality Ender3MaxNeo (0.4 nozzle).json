@@ -1,0 +1,14 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.24mm Draft @Creality Ender3MaxNeo (0.4 nozzle)",
+    "from": "system",
+    "inherits": "fdm_process_creality_common",
+    "instantiation": "true",
+    "layer_height": "0.24",
+    "top_surface_line_width": "0.45",
+    "top_shell_layers": "4",
+    "compatible_printers": [
+        "Creality Ender-3 Max Neo (0.4 nozzle)"
+    ]
+}

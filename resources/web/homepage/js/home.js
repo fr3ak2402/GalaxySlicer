@@ -423,6 +423,19 @@ function ShowNotice( nShow )
 	}
 }
 
+//-------------Libraries------------------
+
+function OpenLibraryUrl( strUrl )
+{
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="homepage_open_library";
+	tSend['data']={};
+	tSend['data']['url']=strUrl;
+	
+	SendWXMessage( JSON.stringify(tSend) );	
+}
+
 //-------------Socials------------------
 
 function OpenSocialUrl( strUrl )

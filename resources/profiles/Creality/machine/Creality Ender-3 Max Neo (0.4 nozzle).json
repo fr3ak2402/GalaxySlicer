@@ -1,0 +1,24 @@
+{
+    "type": "machine",
+    "setting_id": "GM001",
+    "name": "Creality Ender-3 Max Neo (0.4 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_machine_creality",
+    "printer_model": "Creality Ender-3 Max Neo",
+    "default_filament_profile": [
+        "Creality Generic PLA @0.4 nozzle"
+    ],
+    "default_print_profile": "0.20mm Standard @Creality Ender3MaxNeo (0.4 nozzle)",
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "printer_variant": "0.4",
+    "printable_area": [
+        "0x0",
+        "300x0",
+        "300x300",
+        "0x300"
+    ],
+    "printable_height": "320"
+}
