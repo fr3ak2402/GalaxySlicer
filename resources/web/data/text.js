@@ -98,10 +98,11 @@ var LangText = {
 		"t103": "Github issues",
 		"t104": "Discord",
 		"t105": "Official server",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "browse"
+		"t106": "Library",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "browse"
 	},
 	"de_DE": {
 		"t1": "Willkommen im GalaxySlicer",
@@ -200,10 +201,11 @@ var LangText = {
 		"t103": "Github Themen",
 		"t104": "Discord",
 		"t105": "Offizieller Server",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Durchsuchen"
+		"t106": "Bibliothek",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Durchsuchen"
 	},
 	"nl_NL": {
 		"t1": "Welkom bij GalaxySlicer",
@@ -304,10 +306,11 @@ var LangText = {
 		"t103": "Github-problemen",
 		"t104": "Discord",
 		"t105": "Officiële server",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Bladeren"
+		"t106": "Bibliotheek",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Bladeren"
 	},
 	"cs_CZ": {
 		"t1": "Vítejte v GalaxySlicer",
@@ -406,10 +409,11 @@ var LangText = {
 		"t103": "Problémy Github",
 		"t104": "Discord",
 		"t105": "Oficiální server",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Procházet"
+		"t106": "Knihovna",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Procházet"
 	},
 	"fr_FR": {
 		"t1": "Bienvenue sur GalaxySlicer",
@@ -510,10 +514,11 @@ var LangText = {
 		"t103": "Problèmes Github",
 		"t104": "Discord",
 		"t105": "Serveur officiel",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Parcourir",
+		"t106": "Bibliothèque",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Parcourir",
 		"wk1": "Démarrage rapide",
 		"wk2": "Cet article présente l'utilisation la plus basique de GalaxySlicer. Il guide les utilisateurs pour configurer le logiciel, créer des projets et effectuer la première tâche d'impression étape par étape.",
 		"wk3": "Workflow basé sur des projets",
@@ -628,10 +633,11 @@ var LangText = {
 		"t103": "Github 问题",
 		"t104": "Discord",
 		"t105": "官方服务器",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "浏览",
+		"t106": "图书馆",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "浏览",
 		"wk1": "快速入门指南",
 		"wk2": "本文介绍了GalaxySlicer的最基本用法。它指导用户配置软件，创建项目，并逐步完成第一个打印任务。",
 		"wk3": "基于项目的工作流",
@@ -748,10 +754,11 @@ var LangText = {
 		"t103": "Проблеми Github",
 		"t104": "Discord",
 		"t105": "Офіційний сервер",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Переглянути"
+		"t106": "Бібліотека",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Переглянути"
 	},
 	"it_IT":{
 		"t1":"Benvenuti in GalaxySlicer",
@@ -852,10 +859,11 @@ var LangText = {
 		"t103": "Problemi di Github",
 		"t104": "Discord",
 		"t105": "Server ufficiale",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Sfogliare"
+		"t106": "Libreria",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Sfogliare"
 	},
 	"es_ES":{
 		"t1":"Bienvenido a GalaxySlicer",
@@ -956,10 +964,11 @@ var LangText = {
 		"t103": "Problemas de Github",
 		"t104": "Discord",
 		"t105": "Servidor oficial",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Visite"
+		"t106": "Biblioteca",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Visite"
 	},
 	"hu_HU":{
 		"t1":"Üdvözöljük a GalaxySlicerben",
@@ -1060,10 +1069,11 @@ var LangText = {
 		"t103": "Github problémák",
 		"t104": "Discord",
 		"t105": "Hivatalos szerver",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Böngészés"
+		"t106": "Könyvtár",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Böngészés"
 	},
 	"ja_JP": {
 		"t1": "GalaxySlicerへようこそ",
@@ -1164,10 +1174,11 @@ var LangText = {
 		"t103": "Githubの問題",
 		"t104": "Discord",
 		"t105": "公式サーバー",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "ブラウズ"
+		"t106": "ライブラリー",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "ブラウズ"
 	},
 	"ko_KR": {
 		"t1": "GalaxySlicer에 오신 것을 환영합니다",
@@ -1268,10 +1279,11 @@ var LangText = {
 		"t103": "Github 이슈",
 		"t104": "Discord",
 		"t105": "공식 서버",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "찾아보기"
+		"t106": "라이브러리",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "찾아보기"
 	},
 	"ru_RU": {
 		"t1": "Добро пожаловать в GalaxySlicer",
@@ -1372,10 +1384,11 @@ var LangText = {
 		"t103": "Проблемы Github",
 		"t104": "Discord",
 		"t105": "Официальный сервер",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Просмотреть"
+		"t106": "Библиотека",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Просмотреть"
 	},
 	"sv_SE": {
 		"t1": "Välkommen till GalaxySlicer",
@@ -1476,10 +1489,11 @@ var LangText = {
 		"t103": "Github-ärenden",
 		"t104": "Discord",
 		"t105": "Officiell server",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Bläddra"
+		"t106": "Bibliotek",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Bläddra"
 	},
 	"tr_TR": {
 		"t1": "GalaxySlicer'a hoş geldiniz",
@@ -1580,10 +1594,11 @@ var LangText = {
 		"t103": "Github sorunları",
 		"t104": "Discord",
 		"t105": "Resmi sunucu",
-		"t106": "MakerWorld",
-		"t107": "Printables",
-		"t108": "Thingiverse",
-		"t109": "Gözat"
+		"t106": "Kütüphane",
+		"t107": "MakerWorld",
+		"t108": "Printables",
+		"t109": "Thingiverse",
+		"t110": "Gözat"
 	}
 };
 
