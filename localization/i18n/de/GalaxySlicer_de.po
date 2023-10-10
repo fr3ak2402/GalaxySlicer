@@ -4508,22 +4508,22 @@ msgid "Printer settings"
 msgstr "Drucker-Einstellungen"
 
 msgid "Remove current plate (if not last one)"
-msgstr ""
+msgstr "entferne aktuelle Platte (wenn nicht die letzte)"
 
 msgid "Auto orient objects on current plate"
-msgstr ""
+msgstr "Automatische Ausrichtung der Objekte auf der aktuellen Platte"
 
 msgid "Arrange objects on current plate"
-msgstr ""
+msgstr "Ausrichtung der Objekte auf der aktuellen Platte"
 
 msgid "Unlock current plate"
-msgstr ""
+msgstr "Entsperre aktuelle Platte "
 
 msgid "Lock current plate"
-msgstr ""
+msgstr "Speere aktuelle Platte"
 
 msgid "Customize current plate"
-msgstr ""
+msgstr "Aktuelle Platte anpassen"
 
 msgid "Untitled"
 msgstr "Unbenannt"
@@ -10892,7 +10892,7 @@ msgstr ""
 "geringfügig anzupassen, wenn Objekte Probleme bei der Montage haben."
 
 msgid "Convert holes to polyholes"
-msgstr ""
+msgstr "Konvertiere Löcher zu Polyholes"
 
 msgid ""
 "Search for almost-circular holes that span more than one layer and convert "
@@ -10900,11 +10900,15 @@ msgid ""
 "compute the polyhole.\n"
 "See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 msgstr ""
+"Suchen Sie nach fast kreisförmigen Löchern, die sich über mehr als eine "
+"Schicht erstrecken, und konvertieren Sie die Geometrie in Polyholes. "
+"Verwenden Sie die Düsengröße und den (größten) Durchmesser, um das "
+"Polyhole zu berechnen.\n"
+"Siehe http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 
 msgid "Polyhole detection margin"
-msgstr ""
+msgstr "ab Wert erkenne Polyhole"
 
-#, c-format, boost-format
 msgid ""
 "Maximum defection of a point to the estimated radius of the circle.\n"
 "As cylinders are often exported as triangles of varying size, points may not "
@@ -10912,12 +10916,17 @@ msgid ""
 "broaden the detection.\n"
 "In mm or in % of the radius."
 msgstr ""
+"Maximale Abweichung eines Punktes vom geschätzten Radius des Kreises.\n"
+"Da Zylinder oft als Dreiecke unterschiedlicher Größe exportiert werden, "
+"liegen die Punkte möglicherweise nicht auf dem Umfang des Kreises. Diese "
+"Einstellung ermöglicht es Ihnen, die Erkennung zu erweitern.\n"
+"In mm oder in % des Radius."
 
 msgid "Polyhole twist"
-msgstr ""
+msgstr "Polyhole verdrehen"
 
 msgid "Rotate the polyhole every layer."
-msgstr ""
+msgstr "Polyhole in jeder Schicht drehen."
 
 msgid "G-code thumbnails"
 msgstr "G-Code Vorschaubilder"
