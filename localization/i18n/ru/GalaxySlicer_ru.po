@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-08 12:02+0200\n"
+"POT-Creation-Date: 2023-10-10 09:39+0200\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -613,7 +613,7 @@ msgid ""
 msgstr ""
 
 msgid "WebView2 Runtime"
-msgstr ""
+msgstr "WebView2 Runtime"
 
 msgid ""
 "GalaxySlicer configuration file may be corrupted and is not abled to be "
@@ -2863,7 +2863,7 @@ msgid "Layer Time: "
 msgstr "Время печати слоя: "
 
 msgid "Fan: "
-msgstr ""
+msgstr "Скорость вентилятора: "
 
 msgid "Temperature: "
 msgstr "Температура: "
@@ -3934,22 +3934,25 @@ msgid "Swap Y/Z axes"
 msgstr "Поменять местами оси Y/Z"
 
 msgid "Invert X axis"
-msgstr ""
+msgstr "Инвертировать ось X"
 
 msgid "Invert Y axis"
-msgstr ""
+msgstr "Инвертировать ось Y"
 
 msgid "Invert Z axis"
-msgstr ""
+msgstr "Инвертировать ось Z"
 
+# ??? Инвертировать поворот по горизонтали
 msgid "Invert Yaw axis"
-msgstr ""
+msgstr "Инвертировать ось рыскания (Y)"
 
+# ??? Инвертировать поворот по вертикали
 msgid "Invert Pitch axis"
-msgstr ""
+msgstr "Инвертировать ось тангажа (X)"
 
+# ??? Инвертировать поворот вокруг продольной оси
 msgid "Invert Roll axis"
-msgstr ""
+msgstr "Инвертировать ось крена (Z)"
 
 msgid "Printing Progress"
 msgstr "Прогресс печати"
@@ -4421,6 +4424,24 @@ msgstr "Настройки прутка"
 msgid "Printer settings"
 msgstr "Настройки принтера"
 
+msgid "Remove current plate (if not last one)"
+msgstr ""
+
+msgid "Auto orient objects on current plate"
+msgstr ""
+
+msgid "Arrange objects on current plate"
+msgstr ""
+
+msgid "Unlock current plate"
+msgstr ""
+
+msgid "Lock current plate"
+msgstr ""
+
+msgid "Customize current plate"
+msgstr ""
+
 msgid "Untitled"
 msgstr "Без названия"
 
@@ -4854,7 +4875,7 @@ msgstr ""
 "экспортированы только положительные части."
 
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
-msgstr ""
+msgstr "Готов ли 3D-принтер? Печатная пластина на месте, пустая и чистая?"
 
 msgid "Upload and Print"
 msgstr "Загрузить и напечатать"
@@ -5909,7 +5930,7 @@ msgid "Support filament"
 msgstr "Пруток для поддержки"
 
 msgid "Tree supports"
-msgstr ""
+msgstr "Древовидная поддержка"
 
 msgid "Prime tower"
 msgstr "Черновая башня"
@@ -5924,7 +5945,7 @@ msgid "Post-processing Scripts"
 msgstr "Скрипты постобработки"
 
 msgid "Notes"
-msgstr ""
+msgstr "Заметки"
 
 msgid "Frequent"
 msgstr "Частые"
@@ -6071,19 +6092,21 @@ msgid "Filament end G-code"
 msgstr "Завершающий G-код прутка"
 
 msgid "Multimaterial"
-msgstr ""
+msgstr "Экструдер ММ"
 
 msgid "Wipe tower parameters"
-msgstr ""
+msgstr "Параметры черновой башни"
 
 msgid "Toolchange parameters with single extruder MM printers"
 msgstr ""
+"Параметры смены инструмента в одноэкструдерных мультиматериальных принтерах"
 
 msgid "Ramming settings"
-msgstr ""
+msgstr "Настройки рэмминга"
 
 msgid "Toolchange parameters with multi extruder MM printers"
 msgstr ""
+"Параметры смены инструмента в мультиэкструдерных мультиматериальных принтерах"
 
 msgid "Printable space"
 msgstr "Область печати"
@@ -6143,13 +6166,13 @@ msgid "Jerk limitation"
 msgstr "Ограничение рывка"
 
 msgid "Single extruder multimaterial setup"
-msgstr ""
+msgstr "Мультиматериальный одиночный экструдер"
 
 msgid "Wipe tower"
-msgstr ""
+msgstr "Черновая башня"
 
 msgid "Single extruder multimaterial parameters"
-msgstr ""
+msgstr "Параметры мультиматериального одиночного экструдера"
 
 msgid "Layer height limits"
 msgstr "Ограничение высоты слоя"
@@ -6393,7 +6416,7 @@ msgid "The configuration is up to date."
 msgstr "Текущая конфигурация не требует обновления."
 
 msgid "Ramming customization"
-msgstr ""
+msgstr "Настройки рэмминга"
 
 msgid ""
 "Ramming denotes the rapid extrusion just before a tool change in a single-"
@@ -6406,21 +6429,32 @@ msgid ""
 "This is an expert-level setting, incorrect adjustment will likely lead to "
 "jams, extruder wheel grinding into filament etc."
 msgstr ""
+"Рэмминг (ramming, дословно утрамбовка) означает быстрое экструдирование "
+"непосредственно перед сменой инструмента в одноэкструдерном "
+"мультиматериальном принтере. Цель процесса состоит в том, чтобы правильно "
+"сформировать конец выгружаемого прутка, чтобы он не препятствовал вставке "
+"нового прутка или этого же прутка, вставленного позже. Эта фаза важна и "
+"разные материалы могут потребовать разных скоростей экструзии, чтобы "
+"получить хорошую форму. По этой причине скорость экструзии во время рэмминга "
+"регулируется.\n"
+"\n"
+"Эта опция для опытных пользователей, неправильная настройка может привести к "
+"замятию, протиранию прутка приводом экструдера и т.д."
 
 msgid "Total ramming time"
-msgstr ""
+msgstr "Общее время рэмминга"
 
 msgid "s"
 msgstr "с"
 
 msgid "Total rammed volume"
-msgstr ""
+msgstr "Общий объём при рэмминге"
 
 msgid "Ramming line width"
-msgstr ""
+msgstr "Ширина линии при рэмминге"
 
 msgid "Ramming line spacing"
-msgstr ""
+msgstr "Расстояние между линиями при рэмминге"
 
 msgid "Auto-Calc"
 msgstr "Авторасчёт"
@@ -7222,20 +7256,29 @@ msgstr ""
 "Для черновой башни требуется, чтобы поддержка и модель имели одинаковую "
 "высоту слоя."
 
+# ???
 msgid ""
 "Organic support tree tip diameter must not be smaller than support material "
 "extrusion width."
 msgstr ""
+"Диаметр кончика ветки органической поддержки не должен быть меньше значения "
+"ширины экструзии поддержки."
 
+# ???
 msgid ""
 "Organic support branch diameter must not be smaller than 2x support material "
 "extrusion width."
 msgstr ""
+"Диаметр ветки органической поддержки должен быть хотя бы в два раза больше "
+"значения ширины экструзии поддержки."
 
+# ???
 msgid ""
 "Organic support branch diameter must not be smaller than support tree tip "
 "diameter."
 msgstr ""
+"Диаметр ветвей органической поддержки должен быть больше диаметра кончика "
+"ветки."
 
 msgid ""
 "Support enforcers are used but support is not enabled. Please enable support."
@@ -7711,12 +7754,14 @@ msgstr ""
 "пространства для нижнего шаблона заполнения."
 
 msgid "Extra perimeters on overhangs"
-msgstr ""
+msgstr "Дополнительные периметры на нависаниях"
 
 msgid ""
 "Create additional perimeter paths over steep overhangs and areas where "
 "bridges cannot be anchored. "
 msgstr ""
+"Создание дополнительных дорожек по периметру над крутыми нависаниями и "
+"участками, где мосты не могут быть закреплены."
 
 msgid "Classic mode"
 msgstr "Классический режим"
@@ -8178,10 +8223,10 @@ msgid "Color"
 msgstr "Цвет"
 
 msgid "Filament notes"
-msgstr ""
+msgstr "Примечание о прутке"
 
 msgid "You can put your notes regarding the filament here."
-msgstr ""
+msgstr "Здесь вы можете написать свои замечания для текущей пластиковой нити."
 
 msgid "Required nozzle HRC"
 msgstr "Необходимая твёрдость сопла"
@@ -8247,54 +8292,61 @@ msgstr ""
 "выполняется после проверок."
 
 msgid "Loading speed"
-msgstr ""
+msgstr "Скорость загрузки"
 
 msgid "Speed used for loading the filament on the wipe tower."
-msgstr ""
+msgstr "Скорость загрузки прутка при печати черновой башни."
 
 msgid "Loading speed at the start"
-msgstr ""
+msgstr "Начальная скорость загрузки"
 
 msgid "Speed used at the very beginning of loading phase."
-msgstr ""
+msgstr "Скорость в начальной фазе загрузки прутка."
 
 msgid "Unloading speed"
-msgstr ""
+msgstr "Скорость выгрузки"
 
 msgid ""
 "Speed used for unloading the filament on the wipe tower (does not affect  "
 "initial part of unloading just after ramming)."
 msgstr ""
+"Скорость выгрузки прутка на черновую башню. (не влияет на начальную фазу "
+"выгрузки сразу после рэмминга)."
 
 msgid "Unloading speed at the start"
-msgstr ""
+msgstr "Начальная скорость выгрузки"
 
 msgid ""
 "Speed used for unloading the tip of the filament immediately after ramming."
-msgstr ""
+msgstr "Скорость выгрузки кончика прутка сразу после рэмминга."
 
 msgid "Delay after unloading"
-msgstr ""
+msgstr "Задержка после выгрузки"
 
 msgid ""
 "Time to wait after the filament is unloaded. May help to get reliable "
 "toolchanges with flexible materials that may need more time to shrink to "
 "original dimensions."
 msgstr ""
+"Время ожидания после выгрузки прутка. Это может помочь вам легко сменить "
+"сопло при печати гибкими материалами, которым требуется больше времени, "
+"чтобы вернуться к своим первоначальным размерам."
 
 msgid "Number of cooling moves"
-msgstr ""
+msgstr "Количество охлаждающих движений"
 
 msgid ""
 "Filament is cooled by being moved back and forth in the cooling tubes. "
 "Specify desired number of these moves."
 msgstr ""
+"Пруток охлаждается в охлаждающих трубках путём перемещения назад и вперёд. "
+"Укажите желаемое количество таких движений."
 
 msgid "Speed of the first cooling move"
-msgstr ""
+msgstr "Скорость первого охлаждающего движения"
 
 msgid "Cooling moves are gradually accelerating beginning at this speed."
-msgstr ""
+msgstr "Охлаждающие движения постепенно ускоряются, начиная с этой скорости."
 
 msgid "Minimal purge on wipe tower"
 msgstr "Мин. объём сброса на черновой башне"
@@ -8313,33 +8365,43 @@ msgstr ""
 "башню, чтобы обеспечить надёжную печать заполнения или «жертвенной» модели."
 
 msgid "Speed of the last cooling move"
-msgstr ""
+msgstr "Скорость последнего охлаждающего движения"
 
 msgid "Cooling moves are gradually accelerating towards this speed."
-msgstr ""
+msgstr "Охлаждающие движения постепенно ускоряют до этой скорости."
 
 msgid ""
 "Time for the printer firmware (or the Multi Material Unit 2.0) to load a new "
 "filament during a tool change (when executing the T code). This time is "
 "added to the total print time by the G-code time estimator."
 msgstr ""
+"Время за которое прошивка принтера (или Multi Material Unit 2.0) выгружает "
+"пруток во время смены инструмента (при выполнении кода Т). Это время "
+"добавляется к общему времени печати с помощью алгоритма оценки времени "
+"выполнения G-кода."
 
 msgid "Ramming parameters"
-msgstr ""
+msgstr "Параметры рэмминга"
 
 msgid ""
 "This string is edited by RammingDialog and contains ramming specific "
 "parameters."
 msgstr ""
+"Эта строка редактируется диалоговым окном рэмминга и содержит его конкретные "
+"параметры."
 
 msgid ""
 "Time for the printer firmware (or the Multi Material Unit 2.0) to unload a "
 "filament during a tool change (when executing the T code). This time is "
 "added to the total print time by the G-code time estimator."
 msgstr ""
+"Время за которое прошивка принтера (или Multi Material Unit 2.0) выгружает "
+"пруток во время смены инструмента (при выполнении кода Т). Это время "
+"добавляется к общему времени печати с помощью алгоритма оценки времени "
+"выполнения G-кода."
 
 msgid "Enable ramming for multitool setups"
-msgstr ""
+msgstr "Включить рэмминг для мультиинструментальных устройств"
 
 msgid ""
 "Perform ramming when using multitool printer (i.e. when the 'Single Extruder "
@@ -8347,18 +8409,23 @@ msgid ""
 "amount of filament is rapidly extruded on the wipe tower just before the "
 "toolchange. This option is only used when the wipe tower is enabled."
 msgstr ""
+"Выполнять рэмминг при использовании мультиинструментального принтера (т. е. "
+"когда в настройках принтера снят флажок «Мультиматериальный одиночный "
+"экструдер»). При включении этой опции, небольшое количество материала быстро "
+"выдавливается на черновую башню непосредственно перед сменой инструмента. "
+"Эта опция используется только в том случае, если включена черновая башня."
 
 msgid "Multitool ramming volume"
-msgstr ""
+msgstr "Объём рэмминга мультиинструмента"
 
 msgid "The volume to be rammed before the toolchange."
-msgstr ""
+msgstr "Объём рэмминга перед сменой инструмента."
 
 msgid "Multitool ramming flow"
-msgstr ""
+msgstr "Поток рэмминга мультиинструмента"
 
 msgid "Flow used for ramming the filament before the toolchange."
-msgstr ""
+msgstr "Поток рэмминга пластиковой нити перед сменой инструмента."
 
 msgid "Density"
 msgstr "Плотность"
@@ -9197,6 +9264,8 @@ msgstr "Максимальное ускорение при перемещени�
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
+"Максимальное ускорение при перемещении (M204 T), применяемое только для "
+"Marlin 2"
 
 msgid "Fan speed"
 msgstr "Скорость вентилятора"
@@ -9305,12 +9374,14 @@ msgid "Diameter of nozzle"
 msgstr "Диаметр сопла"
 
 msgid "Configuration notes"
-msgstr ""
+msgstr "Примечание конфигурации"
 
 msgid ""
 "You can put here your personal notes. This text will be added to the G-code "
 "header comments."
 msgstr ""
+"Здесь вы можете написать свои замечания для текущего профиля. Этот текст "
+"будет добавлен к комментариям в заголовок G-кода."
 
 msgid "Host Type"
 msgstr "Тип хоста"
@@ -9329,36 +9400,44 @@ msgid "Volume of nozzle between the cutter and the end of nozzle"
 msgstr "Объём сопла между резцом прутка и кончиком сопла."
 
 msgid "Cooling tube position"
-msgstr ""
+msgstr "Позиция охлаждающей трубки"
 
 msgid "Distance of the center-point of the cooling tube from the extruder tip."
 msgstr ""
+"Расстояние между центральной точкой охлаждающей трубки и кончиком экструдера."
 
 msgid "Cooling tube length"
-msgstr ""
+msgstr "Длина охлаждающей трубки"
 
 msgid "Length of the cooling tube to limit space for cooling moves inside it."
 msgstr ""
+"Длина охлаждающей трубки для ограничения перемещения при охлаждающих "
+"движениях."
 
 msgid "High extruder current on filament swap"
-msgstr ""
+msgstr "Повышение тока экструдера при замене прутка"
 
 msgid ""
 "It may be beneficial to increase the extruder motor current during the "
 "filament exchange sequence to allow for rapid ramming feed rates and to "
 "overcome resistance when loading a filament with an ugly shaped tip."
 msgstr ""
+"Это может быть полезно для увеличения тока двигателя экструдера во время "
+"замены прутка, чтобы быстро увеличить скорость подачи и преодолеть "
+"сопротивление при загрузке прутка с плохой формой кончика."
 
 msgid "Filament parking position"
-msgstr ""
+msgstr "Положение парковки прутка"
 
 msgid ""
 "Distance of the extruder tip from the position where the filament is parked "
 "when unloaded. This should match the value in printer firmware."
 msgstr ""
+"Расстояние от кончика экструдера до точки, где размещается пруток при "
+"выгрузке. Расстояние должно соответствовать значению в прошивке принтера."
 
 msgid "Extra loading distance"
-msgstr ""
+msgstr "Дополнительная длина загрузки"
 
 msgid ""
 "When set to zero, the distance the filament is moved from parking position "
@@ -9366,6 +9445,10 @@ msgid ""
 "positive, it is loaded further,  if negative, the loading move is shorter "
 "than unloading."
 msgstr ""
+"Если установлено 0, то расстояние, которое проходит пруток при перемещении "
+"из положения парковки во время загрузки, точно такое же, как и при выгрузке. "
+"При положительном значении, она загружается дальше; при отрицательном, ход "
+"загрузки короче (по сравнению с выгрузкой)."
 
 msgid "Start end points"
 msgstr "Начальные и конечные точки"
@@ -9465,10 +9548,10 @@ msgstr ""
 "конфигурации Slic3r, читая переменные окружения."
 
 msgid "Printer notes"
-msgstr ""
+msgstr "Примечания к принтеру"
 
 msgid "You can put your notes regarding the printer here."
-msgstr ""
+msgstr "Здесь вы можете написать свои замечания о текущем принтере."
 
 msgid "Raft contact Z distance"
 msgstr "Расстояние от подложки до модели по вертикали"
@@ -9865,22 +9948,24 @@ msgstr ""
 "Стартовый G-код выполняемый при запуске печати с текущей пластиковой нитью."
 
 msgid "Single Extruder Multi Material"
-msgstr ""
+msgstr "Мультиматериальный одиночный экструдер"
 
 msgid "Use single nozzle to print multi filament"
 msgstr ""
+"Использование одной экструзионной головы для печати несколькими видами/"
+"цветами пластика."
 
 msgid "Purge in prime tower"
-msgstr ""
+msgstr "Очистка в черновую башню"
 
 msgid "Purge remaining filament into prime tower"
-msgstr ""
+msgstr "Очистка сопла от остатков материала в черновую башню"
 
 msgid "Enable filament ramming"
-msgstr ""
+msgstr "Включить рэмминг прутка"
 
 msgid "No sparse layers (EXPERIMENTAL)"
-msgstr ""
+msgstr "Отсутствие разреженных слоёв (экспериментально)"
 
 msgid ""
 "If enabled, the wipe tower will not be printed on layers with no "
@@ -9888,14 +9973,22 @@ msgid ""
 "print the wipe tower. User is responsible for ensuring there is no collision "
 "with the print."
 msgstr ""
+"Если этот параметр включён, черновая башня не будет печататься на слоях где "
+"не происходит смена инструмента. На слоях, где происходит смена инструмента, "
+"экструдер будет опускаться вниз до верхней части черновой башни, чтобы "
+"напечатать её. Эта функция помечена как экспериментальная, поэтому "
+"пользователь несёт ответственность за то, чтобы не допустить столкновения "
+"экструдера с напечатанным."
 
 msgid "Prime all printing extruders"
-msgstr ""
+msgstr "Подготовка всех печатающих экструдеров"
 
 msgid ""
 "If enabled, all printing extruders will be primed at the front edge of the "
 "print bed at the start of the print."
 msgstr ""
+"Если этот параметр включён, все печатающие экструдеры в начале печати будут "
+"подготавливаться на переднем крае стола"
 
 msgid "Slice gap closing radius"
 msgstr "Радиус закрытия пробелов при нарезке"
@@ -10143,7 +10236,7 @@ msgid "Tree Hybrid"
 msgstr "Гибридный (древ. поддержка)"
 
 msgid "Organic"
-msgstr ""
+msgstr "Органический"
 
 msgid "Independent support layer height"
 msgstr "Независимая высота слоя поддержки"
@@ -10181,7 +10274,7 @@ msgstr ""
 "поддержка будет более вертикальной и устойчивой."
 
 msgid "Preferred Branch Angle"
-msgstr ""
+msgstr "Предпочтительный угол ответвления"
 
 #. TRN PrintSettings: "Organic supports" > "Preferred Branch Angle"
 msgid ""
@@ -10189,6 +10282,9 @@ msgid ""
 "model. Use a lower angle to make them more vertical and more stable. Use a "
 "higher angle for branches to merge faster."
 msgstr ""
+"Предпочтительный угол ответвления ветвей, при котором не нужно избегать "
+"модель. При указании меньшего угла поддержка будет более вертикальной и "
+"устойчивой. Для получения большего охвата указывайте более высокий угол."
 
 msgid "Tree support branch distance"
 msgstr "Расстояние между ветвями древовидной поддержки"
@@ -10200,7 +10296,7 @@ msgstr ""
 "располагаться ветви при касании модели."
 
 msgid "Branch Density"
-msgstr ""
+msgstr "Плотность ветвей"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Density"
 msgid ""
@@ -10210,6 +10306,10 @@ msgid ""
 "interfaces instead of a high branch density value if dense interfaces are "
 "needed."
 msgstr ""
+"Регулирует плотность создания ветвей в месте контакта с моделью. Большее "
+"значение приводит к улучшению качества печати нависаний, но такие поддержки "
+"сложнее удалять, поэтому рекомендуется вместо высокого значения плотности "
+"ветвей включать связующие слои поддержки."
 
 msgid "Adaptive layer height"
 msgstr "Переменная высота слоёв"
@@ -10237,11 +10337,11 @@ msgid "Distance from tree branch to the outermost brim line"
 msgstr "Расстояние от древовидной поддержки до внешней линии каймы."
 
 msgid "Tip Diameter"
-msgstr ""
+msgstr "Диаметр кончика ветки"
 
 #. TRN PrintSettings: "Organic supports" > "Tip Diameter"
 msgid "Branch tip diameter for organic supports."
-msgstr ""
+msgstr "Диаметр кончика ветки органической поддержки."
 
 msgid "Tree support branch diameter"
 msgstr "Диаметр ветвей древовидной поддержки"
@@ -10253,7 +10353,7 @@ msgstr ""
 
 #. TRN PrintSettings: #lmFIXME
 msgid "Branch Diameter Angle"
-msgstr ""
+msgstr "Угол изменения диаметра ветвей"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter Angle"
 msgid ""
@@ -10262,9 +10362,13 @@ msgid ""
 "over their length. A bit of an angle can increase stability of the organic "
 "support."
 msgstr ""
+"Угол изменения диаметра ветвей по мере их постепенного утолщения к "
+"основанию. Если значение угла равно 0, ветви будут иметь одинаковую толщину "
+"по всей своей длине. Небольшой угол может повысить устойчивость органической "
+"поддержки."
 
 msgid "Branch Diameter with double walls"
-msgstr ""
+msgstr "Диаметр ветвей с двойными стенками"
 
 #. TRN PrintSettings: "Organic supports" > "Branch Diameter"
 msgid ""
@@ -10272,6 +10376,9 @@ msgid ""
 "printed with double walls for stability. Set this value to zero for no "
 "double walls."
 msgstr ""
+"Ветви, толщина которых больше указанного диаметра, будут напечатаны с "
+"двойными стенками для прочности. Установите 0, если двойные стенки у ветвей "
+"не нужны."
 
 msgid "Tree support wall loops"
 msgstr "Периметров древовидной поддержки"
@@ -10427,41 +10534,49 @@ msgid "Width of prime tower"
 msgstr "Ширина черновой башни."
 
 msgid "Wipe tower rotation angle"
-msgstr ""
+msgstr "Угол поворота черновой башни"
 
 msgid "Wipe tower rotation angle with respect to x-axis."
-msgstr ""
+msgstr "Угол поворота черновой башни относительно оси X."
 
 msgid "Stabilization cone apex angle"
-msgstr ""
+msgstr "Угол вершины стабилизирующего конуса"
 
 msgid ""
 "Angle at the apex of the cone that is used to stabilize the wipe tower. "
 "Larger angle means wider base."
 msgstr ""
+"Регулировка угла «стабилизирующего конуса», который используется для "
+"предотвращения опрокидывания черновой башни. Больший угол означает более "
+"широкое основание конуса."
 
 msgid "Wipe tower purge lines spacing"
-msgstr ""
+msgstr "Расстояние между линиями очистки черновой башни"
 
 msgid "Spacing of purge lines on the wipe tower."
-msgstr ""
+msgstr "Расстояние между линиями очистки на черновой башне."
 
 msgid "Wipe tower extruder"
-msgstr ""
+msgstr "Экструдер черновой башни"
 
 msgid ""
 "The extruder to use when printing perimeter of the wipe tower. Set to 0 to "
 "use the one that is available (non-soluble would be preferred)."
 msgstr ""
+"Номер экструдера, которым печатаются периметры черновой башни. Установите 0, "
+"чтобы использовать тот, который доступен (предпочтительнее нерастворимый)."
 
 msgid "Purging volumes - load/unload volumes"
-msgstr ""
+msgstr "Объём очистки - Объём загрузки/выгрузки"
 
 msgid ""
 "This vector saves required volumes to change from/to each tool used on the "
 "wipe tower. These values are used to simplify creation of the full purging "
 "volumes below."
 msgstr ""
+"Этот параметр задаёт объём материала, который будет выдавлен на черновую "
+"башню для прочистки сопла при смене экструдеров/инструментов. Эти значения "
+"используются для упрощения создания полноты объёмов очистки указанной ниже."
 
 msgid ""
 "Purging after filament change will be done inside objects' infills. This may "
@@ -10492,10 +10607,11 @@ msgstr ""
 "смешиваться. Это не будет действовать, если не будет включена черновая башня."
 
 msgid "Maximal bridging distance"
-msgstr ""
+msgstr "Максимальное длина моста"
 
 msgid "Maximal distance between supports on sparse infill sections."
 msgstr ""
+"Максимальное расстояние между опорами на разряженных участках заполнения."
 
 msgid "X-Y hole compensation"
 msgstr "Коррекция размеров отверстий по XY"
@@ -10672,13 +10788,16 @@ msgstr ""
 "ширины периметра. Выражается в процентах от диаметра сопла."
 
 msgid "First layer minimum wall width"
-msgstr ""
+msgstr "Минимальная ширина периметра первого слоя"
 
 msgid ""
 "The minimum wall width that should be used for the first layer is "
 "recommended to be set to the same size as the nozzle. This adjustment is "
 "expected to enhance adhesion."
 msgstr ""
+"Минимальная ширина периметра, используемая для печати первого слоя. Значение "
+"рекомендуется устанавливать равным диаметру сопла. Ожидается, что такая "
+"регулировка повышает адгезию."
 
 msgid "Minimum wall width"
 msgstr "Минимальная ширина периметра"
@@ -11605,13 +11724,15 @@ msgid "Finished"
 msgstr "Завершено"
 
 msgid "Multiple resolved IP addresses"
-msgstr ""
+msgstr "Несколько разрешенных IP-адресов"
 
 #, boost-format
 msgid ""
 "There are several IP addresses resolving to hostname %1%.\n"
 "Please select one that should be used."
 msgstr ""
+"Существует несколько IP-адресов, соответствующих имени хоста %1%.\n"
+"Пожалуйста, выберите тот, который хотите использовать."
 
 msgid "Unable to perform boolean operation on selected parts"
 msgstr "Невозможно выполнить булевую операцию над выбранными элементами."
@@ -11654,7 +11775,7 @@ msgid "Delete input"
 msgstr "Удалить исходные"
 
 msgid "Send G-Code to printer host"
-msgstr ""
+msgstr "Отправить G-кода на хост принтера"
 
 msgid "Upload to Printer Host with the following filename:"
 msgstr "Загрузить на хост принтера со следующим именем:"
@@ -11665,7 +11786,7 @@ msgstr ""
 "каталогов."
 
 msgid "Upload to storage"
-msgstr ""
+msgstr "Загрузить в хранилище"
 
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
@@ -11694,7 +11815,7 @@ msgid "Filename"
 msgstr "Имя файла"
 
 msgid "Message"
-msgstr ""
+msgstr "Сообщение"
 
 msgid "Cancel selected"
 msgstr "Отменить выбранное"
@@ -11712,7 +11833,7 @@ msgid "Cancelling"
 msgstr "Отмена"
 
 msgid "Error uploading to print host"
-msgstr ""
+msgstr "Ошибка при отправке на хост печати"
 
 msgid "PA Calibration"
 msgstr "Калибровка PA"
@@ -11797,6 +11918,10 @@ msgid ""
 "End temp: >= 170\n"
 "Start temp > End temp + 5)"
 msgstr ""
+"Введите допустимые значения:\n"
+"Начальная температура: <= 350\n"
+"Конечная температура: >= 180\n"
+"Начальная температура > Конечная температура + 5)"
 
 msgid "Max volumetric speed test"
 msgstr "Тест макс. объёмной скорости"
@@ -12164,6 +12289,35 @@ msgstr ""
 "Знаете ли вы, что для повышения прочности модели можно увеличить количество "
 "периметров и плотность заполнения?"
 
+msgid ""
+"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain "
+"features.\n"
+"Click Yes to install it now."
+msgstr ""
+"Для работы некоторых функций Orca Slicer требуется Microsoft WebView2 "
+"Runtime.Нажмите Да, чтобы установить."
+
+msgid ""
+"The .gcode.3mf file contains no G-code data.Please slice it whthBambu Studio "
+"and export a new .gcode.3mf file."
+msgstr ""
+"Файл .gcode.3mf не содержит G-кода. Пожалуйста, нарежьте его в программе "
+"Bambu Studio и экспортируйте новый файл .gcode.3mf."
+
+msgid "The 3mf is not supported by OrcaSlicer, load geometry data only."
+msgstr ""
+"Этот 3mf создан не в OrcaSlicer, поэтому загрузятся только данные геометрии."
+
+#: resources/data/hints.ini: [hint:Brim for better adhesion]
+msgid ""
+"Brim for better adhesion\n"
+"Did you know that when printing models have a small contact interface with "
+"the printing surface, it's recommended to use a brim?"
+msgstr ""
+"Кайма для лучшей адгезии\n"
+"Знаете ли вы, что при печати модели имеющей небольшой контакт с поверхностью "
+"стола, рекомендуется использовать кайму?"
+
 #~ msgid "Cali"
 #~ msgstr "Калиб."
 
@@ -12231,7 +12385,6 @@ msgstr ""
 #~ "пластине. 0 означает, что пластиковая нить не поддерживает печать на этой "
 #~ "печатной пластине."
 
-#, fuzzy, c-format, boost-format
 #~ msgid ""
 #~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
 #~ msgstr ""
@@ -12668,3 +12821,126 @@ msgstr ""
 #~ "Отсутствует компонент BambuSource, зарегистрированный для воспроизведения "
 #~ "мультимедиа! Пожалуйста, переустановите BambuStutio или обратитесь в "
 #~ "поддержку."
+
+#~ msgid "AMS %s"
+#~ msgstr "АСПП №%s"
+
+#~ msgid "Switch between Prepare/Prewview"
+#~ msgstr "Переключение между окном подготовки и окном предпросмотра нарезки"
+
+#~ msgid "Connection to PrusaLink works correctly."
+#~ msgstr "Подключение к PrusaLink установлено."
+
+#~ msgid "Could not connect to PrusaLink"
+#~ msgstr "Не удалось подключиться к PrusaLink"
+
+#~ msgid "Test storage"
+#~ msgstr "Тест накопителя"
+
+#~ msgid "Test BambuLab"
+#~ msgstr "Тест BambuLab"
+
+#~ msgid "Test BambuLab:"
+#~ msgstr "Тест BambuLab:"
+
+#~ msgid "Test Bing.com"
+#~ msgstr "Тест Bing.com"
+
+#~ msgid "Test bing.com:"
+#~ msgstr "Тест bing.com:"
+
+#~ msgid "Test HTTP"
+#~ msgstr "Тест HTTP"
+
+#~ msgid "Test HTTP Service:"
+#~ msgstr "Тест HTTP сервера:"
+
+#~ msgid "Test storage upgrade"
+#~ msgstr "Тест накопителя (обновление)"
+
+#~ msgid "Test Storage Upgrade:"
+#~ msgstr "Тест накопителя (обновление):"
+
+#~ msgid "Test Storage Upload"
+#~ msgstr "Тест накопителя (отправка)"
+
+#~ msgid "Test Storage Upload:"
+#~ msgstr "Тест накопителя (отправка):"
+
+#~ msgid "Test storage download"
+#~ msgstr "Тест накопителя (загрузка)"
+
+#~ msgid "Test Storage Download:"
+#~ msgstr "Тест накопителя (загрузка):"
+
+#~ msgid "Log Info"
+#~ msgstr "Журнал сведений"
+
+#~ msgid "Studio Version:"
+#~ msgstr "Версия программы:"
+
+#~ msgid "System Version:"
+#~ msgstr "Версия ОС:"
+
+#~ msgid "Start Test Multi-Thread"
+#~ msgstr "Запуск многопоточного теста"
+
+#~ msgid "Start Test Single-Thread"
+#~ msgstr "Запуск однопоточного теста"
+
+#~ msgid "Network Test"
+#~ msgstr "Проверка сети"
+
+#~ msgid "Wipe tower - Purging volume adjustment"
+#~ msgstr "Черновая башня - регулировка объёма сброса пластика"
+
+#~ msgid ""
+#~ "Here you can adjust required purging volume (mm³) for any given pair of "
+#~ "tools."
+#~ msgstr ""
+#~ "Здесь вы можете отрегулировать требуемый объём очистки (мм³) для любой "
+#~ "пары инструментов."
+
+#~ msgid "Extruder changed to"
+#~ msgstr "Экструдер перешёл на - "
+
+#~ msgid "Tool #"
+#~ msgstr "Инструмент #"
+
+#~ msgid ""
+#~ "Total purging volume is calculated by summing two values below, depending "
+#~ "on which tools are loaded/unloaded."
+#~ msgstr ""
+#~ "Общий объём прочистки вычисляется путём суммирования двух нижеуказанных "
+#~ "значений, в зависимости от того, какие инструменты предзагружены/"
+#~ "выгружены."
+
+#~ msgid "Volume to purge (mm³) when the filament is being"
+#~ msgstr "Объём прочистки (мм³) при выдавливании прутка"
+
+#~ msgid "Volumetric speed"
+#~ msgstr "Объёмная скорость потока"
+
+#~ msgid "Branch Diameter"
+#~ msgstr "Диаметр ветвей"
+
+#~ msgid ""
+#~ "The diameter of the thinnest branches of organic support. Thicker "
+#~ "branches are more sturdy. Branches towards the base will be thicker than "
+#~ "this."
+#~ msgstr ""
+#~ "Диаметр самых тонких ветвей органической поддержки. Чем толще ветви, тем "
+#~ "они крепче. Ветви, идущие к основанию, будут утолщаться."
+
+#~ msgid "Branch Distance"
+#~ msgstr "Расстояние между ветками"
+
+#~ msgid ""
+#~ "How far apart the branches need to be when they touch the model. Making "
+#~ "this distance small will cause the tree support to touch the model at "
+#~ "more points, causing better overhang but making support harder to remove."
+#~ msgstr ""
+#~ "Указывает, насколько далеко друг от друга должны располагаться ветви при "
+#~ "касании модели. Если задать небольшое расстояние, то увеличится "
+#~ "количество точек, в которых древовидная поддержка касается модели. Это "
+#~ "улучшит печать нависаний, но при этом усложнит удаление поддержки."
