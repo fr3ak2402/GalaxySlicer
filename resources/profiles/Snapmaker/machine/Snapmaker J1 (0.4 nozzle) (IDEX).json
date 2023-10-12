@@ -5,6 +5,10 @@
     "type": "machine",
     "from": "system",
     "instantiation": "true",
+    "nozzle_diameter": [
+        "0.4",
+        "0.4"
+    ],
     "printer_variant": "0.4",
     "printer_model": "Snapmaker J1",
     "default_print_profile": "0.20 Standard @Snapmaker J1 (0.4 nozzle)",
