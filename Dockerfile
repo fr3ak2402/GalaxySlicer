@@ -59,9 +59,9 @@ RUN locale-gen $LC_ALL
 # the CA cert path on every startup
 ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 
-COPY ./ BambuStudio
+COPY ./ GalaxySlicer
 
-WORKDIR BambuStudio
+WORKDIR /GalaxySlicer
 
 # These can run together, but we run them seperate for podman caching
 # Update System dependencies
@@ -92,4 +92,4 @@ RUN [[ "$UID" != "0" ]] \
 
 # Using an entrypoint instead of CMD because the binary
 # accepts several command line arguments.
-ENTRYPOINT ["/BambuStudio/build/package/bin/bambu-studio"]
+ENTRYPOINT ["/GalaxySlicer/build/package/bin/galaxy-slicer"]

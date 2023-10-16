@@ -1,4 +1,4 @@
-# Build Bambu Slicer in a container
+# GalaxySlicer in a container
 #
 # Build an AppImage using rootless Podman (refer to https://github.com/containers/podman/blob/main/docs/tutorials/rootless_tutorial.md):
 # rm -rf build; podman build . -t bambu-studio-builder && podman run --rm localhost/bambu-studio-builder /bin/bash -c 'tar -c $(find build | grep ubu64.AppImage | head -1)' | tar -xv
@@ -9,7 +9,7 @@
 # Debugging the resulting AppImage:
 #   1) Install `gdb`
 #   2) In a terminal in the same directory as the AppImage, start it with following:
-#      echo -e "run\nbt\nquit" | gdb ./BambuStudio_ubu64.AppImage
+#      echo -e "run\nbt\nquit" | gdb ./GalaxySlicer_ubu64.AppImage
 #   3) Find related issue using backtrace output for clues and add backtrace to it on github
 #
 # Docker alternative AppImage build syntax (use this if you can't install podman):
@@ -53,9 +53,9 @@ RUN apt-get update && apt-get install  -y \
     file \
     sudo
 
-COPY ./ BambuStudio
+COPY ./ GalaxySlicer
 
-WORKDIR BambuStudio
+WORKDIR /GalaxySlicer
 
 # These can run together, but we run them seperate for podman caching
 # Update System dependencies
