@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 10:39+0200\n"
+"POT-Creation-Date: 2023-10-16 12:30+0200\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -168,6 +168,12 @@ msgstr "Üçgen"
 
 msgid "Height Range"
 msgstr "Yükseklik Aralığı"
+
+msgid "Vertical"
+msgstr ""
+
+msgid "Horizontal"
+msgstr ""
 
 msgid "Remove painted color"
 msgstr "Boyalı rengi kaldır"
@@ -866,6 +872,9 @@ msgstr "Orca Küpü"
 
 msgid "Voron Cube"
 msgstr "Voron Küpü"
+
+msgid "Disc"
+msgstr ""
 
 msgid "3DBenchy"
 msgstr "3DBenchy"
@@ -5033,6 +5042,12 @@ msgstr ""
 "2B pencere merkezi yerine, 3B görünümde fare işaretçisinin konumuna doğru "
 "yakınlaştırın."
 
+msgid "Use free camera"
+msgstr ""
+
+msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr ""
+
 msgid "Show \"Tip of the day\" notification after start"
 msgstr "Başlangıçtan sonra \"Günün ipucu\" bildirimini göster"
 
@@ -8227,9 +8242,10 @@ msgstr ""
 msgid "Shrinkage"
 msgstr "Büzüşme"
 
+#, fuzzy, c-format, boost-format
 msgid ""
-"Enter the shrinkage percentage that the filament will get after cooling (94% "
-"if you measure 94mm instead of 100mm). The part will be scaled in xy to "
+"Enter the shrinkage percentage that the filament will get after cooling "
+"(94% if you measure 94mm instead of 100mm). The part will be scaled in xy to "
 "compensate. Only the filament used for the perimeter is taken into account.\n"
 "Be sure to allow enough space between objects, as this compensation is done "
 "after the checks."
@@ -8755,12 +8771,8 @@ msgstr "Küçük boşlukları filtrele"
 msgid "Layers and Perimeters"
 msgstr "Katmanlar ve Çevreler"
 
-msgid ""
-"Filter out gaps smaller than the threshold specified. This setting won't "
-"affect top/bottom layers"
+msgid "Filter out gaps smaller than the threshold specified"
 msgstr ""
-"Belirtilen eşikten daha küçük boşlukları filtreleyin. Bu ayar üst/alt "
-"katmanları etkilemez"
 
 msgid ""
 "Speed of gap infill. Gap usually has irregular line width and should be "
@@ -11034,12 +11046,6 @@ msgstr ""
 msgid "Optimizing toolpath"
 msgstr "Takım yolunu optimize etme"
 
-msgid "Empty layers around bottom are replaced by nearest normal layers."
-msgstr "Alt kısımdaki boş katmanların yerini en yakın normal katmanlar alır."
-
-msgid "The model has too many empty layers."
-msgstr "Modelde çok fazla boş katman var."
-
 msgid "Slicing mesh"
 msgstr "Mesh dilimleme"
 
@@ -12225,6 +12231,20 @@ msgstr ""
 "Gücü artırın\n"
 "Modelin gücünü artırmak için daha fazla duvar halkası ve daha yüksek seyrek "
 "dolgu yoğunluğu kullanabileceğinizi biliyor muydunuz?"
+
+#~ msgid ""
+#~ "Filter out gaps smaller than the threshold specified. This setting won't "
+#~ "affect top/bottom layers"
+#~ msgstr ""
+#~ "Belirtilen eşikten daha küçük boşlukları filtreleyin. Bu ayar üst/alt "
+#~ "katmanları etkilemez"
+
+#~ msgid "Empty layers around bottom are replaced by nearest normal layers."
+#~ msgstr ""
+#~ "Alt kısımdaki boş katmanların yerini en yakın normal katmanlar alır."
+
+#~ msgid "The model has too many empty layers."
+#~ msgstr "Modelde çok fazla boş katman var."
 
 #~ msgid ""
 #~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"

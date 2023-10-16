@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-10 10:39+0200\n"
+"POT-Creation-Date: 2023-10-16 12:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,6 +164,12 @@ msgid "Triangle"
 msgstr ""
 
 msgid "Height Range"
+msgstr ""
+
+msgid "Vertical"
+msgstr ""
+
+msgid "Horizontal"
 msgstr ""
 
 msgid "Remove painted color"
@@ -836,6 +842,9 @@ msgid "Orca Cube"
 msgstr ""
 
 msgid "Voron Cube"
+msgstr ""
+
+msgid "Disc"
 msgstr ""
 
 msgid "3DBenchy"
@@ -4707,6 +4716,12 @@ msgid ""
 "2D window center."
 msgstr ""
 
+msgid "Use free camera"
+msgstr ""
+
+msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr ""
+
 msgid "Show \"Tip of the day\" notification after start"
 msgstr ""
 
@@ -7974,9 +7989,7 @@ msgstr ""
 msgid "Layers and Perimeters"
 msgstr ""
 
-msgid ""
-"Filter out gaps smaller than the threshold specified. This setting won't "
-"affect top/bottom layers"
+msgid "Filter out gaps smaller than the threshold specified"
 msgstr ""
 
 msgid ""
@@ -9867,12 +9880,6 @@ msgid ""
 msgstr ""
 
 msgid "Optimizing toolpath"
-msgstr ""
-
-msgid "Empty layers around bottom are replaced by nearest normal layers."
-msgstr ""
-
-msgid "The model has too many empty layers."
 msgstr ""
 
 msgid "Slicing mesh"
