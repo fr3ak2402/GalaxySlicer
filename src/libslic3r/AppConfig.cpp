@@ -38,7 +38,7 @@ using namespace nlohmann;
 
 namespace Slic3r {
 
-static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/fr3ak2402/GalaxySlicer/releases";
+static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/fr3ak2402/GalaxySlicer/releases/latest";
 static const std::string MODELS_STR = "models";
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
