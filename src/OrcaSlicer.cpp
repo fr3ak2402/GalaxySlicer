@@ -66,7 +66,7 @@ using namespace nlohmann;
 
 #include "libslic3r/Orient.hpp"
 
-#include "GalaxySlicer.hpp"
+#include "OrcaSlicer.hpp"
 //BBS: add exception handler for win32
 #include <wx/stdpaths.h>
 #ifdef WIN32
@@ -341,7 +341,7 @@ const float bed3d_ax3s_default_tip_length = 5.0f;
 int CLI::run(int argc, char **argv)
 {
     // Mark the main thread for the debugger and for runtime checks.
-    set_current_thread_name("galaxyslicer_main");
+    set_current_thread_name("orcaslicer_main");
     // Save the thread ID of the main thread.
     save_main_thread_id();
 #ifdef __WXGTK__
@@ -370,14 +370,14 @@ int CLI::run(int argc, char **argv)
         boost::nowide::cerr << text.c_str() << std::endl;
         return CLI_ENVIRONMENT_ERROR;
     }
-    BOOST_LOG_TRIVIAL(info) << "Current GalaxySlicer Version "<< GalaxySlicer_VERSION << std::endl;
+    BOOST_LOG_TRIVIAL(info) << "Current OraSlicer Version "<< SoftFever_VERSION << std::endl;
 
     /*BOOST_LOG_TRIVIAL(info) << "begin to setup params, argc=" << argc << std::endl;
     for (int index=0; index < argc; index++)
         BOOST_LOG_TRIVIAL(info) << "index="<< index <<", arg is "<< argv[index] <<std::endl;
     int debug_argc = 7;
     char *debug_argv[] = {
-        "E:\work\projects\bambu_release\bamboo_slicer\build_debug\src\Debug\galaxy-slicer.exe",
+        "E:\work\projects\bambu_release\bamboo_slicer\build_debug\src\Debug\orca-slicer.exe",
         "--slice",
         "9",
         //"--load-settings",
@@ -469,7 +469,7 @@ int CLI::run(int argc, char **argv)
         //BBS: remove GCodeViewer as seperate APP logic
         //params.start_as_gcodeviewer = start_as_gcodeviewer;
 
-        BOOST_LOG_TRIVIAL(info) << "begin to launch GalaxySlicer GUI soon";
+        BOOST_LOG_TRIVIAL(info) << "begin to launch OrcaSlicer GUI soon";
         return Slic3r::GUI::GUI_Run(params);
 #else // SLIC3R_GUI
         // No GUI support. Just print out a help.
@@ -1804,7 +1804,7 @@ int CLI::run(int argc, char **argv)
             //FIXME check for mixing the FFF / SLA parameters.
             // or better save fff_print_config vs. sla_print_config
             //m_print_config.save(m_config.opt_string("save"));
-            m_print_config.save_to_json(m_config.opt_string(opt_key), std::string("project_settings"), std::string("project"), std::string(GalaxySlicer_VERSION));
+            m_print_config.save_to_json(m_config.opt_string(opt_key), std::string("project_settings"), std::string("project"), std::string(SoftFever_VERSION));
         } else if (opt_key == "info") {
             // --info works on unrepaired model
             for (Model &model : m_models) {
@@ -2742,17 +2742,17 @@ bool CLI::setup(int argc, char **argv)
     detect_platform();
 
 #ifdef WIN32
-    // Notify user that a blacklisted DLL was injected into GalaxySlicer process (for example Nahimic, see GH #5573).
-    // We hope that if a DLL is being injected into a GalaxySlicer process, it happens at the very start of the application,
+    // Notify user that a blacklisted DLL was injected into OrcaSlicer process (for example Nahimic, see GH #5573).
+    // We hope that if a DLL is being injected into a OrcaSlicer process, it happens at the very start of the application,
     // thus we shall detect them now.
     if (BlacklistedLibraryCheck::get_instance().perform_check()) {
-        std::wstring text = L"Following DLLs have been injected into the GalaxySlicer process:\n\n";
+        std::wstring text = L"Following DLLs have been injected into the OrcaSlicer process:\n\n";
         text += BlacklistedLibraryCheck::get_instance().get_blacklisted_string();
         text += L"\n\n"
-                L"GalaxySlicer is known to not run correctly with these DLLs injected. "
+                L"OrcaSlicer is known to not run correctly with these DLLs injected. "
                 L"We suggest stopping or uninstalling these services if you experience "
-                L"crashes or unexpected behaviour while using GalaxySlicer.\n"
-                L"For example, ASUS Sonic Studio injects a Nahimic driver, which makes GalaxySlicer "
+                L"crashes or unexpected behaviour while using OrcaSlicer.\n"
+                L"For example, ASUS Sonic Studio injects a Nahimic driver, which makes OrcaSlicer "
                 L"to crash on a secondary monitor";
         MessageBoxW(NULL, text.c_str(), L"Warning"/*L"Incopatible library found"*/, MB_OK);
     }
@@ -2767,19 +2767,11 @@ bool CLI::setup(int argc, char **argv)
     // The application is packed in the .dmg archive as 'Slic3r.app/Contents/MacOS/Slic3r'
     // The resources are packed to 'Slic3r.app/Contents/Resources'
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Resources";
-
-    //GalaxySlicer: Path to Python
-    //boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "Python";
-
 #elif defined _WIN32
     // The application is packed in the .zip archive in the root,
     // The resources are packed to 'resources'
     // Path from Slic3r binary to resources:
     boost::filesystem::path path_resources = path_to_binary.parent_path() / "resources";
-
-    //GalaxySlicer: Path to Python
-    boost::filesystem::path path_python = path_to_binary.parent_path() / "python";
-
 #elif defined SLIC3R_FHS
     // The application is packaged according to the Linux Filesystem Hierarchy Standard
     // Resources are set to the 'Architecture-independent (shared) data', typically /usr/share or /usr/local/share
@@ -2789,20 +2781,12 @@ bool CLI::setup(int argc, char **argv)
     // The resources are packed to 'resources'
     // Path from Slic3r binary to resources:
     boost::filesystem::path path_resources = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "resources";
-
-    //GalaxySlicer: Path to Python
-    //boost::filesystem::path path_python = boost::filesystem::canonical(path_to_binary).parent_path().parent_path() / "python";
 #endif
 
     set_resources_dir(path_resources.string());
     set_var_dir((path_resources / "images").string());
     set_local_dir((path_resources / "i18n").string());
     set_sys_shapes_dir((path_resources / "shapes").string());
-
-#ifdef WIN32
-    //GalaxySlicer: set python dir
-    set_python_dir(path_python.string());
-#endif
 
     // Parse all command line options into a DynamicConfig.
     // If any option is unsupported, print usage and abort immediately.
@@ -2845,9 +2829,9 @@ bool CLI::setup(int argc, char **argv)
 void CLI::print_help(bool include_print_options, PrinterTechnology printer_technology) const
 {
     boost::nowide::cout
-        << SLIC3R_APP_KEY <<"-"<< GalaxySlicer_VERSION << ":"
+        << SLIC3R_APP_KEY <<"-"<< SoftFever_VERSION << ":"
         << std::endl
-        << "Usage: galaxy-slicer [ OPTIONS ] [ file.3mf/file.stl ... ]" << std::endl
+        << "Usage: orca-slicer [ OPTIONS ] [ file.3mf/file.stl ... ]" << std::endl
         << std::endl
         << "OPTIONS:" << std::endl;
     cli_misc_config_def.print_cli_help(boost::nowide::cout, false);
@@ -3010,7 +2994,7 @@ LONG WINAPI VectoredExceptionHandler(PEXCEPTION_POINTERS pExceptionInfo)
 
 #if defined(_MSC_VER) || defined(__MINGW32__)
 extern "C" {
-    __declspec(dllexport) int __stdcall galaxyslicer_main(int argc, wchar_t **argv)
+    __declspec(dllexport) int __stdcall orcaslicer_main(int argc, wchar_t **argv)
     {
         // Convert wchar_t arguments to UTF8.
         std::vector<std::string> 	argv_narrow;
