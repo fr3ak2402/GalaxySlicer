@@ -87,11 +87,11 @@ void CopyrightsDialog::fill_entries()
         { "Admesh",                                         "",      "https://admesh.readthedocs.io/" },
         { "Anti-Grain Geometry",                            "",      "http://antigrain.com" },
         { "ArcWelderLib",                                   "",      "https://plugins.octoprint.org/plugins/arc_welder" },
+        { "BambuStudio",                                    "",      "https://github.com/bambulab/BambuStudio" },
         { "Boost",                                          "",      "http://www.boost.org" },
         { "Cereal",                                         "",      "http://uscilab.github.io/cereal" },
         { "CGAL",                                           "",      "https://www.cgal.org" },
         { "Clipper",                                        "",      "http://www.angusj.co" },
-        { "libcurl",                                        "",      "https://curl.se/libcurl" },
         { "Eigen3",                                         "",      "http://eigen.tuxfamily.org" },
         { "Expat",                                          "",      "http://www.libexpat.org" },
         { "fast_float",                                     "",      "https://github.com/fastfloat/fast_float" },
@@ -99,6 +99,7 @@ void CopyrightsDialog::fill_entries()
         { "GLFW",                                           "",      "https://www.glfw.org" },
         { "GNU gettext",                                    "",      "https://www.gnu.org/software/gettext" },
         { "ImGUI",                                          "",      "https://github.com/ocornut/imgui" },
+        { "libcurl",                                        "",      "https://curl.se/libcurl" },
         { "Libigl",                                         "",      "https://libigl.github.io" },
         { "libnest2d",                                      "",      "https://github.com/tamasmeszaros/libnest2d" },
         { "lib_fts",                                        "",      "https://www.forrestthewoods.com" },
@@ -106,19 +107,22 @@ void CopyrightsDialog::fill_entries()
         { "Miniz",                                          "",      "https://github.com/richgel999/miniz" },
         { "Nanosvg",                                        "",      "https://github.com/memononen/nanosvg" },
         { "nlohmann/json",                                  "",      "https://json.nlohmann.me" },
-        { "Qhull",                                          "",      "http://qhull.org" },
+        { "oneTBB",                                         "",      "https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/onetbb.html" },
         { "Open Cascade",                                   "",      "https://www.opencascade.com" },
         { "OpenGL",                                         "",      "https://www.opengl.org" },
+        { "OpenSSL",                                        "",      "https://www.openssl.org" },
+        { "OrcaSlicer",                                     "",      "https://github.com/SoftFever/OrcaSlicer" },
         { "PoEdit",                                         "",      "https://poedit.net" },
         { "PrusaSlicer",                                    "",      "https://www.prusa3d.com" },
+        { "Python",                                         "",      "https://www.python.org" },
+        { "Qhull",                                          "",      "http://qhull.org" },
         { "Real-Time DXT1/DXT5 C compression library",      "",      "https://github.com/Cyan4973/RygsDXTc" },
         { "SemVer",                                         "",      "https://semver.org" },
         { "Shinyprofiler",                                  "",      "https://code.google.com/p/shinyprofiler" },
+        { "Slic3r",                                         "",      "https://slic3r.org" },
         { "SuperSlicer",                                    "",      "https://github.com/supermerill/SuperSlicer" },
-        { "TBB",                                            "",      "https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/onetbb.html" },
         { "wxWidgets",                                      "",      "https://www.wxwidgets.org" },
-        { "zlib",                                           "",      "http://zlib.net" },
-
+        { "zlib",                                           "",      "http://zlib.net" }
     };
 }
 
@@ -139,6 +143,11 @@ wxString CopyrightsDialog::get_html_text()
                 "<font size=\"5\">%s</font><br/>"
                 "<font size=\"5\">%s</font>"
                 "<a href=\"%s\">%s.</a><br/>"
+                "<br />"
+                "<font size=\"5\">%s.</font><br/>"
+                "<font size=\"5\">%s.</font><br/>"
+                "<font size=\"5\">%s.</font><br/>"
+                "<font size=\"5\">%s.</font><br/>"
                 "<font size=\"5\">%s.</font><br/>"
                 "<br /><br />"
                 "<font size=\"5\">%s</font><br/>"
@@ -149,7 +158,11 @@ wxString CopyrightsDialog::get_html_text()
         _L("License"),
         _L("GalaxySlicer is licensed under "),
         "https://www.gnu.org/licenses/agpl-3.0.html",_L("GNU Affero General Public License, version 3"),
-        _L("GalaxySlicer is based on BambuStudio by Bambulab, which is from PrusaSlicer by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"),
+        _L("GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and SuperSlicer."),
+        _L("OrcaSlicer is originally based on BambuStudio by BambuLab."),
+        _L("BambuStudio is originally based on PrusaSlicer by PrusaResearch."),
+        _L("PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"),
+        _L("Slic3r was created by Alessandro Ranellucci with the help of many other contributors."),
         _L("Libraries"),
         _L("This software uses open source components whose copyright and other proprietary rights belong to their respective owners"));
 
@@ -237,6 +250,24 @@ AboutDialog::AboutDialog()
 
     panel_versizer->Add(m_logo, 1, wxALL | wxEXPAND, 0);
 
+    //about build
+    wxBoxSizer *build_sizer_horiz = new wxBoxSizer(wxHORIZONTAL);
+    wxBoxSizer *build_sizer_verti = new wxBoxSizer(wxVERTICAL);
+
+    build_sizer_verti->Add( 0, 0, 0, wxTOP, FromDIP(5));
+    build_sizer_horiz->Add(build_sizer_verti, 0, wxLEFT, FromDIP(20));
+
+    auto build_string = "Build: " + std::string(GalaxySlicer_BUILD);
+    wxStaticText *build_text = new wxStaticText(this, wxID_ANY, build_string.c_str(), wxDefaultPosition, wxDefaultSize);
+    
+    build_text->SetForegroundColour(wxColour("#6B6B6B"));
+    build_text->SetFont(Label::Body_10);
+
+    build_sizer_verti->Add(build_text, 0, wxALL , 0);
+
+    ver_sizer->Add(build_sizer_horiz, 0, wxALL,0);
+
+    // about text
     wxBoxSizer *text_sizer_horiz = new wxBoxSizer(wxHORIZONTAL);
     wxBoxSizer *text_sizer = new wxBoxSizer(wxVERTICAL);
     text_sizer_horiz->Add( 0, 0, 0, wxLEFT, FromDIP(20));

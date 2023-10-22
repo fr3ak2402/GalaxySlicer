@@ -1,6 +1,5 @@
 /*var TestData={"sequence_id":"0","command":"studio_send_recentfile","data":[{"path":"D:\\work\\Models\\Toy\\3d-puzzle-cube-model_files\\3d-puzzle-cube.3mf","time":"2022\/3\/24 20:33:10"},{"path":"D:\\work\\Models\\Art\\Carved Stone Vase - remeshed+drainage\\Carved Stone Vase.3mf","time":"2022\/3\/24 17:11:51"},{"path":"D:\\work\\Models\\Art\\Kity & Cat\\Cat.3mf","time":"2022\/3\/24 17:07:55"},{"path":"D:\\work\\Models\\Toy\\鐩村墤.3mf","time":"2022\/3\/24 17:06:02"},{"path":"D:\\work\\Models\\Toy\\minimalistic-dual-tone-whistle-model_files\\minimalistic-dual-tone-whistle.3mf","time":"2022\/3\/22 21:12:22"},{"path":"D:\\work\\Models\\Toy\\spiral-city-model_files\\spiral-city.3mf","time":"2022\/3\/22 18:58:37"},{"path":"D:\\work\\Models\\Toy\\impossible-dovetail-puzzle-box-model_files\\impossible-dovetail-puzzle-box.3mf","time":"2022\/3\/22 20:08:40"}]};*/
 
-var m_HotModelList=null;
 
 function OnInit()
 {	
@@ -13,9 +12,11 @@ function OnInit()
 
 	SendMsg_GetLoginInfo();
 	SendMsg_GetRecentFile();
-	SendMsg_GetStaffPick();
+	SendMsg_GetMakerWorldFeaturedPick();
+	SendMsg_GetMakerWorldTrendingPick();
+	SendMsg_GetMakerWorldDesignerPick();
 	
-	//InitStaffPick();
+	//InitMakerWorldFeaturedPick();
 }
 
 //------最佳打开文件的右键菜单功能----------
@@ -124,18 +125,23 @@ function HandleStudio( pVal )
 	}
 	else if( strCmd=="modelmall_model_advise_get")
 	{
+		var m_FeaturedModelList=null;
+
 		//alert('hot');
-		if( m_HotModelList!=null )
+		if( m_FeaturedModelList!=null )
 		{
 			let SS1=JSON.stringify(pVal['hits']);
-			let SS2=JSON.stringify(m_HotModelList);
+			let SS2=JSON.stringify(m_FeaturedModelList);
 			
 			if( SS1==SS2 )
 				return;
 		}
 
-	    m_HotModelList=pVal['hits'];		
-		ShowStaffPick( m_HotModelList );
+	    m_FeaturedModelList=pVal['hits'];
+			
+		ShowMakerWorldFeaturedPick( m_FeaturedModelList );
+		//ShowMakerWorldTrendingPick( m_FeaturedModelList );
+		//ShowMakerWorldDesignerPick( m_FeaturedModelList );
 	}
 }
 
@@ -459,6 +465,252 @@ function OpenSocialUrl( strUrl )
 	
 	SendWXMessage( JSON.stringify(tSend) );	
 }
+
+//-------------Library MakerWorld Featured Designers------------------
+/*var MakerWorldDesignerSwiper=null;
+function InitMakerWorldDesignerPick()
+{
+	if( MakerWorldDesignerSwiper!=null )
+	{
+		MakerWorldDesignerSwiper.destroy(true,true);
+		MakerWorldDesignerSwiper=null;
+	}	
+	
+	MakerWorldDesignerSwiper = new Swiper('#MakerWorld_FeaturedDesignerSwiper.swiper', {
+            slidesPerView : 'auto',
+		    spaceBetween: 6,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		    slidesPerView : 'auto',
+		    slidesPerGroup : 3
+			});
+}
+
+function SendMsg_GetMakerWorldDesignerPick()
+{
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="modelmall_model_advise_get";
+	
+	SendWXMessage( JSON.stringify(tSend) );
+	
+	setTimeout("SendMsg_GetMakerWorldDesignerPick()",3600*1000*1);
+}
+
+function ShowMakerWorldDesignerPick( ModelList )
+{
+	let PickTotal=ModelList.length;
+
+	if(PickTotal==0)
+	{
+		$('#MakerWorld_FeaturedDesignerList').html('');
+		$('#MakerWorld_FeaturedDesignerArea').hide();
+		
+		return;
+	}
+	
+	let strPickHtml='';
+	
+	for(let a=0;a<PickTotal;a++)
+	{
+		let OnePickModel=ModelList[a];
+		
+		let ModelID=OnePickModel['design']['id'];
+		let ModelName=OnePickModel['design']['title'];
+		let ModelCover=OnePickModel['design']['cover']+'?image_process=resize,w_200/format,webp';
+		
+		let DesignerName=OnePickModel['design']['designCreator']['name'];
+		let DesignerAvatar=OnePickModel['design']['designCreator']['avatar']+'?image_process=resize,w_32/format,webp';
+		
+		strPickHtml+='<div class="LibraryModelItemPiece swiper-slide"  onClick="OpenOneMakerWorldFeaturedDesigner('+ModelID+')" >'+
+			    '<div class="LibraryModelDesignerInfo"><img src="'+DesignerAvatar+'" /><span class="TextS2">'+DesignerName+'</span></div>'+
+				'	<div class="LibraryModelItemPreviewBlock"><img class="LibraryModelPreviewImage" src="'+ModelCover+'" /></div>'+
+				'	<div  class="LibraryModelNameText TextS1">'+ModelName+'</div>'+
+				'</div>';
+	}
+	
+	$('#MakerWorld_FeaturedDesignerList').html(strPickHtml);
+	InitMakerWorldDesignerPick();
+	$('#MakerWorld_FeaturedDesignerArea').show();
+}
+
+function OpenOneMakerWorldFeaturedDesigner( ModelID )
+{
+	//alert(ModelID);
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="modelmall_model_open";
+	tSend['data']={};
+	tSend['data']['id']=ModelID;
+	
+	SendWXMessage( JSON.stringify(tSend) );		
+}*/
+
+//-------------Library MakerWorld Featured Models------------------
+var MakerWorldFeaturedSwiper=null;
+function InitMakerWorldFeaturedPick()
+{
+	if( MakerWorldFeaturedSwiper!=null )
+	{
+		MakerWorldFeaturedSwiper.destroy(true,true);
+		MakerWorldFeaturedSwiper=null;
+	}	
+	
+	MakerWorldFeaturedSwiper = new Swiper('#MakerWorld_FeaturedModelSwiper.swiper', {
+            slidesPerView : 'auto',
+		    spaceBetween: 6,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		    slidesPerView : 'auto',
+		    slidesPerGroup : 3
+			});
+}
+
+function SendMsg_GetMakerWorldFeaturedPick()
+{
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="modelmall_model_advise_get";
+	
+	SendWXMessage( JSON.stringify(tSend) );
+	
+	setTimeout("SendMsg_GetMakerWorldFeaturedPick()",3600*1000*1);
+}
+
+function ShowMakerWorldFeaturedPick( ModelList )
+{
+	let PickTotal=ModelList.length;
+
+	if(PickTotal==0)
+	{
+		$('#MakerWorld_FeaturedModelList').html('');
+		$('#MakerWorld_FeaturedModelArea').hide();
+		
+		return;
+	}
+	
+	let strPickHtml='';
+	
+	for(let a=0;a<PickTotal;a++)
+	{
+		let OnePickModel=ModelList[a];
+		
+		let ModelID=OnePickModel['design']['id'];
+		let ModelName=OnePickModel['design']['title'];
+		let ModelCover=OnePickModel['design']['cover']+'?image_process=resize,w_200/format,webp';
+		
+		let DesignerName=OnePickModel['design']['designCreator']['name'];
+		let DesignerAvatar=OnePickModel['design']['designCreator']['avatar']+'?image_process=resize,w_32/format,webp';
+		
+		strPickHtml+='<div class="LibraryModelItemPiece swiper-slide"  onClick="OpenOneMakerWorldFeaturedModel('+ModelID+')" >'+
+			    '<div class="LibraryModelDesignerInfo"><img src="'+DesignerAvatar+'" /><span class="TextS2">'+DesignerName+'</span></div>'+
+				'	<div class="LibraryModelItemPreviewBlock"><img class="LibraryModelPreviewImage" src="'+ModelCover+'" /></div>'+
+				'	<div  class="LibraryModelNameText TextS1">'+ModelName+'</div>'+
+				'</div>';
+	}
+	
+	$('#MakerWorld_FeaturedModelList').html(strPickHtml);
+	InitMakerWorldFeaturedPick();
+	$('#MakerWorld_FeaturedModelArea').show();
+}
+
+function OpenOneMakerWorldFeaturedModel( ModelID )
+{
+	//alert(ModelID);
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="modelmall_model_open";
+	tSend['data']={};
+	tSend['data']['id']=ModelID;
+	
+	SendWXMessage( JSON.stringify(tSend) );		
+}
+
+//-------------Library MakerWorld Trending Models------------------
+/*var MakerWorldTrendingSwiper=null;
+function InitMakerWorldTrendingPick()
+{
+	if( MakerWorldTrendingSwiper!=null )
+	{
+		MakerWorldTrendingSwiper.destroy(true,true);
+		MakerWorldTrendingSwiper=null;
+	}	
+	
+	MakerWorldTrendingSwiper = new Swiper('#MakerWorld_TrendingModelSwiper.swiper', {
+            slidesPerView : 'auto',
+		    spaceBetween: 6,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		    slidesPerView : 'auto',
+		    slidesPerGroup : 3
+			});
+}
+
+function SendMsg_GetMakerWorldTrendingPick()
+{
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="get_makerworld_models";
+	
+	SendWXMessage( JSON.stringify(tSend) );
+	
+	setTimeout("SendMsg_GetMakerWorldTrendingPick()",3600*1000*1);
+}
+
+function ShowMakerWorldTrendingPick( ModelList )
+{
+	let PickTotal=ModelList.length;
+
+	if(PickTotal==0)
+	{
+		$('#MakerWorld_TrendingModelList').html('');
+		$('#MakerWorld_TrendingModelArea').hide();
+		
+		return;
+	}
+	
+	let strPickHtml='';
+	
+	for(let a=0;a<PickTotal;a++)
+	{
+		let OnePickModel=ModelList[a];
+		
+		let ModelID=OnePickModel['design']['id'];
+		let ModelName=OnePickModel['design']['title'];
+		let ModelCover=OnePickModel['design']['cover']+'?image_process=resize,w_200/format,webp';
+		
+		let DesignerName=OnePickModel['design']['designCreator']['name'];
+		let DesignerAvatar=OnePickModel['design']['designCreator']['avatar']+'?image_process=resize,w_32/format,webp';
+		
+		strPickHtml+='<div class="LibraryModelItemPiece swiper-slide"  onClick="OpenOneMakerWorldTrendingModel('+ModelID+')" >'+
+			    '<div class="LibraryModelDesignerInfo"><img src="'+DesignerAvatar+'" /><span class="TextS2">'+DesignerName+'</span></div>'+
+				'	<div class="LibraryModelItemPreviewBlock"><img class="LibraryModelPreviewImage" src="'+ModelCover+'" /></div>'+
+				'	<div  class="LibraryModelNameText TextS1">'+ModelName+'</div>'+
+				'</div>';
+	}
+	
+	$('#MakerWorld_TrendingModelList').html(strPickHtml);
+	InitMakerWorldTrendingPick();
+	$('#MakerWorld_TrendingModelArea').show();
+}
+
+function OpenOneMakerWorldTrendingModel( ModelID )
+{
+	//alert(ModelID);
+	var tSend={};
+	tSend['sequence_id']=Math.round(new Date() / 1000);
+	tSend['command']="modelmall_model_open";
+	tSend['data']={};
+	tSend['data']['id']=ModelID;
+	
+	SendWXMessage( JSON.stringify(tSend) );		
+}*/
 
 //---------------Global-----------------
 window.postMessage = HandleStudio;
