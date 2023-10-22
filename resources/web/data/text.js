@@ -102,7 +102,11 @@ var LangText = {
 		"t107": "MakerWorld",
 		"t108": "Printables",
 		"t109": "Thingiverse",
-		"t110": "Browse"
+		"t110": "Browse",
+		"t111": "Featured Designers",
+		"t112": "Featured Models",
+		"t113": "Trending Models",
+		"t114": "More"
 	},
 	"de_DE": {
 		"t1": "Willkommen im GalaxySlicer",
