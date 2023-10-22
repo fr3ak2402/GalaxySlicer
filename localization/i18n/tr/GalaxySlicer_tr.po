@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 12:41+0200\n"
+"POT-Creation-Date: 2023-10-22 22:47+0200\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -1896,13 +1896,30 @@ msgid "GNU Affero General Public License, version 3"
 msgstr "GNU Affero Genel Kamu Lisansı, sürüm 3"
 
 msgid ""
-"GalaxySlicer is based on BambuStudio by Bambulab, which is from PrusaSlicer "
-"by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro Ranellucci and "
-"the RepRap community"
+"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
+"SuperSlicer."
 msgstr ""
-"GalaxySlicer, Bambulab tarafından BambuStudio'ya dayanmaktadır, bu da Prusa "
-"Research tarafından PrusaSlicer'dan gelmektedir. PrusaSlicer, Alessandro "
-"Ranellucci ve RepRap topluluğu tarafından Slic3r'dan gelmektedir"
+"GalaxySlicer, OrcaSlicer, BambuStudio, PrusaSlicer ve SuperSlicer'a dayanır."
+
+msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
+msgstr ""
+"OrcaSlicer orijinal olarak BambuLab tarafından BambuStudio'ya dayanmaktadır."
+
+msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+msgstr ""
+"BambuStudio orijinal olarak PrusaResearch'ün PrusaSlicer'ını temel "
+"almaktadır."
+
+msgid ""
+"PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"
+msgstr ""
+
+msgid ""
+"Slic3r was created by Alessandro Ranellucci with the help of many other "
+"contributors."
+msgstr ""
+"Slic3r, Alessandro Ranellucci tarafından diğer birçok katkıda bulunanların "
+"yardımıyla yaratıldı."
 
 msgid "Libraries"
 msgstr "Kütüphaneler"
@@ -1918,32 +1935,10 @@ msgstr ""
 msgid "About %s"
 msgstr "Hakkında %s"
 
-msgid ""
-"GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
-"SuperSlicer."
-msgstr ""
-"GalaxySlicer, OrcaSlicer, BambuStudio, PrusaSlicer ve SuperSlicer'a dayanır."
-
-msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
-msgstr ""
-"OrcaSlicer orijinal olarak BambuLab tarafından BambuStudio'ya dayanmaktadır."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr ""
-"BambuStudio orijinal olarak PrusaResearch'ün PrusaSlicer'ını temel "
-"almaktadır."
-
 msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
 msgstr ""
 "PrusaSlicer orijinal olarak Alessandro Ranellucci'nin Slic3r'sine "
 "dayanmaktadır."
-
-msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
-msgstr ""
-"Slic3r, Alessandro Ranellucci tarafından diğer birçok katkıda bulunanların "
-"yardımıyla yaratıldı."
 
 msgid "Version"
 msgstr "Sürüm"
@@ -2181,16 +2176,19 @@ msgstr ""
 msgid "Group"
 msgstr "Grup"
 
+msgid "The printer does not currently support auto refill."
+msgstr ""
+
 msgid ""
-"There are currently no identical spare consumables available, and automatic "
-"replenishment is currently not possible. \n"
+"AMS filament backup is not enabled, please enable it in the AMS settings."
+msgstr ""
+
+msgid ""
+"If there are two identical filaments in AMS, AMS filament backup will be "
+"enabled. \n"
 "(Currently supporting automatic supply of consumables with the same brand, "
 "material type, and color)"
 msgstr ""
-"Şu anda aynı yedek sarf malzemesi mevcut değildir ve otomatik yenileme şu "
-"anda mümkün değildir.\n"
-"(Şu anda aynı marka, malzeme türü ve renkte sarf malzemelerinin otomatik "
-"olarak tedarik edilmesi desteklenmektedir)"
 
 msgid "AMS Settings"
 msgstr "AMS Ayarları"
@@ -2758,8 +2756,18 @@ msgstr ""
 msgid "Failed to start printing job"
 msgstr "Yazdırma işi başlatılamadı"
 
-msgid "Invalid nozzle diameter"
-msgstr "Geçersiz nozul çapı"
+msgid ""
+"This calibration does not support the currently selected nozzle diameter"
+msgstr ""
+
+msgid "Current flowrate cali param is invalid"
+msgstr ""
+
+msgid "Selected diameter and machine diameter do not match"
+msgstr ""
+
+msgid "Failed to generate cali gcode"
+msgstr ""
 
 msgid "Calibration error"
 msgstr "Kalibrasyon hatası"
@@ -3965,6 +3973,11 @@ msgstr "Katman: Yok"
 msgid "Clear"
 msgstr "Temizle"
 
+msgid ""
+"You have completed printing the mall model, \n"
+"but the synchronization of rating information has failed."
+msgstr ""
+
 msgid "How do you like this printing file?"
 msgstr "Bu baskı dosyasını nasıl buldunuz?"
 
@@ -4025,9 +4038,6 @@ msgstr "Yazdırmayı iptal et"
 
 msgid "Are you sure you want to cancel this print?"
 msgstr "Bu yazdırmayı iptal etmek istediğinizden emin misiniz?"
-
-msgid "Done"
-msgstr "Tamamlandı"
 
 msgid "Downloading..."
 msgstr "İndiriliyor..."
@@ -4567,11 +4577,10 @@ msgid "Restore"
 msgstr "Geri Yükleme"
 
 msgid ""
-"The bed temperature exceeds filament's vitrification temperature. Please "
-"open the front door of printer before printing to avoid nozzle clog."
+"The current hot bed temperature is relatively high. The nozzle may be "
+"clogged when printing this filament in a closed enclosure. Please open the "
+"front door and/or remove the upper glass."
 msgstr ""
-"Yatak sıcaklığı filamanın vitrifikasyon sıcaklığını aşıyor. Püskürtme ucunun "
-"tıkanmasını önlemek için lütfen yazdırmadan önce yazıcının ön kapısını açın."
 
 msgid ""
 "The nozzle hardness required by the filament is higher than the default "
@@ -4703,8 +4712,14 @@ msgstr "Nesne çok büyük"
 msgid "Export STL file:"
 msgstr "STL dosyasını dışa aktar:"
 
+msgid "Export AMF file:"
+msgstr ""
+
 msgid "Save file as:"
 msgstr "Farklı kaydet:"
+
+msgid "Export OBJ file:"
+msgstr ""
 
 msgid "Delete object which is a part of cut object"
 msgstr "Kesilen nesnenin bir parçası olan nesneyi silin"
@@ -4724,17 +4739,38 @@ msgstr "Seçilen nesne bölünemedi."
 msgid "Another export job is running."
 msgstr "Başka bir ihracat işi yürütülüyor."
 
+msgid "Replace from:"
+msgstr ""
+
+msgid "Unable to replace with more than one volume"
+msgstr ""
+
+msgid "Error during replace"
+msgstr "Değiştirme sırasında hata"
+
 msgid "Select a new file"
 msgstr "Yeni dosya seç"
 
 msgid "File for the replace wasn't selected"
 msgstr "Değiştirme dosyası seçilmedi"
 
-msgid "Error during replace"
-msgstr "Değiştirme sırasında hata"
-
 msgid "Please select a file"
 msgstr "Dosya seçin"
+
+msgid "Do you want to replace it"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Reload from:"
+msgstr ""
+
+msgid "Unable to reload:"
+msgstr ""
+
+msgid "Error during reload"
+msgstr ""
 
 msgid "Slicing"
 msgstr "Dilimleniyor"
@@ -4865,6 +4901,15 @@ msgstr "Seçilen nesnenin kopyaları"
 
 msgid "Save G-code file as:"
 msgstr "G-kod dosyasını şu şekilde kaydedin:"
+
+msgid "Save SLA file as:"
+msgstr ""
+
+msgid "The provided file name is not valid."
+msgstr ""
+
+msgid "The following characters are not allowed by a FAT file system:"
+msgstr ""
 
 msgid "Save Sliced file as:"
 msgstr "Dilimlenmiş dosyayı şu şekilde kaydedin:"
@@ -5993,6 +6038,9 @@ msgid "Recommended nozzle temperature range of this filament. 0 means no set"
 msgstr ""
 "Bu filamentin önerilen Nozul sıcaklığı aralığı. 0 ayar yok anlamına gelir"
 
+msgid "Print chamber temperature"
+msgstr ""
+
 msgid "Print temperature"
 msgstr "Yazdırma sıcaklığı"
 
@@ -6774,6 +6822,9 @@ msgstr "Bambu Studio'nun yeni versiyonu"
 
 msgid "Don't remind me of this version again"
 msgstr "Bana bir daha bu versiyonu hatırlatma"
+
+msgid "Done"
+msgstr "Tamamlandı"
 
 msgid "LAN Connection Failed (Sending print file)"
 msgstr "LAN Bağlantısı Başarısız (Yazdırma dosyası gönderiliyor)"
@@ -7730,6 +7781,31 @@ msgstr ""
 "Dik çıkıntılar ve köprülerin sabitlenemediği alanlar üzerinde ek çevre "
 "yolları (perimeter) oluşturun. "
 
+msgid "Reverse on odd"
+msgstr ""
+
+msgid "Overhang reversal"
+msgstr ""
+
+msgid ""
+"Extrude perimeters that have a part over an overhang in the reverse "
+"direction on odd layers. This alternating pattern can drastically improve "
+"steep overhang."
+msgstr ""
+
+msgid "Reverse threshold"
+msgstr ""
+
+msgid "Overhang reversal threshold"
+msgstr ""
+
+#, c-format, boost-format
+msgid ""
+"Number of mm the overhang need to be for the reversal to be considered "
+"useful. Can be a % of the perimeter width.\n"
+"Value 0 enables reversal on every odd layers regardless."
+msgstr ""
+
 msgid "Classic mode"
 msgstr "Klasik mod"
 
@@ -7899,8 +7975,8 @@ msgstr "Bu yazıcıprofiline geçildiğinde varsayılan işlem profili"
 msgid "Activate air filtration"
 msgstr "Hava filtrelemesini etkinleştirin"
 
-msgid "Activate for better air filtration"
-msgstr "Daha iyi hava filtrelemesi için etkinleştirin"
+msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
+msgstr ""
 
 msgid "During print"
 msgstr "Baskı boyunca"
@@ -7971,16 +8047,6 @@ msgstr "Tüm yazdırmayı tamamladığında çalışacak olan G Kodu"
 
 msgid "End G-code when finish the printing of this filament"
 msgstr "Bu filament ile baskı bittiğinde çalışacak G kodu"
-
-msgid "Ensure vertical shell thickness"
-msgstr "Dikey kabuk kalınlığını onayla"
-
-msgid ""
-"Add solid infill near sloping surfaces to guarantee the vertical shell "
-"thickness (top+bottom solid layers)"
-msgstr ""
-"Dikey kabuk kalınlığını garanti etmek için eğimli yüzeylerin yakınına katı "
-"dolgu ekleyin (üst + alt katı katmanlar)"
 
 msgid "Top surface pattern"
 msgstr "Üst katman deseni"
@@ -8423,15 +8489,14 @@ msgstr ""
 "Destek malzemesi yaygın olarak destek ve destek arayüzünü yazdırmak için "
 "kullanılır"
 
-msgid "Temperature of vitrificaiton"
-msgstr "Yumuşama sıcaklığı"
+msgid "Softening temperature"
+msgstr ""
 
 msgid ""
-"Material becomes soft at this temperature. Thus the heatbed cannot be hotter "
-"than this tempature"
+"The material softens at this temperature, so when the bed temperature is "
+"equal to or greater than it, it's highly recommended to open the front door "
+"and/or remove the upper glass to avoid cloggings."
 msgstr ""
-"Bu sıcaklıkta malzeme yumuşar. Bu nedenle ısıtma yatağı bu sıcaklıktan daha "
-"sıcak olamaz"
 
 msgid "Price"
 msgstr "Fiyat"
@@ -8868,8 +8933,10 @@ msgstr "En iyi nesne konumu"
 msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
 msgstr "Yatak şekline göre [0,1] aralığında en iyi otomatik düzenleme konumu."
 
-msgid "Enable this option if machine has auxiliary part cooling fan"
-msgstr "Makinede yardımcı parça soğutma fanı varsa bu seçeneği etkinleştirin"
+msgid ""
+"Enable this option if machine has auxiliary part cooling fan. G-code "
+"command: M106 P2 S(0-255)."
+msgstr ""
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -8926,16 +8993,17 @@ msgid "Support control chamber temperature"
 msgstr "Destek kontrol ortam sıcaklığı"
 
 msgid ""
-"This option is enabled if machine support controlling chamber temperature"
+"This option is enabled if machine support controlling chamber temperature\n"
+"G-code command: M141 S(0-255)"
 msgstr ""
-"Bu seçeneği, yazıcınız ortam sıcaklığını kontrol etmeyi destekliyorsa "
-"etkinleştirin"
 
 msgid "Support air filtration"
 msgstr "Hava filtrasyonu desteği"
 
-msgid "Enable this if printer support air filtration"
-msgstr "Yazıcı hava filtrelemeyi destekliyorsa bunu etkinleştirin"
+msgid ""
+"Enable this if printer support air filtration\n"
+"G-code command: M106 P3 S(0-255)"
+msgstr ""
 
 msgid "G-code flavor"
 msgstr "G-Kod Uyumu"
@@ -9324,11 +9392,10 @@ msgstr "Parça soğutma fanı için minimum hız"
 msgid ""
 "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
 "during printing except the first several layers which is defined by no "
-"cooling layers"
+"cooling layers.\n"
+"Please enable auxiliary_fan in printer settings to use this feature. G-code "
+"command: M106 P2 S(0-255)"
 msgstr ""
-"Yardımcı parça soğutma fanının hızı. Yardımcı fan, soğutma katmanlarının "
-"bulunmadığı ilk birkaç katman dışında, yazdırma sırasında bu hızda "
-"çalışacaktır"
 
 msgid "Min"
 msgstr "Min"
@@ -10351,6 +10418,15 @@ msgstr ""
 "Bu ayar, ağaç desteğinin büyük oyuklarının içine dolgu eklenip "
 "eklenmeyeceğini belirtir"
 
+msgid "Activate temperature control"
+msgstr ""
+
+msgid ""
+"Enable this option for chamber temperature control. An M191 command will be "
+"added before \"machine_start_gcode\"\n"
+"G-code commands: M141/M191 S(0-255)"
+msgstr ""
+
 msgid "Chamber temperature"
 msgstr "Bölme sıcaklığı"
 
@@ -10638,6 +10714,14 @@ msgstr ""
 "Resim boyutları aşağıdaki formatta bir .gcode ve .sl1 / .sl1s dosyalarında "
 "saklanacaktır: \"XxY, XxY, ...\""
 
+msgid "Format of G-code thumbnails"
+msgstr ""
+
+msgid ""
+"Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
+"QOI for low memory firmware"
+msgstr ""
+
 msgid "Use relative E distances"
 msgstr "Göreceli (relative) E mesafelerini kullan"
 
@@ -10765,18 +10849,6 @@ msgstr ""
 "boyutuna göre). Minimum duvar genişliği özelliğin kalınlığından daha inceyse "
 "duvar, özelliğin kendisi kadar kalın olacaktır. Nozul çapına göre yüzde "
 "olarak ifade edilir"
-
-msgid "Detect narrow internal solid infill"
-msgstr "Dar iç katı dolguyu tespit et"
-
-msgid ""
-"This option will auto detect narrow internal solid infill area. If enabled, "
-"concentric pattern will be used for the area to speed printing up. "
-"Otherwise, rectilinear pattern is used defaultly."
-msgstr ""
-"Bu seçenek dar dahili katı dolgu alanını otomatik olarak algılayacaktır. "
-"Etkinleştirilirse, yazdırmayı hızlandırmak amacıyla alanda eşmerkezli desen "
-"kullanılacaktır. Aksi takdirde varsayılan olarak doğrusal desen kullanılır."
 
 msgid "invalid value "
 msgstr "geçersiz değer "
@@ -11750,9 +11822,6 @@ msgstr "Boyut"
 msgid "Filename"
 msgstr "Dosya adı"
 
-msgid "Message"
-msgstr ""
-
 msgid "Cancel selected"
 msgstr "Seçileni iptal et"
 
@@ -12231,6 +12300,105 @@ msgstr ""
 "Gücü artırın\n"
 "Modelin gücünü artırmak için daha fazla duvar halkası ve daha yüksek seyrek "
 "dolgu yoğunluğu kullanabileceğinizi biliyor muydunuz?"
+
+#: resources/data/hints.ini: [hint:When need to print with the printer door
+#: opened]
+msgid ""
+"When need to print with the printer door opened\n"
+"Opening the printer door can reduce the probability of extruder/hotend "
+"clogging when printing lower temperature filament with a higher enclosure "
+"temperature. More info about this in the Wiki."
+msgstr ""
+
+#~ msgid ""
+#~ "GalaxySlicer is based on BambuStudio by Bambulab, which is from "
+#~ "PrusaSlicer by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro "
+#~ "Ranellucci and the RepRap community"
+#~ msgstr ""
+#~ "GalaxySlicer, Bambulab tarafından BambuStudio'ya dayanmaktadır, bu da "
+#~ "Prusa Research tarafından PrusaSlicer'dan gelmektedir. PrusaSlicer, "
+#~ "Alessandro Ranellucci ve RepRap topluluğu tarafından Slic3r'dan "
+#~ "gelmektedir"
+
+#~ msgid ""
+#~ "There are currently no identical spare consumables available, and "
+#~ "automatic replenishment is currently not possible. \n"
+#~ "(Currently supporting automatic supply of consumables with the same "
+#~ "brand, material type, and color)"
+#~ msgstr ""
+#~ "Şu anda aynı yedek sarf malzemesi mevcut değildir ve otomatik yenileme şu "
+#~ "anda mümkün değildir.\n"
+#~ "(Şu anda aynı marka, malzeme türü ve renkte sarf malzemelerinin otomatik "
+#~ "olarak tedarik edilmesi desteklenmektedir)"
+
+#~ msgid "Invalid nozzle diameter"
+#~ msgstr "Geçersiz nozul çapı"
+
+#~ msgid ""
+#~ "The bed temperature exceeds filament's vitrification temperature. Please "
+#~ "open the front door of printer before printing to avoid nozzle clog."
+#~ msgstr ""
+#~ "Yatak sıcaklığı filamanın vitrifikasyon sıcaklığını aşıyor. Püskürtme "
+#~ "ucunun tıkanmasını önlemek için lütfen yazdırmadan önce yazıcının ön "
+#~ "kapısını açın."
+
+#~ msgid "Activate for better air filtration"
+#~ msgstr "Daha iyi hava filtrelemesi için etkinleştirin"
+
+#~ msgid "Ensure vertical shell thickness"
+#~ msgstr "Dikey kabuk kalınlığını onayla"
+
+#~ msgid ""
+#~ "Add solid infill near sloping surfaces to guarantee the vertical shell "
+#~ "thickness (top+bottom solid layers)"
+#~ msgstr ""
+#~ "Dikey kabuk kalınlığını garanti etmek için eğimli yüzeylerin yakınına "
+#~ "katı dolgu ekleyin (üst + alt katı katmanlar)"
+
+#~ msgid "Temperature of vitrificaiton"
+#~ msgstr "Yumuşama sıcaklığı"
+
+#~ msgid ""
+#~ "Material becomes soft at this temperature. Thus the heatbed cannot be "
+#~ "hotter than this tempature"
+#~ msgstr ""
+#~ "Bu sıcaklıkta malzeme yumuşar. Bu nedenle ısıtma yatağı bu sıcaklıktan "
+#~ "daha sıcak olamaz"
+
+#~ msgid "Enable this option if machine has auxiliary part cooling fan"
+#~ msgstr ""
+#~ "Makinede yardımcı parça soğutma fanı varsa bu seçeneği etkinleştirin"
+
+#~ msgid ""
+#~ "This option is enabled if machine support controlling chamber temperature"
+#~ msgstr ""
+#~ "Bu seçeneği, yazıcınız ortam sıcaklığını kontrol etmeyi destekliyorsa "
+#~ "etkinleştirin"
+
+#~ msgid "Enable this if printer support air filtration"
+#~ msgstr "Yazıcı hava filtrelemeyi destekliyorsa bunu etkinleştirin"
+
+#~ msgid ""
+#~ "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
+#~ "during printing except the first several layers which is defined by no "
+#~ "cooling layers"
+#~ msgstr ""
+#~ "Yardımcı parça soğutma fanının hızı. Yardımcı fan, soğutma katmanlarının "
+#~ "bulunmadığı ilk birkaç katman dışında, yazdırma sırasında bu hızda "
+#~ "çalışacaktır"
+
+#~ msgid "Detect narrow internal solid infill"
+#~ msgstr "Dar iç katı dolguyu tespit et"
+
+#~ msgid ""
+#~ "This option will auto detect narrow internal solid infill area. If "
+#~ "enabled, concentric pattern will be used for the area to speed printing "
+#~ "up. Otherwise, rectilinear pattern is used defaultly."
+#~ msgstr ""
+#~ "Bu seçenek dar dahili katı dolgu alanını otomatik olarak algılayacaktır. "
+#~ "Etkinleştirilirse, yazdırmayı hızlandırmak amacıyla alanda eşmerkezli "
+#~ "desen kullanılacaktır. Aksi takdirde varsayılan olarak doğrusal desen "
+#~ "kullanılır."
 
 #~ msgid ""
 #~ "Filter out gaps smaller than the threshold specified. This setting won't "
