@@ -33,8 +33,8 @@ def process_gcode(source_file):
         for i in range(len(thumbnail_lines)):
             content = content.replace(thumbnail_lines[i], edited_thumbnail_lines[i])
 
-        # Update M106 commands: Replace M106 P3 with M106 P1 (commented out as it's not currently used)
-        # content = re.sub(r'M106 P3', r'M106 P1', content)
+        # Update M106 commands: Replace M106 P3 with M106 P1 -> Chamber fan Gcode
+        content = re.sub(r'M106 P3', r'M106 P1', content)
 
     # Write the updated content back to the same file
     with open(source_file, "w") as of:
