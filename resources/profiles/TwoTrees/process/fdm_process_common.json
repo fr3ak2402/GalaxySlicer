@@ -5,6 +5,8 @@
     "instantiation": "false",
     "adaptive_layer_height": "0",
     "reduce_crossing_wall": "1",
+    "adaptive_layer_height": "0",
+    "reduce_crossing_wall": "0",
     "max_travel_detour_distance": "0",
     "bottom_surface_pattern": "monotonic",
     "bottom_shell_layers": "3",
