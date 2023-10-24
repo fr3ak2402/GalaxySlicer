@@ -100,6 +100,6 @@ find ./GalaxySlicer.app/ -name '.DS_Store' -delete
      ver=${ver}_dev
  fi
 
-cp -pR build_arm64/GalaxySlicer/GalaxySlicer.app /Applications/GalaxySlicer.app
+cp -pR ./GalaxySlicer.app /Applications/GalaxySlicer.app
 
  zip -FSr GalaxySlicer${ver}_Mac_${ARCH}.zip GalaxySlicer.app
