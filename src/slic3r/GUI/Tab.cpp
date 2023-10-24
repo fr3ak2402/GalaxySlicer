@@ -2993,16 +2993,23 @@ void TabFilament::toggle_options()
     }
 
     if (m_active_page->title() == L("Cooling")) {
-      bool cooling = m_config->opt_bool("slow_down_for_layer_cooling", 0);
-      toggle_option("slow_down_min_speed", cooling);
+        bool cooling = m_config->opt_bool("slow_down_for_layer_cooling", 0);
+        toggle_option("slow_down_min_speed", cooling);
 
-      bool has_enable_overhang_bridge_fan = m_config->opt_bool("enable_overhang_bridge_fan", 0);
-      for (auto el : {"overhang_fan_speed", "overhang_fan_threshold"})
+        bool has_enable_overhang_bridge_fan = m_config->opt_bool("enable_overhang_bridge_fan", 0);
+        for (auto el : {"overhang_fan_speed", "overhang_fan_threshold"})
             toggle_option(el, has_enable_overhang_bridge_fan);
 
-      toggle_option(
-          "additional_cooling_fan_speed",
-          m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("auxiliary_fan")->value);
+        toggle_option(
+            "additional_cooling_fan_speed",
+            m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("auxiliary_fan")->value);
+
+        //GalaxySlicer: toogle options for exhaust fan
+        bool enable_exhaust_fan_options = m_preset_bundle->printers.get_edited_preset().config.option<ConfigOptionBool>("exhaust_fan")->value || is_BBL_printer;
+        
+        toggle_option("activate_air_filtration", enable_exhaust_fan_options);
+        toggle_option("during_print_exhaust_fan_speed", enable_exhaust_fan_options);
+        toggle_option("complete_print_exhaust_fan_speed", enable_exhaust_fan_options);
     }
     if (m_active_page->title() == L("Filament"))
     {
@@ -3171,6 +3178,10 @@ void TabPrinter::build_fff()
         optgroup->append_single_option_line("nozzle_type");
         optgroup->append_single_option_line("nozzle_hrc");
         optgroup->append_single_option_line("auxiliary_fan", "auxiliary-fan");
+
+        //GalaxySlicer: exhaust fan
+        optgroup->append_single_option_line("exhaust_fan");
+
         optgroup->append_single_option_line("support_chamber_temp_control", "chamber-temperature");
         optgroup->append_single_option_line("support_air_filtration", "air-filtration");
 

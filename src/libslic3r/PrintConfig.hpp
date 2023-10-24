@@ -980,6 +980,8 @@ PRINT_CONFIG_CLASS_DEFINE(
     ((ConfigOptionEnum<PrinterStructure>,printer_structure))
     ((ConfigOptionBool,                support_chamber_temp_control))
 
+    //GalaxySlicer
+    ((ConfigOptionBool,                exhaust_fan))
 
     // SoftFever
     ((ConfigOptionBool,                use_firmware_retraction))

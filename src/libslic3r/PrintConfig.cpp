@@ -2181,6 +2181,12 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionBool(false));
 
+	//GalaxySlicer: Exhaus fan control
+    def = this->add("exhaust_fan", coBool);
+    def->label = L("Exhaust cooling fan");
+    def->tooltip = L("Enable this option if machine has exhaust cooling fan. G-code command: M106 P3 S(0-255).");
+    def->mode = comAdvanced;
+    def->set_default_value(new ConfigOptionBool(false));
 
     def = this->add("fan_speedup_time", coFloat);
 	// Label is set in Tab.cpp in the Line object.
