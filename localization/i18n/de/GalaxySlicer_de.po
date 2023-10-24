@@ -9116,7 +9116,7 @@ msgstr ""
 "unregelmäßige Linienbreite und sollten deshalb langsamer gedruckt werden."
 
 msgid "Arc fitting"
-msgstr "Als Bogen drucken"
+msgstr "als Bogen drucken"
 
 msgid ""
 "Enable this to get a G-code file which has G2 and G3 moves. And the fitting "
