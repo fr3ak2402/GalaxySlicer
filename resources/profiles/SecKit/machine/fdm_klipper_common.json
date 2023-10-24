@@ -73,7 +73,10 @@
         "0",
         "0"
     ],
-    "min_layer_height": [
+  "max_layer_height": [
+        "0.35"
+  ],
+  "min_layer_height": [
         "0.05"
     ],
     "retract_when_changing_layer": [
