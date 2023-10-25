@@ -614,7 +614,7 @@ msgstr ""
 "点击“是”立即安装。"
 
 msgid "WebView2 Runtime"
-msgstr ""
+msgstr "WebView2 运行库"
 
 msgid ""
 "GalaxySlicer configuration file may be corrupted and is not abled to be "
@@ -2093,7 +2093,7 @@ msgid "Group"
 msgstr "组"
 
 msgid "The printer does not currently support auto refill."
-msgstr ""
+msgstr "打印机当前不支持自动补给耗材。"
 
 msgid ""
 "AMS filament backup is not enabled, please enable it in the AMS settings."
@@ -2417,7 +2417,7 @@ msgstr ""
 "影时有效。"
 
 msgid " But machines with I3 structure will not generate timelapse videos."
-msgstr ""
+msgstr "但是使用I3结构的机器将不会生成延时视频。"
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2547,7 +2547,7 @@ msgid "Filament unloading"
 msgstr "耗材丝卸载中"
 
 msgid "Skip step pause"
-msgstr ""
+msgstr "丢步暂停"
 
 msgid "Filament loading"
 msgstr "耗材丝加载中"
@@ -2640,13 +2640,13 @@ msgid ""
 msgstr ""
 
 msgid "Current flowrate cali param is invalid"
-msgstr ""
+msgstr "当前流量校准参数无效"
 
 msgid "Selected diameter and machine diameter do not match"
-msgstr ""
+msgstr "选择的直径和机器直径不匹配"
 
 msgid "Failed to generate cali gcode"
-msgstr ""
+msgstr "生成校准gcode失败"
 
 msgid "Calibration error"
 msgstr "校准错误"
@@ -2976,7 +2976,7 @@ msgid "Avoid extrusion calibration region"
 msgstr "避开挤出标定区域"
 
 msgid "Align to Y axis"
-msgstr ""
+msgstr "对齐到Y轴"
 
 msgid "Add"
 msgstr "添加"
@@ -3096,7 +3096,7 @@ msgid "Start Calibration"
 msgstr "开始校准"
 
 msgid "No step selected"
-msgstr ""
+msgstr "未选择步骤"
 
 msgid "Completed"
 msgstr "已完成"
@@ -3479,7 +3479,7 @@ msgid "Open a G-code file"
 msgstr "打开G-code 文件"
 
 msgid "Re&load from Disk"
-msgstr ""
+msgstr "从磁盘重新加载"
 
 msgid "Reload the plater from disk"
 msgstr "从磁盘重新加载平台"
@@ -3987,10 +3987,10 @@ msgid " upload failed"
 msgstr "上传失败"
 
 msgid " upload config prase failed\n"
-msgstr ""
+msgstr "上传配置解析失败\n"
 
 msgid " No corresponding storage bucket\n"
-msgstr ""
+msgstr "没有相应的存储桶\n"
 
 msgid " can not be opened\n"
 msgstr "无法打开\n"
@@ -4254,7 +4254,7 @@ msgid "Auto-recovery from step loss"
 msgstr "自动从丢步中恢复"
 
 msgid "Allow Prompt Sound"
-msgstr ""
+msgstr "允许提示音"
 
 msgid "Global"
 msgstr "全局"
@@ -4278,22 +4278,22 @@ msgid "Printer settings"
 msgstr "打印机设置"
 
 msgid "Remove current plate (if not last one)"
-msgstr ""
+msgstr "移除当前板（如果不是最后一个）"
 
 msgid "Auto orient objects on current plate"
-msgstr ""
+msgstr "在当前板上自动调整零件的朝向"
 
 msgid "Arrange objects on current plate"
-msgstr ""
+msgstr "在当前板上排列零件"
 
 msgid "Unlock current plate"
-msgstr ""
+msgstr "解锁当前板"
 
 msgid "Lock current plate"
-msgstr ""
+msgstr "锁定当前板"
 
 msgid "Customize current plate"
-msgstr ""
+msgstr "自定义当前板"
 
 msgid "Untitled"
 msgstr "未命名"
@@ -4572,19 +4572,19 @@ msgid "Please select a file"
 msgstr "请选择一个文件"
 
 msgid "Do you want to replace it"
-msgstr "您是否要替换"
+msgstr "您想要替换它吗"
 
 msgid "Message"
 msgstr "消息"
 
 msgid "Reload from:"
-msgstr "重新加载："
+msgstr "重新加载来源："
 
 msgid "Unable to reload:"
 msgstr "无法重新加载："
 
 msgid "Error during reload"
-msgstr "重新加载时发生错误："
+msgstr "重新加载时发生错误"
 
 msgid "Slicing"
 msgstr "正在切片"
@@ -4716,7 +4716,7 @@ msgid "The provided file name is not valid."
 msgstr "无效的文件名。"
 
 msgid "The following characters are not allowed by a FAT file system:"
-msgstr "不允许使用以下字符："
+msgstr "以下字符不被FAT文件系统支持："
 
 msgid "Save Sliced file as:"
 msgstr "切片文件另存为："
@@ -4886,10 +4886,10 @@ msgid ""
 msgstr "在3D视角放大到鼠标位置，而不是2D窗口的中心。"
 
 msgid "Use free camera"
-msgstr ""
+msgstr "使用自由视角"
 
 msgid "If enabled, use free camera. If not enabled, use constrained camera."
-msgstr ""
+msgstr "如果启用，使用自由视角。如果未启用，使用约束视角。"
 
 msgid "Show \"Tip of the day\" notification after start"
 msgstr "启动后显示“每日小贴士”通知"
@@ -5497,22 +5497,22 @@ msgid "The printer does not support sending to printer SD card."
 msgstr "该打印机不支持发送到打印机SD卡。"
 
 msgid "Failed to create socket"
-msgstr ""
+msgstr "无法创建套接字"
 
 msgid "Failed to connect socket"
-msgstr ""
+msgstr "无法连接套接字"
 
 msgid "Failed to publish login request"
-msgstr ""
+msgstr "无法发布登录请求"
 
 msgid "Get ticket from device timeout"
-msgstr ""
+msgstr "从设备获取票据超时"
 
 msgid "Get ticket from server timeout"
-msgstr ""
+msgstr "从服务器获取票据超时"
 
 msgid "Failed to post ticket to server"
-msgstr ""
+msgstr "无法将票据发布到服务器"
 
 msgid "Failed to parse login report reason"
 msgstr "无法分析登录报告原因"
@@ -5782,7 +5782,7 @@ msgid "Recommended nozzle temperature range of this filament. 0 means no set"
 msgstr "该材料的建议喷嘴温度范围。0表示未设置"
 
 msgid "Print chamber temperature"
-msgstr ""
+msgstr "打印仓温度"
 
 msgid "Print temperature"
 msgstr "打印温度"
@@ -5810,7 +5810,7 @@ msgid ""
 msgstr "安装工程材料热床时的热床温度。0值表示这个耗材丝不支持工程材料热床"
 
 msgid "Smooth PEI Plate / High Temp Plate"
-msgstr ""
+msgstr "光滑PEI板/高温板"
 
 msgid ""
 "Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
@@ -6172,7 +6172,7 @@ msgid "Exit %s"
 msgstr "退出 %s"
 
 msgid "the Configuration package is incompatible with current APP."
-msgstr "the Configuration package is incompatible with current APP."
+msgstr "配置包与当前APP不兼容。"
 
 msgid "Configuration updates"
 msgstr "配置更新"
@@ -6743,7 +6743,7 @@ msgid "Gap infill"
 msgstr "填缝"
 
 msgid "Skirt"
-msgstr ""
+msgstr "裙边"
 
 msgid "Support interface"
 msgstr "支撑面"
@@ -7049,7 +7049,7 @@ msgid ""
 msgstr "将首层收缩用于补偿象脚效应"
 
 msgid "Elephant foot compensation layers"
-msgstr ""
+msgstr "象脚补偿层数"
 
 msgid ""
 "The number of layers on which the elephant foot compensation will be active. "
@@ -7353,7 +7353,6 @@ msgstr "顶面只使用单层墙，从而更多的空间能够使用顶部填充
 msgid "One wall threshold"
 msgstr "单层墙阈值"
 
-#, c-format, boost-format
 msgid ""
 "If a top surface has to be printed and it's partially covered by another "
 "layer, it won't be considered at a top layer where its width is below this "
@@ -7382,10 +7381,10 @@ msgid ""
 msgstr "在陡峭的悬垂和无法固定桥接的区域上创建额外的周长路径。"
 
 msgid "Reverse on odd"
-msgstr ""
+msgstr "反转奇数层悬垂方向"
 
 msgid "Overhang reversal"
-msgstr ""
+msgstr "悬垂反转"
 
 msgid ""
 "Extrude perimeters that have a part over an overhang in the reverse "
@@ -7394,12 +7393,11 @@ msgid ""
 msgstr ""
 
 msgid "Reverse threshold"
-msgstr ""
+msgstr "反转阈值"
 
 msgid "Overhang reversal threshold"
-msgstr ""
+msgstr "悬垂反转阈值"
 
-#, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
@@ -7561,10 +7559,10 @@ msgid "Default process profile when switch to this machine profile"
 msgstr "该机器的默认切片配置"
 
 msgid "Activate air filtration"
-msgstr "激活空气过滤"
+msgstr "启用空气过滤/排气"
 
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
-msgstr ""
+msgstr "启用空气过滤/排气风扇。G-code命令：M106 P3 S(0-255)"
 
 msgid "During print"
 msgstr "打印中"
@@ -8019,7 +8017,7 @@ msgid ""
 msgstr "支撑材料通常用于打印支撑体和支撑接触面"
 
 msgid "Softening temperature"
-msgstr ""
+msgstr "软化温度"
 
 msgid ""
 "The material softens at this temperature, so when the bed temperature is "
@@ -8332,7 +8330,7 @@ msgid "Layers and Perimeters"
 msgstr "层和墙"
 
 msgid "Filter out gaps smaller than the threshold specified"
-msgstr ""
+msgstr "忽略小于指定阈值的间隙"
 
 msgid ""
 "Speed of gap infill. Gap usually has irregular line width and should be "
@@ -8397,7 +8395,7 @@ msgid "Printer structure"
 msgstr "打印机结构"
 
 msgid "The physical arrangement and components of a printing device"
-msgstr ""
+msgstr "打印设备的物理结构和组件"
 
 msgid "CoreXY"
 msgstr ""
@@ -8415,12 +8413,12 @@ msgid "Best object position"
 msgstr "最佳对象位置"
 
 msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
-msgstr ""
+msgstr "最佳自动排列位置在[0,1]范围内，相对于打印床形状。"
 
 msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
-msgstr ""
+msgstr "如果打印机有辅助风扇，可以开启此选项。G-code指令：M106 P2 S(0-255)"
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -8479,6 +8477,8 @@ msgid ""
 "Enable this if printer support air filtration\n"
 "G-code command: M106 P3 S(0-255)"
 msgstr ""
+"如果打印机支持空气过滤/排气风扇，可以开启此选项\n"
+"G-code指令：M106 P3 S(0-255)"
 
 msgid "G-code flavor"
 msgstr "G-code风格"
@@ -8581,7 +8581,7 @@ msgid "Ironing Pattern"
 msgstr "熨烫模式"
 
 msgid "The pattern that will be used when ironing"
-msgstr ""
+msgstr "熨烫时将使用的图案"
 
 msgid "Ironing flow"
 msgstr "熨烫流量"
@@ -8604,7 +8604,7 @@ msgid "Print speed of ironing lines"
 msgstr "熨烫的打印速度"
 
 msgid "Ironing angle"
-msgstr ""
+msgstr "熨烫角度"
 
 msgid ""
 "The angle ironing is done at. A negative number disables this function and "
@@ -8829,6 +8829,9 @@ msgid ""
 "Please enable auxiliary_fan in printer settings to use this feature. G-code "
 "command: M106 P2 S(0-255)"
 msgstr ""
+"辅助部件冷却风扇的转速。辅助部件冷却风扇将一直运行在该速度，除了设置的无需冷"
+"却的前若干层\n"
+"请在打印机设置中启用辅助风扇以使用此功能。G-code指令：M106 P2 S(0-255)"
 
 msgid "Min"
 msgstr "最小"
@@ -9356,7 +9359,7 @@ msgid "Use single nozzle to print multi filament"
 msgstr "使用单喷嘴打印多耗材"
 
 msgid "Manual Filament Change"
-msgstr ""
+msgstr "手动更换丝材"
 
 msgid ""
 "Enable this option to omit the custom Change filament G-code only at the "
@@ -9425,7 +9428,7 @@ msgid "Close holes"
 msgstr "闭孔"
 
 msgid "Z offset"
-msgstr ""
+msgstr "Z偏移"
 
 msgid ""
 "This value will be added (or subtracted) from all the Z coordinates in the "
@@ -9621,7 +9624,7 @@ msgid "Tree Hybrid"
 msgstr "混合树"
 
 msgid "Organic"
-msgstr ""
+msgstr "有机树"
 
 msgid "Independent support layer height"
 msgstr "支撑独立层高"
@@ -9762,7 +9765,7 @@ msgid ""
 msgstr "这个设置决定是否为树状支撑内部的空腔生成填充。"
 
 msgid "Activate temperature control"
-msgstr ""
+msgstr "激活温度控制"
 
 msgid ""
 "Enable this option for chamber temperature control. An M191 command will be "
@@ -9985,7 +9988,7 @@ msgstr ""
 "功能通常在模型有装配问题时微调尺寸"
 
 msgid "Convert holes to polyholes"
-msgstr ""
+msgstr "将圆孔转换为多边型孔"
 
 msgid ""
 "Search for almost-circular holes that span more than one layer and convert "
@@ -9993,11 +9996,13 @@ msgid ""
 "compute the polyhole.\n"
 "See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 msgstr ""
+"搜索跨越多层的近似圆形孔，并将几何形状转换为多边形孔。使用喷嘴尺寸和（最大）直"
+"径来计算多边形孔。\n"
+"参见http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 
 msgid "Polyhole detection margin"
-msgstr ""
+msgstr "多边型孔检测边缘"
 
-#, c-format, boost-format
 msgid ""
 "Maximum defection of a point to the estimated radius of the circle.\n"
 "As cylinders are often exported as triangles of varying size, points may not "
@@ -10005,12 +10010,18 @@ msgid ""
 "broaden the detection.\n"
 "In mm or in % of the radius."
 msgstr ""
+"点到圆半径的最大偏差。\n"
+"由于圆柱体通常被导出为大小不同的三角形，因此点可能不在圆周上。\n"
+"此设置允许您"
+"有一些余地来扩大检测范围。\n"
+"以毫米或半径的百分比表示。"
+
 
 msgid "Polyhole twist"
-msgstr ""
+msgstr "扭曲多边型孔"
 
 msgid "Rotate the polyhole every layer."
-msgstr ""
+msgstr "按层旋转多边形孔。"
 
 msgid "G-code thumbnails"
 msgstr "G-code缩略图尺寸"
@@ -10019,9 +10030,12 @@ msgid ""
 "Picture sizes to be stored into a .gcode and .sl1 / .sl1s files, in the "
 "following format: \"XxY, XxY, ...\""
 msgstr ""
+"将被存储到.gcode和.sl1/.sl1s文件中的图片尺寸，"
+"格式如下：\"XxY, XxY, ...\""
+
 
 msgid "Format of G-code thumbnails"
-msgstr ""
+msgstr "G-code缩略图的格式"
 
 msgid ""
 "Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
@@ -10203,7 +10217,7 @@ msgid "Minimum save"
 msgstr ""
 
 msgid "export 3mf with minimum size."
-msgstr ""
+msgstr "以最小尺寸导出3mf。"
 
 msgid "mtcpp"
 msgstr ""
@@ -10323,7 +10337,7 @@ msgid ""
 msgstr "在使用最新设置时，从指定的文件中加载最新的进程/机器设置。"
 
 msgid "Data directory"
-msgstr ""
+msgstr "数据目录"
 
 msgid ""
 "Load and store settings at the given directory. This is useful for "
@@ -10348,10 +10362,10 @@ msgstr ""
 "trace\n"
 
 msgid "Load custom gcode"
-msgstr ""
+msgstr "加载自定义G-code"
 
 msgid "Load custom gcode from json"
-msgstr ""
+msgstr "从json文件加载自定义G-code"
 
 msgid "Error in zip archive"
 msgstr "zip文件中存在错误"
@@ -11022,14 +11036,14 @@ msgid "Upload to Printer Host with the following filename:"
 msgstr "使用下列文件名上传到打印机："
 
 msgid "Use forward slashes ( / ) as a directory separator if needed."
-msgstr ""
+msgstr "如有需要，请使用正斜杠（ / ）作为目录分隔符。"
 
 msgid "Upload to storage"
-msgstr ""
+msgstr "上传到存储单位"
 
 #, c-format, boost-format
 msgid "Upload filename doesn't end with \"%s\". Do you wish to continue?"
-msgstr ""
+msgstr "上传文件名不以\"%s\"结尾。您是否要继续？"
 
 msgid "Upload"
 msgstr "上传"
