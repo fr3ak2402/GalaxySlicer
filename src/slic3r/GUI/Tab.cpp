@@ -2726,8 +2726,8 @@ void TabFilament::build()
 
 
         optgroup = page->new_optgroup(L("Print chamber temperature"), L"param_chamber_temp");
-        optgroup->append_single_option_line("chamber_temperature", "chamber-temperature");
-        optgroup->append_single_option_line("activate_chamber_temp_control", "chamber-temperature");
+        optgroup->append_single_option_line("chamber_temperature", "Chamber-temperature");
+        optgroup->append_single_option_line("activate_chamber_temp_control", "Chamber-temperature");
 
         optgroup->append_separator();
 
@@ -2832,25 +2832,20 @@ void TabFilament::build()
         optgroup->append_single_option_line("support_material_interface_fan_speed");
 
         optgroup = page->new_optgroup(L("Auxiliary part cooling fan"), L"param_cooling_fan");
-        optgroup->append_single_option_line("additional_cooling_fan_speed", "auxiliary-fan");
+        optgroup->append_single_option_line("additional_cooling_fan_speed", "Auxiliary-fan");
 
         optgroup = page->new_optgroup(L("Exhaust fan"),L"param_cooling_fan");
 
-        optgroup->append_single_option_line("activate_air_filtration", "air-filtration");
+        optgroup->append_single_option_line("activate_air_filtration", "Air-filtration(Exhaust-fan)");
 
-        /*line = {L("During print"), L("")};
+        line = {L("During print"), ""};
         line.append_option(optgroup->get_option("during_print_exhaust_fan_speed"));
         optgroup->append_line(line);
 
 
-        line = {L("Complete print"), L("")};
+        line = {L("Complete print"), ""};
         line.append_option(optgroup->get_option("complete_print_exhaust_fan_speed"));
-        optgroup->append_line(line);*/
-
-        //GalaxySlicer: add option for exhaust fan speed
-        optgroup->append_single_option_line("during_print_exhaust_fan_speed");
-        optgroup->append_single_option_line("complete_print_exhaust_fan_speed");
-
+        optgroup->append_line(line);
         //BBS
         add_filament_overrides_page();
         const int gcode_field_height = 15; // 150
@@ -2993,11 +2988,11 @@ void TabFilament::toggle_options()
     }
 
     if (m_active_page->title() == L("Cooling")) {
-        bool cooling = m_config->opt_bool("slow_down_for_layer_cooling", 0);
-        toggle_option("slow_down_min_speed", cooling);
+      bool cooling = m_config->opt_bool("slow_down_for_layer_cooling", 0);
+      toggle_option("slow_down_min_speed", cooling);
 
-        bool has_enable_overhang_bridge_fan = m_config->opt_bool("enable_overhang_bridge_fan", 0);
-        for (auto el : {"overhang_fan_speed", "overhang_fan_threshold"})
+      bool has_enable_overhang_bridge_fan = m_config->opt_bool("enable_overhang_bridge_fan", 0);
+      for (auto el : {"overhang_fan_speed", "overhang_fan_threshold"})
             toggle_option(el, has_enable_overhang_bridge_fan);
 
         toggle_option(
@@ -3178,13 +3173,12 @@ void TabPrinter::build_fff()
         optgroup->append_single_option_line("nozzle_type");
         optgroup->append_single_option_line("nozzle_hrc");
         optgroup->append_single_option_line("auxiliary_fan", "auxiliary-fan");
-
-        //GalaxySlicer: exhaust fan
+        
+//GalaxySlicer: exhaust fan
         optgroup->append_single_option_line("exhaust_fan");
 
-        optgroup->append_single_option_line("support_chamber_temp_control", "chamber-temperature");
-        optgroup->append_single_option_line("support_air_filtration", "air-filtration");
-
+        optgroup->append_single_option_line("support_chamber_temp_control", "Chamber-temperature");
+        optgroup->append_single_option_line("support_air_filtration", "Air-filtration(Exhaust-fan)");
     const int gcode_field_height = 15; // 150
     const int notes_field_height = 25; // 250
     page = add_options_page(L("Machine gcode"), "cog");
