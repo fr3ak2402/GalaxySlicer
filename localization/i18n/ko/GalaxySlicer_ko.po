@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 13:57+0200\n"
+"POT-Creation-Date: 2023-10-26 08:13+0200\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -6022,6 +6022,12 @@ msgstr "보조 출력물 냉각 팬"
 msgid "Exhaust fan"
 msgstr "환기팬"
 
+msgid "During print"
+msgstr "출력 중"
+
+msgid "Complete print"
+msgstr "출력 완료"
+
 msgid "Filament start G-code"
 msgstr "Filament start G-code"
 
@@ -7830,18 +7836,12 @@ msgstr "공기 여과 활성화"
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr ""
 
-msgid "During print"
-msgstr "출력 중"
-
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
 msgstr ""
 "출력 중 배기 팬 속도. 이 속도는 필라멘트 사용자 정의 G코드의 속도를 덮어씁니"
 "다"
-
-msgid "Complete print"
-msgstr "출력 완료"
 
 msgid "Speed of exhuast fan after printing completes"
 msgstr "출력 완료 후 환기 팬 속도"
@@ -8749,6 +8749,14 @@ msgstr "w.r.t. 베드 모양 범위 [0,1] 내에서 가장 좋은 자동 정렬 
 msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
+msgstr ""
+
+msgid "Exhaust cooling fan"
+msgstr ""
+
+msgid ""
+"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
+"P3 S(0-255)."
 msgstr ""
 
 msgid ""

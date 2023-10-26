@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 13:57+0200\n"
+"POT-Creation-Date: 2023-10-26 08:13+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -6249,6 +6249,12 @@ msgstr "Ventilateur de refroidissement auxiliaire"
 msgid "Exhaust fan"
 msgstr ""
 
+msgid "During print"
+msgstr ""
+
+msgid "Complete print"
+msgstr ""
+
 msgid "Filament start G-code"
 msgstr "G-code de démarrage du filament"
 
@@ -8106,15 +8112,9 @@ msgstr ""
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr ""
 
-msgid "During print"
-msgstr ""
-
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
-msgstr ""
-
-msgid "Complete print"
 msgstr ""
 
 msgid "Speed of exhuast fan after printing completes"
@@ -9057,6 +9057,14 @@ msgstr ""
 msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
+msgstr ""
+
+msgid "Exhaust cooling fan"
+msgstr ""
+
+msgid ""
+"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
+"P3 S(0-255)."
 msgstr ""
 
 msgid ""

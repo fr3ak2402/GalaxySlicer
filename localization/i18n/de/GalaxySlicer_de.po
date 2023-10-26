@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 13:57+0200\n"
+"POT-Creation-Date: 2023-10-26 08:13+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -6296,6 +6296,12 @@ msgstr "Hilfslüfter"
 msgid "Exhaust fan"
 msgstr "Abluftventilator"
 
+msgid "During print"
+msgstr "Während des Drucks"
+
+msgid "Complete print"
+msgstr "Druck abgeschlossen"
+
 msgid "Filament start G-code"
 msgstr "Filament Start G-Code"
 
@@ -8023,7 +8029,6 @@ msgstr "Umkehrschwelle"
 msgid "Overhang reversal threshold"
 msgstr "Überhangsumkehrschwelle"
 
-#, fuzzy, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
@@ -8210,18 +8215,12 @@ msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr ""
 "aktivieren für eine bessere Luftfilterung. G-Code Befehl: M106 P3 S(0-255)"
 
-msgid "During print"
-msgstr "Während des Drucks"
-
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
 msgstr ""
 "Geschwindigkeit des Abluftventilators während des Druckens. Diese "
 "Geschwindigkeit überschreibt die Geschwindigkeit im Filament-Benutzer-G-Code"
-
-msgid "Complete print"
-msgstr "Druck abgeschlossen"
 
 msgid "Speed of exhuast fan after printing completes"
 msgstr "Geschwindigkeit des Abluftventilators nach Abschluss des Druckvorgangs"
@@ -9209,6 +9208,16 @@ msgid ""
 msgstr ""
 "Aktivieren Sie diese Option, wenn der Drucker einen zusätzlichen Lüfter für "
 "die Kühlung der Teile hat. G-Code-Befehl: M106 P2 S(0-255)."
+
+msgid "Exhaust cooling fan"
+msgstr "Abluftkühlung"
+
+msgid ""
+"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
+"P3 S(0-255)."
+msgstr ""
+"Aktivieren Sie diese Option, wenn der Drucker einen Abluftkühlung hat. G-"
+"Code-Befehl: M106 P3 S(0-255)."
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "

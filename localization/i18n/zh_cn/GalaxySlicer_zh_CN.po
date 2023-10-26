@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 13:57+0200\n"
+"POT-Creation-Date: 2023-10-26 08:13+0200\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -5866,6 +5866,12 @@ msgstr "辅助部件冷却风扇"
 msgid "Exhaust fan"
 msgstr "排气风扇"
 
+msgid "During print"
+msgstr "打印中"
+
+msgid "Complete print"
+msgstr "完成打印"
+
 msgid "Filament start G-code"
 msgstr "耗材丝起始G-code"
 
@@ -7353,6 +7359,7 @@ msgstr "顶面只使用单层墙，从而更多的空间能够使用顶部填充
 msgid "One wall threshold"
 msgstr "单层墙阈值"
 
+#, c-format, boost-format
 msgid ""
 "If a top surface has to be printed and it's partially covered by another "
 "layer, it won't be considered at a top layer where its width is below this "
@@ -7398,6 +7405,7 @@ msgstr "反转阈值"
 msgid "Overhang reversal threshold"
 msgstr "悬垂反转阈值"
 
+#, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
@@ -7564,16 +7572,10 @@ msgstr "启用空气过滤/排气"
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr "启用空气过滤/排气风扇。G-code命令：M106 P3 S(0-255)"
 
-msgid "During print"
-msgstr "打印中"
-
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
 msgstr "打印过程中排气风扇的速度。此速度将覆盖耗材丝自定义gcode中的速度"
-
-msgid "Complete print"
-msgstr "完成打印"
 
 msgid "Speed of exhuast fan after printing completes"
 msgstr "打印完成后排气风扇的速度"
@@ -8419,6 +8421,14 @@ msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
 msgstr "如果打印机有辅助风扇，可以开启此选项。G-code指令：M106 P2 S(0-255)"
+
+msgid "Exhaust cooling fan"
+msgstr ""
+
+msgid ""
+"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
+"P3 S(0-255)."
+msgstr ""
 
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
@@ -9996,13 +10006,14 @@ msgid ""
 "compute the polyhole.\n"
 "See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 msgstr ""
-"搜索跨越多层的近似圆形孔，并将几何形状转换为多边形孔。使用喷嘴尺寸和（最大）直"
-"径来计算多边形孔。\n"
+"搜索跨越多层的近似圆形孔，并将几何形状转换为多边形孔。使用喷嘴尺寸和（最大）"
+"直径来计算多边形孔。\n"
 "参见http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 
 msgid "Polyhole detection margin"
 msgstr "多边型孔检测边缘"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Maximum defection of a point to the estimated radius of the circle.\n"
 "As cylinders are often exported as triangles of varying size, points may not "
@@ -10012,10 +10023,8 @@ msgid ""
 msgstr ""
 "点到圆半径的最大偏差。\n"
 "由于圆柱体通常被导出为大小不同的三角形，因此点可能不在圆周上。\n"
-"此设置允许您"
-"有一些余地来扩大检测范围。\n"
+"此设置允许您有一些余地来扩大检测范围。\n"
 "以毫米或半径的百分比表示。"
-
 
 msgid "Polyhole twist"
 msgstr "扭曲多边型孔"
@@ -10030,9 +10039,7 @@ msgid ""
 "Picture sizes to be stored into a .gcode and .sl1 / .sl1s files, in the "
 "following format: \"XxY, XxY, ...\""
 msgstr ""
-"将被存储到.gcode和.sl1/.sl1s文件中的图片尺寸，"
-"格式如下：\"XxY, XxY, ...\""
-
+"将被存储到.gcode和.sl1/.sl1s文件中的图片尺寸，格式如下：\"XxY, XxY, ...\""
 
 msgid "Format of G-code thumbnails"
 msgstr "G-code缩略图的格式"

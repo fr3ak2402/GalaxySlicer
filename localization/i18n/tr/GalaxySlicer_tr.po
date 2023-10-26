@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 13:57+0200\n"
+"POT-Creation-Date: 2023-10-26 08:13+0200\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -6131,6 +6131,12 @@ msgstr "Yardımcı parça soğutma fanı"
 msgid "Exhaust fan"
 msgstr "Egzos fanı"
 
+msgid "During print"
+msgstr "Baskı boyunca"
+
+msgid "Complete print"
+msgstr "Tam baskı"
+
 msgid "Filament start G-code"
 msgstr "Filament başlangıç G kodu"
 
@@ -7978,18 +7984,12 @@ msgstr "Hava filtrelemesini etkinleştirin"
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr ""
 
-msgid "During print"
-msgstr "Baskı boyunca"
-
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
 msgstr ""
 "Baskı sırasında egzoz fanının hızı. Bu hız, filament özel gcode'undaki hızın "
 "üzerine yazılacaktır"
-
-msgid "Complete print"
-msgstr "Tam baskı"
 
 msgid "Speed of exhuast fan after printing completes"
 msgstr "Baskı tamamlandıktan sonra egzoz fanının hızı"
@@ -8936,6 +8936,14 @@ msgstr "Yatak şekline göre [0,1] aralığında en iyi otomatik düzenleme konu
 msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
+msgstr ""
+
+msgid "Exhaust cooling fan"
+msgstr ""
+
+msgid ""
+"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
+"P3 S(0-255)."
 msgstr ""
 
 msgid ""
