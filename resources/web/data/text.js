@@ -106,7 +106,9 @@ var LangText = {
 		"t111": "Featured Designers",
 		"t112": "Featured Models",
 		"t113": "Trending Models",
-		"t114": "More"
+		"t114": "More",
+		"t115": "Download",
+		"a1": "The Profile Manager provides access to additional third-party profiles of printers that are not available in the standard GalaxySlicer installation. These profiles can be easily added via the Profile Manager so that they can be used in GalaxySlicer. Additionally, profiles from other slicers can be converted for GalaxySlicer so that they can be used as well. The Profile Manager can also be used to create new profiles."
 	},
 	"de_DE": {
 		"t1": "Willkommen im GalaxySlicer",

@@ -54,4 +54,9 @@ set PY_DEPS=%WP%\deps\build\GalaxySlicer_dep\python
 
 powershell -command "Copy-Item -Path %PY_DEPS%\* -Destination %PY_DEST% -Recurse"
 
+echo "create System folders..."
+
+cd %WP%/build/GalaxySlicer
+mkdir applications
+
 echo "building complete..."

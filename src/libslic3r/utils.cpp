@@ -231,6 +231,19 @@ const std::string& python_dir()
 {
 	return g_python_dir;
 }
+
+//GalaxySlicer: applications dir
+static std::string g_applications_dir;
+
+void set_applications_dir(const std::string &dir)
+{
+	g_applications_dir = dir;
+}
+
+const std::string& applications_dir()
+{
+	return g_applications_dir;
+}
 #endif
 
 //BBS: add temporary dir
