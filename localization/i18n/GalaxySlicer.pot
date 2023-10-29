@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 16:35+0200\n"
+"POT-Creation-Date: 2023-10-29 08:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3539,7 +3539,7 @@ msgstr ""
 
 msgid ""
 "Another virtual camera is running.\n"
-"Bambu Studio supports only a single virtual camera.\n"
+"GalaxySlicer supports only a single virtual camera.\n"
 "Do you want to stop this virtual camera?"
 msgstr ""
 
@@ -4541,7 +4541,7 @@ msgid "Project downloaded %d%%"
 msgstr ""
 
 msgid ""
-"Importing to Bambu Studio failed. Please download the file and manually "
+"Importing to Galaxy Slicer failed. Please download the file and manually "
 "import it."
 msgstr ""
 
@@ -5364,7 +5364,7 @@ msgstr ""
 msgid "An SD card needs to be inserted before send to printer SD card."
 msgstr ""
 
-msgid "The printer is required to be in the same LAN as Bambu Studio."
+msgid "The printer is required to be in the same LAN as GalaxySlicer."
 msgstr ""
 
 msgid "The printer does not support sending to printer SD card."
@@ -6360,14 +6360,14 @@ msgid "Network plug-in update"
 msgstr ""
 
 msgid ""
-"Click OK to update the Network plug-in when Bambu Studio launches next time."
+"Click OK to update the Network plug-in when GalaxySlicer launches next time."
 msgstr ""
 
 #, possible-c-format, possible-boost-format
 msgid "A new Network plug-in(%s) available, Do you want to install it?"
 msgstr ""
 
-msgid "New version of Bambu Studio"
+msgid "New version of GalaxySlicer"
 msgstr ""
 
 msgid "Don't remind me of this version again"
@@ -6380,7 +6380,7 @@ msgid "LAN Connection Failed (Sending print file)"
 msgstr ""
 
 msgid ""
-"Step 1, please confirm Bambu Studio and your printer are in the same LAN."
+"Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
 msgstr ""
 
 msgid ""
@@ -7926,7 +7926,7 @@ msgstr ""
 
 msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
-"adhensive"
+"adhesive"
 msgstr ""
 
 msgid "Enable accel_to_decel"
@@ -8554,7 +8554,10 @@ msgstr ""
 msgid "Min print speed"
 msgstr ""
 
-msgid "The minimum printing speed when slow down for cooling"
+msgid ""
+"The minimum printing speed for the filament when slow down for better layer "
+"cooling is enabled, when printing overhangs and when feature speeds are not "
+"specified explicitly."
 msgstr ""
 
 msgid "Nozzle diameter"

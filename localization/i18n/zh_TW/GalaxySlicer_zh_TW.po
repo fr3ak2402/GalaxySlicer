@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 16:35+0200\n"
+"POT-Creation-Date: 2023-10-29 08:46+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Chun <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -3628,12 +3628,9 @@ msgstr "正在下載“虛擬攝影機工具包”"
 
 msgid ""
 "Another virtual camera is running.\n"
-"Bambu Studio supports only a single virtual camera.\n"
+"GalaxySlicer supports only a single virtual camera.\n"
 "Do you want to stop this virtual camera?"
 msgstr ""
-"另一個虛擬攝影機正在工作。\n"
-"Bambu Studio 同時只能支持一個虛擬攝影機。\n"
-"是否停止前一個虛擬攝影機？"
 
 #, c-format, boost-format
 msgid "Virtual camera initialize failed (%s)!"
@@ -4643,7 +4640,7 @@ msgid "Project downloaded %d%%"
 msgstr "項目已下載%d%%"
 
 msgid ""
-"Importing to Bambu Studio failed. Please download the file and manually "
+"Importing to Galaxy Slicer failed. Please download the file and manually "
 "import it."
 msgstr ""
 
@@ -5484,8 +5481,8 @@ msgstr "設備升級中，無法發送列印任務"
 msgid "An SD card needs to be inserted before send to printer SD card."
 msgstr "發送到３Ｄ列印機需要插入SD卡"
 
-msgid "The printer is required to be in the same LAN as Bambu Studio."
-msgstr "３Ｄ列印機需要與Bambu Studio在同一個區域網路內。"
+msgid "The printer is required to be in the same LAN as GalaxySlicer."
+msgstr "印表機需要與逆戟鯨在同一個區域網路內。"
 
 msgid "The printer does not support sending to printer SD card."
 msgstr "該３Ｄ列印機不支持發送到３Ｄ列印機SD卡。"
@@ -6515,15 +6512,15 @@ msgid "Network plug-in update"
 msgstr "網路插件升級"
 
 msgid ""
-"Click OK to update the Network plug-in when Bambu Studio launches next time."
-msgstr "點擊\"確定\"，將在Bambu Studio下次啟動之後自動升級網路插件"
+"Click OK to update the Network plug-in when GalaxySlicer launches next time."
+msgstr "點擊OK將在逆戟鯨下次啟動之後自動升級網路插件"
 
 #, c-format, boost-format
 msgid "A new Network plug-in(%s) available, Do you want to install it?"
 msgstr "新的網路插件(%s) 可用，您是否需要安裝它？"
 
-msgid "New version of Bambu Studio"
-msgstr "新版本的Bambu Studio"
+msgid "New version of GalaxySlicer"
+msgstr "新版本的逆戟鯨"
 
 msgid "Don't remind me of this version again"
 msgstr "此版本不再提示"
@@ -6535,8 +6532,8 @@ msgid "LAN Connection Failed (Sending print file)"
 msgstr "LAN連接失敗 (發送列印文件)"
 
 msgid ""
-"Step 1, please confirm Bambu Studio and your printer are in the same LAN."
-msgstr "第1步，請確認Bambu Studio和您的３Ｄ列印機在同一個LAN上。"
+"Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
+msgstr "步驟1, 請確認逆戟鯨和您的印表機在同一區域網路中。"
 
 msgid ""
 "Step 2, if the IP and Access Code below are different from the actual values "
@@ -8156,8 +8153,8 @@ msgstr ""
 
 msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
-"adhensive"
-msgstr "首層加速度。使用較低值可以改善和構建板的黏接。"
+"adhesive"
+msgstr ""
 
 msgid "Enable accel_to_decel"
 msgstr "啟用煞車速度"
@@ -8798,8 +8795,11 @@ msgstr "擠出頭最小可列印的層高。用於限制開啟自適應層高時
 msgid "Min print speed"
 msgstr "最小列印速度"
 
-msgid "The minimum printing speed when slow down for cooling"
-msgstr "自動冷卻降速的最小列印速度"
+msgid ""
+"The minimum printing speed for the filament when slow down for better layer "
+"cooling is enabled, when printing overhangs and when feature speeds are not "
+"specified explicitly."
+msgstr ""
 
 msgid "Nozzle diameter"
 msgstr "噴嘴直徑"
@@ -11430,6 +11430,38 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
+#~ "Another virtual camera is running.\n"
+#~ "Bambu Studio supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+#~ msgstr ""
+#~ "另一個虛擬攝影機正在工作。\n"
+#~ "Bambu Studio 同時只能支持一個虛擬攝影機。\n"
+#~ "是否停止前一個虛擬攝影機？"
+
+#~ msgid "The printer is required to be in the same LAN as Bambu Studio."
+#~ msgstr "３Ｄ列印機需要與Bambu Studio在同一個區域網路內。"
+
+#~ msgid ""
+#~ "Click OK to update the Network plug-in when Bambu Studio launches next "
+#~ "time."
+#~ msgstr "點擊\"確定\"，將在Bambu Studio下次啟動之後自動升級網路插件"
+
+#~ msgid "New version of Bambu Studio"
+#~ msgstr "新版本的Bambu Studio"
+
+#~ msgid ""
+#~ "Step 1, please confirm Bambu Studio and your printer are in the same LAN."
+#~ msgstr "第1步，請確認Bambu Studio和您的３Ｄ列印機在同一個LAN上。"
+
+#~ msgid ""
+#~ "Acceleration of initial layer. Using a lower value can improve build "
+#~ "plate adhensive"
+#~ msgstr "首層加速度。使用較低值可以改善和構建板的黏接。"
+
+#~ msgid "The minimum printing speed when slow down for cooling"
+#~ msgstr "自動冷卻降速的最小列印速度"
+
+#~ msgid ""
 #~ "There are currently no identical spare consumables available, and "
 #~ "automatic replenishment is currently not possible. \n"
 #~ "(Currently supporting automatic supply of consumables with the same "
@@ -11881,21 +11913,6 @@ msgstr ""
 
 #~ msgid "Flow Calibration"
 #~ msgstr "流量校準"
-
-#~ msgid "The printer is required to be in the same LAN as GalaxySlicer."
-#~ msgstr "印表機需要與逆戟鯨在同一個區域網路內。"
-
-#~ msgid ""
-#~ "Click OK to update the Network plug-in when GalaxySlicer launches next "
-#~ "time."
-#~ msgstr "點擊OK將在逆戟鯨下次啟動之後自動升級網路插件"
-
-#~ msgid "New version of GalaxySlicer"
-#~ msgstr "新版本的逆戟鯨"
-
-#~ msgid ""
-#~ "Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
-#~ msgstr "步驟1, 請確認逆戟鯨和您的印表機在同一區域網路中。"
 
 #~ msgid ""
 #~ "The configuration may be generated by a newer version of BambuStudio."

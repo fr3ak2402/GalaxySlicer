@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 16:35+0200\n"
+"POT-Creation-Date: 2023-10-29 08:46+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3765,9 +3765,12 @@ msgstr "Завантаження інструментів віртуальної
 
 msgid ""
 "Another virtual camera is running.\n"
-"Bambu Studio supports only a single virtual camera.\n"
+"GalaxySlicer supports only a single virtual camera.\n"
 "Do you want to stop this virtual camera?"
 msgstr ""
+"Запущено іншу віртуальну камеру.\n"
+"GalaxySlicer підтримує лише одну віртуальну камеру.\n"
+"Ви хочете зупинити цю віртуальну камеру?"
 
 #, c-format, boost-format
 msgid "Virtual camera initialize failed (%s)!"
@@ -4818,7 +4821,7 @@ msgid "Project downloaded %d%%"
 msgstr "Проект завантажено %d%%"
 
 msgid ""
-"Importing to Bambu Studio failed. Please download the file and manually "
+"Importing to Galaxy Slicer failed. Please download the file and manually "
 "import it."
 msgstr ""
 
@@ -5688,8 +5691,9 @@ msgstr "Не вдалося надіслати завдання на друк п
 msgid "An SD card needs to be inserted before send to printer SD card."
 msgstr "Перед надсиланням на картку SD принтера необхідно вставити картку SD."
 
-msgid "The printer is required to be in the same LAN as Bambu Studio."
+msgid "The printer is required to be in the same LAN as GalaxySlicer."
 msgstr ""
+"Принтер повинен знаходитися в тій же локальній мережі, що й GalaxySlicer."
 
 msgid "The printer does not support sending to printer SD card."
 msgstr "Принтер не підтримує надсилання на картку SD принтера."
@@ -6761,15 +6765,17 @@ msgid "Network plug-in update"
 msgstr "Оновлення мережевого плагіна"
 
 msgid ""
-"Click OK to update the Network plug-in when Bambu Studio launches next time."
+"Click OK to update the Network plug-in when GalaxySlicer launches next time."
 msgstr ""
+"Натисніть OK, щоб оновити плагін Network під час наступного запуску Orca "
+"Slicer."
 
 #, c-format, boost-format
 msgid "A new Network plug-in(%s) available, Do you want to install it?"
 msgstr "Доступний новий мережевий плагін (%s), чи хочете ви встановити його?"
 
-msgid "New version of Bambu Studio"
-msgstr ""
+msgid "New version of GalaxySlicer"
+msgstr "Нова версія програми GalaxySlicer"
 
 msgid "Don't remind me of this version again"
 msgstr "Не нагадуйте мені більше про цю версію"
@@ -6781,8 +6787,10 @@ msgid "LAN Connection Failed (Sending print file)"
 msgstr "Помилка з’єднання LAN (Надсилання файлу друку)"
 
 msgid ""
-"Step 1, please confirm Bambu Studio and your printer are in the same LAN."
+"Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
 msgstr ""
+"Крок 1. Переконайтеся, що GalaxySlicer та ваш принтер знаходяться в одній "
+"локальніймережі."
 
 msgid ""
 "Step 2, if the IP and Access Code below are different from the actual values "
@@ -8560,10 +8568,8 @@ msgstr ""
 
 msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
-"adhensive"
+"adhesive"
 msgstr ""
-"Прискорення вихідного шару. Використання меншого значення може покращити "
-"прилипання будівельної плити"
 
 msgid "Enable accel_to_decel"
 msgstr "Увімкнути прискорення до уповільнення"
@@ -9270,8 +9276,11 @@ msgstr ""
 msgid "Min print speed"
 msgstr "Мін. швидкість друку"
 
-msgid "The minimum printing speed when slow down for cooling"
-msgstr "Мінімальна швидкість друку при уповільненні для охолодження"
+msgid ""
+"The minimum printing speed for the filament when slow down for better layer "
+"cooling is enabled, when printing overhangs and when feature speeds are not "
+"specified explicitly."
+msgstr ""
 
 msgid "Nozzle diameter"
 msgstr "Діаметр сопла"
@@ -11987,6 +11996,16 @@ msgid ""
 msgstr ""
 
 #~ msgid ""
+#~ "Acceleration of initial layer. Using a lower value can improve build "
+#~ "plate adhensive"
+#~ msgstr ""
+#~ "Прискорення вихідного шару. Використання меншого значення може покращити "
+#~ "прилипання будівельної плити"
+
+#~ msgid "The minimum printing speed when slow down for cooling"
+#~ msgstr "Мінімальна швидкість друку при уповільненні для охолодження"
+
+#~ msgid ""
 #~ "GalaxySlicer is based on BambuStudio by Bambulab, which is from "
 #~ "PrusaSlicer by Prusa Research.  PrusaSlicer is from Slic3r by Alessandro "
 #~ "Ranellucci and the RepRap community"
@@ -12443,15 +12462,6 @@ msgstr ""
 #~ msgid "Initialize failed (Not supported by printer)!"
 #~ msgstr "Помилка ініціалізації (не підтримується принтером)!"
 
-#~ msgid ""
-#~ "Another virtual camera is running.\n"
-#~ "GalaxySlicer supports only a single virtual camera.\n"
-#~ "Do you want to stop this virtual camera?"
-#~ msgstr ""
-#~ "Запущено іншу віртуальну камеру.\n"
-#~ "GalaxySlicer підтримує лише одну віртуальну камеру.\n"
-#~ "Ви хочете зупинити цю віртуальну камеру?"
-
 #~ msgid "Not supported by this model of printer!"
 #~ msgstr "Не підтримується цією моделлю принтера!"
 
@@ -12498,26 +12508,6 @@ msgstr ""
 
 #~ msgid "Flow Calibration"
 #~ msgstr "Калібрування потоку"
-
-#~ msgid "The printer is required to be in the same LAN as GalaxySlicer."
-#~ msgstr ""
-#~ "Принтер повинен знаходитися в тій же локальній мережі, що й GalaxySlicer."
-
-#~ msgid ""
-#~ "Click OK to update the Network plug-in when GalaxySlicer launches next "
-#~ "time."
-#~ msgstr ""
-#~ "Натисніть OK, щоб оновити плагін Network під час наступного запуску Orca "
-#~ "Slicer."
-
-#~ msgid "New version of GalaxySlicer"
-#~ msgstr "Нова версія програми GalaxySlicer"
-
-#~ msgid ""
-#~ "Step 1, please confirm GalaxySlicer and your printer are in the same LAN."
-#~ msgstr ""
-#~ "Крок 1. Переконайтеся, що GalaxySlicer та ваш принтер знаходяться в одній "
-#~ "локальніймережі."
 
 #~ msgid "ERROR:"
 #~ msgstr "ПОМИЛКА:"
