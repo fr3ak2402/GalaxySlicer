@@ -8119,7 +8119,7 @@ void Plater::import_model_id(wxString download_info)
                         error);
 
                     if (retry_count == max_retries) {
-                        msg = _L("Importing to Galaxy Slicer failed. Please download the file and manually import it.");
+                        msg = _L("Importing to GalaxySlicer failed. Please download the file and manually import it.");
                         cont = false;
                     }
                 })
