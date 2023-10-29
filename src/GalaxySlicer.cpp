@@ -2780,6 +2780,9 @@ bool CLI::setup(int argc, char **argv)
     //GalaxySlicer: Path to Python
     boost::filesystem::path path_python = path_to_binary.parent_path() / "python";
 
+    //GalaxySlicer: Path to Applications
+    boost::filesystem::path path_applications = path_to_binary.parent_path() / "applications";
+
 #elif defined SLIC3R_FHS
     // The application is packaged according to the Linux Filesystem Hierarchy Standard
     // Resources are set to the 'Architecture-independent (shared) data', typically /usr/share or /usr/local/share
@@ -2802,6 +2805,9 @@ bool CLI::setup(int argc, char **argv)
 #ifdef WIN32
     //GalaxySlicer: set python dir
     set_python_dir(path_python.string());
+
+    //GalaxySlicer: set applications dir
+    set_applications_dir(path_applications.string());
 #endif
 
     // Parse all command line options into a DynamicConfig.
