@@ -341,7 +341,7 @@ const float bed3d_ax3s_default_tip_length = 5.0f;
 int CLI::run(int argc, char **argv)
 {
     // Mark the main thread for the debugger and for runtime checks.
-    set_current_thread_name("GalaxySlicer_main");
+    set_current_thread_name("galaxyslicer_main");
     // Save the thread ID of the main thread.
     save_main_thread_id();
 #ifdef __WXGTK__
@@ -2994,7 +2994,7 @@ LONG WINAPI VectoredExceptionHandler(PEXCEPTION_POINTERS pExceptionInfo)
 
 #if defined(_MSC_VER) || defined(__MINGW32__)
 extern "C" {
-    __declspec(dllexport) int __stdcall GalaxySlicer_main(int argc, wchar_t **argv)
+    __declspec(dllexport) int __stdcall galaxyslicer_main(int argc, wchar_t **argv)
     {
         // Convert wchar_t arguments to UTF8.
         std::vector<std::string> 	argv_narrow;
