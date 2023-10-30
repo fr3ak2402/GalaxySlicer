@@ -1,8 +1,0 @@
-{
-    "name": "Snapmaker PA-CF @base",
-    "instantiation": "false",
-    "filament_id": "SMF14",
-    "inherits": "fdm_filament_pa",
-    "type": "filament",
-    "from": "system"
-}

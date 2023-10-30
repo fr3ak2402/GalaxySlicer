@@ -1,8 +1,0 @@
-{
-    "type": "machine",
-    "name": "fdm_machine_kingroon",
-    "from": "system",
-    "instantiation": "false",
-    "inherits": "fdm_machine_common",
-    "z_hop_types": "Auto Lift"
-}

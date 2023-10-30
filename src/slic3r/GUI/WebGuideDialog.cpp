@@ -359,6 +359,16 @@ void GuideFrame::OnScriptMessage(wxWebViewEvent &evt)
                 m_ProfileJson["filament"][fName]["selected"] = 1;
             }
         }
+        //GalaxySlicer: Download, Check & Open Profile Manager
+        else if (strCmd == "download_application_profilemanager") {
+
+        }
+        else if (strCmd == "check_application_profilemanager") {
+
+        }
+        else if (strCmd == "open_application_profilemanager") {
+
+        }
         else if (strCmd == "user_guide_finish") {
             SaveProfile();
 
