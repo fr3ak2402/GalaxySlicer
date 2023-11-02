@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 17:15+0100\n"
+"POT-Creation-Date: 2023-11-02 13:02+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -5003,6 +5003,15 @@ msgstr "Imperial"
 msgid "Units"
 msgstr "Units"
 
+msgid "Home"
+msgstr ""
+
+msgid "Default Page"
+msgstr ""
+
+msgid "Set the page opened on startup."
+msgstr ""
+
 msgid "Zoom to mouse position"
 msgstr "Zoom to mouse position"
 
@@ -5017,6 +5026,12 @@ msgid "Use free camera"
 msgstr ""
 
 msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr ""
+
+msgid "Show splash screen"
+msgstr ""
+
+msgid "Show the splash screen during startup."
 msgstr ""
 
 msgid "Show \"Tip of the day\" notification after start"
@@ -8457,6 +8472,8 @@ msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
 "adhesive"
 msgstr ""
+"This is the printing acceleration for the first layer. Using limited "
+"acceleration can improve build plate adhesion."
 
 msgid "Enable accel_to_decel"
 msgstr ""
@@ -11817,6 +11834,33 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#~ msgid ""
+#~ "Another virtual camera is running.\n"
+#~ "Orca Slicer supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+#~ msgstr ""
+#~ "Another virtual camera is running.\n"
+#~ "Orca Slicer supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+
+#~ msgid "The printer is required to be in the same LAN as Orca Slicer."
+#~ msgstr "The printer is required to be on the same LAN as Orca Slicer."
+
+#~ msgid ""
+#~ "Click OK to update the Network plug-in when Orca Slicer launches next "
+#~ "time."
+#~ msgstr ""
+#~ "Click OK to update the Network plug-in the next time Orca Slicer launches."
+
+#~ msgid "New version of Orca Slicer"
+#~ msgstr "New version of Orca Slicer"
+
+#~ msgid ""
+#~ "Step 1, please confirm Orca Slicer and your printer are in the same LAN."
+#~ msgstr ""
+#~ "Step 1, please confirm that Orca Slicer and your printer are on the same "
+#~ "LAN."
 
 #~ msgid ""
 #~ "Another virtual camera is running.\n"

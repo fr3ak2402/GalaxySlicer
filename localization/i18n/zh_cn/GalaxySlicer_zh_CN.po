@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 17:15+0100\n"
+"POT-Creation-Date: 2023-11-02 13:02+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -4874,6 +4874,15 @@ msgstr "英制"
 msgid "Units"
 msgstr "单位"
 
+msgid "Home"
+msgstr "首页"
+
+msgid "Default Page"
+msgstr ""
+
+msgid "Set the page opened on startup."
+msgstr ""
+
 msgid "Zoom to mouse position"
 msgstr "放大到鼠标位置"
 
@@ -4887,6 +4896,12 @@ msgstr "使用自由视角"
 
 msgid "If enabled, use free camera. If not enabled, use constrained camera."
 msgstr "如果启用，使用自由视角。如果未启用，使用约束视角。"
+
+msgid "Show splash screen"
+msgstr ""
+
+msgid "Show the splash screen during startup."
+msgstr ""
 
 msgid "Show \"Tip of the day\" notification after start"
 msgstr "启动后显示“每日小贴士”通知"
@@ -7395,6 +7410,8 @@ msgid ""
 "direction on odd layers. This alternating pattern can drastically improve "
 "steep overhang."
 msgstr ""
+"在奇数层，将悬垂的打印方向反转。这种交替的模式可以大大改善陡峭悬垂的打印质"
+"量。"
 
 msgid "Reverse threshold"
 msgstr "反转阈值"
@@ -8185,7 +8202,7 @@ msgstr ""
 msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
 "adhesive"
-msgstr ""
+msgstr "首层加速度。使用较低值可以改善和构建板的粘接。"
 
 msgid "Enable accel_to_decel"
 msgstr "启用制动速度"
@@ -11540,6 +11557,40 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Orca Slicer "
+#~ msgstr "逆戟鲸切片"
+
+#~ msgid ""
+#~ "Another virtual camera is running.\n"
+#~ "Orca Slicer supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+#~ msgstr ""
+#~ "另一个虚拟摄像头正在工作。\n"
+#~ "Orca Slicer 同时只能支持一个虚拟摄像头。\n"
+#~ "是否停止前一个虚拟摄像头？"
+
+#~ msgid ""
+#~ "The .gcode.3mf file contains no G-code data.Please slice it with Orca "
+#~ "Slicer and export a new .gcode.3mf file."
+#~ msgstr ""
+#~ ".gcode.3mf文件中不包含G-code数据。请使用Orca Slicer进行切片并导出新的."
+#~ "gcode.3mf文件。"
+
+#~ msgid "The printer is required to be in the same LAN as Orca Slicer."
+#~ msgstr "打印机需要与Orca Slicer在同一个局域网内。"
+
+#~ msgid ""
+#~ "Click OK to update the Network plug-in when Orca Slicer launches next "
+#~ "time."
+#~ msgstr "点击\"确定\"，将在Orca Slicer下次启动之后自动升级网络插件"
+
+#~ msgid "New version of Orca Slicer"
+#~ msgstr "新版本的Orca Slicer"
+
+#~ msgid ""
+#~ "Step 1, please confirm Orca Slicer and your printer are in the same LAN."
+#~ msgstr "第1步，请确认Orca Slicer和您的打印机在同一个LAN上。"
+
 #~ msgid ""
 #~ "Another virtual camera is running.\n"
 #~ "Bambu Studio supports only a single virtual camera.\n"
@@ -13086,9 +13137,6 @@ msgstr ""
 
 #~ msgid "Waiting"
 #~ msgstr "等待中"
-
-#~ msgid "Home"
-#~ msgstr "首页"
 
 #~ msgid "Per object edit"
 #~ msgstr "编辑单个对象"

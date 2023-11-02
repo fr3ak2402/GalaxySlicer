@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 17:15+0100\n"
+"POT-Creation-Date: 2023-11-02 13:02+0100\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -677,6 +677,7 @@ msgstr "Выберите один файл (3mf):"
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
 msgstr ""
+"Выберите один или несколько файлов (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf):"
 msgstr "Выберите один или несколько файлов (3mf/step/stl/svg/obj/amf):"
@@ -859,10 +860,10 @@ msgid "Load..."
 msgstr "Загрузить…"
 
 msgid "Galaxy Cube"
-msgstr ""
+msgstr "Galaxy Cube"
 
 msgid "Galaxy Flower"
-msgstr ""
+msgstr "Galaxy Flower"
 
 msgid "Orca Cube"
 msgstr "Куб Orca Design"
@@ -1544,7 +1545,7 @@ msgid "?"
 msgstr "?"
 
 msgid "/"
-msgstr ""
+msgstr "/"
 
 msgid "Empty"
 msgstr "Пусто"
@@ -2196,11 +2197,13 @@ msgid "Group"
 msgstr "Группа"
 
 msgid "The printer does not currently support auto refill."
-msgstr ""
+msgstr "В настоящее время принтер не поддерживает функцию автодозаправки."
 
 msgid ""
 "AMS filament backup is not enabled, please enable it in the AMS settings."
 msgstr ""
+"Резервирование материала АСПП не включено, пожалуйста, включите его в "
+"настройках АСПП."
 
 msgid ""
 "If there are two identical filaments in AMS, AMS filament backup will be "
@@ -2208,6 +2211,10 @@ msgid ""
 "(Currently supporting automatic supply of consumables with the same brand, "
 "material type, and color)"
 msgstr ""
+"Если в АСПП имеются два одинаковых материала, то будет включено "
+"резервирование материала АСПП. \n"
+"(В настоящее время поддерживается автоматическая поставка расходных "
+"материалов того же производителя, типа материала и цвета)."
 
 msgid "AMS Settings"
 msgstr "Настройки АСПП"
@@ -2493,6 +2500,9 @@ msgid ""
 "it may result in material softening and clogging.The maximum safe "
 "temperature for the material is %d"
 msgstr ""
+"Текущая температура в камере превышает безопасную температуру для этого "
+"материала, что может привести к размягчению материала или засорению "
+"экструдера. Безопасная температура текущего материала составляет %d."
 
 msgid ""
 "Too small layer height.\n"
@@ -2562,7 +2572,7 @@ msgstr ""
 "- Режим записи таймлапсов - обычный режим"
 
 msgid " But machines with I3 structure will not generate timelapse videos."
-msgstr ""
+msgstr " Но принтеры с кинематикой I3 не будут писать таймлапс."
 
 msgid ""
 "Change these settings automatically? \n"
@@ -2695,34 +2705,38 @@ msgid "Paused due to heat bed temperature malfunction"
 msgstr "Пауза при неисправности температуры стола"
 
 msgid "Filament unloading"
-msgstr ""
+msgstr "Выгрузка прутка"
 
+# ??? Пауза при пропуске шагов
 msgid "Skip step pause"
-msgstr ""
+msgstr "Пропуск команды паузы"
 
 msgid "Filament loading"
-msgstr ""
+msgstr "Загрузка прутка"
 
 msgid "Motor noise calibration"
-msgstr ""
+msgstr "Калибровка шума двигателя"
 
 msgid "Paused due to AMS lost"
-msgstr ""
+msgstr "Печать приостановлена из-за потери связи с АСПП"
 
 msgid "Paused due to low speed of the heat break fan"
 msgstr ""
+"Печать приостановлена из-за низкой скорости вращения вентилятора головы"
 
 msgid "Paused due to chamber temperature control error"
-msgstr ""
+msgstr "Печать приостановлена из-за ошибки контроля температуры в камере"
 
+# ??? или Снижение температуры
 msgid "Cooling chamber"
-msgstr ""
+msgstr "Охлаждение камеры"
 
 msgid "Paused by the Gcode inserted by user"
-msgstr ""
+msgstr "Печать приостановлена G-кодом, вставленным пользователем"
 
+# Демонстрация шума двигателяы
 msgid "Motor noise showoff"
-msgstr ""
+msgstr "Результат калибровки шума двигателя"
 
 msgid "MC"
 msgstr "Плата управления"
@@ -2765,34 +2779,43 @@ msgid ""
 "45℃.In order to avoid extruder clogging,low temperature filament(PLA/PETG/"
 "TPU) is not allowed to be loaded."
 msgstr ""
+"Текущая температура в камере или целевая температура в камере превышает 45℃. "
+"Чтобы избежать засорения экструдера, запрещается загрузка низкотемпературной "
+"печатной нити (PLA/PETG/TPU)."
 
 msgid ""
 "Low temperature filament(PLA/PETG/TPU) is loaded in the extruder.In order to "
 "avoid extruder clogging,it is not allowed to set the chamber temperature "
 "above 45℃."
 msgstr ""
+"В экструдер загружается низкотемпературная пластиковая нить (PLA/PETG/TPU). "
+"Чтобы избежать засорения экструдера, запрещается устанавливать температуру в "
+"камере выше 45℃."
 
 msgid ""
 "When you set the chamber temperature below 40℃, the chamber temperature "
 "control will not be activated. And the target chamber temperature will "
 "automatically be set to 0℃."
 msgstr ""
+"Если вы установили температура в камере ниже 40℃, то контроль температуры в "
+"камере не запустится, а целевая температура в ней будет автоматически "
+"установлена на 0℃."
 
 msgid "Failed to start printing job"
 msgstr "Не удалось запустить задание на печать."
 
 msgid ""
 "This calibration does not support the currently selected nozzle diameter"
-msgstr ""
+msgstr "Данная калибровка не поддерживает выбранный диаметр сопла"
 
 msgid "Current flowrate cali param is invalid"
-msgstr ""
+msgstr "Текущая величина калибровки скорости потока недопустима"
 
 msgid "Selected diameter and machine diameter do not match"
-msgstr ""
+msgstr "Выбранный диаметр и диаметр профиля принтера не совпадают"
 
 msgid "Failed to generate cali gcode"
-msgstr ""
+msgstr "Не удалось сгенерировать калибровочный G-код"
 
 msgid "Calibration error"
 msgstr "Ошибка калибровки"
@@ -3125,7 +3148,7 @@ msgid "Avoid extrusion calibration region"
 msgstr "Избегать зону калибровки экструзии"
 
 msgid "Align to Y axis"
-msgstr ""
+msgstr "Выровнять по оси Y"
 
 msgid "Add"
 msgstr "Добавить"
@@ -3224,10 +3247,10 @@ msgid "Bed leveling"
 msgstr "Выравнивание стола"
 
 msgid "Vibration compensation"
-msgstr ""
+msgstr "Компенсация вибрации"
 
 msgid "Motor noise cancellation"
-msgstr ""
+msgstr "Шумоподавление двигателя"
 
 msgid "Calibration program"
 msgstr "Программа калибровки"
@@ -3248,7 +3271,7 @@ msgid "Start Calibration"
 msgstr "Запустить калибровку"
 
 msgid "No step selected"
-msgstr ""
+msgstr "Шаг не задан"
 
 msgid "Completed"
 msgstr "Завершено"
@@ -4004,17 +4027,19 @@ msgid ""
 "You have completed printing the mall model, \n"
 "but the synchronization of rating information has failed."
 msgstr ""
+"Вы завершили печать модели торгового центра, \n"
+"но не удалось синхронизировать информацию о рейтинге."
 
 msgid "How do you like this printing file?"
-msgstr ""
+msgstr "На сколько вы оцениваете этот напечатанный файл?"
 
 msgid ""
 "(The model has already been rated. Your rating will overwrite the previous "
 "rating.)"
-msgstr ""
+msgstr "(Модели уже присвоен рейтинг. Ваш рейтинг перезапишет предыдущий.)"
 
 msgid "Rate"
-msgstr ""
+msgstr "Оценка"
 
 msgid "Camera"
 msgstr "Камера"
@@ -4122,95 +4147,113 @@ msgid "Can't start this without SD card."
 msgstr "Невозможно запустить без SD-карты."
 
 msgid "Rate the Print Profile"
-msgstr ""
+msgstr "Оценить профиль печати"
 
 msgid "Comment"
-msgstr ""
+msgstr "Комментарий"
 
 msgid "Rate this print"
-msgstr ""
+msgstr "Оценить эту печать"
 
 msgid "Add Photo"
-msgstr ""
+msgstr "Добавить фото"
 
 msgid "Delete Photo"
-msgstr ""
+msgstr "Удалить фото"
 
 msgid "Submit"
-msgstr ""
+msgstr "Отправить"
 
 msgid "Please click on the star first."
-msgstr ""
+msgstr "Пожалуйста, сначала нажмите на звездочку."
 
 msgid "InFo"
-msgstr ""
+msgstr "Информация"
 
 msgid "Get oss config failed."
 msgstr ""
+"Не удалось получить конфигурацию OSS.\n"
+"\n"
+"Ошибка получения конфигурации OSS."
 
 msgid "Upload Pictrues"
-msgstr ""
+msgstr "Отправка изображений"
 
 msgid "Number of images successfully uploaded"
-msgstr ""
+msgstr "Количество успешно загруженных изображений"
 
 msgid " upload failed"
-msgstr ""
+msgstr " ошибка отправки"
 
 msgid " upload config prase failed\n"
-msgstr ""
+msgstr " ошибка обработки конфигурации при отправке\n"
 
+# ???
 msgid " No corresponding storage bucket\n"
-msgstr ""
+msgstr " Отсутствует хранилище данных\n"
 
 msgid " can not be opened\n"
-msgstr ""
+msgstr " не удаётся открыть\n"
 
 msgid ""
 "The following issues occurred during the process of uploading images. Do you "
 "want to ignore them?\n"
 "\n"
 msgstr ""
+"В процессе загрузки изображений возникли следующие проблемы. Игнорировать "
+"их?\n"
+"\n"
 
 msgid "info"
 msgstr "Информация"
 
 msgid "Synchronizing the printing results. Please retry a few seconds later."
 msgstr ""
+"Синхронизация результатов печати. Повторите попытку через несколько секунд."
 
 msgid "Upload failed\n"
-msgstr ""
+msgstr "Ошибка отправки\n"
 
 msgid "obtaining instance_id failed\n"
-msgstr ""
+msgstr "не удалось получить instance_id\n"
 
 msgid ""
 "Your comment result cannot be uploaded due to some reasons. As follows:\n"
 "\n"
 "  error code: "
 msgstr ""
+"Ваш комментарий не может быть отправлен по некоторым причинам. Причины:\n"
+"\n"
+"Код ошибки: "
 
 msgid "error message: "
-msgstr ""
+msgstr "сообщение об ошибке: "
 
 msgid ""
 "\n"
 "\n"
 "Would you like to redirect to the webpage for rating?"
 msgstr ""
+"\n"
+"\n"
+"Хотите перейти на страницу для выставления оценки?"
 
 msgid ""
 "Some of your images failed to upload. Would you like to redirect to the "
 "webpage for rating?"
 msgstr ""
+"Некоторые из ваших изображений не удалось загрузить. Хотите перейти на "
+"страницу для выставления оценки?"
 
 msgid "You can select up to 16 images."
-msgstr ""
+msgstr "Допускается выбор до 16 изображений."
 
 msgid ""
 "At least one successful print record of this print profile is required \n"
 "to give a positive rating(4 or 5stars)."
 msgstr ""
+"Для выставления положительной оценки (4 или 5 звезд) требуется хотя бы одна "
+"успешная запись о печати данным профилем печати."
 
 msgid "Status"
 msgstr "Статус"
@@ -4342,7 +4385,7 @@ msgid "Export successfully."
 msgstr "Успешно экспортировано."
 
 msgid "Model file downloaded."
-msgstr ""
+msgstr "Файл модели скачан."
 
 msgid "Serious warning:"
 msgstr "Серьезное предупреждение:"
@@ -4430,8 +4473,9 @@ msgstr "Проверка первого слоя"
 msgid "Auto-recovery from step loss"
 msgstr "Автовосстановление после потери шагов"
 
+# оповещения, подсказки???
 msgid "Allow Prompt Sound"
-msgstr ""
+msgstr "Разрешить звуковые уведомления"
 
 msgid "Global"
 msgstr "Общие"
@@ -4455,22 +4499,22 @@ msgid "Printer settings"
 msgstr "Настройки принтера"
 
 msgid "Remove current plate (if not last one)"
-msgstr ""
+msgstr "Удалить текущую печатную пластину (кроме последней)"
 
 msgid "Auto orient objects on current plate"
-msgstr ""
+msgstr "Автоориентация моделей на текущей печатной пластине"
 
 msgid "Arrange objects on current plate"
-msgstr ""
+msgstr "Расставить модели на текущей печатной пластине"
 
 msgid "Unlock current plate"
-msgstr ""
+msgstr "Разблокировать текущую печатную пластину"
 
 msgid "Lock current plate"
-msgstr ""
+msgstr "Заблокировать текущую печатную пластину"
 
 msgid "Customize current plate"
-msgstr ""
+msgstr "Настроить текущую печатную пластину"
 
 msgid "Untitled"
 msgstr "Без названия"
@@ -4593,6 +4637,9 @@ msgid ""
 "clogged when printing this filament in a closed enclosure. Please open the "
 "front door and/or remove the upper glass."
 msgstr ""
+"Текущая температура стола довольно высока. При печати этим материалом в "
+"закрытом корпусе возможно засорение сопла. Откройте переднюю дверцу и/или "
+"верхнюю крышку принтера."
 
 msgid ""
 "The nozzle hardness required by the filament is higher than the default "
@@ -4607,6 +4654,8 @@ msgid ""
 "Enabling traditional timelapse photography may cause surface imperfections. "
 "It is recommended to change to smooth mode."
 msgstr ""
+"Включение обычного режима таймлапса может привести к появлению дефектов "
+"поверхности, поэтому рекомендуется изменить режим на плавный."
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4725,13 +4774,13 @@ msgid "Export STL file:"
 msgstr "Экспорт в STL файл:"
 
 msgid "Export AMF file:"
-msgstr ""
+msgstr "Экспорт в AMF файл:"
 
 msgid "Save file as:"
 msgstr "Сохранить файл как:"
 
 msgid "Export OBJ file:"
-msgstr ""
+msgstr "Экспорт в OBJ файл:"
 
 msgid "Delete object which is a part of cut object"
 msgstr "Удаление детали, являющейся частью разрезанной модели"
@@ -4752,10 +4801,10 @@ msgid "Another export job is running."
 msgstr "Уже идёт другой процесс экспорта."
 
 msgid "Replace from:"
-msgstr ""
+msgstr "Заменить из:"
 
 msgid "Unable to replace with more than one volume"
-msgstr ""
+msgstr "Невозможно заменить более чем одним объём"
 
 msgid "Error during replace"
 msgstr "Ошибка при выполнении замены"
@@ -4770,19 +4819,19 @@ msgid "Please select a file"
 msgstr "Пожалуйста, выберите файл"
 
 msgid "Do you want to replace it"
-msgstr ""
+msgstr "Хотите заменить его"
 
 msgid "Message"
 msgstr "Сообщение"
 
 msgid "Reload from:"
-msgstr ""
+msgstr "Перезагрузка из:"
 
 msgid "Unable to reload:"
-msgstr ""
+msgstr "Не удалось перезагрузить:"
 
 msgid "Error during reload"
-msgstr ""
+msgstr "Ошибка во время перезагрузки"
 
 msgid "Slicing"
 msgstr "Нарезка"
@@ -4914,13 +4963,13 @@ msgid "Save G-code file as:"
 msgstr "Сохранить файл G-кода как:"
 
 msgid "Save SLA file as:"
-msgstr ""
+msgstr "Сохранить SLA файл как:"
 
 msgid "The provided file name is not valid."
-msgstr ""
+msgstr "Указано недопустимое имя файла."
 
 msgid "The following characters are not allowed by a FAT file system:"
-msgstr ""
+msgstr "Следующие символы не разрешены файловой системой FAT:"
 
 msgid "Save Sliced file as:"
 msgstr "Сохранить нарезанный файл как:"
@@ -5088,6 +5137,15 @@ msgstr ""
 "Единицы \n"
 "измерения"
 
+msgid "Home"
+msgstr ""
+
+msgid "Default Page"
+msgstr ""
+
+msgid "Set the page opened on startup."
+msgstr ""
+
 msgid "Zoom to mouse position"
 msgstr "Приближать к положению курсор"
 
@@ -5099,9 +5157,17 @@ msgstr ""
 "окна."
 
 msgid "Use free camera"
-msgstr ""
+msgstr "Использовать свободную камеру"
 
 msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr ""
+"Если включено, используется свободное вращение камеры. Если выключено, "
+"используется вращение камера с ограничениями."
+
+msgid "Show splash screen"
+msgstr ""
+
+msgid "Show the splash screen during startup."
 msgstr ""
 
 msgid "Show \"Tip of the day\" notification after start"
@@ -5516,16 +5582,16 @@ msgid "PLA Plate"
 msgstr "PLA пластина"
 
 msgid "Bambu Engineering Plate"
-msgstr ""
+msgstr "Инженерная пластина Bamabu"
 
 msgid "Bambu Smooth PEI Plate"
-msgstr ""
+msgstr "Гладкая PEI пластина Bambu"
 
 msgid "High temperature Plate"
-msgstr ""
+msgstr "Высокотемпературная пластина"
 
 msgid "Bambu Textured PEI Plate"
-msgstr ""
+msgstr "Текстурированная PEI пластина Bambu "
 
 msgid "Send print job to"
 msgstr "Отправка задания на печать"
@@ -5540,7 +5606,7 @@ msgid "Flow Dynamics Calibration"
 msgstr "Калибровка динамики потока"
 
 msgid "Click here if you can't connect to the printer"
-msgstr ""
+msgstr "Нажмите здесь, если вы не можете подключиться к принтеру"
 
 msgid "send completed"
 msgstr "отправка завершена"
@@ -5660,11 +5726,14 @@ msgid ""
 "When enable spiral vase mode, machines with I3 structure will not generate "
 "timelapse videos."
 msgstr ""
+"При включении режима «Спиральная ваза» принтеры с кинематикой I3 не будут "
+"писать таймлапс."
 
 msgid ""
 "When print by object, machines with I3 structure will not generate timelapse "
 "videos."
 msgstr ""
+"При печати по очереди, принтеры с кинематикой I3 не будут писать таймлапс."
 
 msgid "Errors"
 msgstr "Ошибок"
@@ -6063,7 +6132,7 @@ msgstr ""
 "значит не задано."
 
 msgid "Print chamber temperature"
-msgstr ""
+msgstr "Температура в термокамере"
 
 msgid "Print temperature"
 msgstr "Температура печати"
@@ -6096,13 +6165,16 @@ msgstr ""
 "пластине."
 
 msgid "Smooth PEI Plate / High Temp Plate"
-msgstr ""
+msgstr "Гладкая PEI/высокотемпер. пластина"
 
 msgid ""
 "Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
 "Value 0 means the filament does not support to print on the Smooth PEI Plate/"
 "High Temp Plate"
 msgstr ""
+"Температура стола при установленной гладкой PEI/высокотемпературный печатной "
+"пластине. 0 означает, что пластиковая нить не поддерживает печать на этой "
+"печатной пластине."
 
 msgid "Textured PEI Plate"
 msgstr "Текстурированная PEI пластина"
@@ -6156,13 +6228,13 @@ msgid "Auxiliary part cooling fan"
 msgstr "Вспомогательный вентилятор для охлаждения моделей"
 
 msgid "Exhaust fan"
-msgstr ""
+msgstr "Вытяжной вентилятор"
 
 msgid "During print"
-msgstr ""
+msgstr "Во время печати"
 
 msgid "Complete print"
-msgstr ""
+msgstr "После завершения печати"
 
 msgid "Filament start G-code"
 msgstr "Стартовый G-код прутка"
@@ -6218,7 +6290,7 @@ msgid "Layer change G-code"
 msgstr "G-код выполняемый при смене слоя"
 
 msgid "Time lapse G-code"
-msgstr ""
+msgstr "G-код таймлапса"
 
 msgid "Change filament G-code"
 msgstr "G-код выполняемый при смене прутка"
@@ -7099,6 +7171,8 @@ msgid ""
 "Invalid spacing supplied to Flow::with_spacing(), check your layer height "
 "and extrusion width"
 msgstr ""
+"Для Flow::with_spacing () был указан недопустимый интервал. Проверьте высоту "
+"слоя и ширину экструзии."
 
 msgid "undefined error"
 msgstr "неопределённая ошибка"
@@ -7267,21 +7341,26 @@ msgstr ""
 
 #, boost-format
 msgid "The object %1% exceeds the maximum build volume height."
-msgstr ""
+msgstr "Высота модели %1% превышает максимально допустимую."
 
 #, boost-format
 msgid ""
 "While the object %1% itself fits the build volume, its last layer exceeds "
 "the maximum build volume height."
 msgstr ""
+"Хотя сама модель %1% вписывается в область построения, её последний слой "
+"превышает максимальную высоту области построения."
 
 msgid ""
 "You might want to reduce the size of your model or change current print "
 "settings and retry."
 msgstr ""
+"Попробуйте уменьшить размер модели или изменить текущие настройки печати и "
+"повторить попытку."
 
 msgid "Variable layer height is not supported with Organic supports."
 msgstr ""
+"Функция переменной высоты слоя не совместима органическими поддержками."
 
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "Черновая башня не поддерживается при печати в режиме «По очереди»."
@@ -7440,7 +7519,7 @@ msgstr ""
 "компенсировать эффект слоновьей ноги."
 
 msgid "Elephant foot compensation layers"
-msgstr ""
+msgstr "Компенсирующих слоёв «слоновьей ноги»"
 
 msgid ""
 "The number of layers on which the elephant foot compensation will be active. "
@@ -7448,6 +7527,9 @@ msgid ""
 "the next layers will be linearly shrunk less, up to the layer indicated by "
 "this value."
 msgstr ""
+"Количество слоёв, на которые будет распространяться компенсация слоновьей "
+"ноги. Первый слой будет уменьшен на величину компенсации слоновьей ноги с "
+"последующим линейным уменьшением до слоя, указанного здесь."
 
 msgid "layers"
 msgstr "слой(-я)"
@@ -7842,30 +7924,39 @@ msgstr ""
 "Создание дополнительных дорожек по периметру над крутыми нависаниями и "
 "участками, где мосты не могут быть закреплены."
 
+# от Overhang reversal
+# Реверс на нечётных слоях
 msgid "Reverse on odd"
-msgstr ""
+msgstr "Реверс на нависаниях"
 
 msgid "Overhang reversal"
-msgstr ""
+msgstr "Реверс на нависаниях"
 
 msgid ""
 "Extrude perimeters that have a part over an overhang in the reverse "
 "direction on odd layers. This alternating pattern can drastically improve "
 "steep overhang."
 msgstr ""
+"Печать периметров, имеющих нависания, в обратном направлении на нечётных "
+"слоях. Такое чередование может значительно улучшить качество печати крутых "
+"нависаний."
 
+# от Overhang reversal threshold
 msgid "Reverse threshold"
-msgstr ""
+msgstr "Порог для реверса"
 
 msgid "Overhang reversal threshold"
-msgstr ""
+msgstr "Порог разворота на свесах"
 
-#, c-format, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
 "Value 0 enables reversal on every odd layers regardless."
 msgstr ""
+"Величина свеса периметра при которой она считается достаточной для активации "
+"функции реверса печати нависаний.\n"
+"Может быть задано как в процентах, так и в миллиметрах от ширины периметра."
 
 msgid "Classic mode"
 msgstr "Классический режим"
@@ -7879,13 +7970,16 @@ msgstr "Замедляться при печати нависаний"
 msgid "Enable this option to slow printing down for different overhang degree"
 msgstr "Включение динамического управления скоростью печати нависаний."
 
+# ??? Замедление печати на изогнутых периметров
 msgid "Slow down for curled perimeters"
-msgstr ""
+msgstr "Снижение скорости на изогнутых периметрах"
 
 msgid ""
 "Enable this option to slow printing down in areas where potential curled "
 "perimeters may exist"
 msgstr ""
+"Включите эту опцию для замедления печати в тех областях, где потенциально "
+"могут возникать изогнутые периметры."
 
 msgid "mm/s or %"
 msgstr "мм/с или %"
@@ -8029,18 +8123,21 @@ msgstr ""
 "Профиль процесса по умолчанию при переключении на этот профиль принтера."
 
 msgid "Activate air filtration"
-msgstr ""
+msgstr "Вкл. фильтрацию воздуха"
 
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr ""
+"Активировать для лучшей фильтрации воздуха. G-код команда: M106 P3 S(0-255)"
 
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
 msgstr ""
+"Скорость вытяжного вентилятора во время печати. Эта скорость будет "
+"переопределять скорость в пользовательском стартовом G-коде материала"
 
 msgid "Speed of exhuast fan after printing completes"
-msgstr ""
+msgstr "Скорость вытяжного вентилятора после завершения печати"
 
 msgid "No cooling for the first"
 msgstr "Не включать вентилятор на первых"
@@ -8546,13 +8643,16 @@ msgstr ""
 "связующего слоя поддержки."
 
 msgid "Softening temperature"
-msgstr ""
+msgstr "Температура размягчения"
 
 msgid ""
 "The material softens at this temperature, so when the bed temperature is "
 "equal to or greater than it, it's highly recommended to open the front door "
 "and/or remove the upper glass to avoid cloggings."
 msgstr ""
+"При этой температуре материал размягчается, поэтому, когда температура стола "
+"равна или превышает её, настоятельно рекомендуется открыть переднюю дверцу и/"
+"или верхнюю крышку принтера, чтобы избежать засорения сопла."
 
 msgid "Price"
 msgstr "Стоимость"
@@ -8737,6 +8837,8 @@ msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
 "adhesive"
 msgstr ""
+"Ускорение на первом слое. Использование более низкого значения может "
+"улучшить адгезию к столу."
 
 msgid "Enable accel_to_decel"
 msgstr "Вкл. ограничение ускорения зигзагов"
@@ -8753,10 +8855,12 @@ msgstr "ограничение ускорение зигзагов"
 msgid ""
 "Klipper's max_accel_to_decel will be adjusted to this %% of acceleration"
 msgstr ""
+"Значение Klipper-а max_accel_to_decel (ограничение ускорения зигзагов) будет "
+"скорректировано на данное ускорение: %%\""
 
 #, c-format, boost-format
 msgid "%%"
-msgstr ""
+msgstr "%%"
 
 msgid "Jerk of outer walls"
 msgstr "Рывок для внешних периметров."
@@ -8904,7 +9008,7 @@ msgid "Layers and Perimeters"
 msgstr "Слои и периметры"
 
 msgid "Filter out gaps smaller than the threshold specified"
-msgstr ""
+msgstr "Небольшие промежутки меньше указанного порога не будут заполняться."
 
 msgid ""
 "Speed of gap infill. Gap usually has irregular line width and should be "
@@ -8974,33 +9078,38 @@ msgid "HRC"
 msgstr "HRC"
 
 msgid "Printer structure"
-msgstr ""
+msgstr "Кинематика принтера"
 
 msgid "The physical arrangement and components of a printing device"
-msgstr ""
+msgstr "Конструкция физического принтера"
 
 msgid "CoreXY"
-msgstr ""
+msgstr "CoreXY"
 
 msgid "I3"
-msgstr ""
+msgstr "I3"
 
 msgid "Hbot"
-msgstr ""
+msgstr "Hbot"
 
 msgid "Delta"
-msgstr ""
+msgstr "Delta"
 
 msgid "Best object position"
-msgstr ""
+msgstr "Наилучшее расположение модели"
 
 msgid "Best auto arranging position in range [0,1] w.r.t. bed shape."
 msgstr ""
+"Наилучшее расположение модели при авторасстановке в диапазоне [0,1] "
+"относительно формы стола."
 
 msgid ""
 "Enable this option if machine has auxiliary part cooling fan. G-code "
 "command: M106 P2 S(0-255)."
 msgstr ""
+"Если в принтере имеет вспомогательный вентилятор для охлаждения моделей, "
+"можете включить эту опцию. \n"
+"G-код команда: M106 P2 S(0-255)."
 
 msgid "Exhaust cooling fan"
 msgstr ""
@@ -9055,29 +9164,35 @@ msgstr ""
 "Установите 0 для отключения."
 
 msgid "Time cost"
-msgstr ""
+msgstr "Цена печати"
 
 msgid "The printer cost per hour"
-msgstr ""
+msgstr "Стоимость печати в час."
 
 msgid "money/h"
-msgstr ""
+msgstr "цена/ч"
 
 msgid "Support control chamber temperature"
-msgstr ""
+msgstr "Контроль температуры в термокамере"
 
 msgid ""
 "This option is enabled if machine support controlling chamber temperature\n"
 "G-code command: M141 S(0-255)"
 msgstr ""
+"Если принтер поддерживает контроль температуры в камере, включите эту "
+"опцию.\n"
+"G-код команда: M141 S(0-255)"
 
 msgid "Support air filtration"
-msgstr ""
+msgstr "Фильтрация выдуваемого воздуха"
 
 msgid ""
 "Enable this if printer support air filtration\n"
 "G-code command: M106 P3 S(0-255)"
 msgstr ""
+"Если принтер поддерживает фильтрацию выдуваемого воздуха, включите эту "
+"опцию. \n"
+"G-код команда: M106 P3 S(0-255)"
 
 msgid "G-code flavor"
 msgstr "Тип G-кода"
@@ -9196,7 +9311,7 @@ msgid "Ironing Pattern"
 msgstr "Шаблон разглаживания"
 
 msgid "The pattern that will be used when ironing"
-msgstr ""
+msgstr "Шаблон по которому будет производиться разглаживание."
 
 msgid "Ironing flow"
 msgstr "Поток"
@@ -9221,12 +9336,14 @@ msgid "Print speed of ironing lines"
 msgstr "Скорость разглаживания"
 
 msgid "Ironing angle"
-msgstr ""
+msgstr "Угол разглаживания"
 
 msgid ""
 "The angle ironing is done at. A negative number disables this function and "
 "uses the default method."
 msgstr ""
+"Выбор угла разглаживания. Отрицательное число отключает эту функцию и "
+"использует метод по умолчанию."
 
 msgid "This gcode part is inserted at every layer change after lift z"
 msgstr ""
@@ -9380,8 +9497,9 @@ msgstr ""
 "Это наибольшая высота печатаемого слоя для этого экструдера, которая "
 "используется для ограничения функции «Переменная высота слоёв»."
 
+# ???
 msgid "Extrusion rate smoothing"
-msgstr ""
+msgstr "Сглаживание скорости экструзии"
 
 msgid ""
 "This parameter smooths out sudden extrusion rate changes that happen when "
@@ -9411,12 +9529,42 @@ msgid ""
 "\n"
 "Note: this parameter disables arc fitting."
 msgstr ""
+"Этот параметр сглаживает резкие изменения скорости экструзии, которые "
+"происходят, когда принтер переходит от печати с большим расходом (высокая "
+"скорость/большая ширина) к печати с меньшим расходом (меньшая скорость/"
+"меньшая ширина) и наоборот.\n"
+"\n"
+"Параметр задаёт максимальную скорость, с которой объёмный расход "
+"экструдируемого материала может изменяться с течением времени (мм³/с). Более "
+"высокие значения означают, что допускаются более высокие изменения скорости "
+"экструзии, что приводит к более быстрому переключению скоростей.\n"
+"\n"
+"Значение 0 отключает эту функцию. \n"
+"\n"
+"Для высокоскоростных принтеров с прямым приводом (например, Bambu lab или "
+"Voron) обычно не требуется использование данного значения. Однако в "
+"некоторых случаях, когда скорость печати сильно различается, это может "
+"принести некоторую дополнительную пользу. Например, когда происходят резкие "
+"замедления из-за нависаний. В этих случаях рекомендуется использовать "
+"высокое значение, составляющее около 300-350 мм³/с², так как это "
+"обеспечивает достаточное сглаживание, помогающее прогнозированию давления "
+"достичь более плавного перехода потока.\n"
+"\n"
+"Для более медленных принтеров, не использующих прогнозирование давления "
+"(pressure advance), это значение должно быть значительно ниже. Значение "
+"10-15 мм³/с² является хорошей отправной точкой для экструдеров с прямым "
+"приводом и 5-10 мм³/с² для боуден экструдеров.\n"
+"\n"
+"В Prusa Slicer эта функция известна как «Выравнивание давления» (Pressure "
+"equalizer).\n"
+"\n"
+"Примечание: этот параметр отключает поддержку движения по дуге окружности."
 
 msgid "mm³/s²"
-msgstr ""
+msgstr "мм³/с²"
 
 msgid "Smoothing segment length"
-msgstr ""
+msgstr "Длина сглаживающего сегмента"
 
 msgid ""
 "A lower value results in smoother extrusion rate transitions. However, this "
@@ -9428,6 +9576,15 @@ msgid ""
 "\n"
 "Allowed values: 1-5"
 msgstr ""
+"Меньшее значение приводит к более плавному изменению скорости экструзии. "
+"Однако это приводит к значительному увеличению размера G-код файла и "
+"увеличению количества инструкций для обработки принтером. \n"
+"\n"
+"Значение по умолчанию, равное 3, хорошо подходит для большинства случаев. "
+"Если принтер печатает с мини-фризами, увеличьте это значение, чтобы "
+"уменьшить количество выполняемых изменений.\n"
+"\n"
+"Допустимые значения: 1–5."
 
 msgid "Minimum speed for part cooling fan"
 msgstr "Минимальная скорость вентилятора обдува модели."
@@ -9439,6 +9596,12 @@ msgid ""
 "Please enable auxiliary_fan in printer settings to use this feature. G-code "
 "command: M106 P2 S(0-255)"
 msgstr ""
+"Скорость вращения вспомогательного вентилятора для охлаждения моделей. Он "
+"всегда будет работать с этой скоростью, за исключением первых нескольких "
+"слоёв, которые обычно настроены на работу без охлаждения.\n"
+"Пожалуйста, включите вспомогательный вентилятор для охлаждения моделей "
+"(auxiliary_fan) в настройках принтера, чтобы использовать эту функцию. \n"
+"G-код команда: M106 P2 S(0-255)."
 
 msgid "Min"
 msgstr "Мин."
@@ -9458,6 +9621,9 @@ msgid ""
 "cooling is enabled, when printing overhangs and when feature speeds are not "
 "specified explicitly."
 msgstr ""
+"Минимальная скорость печати для текущего прутка при включенной функции "
+"«Замедлять печать для лучшего охлаждения слоёв» при печати нависаний и когда "
+"скорости элементов явно не задана."
 
 msgid "Nozzle diameter"
 msgstr "Диаметр сопла"
@@ -9744,21 +9910,29 @@ msgstr ""
 "модели при перемещении. Использование спирального типа подъёма оси Z может "
 "предотвратить образование паутины."
 
+# Нижняя граница сработки???
 msgid "Z hop lower boundary"
-msgstr ""
+msgstr "Приподнимать ось Z только ниже"
 
 msgid ""
 "Z hop will only come into effect when Z is above this value and is below the "
 "parameter: \"Z hop upper boundary\""
 msgstr ""
+"Если указать положительное значение, ось Z будет подниматься только ниже "
+"(до) заданной здесь высоты (высота считается от стола). Таким образом вы "
+"можете запретить подъём оси Z выше установленной высоты."
 
+# Верхняя граница сработки???
 msgid "Z hop upper boundary"
-msgstr ""
+msgstr "Приподнимать ось Z только выше"
 
 msgid ""
 "If this value is positive, Z hop will only come into effect when Z is above "
 "the parameter: \"Z hop lower boundary\" and is below this value"
 msgstr ""
+"Если указать положительное значение, ось Z будет подниматься только выше "
+"(после) заданной здесь высоты (высота считается от стола). Таким образом вы "
+"можете отключить подъём оси Z при печати на первых слоях (в начале печати)."
 
 msgid "Z hop type"
 msgstr "Тип подъёма оси Z"
@@ -10048,7 +10222,7 @@ msgstr ""
 "цветами пластика."
 
 msgid "Manual Filament Change"
-msgstr ""
+msgstr "Ручная замена прутка"
 
 msgid ""
 "Enable this option to omit the custom Change filament G-code only at the "
@@ -10057,6 +10231,11 @@ msgid ""
 "printing, where we use M600/PAUSE to trigger the manual filament change "
 "action."
 msgstr ""
+"Включите эту опцию, если хотите пропустить пользовательский G-код смены "
+"прутка только в начале печати. Команда смены инструмента (например, T0) "
+"будет пропускаться на протяжении всей печати. Это полезно при ручной "
+"мультиматериальной печати, где для запуска операции ручной смены прутка "
+"используется команда M600."
 
 msgid "Purge in prime tower"
 msgstr "Очистка в черновую башню"
@@ -10126,7 +10305,7 @@ msgid "Close holes"
 msgstr "Закрытие отверстий"
 
 msgid "Z offset"
-msgstr ""
+msgstr "Смещение координат оси Z"
 
 msgid ""
 "This value will be added (or subtracted) from all the Z coordinates in the "
@@ -10134,6 +10313,9 @@ msgid ""
 "example, if your endstop zero actually leaves the nozzle 0.3mm far from the "
 "print bed, set this to -0.3 (or fix your endstop)."
 msgstr ""
+"Это значение будет прибавлено (или вычтено) из всех Z координат в выходном G-"
+"коде. Это, например, используется для компенсации неправильного положения "
+"концевика оси Z."
 
 msgid "Enable support"
 msgstr "Включить поддержку"
@@ -10335,6 +10517,15 @@ msgid ""
 "style will create similar structure to normal support under large flat "
 "overhangs."
 msgstr ""
+"Стиль и форма создаваемой поддержки.\n"
+"\n"
+"Стиль «Сетка» создаёт более устойчивые опоры (по умолчанию). Стиль "
+"«Аккуратный» экономит материал и уменьшает образование дефектов на моделях.\n"
+"\n"
+"Для древовидной поддержки, при стройном и органическом стиле происходит "
+"более агрессивное объединение ветвей и экономия материала (по умолчанию "
+"органический). В то время как гибридный стиль создаёт структуру, схожую с "
+"обычную поддержкой при больших плоских нависаниях."
 
 msgid "Snug"
 msgstr "Аккуратный"
@@ -10512,13 +10703,16 @@ msgstr ""
 "древовидной поддержки."
 
 msgid "Activate temperature control"
-msgstr ""
+msgstr "Вкл. контроль температуры"
 
 msgid ""
 "Enable this option for chamber temperature control. An M191 command will be "
 "added before \"machine_start_gcode\"\n"
 "G-code commands: M141/M191 S(0-255)"
 msgstr ""
+"Для контроля температуры в камере принтера включите эту опцию. Команда M191 "
+"будет добавлена перед стартовый G-кодом принтера (machine_start_gcode).\n"
+"G-код команда: M141/M191 S(0-255)"
 
 msgid "Chamber temperature"
 msgstr "Температура термокамеры"
@@ -10532,6 +10726,14 @@ msgid ""
 "high to avoid cloggings, so 0 which stands for turning off is highly "
 "recommended"
 msgstr ""
+"Более высокая температура в камере может помочь уменьшить или даже исключить "
+"коробление материала. Так же это улучшает межслойное соединения у "
+"высокотемпературных материалов, таких как ABS, ASA, PC, PA и т.д. (в то же "
+"время фильтрация воздуха при печати ABS и ASA сделает её хуже). Для "
+"низкотемпературных материалов, таких как PLA, PETG, TPU, PVA и т. д., "
+"фактическая температура в камере не должна быть слишком высокой, чтобы "
+"избежать засорения сопла, поэтому настоятельно рекомендуется установить "
+"температуру в камере равной 0°C."
 
 msgid "Nozzle temperature for layers after the initial one"
 msgstr "Температура сопла при печати для слоёв после первого."
@@ -10762,20 +10964,31 @@ msgstr ""
 "Отрицательное значение уменьшает контур. Эта функция используется для "
 "небольшой корректировки размера, когда возникают проблемы со сборкой."
 
+# ???
+# Преобразование отверстий в многограннники
 msgid "Convert holes to polyholes"
-msgstr ""
+msgstr "Многогранные отверстия"
 
+# ???
+# Поиск отверстий близких к кругу в двух или более слоях
+# Расчёт многогранного отверстия вычисляется по диаметру сопла.
 msgid ""
 "Search for almost-circular holes that span more than one layer and convert "
 "the geometry to polyholes. Use the nozzle size and the (biggest) diameter to "
 "compute the polyhole.\n"
 "See http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 msgstr ""
+"Поиск цилиндрических отверстий в двух или более слоях и преобразование их "
+"геометрии в многогранники. Для расчёта многогранного отверстия используется "
+"размер сопла и наибольший диаметр найденного отверстия.\n"
+"Подробнее на http://hydraraptor.blogspot.com/2011/02/polyholes.html"
 
+# ???
+# Предел обнаружения многогранного отверстия
 msgid "Polyhole detection margin"
-msgstr ""
+msgstr "Предел обнаружения"
 
-#, c-format, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Maximum defection of a point to the estimated radius of the circle.\n"
 "As cylinders are often exported as triangles of varying size, points may not "
@@ -10783,12 +10996,17 @@ msgid ""
 "broaden the detection.\n"
 "In mm or in % of the radius."
 msgstr ""
+"Максимальное отклонение точки от расчётного радиуса окружности.\n"
+"Поскольку цилиндры часто экспортируются в виде треугольников разного "
+"размера, точки могут находиться не на окружности круга. Эта настройка "
+"позволяет в некоторой степени расширить эту область обнаружения.\n"
+"Значение задаётся в мм или в процентах от радиуса."
 
 msgid "Polyhole twist"
-msgstr ""
+msgstr "Скручивание многогранника"
 
 msgid "Rotate the polyhole every layer."
-msgstr ""
+msgstr "Вращение многогранного отверстия на каждом слое."
 
 msgid "G-code thumbnails"
 msgstr "Эскизы G-кода"
@@ -10801,12 +11019,14 @@ msgstr ""
 "следующем формате: \"XxY, XxY, ...\""
 
 msgid "Format of G-code thumbnails"
-msgstr ""
+msgstr "Формат эскизов G-кода"
 
 msgid ""
 "Format of G-code thumbnails: PNG for best quality, JPG for smallest size, "
 "QOI for low memory firmware"
 msgstr ""
+"Формат эскизов G-кода: PNG для наилучшего качества, JPG для наименьшего "
+"размера, QOI для прошивки с малым объемом памяти."
 
 msgid "Use relative E distances"
 msgstr "Исп. относительные координаты для экструдера (E)"
@@ -11006,10 +11226,10 @@ msgid "Load first filament as default for those not loaded"
 msgstr "Использовать первый материал по умолчанию, если не загружен другой"
 
 msgid "Minimum save"
-msgstr ""
+msgstr "Минимальное сохранение"
 
 msgid "export 3mf with minimum size."
-msgstr ""
+msgstr "экспорт 3mf файла с минимальным размером."
 
 msgid "mtcpp"
 msgstr "mtcpp"
@@ -11070,11 +11290,13 @@ msgid "Repetions count of the whole model"
 msgstr "Количество повторений для всей модели"
 
 msgid "Ensure on bed"
-msgstr ""
+msgstr "Обеспечивать размещение на столе"
 
 msgid ""
 "Lift the object above the bed when it is partially below. Disabled by default"
 msgstr ""
+"Поднимает модель над столом, когда она частично находится ниже его уровня. "
+"По умолчанию отключено."
 
 msgid "Convert Unit"
 msgstr "Преобразовать единицу измерения"
@@ -11083,25 +11305,26 @@ msgid "Convert the units of model"
 msgstr "Преобразование единиц измерения модели"
 
 msgid "Orient Options"
-msgstr ""
+msgstr "Параметры ориентации"
 
 msgid "Orient options: 0-disable, 1-enable, others-auto"
 msgstr ""
+"Параметры ориентации: 0 - отключить, 1 - включить, другие - автоматически"
 
 msgid "Rotation angle around the Z axis in degrees."
-msgstr ""
+msgstr "Угол поворота вокруг оси Z в градусах."
 
 msgid "Rotate around X"
-msgstr ""
+msgstr "Поворот вокруг оси X"
 
 msgid "Rotation angle around the X axis in degrees."
-msgstr ""
+msgstr "Угол поворота вокруг оси X в градусах."
 
 msgid "Rotate around Y"
-msgstr ""
+msgstr "Поворот вокруг оси Y"
 
 msgid "Rotation angle around the Y axis in degrees."
-msgstr ""
+msgstr "Угол поворота вокруг оси Y в градусах."
 
 msgid "Scale the model by a float factor"
 msgstr "Масштабирование модели с помощью коэффициента."
@@ -11166,10 +11389,10 @@ msgstr ""
 "Отладка, 5: Трассировка\n"
 
 msgid "Load custom gcode"
-msgstr ""
+msgstr "Загрузить пользовательский G-код"
 
 msgid "Load custom gcode from json"
-msgstr ""
+msgstr "Загрузить пользовательской G-код из json"
 
 msgid "Error in zip archive"
 msgstr "Ошибка с zip-архивом"
@@ -11375,6 +11598,11 @@ msgid ""
 "End value: > Start value\n"
 "Value step: >= %.3f)"
 msgstr ""
+"Введите допустимое значение:\n"
+"Начальное: >= %.1f\n"
+"Конечное: <= %.1f\n"
+"Конечное: > Начальное\n"
+"Шаг: >= %.3f)"
 
 msgid "The name cannot be empty."
 msgstr "Имя не может быть пустым."
@@ -11643,7 +11871,7 @@ msgid "Please find the best line on your plate"
 msgstr "Пожалуйста, найдите лучшую линию на столе"
 
 msgid "Please find the cornor with perfect degree of extrusion"
-msgstr ""
+msgstr "Пожалуйста, найдите угол с идеальной степенью экструзии"
 
 msgid "Input Value"
 msgstr "Входное значение"
@@ -11754,7 +11982,7 @@ msgid "Extra info"
 msgstr "Доп. информация"
 
 msgid "Pattern"
-msgstr ""
+msgstr "Шаблон"
 
 msgid "Method"
 msgstr "Метод"
@@ -11770,19 +11998,19 @@ msgid "Connecting to printer"
 msgstr "Подключением к принтеру"
 
 msgid "From k Value"
-msgstr ""
+msgstr "Начальное значение коэф. K"
 
 msgid "To k Value"
-msgstr ""
+msgstr "Конечное значение коэф. K"
 
 msgid "Step value"
-msgstr ""
+msgstr "Шаг"
 
 msgid "0.5"
-msgstr ""
+msgstr "0.5"
 
 msgid "0.005"
-msgstr ""
+msgstr "0.005"
 
 msgid "The nozzle diameter has been synchronized from the printer Settings"
 msgstr "Диаметр сопла был синхронизирован с настройками принтера"
@@ -12047,6 +12275,10 @@ msgid ""
 "step >= 0\n"
 "end > start + step)"
 msgstr ""
+"Введите допустимое значение:\n"
+"Начальное > 0\n"
+"Шаг >= 0\n"
+"Конечное > Начальное + Шаг"
 
 msgid "VFA test"
 msgstr "Тест на вертикальные артефакты (VFA)"
@@ -12063,6 +12295,10 @@ msgid ""
 "step >= 0\n"
 "end > start + step)"
 msgstr ""
+"Введите допустимое значение:\n"
+"Начальное > 10\n"
+"Шаг >= 0\n"
+"Конечное > Начальное + Шаг"
 
 msgid "Start retraction length: "
 msgstr "Начальная длина отката: "
@@ -12124,15 +12360,17 @@ msgstr ""
 "Не удалось подключиться к принтерам, подключенным через через хост печати."
 
 msgid "The start, end or step is not valid value."
-msgstr ""
+msgstr "Недопустимое значение: начальное, конечное или шаг."
 
 msgid ""
 "Unable to calibrate: maybe because the set calibration value range is too "
 "large, or the step is too small"
 msgstr ""
+"Невозможно выполнить калибровку: возможно, установленный диапазон значений "
+"калибровки слишком велик или шаг слишком мал."
 
 msgid "Need select printer"
-msgstr ""
+msgstr "Нужно выбрать принтер"
 
 #: resources/data/hints.ini: [hint:3D Scene Operations]
 msgid ""
@@ -12403,6 +12641,65 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+"Когда необходимо печатать с открытой дверцей принтера?\n"
+"При печати низкотемпературным материалом при более высокой температуре в "
+"камере, открытие дверцы принтера снижает вероятность засорения экструдера/"
+"хотэнда. Более подробную информацию читайте на вики-сайте."
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Вставка нового прутка в экструдер"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "Температура стола для последующих слоёв слишком низкая по сравнению с "
+#~ "температурой первого слоя, более чем на %d градусов Цельсия.\n"
+#~ "Это может привести к отрыву модели от стола во время печати."
+
+#~ msgid ""
+#~ "Another virtual camera is running.\n"
+#~ "Orca Slicer supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+#~ msgstr ""
+#~ "Уже работает одна виртуальная камера.\n"
+#~ "Orca Slicer поддерживает только одну виртуальную камеру.\n"
+#~ "Хотите остановить эту виртуальную камеру?"
+
+#~ msgid ""
+#~ "The .gcode.3mf file contains no G-code data.Please slice it with Orca "
+#~ "Slicer and export a new .gcode.3mf file."
+#~ msgstr ""
+#~ "Файл .gcode.3mf не содержит G-кода. Пожалуйста, нарежьте его в программе "
+#~ "Orca Slicer и экспортируйте новый файл .gcode.3mf."
+
+#~ msgid ""
+#~ "Importing to Orca Slicer failed. Please download the file and manually "
+#~ "import it."
+#~ msgstr ""
+#~ "Не удалось импортировать в Orca Slicer. Загрузите файл и импортируйте его "
+#~ "вручную."
+
+#~ msgid "The printer is required to be in the same LAN as Orca Slicer."
+#~ msgstr "Принтер должен находиться в одной локальной сети с Orca Slicer."
+
+#~ msgid ""
+#~ "Click OK to update the Network plug-in when Orca Slicer launches next "
+#~ "time."
+#~ msgstr ""
+#~ "Нажмите OK, чтобы обновить сетевой плагин при следующем запуске Orca "
+#~ "Slicer."
+
+#~ msgid "New version of Orca Slicer"
+#~ msgstr "Доступна новая версия Orca Slicer"
+
+#~ msgid ""
+#~ "Step 1, please confirm Orca Slicer and your printer are in the same LAN."
+#~ msgstr ""
+#~ "Шаг 1. Пожалуйста, убедитесь, что Orca Slicer и ваш принтер находятся в "
+#~ "одной локальной сети."
 
 #~ msgid "AMS %s"
 #~ msgstr "АСПП №%s"

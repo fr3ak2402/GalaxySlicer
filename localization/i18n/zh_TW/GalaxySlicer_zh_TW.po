@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-31 17:15+0100\n"
+"POT-Creation-Date: 2023-11-02 13:02+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Chun <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -166,10 +166,10 @@ msgid "Height Range"
 msgstr "高度範圍"
 
 msgid "Vertical"
-msgstr ""
+msgstr "垂直"
 
 msgid "Horizontal"
-msgstr ""
+msgstr "水平"
 
 msgid "Remove painted color"
 msgstr "移除已繪製的顏色"
@@ -663,7 +663,7 @@ msgid "Choose one file (3mf):"
 msgstr "選擇一個文件（3mf）："
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf/usd*/abc/ply):"
-msgstr ""
+msgstr "選擇一個或多個檔案 (3mf/step/stl/svg/obj/amf/usd*/abc/ply)："
 
 msgid "Choose one or more files (3mf/step/stl/svg/obj/amf):"
 msgstr "選擇一個或多個文件（3mf/step/stl/svg/obj/amf）："
@@ -1568,7 +1568,7 @@ msgid "Confirm extruded"
 msgstr ""
 
 msgid "Check filament location"
-msgstr ""
+msgstr "檢查線材位置"
 
 msgid "Grab new filament"
 msgstr "咬入線材"
@@ -2546,16 +2546,16 @@ msgid "Paused due to heat bed temperature malfunction"
 msgstr "熱床溫控異常暫停"
 
 msgid "Filament unloading"
-msgstr ""
+msgstr "退料"
 
 msgid "Skip step pause"
 msgstr ""
 
 msgid "Filament loading"
-msgstr ""
+msgstr "進料"
 
 msgid "Motor noise calibration"
-msgstr ""
+msgstr "馬達噪音校準"
 
 msgid "Paused due to AMS lost"
 msgstr ""
@@ -2774,7 +2774,7 @@ msgid "Total time"
 msgstr "總時間"
 
 msgid "Total cost"
-msgstr ""
+msgstr "總成本"
 
 msgid "up to"
 msgstr "達到"
@@ -3070,10 +3070,10 @@ msgid "Bed leveling"
 msgstr "熱床調平"
 
 msgid "Vibration compensation"
-msgstr ""
+msgstr "共振補償"
 
 msgid "Motor noise cancellation"
-msgstr ""
+msgstr "馬達噪音消除"
 
 msgid "Calibration program"
 msgstr "校準程序"
@@ -3093,7 +3093,7 @@ msgid "Start Calibration"
 msgstr "開始校準"
 
 msgid "No step selected"
-msgstr ""
+msgstr "未選擇任何步驟"
 
 msgid "Completed"
 msgstr "已完成"
@@ -3833,7 +3833,7 @@ msgid ""
 msgstr ""
 
 msgid "How do you like this printing file?"
-msgstr ""
+msgstr "您覺得這個列印檔案怎麼樣？"
 
 msgid ""
 "(The model has already been rated. Your rating will overwrite the previous "
@@ -3948,37 +3948,37 @@ msgid "Rate the Print Profile"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "評論"
 
 msgid "Rate this print"
 msgstr ""
 
 msgid "Add Photo"
-msgstr ""
+msgstr "新增照片"
 
 msgid "Delete Photo"
-msgstr ""
+msgstr "刪除照片"
 
 msgid "Submit"
-msgstr ""
+msgstr "送出"
 
 msgid "Please click on the star first."
 msgstr ""
 
 msgid "InFo"
-msgstr ""
+msgstr "資訊"
 
 msgid "Get oss config failed."
 msgstr ""
 
 msgid "Upload Pictrues"
-msgstr ""
+msgstr "上傳圖片"
 
 msgid "Number of images successfully uploaded"
-msgstr ""
+msgstr "成功上傳的圖片數量"
 
 msgid " upload failed"
-msgstr ""
+msgstr "上傳失敗"
 
 msgid " upload config prase failed\n"
 msgstr ""
@@ -3994,15 +3994,17 @@ msgid ""
 "want to ignore them?\n"
 "\n"
 msgstr ""
+"在上傳圖片的過程中出現了以下問題。要忽略此問題嗎？\n"
+"\n"
 
 msgid "info"
 msgstr "資訊"
 
 msgid "Synchronizing the printing results. Please retry a few seconds later."
-msgstr ""
+msgstr "正在同步列印結果。請稍後重試。"
 
 msgid "Upload failed\n"
-msgstr ""
+msgstr "上傳失敗\n"
 
 msgid "obtaining instance_id failed\n"
 msgstr ""
@@ -4014,7 +4016,7 @@ msgid ""
 msgstr ""
 
 msgid "error message: "
-msgstr ""
+msgstr "錯誤訊息:"
 
 msgid ""
 "\n"
@@ -4028,7 +4030,7 @@ msgid ""
 msgstr ""
 
 msgid "You can select up to 16 images."
-msgstr ""
+msgstr "您最多可以選擇 16 張圖片。"
 
 msgid ""
 "At least one successful print record of this print profile is required \n"
@@ -4159,7 +4161,7 @@ msgid "Export successfully."
 msgstr "匯出成功."
 
 msgid "Model file downloaded."
-msgstr ""
+msgstr "模型檔案已下載。"
 
 msgid "Serious warning:"
 msgstr "嚴重警告："
@@ -4243,7 +4245,7 @@ msgid "Auto-recovery from step loss"
 msgstr "自動從丟步中恢復"
 
 msgid "Allow Prompt Sound"
-msgstr ""
+msgstr "允許提示音效"
 
 msgid "Global"
 msgstr "全局"
@@ -4867,6 +4869,15 @@ msgstr "英製"
 msgid "Units"
 msgstr "單位"
 
+msgid "Home"
+msgstr "首頁"
+
+msgid "Default Page"
+msgstr ""
+
+msgid "Set the page opened on startup."
+msgstr ""
+
 msgid "Zoom to mouse position"
 msgstr "放大到滑鼠位置"
 
@@ -4879,6 +4890,12 @@ msgid "Use free camera"
 msgstr ""
 
 msgid "If enabled, use free camera. If not enabled, use constrained camera."
+msgstr ""
+
+msgid "Show splash screen"
+msgstr ""
+
+msgid "Show the splash screen during startup."
 msgstr ""
 
 msgid "Show \"Tip of the day\" notification after start"
@@ -5283,7 +5300,7 @@ msgid "PLA Plate"
 msgstr "PLA 列印板"
 
 msgid "Bambu Engineering Plate"
-msgstr ""
+msgstr "高溫工程板"
 
 msgid "Bambu Smooth PEI Plate"
 msgstr ""
@@ -5307,7 +5324,7 @@ msgid "Flow Dynamics Calibration"
 msgstr "動態流量校準"
 
 msgid "Click here if you can't connect to the printer"
-msgstr ""
+msgstr "如果無法連接到印表機，請按一下此處"
 
 msgid "send completed"
 msgstr "發送完成"
@@ -5411,12 +5428,12 @@ msgstr "此３Ｄ列印機類型不支持列印所有盤"
 msgid ""
 "When enable spiral vase mode, machines with I3 structure will not generate "
 "timelapse videos."
-msgstr ""
+msgstr "當啟用花瓶模式時，龍門結構的機器不會產生縮時攝影影片"
 
 msgid ""
 "When print by object, machines with I3 structure will not generate timelapse "
 "videos."
-msgstr ""
+msgstr "按物件列印時，龍門結構的機器不會產生縮時攝影影片"
 
 msgid "Errors"
 msgstr "錯誤"
@@ -5801,13 +5818,15 @@ msgid ""
 msgstr "安裝工程材料熱床時的熱床溫度。0值表示這個線材不支持工程線材熱床"
 
 msgid "Smooth PEI Plate / High Temp Plate"
-msgstr ""
+msgstr "平滑PEI熱床/高溫熱床"
 
 msgid ""
 "Bed temperature when Smooth PEI Plate/High temperature plate is installed. "
 "Value 0 means the filament does not support to print on the Smooth PEI Plate/"
 "High Temp Plate"
 msgstr ""
+"安裝平滑PEI熱床/高溫熱床時的熱床溫度。0值表示這個線材不支援平滑PEI熱床/高溫熱"
+"床"
 
 msgid "Textured PEI Plate"
 msgstr "紋理PEI熱床"
@@ -5853,13 +5872,13 @@ msgid "Auxiliary part cooling fan"
 msgstr "輔助部件冷卻風扇"
 
 msgid "Exhaust fan"
-msgstr ""
+msgstr "排風扇"
 
 msgid "During print"
-msgstr ""
+msgstr "列印期間"
 
 msgid "Complete print"
-msgstr ""
+msgstr "列印完成"
 
 msgid "Filament start G-code"
 msgstr "線材起始G-code"
@@ -5874,10 +5893,10 @@ msgid "Wipe tower parameters"
 msgstr "色塔參數"
 
 msgid "Toolchange parameters with single extruder MM printers"
-msgstr ""
+msgstr "單擠出機多線材設置"
 
 msgid "Ramming settings"
-msgstr ""
+msgstr "擠料設置"
 
 msgid "Toolchange parameters with multi extruder MM printers"
 msgstr ""
@@ -5913,7 +5932,7 @@ msgid "Layer change G-code"
 msgstr "換層G-code"
 
 msgid "Time lapse G-code"
-msgstr ""
+msgstr "縮時錄影 G-code"
 
 msgid "Change filament G-code"
 msgstr "線材更換G-code"
@@ -6493,7 +6512,7 @@ msgid "On/Off one layer mode of the vertical slider"
 msgstr "開啟/關閉垂直滑動條的單層模式"
 
 msgid "On/Off g-code window"
-msgstr ""
+msgstr "開啟/關閉 g-code 視窗"
 
 msgid "Move slider 5x faster"
 msgstr "5倍速移動滑動條"
@@ -8154,7 +8173,7 @@ msgstr ""
 msgid ""
 "Acceleration of initial layer. Using a lower value can improve build plate "
 "adhesive"
-msgstr ""
+msgstr "首層加速度。使用較低值可以改善和列印板的黏接。"
 
 msgid "Enable accel_to_decel"
 msgstr "啟用煞車速度"
@@ -8360,7 +8379,7 @@ msgid "HRC"
 msgstr "洛氏硬度"
 
 msgid "Printer structure"
-msgstr ""
+msgstr "３Ｄ列印機結構"
 
 msgid "The physical arrangement and components of a printing device"
 msgstr ""
@@ -8430,10 +8449,10 @@ msgstr ""
 "設為0禁用此選項"
 
 msgid "Time cost"
-msgstr ""
+msgstr "時間成本"
 
 msgid "The printer cost per hour"
-msgstr ""
+msgstr "３Ｄ列印機每小時成本"
 
 msgid "money/h"
 msgstr ""
@@ -8576,7 +8595,7 @@ msgid "Print speed of ironing lines"
 msgstr "熨燙的列印速度"
 
 msgid "Ironing angle"
-msgstr ""
+msgstr "熨燙角度"
 
 msgid ""
 "The angle ironing is done at. A negative number disables this function and "
@@ -11431,6 +11450,42 @@ msgstr ""
 
 #~ msgid ""
 #~ "Another virtual camera is running.\n"
+#~ "Orca Slicer supports only a single virtual camera.\n"
+#~ "Do you want to stop this virtual camera?"
+#~ msgstr ""
+#~ "另一個虛擬攝影機正在工作。\n"
+#~ "Orca Slicer 同時只能支援一個虛擬攝影機。\n"
+#~ "是否停止前一個虛擬攝影機？"
+
+#~ msgid ""
+#~ "The .gcode.3mf file contains no G-code data.Please slice it with Orca "
+#~ "Slicer and export a new .gcode.3mf file."
+#~ msgstr ""
+#~ ".gcode.3mf 檔案中不包含 G-code 數據。請使用 Orca Slicer 進行切片並匯出新"
+#~ "的.gcode.3mf 檔案。"
+
+#~ msgid ""
+#~ "Importing to Orca Slicer failed. Please download the file and manually "
+#~ "import it."
+#~ msgstr "匯入 Orca Slicer 失敗。 請下載該檔案並手動匯入。"
+
+#~ msgid "The printer is required to be in the same LAN as Orca Slicer."
+#~ msgstr "３Ｄ列印機需要與 Orca Slicer 在同一個區域網路內。"
+
+#~ msgid ""
+#~ "Click OK to update the Network plug-in when Orca Slicer launches next "
+#~ "time."
+#~ msgstr "按一下「確定」以在下次啟動 Orca Slicer 時更新網路插件"
+
+#~ msgid "New version of Orca Slicer"
+#~ msgstr "新版本的 Orca Slicer"
+
+#~ msgid ""
+#~ "Step 1, please confirm Orca Slicer and your printer are in the same LAN."
+#~ msgstr "第1步，請確認 Orca Slicer 和您的３Ｄ列印機在同一個區域網路上。"
+
+#~ msgid ""
+#~ "Another virtual camera is running.\n"
 #~ "Bambu Studio supports only a single virtual camera.\n"
 #~ "Do you want to stop this virtual camera?"
 #~ msgstr ""
@@ -12990,9 +13045,6 @@ msgstr ""
 
 #~ msgid "Waiting"
 #~ msgstr "等待中"
-
-#~ msgid "Home"
-#~ msgstr "首頁"
 
 #~ msgid "Per object edit"
 #~ msgstr "編輯單個對象"
