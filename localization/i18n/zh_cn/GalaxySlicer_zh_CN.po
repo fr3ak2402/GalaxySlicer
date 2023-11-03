@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:02+0100\n"
+"POT-Creation-Date: 2023-11-03 16:03+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -840,10 +840,10 @@ msgid "Load..."
 msgstr "加载..."
 
 msgid "Galaxy Cube"
-msgstr ""
+msgstr "逆戟鲸方块"
 
 msgid "Galaxy Flower"
-msgstr ""
+msgstr "逆戟鲸花"
 
 msgid "Orca Cube"
 msgstr "Orca逆方块"
@@ -852,7 +852,7 @@ msgid "Voron Cube"
 msgstr "Voron方块"
 
 msgid "Disc"
-msgstr ""
+msgstr "圆盘"
 
 msgid "3DBenchy"
 msgstr "小船"
@@ -4954,12 +4954,6 @@ msgstr "使用逆戟鲸打开.step/.stp文件"
 msgid ""
 "If enabled, sets GalaxySlicer as default application to open .step files"
 msgstr "开启后，将缺省使用逆戟鲸打开.step文件"
-
-msgid "Online Models"
-msgstr "在线模型"
-
-msgid "Show online staff-picked models on the home page"
-msgstr "在主页上显示工作人员挑选的在线模型"
 
 msgid "Maximum recent projects"
 msgstr "近期项目的最大数量"
@@ -11556,6 +11550,12 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#~ msgid "Online Models"
+#~ msgstr "在线模型"
+
+#~ msgid "Show online staff-picked models on the home page"
+#~ msgstr "在主页上显示工作人员挑选的在线模型"
 
 #~ msgid "Orca Slicer "
 #~ msgstr "逆戟鲸切片"

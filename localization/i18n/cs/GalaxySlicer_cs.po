@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:02+0100\n"
+"POT-Creation-Date: 2023-11-03 16:03+0100\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -858,7 +858,7 @@ msgid "Load..."
 msgstr "Načíst..."
 
 msgid "Galaxy Cube"
-msgstr "Galaxy Kostka"  
+msgstr "Galaxy Kostka"
 
 msgid "Galaxy Flower"
 msgstr "Galaxy Květ"
@@ -1912,8 +1912,7 @@ msgstr "BambuStudio je původně založeno na PrusaSlicer od PrusaResearch."
 
 msgid ""
 "PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"
-msgstr ""
-"PrusaSlicer je z Slic3r od Alessandra Ranellucciho a komunity RepRap"
+msgstr "PrusaSlicer je z Slic3r od Alessandra Ranellucciho a komunity RepRap"
 
 msgid ""
 "Slic3r was created by Alessandro Ranellucci with the help of many other "
@@ -5175,12 +5174,6 @@ msgid ""
 msgstr ""
 "Pokud je povoleno, nastaví GalaxySlicer jako výchozí aplikaci pro otevírání "
 "souborů .step"
-
-msgid "Online Models"
-msgstr "Online modely"
-
-msgid "Show online staff-picked models on the home page"
-msgstr "Zobrazit online modely vybrané týmem na úvodní stránce"
 
 msgid "Maximum recent projects"
 msgstr "Maximální počet nedávných projektů"
@@ -12389,6 +12382,12 @@ msgstr ""
 "Otevření dveří tiskárny může snížit pravděpodobnost ucpaní extruderu/hotendu "
 "při tisku filamentu s nižší teplotou a vyšší teplotě uzavřeného prostoru. "
 "Další informace naleznete ve Wiki."
+
+#~ msgid "Online Models"
+#~ msgstr "Online modely"
+
+#~ msgid "Show online staff-picked models on the home page"
+#~ msgstr "Zobrazit online modely vybrané týmem na úvodní stránce"
 
 #~ msgid ""
 #~ "Another virtual camera is running.\n"

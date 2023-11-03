@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-02 13:02+0100\n"
+"POT-Creation-Date: 2023-11-03 16:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4841,12 +4841,6 @@ msgstr ""
 
 msgid ""
 "If enabled, sets GalaxySlicer as default application to open .step files"
-msgstr ""
-
-msgid "Online Models"
-msgstr ""
-
-msgid "Show online staff-picked models on the home page"
 msgstr ""
 
 msgid "Maximum recent projects"
