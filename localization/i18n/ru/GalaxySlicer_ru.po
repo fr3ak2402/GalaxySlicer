@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-03 16:03+0100\n"
+"POT-Creation-Date: 2023-11-04 10:26+0100\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -9904,30 +9904,6 @@ msgstr ""
 "модели при перемещении. Использование спирального типа подъёма оси Z может "
 "предотвратить образование паутины."
 
-# Нижняя граница сработки???
-msgid "Z hop lower boundary"
-msgstr "Приподнимать ось Z только ниже"
-
-msgid ""
-"Z hop will only come into effect when Z is above this value and is below the "
-"parameter: \"Z hop upper boundary\""
-msgstr ""
-"Если указать положительное значение, ось Z будет подниматься только ниже "
-"(до) заданной здесь высоты (высота считается от стола). Таким образом вы "
-"можете запретить подъём оси Z выше установленной высоты."
-
-# Верхняя граница сработки???
-msgid "Z hop upper boundary"
-msgstr "Приподнимать ось Z только выше"
-
-msgid ""
-"If this value is positive, Z hop will only come into effect when Z is above "
-"the parameter: \"Z hop lower boundary\" and is below this value"
-msgstr ""
-"Если указать положительное значение, ось Z будет подниматься только выше "
-"(после) заданной здесь высоты (высота считается от стола). Таким образом вы "
-"можете отключить подъём оси Z при печати на первых слоях (в начале печати)."
-
 msgid "Z hop type"
 msgstr "Тип подъёма оси Z"
 
@@ -12639,6 +12615,31 @@ msgstr ""
 "При печати низкотемпературным материалом при более высокой температуре в "
 "камере, открытие дверцы принтера снижает вероятность засорения экструдера/"
 "хотэнда. Более подробную информацию читайте на вики-сайте."
+
+# Нижняя граница сработки???
+#~ msgid "Z hop lower boundary"
+#~ msgstr "Приподнимать ось Z только ниже"
+
+#~ msgid ""
+#~ "Z hop will only come into effect when Z is above this value and is below "
+#~ "the parameter: \"Z hop upper boundary\""
+#~ msgstr ""
+#~ "Если указать положительное значение, ось Z будет подниматься только ниже "
+#~ "(до) заданной здесь высоты (высота считается от стола). Таким образом вы "
+#~ "можете запретить подъём оси Z выше установленной высоты."
+
+# Верхняя граница сработки???
+#~ msgid "Z hop upper boundary"
+#~ msgstr "Приподнимать ось Z только выше"
+
+#~ msgid ""
+#~ "If this value is positive, Z hop will only come into effect when Z is "
+#~ "above the parameter: \"Z hop lower boundary\" and is below this value"
+#~ msgstr ""
+#~ "Если указать положительное значение, ось Z будет подниматься только выше "
+#~ "(после) заданной здесь высоты (высота считается от стола). Таким образом "
+#~ "вы можете отключить подъём оси Z при печати на первых слоях (в начале "
+#~ "печати)."
 
 #~ msgid "Online Models"
 #~ msgstr "Онлайн-модели"
