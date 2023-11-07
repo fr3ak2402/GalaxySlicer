@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 10:26+0100\n"
+"POT-Creation-Date: 2023-11-07 17:53+0100\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -492,26 +492,11 @@ msgstr "Malování pozice švu"
 msgid "Remove selection"
 msgstr "Odebrat výběr"
 
-msgid "Shift + Mouse move up or dowm"
-msgstr "Shift + pohyb myši nahoru nebo dolů"
-
-msgid "Rotate text"
-msgstr "Otočit text"
-
-msgid "Text shape"
-msgstr "Tvar textu"
-
 msgid "Font"
 msgstr "Písmo"
 
 msgid "Thickness"
 msgstr "Tloušťka"
-
-msgid "Input text"
-msgstr "Vložit text"
-
-msgid "Embeded"
-msgstr "Vloženo"
 
 msgid "Text Gap"
 msgstr "Mezera v textu"
@@ -526,11 +511,23 @@ msgstr ""
 "Vloženo\n"
 "hloubka"
 
+msgid "Input text"
+msgstr "Vložit text"
+
 msgid "Surface"
 msgstr "Povrch"
 
 msgid "Horizontal text"
 msgstr "Vodorovný text"
+
+msgid "Shift + Mouse move up or dowm"
+msgstr "Shift + pohyb myši nahoru nebo dolů"
+
+msgid "Rotate text"
+msgstr "Otočit text"
+
+msgid "Text shape"
+msgstr "Tvar textu"
 
 msgid "Ctrl+"
 msgstr "Ctrl+"
@@ -8062,6 +8059,16 @@ msgstr "Konec G-kód po dokončení celého tisku"
 msgid "End G-code when finish the printing of this filament"
 msgstr "Konec G-kód po dokončení tisku tohoto filamentu"
 
+msgid "Ensure vertical shell thickness"
+msgstr "Zajistit tloušťku svislých stěn"
+
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)"
+msgstr ""
+"Přidá plnou výplň u šikmých ploch pro garanci tloušťky svislých stěn "
+"(vrchních a spodních plných vrstev)"
+
 msgid "Top surface pattern"
 msgstr "Vzor horního povrchu"
 
@@ -10896,6 +10903,18 @@ msgstr ""
 "stejně tlustá jako prvek samotný. Vyjadřuje se jako procento nad průměr "
 "trysky"
 
+msgid "Detect narrow internal solid infill"
+msgstr "Detekovat úzkou vnitřní plnou výplň"
+
+msgid ""
+"This option will auto detect narrow internal solid infill area. If enabled, "
+"concentric pattern will be used for the area to speed printing up. "
+"Otherwise, rectilinear pattern is used defaultly."
+msgstr ""
+"Tato možnost automaticky rozpozná úzkou vnitřní plnou výplňovou oblast. Je-"
+"li povolena, bude pro oblast použit soustředný vzor, aby se urychlil tisk. V "
+"opačném případě se ve výchozím nastavení použije přímočarý vzor."
+
 msgid "invalid value "
 msgstr "neplatná hodnota "
 
@@ -12363,6 +12382,9 @@ msgstr ""
 "při tisku filamentu s nižší teplotou a vyšší teplotě uzavřeného prostoru. "
 "Další informace naleznete ve Wiki."
 
+#~ msgid "Embeded"
+#~ msgstr "Vloženo"
+
 #~ msgid "Z hop lower boundary"
 #~ msgstr "Dolní mez Z hop"
 
@@ -12504,16 +12526,6 @@ msgstr ""
 #~ "Teplota podložky překračuje teplotu vitrifikace filamentu. Prosím. Před "
 #~ "tiskem otevřete přední dvířka tiskárny, aby nedošlo k ucpání trysky."
 
-#~ msgid "Ensure vertical shell thickness"
-#~ msgstr "Zajistit tloušťku svislých stěn"
-
-#~ msgid ""
-#~ "Add solid infill near sloping surfaces to guarantee the vertical shell "
-#~ "thickness (top+bottom solid layers)"
-#~ msgstr ""
-#~ "Přidá plnou výplň u šikmých ploch pro garanci tloušťky svislých stěn "
-#~ "(vrchních a spodních plných vrstev)"
-
 #~ msgid "Temperature of vitrificaiton"
 #~ msgstr "Teplota vitrifikace"
 
@@ -12543,18 +12555,6 @@ msgstr ""
 #~ "Rychlost chladicího ventilátoru pomocné části. Pomocný ventilátor poběží "
 #~ "touto rychlostí během tisku kromě prvních několika vrstev, které nejsou "
 #~ "definovány žádnými chladicími vrstvami"
-
-#~ msgid "Detect narrow internal solid infill"
-#~ msgstr "Detekovat úzkou vnitřní plnou výplň"
-
-#~ msgid ""
-#~ "This option will auto detect narrow internal solid infill area. If "
-#~ "enabled, concentric pattern will be used for the area to speed printing "
-#~ "up. Otherwise, rectilinear pattern is used defaultly."
-#~ msgstr ""
-#~ "Tato možnost automaticky rozpozná úzkou vnitřní plnou výplňovou oblast. "
-#~ "Je-li povolena, bude pro oblast použit soustředný vzor, aby se urychlil "
-#~ "tisk. V opačném případě se ve výchozím nastavení použije přímočarý vzor."
 
 #~ msgid ""
 #~ "Filter out gaps smaller than the threshold specified. This setting won't "

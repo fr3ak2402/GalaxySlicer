@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 10:26+0100\n"
+"POT-Creation-Date: 2023-11-07 17:53+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -490,26 +490,11 @@ msgstr "Малювання шва"
 msgid "Remove selection"
 msgstr "Видалити виділення"
 
-msgid "Shift + Mouse move up or dowm"
-msgstr "Shift + переміщення миші вгору або вниз"
-
-msgid "Rotate text"
-msgstr "Повернути текст"
-
-msgid "Text shape"
-msgstr "Форма тексту"
-
 msgid "Font"
 msgstr "Шрифт"
 
 msgid "Thickness"
 msgstr "Товщина"
-
-msgid "Input text"
-msgstr "Введення тексту"
-
-msgid "Embeded"
-msgstr "Вбудовано"
 
 msgid "Text Gap"
 msgstr "Пробіл у тексті"
@@ -522,11 +507,23 @@ msgid ""
 "depth"
 msgstr "Вбудована глибина"
 
+msgid "Input text"
+msgstr "Введення тексту"
+
 msgid "Surface"
 msgstr "Поверхня"
 
 msgid "Horizontal text"
 msgstr "Горизонтальний текст"
+
+msgid "Shift + Mouse move up or dowm"
+msgstr "Shift + переміщення миші вгору або вниз"
+
+msgid "Rotate text"
+msgstr "Повернути текст"
+
+msgid "Text shape"
+msgstr "Форма тексту"
 
 msgid "Ctrl+"
 msgstr "Ctrl+"
@@ -7973,6 +7970,16 @@ msgstr "Завершальний G-code, коли закінчити весь д
 msgid "End G-code when finish the printing of this filament"
 msgstr "Завершальний G-code, коли закінчите друк цієї нитки"
 
+msgid "Ensure vertical shell thickness"
+msgstr "Забезпечення вертикальної товщини оболонки"
+
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)"
+msgstr ""
+"Додавання заповнення твердого тіла поблизу похилих поверхонь для Гарантії "
+"товщини вертикальної оболонки (верхній + нижній шари твердого тіла)"
+
 msgid "Top surface pattern"
 msgstr "Малюнок верхньої поверхні"
 
@@ -10641,6 +10648,19 @@ msgstr ""
 "елемента, то товщина периметра дорівнюватиме товщині самого елемента. Він "
 "виражається у відсотках від діаметра сопла"
 
+msgid "Detect narrow internal solid infill"
+msgstr "Виявлення вузького внутрішнього заповнення твердим тілом"
+
+msgid ""
+"This option will auto detect narrow internal solid infill area. If enabled, "
+"concentric pattern will be used for the area to speed printing up. "
+"Otherwise, rectilinear pattern is used defaultly."
+msgstr ""
+"Ця опція автоматично визначає вузьку внутрішню область заповненнятвердого "
+"тіла. Якщо цей параметр увімкнено, для прискорення друку області "
+"використовуватиметься концентричний візерунок. Інакше за умовчанням "
+"Використовується прямолінійний малюнок."
+
 msgid "invalid value "
 msgstr "неправильне значення "
 
@@ -11990,6 +12010,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Embeded"
+#~ msgstr "Вбудовано"
+
 #~ msgid ""
 #~ "Acceleration of initial layer. Using a lower value can improve build "
 #~ "plate adhensive"
@@ -12018,16 +12041,6 @@ msgstr ""
 #~ "відчиняйте передні дверцята принтера перед печаткою, щоб уникнути "
 #~ "засмічення сопла."
 
-#~ msgid "Ensure vertical shell thickness"
-#~ msgstr "Забезпечення вертикальної товщини оболонки"
-
-#~ msgid ""
-#~ "Add solid infill near sloping surfaces to guarantee the vertical shell "
-#~ "thickness (top+bottom solid layers)"
-#~ msgstr ""
-#~ "Додавання заповнення твердого тіла поблизу похилих поверхонь для Гарантії "
-#~ "товщини вертикальної оболонки (верхній + нижній шари твердого тіла)"
-
 #~ msgid "Temperature of vitrificaiton"
 #~ msgstr "Температура склування"
 
@@ -12051,19 +12064,6 @@ msgstr ""
 #~ "Швидкість вентилятора охолодження допоміжної частини. "
 #~ "ДопоміжнийВентилятор буде працювати з такою швидкістю під час друку, за "
 #~ "винятком перших кількох шарів, які не визначаються шарами охолодження"
-
-#~ msgid "Detect narrow internal solid infill"
-#~ msgstr "Виявлення вузького внутрішнього заповнення твердим тілом"
-
-#~ msgid ""
-#~ "This option will auto detect narrow internal solid infill area. If "
-#~ "enabled, concentric pattern will be used for the area to speed printing "
-#~ "up. Otherwise, rectilinear pattern is used defaultly."
-#~ msgstr ""
-#~ "Ця опція автоматично визначає вузьку внутрішню область заповненнятвердого "
-#~ "тіла. Якщо цей параметр увімкнено, для прискорення друку області "
-#~ "використовуватиметься концентричний візерунок. Інакше за умовчанням "
-#~ "Використовується прямолінійний малюнок."
 
 #~ msgid "Empty layers around bottom are replaced by nearest normal layers."
 #~ msgstr ""

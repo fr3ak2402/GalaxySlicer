@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 10:26+0100\n"
+"POT-Creation-Date: 2023-11-07 17:53+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Chun <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -490,26 +490,11 @@ msgstr "Z縫繪製"
 msgid "Remove selection"
 msgstr "移除繪製"
 
-msgid "Shift + Mouse move up or dowm"
-msgstr "Shift + 滑鼠上移或下移"
-
-msgid "Rotate text"
-msgstr "旋轉文字"
-
-msgid "Text shape"
-msgstr "文字形狀"
-
 msgid "Font"
 msgstr "字體"
 
 msgid "Thickness"
 msgstr "厚度"
-
-msgid "Input text"
-msgstr "輸入文字"
-
-msgid "Embeded"
-msgstr "嵌入的"
 
 msgid "Text Gap"
 msgstr "文字間距"
@@ -522,11 +507,23 @@ msgid ""
 "depth"
 msgstr "內嵌深度"
 
+msgid "Input text"
+msgstr "輸入文字"
+
 msgid "Surface"
 msgstr "附著曲面"
 
 msgid "Horizontal text"
 msgstr "水平文字"
+
+msgid "Shift + Mouse move up or dowm"
+msgstr "Shift + 滑鼠上移或下移"
+
+msgid "Rotate text"
+msgstr "旋轉文字"
+
+msgid "Text shape"
+msgstr "文字形狀"
 
 msgid "Ctrl+"
 msgstr "Ctrl+"
@@ -7662,6 +7659,14 @@ msgstr "所有列印結束時的結尾G-code"
 msgid "End G-code when finish the printing of this filament"
 msgstr "結束使用該耗材列印時的結尾G-code"
 
+msgid "Ensure vertical shell thickness"
+msgstr "確保垂直外殼厚度"
+
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)"
+msgstr "在斜面表面附近增加實心填充，以保證垂直外殼厚度（頂部+底部實心層）"
+
 msgid "Top surface pattern"
 msgstr "頂面圖案"
 
@@ -10158,6 +10163,17 @@ msgstr ""
 "用於替換模型細小特徵（根據最小特徵尺寸）的牆線寬。如果牆最小線寬小於最小特徵"
 "的厚度，則牆將變得和特徵本身一樣厚。參數值表示為相對噴嘴直徑的百分比"
 
+msgid "Detect narrow internal solid infill"
+msgstr "識別狹窄內部實心填充"
+
+msgid ""
+"This option will auto detect narrow internal solid infill area. If enabled, "
+"concentric pattern will be used for the area to speed printing up. "
+"Otherwise, rectilinear pattern is used defaultly."
+msgstr ""
+"此選項用於自動識別內部狹窄的實心填充。開啟後，將對狹窄實心區域使用同心填充加"
+"快列印速度。否則使用預設的直線填充。"
+
 msgid "invalid value "
 msgstr "非法的值 "
 
@@ -11522,6 +11538,9 @@ msgstr ""
 "當列印較低溫度的耗材時，打開印表機門可以減少擠出機或熱端堵塞的可能性。 有關此"
 "內容的更多信息，請參見 Wiki。"
 
+#~ msgid "Embeded"
+#~ msgstr "嵌入的"
+
 #~ msgid ""
 #~ "Orca Slicer configuration file may be corrupted and is not abled to be "
 #~ "parsed.Please delete the file and try again."
@@ -11632,14 +11651,6 @@ msgstr ""
 #~ msgstr ""
 #~ "熱床溫度超過了線材的軟化溫度。請在列印前打開３Ｄ列印機前門以防堵頭。"
 
-#~ msgid "Ensure vertical shell thickness"
-#~ msgstr "確保垂直外殼厚度"
-
-#~ msgid ""
-#~ "Add solid infill near sloping surfaces to guarantee the vertical shell "
-#~ "thickness (top+bottom solid layers)"
-#~ msgstr "在斜面表面附近增加實心填充，以保證垂直外殼厚度（頂部+底部實心層）"
-
 #~ msgid "Temperature of vitrificaiton"
 #~ msgstr "軟化溫度"
 
@@ -11658,17 +11669,6 @@ msgstr ""
 #~ msgstr ""
 #~ "輔助部件冷卻風扇的轉速。輔助部件冷卻風扇將一直運行在該速度，除了設置的無需"
 #~ "冷卻的前若干層"
-
-#~ msgid "Detect narrow internal solid infill"
-#~ msgstr "識別狹窄內部實心填充"
-
-#~ msgid ""
-#~ "This option will auto detect narrow internal solid infill area. If "
-#~ "enabled, concentric pattern will be used for the area to speed printing "
-#~ "up. Otherwise, rectilinear pattern is used defaultly."
-#~ msgstr ""
-#~ "此選項用於自動識別內部狹窄的實心填充。開啟後，將對狹窄實心區域使用同心填充"
-#~ "加快列印速度。否則使用預設的直線填充。"
 
 #~ msgid ""
 #~ "Filter out gaps smaller than the threshold specified. This setting won't "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-04 10:26+0100\n"
+"POT-Creation-Date: 2023-11-07 17:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -494,26 +494,11 @@ msgstr "Naht aufmalen"
 msgid "Remove selection"
 msgstr "Auswahl entfernen"
 
-msgid "Shift + Mouse move up or dowm"
-msgstr "Umschalttaste + Mausbewegung nach oben oder unten"
-
-msgid "Rotate text"
-msgstr "Text drehen"
-
-msgid "Text shape"
-msgstr "Text zufügen"
-
 msgid "Font"
 msgstr "Schiftart"
 
 msgid "Thickness"
 msgstr "Dicke"
-
-msgid "Input text"
-msgstr "Text eingeben"
-
-msgid "Embeded"
-msgstr "Eingebettet"
 
 msgid "Text Gap"
 msgstr "Textabstand"
@@ -528,11 +513,23 @@ msgstr ""
 "Eingebettete\n"
 "Tiefe"
 
+msgid "Input text"
+msgstr "Text eingeben"
+
 msgid "Surface"
 msgstr "Oberfläche"
 
 msgid "Horizontal text"
 msgstr "Horizontaler Text"
+
+msgid "Shift + Mouse move up or dowm"
+msgstr "Umschalttaste + Mausbewegung nach oben oder unten"
+
+msgid "Rotate text"
+msgstr "Text drehen"
+
+msgid "Text shape"
+msgstr "Text zufügen"
 
 msgid "Ctrl+"
 msgstr "Strg +"
@@ -8289,6 +8286,16 @@ msgstr "End G-Code nach dem fertigstellen des Drucks hinzufügen."
 msgid "End G-code when finish the printing of this filament"
 msgstr "End-G-Code hinzufügen, wenn der Druck dieses Filaments beenden ist."
 
+msgid "Ensure vertical shell thickness"
+msgstr "Sicherstellung der vertikalen Wanddicke"
+
+msgid ""
+"Add solid infill near sloping surfaces to guarantee the vertical shell "
+"thickness (top+bottom solid layers)"
+msgstr ""
+"In der Nähe von schrägen Flächen massive Füllungen hinzufügen, um die "
+"vertikale Wanddicke zu gewährleisten (obere + untere massive Schichten)."
+
 msgid "Top surface pattern"
 msgstr "Muster der Oberfläche"
 
@@ -11242,6 +11249,19 @@ msgstr ""
 "Dicke des Features, wird die Wand so dick wie das Feature selbst. Wird als "
 "Prozentsatz des Düsendurchmessers angegeben."
 
+msgid "Detect narrow internal solid infill"
+msgstr "Erkennen einer schmalen internen soliden Füllung"
+
+msgid ""
+"This option will auto detect narrow internal solid infill area. If enabled, "
+"concentric pattern will be used for the area to speed printing up. "
+"Otherwise, rectilinear pattern is used defaultly."
+msgstr ""
+"Mit dieser Option wird ein schmaler innerer Füllbereich automatisch erkannt. "
+"Wenn diese Option aktiviert ist, wird ein konzentrisches Muster für den "
+"Bereich verwendet, um den Druck zu beschleunigen. Andernfalls wird "
+"standardmäßig ein geradliniges Muster verwendet."
+
 msgid "invalid value "
 msgstr "Ungültiger Wert"
 
@@ -12747,6 +12767,9 @@ msgstr ""
 "höherer Gehäusetemperatur verringern. Weitere Informationen dazu finden Sie "
 "in der Wiki."
 
+#~ msgid "Embeded"
+#~ msgstr "Eingebettet"
+
 #~ msgid "Z hop lower boundary"
 #~ msgstr "Z-Hub untere Grenze"
 
@@ -12904,16 +12927,6 @@ msgstr ""
 #~ msgid "Activate for better air filtration"
 #~ msgstr "Aktivieren Sie die Luftfilterung für eine bessere Luftfilterung"
 
-#~ msgid "Ensure vertical shell thickness"
-#~ msgstr "Sicherstellung der vertikalen Wanddicke"
-
-#~ msgid ""
-#~ "Add solid infill near sloping surfaces to guarantee the vertical shell "
-#~ "thickness (top+bottom solid layers)"
-#~ msgstr ""
-#~ "In der Nähe von schrägen Flächen massive Füllungen hinzufügen, um die "
-#~ "vertikale Wanddicke zu gewährleisten (obere + untere massive Schichten)."
-
 #~ msgid "Temperature of vitrificaiton"
 #~ msgstr "Verglasungstemperatur"
 
@@ -12945,19 +12958,6 @@ msgstr ""
 #~ "Geschwindigkeit des Hilfslüfters für die Teilekühlung. Der Hilfslüfter "
 #~ "läuft während des Drucks mit dieser Geschwindigkeit, mit Ausnahme der "
 #~ "ersten Schichten, für die keine Kühlung vorgesehen ist."
-
-#~ msgid "Detect narrow internal solid infill"
-#~ msgstr "Erkennen einer schmalen internen soliden Füllung"
-
-#~ msgid ""
-#~ "This option will auto detect narrow internal solid infill area. If "
-#~ "enabled, concentric pattern will be used for the area to speed printing "
-#~ "up. Otherwise, rectilinear pattern is used defaultly."
-#~ msgstr ""
-#~ "Mit dieser Option wird ein schmaler innerer Füllbereich automatisch "
-#~ "erkannt. Wenn diese Option aktiviert ist, wird ein konzentrisches Muster "
-#~ "für den Bereich verwendet, um den Druck zu beschleunigen. Andernfalls "
-#~ "wird standardmäßig ein geradliniges Muster verwendet."
 
 #~ msgid ""
 #~ "Filter out gaps smaller than the threshold specified. This setting won't "
