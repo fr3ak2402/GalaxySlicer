@@ -829,7 +829,7 @@ static std::vector<std::string> s_Preset_printer_options {
     "best_object_pos",
     //GalaxySlicer
     "exhaust_fan",
-    //OrcaSlicer (SoftFever)
+    //OrcaSlicer 
     "host_type", "print_host", "printhost_apikey",
     "print_host_webui",
     "printhost_cafile","printhost_port","printhost_authorization_type",

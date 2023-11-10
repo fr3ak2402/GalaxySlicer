@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-07 17:53+0100\n"
+"POT-Creation-Date: 2023-11-10 09:14+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -617,11 +617,6 @@ msgstr ""
 msgid "WebView2 Runtime"
 msgstr "WebView2 Runtime"
 
-msgid ""
-"GalaxySlicer configuration file may be corrupted and is not abled to be "
-"parsed.Please delete the file and try again."
-msgstr ""
-
 #, c-format, boost-format
 msgid ""
 "%s\n"
@@ -649,6 +644,13 @@ msgstr "Dit is de nieuwste versie."
 
 msgid "Info"
 msgstr "Informatie"
+
+msgid ""
+"The GalaxySlicer configuration file may be corrupted and cannot be parsed.\n"
+"GalaxySlicer has attempted to recreate the configuration file.\n"
+"Please note, application settings will be lost, but printer profiles will "
+"not be affected."
+msgstr ""
 
 msgid "Rebuild"
 msgstr "Herbouwen"
@@ -6206,6 +6208,9 @@ msgstr ""
 msgid "Change filament G-code"
 msgstr "Filament G-code aanpassen"
 
+msgid "Change extrusion role G-code"
+msgstr ""
+
 msgid "Pause G-code"
 msgstr "Pauzeer G-code"
 
@@ -10288,6 +10293,9 @@ msgid ""
 msgstr ""
 "Deze G-code wordt ingevoegd wanneer filament wordt vervangen, inclusief T-"
 "commando's om gereedschapswissel te activeren."
+
+msgid "This gcode is inserted when the extrusion role is changed"
+msgstr ""
 
 msgid ""
 "Line width for top surfaces. If expressed as a %, it will be computed over "

@@ -2475,7 +2475,7 @@ bool GUI_App::on_init_inner()
         m_config_corrupted = false;
         show_error(nullptr,
                    _u8L(
-                       "The OrcaSlicer configuration file may be corrupted and cannot be parsed.\nOrcaSlicer has attempted to recreate the "
+                       "The GalaxySlicer configuration file may be corrupted and cannot be parsed.\nGalaxySlicer has attempted to recreate the "
                        "configuration file.\nPlease note, application settings will be lost, but printer profiles will not be affected."));
     }
     //BBS: delete splash screen
@@ -4019,7 +4019,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             try 
             {
                 boost::trim(body);
-                // SoftFever (OrcaSlicer): parse github release, ported from SS
+                //parse github release, ported from SS
 
                 boost::property_tree::ptree root;
 
