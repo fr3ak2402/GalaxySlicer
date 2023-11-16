@@ -3328,8 +3328,8 @@ void PrintObject::combine_infill()
                                                                   region.config().sparse_infill_pattern;
 
         // Limit the number of combined layers to the maximum height allowed by this regions' nozzle.
-        double nozzle_diameter = std::min(max_layer_height(region.config().sparse_infill_filament.value - 1),
-                                          max_layer_height(region.config().solid_infill_filament.value - 1));
+        double nozzle_diameter = std::min(max_layer_height(region.config().sparse_infill_filament.value),
+                                          max_layer_height(region.config().solid_infill_filament.value));
         // define the combinations
         std::vector<size_t> combine(m_layers.size(), 0);
         {
