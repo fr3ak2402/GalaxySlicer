@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2391,16 +2391,6 @@ msgid ""
 "Which do you want to keep?\n"
 "YES - Keep Prime Tower\n"
 "NO  - Keep Independent Support Layer Height"
-msgstr ""
-
-#, possible-boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr ""
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
 msgstr ""
 
 msgid ""
@@ -7828,8 +7818,10 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr ""
 
-#, possible-c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, possible-c-format, possible-boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
 
 msgid "Sparse infill pattern"
@@ -9771,10 +9763,6 @@ msgid ""
 msgstr ""
 
 msgid "invalid value "
-msgstr ""
-
-#, possible-c-format, possible-boost-format
-msgid " doesn't work at 100%% density "
 msgstr ""
 
 msgid "Invalid value when spiral vase mode is enabled: "

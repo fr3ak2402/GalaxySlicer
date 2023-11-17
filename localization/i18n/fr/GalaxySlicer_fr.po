@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -2631,20 +2631,6 @@ msgstr ""
 "Voulez-vous conserver la tour de purge ?\n"
 "OUI - Conserver la tour de purge\n"
 "NON - Conserver la hauteur de la couche de support indépendante"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr ""
-"Le motif de remplissage %1% ne prend pas en charge une densité de 100%%."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Basculer vers le motif rectiligne ?\n"
-"Oui - Basculer vers le motif rectiligne\n"
-"Non - Réinitialiser automatiquement la densité par défaut"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8690,10 +8676,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Densité de remplissage"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
-"Densité du remplissage interne, Une valeur à 100%% signifie solide partout"
 
 msgid "Sparse infill pattern"
 msgstr "Motif de remplissage"
@@ -10995,10 +10982,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "valeur invalide "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " ne fonctionne pas à une densité de 100%% "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Valeur invalide lorsque le mode vase est activé : "
 
@@ -12362,6 +12345,29 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr ""
+#~ "Le motif de remplissage %1% ne prend pas en charge une densité de 100%%."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Basculer vers le motif rectiligne ?\n"
+#~ "Oui - Basculer vers le motif rectiligne\n"
+#~ "Non - Réinitialiser automatiquement la densité par défaut"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Densité du remplissage interne, Une valeur à 100%% signifie solide partout"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " ne fonctionne pas à une densité de 100%% "
 
 #~ msgid ""
 #~ "GalaxySlicer configuration file may be corrupted and is not abled to be "

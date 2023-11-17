@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2554,19 +2554,6 @@ msgstr ""
 "Vilken ska behållas?\n"
 "JA - Behåll Prime Torn\n"
 "NEJ  - Behåll Oberoende Lagerhöjd på support"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% ifyllnads mönster stöds ej 100%% densitet."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Byta till rätlinjigt mönster?\n"
-"Ja - Växla automatiskt till rätlinjigt mönster\n"
-"Nej - Återställ automatiskt densiteten till standardvärdet som inte är 100 %."
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8347,10 +8334,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Sparsam ifyllnads densitet"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
-"Densiteten av ifyllnad. 100%% betyder att objektet blir solid rakt igenom"
 
 msgid "Sparse infill pattern"
 msgstr "Sparsam ifyllnads mönster"
@@ -10494,10 +10482,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "ogiltigt värde "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " fungerar inte vid 100%% densitet "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Ogiltigt värde när spiralvas läget är aktiverat: "
 
@@ -11824,6 +11808,29 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% ifyllnads mönster stöds ej 100%% densitet."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Byta till rätlinjigt mönster?\n"
+#~ "Ja - Växla automatiskt till rätlinjigt mönster\n"
+#~ "Nej - Återställ automatiskt densiteten till standardvärdet som inte är "
+#~ "100 %."
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Densiteten av ifyllnad. 100%% betyder att objektet blir solid rakt igenom"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " fungerar inte vid 100%% densitet "
 
 #~ msgid "Embeded"
 #~ msgstr "Inbäddad"

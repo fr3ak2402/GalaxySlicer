@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2565,19 +2565,6 @@ msgstr ""
 "Melyiket szeretnéd megtartani?\n"
 "IGEN - Törlő torony megtartása\n"
 "NEM - Független támasz rétegmagasság megtartása"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% kitöltési mintázat nem támogatja a 100%%-os kitöltés."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Átváltasz vonalak mintázatra?\n"
-"Igen - Váltás a vonalak mintázatra\n"
-"Nem - Sűrűség visszaállítása az alapértelmezett, nem 100%-os értékre"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8407,11 +8394,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Kitöltés sűrűsége"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
-"Ez a belső ritkás kitöltés sűrűsége. A 100%% azt jelenti, hogy az objektum "
-"végig tömör lesz."
 
 msgid "Sparse infill pattern"
 msgstr "Kitöltési mintázat"
@@ -10570,10 +10557,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "invalid value "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " doesn't work at 100%% density "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Invalid value when spiral vase mode is enabled: "
 
@@ -11898,6 +11881,29 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% kitöltési mintázat nem támogatja a 100%%-os kitöltés."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Átváltasz vonalak mintázatra?\n"
+#~ "Igen - Váltás a vonalak mintázatra\n"
+#~ "Nem - Sűrűség visszaállítása az alapértelmezett, nem 100%-os értékre"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Ez a belső ritkás kitöltés sűrűsége. A 100%% azt jelenti, hogy az "
+#~ "objektum végig tömör lesz."
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " doesn't work at 100%% density "
 
 #~ msgid "Embeded"
 #~ msgstr "Embedded"

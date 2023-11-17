@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -2616,20 +2616,6 @@ msgstr ""
 "Что вы хотите сохранить?\n"
 "ДА - Сохранить черновую башню\n"
 "НЕТ - Сохранить независимую высоту слоя поддержки"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "Шаблон заполнения «%1%» не поддерживает 100%% заполнение."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Переключиться на прямолинейный (rectilinear) шаблон?\n"
-"Да - переключиться на прямолинейный шаблон\n"
-"Нет - сбросить плотность заполнения до значения по умолчанию (отличного от "
-"100%)"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8689,11 +8675,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Плотность заполнения"
 
-#, fuzzy, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
-"Плотность внутреннего заполнения, выраженная в процентах. 100% означает "
-"сплошное заполнение."
 
 msgid "Sparse infill pattern"
 msgstr "Шаблон заполнения"
@@ -11163,10 +11149,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "недопустимое значение "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " не работает при 100%% заполнении "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Недопустимое значение при включенном режиме спиральной вазы: "
 
@@ -12641,6 +12623,30 @@ msgstr ""
 "При печати низкотемпературным материалом при более высокой температуре в "
 "камере, открытие дверцы принтера снижает вероятность засорения экструдера/"
 "хотэнда. Более подробную информацию читайте на вики-сайте."
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "Шаблон заполнения «%1%» не поддерживает 100%% заполнение."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Переключиться на прямолинейный (rectilinear) шаблон?\n"
+#~ "Да - переключиться на прямолинейный шаблон\n"
+#~ "Нет - сбросить плотность заполнения до значения по умолчанию (отличного "
+#~ "от 100%)"
+
+#, fuzzy, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Плотность внутреннего заполнения, выраженная в процентах. 100% означает "
+#~ "сплошное заполнение."
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " не работает при 100%% заполнении "
 
 #~ msgid ""
 #~ "GalaxySlicer configuration file may be corrupted and is not abled to be "

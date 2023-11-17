@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -658,9 +658,8 @@ msgid ""
 msgstr ""
 "Soubor konfigurace GalaxySlicer může být poškozen a nelze jej analyzovat.\n"
 "GalaxySlicer se pokusil znovu vytvořit konfigurační soubor.\n"
-"Všimněte si, že nastavení aplikace budou ztracena, ale profily tiskárny nebudou "
-"ovlivněny."
-
+"Všimněte si, že nastavení aplikace budou ztracena, ale profily tiskárny "
+"nebudou ovlivněny."
 
 msgid "Rebuild"
 msgstr "Obnovit"
@@ -2580,19 +2579,6 @@ msgstr ""
 "Kterou si chcete ponechat?\n"
 "ANO - Zachovat čistící věž\n"
 "NE - Zachovat výšku nezávislé podpůrné vrstvy"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% vzor výplně nepodporuje 100%% hustotu."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Přepnout na přímočarý vzor?\n"
-"Ano - přepnout na přímočarý vzor automaticky\n"
-"Ne - automaticky resetovat hustotu na výchozí ne 100% hodnotu"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8557,9 +8543,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Hustota vnitřní výplně"
 
-#, fuzzy, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
-msgstr "Hustota vnitřní výplně, 100% znamená celistvou v celém rozsahu"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
+msgstr ""
 
 msgid "Sparse infill pattern"
 msgstr "Vzor vnitřní výplně"
@@ -10929,10 +10917,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "neplatná hodnota "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " nefunguje při 100%% hustotě "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Neplatná hodnota, když je povolen režim spirálové vázy: "
 
@@ -12392,6 +12376,27 @@ msgstr ""
 "Otevření dveří tiskárny může snížit pravděpodobnost ucpaní extruderu/hotendu "
 "při tisku filamentu s nižší teplotou a vyšší teplotě uzavřeného prostoru. "
 "Další informace naleznete ve Wiki."
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% vzor výplně nepodporuje 100%% hustotu."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Přepnout na přímočarý vzor?\n"
+#~ "Ano - přepnout na přímočarý vzor automaticky\n"
+#~ "Ne - automaticky resetovat hustotu na výchozí ne 100% hodnotu"
+
+#, fuzzy, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr "Hustota vnitřní výplně, 100% znamená celistvou v celém rozsahu"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " nefunguje při 100%% hustotě "
 
 #~ msgid ""
 #~ "GalaxySlicer configuration file may be corrupted and is not abled to be "

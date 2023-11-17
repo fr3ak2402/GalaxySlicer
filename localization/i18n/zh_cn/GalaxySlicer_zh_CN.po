@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -2458,19 +2458,6 @@ msgstr ""
 "如何选择？\n"
 "是 - 选择开启擦拭塔\n"
 "否 - 选择保留支撑独立层高"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% 填充图案不支持 100%% 密度。"
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"切换到直线图案？\n"
-"是 - 自动切换到直线图案\n"
-"否 - 自动将密度重置为默认的非100%值"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8072,9 +8059,11 @@ msgstr "稀疏填充图案的角度，决定走线的开始或整体方向。"
 msgid "Sparse infill density"
 msgstr "稀疏填充密度"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
-msgstr "稀疏填充密度, 100%% 意味着完全实心。"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
+msgstr ""
 
 msgid "Sparse infill pattern"
 msgstr "稀疏填充图案"
@@ -10179,10 +10168,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "非法的值 "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " 填充图案不支持 100%% 密度"
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "旋转花瓶模式下非法的值"
 
@@ -11556,6 +11541,27 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% 填充图案不支持 100%% 密度。"
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "切换到直线图案？\n"
+#~ "是 - 自动切换到直线图案\n"
+#~ "否 - 自动将密度重置为默认的非100%值"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr "稀疏填充密度, 100%% 意味着完全实心。"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " 填充图案不支持 100%% 密度"
 
 #~ msgid ""
 #~ "GalaxySlicer configuration file may be corrupted and is not abled to be "

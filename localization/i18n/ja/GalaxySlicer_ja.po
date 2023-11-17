@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2484,19 +2484,6 @@ msgstr ""
 "どちらの設定にしますか？\n"
 "はい - プライムタワーを有効にする\n"
 "いいえ - 「独立サポート積層ピッチ」を有効にする"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% のインフィル パターンは 100%% の密度をサポートしません。"
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"直線パターンに切り替えますか？\n"
-"はい - 直線パターンに切り替えます\n"
-"いいえ - 充填密度をリセットします"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8141,9 +8128,11 @@ msgstr "スパース インフィル パターンの角度です"
 msgid "Sparse infill density"
 msgstr "充填密度"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
-msgstr "スパース インフィルの密度です。100%%に設定する場合ソリッドになります。"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
+msgstr ""
 
 msgid "Sparse infill pattern"
 msgstr "充填パターン"
@@ -10201,10 +10190,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "invalid value "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " doesn't work at 100%% density "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Invalid value when spiral vase mode is enabled: "
 
@@ -11505,6 +11490,28 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% のインフィル パターンは 100%% の密度をサポートしません。"
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "直線パターンに切り替えますか？\n"
+#~ "はい - 直線パターンに切り替えます\n"
+#~ "いいえ - 充填密度をリセットします"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "スパース インフィルの密度です。100%%に設定する場合ソリッドになります。"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " doesn't work at 100%% density "
 
 #~ msgid "Embeded"
 #~ msgstr "Embedded"

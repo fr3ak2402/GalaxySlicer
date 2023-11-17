@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-10 09:14+0100\n"
+"POT-Creation-Date: 2023-11-17 09:46+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2590,19 +2590,6 @@ msgstr ""
 "Welke instelling wilt u gebruiken\n"
 "JA - laat de prime-tower aan staan\n"
 "NO - laat onafhankelijke support-laag-hoogte ingeschakeld"
-
-#, boost-format
-msgid "%1% infill pattern doesn't support 100%% density."
-msgstr "%1% het gekozen vulling patroon ondersteund geen 100%% dichtheid."
-
-msgid ""
-"Switch to rectilinear pattern?\n"
-"Yes - switch to rectilinear pattern automaticlly\n"
-"No  - reset density to default non 100% value automaticlly"
-msgstr ""
-"Overschakelen naar rechtlijnig patroon?\n"
-"Ja - Automatisch overschakelen naar rechtlijnig patroon\n"
-"Nee - Zet de dichtheid automatisch terug naar de standaard niet 100% waarde"
 
 msgid ""
 "While printing by Object, the extruder may collide skirt.\n"
@@ -8495,11 +8482,11 @@ msgstr ""
 msgid "Sparse infill density"
 msgstr "Vulling percentage"
 
-#, c-format
-msgid "Density of internal sparse infill, 100% means solid throughout"
+#, c-format, boost-format
+msgid ""
+"Density of internal sparse infill, 100% turns all sparse infill into solid "
+"infill and internal solid infill pattern will be used"
 msgstr ""
-"Dit is de dichtheid van de interne vulling. 100%% betekent dat het object "
-"geheel solide zal zijn."
 
 msgid "Sparse infill pattern"
 msgstr "Vulpatroon"
@@ -10682,10 +10669,6 @@ msgstr ""
 msgid "invalid value "
 msgstr "invalid value "
 
-#, c-format, boost-format
-msgid " doesn't work at 100%% density "
-msgstr " doesn't work at 100%% density "
-
 msgid "Invalid value when spiral vase mode is enabled: "
 msgstr "Invalid value when spiral vase mode is enabled: "
 
@@ -12010,6 +11993,30 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% het gekozen vulling patroon ondersteund geen 100%% dichtheid."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Overschakelen naar rechtlijnig patroon?\n"
+#~ "Ja - Automatisch overschakelen naar rechtlijnig patroon\n"
+#~ "Nee - Zet de dichtheid automatisch terug naar de standaard niet 100% "
+#~ "waarde"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Dit is de dichtheid van de interne vulling. 100%% betekent dat het object "
+#~ "geheel solide zal zijn."
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " doesn't work at 100%% density "
 
 #~ msgid "Embeded"
 #~ msgstr "Embedded"
