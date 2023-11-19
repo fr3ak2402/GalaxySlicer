@@ -1,4 +1,4 @@
-OrcaSlicer use `M106 P3` command to control air-filtration/exhuast fan.
+GalaxySlicerer use `M106 P3` command to control air-filtration/exhuast fan.
 
 If you are using Klipper, you can define a `M106` macro to control the both normal part cooling fan and auxiliary fan and exhuast fan.  
 Below is a reference configuration for Klipper.   

@@ -12,7 +12,7 @@ Full manual for GNUgettext can be seen here: http://www.gnu.org/software/gettext
 
 
 ### Scenario 1. How do I add a translation or fix an existing translation
-1. Get PO-file 'OrcaSlicer_xx.pot' from corresponding sub-folder here:
+1. Get PO-file 'GalaxySlicer_xx.pot' from corresponding sub-folder here:
 https://github.com/softfever/OrcaSlicer/tree/master/localization/i18n
 2. Open this file in PoEdit as "Edit a translation"
 3. Apply your corrections to the translation

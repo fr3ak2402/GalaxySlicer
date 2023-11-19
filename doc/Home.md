@@ -1,4 +1,4 @@
-Welcome to the OrcaSlicer WIKI!
+Welcome to the GalaxySlicer WIKI!
 
 We have divided it roughly into the following pages:
 

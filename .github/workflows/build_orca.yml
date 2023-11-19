@@ -1,4 +1,4 @@
-name: Build OrcaSlicer
+name: Build GalaxySlicerer
 
 on: 
     push:

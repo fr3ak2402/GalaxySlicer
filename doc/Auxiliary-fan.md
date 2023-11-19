@@ -1,4 +1,4 @@
-OrcaSlicer use `M106 P2` command to control auxiliary cooling fan.
+GalaxySlicerer use `M106 P2` command to control auxiliary cooling fan.
 
 If you are using Klipper, you can define a `M106` macro to control the both normal part cooling fan and auxiliary fan and exhuast fan.  
 Below is a reference configuration for Klipper.   

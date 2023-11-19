@@ -121,7 +121,7 @@ Using calipers or a ruler, measure the height of the print at that point. Use th
 
 ![image](./images/caliper_sample_mvf.jpg)
 
-You can also return to OrcaSlicer in the "Preview" tab, make sure the color scheme "flow" is selected. Scroll down to the layer height that you measured, and click on the toolhead slider. This will indicate the max flow level for your filmanet. 
+You can also return to GalaxySlicer in the "Preview" tab, make sure the color scheme "flow" is selected. Scroll down to the layer height that you measured, and click on the toolhead slider. This will indicate the max flow level for your filmanet. 
 
 ![image](./images/max_volumetric_flow.jpg)
 
