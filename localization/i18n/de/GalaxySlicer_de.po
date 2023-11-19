@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -102,6 +102,9 @@ msgstr "Kein automatischer Support"
 msgid "Support Generated"
 msgstr "Support generiert"
 
+msgid "Gizmo-Place on Face"
+msgstr "Gizmo auf das Gesicht legen"
+
 msgid "Lay on face"
 msgstr "Auf Fläche legen"
 
@@ -181,8 +184,14 @@ msgstr "Gemalt mit: Filament %1%"
 msgid "Move"
 msgstr "Bewegen"
 
+msgid "Gizmo-Move"
+msgstr "Gizmo-Bewegen"
+
 msgid "Rotate"
 msgstr "Drehen"
+
+msgid "Gizmo-Rotate"
+msgstr "Gizmo-Drehen"
 
 msgid "Optimize orientation"
 msgstr "Optimiere Ausrichtung"
@@ -193,11 +202,11 @@ msgstr "Anwenden"
 msgid "Scale"
 msgstr "Skalieren"
 
+msgid "Gizmo-Scale"
+msgstr "Gizmo-Skalieren"
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Fehler: Bitte schließen sie zuerst alle Werkzeugleistenmenüs"
-
-msgid "Tool-Lay on Face"
-msgstr "Werkzeug-lege auf Fläche"
 
 msgid "in"
 msgstr "in"
@@ -494,6 +503,15 @@ msgstr "Naht aufmalen"
 msgid "Remove selection"
 msgstr "Auswahl entfernen"
 
+msgid "Entering Seam painting"
+msgstr "Einstieg in das Aufmalen der Naht"
+
+msgid "Leaving Seam painting"
+msgstr "Aufmalen der Naht verlassen"
+
+msgid "Paint-on seam editing"
+msgstr "Bearbeiten der aufgemalten Naht"
+
 msgid "Font"
 msgstr "Schiftart"
 
@@ -662,6 +680,11 @@ msgid ""
 "Please note, application settings will be lost, but printer profiles will "
 "not be affected."
 msgstr ""
+"Die GalaxySlicer-Konfigurationsdatei ist möglicherweise beschädigt und kann "
+"nicht analysiert werden.\n"
+"GalaxySlicer hat versucht, die Konfigurationsdatei neu zu erstellen.\n"
+"Bitte beachten Sie, dass die Anwendungseinstellungen verloren gehen, die "
+"Druckerprofile jedoch nicht betroffen sind."
 
 msgid "Rebuild"
 msgstr "Wiederaufbau"
@@ -3052,6 +3075,15 @@ msgstr "Drucker"
 
 msgid "Print settings"
 msgstr "Druckeinstellungen"
+
+msgid "Custom g-code"
+msgstr "Benutzerdefinierter G-Code"
+
+msgid "Template"
+msgstr "Vorlage"
+
+msgid "ToolChange"
+msgstr "Werkzeugwechsel"
 
 msgid "Time Estimation"
 msgstr "Geschätzte Zeit"
@@ -8789,6 +8821,8 @@ msgid ""
 "Density of internal sparse infill, 100% turns all sparse infill into solid "
 "infill and internal solid infill pattern will be used"
 msgstr ""
+"Dichte der internen Füllung, 100% verwandelt alle interne Füllung in massive "
+"Füllung und das interne massive Füllmuster wird verwendet."
 
 msgid "Sparse infill pattern"
 msgstr "Füllmuster"
@@ -12757,6 +12791,9 @@ msgstr ""
 "höherer Gehäusetemperatur verringern. Weitere Informationen dazu finden Sie "
 "in der Wiki."
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Werkzeug-lege auf Fläche"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "Das %1% Füllmuster unterstützt keine 100%% Dichte."
@@ -14117,9 +14154,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "Suchbegriff eingeben"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Einstieg in das Aufmalen der Naht"
-
 #~ msgid "Erase painting"
 #~ msgstr "Gemaltes löschen"
 
@@ -14371,9 +14405,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Schichten: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Aufmalen der Naht verlassen"
-
 #~ msgid "Line type"
 #~ msgstr "Linientyp"
 
@@ -14429,9 +14460,6 @@ msgstr ""
 #~ msgstr ""
 #~ "P1P Allgemeine Einstellungen - WLAN in der Seitenleiste des "
 #~ "Hauptbildschirms"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Bearbeiten der aufgemalten Naht"
 
 #~ msgid "Part Cooling"
 #~ msgstr "Bauteilekühlung"

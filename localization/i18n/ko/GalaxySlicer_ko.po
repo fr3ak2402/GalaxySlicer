@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -106,6 +106,9 @@ msgstr "자동 지지대 비활성"
 msgid "Support Generated"
 msgstr "지지대 생성됨"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "바닥면 선택"
 
@@ -184,8 +187,14 @@ msgstr "칠하기에 사용한 필라멘트 %1%"
 msgid "Move"
 msgstr "이동"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "회전"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "방향 최적화"
@@ -196,11 +205,11 @@ msgstr "적용"
 msgid "Scale"
 msgstr "배율"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "오류: 먼저 모든 도구 모음 메뉴를 닫으십시오."
-
-msgid "Tool-Lay on Face"
-msgstr "바닥면 선택 도구"
 
 msgid "in"
 msgstr "in"
@@ -494,6 +503,15 @@ msgstr "솔기 칠하기"
 
 msgid "Remove selection"
 msgstr "선택 삭제"
+
+msgid "Entering Seam painting"
+msgstr "재봉선 페인팅 들어가기"
+
+msgid "Leaving Seam painting"
+msgstr "재봉선 페인팅 나가기"
+
+msgid "Paint-on seam editing"
+msgstr "페인트온 재봉선 편집"
 
 msgid "Font"
 msgstr "글꼴"
@@ -2927,6 +2945,15 @@ msgstr "프린터"
 
 msgid "Print settings"
 msgstr "프린터 설정"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "추정 시간"
@@ -12110,6 +12137,9 @@ msgstr ""
 "기/핫엔드가 막힐 가능성을 줄일 수 있습니다. 이에 대한 자세한 내용은 Wiki에서 "
 "확인하세요."
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "바닥면 선택 도구"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% 채우기 패턴은 100%% 밀도를 지원하지 않습니다."
@@ -13390,9 +13420,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "검색어를 입력하세요"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "재봉선 페인팅 들어가기"
-
 #~ msgid "Erase painting"
 #~ msgstr "페인팅 지우기"
 
@@ -13629,9 +13656,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "레이어: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "재봉선 페인팅 나가기"
-
 #~ msgid "Line type"
 #~ msgstr "라인 유형"
 
@@ -13684,9 +13708,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1P 일반 설정 - 메인 화면 사이드 바의 WLAN"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "페인트온 재봉선 편집"
 
 #~ msgid "Part Cooling"
 #~ msgstr "부품 냉각"

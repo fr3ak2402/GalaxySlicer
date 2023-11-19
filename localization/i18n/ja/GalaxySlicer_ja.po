@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -101,6 +101,9 @@ msgstr "自動サポート無し"
 msgid "Support Generated"
 msgstr "生成されたサポート"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "底面選択"
 
@@ -178,8 +181,14 @@ msgstr "フィラメント %1%でペイントします"
 msgid "Move"
 msgstr "移動"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "回転"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "向きを最適化"
@@ -190,11 +199,11 @@ msgstr "適用"
 msgid "Scale"
 msgstr "スケール"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "エラー: ツールバーを閉じてください"
-
-msgid "Tool-Lay on Face"
-msgstr "ツール 底面選択"
 
 msgid "in"
 msgstr "に"
@@ -488,6 +497,15 @@ msgstr "継ぎ目ペイント"
 
 msgid "Remove selection"
 msgstr "選択を削除"
+
+msgid "Entering Seam painting"
+msgstr "継ぎ目をペイント"
+
+msgid "Leaving Seam painting"
+msgstr "継ぎ目ペイントを退出"
+
+msgid "Paint-on seam editing"
+msgstr "継ぎ目編集"
 
 msgid "Font"
 msgstr "フォント"
@@ -2871,6 +2889,15 @@ msgstr "プリンター"
 
 msgid "Print settings"
 msgstr "造形設定"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "予測時間"
@@ -11491,6 +11518,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "ツール 底面選択"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% のインフィル パターンは 100%% の密度をサポートしません。"
@@ -12449,9 +12479,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "検索語を入力"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "継ぎ目をペイント"
-
 #~ msgid "Erase painting"
 #~ msgstr "ペイントを消去"
 
@@ -12675,9 +12702,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "積層: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "継ぎ目ペイントを退出"
-
 #~ msgid "Line type"
 #~ msgstr "種類"
 
@@ -12730,9 +12754,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1PのWLAN設定"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "継ぎ目編集"
 
 #~ msgid "Part Cooling"
 #~ msgstr "パーツ冷却"

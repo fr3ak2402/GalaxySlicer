@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -102,6 +102,9 @@ msgstr "Откл. автоподдержку"
 msgid "Support Generated"
 msgstr "Поддержка сгенерирована"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Поверхностью на стол"
 
@@ -181,8 +184,14 @@ msgstr "Окрашено с использованием прутка %1%"
 msgid "Move"
 msgstr "Перемещение"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Поворот"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Оптимизация положения модели"
@@ -193,11 +202,11 @@ msgstr "Применить"
 msgid "Scale"
 msgstr "Масштаб"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Ошибка: пожалуйста, сначала закройте все меню панели инструментов."
-
-msgid "Tool-Lay on Face"
-msgstr "Поверхностью на стол"
 
 msgid "in"
 msgstr "дюйм"
@@ -491,6 +500,15 @@ msgstr "Рисование шва"
 
 msgid "Remove selection"
 msgstr "Удаление выделенного"
+
+msgid "Entering Seam painting"
+msgstr ""
+
+msgid "Leaving Seam painting"
+msgstr ""
+
+msgid "Paint-on seam editing"
+msgstr ""
 
 msgid "Font"
 msgstr "Шрифт"
@@ -3021,6 +3039,15 @@ msgstr "Профиль принтера"
 
 msgid "Print settings"
 msgstr "Настройки печати"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Оценка времени"
@@ -12623,6 +12650,9 @@ msgstr ""
 "При печати низкотемпературным материалом при более высокой температуре в "
 "камере, открытие дверцы принтера снижает вероятность засорения экструдера/"
 "хотэнда. Более подробную информацию читайте на вики-сайте."
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Поверхностью на стол"
 
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -107,6 +107,9 @@ msgstr "Otomatik destek yok"
 msgid "Support Generated"
 msgstr "Destek Oluşturuldu"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Yüzüstü yatır"
 
@@ -185,8 +188,14 @@ msgstr "Şunlar kullanılarak boyanmıştır: Filament %1%"
 msgid "Move"
 msgstr "Taşı"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Döndür"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Yönü optimize edin"
@@ -197,11 +206,11 @@ msgstr "Uygula"
 msgid "Scale"
 msgstr "Ölçeklendir"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Hata: Lütfen önce tüm araç çubuğu menülerini kapatın"
-
-msgid "Tool-Lay on Face"
-msgstr "Yüzüstü Yatırma"
 
 msgid "in"
 msgstr "in"
@@ -496,6 +505,15 @@ msgstr "Dikiş boyama"
 
 msgid "Remove selection"
 msgstr "Seçimi kaldır"
+
+msgid "Entering Seam painting"
+msgstr ""
+
+msgid "Leaving Seam painting"
+msgstr ""
+
+msgid "Paint-on seam editing"
+msgstr ""
 
 msgid "Font"
 msgstr "Yazı tipi"
@@ -2974,6 +2992,15 @@ msgstr "Yazıcı"
 
 msgid "Print settings"
 msgstr "Yazdırma ayarları"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Zaman Tahmini"
@@ -12331,6 +12358,9 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Yüzüstü Yatırma"
 
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."

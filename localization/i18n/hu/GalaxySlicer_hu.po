@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,6 +98,9 @@ msgstr "Nincs automatikus támasz"
 msgid "Support Generated"
 msgstr "Támasz legenerálva"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Felületre fektetés"
 
@@ -176,8 +179,14 @@ msgstr "A következővel festve: %1% filament"
 msgid "Move"
 msgstr "Mozgatás"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Forgatás"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Orientáció optimalizálása"
@@ -188,11 +197,11 @@ msgstr "Alkalmaz"
 msgid "Scale"
 msgstr "Átméretezés"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Hiba: Kérjük, először zárd be az összes eszköztár menüt"
-
-msgid "Tool-Lay on Face"
-msgstr "Eszköz-Felületre fektetés"
 
 msgid "in"
 msgstr "in"
@@ -489,6 +498,15 @@ msgstr "Varratfestés"
 
 msgid "Remove selection"
 msgstr "Kijelölés törlése"
+
+msgid "Entering Seam painting"
+msgstr "Belépés varratfestő módba"
+
+msgid "Leaving Seam painting"
+msgstr "Kilépés varratfestő módból"
+
+msgid "Paint-on seam editing"
+msgstr "Festett varrat szerkesztése"
 
 msgid "Font"
 msgstr "Betűtípus"
@@ -2953,6 +2971,15 @@ msgstr "Nyomtató"
 
 msgid "Print settings"
 msgstr "Nyomtatási beállítások"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Időbecslés"
@@ -11882,6 +11909,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Eszköz-Felületre fektetés"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% kitöltési mintázat nem támogatja a 100%%-os kitöltés."
@@ -12897,9 +12927,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "Add meg a keresési kifejezést"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Belépés varratfestő módba"
-
 #~ msgid "Erase painting"
 #~ msgstr "Festés törlése"
 
@@ -13147,9 +13174,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Réteg: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Kilépés varratfestő módból"
-
 #~ msgid "Line type"
 #~ msgstr "Vonal típusa"
 
@@ -13202,9 +13226,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1P General Settings - WLAN a főképernyő bal oldalán"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Festett varrat szerkesztése"
 
 #~ msgid "Part Cooling"
 #~ msgstr "Tárgyhűtés"

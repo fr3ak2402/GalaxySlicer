@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -102,6 +102,9 @@ msgstr "Немає автоматичної підтримки"
 msgid "Support Generated"
 msgstr "Генерація підтримки"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Покласти в обличчя"
 
@@ -180,8 +183,14 @@ msgstr "Забарвлений за допомогою: Філамент %1%"
 msgid "Move"
 msgstr "Перемістити"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Повернути"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Оптимізувати орієнтацію"
@@ -192,11 +201,11 @@ msgstr "Готово"
 msgid "Scale"
 msgstr "Масштаб"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Помилка: будь ласка, спочатку закрийте все меню панелі інструментів"
-
-msgid "Tool-Lay on Face"
-msgstr "Інструмент-укладання на обличчя"
 
 msgid "in"
 msgstr "in"
@@ -489,6 +498,15 @@ msgstr "Малювання шва"
 
 msgid "Remove selection"
 msgstr "Видалити виділення"
+
+msgid "Entering Seam painting"
+msgstr ""
+
+msgid "Leaving Seam painting"
+msgstr ""
+
+msgid "Paint-on seam editing"
+msgstr ""
 
 msgid "Font"
 msgstr "Шрифт"
@@ -2960,6 +2978,15 @@ msgstr "Принтер"
 
 msgid "Print settings"
 msgstr "Параметри друку"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Оцінка часу"
@@ -11997,6 +12024,9 @@ msgid ""
 "clogging when printing lower temperature filament with a higher enclosure "
 "temperature. More info about this in the Wiki."
 msgstr ""
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Інструмент-укладання на обличчя"
 
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -101,6 +101,9 @@ msgstr "Žádné automatické podpěry"
 msgid "Support Generated"
 msgstr "Vygenerovat podpěry"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Plochou na podložku"
 
@@ -180,8 +183,14 @@ msgstr "Namalováno pomocí: Filament %1%"
 msgid "Move"
 msgstr "Přesunout"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Otočit"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Optimalizovat orientaci"
@@ -192,11 +201,11 @@ msgstr "Použít"
 msgid "Scale"
 msgstr "Měřítko"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Chyba: Nejprve prosím zavřete všechny nabídky panelu nástrojů"
-
-msgid "Tool-Lay on Face"
-msgstr "Nástroj-Plochou na podložku"
 
 msgid "in"
 msgstr "v"
@@ -491,6 +500,15 @@ msgstr "Malování pozice švu"
 
 msgid "Remove selection"
 msgstr "Odebrat výběr"
+
+msgid "Entering Seam painting"
+msgstr ""
+
+msgid "Leaving Seam painting"
+msgstr ""
+
+msgid "Paint-on seam editing"
+msgstr ""
 
 msgid "Font"
 msgstr "Písmo"
@@ -2979,6 +2997,15 @@ msgstr "Tiskárna"
 
 msgid "Print settings"
 msgstr "Nastavení tisku"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Časový odhad"
@@ -12376,6 +12403,9 @@ msgstr ""
 "Otevření dveří tiskárny může snížit pravděpodobnost ucpaní extruderu/hotendu "
 "při tisku filamentu s nižší teplotou a vyšší teplotě uzavřeného prostoru. "
 "Další informace naleznete ve Wiki."
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Nástroj-Plochou na podložku"
 
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."

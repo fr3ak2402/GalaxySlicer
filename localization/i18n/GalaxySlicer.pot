@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,6 +106,9 @@ msgstr ""
 msgid "Support Generated"
 msgstr ""
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr ""
 
@@ -182,7 +185,13 @@ msgstr ""
 msgid "Move"
 msgstr ""
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
+msgstr ""
+
+msgid "Gizmo-Rotate"
 msgstr ""
 
 msgid "Optimize orientation"
@@ -194,10 +203,10 @@ msgstr ""
 msgid "Scale"
 msgstr ""
 
-msgid "Error: Please close all toolbar menus first"
+msgid "Gizmo-Scale"
 msgstr ""
 
-msgid "Tool-Lay on Face"
+msgid "Error: Please close all toolbar menus first"
 msgstr ""
 
 msgid "in"
@@ -487,6 +496,15 @@ msgid "Seam painting"
 msgstr ""
 
 msgid "Remove selection"
+msgstr ""
+
+msgid "Entering Seam painting"
+msgstr ""
+
+msgid "Leaving Seam painting"
+msgstr ""
+
+msgid "Paint-on seam editing"
 msgstr ""
 
 msgid "Font"
@@ -2774,6 +2792,15 @@ msgid "Printer"
 msgstr ""
 
 msgid "Print settings"
+msgstr ""
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
 msgstr ""
 
 msgid "Time Estimation"

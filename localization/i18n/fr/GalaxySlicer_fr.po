@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -103,6 +103,9 @@ msgstr "Pas de support automatique"
 msgid "Support Generated"
 msgstr "Supports générés"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Poser sur la face"
 
@@ -182,8 +185,14 @@ msgstr "Peint avec : Filament %1%"
 msgid "Move"
 msgstr "Déplacer"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Rotation"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Optimiser l'orientation"
@@ -194,11 +203,11 @@ msgstr "Appliquer"
 msgid "Scale"
 msgstr "Échelle"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Erreur : Veuillez d'abord fermer tous les menus de la barre d'outils"
-
-msgid "Tool-Lay on Face"
-msgstr "Pose de l’outil sur la face"
 
 msgid "in"
 msgstr "dans"
@@ -494,6 +503,15 @@ msgstr "Peindre la couture"
 
 msgid "Remove selection"
 msgstr "Supprimer la sélection"
+
+msgid "Entering Seam painting"
+msgstr "Entrée dans Peinture de Couture"
+
+msgid "Leaving Seam painting"
+msgstr "Quitter Peinture de Couture"
+
+msgid "Paint-on seam editing"
+msgstr "Modification des coutures peintes"
 
 msgid "Font"
 msgstr "Police"
@@ -3042,6 +3060,15 @@ msgstr "Imprimante"
 
 msgid "Print settings"
 msgstr "Paramètres d'impression"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Durée estimée"
@@ -12346,6 +12373,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Pose de l’outil sur la face"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr ""
@@ -13612,9 +13642,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "Entrer un terme de recherche"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Entrée dans Peinture de Couture"
-
 #~ msgid "Erase painting"
 #~ msgstr "Effacer la peinture"
 
@@ -13867,9 +13894,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Couches: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Quitter Peinture de Couture"
-
 #~ msgid "Line type"
 #~ msgstr "Type de ligne"
 
@@ -13926,9 +13950,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Paramètres généraux de la P1P - Wifi dans la barre latérale de l'écran "
 #~ "principal"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Modification des coutures peintes"
 
 #~ msgid "Part Cooling"
 #~ msgstr "Refroidissement des pièces"

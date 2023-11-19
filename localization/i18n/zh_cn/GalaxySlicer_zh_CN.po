@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -102,6 +102,9 @@ msgstr "无自动支撑"
 msgid "Support Generated"
 msgstr "已生成支撑"
 
+msgid "Gizmo-Place on Face"
+msgstr "选择底面"
+
 msgid "Lay on face"
 msgstr "选择底面"
 
@@ -179,8 +182,14 @@ msgstr "绘制使用：耗材丝%1%"
 msgid "Move"
 msgstr "移动"
 
+msgid "Gizmo-Move"
+msgstr "Gizmo-移动"
+
 msgid "Rotate"
 msgstr "旋转"
+
+msgid "Gizmo-Rotate"
+msgstr "Gizmo-旋转"
 
 msgid "Optimize orientation"
 msgstr "优化朝向"
@@ -191,11 +200,11 @@ msgstr "应用"
 msgid "Scale"
 msgstr "缩放"
 
+msgid "Gizmo-Scale"
+msgstr "缩放工具"
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "错误：请先关闭所有工具栏菜单"
-
-msgid "Tool-Lay on Face"
-msgstr "工具-选择底面"
 
 msgid "in"
 msgstr "在"
@@ -487,6 +496,15 @@ msgstr "Z缝绘制"
 
 msgid "Remove selection"
 msgstr "移除绘制"
+
+msgid "Entering Seam painting"
+msgstr "进入Z缝绘制"
+
+msgid "Leaving Seam painting"
+msgstr "退出Z缝绘制"
+
+msgid "Paint-on seam editing"
+msgstr "编辑手绘填缝"
 
 msgid "Font"
 msgstr "字体"
@@ -2849,6 +2867,15 @@ msgstr "打印机"
 
 msgid "Print settings"
 msgstr "打印设置"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "时间预估"
@@ -11542,6 +11569,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "工具-选择底面"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% 填充图案不支持 100%% 密度。"
@@ -12906,15 +12936,6 @@ msgstr ""
 #~ msgstr ""
 #~ "虚拟摄像头已经启动。点击“确认”打开相关帮助页面：'Streaming video of Bambu "
 #~ "Printer'。"
-
-#~ msgid "Entering Seam painting"
-#~ msgstr "进入Z缝绘制"
-
-#~ msgid "Leaving Seam painting"
-#~ msgstr "退出Z缝绘制"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "编辑手绘填缝"
 
 #~ msgid "Export ok."
 #~ msgstr "导出成功."
@@ -14436,15 +14457,6 @@ msgstr ""
 #~ msgid ""
 #~ "The highest recommanded nozzle temperature when print with this filament"
 #~ msgstr "使用该材料打印时建议的喷嘴温度的最高值"
-
-#~ msgid "Gizmo-Move"
-#~ msgstr "Gizmo-移动"
-
-#~ msgid "Gizmo-Scale"
-#~ msgstr "缩放工具"
-
-#~ msgid "Gizmo-Rotate"
-#~ msgstr "Gizmo-旋转"
 
 #~ msgid "Bmabu Cool Plate"
 #~ msgstr "低温打印热床"
@@ -15992,9 +16004,6 @@ msgstr ""
 
 #~ msgid "Gizmo-MoveRotate"
 #~ msgstr "移动旋转工具"
-
-#~ msgid "Gizmo-Place on Face"
-#~ msgstr "选择底面"
 
 #~ msgid ""
 #~ "You are currently editing SLA support points. Please, apply or discard "

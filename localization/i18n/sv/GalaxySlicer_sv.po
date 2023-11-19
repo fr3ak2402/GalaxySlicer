@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,6 +98,9 @@ msgstr "Ingen auto support"
 msgid "Support Generated"
 msgstr "Support skapad"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Lägg på yta"
 
@@ -177,8 +180,14 @@ msgstr "Färgläggning använder: Filament %1%"
 msgid "Move"
 msgstr "Flytta"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Rotera"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Optimisera placering"
@@ -189,11 +198,11 @@ msgstr "Applicera"
 msgid "Scale"
 msgstr "Skala"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "FEL: Stäng alla verktygsmenyer först"
-
-msgid "Tool-Lay on Face"
-msgstr "Ytplacerings verktyg"
 
 msgid "in"
 msgstr "i"
@@ -488,6 +497,15 @@ msgstr "Målning av sömmar"
 
 msgid "Remove selection"
 msgstr "Ta bort val"
+
+msgid "Entering Seam painting"
+msgstr "Inmatning söm målning"
+
+msgid "Leaving Seam painting"
+msgstr "Lämnar söm målning"
+
+msgid "Paint-on seam editing"
+msgstr "Redigering av måla på sömmen"
 
 msgid "Font"
 msgstr "Typsnitt"
@@ -2942,6 +2960,15 @@ msgstr "Skrivare"
 
 msgid "Print settings"
 msgstr "Utskrifts inställningar"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Beräknad tid"
@@ -11809,6 +11836,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Ytplacerings verktyg"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% ifyllnads mönster stöds ej 100%% densitet."
@@ -13247,9 +13277,6 @@ msgstr ""
 #~ msgid "Edit plate setitngs"
 #~ msgstr "Redigera byggplattans inställningar"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Inmatning söm målning"
-
 #~ msgid "Export."
 #~ msgstr "Exportera."
 
@@ -13374,9 +13401,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Lager: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Lämnar söm målning"
-
 #~ msgid "Loading user presets..."
 #~ msgstr "Laddar användar inställningarna..."
 
@@ -13395,9 +13419,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1P Allmänna inställningar - WLAN i sidofältet på huvudskärmen"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Redigering av måla på sömmen"
 
 #~ msgid "Plate %d: %s does not support filament %s (%s)."
 #~ msgstr "Plattan %d: %s stöder inte filamentet %s (%s)."

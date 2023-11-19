@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,6 +98,9 @@ msgstr "Geen automatisch support"
 msgid "Support Generated"
 msgstr "Support gegenereerd"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Deze zijde op de printplaat plaatsen"
 
@@ -177,8 +180,14 @@ msgstr "Getekend met filament %1%"
 msgid "Move"
 msgstr "Verplaatsen"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Roteren"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Orientatie optimaliseren"
@@ -189,11 +198,11 @@ msgstr "Toepassen"
 msgid "Scale"
 msgstr "Schalen"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Fout: sluit eerst alle openstaande gereedschap menu's"
-
-msgid "Tool-Lay on Face"
-msgstr "Gereedschap op zijde plaatsen"
 
 msgid "in"
 msgstr "in"
@@ -489,6 +498,15 @@ msgstr "Naad schilderen"
 
 msgid "Remove selection"
 msgstr "Verwijder selectie"
+
+msgid "Entering Seam painting"
+msgstr "Naad schilderen invoeren"
+
+msgid "Leaving Seam painting"
+msgstr "Naad schilderen verlaten"
+
+msgid "Paint-on seam editing"
+msgstr "Paint-on naadbewerking"
 
 msgid "Font"
 msgstr "Lettertype"
@@ -2978,6 +2996,15 @@ msgstr "Printer"
 
 msgid "Print settings"
 msgstr "Print instellingen"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Geschatte duur"
@@ -11994,6 +12021,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Gereedschap op zijde plaatsen"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% het gekozen vulling patroon ondersteund geen 100%% dichtheid."
@@ -13051,9 +13081,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "Voer een zoekterm in"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Naad schilderen invoeren"
-
 #~ msgid "Erase painting"
 #~ msgstr "Getekende delen wissen"
 
@@ -13295,9 +13322,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Lagen: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Naad schilderen verlaten"
-
 #~ msgid "Line type"
 #~ msgstr "Lijn-type"
 
@@ -13351,9 +13375,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1P Algemene instellingen - WLAN in de zijbalk van het hoofdscherm"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Paint-on naadbewerking"
 
 #~ msgid "Part Cooling"
 #~ msgstr "Koeling van de printkop"

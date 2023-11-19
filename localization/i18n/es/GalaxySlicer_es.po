@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -101,6 +101,9 @@ msgstr "No auto soportes"
 msgid "Support Generated"
 msgstr "Soportes Generados"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Tumbar boca abajo"
 
@@ -180,8 +183,14 @@ msgstr "Pintado con: Filamento %1%"
 msgid "Move"
 msgstr "Mover"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Rotar"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Optimizar  orientación"
@@ -192,12 +201,12 @@ msgstr "Aplicar"
 msgid "Scale"
 msgstr "Escalar"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr ""
 "Error: Por favor, cierre primero todos los menús de la barra de herramientas"
-
-msgid "Tool-Lay on Face"
-msgstr "Herramienta-Tumbar Boca Abajo"
 
 msgid "in"
 msgstr "pulg"
@@ -493,6 +502,15 @@ msgstr "Pintar costura"
 
 msgid "Remove selection"
 msgstr "Borrar selección"
+
+msgid "Entering Seam painting"
+msgstr "Entrando en la sección de pintado de costura"
+
+msgid "Leaving Seam painting"
+msgstr "Saliendo de la sección de pintado de la costura"
+
+msgid "Paint-on seam editing"
+msgstr "Edición de costuras pintadas"
 
 msgid "Font"
 msgstr "Fuente"
@@ -3028,6 +3046,15 @@ msgstr "Impresora"
 
 msgid "Print settings"
 msgstr "Configuración de impresión"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Estimación de Tiempo"
@@ -12652,6 +12679,9 @@ msgstr ""
 "extrusor/hotend al imprimir filamento de baja temperatura con una "
 "temperatura de carcasa más alta. Más información sobre esto en la Wiki."
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Herramienta-Tumbar Boca Abajo"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "El patrón de relleno %1% no soporta el 100%% de densidad."
@@ -14433,9 +14463,6 @@ msgstr ""
 #~ msgid "Edit plate setitngs"
 #~ msgstr "Edit plate settings"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Entrando en la sección de pintado de costura"
-
 #~ msgid ""
 #~ "Extrusion compensation calibration is not supported when using Textured "
 #~ "PEI Plate"
@@ -14558,9 +14585,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Capas: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Saliendo de la sección de pintado de la costura"
-
 #~ msgid "Modify"
 #~ msgstr "Modificar"
 
@@ -14580,9 +14604,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Configuración general de P1P: WLAN en la barra lateral de la pantalla "
 #~ "principal"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Edición de costuras pintadas"
 
 #~ msgid "Plate %d: %s does not support filament %s (%s)."
 #~ msgstr "Placa %d: %s no admite el filamento %s (%s)."

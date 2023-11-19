@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 09:46+0100\n"
+"POT-Creation-Date: 2023-11-19 11:28+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -101,6 +101,9 @@ msgstr "No auto support"
 msgid "Support Generated"
 msgstr "Support generated"
 
+msgid "Gizmo-Place on Face"
+msgstr ""
+
 msgid "Lay on face"
 msgstr "Lay on Face"
 
@@ -179,8 +182,14 @@ msgstr "Painted using: Filament %1%"
 msgid "Move"
 msgstr "Move"
 
+msgid "Gizmo-Move"
+msgstr ""
+
 msgid "Rotate"
 msgstr "Rotate"
+
+msgid "Gizmo-Rotate"
+msgstr ""
 
 msgid "Optimize orientation"
 msgstr "Optimize orientation"
@@ -191,11 +200,11 @@ msgstr "Apply"
 msgid "Scale"
 msgstr "Scale"
 
+msgid "Gizmo-Scale"
+msgstr ""
+
 msgid "Error: Please close all toolbar menus first"
 msgstr "Error: Please close all toolbar menus first"
-
-msgid "Tool-Lay on Face"
-msgstr "Tool-Lay on Face"
 
 msgid "in"
 msgstr "in"
@@ -490,6 +499,15 @@ msgstr "Seam painting"
 
 msgid "Remove selection"
 msgstr "Remove selection"
+
+msgid "Entering Seam painting"
+msgstr "Entering seam painting"
+
+msgid "Leaving Seam painting"
+msgstr "Leaving Seam Painting"
+
+msgid "Paint-on seam editing"
+msgstr "Paint-on seam editing"
 
 msgid "Font"
 msgstr "Font"
@@ -2936,6 +2954,15 @@ msgstr "Printer"
 
 msgid "Print settings"
 msgstr "Print settings"
+
+msgid "Custom g-code"
+msgstr ""
+
+msgid "Template"
+msgstr ""
+
+msgid "ToolChange"
+msgstr ""
 
 msgid "Time Estimation"
 msgstr "Time Estimation"
@@ -11821,6 +11848,9 @@ msgid ""
 "temperature. More info about this in the Wiki."
 msgstr ""
 
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Tool-Lay on Face"
+
 #, boost-format
 #~ msgid "%1% infill pattern doesn't support 100%% density."
 #~ msgstr "%1% infill pattern doesn't support 100%% density."
@@ -12815,9 +12845,6 @@ msgstr ""
 #~ msgid "Enter a search term"
 #~ msgstr "Enter a search term"
 
-#~ msgid "Entering Seam painting"
-#~ msgstr "Entering seam painting"
-
 #~ msgid "Erase painting"
 #~ msgstr "Erase painting"
 
@@ -13056,9 +13083,6 @@ msgstr ""
 #~ msgid "Layers: N/A"
 #~ msgstr "Layers: N/A"
 
-#~ msgid "Leaving Seam painting"
-#~ msgstr "Leaving Seam Painting"
-
 #~ msgid "Line type"
 #~ msgstr "Line type"
 
@@ -13112,9 +13136,6 @@ msgstr ""
 
 #~ msgid "P1P General Settings - WLAN in the sidebar of the main screen"
 #~ msgstr "P1P General Settings - WLAN in the sidebar of the main screen"
-
-#~ msgid "Paint-on seam editing"
-#~ msgstr "Paint-on seam editing"
 
 #~ msgid "Part Cooling"
 #~ msgstr "Part Cooling"
