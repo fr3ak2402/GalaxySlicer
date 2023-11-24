@@ -238,12 +238,8 @@ struct GuiCfg
 {
     // Detect invalid config values when change monitor DPI
     double screen_scale;
-    float  main_toolbar_height;
 
     // Zero means it is calculated in init function
-    ImVec2       minimal_window_size                  = ImVec2(0, 0);
-    ImVec2       minimal_window_size_with_advance     = ImVec2(0, 0);
-    ImVec2       minimal_window_size_with_collections = ImVec2(0, 0);
     float        height_of_volume_type_selector       = 0.f;
     float        input_width                          = 0.f;
     float        delete_pos_x                         = 0.f;
@@ -843,28 +839,23 @@ void GLGizmoEmboss::on_render_input_window(float x, float y, float bottom_limit)
 
     // Configuration creation
     double screen_scale = wxDisplay(wxGetApp().plater()).GetScaleFactor();
-    float  main_toolbar_height = m_parent.get_main_toolbar_height();
     if (m_gui_cfg == nullptr ||                   // Exist configuration - first run
-        m_gui_cfg->screen_scale != screen_scale || // change of DPI
-        m_gui_cfg->main_toolbar_height != main_toolbar_height // change size of view port
+        m_gui_cfg->screen_scale != screen_scale // change of DPI
         ) {
         // Create cache for gui offsets
         ::GuiCfg cfg = create_gui_configuration();
         cfg.screen_scale = screen_scale;
-        cfg.main_toolbar_height = main_toolbar_height;
 
         GuiCfg gui_cfg{std::move(cfg)};
         m_gui_cfg = std::make_unique<const GuiCfg>(std::move(gui_cfg));
-        // set position near toolbar
-        m_set_window_offset = ImVec2(-1.f, -1.f);
 
         // change resolution regenerate icons
         init_icons();
         m_style_manager.clear_imgui_font();
     }
 
-    const ImVec2 &min_window_size = get_minimal_window_size();
-    ImGui::PushStyleVar(ImGuiStyleVar_WindowMinSize, min_window_size);
+    // Orca
+    ImGuiWrapper::push_toolbar_style(m_parent.get_scale());
 
     // Draw origin position of text during dragging
     if (m_surface_drag.has_value()) {
@@ -891,41 +882,30 @@ void GLGizmoEmboss::on_render_input_window(float x, float y, float bottom_limit)
     draw_mouse_offset(m_dragging_mouse_offset);
 #endif // SHOW_OFFSET_DURING_DRAGGING
 
-    // check if is set window offset
-    if (m_set_window_offset.has_value()) {
-        if (m_set_window_offset->y < 0)
-            // position near toolbar
-            m_set_window_offset = ImVec2(x, std::min(y, bottom_limit - min_window_size.y));
-        
-        ImGui::SetNextWindowPos(*m_set_window_offset, ImGuiCond_Always);
-        m_set_window_offset.reset();
-    } else if (!m_allow_open_near_volume) {
-        y = std::min(y, bottom_limit - min_window_size.y);
-        // position near toolbar
-        ImVec2 pos(x, y);
-        ImGui::SetNextWindowPos(pos, ImGuiCond_Once);
-    }
+    static float last_y = 0.0f;
+    static float last_h = 0.0f;
 
-    bool is_opened = true;
-    ImGuiWindowFlags flag = ImGuiWindowFlags_NoCollapse;
-    if (ImGui::Begin(get_name().c_str(), &is_opened, flag)) {
-        // Need to pop var before draw window
-        ImGui::PopStyleVar(); // WindowMinSize
-        draw_window();
-    } else {
-        ImGui::PopStyleVar(); // WindowMinSize
+    // adjust window position to avoid overlap the view toolbar
+    const float win_h = ImGui::GetWindowHeight();
+    y = std::min(y, bottom_limit - win_h);
+    GizmoImguiSetNextWIndowPos(x, y, ImGuiCond_Always, 0.0f, 0.0f);
+    if (last_h != win_h || last_y != y) {
+        // ask canvas for another frame to render the window in the correct position
+        m_imgui->set_requires_extra_frame();
+        if (last_h != win_h)
+            last_h = win_h;
+        if (last_y != y)
+            last_y = y;
     }
+    
+    GizmoImguiBegin(get_name(), ImGuiWindowFlags_NoMove | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar);
 
-    // after change volume from object to volume it is necessary to recalculate
-    // minimal windows size because of set type
-    if (m_should_set_minimal_windows_size) {
-        m_should_set_minimal_windows_size = false;
-        ImGui::SetWindowSize(ImVec2(0.f, min_window_size.y), ImGuiCond_Always);
-    }
+    draw_window();
 
-    ImGui::End();
-    if (!is_opened)
-        close();
+    GizmoImguiEnd();
+
+    // Orca
+    ImGuiWrapper::pop_toolbar_style();
 }
 
 void GLGizmoEmboss::on_set_state()
@@ -951,14 +931,6 @@ void GLGizmoEmboss::on_set_state()
         // Immediately after set state On is called function data_changed(), 
         // where one could distiguish undo/redo serialization from opening by letter 'T'
         // set_volume_by_selection();
-
-        // change position of just opened emboss window
-        if (m_allow_open_near_volume) {
-            m_set_window_offset = calc_fine_position(m_parent.get_selection(), get_minimal_window_size(), m_parent.get_canvas_size());
-        } else {            
-            m_set_window_offset = (m_gui_cfg != nullptr) ?
-                ImGuiWrapper::change_window_position(on_get_name().c_str(), false) : ImVec2(-1, -1);
-        }
     }
 }
 
@@ -1236,14 +1208,6 @@ void GLGizmoEmboss::set_volume_by_selection()
     
     if (!is_exact_font)
         create_notification_not_valid_font(tc);
-        
-    // The change of volume could show or hide part with setter on volume type
-    if (m_volume == nullptr || 
-        get_model_volume(m_volume_id, objects) == nullptr ||
-        (m_volume->get_object()->volumes.size() == 1) != 
-        (volume->get_object()->volumes.size() == 1)){
-        m_should_set_minimal_windows_size = true;
-    }
 
     // cancel previous job
     if (m_job_cancel != nullptr) {
@@ -1390,13 +1354,13 @@ void GLGizmoEmboss::draw_window()
 
     if (ImGui::TreeNode(_u8L("Advanced").c_str())) {
         if (!m_is_advanced_edit_style) {
-            set_minimal_window_size(true);
+            m_is_advanced_edit_style = true;
         } else {
             draw_advanced();
         }
         ImGui::TreePop();
-    } else if (m_is_advanced_edit_style) 
-        set_minimal_window_size(false);
+    } else if (m_is_advanced_edit_style)
+        m_is_advanced_edit_style = false;
 
     ImGui::Separator();
 
@@ -1519,10 +1483,7 @@ void GLGizmoEmboss::draw_text_input()
     // flag for extend font ranges if neccessary
     // ranges can't be extend during font is activ(pushed)
     std::string range_text;
-    float  window_height  = ImGui::GetWindowHeight();
-    float  minimal_height = get_minimal_window_size().y;
-    float  extra_height   = window_height - minimal_height;
-    ImVec2 input_size(m_gui_cfg->text_size.x, m_gui_cfg->text_size.y + extra_height);
+    ImVec2 input_size(m_gui_cfg->text_size.x, m_gui_cfg->text_size.y);
     const ImGuiInputTextFlags flags = ImGuiInputTextFlags_AllowTabInput | ImGuiInputTextFlags_AutoSelectAll;
     if (ImGui::InputTextMultiline("##Text", &m_text, input_size, flags)) {
         if (m_style_manager.get_font_prop().per_glyph) {
@@ -2962,37 +2923,6 @@ void GLGizmoEmboss::draw_advanced()
 #endif // ALLOW_DEBUG_MODE
 }
 
-void GLGizmoEmboss::set_minimal_window_size(bool is_advance_edit_style)
-{
-    ImVec2 window_size = ImGui::GetWindowSize();
-    const ImVec2& min_win_size_prev = get_minimal_window_size();
-    //ImVec2 diff(window_size.x - min_win_size_prev.x,
-    //            window_size.y - min_win_size_prev.y);
-    float diff_y = window_size.y - min_win_size_prev.y;
-    m_is_advanced_edit_style = is_advance_edit_style;
-    const ImVec2 &min_win_size = get_minimal_window_size();
-    ImVec2 new_window_size(0.f, min_win_size.y + diff_y);
-    ImGui::SetWindowSize(new_window_size, ImGuiCond_Always);
-    m_set_window_offset = ImGuiWrapper::change_window_position(on_get_name().c_str(), true);
-}
-
-ImVec2 GLGizmoEmboss::get_minimal_window_size() const
-{
-    ImVec2 res;
-    if (!m_is_advanced_edit_style)
-        res = m_gui_cfg->minimal_window_size;
-    else if (!m_style_manager.has_collections())
-        res = m_gui_cfg->minimal_window_size_with_advance;
-    else
-        res = m_gui_cfg->minimal_window_size_with_collections;
-
-    // Can change type of volume
-    if (!m_volume->is_the_only_one_part())
-        res.y += m_gui_cfg->height_of_volume_type_selector;
-
-    return res;
-}
-
 #ifdef ALLOW_ADD_FONT_BY_OS_SELECTOR
 bool GLGizmoEmboss::choose_font_by_wxdialog()
 {
@@ -3670,36 +3600,11 @@ GuiCfg create_gui_configuration()
 
     cfg.lock_offset = cfg.advanced_input_offset - (cfg.icon_width + space);
     // calculate window size
-    float window_title = line_height + 2*style.FramePadding.y + 2 * style.WindowTitleAlign.y;
     float input_height = line_height_with_spacing + 2*style.FramePadding.y;
-    float tree_header  = line_height_with_spacing;
     float separator_height = 2 + style.FramePadding.y;
 
     // "Text is to object" + radio buttons
     cfg.height_of_volume_type_selector = separator_height + line_height_with_spacing + input_height;
-
-    float window_height = 
-        window_title + // window title
-        cfg.text_size.y +  // text field
-        input_height * 4 + // font name + height + depth + style selector 
-        tree_header +      // advance tree
-        separator_height + // presets separator line
-        line_height_with_spacing + // "Presets"
-        2 * style.WindowPadding.y;
-    float window_width = cfg.input_offset + cfg.input_width + 2*style.WindowPadding.x 
-        + 2 * (cfg.icon_width + space);
-    cfg.minimal_window_size = ImVec2(window_width, window_height);
-
-    // 9 = useSurface, charGap, lineGap, bold, italic, surfDist, rotation, keepUp, textFaceToCamera
-    // 4 = 1px for fix each edit image of drag float 
-    float advance_height = input_height * 10 + 9;
-    cfg.minimal_window_size_with_advance =
-        ImVec2(cfg.minimal_window_size.x,
-               cfg.minimal_window_size.y + advance_height);
-
-    cfg.minimal_window_size_with_collections = 
-        ImVec2(cfg.minimal_window_size_with_advance.x,
-            cfg.minimal_window_size_with_advance.y + input_height);
 
     int max_style_image_width = static_cast<int>(std::round(cfg.max_style_name_width/2 - 2 * style.FramePadding.x));
     int max_style_image_height = static_cast<int>(std::round(1.5 * input_height));

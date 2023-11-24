@@ -159,10 +159,6 @@ private:
     template<typename T, typename Draw> bool revertible(const std::string &name, T &value, const T *default_value,
         const std::string &undo_tooltip, float undo_offset, Draw draw) const;
 
-    bool m_should_set_minimal_windows_size = false;
-    void set_minimal_window_size(bool is_advance_edit_style);
-    ImVec2 get_minimal_window_size() const;
-
     // process mouse event
     bool on_mouse_for_rotation(const wxMouseEvent &mouse_event);
     bool on_mouse_for_translate(const wxMouseEvent &mouse_event);
@@ -179,12 +175,6 @@ private:
 
     // Is open tree with advanced options
     bool m_is_advanced_edit_style = false;
-
-    // when true window will appear near to text volume when open
-    // When false it opens on last position
-    bool m_allow_open_near_volume = false;
-    // setted only when wanted to use - not all the time
-    std::optional<ImVec2> m_set_window_offset;
 
     // Keep information about stored styles and loaded actual style to compare with
     Emboss::StyleManager m_style_manager;
