@@ -600,7 +600,12 @@ bool GLGizmosManager::gizmos_toolbar_on_mouse(const wxMouseEvent &mouse_event) {
         // mouse is above toolbar
         if (mouse_event.LeftDown() || mouse_event.LeftDClick()) {
             mc.left = true;
-            open_gizmo(gizmo);
+            if (gizmo == Emboss) {
+                GLGizmoBase *gizmo_emboss = m_gizmos[Emboss].get();
+                dynamic_cast<GLGizmoEmboss *>(gizmo_emboss)->on_shortcut_key();
+            } else {
+                open_gizmo(gizmo);
+            }
             return true;
         }
         else if (mouse_event.RightDown()) {

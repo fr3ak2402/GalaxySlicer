@@ -79,8 +79,6 @@ protected:
     void on_register_raycasters_for_picking() override;
     void on_unregister_raycasters_for_picking() override;
     void on_render_input_window(float x, float y, float bottom_limit) override;
-    bool on_is_selectable() const override { return false; }
-    bool on_is_activable() const override { return true; };
     void on_set_state() override;
     void data_changed(bool is_serializing) override; // selection changed
     void on_set_hover_id() override{ m_rotate_gizmo.set_hover_id(m_hover_id); }

@@ -1845,6 +1845,10 @@ void ModelObject::split(ModelObjectPtrs* new_objects)
         if (volume->type() != ModelVolumeType::MODEL_PART)
             continue;
 
+        // splited volume should not be text object 
+        if (volume->text_configuration.has_value())
+            volume->text_configuration.reset();
+
         if (!is_multi_volume_object) {
             //BBS: not multi volume object, then split mesh.
             std::vector<TriangleMesh> volume_meshes = volume->mesh().split();
@@ -2564,6 +2568,10 @@ size_t ModelVolume::split(unsigned int max_extruders)
     std::vector<TriangleMesh> meshes = this->mesh().split();
     if (meshes.size() <= 1)
         return 1;
+
+    // splited volume should not be text object
+    if (text_configuration.has_value())
+        text_configuration.reset();
 
     size_t idx = 0;
     size_t ivolume = std::find(this->object->volumes.begin(), this->object->volumes.end(), this) - this->object->volumes.begin();

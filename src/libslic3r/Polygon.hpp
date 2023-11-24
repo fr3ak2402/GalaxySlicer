@@ -260,6 +260,18 @@ inline Polylines to_polylines(Polygons &&polys)
     return polylines;
 }
 
+// close polyline to polygon (connect first and last point in polyline)
+inline Polygons to_polygons(const Polylines &polylines)
+{
+    Polygons out;
+    out.reserve(polylines.size());
+    for (const Polyline &polyline : polylines) {
+        if (polyline.size())
+        out.emplace_back(polyline.points);
+    }
+    return out;
+}
+
 inline Polygons to_polygons(const VecOfPoints &paths)
 {
     Polygons out;
