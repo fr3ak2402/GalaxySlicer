@@ -85,8 +85,8 @@ public:
         MeshBoolean,
         FdmSupports,
         Seam,
-        Emboss,
-        Svg,
+        // BBS
+        Text,
         MmuSegmentation,
         Measure,
         Simplify,

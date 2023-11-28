@@ -1,7 +1,3 @@
-///|/ Copyright (c) Prusa Research 2020 - 2023 Tomáš Mészáros @tamasmeszaros
-///|/
-///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
-///|/
 #include "FillBedJob.hpp"
 
 #include "libslic3r/Model.hpp"
@@ -202,12 +198,8 @@ void FillBedJob::prepare()
             p.translation(X) -= p.bed_idx * stride;*/
 }
 
-void FillBedJob::process(Ctl &ctl)
+void FillBedJob::process()
 {
-    auto statustxt = _u8L("Filling bed");
-    ctl.call_on_main_thread([this] { prepare(); }).wait();
-    ctl.update_status(0, statustxt);
-
     if (m_object_idx == -1 || m_selected.empty()) return;
 
     update_arrange_params(params, m_plater->config(), m_selected);
@@ -225,13 +217,13 @@ void FillBedJob::process(Ctl &ctl)
     update_unselected_items_inflation(m_unselected, m_plater->config(), params);
 
     bool do_stop = false;
-    params.stopcondition = [&ctl, &do_stop]() {
-        return ctl.was_canceled() || do_stop;
+    params.stopcondition = [this, &do_stop]() {
+        return was_canceled() || do_stop;
     };
 
-    params.progressind = [this, &ctl, &statustxt](unsigned st,std::string str="") {
+    params.progressind = [this](unsigned st,std::string str="") {
          if (st > 0)
-             ctl.update_status(st * 100 / status_range(), statustxt);
+             update_status(st, _L("Filling bed " + str));
     };
 
     params.on_packed = [&do_stop] (const ArrangePolygon &ap) {
@@ -243,18 +235,15 @@ void FillBedJob::process(Ctl &ctl)
     arrangement::arrange(m_selected, m_unselected, m_bedpts, params);
 
     // finalize just here.
-    ctl.update_status(100, ctl.was_canceled() ?
-                                       _u8L("Bed filling canceled.") :
-                                       _u8L("Bed filling done."));
+    update_status(m_status_range, was_canceled() ?
+                                       _(L("Bed filling canceled.")) :
+                                       _(L("Bed filling done.")));
 }
 
-FillBedJob::FillBedJob() : m_plater{wxGetApp().plater()} {}
-
-void FillBedJob::finalize(bool canceled, std::exception_ptr &eptr)
+void FillBedJob::finalize()
 {
     // Ignore the arrange result if aborted.
-    if (canceled || eptr)
-        return;
+    if (was_canceled()) return;
 
     if (m_object_idx == -1) return;
 
@@ -314,6 +303,8 @@ void FillBedJob::finalize(bool canceled, std::exception_ptr &eptr)
 
         m_plater->update();
     }
+
+    Job::finalize();
 }
 
 }} // namespace Slic3r::GUI

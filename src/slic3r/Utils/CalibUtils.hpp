@@ -2,7 +2,6 @@
 #include "libslic3r/calib.hpp"
 #include "../GUI/DeviceManager.hpp"
 #include "../GUI/Jobs/PrintJob.hpp"
-#include "slic3r/GUI/Jobs/BoostThreadWorker.hpp"
 
 namespace Slic3r {
 
@@ -27,7 +26,7 @@ class CalibUtils
 {
 public:
     CalibUtils(){};
-    static std::unique_ptr<BoostThreadWorker> print_worker;
+    static std::shared_ptr<PrintJob> print_job;
 
     static CalibMode get_calib_mode_by_name(const std::string name, int &cali_stage);
 

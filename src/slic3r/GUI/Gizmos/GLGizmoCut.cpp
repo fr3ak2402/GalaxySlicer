@@ -1769,7 +1769,7 @@ BoundingBoxf3 GLGizmoCut3D::transformed_bounding_box(const Vec3d& plane_center, 
         // respect just to the solid parts for FFF and ignore pad and supports for SLA
         if (!volume->is_modifier && !volume->is_sla_pad() && !volume->is_sla_support()) {
 
-            const auto instance_matrix = volume->get_instance_transformation().get_matrix_no_offset();
+            const auto instance_matrix = volume->get_instance_transformation().get_matrix(true);
             auto volume_trafo = instance_matrix * volume->get_volume_transformation().get_matrix();
             ret.merge(volume->transformed_convex_hull_bounding_box(cut_matrix * volume_trafo));
         }
@@ -2948,7 +2948,7 @@ void GLGizmoCut3D::show_tooltip_information(float x, float y)
     ImTextureID normal_id = m_parent.get_gizmos_manager().get_icon_texture_id(GLGizmosManager::MENU_ICON_NAME::IC_TOOLBAR_TOOLTIP);
     ImTextureID hover_id  = m_parent.get_gizmos_manager().get_icon_texture_id(GLGizmosManager::MENU_ICON_NAME::IC_TOOLBAR_TOOLTIP_HOVER);
 
-    caption_max += m_imgui->calc_text_size(std::string_view{": "}).x + 35.f;
+    caption_max += m_imgui->calc_text_size(": ").x + 35.f;
 
     float  font_size   = ImGui::GetFontSize();
     ImVec2 button_size = ImVec2(font_size * 1.8, font_size * 1.3);

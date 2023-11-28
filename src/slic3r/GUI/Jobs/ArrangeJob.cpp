@@ -1,7 +1,3 @@
-///|/ Copyright (c) Prusa Research 2020 - 2023 Tomáš Mészáros @tamasmeszaros, Enrico Turri @enricoturri1966, Vojtěch Bubník @bubnikv, David Kocík @kocikdav, Filip Sykala @Jony01, Lukáš Matěna @lukasmatena
-///|/
-///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
-///|/
 #include "ArrangeJob.hpp"
 
 #include "libslic3r/BuildVolume.hpp"
@@ -480,12 +476,21 @@ void ArrangeJob::check_unprintable()
     }
 }
 
-void ArrangeJob::process(Ctl &ctl)
+void ArrangeJob::on_exception(const std::exception_ptr &eptr)
 {
-    static const auto arrangestr = _u8L("Arranging");
-    ctl.update_status(0, arrangestr);
-    ctl.call_on_main_thread([this]{ prepare(); }).wait();;
+    try {
+        if (eptr)
+            std::rethrow_exception(eptr);
+    } catch (libnest2d::GeometryException &) {
+        show_error(m_plater, _(L("Arrange failed. "
+                                 "Found some exceptions when processing object geometries.")));
+    } catch (std::exception &) {
+        PlaterJob::on_exception(eptr);
+    }
+}
 
+void ArrangeJob::process()
+{
     auto & partplate_list = m_plater->get_partplate_list();
 
     const Slic3r::DynamicPrintConfig& global_config = wxGetApp().preset_bundle->full_config();
@@ -505,10 +510,10 @@ void ArrangeJob::process(Ctl &ctl)
 
     BOOST_LOG_TRIVIAL(debug) << "arrange bedpts:" << bedpts[0].transpose() << ", " << bedpts[1].transpose() << ", " << bedpts[2].transpose() << ", " << bedpts[3].transpose();
 
-    params.stopcondition = [&ctl]() { return ctl.was_canceled(); };
+    params.stopcondition = [this]() { return was_canceled(); };
 
-    params.progressind = [this, &ctl](unsigned num_finished, std::string str = "") {
-        ctl.update_status(num_finished * 100 / status_range(), _u8L("Arranging") + str);
+    params.progressind = [this](unsigned num_finished, std::string str = "") {
+        update_status(num_finished, _L("Arranging") + " "+ wxString::FromUTF8(str));
     };
 
     {
@@ -550,12 +555,10 @@ void ArrangeJob::process(Ctl &ctl)
     }
 
     // finalize just here.
-    ctl.update_status(100,
-        ctl.was_canceled() ? _u8L("Arranging canceled.") :
-        we_have_unpackable_items ? _u8L("Arranging is done but there are unpacked items. Reduce spacing and try again.") : _u8L("Arranging done."));
+    update_status(status_range(),
+        was_canceled() ? _(L("Arranging canceled.")) :
+        we_have_unpackable_items ? _(L("Arranging is done but there are unpacked items. Reduce spacing and try again.")) : _(L("Arranging done.")));
 }
-
-ArrangeJob::ArrangeJob() : m_plater{wxGetApp().plater()} { }
 
 static std::string concat_strings(const std::set<std::string> &strings,
                                   const std::string &delim = "\n")
@@ -567,20 +570,9 @@ static std::string concat_strings(const std::set<std::string> &strings,
         });
 }
 
-void ArrangeJob::finalize(bool canceled, std::exception_ptr &eptr) {
-    try {
-        if (eptr)
-            std::rethrow_exception(eptr);
-    } catch (libnest2d::GeometryException &) {
-        show_error(m_plater, _(L("Arrange failed. "
-                                 "Found some exceptions when processing object geometries.")));
-        eptr = nullptr;
-    } catch (...) {
-        eptr = std::current_exception();
-    }
-
-    if (canceled || eptr)
-        return;
+void ArrangeJob::finalize() {
+    // Ignore the arrange result if aborted.
+    if (was_canceled()) return;
 
     // Unprintable items go to the last virtual bed
     int beds = 0;
@@ -689,6 +681,7 @@ void ArrangeJob::finalize(bool canceled, std::exception_ptr &eptr) {
 
     m_plater->update();
 
+    Job::finalize();
     m_plater->m_arrange_running.store(false);
 }
 

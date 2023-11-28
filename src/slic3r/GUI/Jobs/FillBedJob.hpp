@@ -1,7 +1,3 @@
-///|/ Copyright (c) Prusa Research 2020 - 2023 Tomáš Mészáros @tamasmeszaros, David Kocík @kocikdav
-///|/
-///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
-///|/
 #ifndef FILLBEDJOB_HPP
 #define FILLBEDJOB_HPP
 
@@ -11,7 +7,7 @@ namespace Slic3r { namespace GUI {
 
 class Plater;
 
-class FillBedJob : public Job
+class FillBedJob : public PlaterJob
 {
     int     m_object_idx = -1;
 
@@ -28,21 +24,23 @@ class FillBedJob : public Job
     arrangement::ArrangeParams params;
 
     int m_status_range = 0;
-    Plater *m_plater;
+
+protected:
+
+    void prepare() override;
+    void process() override;
 
 public:
+    FillBedJob(std::shared_ptr<ProgressIndicator> pri, Plater *plater)
+        : PlaterJob{std::move(pri), plater}
+    {}
 
-    void prepare();
-    void process(Ctl &ctl) override;
-
-    FillBedJob();
-
-    int status_range() const
+    int status_range() const override
     {
         return m_status_range;
     }
 
-    void finalize(bool canceled, std::exception_ptr &e) override;
+    void finalize() override;
 };
 
 }} // namespace Slic3r::GUI

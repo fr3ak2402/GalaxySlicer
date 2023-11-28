@@ -1,7 +1,3 @@
-///|/ Copyright (c) Prusa Research 2018 - 2023 Oleksandra Iushchenko @YuSanka, Lukáš Matěna @lukasmatena, Lukáš Hejl @hejllukas, Enrico Turri @enricoturri1966, David Kocík @kocikdav, Vojtěch Bubník @bubnikv, Tomáš Mészáros @tamasmeszaros, Vojtěch Král @vojtechkral
-///|/
-///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
-///|/
 #ifndef slic3r_GUI_ObjectDataViewModel_hpp_
 #define slic3r_GUI_ObjectDataViewModel_hpp_
 
@@ -101,8 +97,6 @@ class ObjectDataViewModelNode
 
     std::string                     m_action_icon_name = "";
     ModelVolumeType                 m_volume_type = ModelVolumeType(-1);
-    bool                            m_is_text_volume{ false };
-    bool                            m_is_svg_volume{false};
     InfoItemType                    m_info_item_type {InfoItemType::Undef};
     bool                            m_action_enable = false; // can undo all settings
     // BBS
@@ -133,10 +127,10 @@ public:
     ObjectDataViewModelNode(ObjectDataViewModelNode* parent,
                             const wxString& sub_obj_name,
                             Slic3r::ModelVolumeType type,
-                            const bool is_text_volume,
-                            const bool is_svg_volume,
+                            const wxBitmap& bmp,
                             const wxString& extruder,
-                            const int idx = -1 );
+                            const int idx = -1,
+                            const std::string& warning_icon_name = std::string());
 
     ObjectDataViewModelNode(ObjectDataViewModelNode* parent,
                             const t_layer_height_range& layer_range,
@@ -231,7 +225,7 @@ public:
     void            SetVolumeType(ModelVolumeType type) { m_volume_type = type; }
     void            SetBitmap(const wxBitmap &icon) { m_bmp = icon; }
     void            SetExtruder(const wxString &extruder) { m_extruder = extruder; }
-    void            SetWarningIconName(const std::string& warning_icon_name) { m_warning_icon_name = warning_icon_name; }
+    void            SetWarningBitmap(const wxBitmap& icon, const std::string& warning_icon_name) { m_bmp = icon; m_warning_icon_name = warning_icon_name; }
     void            SetLock(bool has_lock) { m_has_lock = has_lock; }
     const wxBitmap& GetBitmap() const               { return m_bmp; }
     const wxString& GetName() const                 { return m_name; }
@@ -299,8 +293,6 @@ public:
     void        update_settings_digest_bitmaps();
     bool        update_settings_digest(const std::vector<std::string>& categories);
     int         volume_type() const { return int(m_volume_type); }
-    bool        is_text_volume() const { return m_is_text_volume; }
-    bool        is_svg_volume() const { return m_is_svg_volume; }
     void        msw_rescale();
 
 #ifndef NDEBUG
@@ -328,8 +320,6 @@ class ObjectDataViewModel :public wxDataViewModel
     std::vector<ObjectDataViewModelNode*>       m_plates;
     std::vector<ObjectDataViewModelNode*>       m_objects;
     std::vector<wxBitmap>                       m_volume_bmps;
-    std::vector<wxBitmap>                       m_text_volume_bmps;
-    std::vector<wxBitmap>                       m_svg_volume_bmps;
     std::map<InfoItemType, wxBitmap>            m_info_bmps;
     wxBitmap                                    m_empty_bmp;
     wxBitmap                                    m_warning_bmp;
@@ -350,8 +340,6 @@ public:
     wxDataViewItem AddVolumeChild(  const wxDataViewItem &parent_item,
                                     const wxString &name,
                                     const Slic3r::ModelVolumeType volume_type,
-                                    const bool is_text_volume,
-                                    const bool is_svg_volume,
                                     const std::string& warning_icon_name = std::string(),
                                     const int extruder = 0,
                                     const bool create_frst_child = true);
@@ -477,6 +465,8 @@ public:
     // Rescale bitmaps for existing Items
     void    Rescale();
 
+    wxBitmap    GetVolumeIcon(const Slic3r::ModelVolumeType vol_type,
+                              const std::string& warning_icon_name = std::string());
     void        AddWarningIcon(const wxDataViewItem& item, const std::string& warning_name);
     void        DeleteWarningIcon(const wxDataViewItem& item, const bool unmark_object = false);
     void        UpdateWarningIcon(const wxDataViewItem& item, const std::string& warning_name);
@@ -498,11 +488,12 @@ private:
     wxDataViewItem  AddInstanceRoot(const wxDataViewItem& parent_item);
     void            AddAllChildren(const wxDataViewItem& parent);
 
+    wxBitmap&       GetWarningBitmap(const std::string& warning_icon_name);
     void            ReparentObject(ObjectDataViewModelNode* plate, ObjectDataViewModelNode* object);
     wxDataViewItem  AddOutsidePlate(bool refresh = true);
 
     void UpdateBitmapForNode(ObjectDataViewModelNode *node);
-    void UpdateBitmapForNode(ObjectDataViewModelNode* node, const std::string& warning_icon_name, bool has_lock);
+    void UpdateBitmapForNode(ObjectDataViewModelNode *node, bool has_lock);
 };
 
 

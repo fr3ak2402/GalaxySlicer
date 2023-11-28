@@ -91,7 +91,7 @@ bool GLGizmoScale3D::on_mouse(const wxMouseEvent &mouse_event)
 
             Selection& selection = m_parent.get_selection();
             selection.scale(m_scale, transformation_type);
-            if (mouse_event.CmdDown()) selection.translate(m_offset, transformation_type);
+            if (mouse_event.CmdDown()) selection.translate(m_offset, true);
         }
     }
     return use_grabbers(mouse_event);

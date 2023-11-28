@@ -1,7 +1,3 @@
-///|/ Copyright (c) Prusa Research 2021 Tomáš Mészáros @tamasmeszaros
-///|/
-///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
-///|/
 #ifndef NOTIFICATIONPROGRESSINDICATOR_HPP
 #define NOTIFICATIONPROGRESSINDICATOR_HPP
 
@@ -13,7 +9,6 @@ class NotificationManager;
 
 class NotificationProgressIndicator: public ProgressIndicator {
     NotificationManager *m_nm = nullptr;
-    CancelFn m_cancelfn;
 
 public:
 

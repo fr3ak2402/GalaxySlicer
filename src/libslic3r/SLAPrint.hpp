@@ -6,7 +6,6 @@
 #include "PrintBase.hpp"
 #include "SLA/RasterBase.hpp"
 #include "SLA/SupportTree.hpp"
-#include "Execution/ExecutionTBB.hpp"
 #include "Point.hpp"
 #include "MTUtils.hpp"
 #include "Zipper.hpp"
