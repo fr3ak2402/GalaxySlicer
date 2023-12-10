@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 23:39+0100\n"
+"POT-Creation-Date: 2023-12-10 23:44+0100\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -4697,31 +4697,6 @@ msgstr ""
 "3mf, eski GalaxySlicer tarafından oluşturulmuştur, yalnızca geometri "
 "verilerini yükleyin."
 
-#, c-format, boost-format
-msgid "This slicer file version %s is newer than %s's version:"
-msgstr ""
-
-msgid ""
-"Would you like to update your Bambu Studio software to enable all "
-"functionality in this slicer file?\n"
-msgstr ""
-
-msgid "Newer 3mf version"
-msgstr "Daha yeni 3mf sürümü"
-
-msgid ""
-"you can always update Bambu Studio at your convenience. The slicer file will "
-"now be loaded without full functionality."
-msgstr ""
-
-#, c-format, boost-format
-msgid ""
-"This slicer file version %s is newer than %s's version.\n"
-"\n"
-"Would you like to update your Bambu Studio software to enable all "
-"functionality in this slicer file?"
-msgstr ""
-
 msgid "Invalid values found in the 3mf:"
 msgstr "3mf'de geçersiz değerler bulundu:"
 
@@ -8294,6 +8269,15 @@ msgstr ""
 "köprü kurabilir ancak daha kötü görünebilir. Devre dışı bırakıldığında "
 "köprüler daha iyi görünür ancak yalnızca daha kısa köprü mesafeleri için "
 "güvenilirdir."
+
+msgid "Thick internal bridges"
+msgstr ""
+
+msgid ""
+"If enabled, thick internal bridges will be used. It's usually recommended to "
+"have this feature turned on. However, consider turning it off if you are "
+"using large nozzles."
+msgstr ""
 
 msgid "Max bridge length"
 msgstr "Maksimum köprü uzunluğu"
@@ -13136,6 +13120,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Newer 3mf version"
+#~ msgstr "Daha yeni 3mf sürümü"
 
 #~ msgid "Ctrl + Shift + Enter"
 #~ msgstr "Ctrl + Üst Karakter + Enter"

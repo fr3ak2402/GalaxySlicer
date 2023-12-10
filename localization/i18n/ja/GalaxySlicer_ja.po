@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 23:39+0100\n"
+"POT-Creation-Date: 2023-12-10 23:44+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4540,31 +4540,6 @@ msgstr ""
 "3mfは古いバージョンのGalaxySlicerで作成されています、ジオメトリーデータのみ読"
 "込みます。"
 
-#, c-format, boost-format
-msgid "This slicer file version %s is newer than %s's version:"
-msgstr ""
-
-msgid ""
-"Would you like to update your Bambu Studio software to enable all "
-"functionality in this slicer file?\n"
-msgstr ""
-
-msgid "Newer 3mf version"
-msgstr "新3mfバージョン"
-
-msgid ""
-"you can always update Bambu Studio at your convenience. The slicer file will "
-"now be loaded without full functionality."
-msgstr ""
-
-#, c-format, boost-format
-msgid ""
-"This slicer file version %s is newer than %s's version.\n"
-"\n"
-"Would you like to update your Bambu Studio software to enable all "
-"functionality in this slicer file?"
-msgstr ""
-
 msgid "Invalid values found in the 3mf:"
 msgstr "Invalid values found in the 3mf:"
 
@@ -7959,6 +7934,15 @@ msgid ""
 msgstr ""
 "有効になる場合、より長いブリッジを造形できますが、仕上がりが劣る可能性があり"
 "ます。"
+
+msgid "Thick internal bridges"
+msgstr ""
+
+msgid ""
+"If enabled, thick internal bridges will be used. It's usually recommended to "
+"have this feature turned on. However, consider turning it off if you are "
+"using large nozzles."
+msgstr ""
 
 msgid "Max bridge length"
 msgstr "最大ブリッジ長さ"
@@ -12295,6 +12279,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Newer 3mf version"
+#~ msgstr "新3mfバージョン"
 
 #~ msgid "Ctrl + Shift + Enter"
 #~ msgstr "Ctrl + Shift + Enter"
