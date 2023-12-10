@@ -355,7 +355,7 @@ public:
         // See https://github.com/wxWidgets/wxWidgets/blob/master/src/msw/font.cpp
         // void wxNativeFontInfo::SetFractionalPointSize(float pointSizeNew)
         wxNativeFontInfo nfi= *font.GetNativeFontInfo();
-        float pointSizeNew  = scale * font.GetPointSize();
+        float pointSizeNew  = wxDisplay(this).GetScaleFactor() * scale * font.GetPointSize();
         nfi.lf.lfHeight     = nfi.GetLogFontHeightAtPPI(pointSizeNew, get_dpi_for_window(this));
         nfi.pointSize       = pointSizeNew;
         font = wxFont(nfi);
@@ -395,7 +395,7 @@ private:
             version = _L("V") + " " + GUI_App::format_display_version();
 
             // credits infornation
-            credits = _L("Based on OrcaSlicer, BambuStudio and PrusaSlicer");
+            credits = _L("Based on GalaxySlicer, BambuStudio and PrusaSlicer");
 
             title_font = Label::Head_16;
             version_font = Label::Body_16;
