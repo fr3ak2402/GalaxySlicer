@@ -8136,7 +8136,7 @@ msgstr ""
 "Einstellung kann jedoch je nach Druckanforderungen und Objekt variieren und "
 "angepasst werden."
 
-msgid "Bridge flow"
+msgid "Bridge flow ratio"
 msgstr "Brücken Flussrate"
 
 msgid ""
@@ -8595,7 +8595,7 @@ msgid "Internal solid infill pattern"
 msgstr "Muster für das interne feste Füllmuster"
 
 msgid ""
-"Line pattern of internal solid infill. if the detect nattow internal solid "
+"Line pattern of internal solid infill. if the detect narrow internal solid "
 "infill be enabled, the concentric pattern will be used for the small area."
 msgstr ""
 "Linienmuster des internen festen Füllmusters. Wenn die Erkennung von "
@@ -10127,13 +10127,13 @@ msgstr "Format des Dateinamens"
 msgid "User can self-define the project file name when export"
 msgstr "Der Benutzer kann den Projektdateinamen beim Export selbst bestimmen"
 
-msgid "Make overhang printable"
+msgid "Make overhangs printable"
 msgstr "Überhang druckbar machen"
 
 msgid "Modify the geometry to print overhangs without support material."
 msgstr "Die Geometrie anpassen, um Überhänge ohne Stützmaterial zu drucken."
 
-msgid "Make overhang printable maximum angle"
+msgid "Make overhangs printable - Maximum angle"
 msgstr "Maximaler Winkel für druckbare Überhänge"
 
 msgid ""
@@ -10146,7 +10146,7 @@ msgstr ""
 "jeden Überhang erlauben, während 0 alle Überhänge durch konisches Material "
 "ersetzt."
 
-msgid "Make overhang printable hole area"
+msgid "Make overhangs printable - Hole area"
 msgstr "Flächenbereich für druckbare Überhänge von Löchern"
 
 msgid ""

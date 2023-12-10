@@ -7835,7 +7835,7 @@ msgstr ""
 "Decrease this value slightly (for example 0.9) to reduce the amount of "
 "material extruded for bridges to avoid sagging."
 
-msgid "Internal bridge flow"
+msgid "Internal bridge flow ratio"
 msgstr ""
 
 msgid ""
@@ -8249,7 +8249,7 @@ msgid "Internal solid infill pattern"
 msgstr ""
 
 msgid ""
-"Line pattern of internal solid infill. if the detect nattow internal solid "
+"Line pattern of internal solid infill. if the detect narrow internal solid "
 "infill be enabled, the concentric pattern will be used for the small area."
 msgstr ""
 
@@ -8282,19 +8282,19 @@ msgid ""
 "This sets the threshold for small perimeter length. Default threshold is 0mm"
 msgstr ""
 
-msgid "Order of walls"
+msgid "Walls printing order"
 msgstr ""
 
 msgid "Print sequence of inner wall and outer wall. "
 msgstr ""
 
-msgid "inner/outer"
+msgid "Inner/Outer"
 msgstr ""
 
-msgid "outer/inner"
+msgid "Outer/Inner"
 msgstr ""
 
-msgid "inner wall/outer wall/inner wall"
+msgid "Inner/Outer/Inner"
 msgstr ""
 
 msgid "Print infill first"
