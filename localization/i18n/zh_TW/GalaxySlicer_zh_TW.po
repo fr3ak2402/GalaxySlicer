@@ -9286,14 +9286,14 @@ msgstr "檔案名格式"
 msgid "User can self-define the project file name when export"
 msgstr "用戶可以自訂匯出項目文件的名稱。"
 
-msgid "Make overhang printable"
-msgstr "懸垂可列印化"
+msgid "Make overhangs printable"
+msgstr ""
 
 msgid "Modify the geometry to print overhangs without support material."
 msgstr "修改幾何形狀使得懸垂部分無需支撐材料或者搭橋列印。"
 
-msgid "Make overhang printable maximum angle"
-msgstr "懸垂可列印化的最大角度"
+msgid "Make overhangs printable - Maximum angle"
+msgstr ""
 
 msgid ""
 "Maximum angle of overhangs to allow after making more steep overhangs "
@@ -12365,6 +12365,12 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Make overhang printable"
+#~ msgstr "懸垂可列印化"
+
+#~ msgid "Make overhang printable maximum angle"
+#~ msgstr "懸垂可列印化的最大角度"
 
 #~ msgid "Newer 3mf version"
 #~ msgstr "較新的 3mf 版本"

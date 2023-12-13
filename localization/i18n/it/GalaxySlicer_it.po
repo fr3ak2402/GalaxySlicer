@@ -7825,8 +7825,8 @@ msgstr ""
 msgid "Density of external bridges. 100% means solid bridge. Default is 100%."
 msgstr ""
 
-msgid "Bridge flow"
-msgstr "Bridge flow"
+msgid "Bridge flow ratio"
+msgstr ""
 
 msgid ""
 "Decrease this value slightly(for example 0.9) to reduce the amount of "
@@ -9554,13 +9554,13 @@ msgstr "Filename format"
 msgid "User can self-define the project file name when export"
 msgstr "Users can decide project file names when exporting."
 
-msgid "Make overhang printable"
+msgid "Make overhangs printable"
 msgstr ""
 
 msgid "Modify the geometry to print overhangs without support material."
 msgstr ""
 
-msgid "Make overhang printable maximum angle"
+msgid "Make overhangs printable - Maximum angle"
 msgstr ""
 
 msgid ""
@@ -9569,7 +9569,7 @@ msgid ""
 "0 will replace all overhangs with conical material."
 msgstr ""
 
-msgid "Make overhang printable hole area"
+msgid "Make overhangs printable - Hole area"
 msgstr ""
 
 msgid ""
@@ -12649,6 +12649,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Bridge flow"
+#~ msgstr "Bridge flow"
 
 #~ msgid "Newer 3mf version"
 #~ msgstr "Newer 3mf version"

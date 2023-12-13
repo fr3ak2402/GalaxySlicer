@@ -9866,8 +9866,8 @@ msgstr ""
 "převisů. 90° nezmění model vůbec a umožní jakýkoli převis, zatímco 0 nahradí "
 "všechny převisy kuželovým materiálem."
 
-msgid "Make overhang printable hole area"
-msgstr "Oblast otvoru pro tisk převisu bez podpěr."
+msgid "Make overhangs printable - Hole area"
+msgstr ""
 
 msgid ""
 "Maximum area of a hole in the base of the model before it's filled by "
@@ -13162,6 +13162,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Make overhang printable hole area"
+#~ msgstr "Oblast otvoru pro tisk převisu bez podpěr."
 
 #~ msgid "Newer 3mf version"
 #~ msgstr "Novější verze 3mf"
