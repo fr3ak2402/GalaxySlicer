@@ -368,7 +368,8 @@ static const t_config_enum_values  s_keys_map_GCodeThumbnailsFormat = {
     { "PNG", int(GCodeThumbnailsFormat::PNG) },
     { "JPG", int(GCodeThumbnailsFormat::JPG) },
     { "QOI", int(GCodeThumbnailsFormat::QOI) },
-    { "BTT_TFT", int(GCodeThumbnailsFormat::BTT_TFT) }
+    { "BTT_TFT", int(GCodeThumbnailsFormat::BTT_TFT) },
+    { "ColPic", int(GCodeThumbnailsFormat::ColPic) }
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(GCodeThumbnailsFormat)
 
@@ -1159,9 +1160,7 @@ void PrintConfigDef::init_fff_params()
     def->set_default_value(new ConfigOptionBools{false});
 
     def = this->add("during_print_exhaust_fan_speed", coInts);
-    //def->label   = L("Fan speed");
-    //GalaxySlicer
-    def->label   = L("During print");
+    def->label   = L("Fan speed");
     def->tooltip=L("Speed of exhuast fan during printing.This speed will overwrite the speed in filament custom gcode");
     def->sidetext = L("%");
     def->min=0;
@@ -1170,9 +1169,7 @@ void PrintConfigDef::init_fff_params()
     def->set_default_value(new ConfigOptionInts{60});
 
     def = this->add("complete_print_exhaust_fan_speed", coInts);
-    //def->label   = L("Fan speed");
-    //GalaxySlicer
-    def->label   = L("Complete print");
+    def->label = L("Fan speed");
     def->sidetext = L("%");
     def->tooltip=L("Speed of exhuast fan after printing completes");
     def->min=0;
@@ -2262,12 +2259,6 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionBool(false));
 
-	//GalaxySlicer: Exhaus fan control
-    def = this->add("exhaust_fan", coBool);
-    def->label = L("Exhaust cooling fan");
-    def->tooltip = L("Enable this option if machine has exhaust cooling fan. G-code command: M106 P3 S(0-255).");
-    def->mode = comAdvanced;
-    def->set_default_value(new ConfigOptionBool(false));
 
     def = this->add("fan_speedup_time", coFloat);
 	// Label is set in Tab.cpp in the Line object.
@@ -2711,7 +2702,7 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionFloats{ 0., 0. });
 
-    def = this->add("fan_max_speed", coInts);
+    def = this->add("fan_max_speed", coFloats);
     def->label = L("Fan speed");
     def->tooltip = L("Part cooling fan speed may be increased when auto cooling is enabled. "
                      "This is the maximum speed limitation of part cooling fan");
@@ -2719,7 +2710,7 @@ def = this->add("filament_loading_speed", coFloats);
     def->min = 0;
     def->max = 100;
     def->mode = comSimple;
-    def->set_default_value(new ConfigOptionInts { 100 });
+    def->set_default_value(new ConfigOptionFloats { 100 });
 
     def = this->add("max_layer_height", coFloats);
     def->label = L("Max");
@@ -2762,14 +2753,14 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode = comAdvanced;
     def->set_default_value(new ConfigOptionInt(3));
 
-    def = this->add("fan_min_speed", coInts);
+    def = this->add("fan_min_speed", coFloats);
     def->label = L("Fan speed");
     def->tooltip = L("Minimum speed for part cooling fan");
     def->sidetext = L("%");
     def->min = 0;
     def->max = 100;
     def->mode = comSimple;
-    def->set_default_value(new ConfigOptionInts { 20 });
+    def->set_default_value(new ConfigOptionFloats { 20 });
 
     def = this->add("additional_cooling_fan_speed", coInts);
     def->label = L("Fan speed");
@@ -4400,7 +4391,13 @@ def = this->add("filament_loading_speed", coFloats);
     def->enum_values.push_back("PNG");
     def->enum_values.push_back("JPG");
     def->enum_values.push_back("QOI");
-    def->enum_values.push_back("BTT TFT");
+    def->enum_values.push_back("BTT_TFT");
+    def->enum_values.push_back("ColPic");
+    def->enum_labels.push_back("PNG");
+    def->enum_labels.push_back("JPG");
+    def->enum_labels.push_back("QOI");
+    def->enum_labels.push_back("BTT TT");
+    def->enum_labels.push_back("ColPic");
     def->set_default_value(new ConfigOptionEnum<GCodeThumbnailsFormat>(GCodeThumbnailsFormat::PNG));
 
     def = this->add("use_relative_e_distances", coBool);

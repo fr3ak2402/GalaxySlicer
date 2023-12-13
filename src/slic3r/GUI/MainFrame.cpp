@@ -2703,7 +2703,6 @@ void MainFrame::init_menubar_as_editor()
 
 #ifndef __APPLE__
     m_topbar->SetFileMenu(fileMenu);
-    
     if (editMenu)
         //m_topbar->AddDropDownSubMenu(editMenu, _L("Edit"));
 
@@ -2716,6 +2715,7 @@ void MainFrame::init_menubar_as_editor()
         m_topbar->SetViewMenu(viewMenu);
 
     //BBS add Preference
+
     append_menu_item(
         m_topbar->GetTopMenu(), wxID_ANY, _L("Preferences") + "\t" + ctrl + "P", "",
         [this](wxCommandEvent &) {

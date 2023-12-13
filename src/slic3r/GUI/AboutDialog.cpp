@@ -18,13 +18,8 @@ AboutDialogLogo::AboutDialogLogo(wxWindow* parent)
     : wxPanel(parent, wxID_ANY, wxDefaultPosition, wxDefaultSize)
 {
     this->SetBackgroundColour(*wxWHITE);
-<<<<<<< HEAD
-    this->logo = ScalableBitmap(this, Slic3r::var("GalaxySlicer_192px.png"), wxBITMAP_TYPE_PNG);
-    this->SetMinSize(this->logo.GetBmpSize());
-=======
-    this->logo = ScalableBitmap(this, Slic3r::var("OrcaSlicer_192px.png"), wxBITMAP_TYPE_PNG);
+    this->logo = ScalableBitmap(this, Slic3r::var("Galaxy_192px.png"), wxBITMAP_TYPE_PNG);
     this->SetMinSize(this->logo.GetSize());
->>>>>>> 25a055491e (Update wxWidgets to v3.2.1 (#2905))
 
     this->Bind(wxEVT_PAINT, &AboutDialogLogo::onRepaint, this);
 }
@@ -93,11 +88,11 @@ void CopyrightsDialog::fill_entries()
         { "Admesh",                                         "",      "https://admesh.readthedocs.io/" },
         { "Anti-Grain Geometry",                            "",      "http://antigrain.com" },
         { "ArcWelderLib",                                   "",      "https://plugins.octoprint.org/plugins/arc_welder" },
-        { "BambuStudio",                                    "",      "https://github.com/bambulab/BambuStudio" },
         { "Boost",                                          "",      "http://www.boost.org" },
         { "Cereal",                                         "",      "http://uscilab.github.io/cereal" },
         { "CGAL",                                           "",      "https://www.cgal.org" },
         { "Clipper",                                        "",      "http://www.angusj.co" },
+        { "libcurl",                                        "",      "https://curl.se/libcurl" },
         { "Eigen3",                                         "",      "http://eigen.tuxfamily.org" },
         { "Expat",                                          "",      "http://www.libexpat.org" },
         { "fast_float",                                     "",      "https://github.com/fastfloat/fast_float" },

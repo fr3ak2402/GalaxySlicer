@@ -2645,9 +2645,7 @@ void ImGuiWrapper::init_font(bool compress)
     //temp fix for Korean font
     auto font_name_regular = "HarmonyOS_Sans_SC_Regular.ttf";
     auto font_name_bold = "HarmonyOS_Sans_SC_Bold.ttf";
-
-    if(m_glyph_ranges == ImGui::GetIO().Fonts->GetGlyphRangesKorean()) 
-    {
+    if(m_glyph_ranges == ImGui::GetIO().Fonts->GetGlyphRangesKorean()) {
         font_name_regular = "NanumGothic-Regular.ttf";
         font_name_bold = "NanumGothic-Bold.ttf";
     }

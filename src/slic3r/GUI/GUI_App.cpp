@@ -1852,6 +1852,7 @@ void GUI_App::init_app_config()
 	if (m_app_conf_exists) {
         std::string error = app_config->load();
         if (!error.empty()) {
+            //if the config file is corrupted, we will show a error dialog and create a default config file.
             m_config_corrupted = true;
 
         }

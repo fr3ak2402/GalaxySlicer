@@ -1998,12 +1998,15 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
             print.config().nozzle_temperature_initial_layer.get_at(0));
         file.write("; CONFIG_BLOCK_END\n\n");
       } else {
-        if (m_gcode_thumbnail_format != GCodeThumbnailsFormat::BTT_TFT)
+        if (m_gcode_thumbnail_format != GCodeThumbnailsFormat::BTT_TFT) {
+            auto thumbnaim_fmt = m_gcode_thumbnail_format;
+            // Orca: if the thumbnail format is ColPic, we write PNG in the beginning of gcode file and ColPic in the end of gcode file. 
+            if(m_gcode_thumbnail_format == GCodeThumbnailsFormat::ColPic)
+                thumbnaim_fmt = GCodeThumbnailsFormat::PNG;
           GCodeThumbnails::export_thumbnails_to_file(
               thumbnail_cb, print.get_plate_index(), print.full_print_config().option<ConfigOptionPoints>("thumbnails")->values,
-              m_gcode_thumbnail_format,
-              [&file](const char *sz) { file.write(sz); },
-              [&print]() { print.throw_if_canceled(); });
+              thumbnaim_fmt, [&file](const char* sz) { file.write(sz); }, [&print]() { print.throw_if_canceled(); });
+        }
       }
     }
 
@@ -2646,6 +2649,11 @@ this->placeholder_parser().set("z_offset", new ConfigOptionFloat(m_config.z_offs
                 GCodeProcessor::ETags::Estimated_Printing_Time_Placeholder)
             .c_str());
       file.write("\n");
+      if (m_gcode_thumbnail_format == GCodeThumbnailsFormat::ColPic)
+            GCodeThumbnails::export_thumbnails_to_file(
+                thumbnail_cb, print.get_plate_index(), print.full_print_config().option<ConfigOptionPoints>("thumbnails")->values,
+                m_gcode_thumbnail_format, [&file](const char* sz) { file.write(sz); }, [&print]() { print.throw_if_canceled(); });
+
       file.write("; CONFIG_BLOCK_START\n");
       std::string full_config;
       append_full_config(print, full_config);
@@ -3470,16 +3478,28 @@ LayerResult GCode::process_layer(
     gcode += this->change_layer(print_z);  // this will increase m_layer_index
     m_layer = &layer;
     m_object_layer_over_raft = false;
-    if (printer_structure == PrinterStructure::psI3 && !need_insert_timelapse_gcode_for_traditional && !m_spiral_vase && print.config().print_sequence == PrintSequence::ByLayer) {
-        std::string timepals_gcode = insert_timelapse_gcode();
-        gcode += timepals_gcode;
-        m_writer.set_current_position_clear(false);
-        //BBS: check whether custom gcode changes the z position. Update if changed
-        double temp_z_after_timepals_gcode;
-        if (GCodeProcessor::get_last_z_from_gcode(timepals_gcode, temp_z_after_timepals_gcode)) {
-            Vec3d pos = m_writer.get_position();
-            pos(2) = temp_z_after_timepals_gcode;
-            m_writer.set_position(pos);
+    if(is_BBL_Printer()){
+        if (printer_structure == PrinterStructure::psI3 && !need_insert_timelapse_gcode_for_traditional && !m_spiral_vase && print.config().print_sequence == PrintSequence::ByLayer) {
+            std::string timepals_gcode = insert_timelapse_gcode();
+            gcode += timepals_gcode;
+            m_writer.set_current_position_clear(false);
+            //BBS: check whether custom gcode changes the z position. Update if changed
+            double temp_z_after_timepals_gcode;
+            if (GCodeProcessor::get_last_z_from_gcode(timepals_gcode, temp_z_after_timepals_gcode)) {
+                Vec3d pos = m_writer.get_position();
+                pos(2) = temp_z_after_timepals_gcode;
+                m_writer.set_position(pos);
+            }
+        }
+    } else {
+        if (!print.config().time_lapse_gcode.value.empty()) {
+            DynamicConfig config;
+            config.set_key_value("layer_num", new ConfigOptionInt(m_layer_index));
+            config.set_key_value("layer_z", new ConfigOptionFloat(print_z));
+            config.set_key_value("max_layer_z", new ConfigOptionFloat(m_max_layer_z));
+            gcode += this->placeholder_parser_process("timelapse_gcode", print.config().time_lapse_gcode.value, m_writer.extruder()->id(),
+                                                      &config) +
+                     "\n";
         }
     }
     if (! print.config().layer_change_gcode.value.empty()) {

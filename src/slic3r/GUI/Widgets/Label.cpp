@@ -66,7 +66,6 @@ void Label::initSysFont()
     result = wxFont::AddPrivateFont(font_path);
     // BOOST_LOG_TRIVIAL(info) << boost::format("add font of HarmonyOS_Sans_SC_Regular returns %1%")%result;
     printf("add font of HarmonyOS_Sans_SC_Regular returns %d\n", result);
-
     // Adding NanumGothic Regular and Bold
     font_path = wxString::FromUTF8(resource_path + "/fonts/NanumGothic-Regular.ttf");
     result = wxFont::AddPrivateFont(font_path);

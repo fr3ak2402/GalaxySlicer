@@ -63,6 +63,11 @@
 				"type": "po",
 				"pattern": "localization/i18n/zh_TW/GalaxySlicer_zh_TW.po",
 				"lang": "zh_TW"
+			},
+			{
+				"type": "po",
+				"pattern": "localization/i18n/tr/GalaxySlicer_tr.po",
+				"lang": "tr"
 			}
 		]
 	},
