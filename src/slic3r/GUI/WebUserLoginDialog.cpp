@@ -87,7 +87,7 @@ ZUserLogin::ZUserLogin() : wxDialog((wxWindow *) (wxGetApp().mainframe), wxID_AN
 
         BOOST_LOG_TRIVIAL(info) << "login url = " << TargetUrl.ToStdString();
 
-        m_bbl_user_agent = wxString::Format("OrcaSlicer/v%s", SLIC3R_VERSION);
+        m_bbl_user_agent = wxString::Format("GalaxySlicer/v%s", SLIC3R_VERSION);
 
         // set the frame icon
 
