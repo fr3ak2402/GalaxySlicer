@@ -869,9 +869,7 @@ static std::vector<std::string> s_Preset_printer_options {
     "scan_first_layer", "machine_load_filament_time", "machine_unload_filament_time","time_cost", "machine_pause_gcode", "template_custom_gcode",
     "nozzle_type", "nozzle_hrc","auxiliary_fan", "nozzle_volume","upward_compatible_machine", "z_hop_types", "retract_lift_enforce","support_chamber_temp_control","support_air_filtration","printer_structure",
     "best_object_pos",
-    //GalaxySlicer
-    "exhaust_fan",
-    //OrcaSlicer 
+    //SoftFever
     "host_type", "print_host", "printhost_apikey",
     "print_host_webui",
     "printhost_cafile","printhost_port","printhost_authorization_type",
@@ -3454,9 +3452,7 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-
-        if (pm != nullptr && !pm->bed_model.empty()) 
-        {
+        if (pm != nullptr && !pm->bed_model.empty()) {
             out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->bed_model;
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
             {
@@ -3503,8 +3499,7 @@ namespace PresetUtils {
     {
         std::string out;
         const VendorProfile::PrinterModel* pm = PresetUtils::system_printer_model(preset);
-        if (pm != nullptr && !pm->hotend_model.empty()) 
-        {
+        if (pm != nullptr && !pm->hotend_model.empty()) {
             out = Slic3r::data_dir() + "/vendor/" + preset.vendor->id + "/" + pm->hotend_model;
             if (!boost::filesystem::exists(boost::filesystem::path(out)))
             {
