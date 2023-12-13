@@ -50,9 +50,9 @@ if (APPLE)
     set(CMAKE_FIND_FRAMEWORK LAST)
     set(CMAKE_FIND_APPBUNDLE LAST)
     list(FIND CMAKE_OSX_ARCHITECTURES ${CMAKE_SYSTEM_PROCESSOR} _arch_idx)
-    message(STATUS "prusaslicer_add_cmake_project for Apple")
+    message(STATUS "galaxyslicer_add_cmake_project for Apple")
     if (CMAKE_OSX_ARCHITECTURES AND _arch_idx LESS 0)
-        message(STATUS "prusaslicer_add_cmake_project for Apple crosscompiling")
+        message(STATUS "galaxyslicer_add_cmake_project for Apple crosscompiling")
         set(IS_CROSS_COMPILE TRUE)
         set(CMAKE_CXX_COMPILER_ID "Clang")
         string(REPLACE ";" "$<SEMICOLON>" CMAKE_OSX_ARCHS "${CMAKE_OSX_ARCHITECTURES}")
@@ -85,7 +85,7 @@ if (NOT _is_multi AND NOT CMAKE_BUILD_TYPE)
     message(STATUS "Forcing CMAKE_BUILD_TYPE to Release as it was not specified.")
 endif ()
 
-function(add_to_galaxyslicer_cmake_project projectname)
+function(galaxyslicer_add_cmake_project projectname)
     cmake_parse_arguments(P_ARGS "" "INSTALL_DIR;BUILD_COMMAND;INSTALL_COMMAND" "CMAKE_ARGS" ${ARGN})
 
     set(_configs_line -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE})
@@ -146,7 +146,7 @@ else()
 
 endif()
 
-endfunction(add_to_galaxyslicer_cmake_project)
+endfunction(galaxyslicer_add_cmake_project)
 
 
 if (MSVC)
