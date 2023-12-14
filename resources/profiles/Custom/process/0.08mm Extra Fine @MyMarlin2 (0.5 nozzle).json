@@ -1,0 +1,21 @@
+{
+    "type": "process",
+    "setting_id": "GP004",
+    "name": "0.08mm Extra Fine @MyMarlin2 (0.5 nozzle)",
+    "from": "system",
+    "instantiation": "true",
+    "inherits": "fdm_process_marlin2_common",
+    "bottom_shell_layers": "7",
+    "outer_wall_line_width": "0.5",
+    "line_width": "0.5",
+    "sparse_infill_line_width": "0.55",
+    "layer_height": "0.08",
+    "inner_wall_line_width": "0.55",
+    "internal_solid_infill_line_width": "0.5",
+    "support_line_width": "0.5",
+    "top_surface_line_width": "0.5",
+    "top_shell_layers": "9",
+    "compatible_printers": [
+        "Generic Marlin 2 Printer (0.5 nozzle)"
+    ]
+}

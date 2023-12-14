@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "filament_id": "GFU99",
+    "setting_id": "GFSA04",
+    "name": "My Generic TPU @base",
+    "from": "system",
+    "instantiation": "false",
+    "inherits": "fdm_filament_tpu",
+    "filament_max_volumetric_speed": [
+        "3.2"
+    ]
+}
