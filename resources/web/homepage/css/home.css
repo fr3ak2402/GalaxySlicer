@@ -943,6 +943,11 @@ body
 
 }
 
+#HotModel_RIGHT_Title:hover
+{
+	cursor: pointer;	
+	color:#009688;	
+}
 
 /*-----Notice-----*/
 #NoticeMask
