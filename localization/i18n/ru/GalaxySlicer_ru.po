@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:12+0100\n"
+"POT-Creation-Date: 2023-12-17 17:57+0100\n"
 "PO-Revision-Date: 2023-09-03 21:55+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -5703,21 +5703,21 @@ msgid "Busy"
 msgstr "Занят"
 
 msgid "Bambu Cool Plate"
-msgstr "Не нагреваемая пластина Bamabu"
+msgstr "Не нагреваемая пластина Bambu"
 
 msgid "PLA Plate"
 msgstr "PLA пластина"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Инженерная пластина Bamabu"
+msgid "Bambu Engineering Plate"
+msgstr "Инженерная пластина Bambu"
 
-msgid "Bamabu Smooth PEI Plate"
+msgid "Bambu Smooth PEI Plate"
 msgstr ""
 
 msgid "High temperature Plate"
 msgstr "Высокотемпературная пластина"
 
-msgid "Bamabu Textured PEI Plate"
+msgid "Bambu Textured PEI Plate"
 msgstr ""
 
 msgid "Send print job to"
@@ -13671,15 +13671,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "Добавить/удалить принтер"
 
-#~ msgid "Bambu Engineering Plate"
-#~ msgstr "Инженерная пластина Bamabu"
-
-#~ msgid "Bambu Smooth PEI Plate"
-#~ msgstr "Гладкая PEI пластина Bambu"
-
-#~ msgid "Bambu Textured PEI Plate"
-#~ msgstr "Текстурированная PEI пластина Bambu "
-
 #~ msgid ""
 #~ "When print by object, machines with I3 structure will not generate "
 #~ "timelapse videos."
@@ -14192,8 +14183,8 @@ msgstr ""
 #~ msgid "Score"
 #~ msgstr "Рейтинг"
 
-#~ msgid "Bamabu High Temperature Plate"
-#~ msgstr "Высокотемпературная пластина Bamabu"
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Высокотемпературная пластина Bambu"
 
 #~ msgid "Can't connect to the printer"
 #~ msgstr "Не удаётся подключиться к принтеру"

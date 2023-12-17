@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:12+0100\n"
+"POT-Creation-Date: 2023-12-17 17:57+0100\n"
 "PO-Revision-Date: 2023-09-02 21:26+0300\n"
 "Last-Translator: Sadri Ercan\n"
 "Language-Team: Türkçe\n"
@@ -5644,16 +5644,16 @@ msgstr "Bambu Soğuk Plaka"
 msgid "PLA Plate"
 msgstr "PLA Plaka"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Bamabu Mühendislik Plakası"
+msgid "Bambu Engineering Plate"
+msgstr "Bambu Mühendislik Plakası"
 
-msgid "Bamabu Smooth PEI Plate"
+msgid "Bambu Smooth PEI Plate"
 msgstr ""
 
 msgid "High temperature Plate"
 msgstr "Yüksek Sıcaklık Plakası"
 
-msgid "Bamabu Textured PEI Plate"
+msgid "Bambu Textured PEI Plate"
 msgstr ""
 
 msgid "Send print job to"
@@ -13381,12 +13381,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "Yazıcı Ekle/Kaldır"
 
-#~ msgid "Bambu Smooth PEI Plate"
-#~ msgstr "Bambu Pürüzsüz PEI Plaka"
-
-#~ msgid "Bambu Textured PEI Plate"
-#~ msgstr "Bambu Dokulu PEI Plaka"
-
 #~ msgid ""
 #~ "When print by object, machines with I3 structure will not generate "
 #~ "timelapse videos."
@@ -14053,8 +14047,8 @@ msgstr ""
 #~ msgid "Score"
 #~ msgstr "Skor"
 
-#~ msgid "Bamabu High Temperature Plate"
-#~ msgstr "Bamabu Yüksek Sıcaklık Plakası"
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Bambu Yüksek Sıcaklık Plakası"
 
 #~ msgid "Can't connect to the printer"
 #~ msgstr "Yazıcıya bağlanılamıyor"

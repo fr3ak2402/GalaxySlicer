@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:12+0100\n"
+"POT-Creation-Date: 2023-12-17 17:57+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -594,7 +594,7 @@ msgid "V"
 msgstr "V"
 
 msgid "Based on GalaxySlicer, BambuStudio and PrusaSlicer"
-msgstr ""
+msgstr "Basierend auf GalaxySlicer, BambuStudio und PrusaSlicer"
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -743,9 +743,12 @@ msgid ""
 "The number of user presets cached in the cloud has exceeded the upper limit, "
 "newly created user presets can only be used locally."
 msgstr ""
+"Die Anzahl der im Cloud-Cache gespeicherten Benutzerprofile hat das Limit "
+"überschritten. Neu erstellte Benutzerprofile können nur lokal verwendet "
+"werden."
 
 msgid "Sync user presets"
-msgstr ""
+msgstr "Synchronisiere Benutzerprofile"
 
 msgid "Loading"
 msgstr "Lade"
@@ -872,22 +875,22 @@ msgid "Add support enforcer"
 msgstr "Supportverstärker hinzufügen"
 
 msgid "Add text"
-msgstr ""
+msgstr "Text hinzufügen"
 
 msgid "Add negative text"
-msgstr ""
+msgstr "Füge negativen Text hinzu"
 
 msgid "Add text modifier"
-msgstr ""
+msgstr "Textmodifizierer hinzufügen"
 
 msgid "Add SVG part"
-msgstr ""
+msgstr "SVG Teil hinzufügen"
 
 msgid "Add negative SVG"
-msgstr ""
+msgstr "Negatives SVG hinzufügen"
 
 msgid "Add SVG modifier"
-msgstr ""
+msgstr "SVG Modifizierer hinzufügen"
 
 msgid "Select settings"
 msgstr "Wähle Einstellungen"
@@ -938,10 +941,10 @@ msgid "Cone"
 msgstr "Kegel"
 
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 msgid "SVG"
-msgstr ""
+msgstr "SVG"
 
 msgid "Height range Modifier"
 msgstr "Höhen Modifizieren"
@@ -972,10 +975,10 @@ msgid "Fix model"
 msgstr "Modell reparieren"
 
 msgid "Export as one STL"
-msgstr ""
+msgstr "Exportieren als eine STL"
 
 msgid "Export as STLs"
-msgstr ""
+msgstr "Exportieren als STLs"
 
 msgid "Reload from disk"
 msgstr "Von der Festplatte neu laden"
@@ -1079,16 +1082,16 @@ msgid "Mirror object"
 msgstr "Objekt spiegeln"
 
 msgid "Edit text"
-msgstr ""
+msgstr "Text bearbeiten"
 
 msgid "Ability to change text, font, size, ..."
-msgstr ""
+msgstr "Änderung von Text, Schriftart, Größe, ..."
 
 msgid "Edit SVG"
-msgstr ""
+msgstr "Ändere SVG"
 
 msgid "Change SVG source file, projection, size, ..."
-msgstr ""
+msgstr "Ändere SVG Quelldatei, Projektion, Größe, ..."
 
 msgid "Invalidate cut info"
 msgstr "Fehlerhafte Schnitt Info"
@@ -1797,10 +1800,10 @@ msgid "Orienting"
 msgstr "Ausrichten"
 
 msgid "Orienting canceled."
-msgstr ""
+msgstr "Orientierung abgebrochen."
 
 msgid "Filling"
-msgstr ""
+msgstr "Füllen"
 
 msgid "Bed filling canceled."
 msgstr "Bettfüllung abgebrochen."
@@ -1809,13 +1812,13 @@ msgid "Bed filling done."
 msgstr "Bettfüllung fertig."
 
 msgid "Searching for optimal orientation"
-msgstr ""
+msgstr "Suche nach optimaler Ausrichtung"
 
 msgid "Orientation search canceled."
-msgstr ""
+msgstr "Ausrichtungssuche abgebrochen."
 
 msgid "Orientation found."
-msgstr ""
+msgstr "Ausrichtung gefunden."
 
 msgid "Logging in"
 msgstr "Einloggen"
@@ -1889,12 +1892,15 @@ msgid "Sending print job through cloud service"
 msgstr "Druckauftrag über den Cloud-Dienst senden"
 
 msgid "Print task sending times out."
-msgstr ""
+msgstr "Druckauftrag Zeitüberschreitung."
 
 msgid ""
 "The printer timed out while receiving a print job. Please check if the "
 "network is functioning properly and send the print again."
 msgstr ""
+"Der Drucker hat beim Empfangen eines Druckauftrags eine Zeitüberschreitung "
+"erfahren. Bitte überprüfen Sie, ob das Netzwerk ordnungsgemäß funktioniert, "
+"und senden Sie den Druck erneut."
 
 msgid "Service Unavailable"
 msgstr "Der Dienst ist nicht verfügbar"
@@ -2103,10 +2109,10 @@ msgid "You need to select the material type and color first."
 msgstr "Sie müssen zuerst den Materialtyp und die Farbe auswählen."
 
 msgid "Please input a valid value (K in 0~0.3)"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Wert ein (K in 0~0.3)"
 
 msgid "Please input a valid value (K in 0~0.3, N in 0.6~2.0)"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Wert ein (K in 0~0.3, N in 0.6~2.0)"
 
 msgid "Other Color"
 msgstr "Andere Farbe"
@@ -2814,16 +2820,16 @@ msgid "Motor noise showoff"
 msgstr "Motorgeräusch-Showoff"
 
 msgid "Nozzle filament covered detected pause"
-msgstr ""
+msgstr "Düsenfilamentabdeckung erkannt Pause"
 
 msgid "Cutter error pause"
-msgstr ""
+msgstr "Messerfehler Pause"
 
 msgid "First layer error pause"
-msgstr ""
+msgstr "Fehler der ersten Schicht Pause"
 
 msgid "Nozzle clog pause"
-msgstr ""
+msgstr "Düsenverstopfung Pause"
 
 msgid "MC"
 msgstr "MC"
@@ -3034,7 +3040,7 @@ msgid "Total"
 msgstr "Gesamt"
 
 msgid "Tower"
-msgstr ""
+msgstr "Turm"
 
 msgid "Total Estimation"
 msgstr "Gesamtschätzung"
@@ -3593,10 +3599,10 @@ msgid "Import"
 msgstr "Importieren"
 
 msgid "Export all objects as one STL"
-msgstr ""
+msgstr "Exportiere alle Objekte als eine STL"
 
 msgid "Export all objects as STLs"
-msgstr ""
+msgstr "Exportiere alle Objekte als STLs"
 
 msgid "Export Generic 3MF"
 msgstr "Generisches 3MF exportieren"
@@ -3686,16 +3692,16 @@ msgid "Use Orthogonal View"
 msgstr "Orthogonale Ansicht verwenden"
 
 msgid "Show &G-code Window"
-msgstr ""
+msgstr "Zeige &G-Code-Fenster"
 
 msgid "Show g-code window in Previce scene"
-msgstr ""
+msgstr "Zeige G-Code-Fenster in der Vorschau"
 
 msgid "Reset Window Layout"
-msgstr ""
+msgstr "Rücksetzen des Fensterlayouts"
 
 msgid "Reset to default window layout"
-msgstr ""
+msgstr "Rücksetzen auf das Standardfensterlayout"
 
 msgid "Show &Labels"
 msgstr "&Bezeichnung anzeigen"
@@ -4082,16 +4088,17 @@ msgid "Downloading %d%%..."
 msgstr "%d%% wird heruntergeladen..."
 
 msgid "Connection lost. Please retry."
-msgstr ""
+msgstr "Verbindung verloren. Bitte versuchen Sie es erneut."
 
 msgid "The device cannot handle more conversations. Please retry later."
 msgstr ""
+"Das Gerät kann keine weiteren Gespräche führen. Bitte versuchen Sie es "
 
 msgid "File not exists."
-msgstr ""
+msgstr "Datei existiert nicht."
 
 msgid "File checksum error. Please retry."
-msgstr ""
+msgstr "Datei-Prüfsummenfehler. Bitte versuchen Sie es erneut."
 
 msgid "Not supported on the current printer version."
 msgstr "Nicht unterstützt in der aktuellen Druckerversion."
@@ -4101,7 +4108,7 @@ msgstr "Speicher nicht verfügbar, MicroSD-Karte einlegen."
 
 #, c-format, boost-format
 msgid "Error code: %d"
-msgstr ""
+msgstr "Fehlercode: %d"
 
 msgid "Speed:"
 msgstr "Geschwindigkeit:"
@@ -4251,6 +4258,8 @@ msgid ""
 "Please heat the nozzle to above 170 degree before loading or unloading "
 "filament."
 msgstr ""
+"Heizen Sie die Düse vor dem Laden oder Entladen des Filaments auf über 170 "
+"Grad."
 
 msgid "Still unload"
 msgstr "Entlade immer noch"
@@ -4459,7 +4468,7 @@ msgid "Details"
 msgstr "Details"
 
 msgid "New printer config available."
-msgstr ""
+msgstr "Neue Druckerkonfiguration verfügbar."
 
 msgid "Wiki"
 msgstr "Wiki"
@@ -4619,7 +4628,7 @@ msgid "Allow Prompt Sound"
 msgstr "Erlaube akustische Signale"
 
 msgid "Fliament Tangle Detect"
-msgstr ""
+msgstr "Filamentverwicklung erkennen"
 
 msgid "Global"
 msgstr "Allgemein"
@@ -4716,7 +4725,7 @@ msgid "Set filaments to use"
 msgstr "Zu verwendende Filamente einstellen"
 
 msgid "Search plate, object and part."
-msgstr ""
+msgstr "Suche Platte, Objekt und Teil."
 
 msgid ""
 "No AMS filaments. Please select a printer in 'Device' page to load AMS info."
@@ -4812,10 +4821,10 @@ msgstr ""
 "führen. Es wird empfohlen, in den glatten Modus zu wechseln."
 
 msgid "Expand sidebar"
-msgstr ""
+msgstr "Erweitere Seitenleiste"
 
 msgid "Collapse sidebar"
-msgstr ""
+msgstr "Seitenleiste ausblenden"
 
 #, c-format, boost-format
 msgid "Loading file: %s"
@@ -4843,25 +4852,30 @@ msgstr "Bitte korrigieren Sie sie in den Parameter-Einstellungen."
 
 msgid "The 3mf has following modified G-codes in filament or printer presets:"
 msgstr ""
+"Die 3mf hat folgende modifizierte G-Codes in Filament- oder Druckerprofil:"
 
 msgid ""
 "Please confirm that these modified G-codes are safe to prevent any damage to "
 "the machine!"
 msgstr ""
+"Bitte bestätigen Sie, dass diese modifizierten G-Codes sicher sind, um "
+"Schäden an der Maschine zu vermeiden!"
 
 msgid "Modified G-codes"
-msgstr ""
+msgstr "Modifizierter G-Codes"
 
 msgid "The 3mf has following customized filament or printer presets:"
-msgstr ""
+msgstr "Die 3mf hat folgende benutzerdefinierte Filament- oder Druckerprofile:"
 
 msgid ""
 "Please confirm that the G-codes within these presets are safe to prevent any "
 "damage to the machine!"
 msgstr ""
+"Bitte bestätigen Sie, dass die G-Codes innerhalb dieser Profile sicher sind, "
+"um Schäden an der Maschine zu vermeiden!"
 
 msgid "Customized Preset"
-msgstr ""
+msgstr "Benutzerdefinierte Profile"
 
 msgid "Name of components inside step file is not UTF8 format!"
 msgstr "Der Name der Komponenten in der Step-Datei ist nicht im UTF8-Format!"
@@ -4944,9 +4958,11 @@ msgid ""
 "The file %s already exists\n"
 "Do you want to replace it?"
 msgstr ""
+"Die Datei %s existiert bereits\n"
+"Möchten Sie sie ersetzen?"
 
 msgid "Comfirm Save As"
-msgstr ""
+msgstr "Bestätigen Sie Speichern unter"
 
 msgid "Delete object which is a part of cut object"
 msgstr "Lösche Objekt, das Teil des geschnittenen Objekts ist."
@@ -5079,7 +5095,7 @@ msgstr ""
 "Der Import in GalaxySlicer ist fehlgeschlagen. Bitte laden Sie die Datei "
 
 msgid "Import SLA archive"
-msgstr ""
+msgstr "Importiere SLA-Archiv"
 
 msgid "The selected file"
 msgstr "Die ausgewählte Datei"
@@ -5169,9 +5185,13 @@ msgid ""
 "3MF file?\n"
 "If you hit 'NO', all SVGs in the project will not be editable any more."
 msgstr ""
+"Möchten Sie die Original-SVGs mit ihren lokalen Pfaden in die 3MF-Datei "
+"speichern?\n"
+"Wenn Sie auf \"NEIN\" klicken, können alle SVGs im Projekt nicht mehr "
+"bearbeitet werden."
 
 msgid "Private protection"
-msgstr ""
+msgstr "Privatsphäre schützen"
 
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
 msgstr ""
@@ -5200,7 +5220,7 @@ msgstr ""
 "entfernt."
 
 msgid "Optimize Rotation"
-msgstr ""
+msgstr "Optimiere Rotation"
 
 msgid "Invalid number"
 msgstr "Ungültige Nummer"
@@ -5368,10 +5388,12 @@ msgid "If enabled, useful hints are displayed at startup."
 msgstr "Wenn aktiviert, werden beim Start nützliche Hinweise angezeigt."
 
 msgid "Flushing volumes: Auto-calculate everytime the color changed."
-msgstr ""
+msgstr "Reinigungsvolumen: Automatisch berechnen, wenn sich die Farbe ändert."
 
 msgid "If enabled, auto-calculate everytime the color changed."
 msgstr ""
+"Wenn aktiviert, wird jedes Mal automatisch berechnet, wenn sich die Farbe "
+"ändert."
 
 msgid "Presets"
 msgstr "Voreinstellungen"
@@ -5429,7 +5451,7 @@ msgid "Clear my choice on the unsaved projects."
 msgstr "Meine Auswahl für nicht gespeicherte Projekte löschen."
 
 msgid "No warnings when loading 3MF with modified G-codes"
-msgstr ""
+msgstr "Keine Warnungen beim Laden von 3MF mit modifizierten G-Codes"
 
 msgid "Auto-Backup"
 msgstr "Automatische Datensicherung"
@@ -5585,10 +5607,10 @@ msgid "Add/Remove materials"
 msgstr "Materialien hinzufügen/entfernen"
 
 msgid "Select/Remove printers(system presets)"
-msgstr ""
+msgstr "Systemdrucker auswählen/entfernen"
 
 msgid "Create printer"
-msgstr ""
+msgstr "Drucker erstellen"
 
 msgid "Incompatible"
 msgstr "Inkompatibel"
@@ -5746,7 +5768,7 @@ msgid "(LAN)"
 msgstr "(LAN)"
 
 msgid "Search"
-msgstr ""
+msgstr "Suchen"
 
 msgid "My Device"
 msgstr "Mein Gerät"
@@ -5778,17 +5800,17 @@ msgstr "Bambu kalte Druckplatte"
 msgid "PLA Plate"
 msgstr "PLA-Platte"
 
-msgid "Bamabu Engineering Plate"
+msgid "Bambu Engineering Plate"
 msgstr "Bambu technische Druckplatte"
 
-msgid "Bamabu Smooth PEI Plate"
-msgstr ""
+msgid "Bambu Smooth PEI Plate"
+msgstr "Bambu glatte PEI-Platte"
 
 msgid "High temperature Plate"
 msgstr "Hochtemperaturplatte"
 
-msgid "Bamabu Textured PEI Plate"
-msgstr ""
+msgid "Bambu Textured PEI Plate"
+msgstr "Bambu strukturierte PEI-Platte"
 
 msgid "Send print job to"
 msgstr "Druckauftrag senden an"
@@ -5930,6 +5952,8 @@ msgstr ""
 msgid ""
 "Timelapse is not supported because Print sequence is set to \"By object\"."
 msgstr ""
+"Zeitraffer wird nicht unterstützt, da die Druckreihenfolge auf \"Nach "
+"Objekt\" eingestellt ist."
 
 msgid "Errors"
 msgstr "Fehler"
@@ -5957,20 +5981,23 @@ msgstr ""
 
 #, c-format, boost-format
 msgid "nozzle in preset: %s %s"
-msgstr ""
+msgstr "Düse im Profil: %s %s"
 
 #, c-format, boost-format
 msgid "nozzle memorized: %.1f %s"
-msgstr ""
+msgstr "Düse gespeichert: %.1f %s"
 
 msgid ""
 "Your nozzle diameter in preset is not consistent with memorized nozzle "
 "diameter. Did you change your nozzle lately?"
 msgstr ""
+"Ihr Düsendurchmesser im Profil stimmt nicht mit dem gespeicherten "
+"Düsendurchmesser überein. Haben Sie kürzlich Ihre Düse gewechselt?"
 
 #, c-format, boost-format
 msgid "*Printing %s material with %s may cause nozzle damage"
 msgstr ""
+"*Drucken von %s Material mit %s kann zu einer Beschädigung der Düse führen"
 
 msgid ""
 "Please click the confirm button if you still want to proceed with printing."
@@ -5979,10 +6006,10 @@ msgstr ""
 "Druckvorgang trotzdem fortsetzen möchten."
 
 msgid "Hardened Steel"
-msgstr ""
+msgstr "Gehärteter Stahl"
 
 msgid "Stainless Steel"
-msgstr ""
+msgstr "Edelstahl"
 
 msgid ""
 "Connecting to the printer. Unable to cancel during the connection process."
@@ -6036,7 +6063,7 @@ msgid "Slice ok."
 msgstr "Slice ok."
 
 msgid "View all Daily tips"
-msgstr ""
+msgstr "Zeige alle täglichen Tipps"
 
 msgid "Failed to create socket"
 msgstr "Socket konnte nicht erstellt werden"
@@ -6192,7 +6219,7 @@ msgstr ""
 "Reinigungsturm aktivieren?"
 
 msgid "Still print by object?"
-msgstr ""
+msgstr "Soll immer noch nach Objekt gedruckt werden?"
 
 msgid ""
 "We have added an experimental style \"Tree Slim\" that features smaller "
@@ -6241,15 +6268,17 @@ msgid ""
 "Layer height exceeds the limit in Printer Settings -> Extruder -> Layer "
 "height limits ,this may cause printing quality issues."
 msgstr ""
+"Die Schichthöhe überschreitet das Limit in Druckereinstellungen -> Extruder -"
+"> Schichthöhenlimits. Dies kann zu Problemen mit der Druckqualität führen."
 
 msgid "Adjust to the set range automatically? \n"
-msgstr ""
+msgstr "Automatisch an den eingestellten Bereich anpassen?\n"
 
 msgid "Adjust"
-msgstr ""
+msgstr "Anpassen"
 
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorieren"
 
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
@@ -6275,13 +6304,13 @@ msgid "Wall generator"
 msgstr "Wandgenerator"
 
 msgid "Walls and surfaces"
-msgstr ""
+msgstr "Wände und Oberflächen"
 
 msgid "Bridging"
-msgstr ""
+msgstr "B"
 
 msgid "Overhangs"
-msgstr ""
+msgstr "Überhänge"
 
 msgid "Walls"
 msgstr "Wände"
@@ -6541,7 +6570,7 @@ msgid "Machine end G-code"
 msgstr "Maschine Ende G-Code"
 
 msgid "Printing by object G-code"
-msgstr ""
+msgstr "Drucken nach Objekt G-Code"
 
 msgid "Before layer change G-code"
 msgstr "G-Code vor dem Schichtwechsel"
@@ -6617,14 +6646,18 @@ msgid ""
 "%d Filament Preset and %d Process Preset is attached to this printer. Those "
 "presets would be deleted if the printer is deleted."
 msgstr ""
+"Dem Drucker sind %d Filament-Profile und %d Prozess-Profile zugeordnet. "
+"Diese Profile werden gelöscht, wenn der Drucker gelöscht wird."
 
 msgid "Presets inherited by other presets can not be deleted!"
 msgstr ""
+"Profile, die von anderen Profilen geerbt wurden, können nicht gelöscht "
+"werden!"
 
 msgid "The following presets inherit this preset."
 msgid_plural "The following preset inherits this preset."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Die folgenden Profile erben dieses Profil."
+msgstr[1] "Das folgende Profil erbt dieses Profil."
 
 #. TRN  Remove/Delete
 #, boost-format
@@ -6641,6 +6674,10 @@ msgid ""
 "If the preset corresponds to a filament currently in use on your printer, "
 "please reset the filament information for that slot."
 msgstr ""
+"Sind Sie sicher, dass Sie das ausgewählte Profil löschen möchten? \n"
+"Wenn das Profil einem Filament entspricht, das derzeit auf Ihrem Drucker "
+"verwendet wird, setzen Sie bitte die Filamentinformationen für diesen Slot "
+"zurück."
 
 #, boost-format
 msgid "Are you sure to %1% the selected preset?"
@@ -6901,7 +6938,7 @@ msgid "Ramming line spacing"
 msgstr "Ramming-Linienabstand"
 
 msgid "Recalculate"
-msgstr ""
+msgstr "Neu berechnen"
 
 msgid "Flushing volumes for filament change"
 msgstr "Reinigungsvolumen für Filamentwechsel"
@@ -6910,6 +6947,9 @@ msgid ""
 "Orca recalculates your flushing volumes everytime the filament colors "
 "change. You can change this behavior in Preferences."
 msgstr ""
+"Orca berechnet Ihre Reinigungsvolumen jedes Mal neu, wenn sich die "
+"Filamentfarben ändern. Sie können dieses Verhalten in den Einstellungen "
+"ändern."
 
 msgid "Flushing volume (mm³) for each filament pair."
 msgstr "Reinigungsvolumen (mm³) für jedes Filamentpaar."
@@ -6932,10 +6972,10 @@ msgid "To"
 msgstr "Zu"
 
 msgid "Bambu Network plug-in not detected."
-msgstr ""
+msgstr "Bambu Network-Plug-in nicht erkannt."
 
 msgid "Click here to download it."
-msgstr ""
+msgstr "Klicken Sie hier, um es herunterzuladen."
 
 msgid "Login"
 msgstr "Anmelden"
@@ -6972,7 +7012,7 @@ msgid "Show/Hide 3Dconnexion devices settings dialog"
 msgstr "Dialogfeld für 3Dconnexion Geräteeinstellungen anzeigen/ausblenden"
 
 msgid "Switch table page"
-msgstr ""
+msgstr "Umschalten der Tabellenseite"
 
 msgid "Show keyboard shortcuts list"
 msgstr "Liste der Tastaturkürzel anzeigen"
@@ -7230,13 +7270,13 @@ msgid "New version of GalaxySlicer"
 msgstr "Neue Version von GalaxySlicer"
 
 msgid "Skip this Version"
-msgstr ""
+msgstr "Version überspringen"
 
 msgid "Done"
 msgstr "Erledigt"
 
 msgid "Confirm and Update Nozzle"
-msgstr ""
+msgstr "Bestätigen und Düse aktualisieren"
 
 msgid "LAN Connection Failed (Sending print file)"
 msgstr "LAN-Verbindung fehlgeschlagen (Senden einer Druckdatei)"
@@ -7264,21 +7304,23 @@ msgid "Where to find your printer's IP and Access Code?"
 msgstr "Wo finde ich die IP-Adresse und den Zugriffscode meines Druckers?"
 
 msgid "Step 3: Ping the IP address to check for packet loss and latency."
-msgstr ""
+msgstr "Schritt 3: Pingen Sie die IP-Adresse, um Paketverlust und Latenz zu "
 
 msgid "Test"
 msgstr "Test"
 
 msgid "IP and Access Code Verified! You may close the window"
-msgstr ""
+msgstr "IP und Zugangscode verifiziert! Sie können das Fenster schließen"
 
 msgid "Connection failed, please double check IP and Access Code"
-msgstr ""
+msgstr "Verbindung fehlgeschlagen, bitte überprüfen Sie IP und Zugangscode"
 
 msgid ""
 "Connection failed! If your IP and Access Code is correct, \n"
 "please move to step 3 for troubleshooting network issues"
 msgstr ""
+"Verbindung fehlgeschlagen! Wenn Ihre IP und Ihr Zugangscode korrekt sind, \n"
+"gehen Sie bitte zu Schritt 3, um Netzwerkprobleme zu beheben"
 
 msgid "Model:"
 msgstr "Modell:"
@@ -7686,20 +7728,28 @@ msgid ""
 "Different nozzle diameters and different filament diameters is not allowed "
 "when prime tower is enabled."
 msgstr ""
+"Unterschiedliche Düsendurchmesser und unterschiedliche Filamentdurchmesser "
+"sind nicht zulässig, wenn der Reinigungsturm aktiviert ist."
 
 msgid ""
 "The Wipe Tower is currently only supported with the relative extruder "
 "addressing (use_relative_e_distances=1)."
 msgstr ""
+"Der Reinigungsturm wird derzeit nur mit der relativen Extruderadressierung "
+"unterstützt (use_relative_e_distances=1)."
 
 msgid ""
 "Ooze prevention is currently not supported with the prime tower enabled."
 msgstr ""
+"Die Vermeidung von Ausfluss wird derzeit nicht mit dem Reinigungsturm "
+"unterstützt."
 
 msgid ""
 "The prime tower is currently only supported for the Marlin, RepRap/Sprinter, "
 "RepRapFirmware and Repetier G-code flavors."
 msgstr ""
+"Der Reinigungsturm wird derzeit nur für die Marlin-, RepRap/Sprinter-, "
+"RepRapFirmware- und Repetier-G-Code-Varianten unterstützt."
 
 msgid "The prime tower is not supported in \"By object\" print."
 msgstr "Der Reinigungsturm wird im \"Nach Objekt\"-Druck nicht unterstützt."
@@ -7888,10 +7938,10 @@ msgstr ""
 "Maximale bedruckbare Höhe, die durch den Bauraum des Druckers begrenzt ist."
 
 msgid "Preferred orientation"
-msgstr ""
+msgstr "Bevorzugte Ausrichtung"
 
 msgid "Automatically orient stls on the Z-axis upon initial import"
-msgstr ""
+msgstr "Automatische Ausrichtung von STLs auf der Z-Achse beim ersten Import"
 
 msgid "Printer preset names"
 msgstr "Drucker Profilname"
@@ -8191,13 +8241,16 @@ msgstr ""
 "die Brücke zu verringern und den Durchhang zu minimieren"
 
 msgid "Internal bridge flow ratio"
-msgstr ""
+msgstr "Interne Brücken Flussrate"
 
 msgid ""
 "This value governs the thickness of the internal bridge layer. This is the "
 "first layer over sparse infill. Decrease this value slightly (for example "
 "0.9) to improve surface quality over sparse infill."
 msgstr ""
+"Dieser Wert bestimmt die Dicke der internen Brückenschicht. Dies ist die "
+"erste Schicht über der dünnen Füllung. Verringern Sie diesen Wert leicht (z. "
+"B. 0,9), um die Oberflächenqualität über der dünnen Füllung zu verbessern."
 
 msgid "Top surface flow ratio"
 msgstr "Durchflussverhältnis obere Fläche"
@@ -8295,9 +8348,15 @@ msgid ""
 "This setting can also help reduce part warping due to the reduction of "
 "stresses in the part walls."
 msgstr ""
+"Extrudieren Sie Umfänge, die einen Teil über einem Überhang in die entgegen "
+"gesetzte Richtung in ungeraden Schichten haben. Dieses abwechselnde Muster "
+"kann steile Überhänge drastisch verbessern.\n"
+"\n"
+"Diese Einstellung kann auch dazu beitragen, das Verziehen von Teilen zu "
+"verringern, da die Spannungen in den Teilwänden verringert werden."
 
 msgid "Reverse only internal perimeters"
-msgstr ""
+msgstr "Nur interne Umfänge umkehren"
 
 msgid ""
 "Apply the reverse perimeters logic only on internal perimeters. \n"
@@ -8313,6 +8372,20 @@ msgid ""
 "Reverse Threshold to 0 so that all internal walls print in alternating "
 "directions on odd layers irrespective of their overhang degree."
 msgstr ""
+"Wenden Sie die Logik der umgekehrten Umfänge nur auf interne Umfänge an.\n"
+"\n"
+"Diese Einstellung reduziert die Spannungen in den Teilen erheblich, da sie "
+"jetzt in abwechselnden Richtungen verteilt werden. Dies sollte das Verziehen "
+"von Teilen verringern und gleichzeitig die Qualität der Außenwand "
+"sicherstellen. Diese Funktion kann für Materialien, die zum Verziehen neigen "
+"wie ABS/ASA, und auch für elastische Filamente wie TPU und Silk PLA sehr "
+"nützlich sein. Sie kann auch dazu beitragen, das Verziehen in schwebenden "
+"Bereichen über Stützen zu verringern.\n"
+"\n"
+"Damit diese Einstellung am effektivsten ist, wird empfohlen, die "
+"Umkehrschwelle auf 0 zu setzen, damit alle internen Wände in ungeraden "
+"Schichten unabhängig von ihrem Überhangsgrad in abwechselnden Richtungen "
+"gedruckt werden."
 
 msgid "Reverse threshold"
 msgstr "Umkehrschwelle"
@@ -8555,13 +8628,16 @@ msgstr ""
 "Entfernungen zuverlässig."
 
 msgid "Thick internal bridges"
-msgstr ""
+msgstr "Dicke interne Brücken"
 
 msgid ""
 "If enabled, thick internal bridges will be used. It's usually recommended to "
 "have this feature turned on. However, consider turning it off if you are "
 "using large nozzles."
 msgstr ""
+"Wenn diese Option aktiviert ist, werden dicke interne Brücken verwendet. Es "
+"wird normalerweise empfohlen, diese Funktion zu aktivieren. Wenn Sie jedoch "
+"große Düsen verwenden, sollten Sie diese Funktion deaktivieren."
 
 msgid "Max bridge length"
 msgstr "Max Überbrückungslänge"
@@ -8582,12 +8658,14 @@ msgid "End G-code when finish the whole printing"
 msgstr "End G-Code nach dem fertigstellen des Drucks hinzufügen."
 
 msgid "Between Object Gcode"
-msgstr ""
+msgstr "Zwischen den Objekten G-Code"
 
 msgid ""
 "Insert Gcode between objects. This parameter will only come into effect when "
 "you print your models object by object"
 msgstr ""
+"Füge G-Code zwischen Objekten ein. Dieser Parameter wird nur wirksam, wenn "
+"Sie Ihre Modelle Objekt für Objekt drucken."
 
 msgid "End G-code when finish the printing of this filament"
 msgstr "End-G-Code hinzufügen, wenn der Druck dieses Filaments beenden ist."
@@ -8689,7 +8767,7 @@ msgstr ""
 "für die Schwelle beträgt 0 mm."
 
 msgid "Walls printing order"
-msgstr ""
+msgstr "Wände Druckreihenfolge"
 
 msgid ""
 "Print sequence of the internal (inner) and external (outer) walls. \n"
@@ -8715,18 +8793,42 @@ msgid ""
 "\n"
 " "
 msgstr ""
+"Druckreihenfolge der internen (inneren) und externen (äußeren) Wände.\n"
+"\n"
+"Verwenden Sie Innen/Außen für die besten Überhänge. Dies liegt daran, dass "
+"die überhängenden Wände beim Drucken an einer benachbarten Umfangsfläche "
+"haften können. Diese Option führt jedoch zu einer geringfügig reduzierten "
+"Oberflächenqualität, da die externe Umfangsfläche durch das Zusammendrücken "
+"der internen Umfangsfläche verformt wird.\n"
+"\n"
+"Verwenden Sie Innen/Außen/Innen für die beste Oberflächenqualität und "
+"dimensionale Genauigkeit, da die externe Wand ungestört von einer internen "
+"Umfangsfläche gedruckt wird. Die Überhangsleistung wird jedoch verringert, "
+"da keine interne Umfangsfläche vorhanden ist, um die externe Wand zu "
+"drucken. Diese Option erfordert ein Minimum von 3 Wänden, um wirksam zu "
+"sein, da die internen Wände ab der 3. Umfangsfläche zuerst gedruckt werden, "
+"dann die externe Umfangsfläche und schließlich die erste interne "
+"Umfangsfläche. Diese Option wird in den meisten Fällen gegen die Option "
+"Außen/Innen empfohlen.\n"
+"\n"
+"Verwenden Sie Außen/Innen für die gleiche externe Wandqualität und "
+"dimensionale Genauigkeit wie die Option Innen/Außen/Innen. Die Z-Nähte "
+"werden jedoch weniger konsistent erscheinen, da die erste Extrusion einer "
+"neuen Schicht auf einer sichtbaren Oberfläche beginnt.\n"
+"\n"
+" "
 
 msgid "Inner/Outer"
-msgstr ""
+msgstr "Innen/Außen"
 
 msgid "Outer/Inner"
-msgstr ""
+msgstr "Außen/Innen"
 
 msgid "Inner/Outer/Inner"
-msgstr ""
+msgstr "Innen/Außen/Innen"
 
 msgid "Print infill first"
-msgstr ""
+msgstr "Drucke Füllung zuerst"
 
 msgid ""
 "Order of wall/infill. When the tickbox is unchecked the walls are printed "
@@ -8738,6 +8840,15 @@ msgid ""
 "external surface finish. It can also cause the infill to shine through the "
 "external surfaces of the part."
 msgstr ""
+"Reihenfolge der Wand/Füllung. Wenn das Kontrollkästchen nicht aktiviert ist, "
+"werden die Wände zuerst gedruckt, was in den meisten Fällen am besten "
+"funktioniert.\n"
+"\n"
+"Das Drucken der Wände zuerst kann bei extremen Überhängen hilfreich sein, da "
+"die Wände an die benachbarte Füllung haften. Die Füllung drückt jedoch die "
+"gedruckten Wände leicht heraus, wo sie an ihnen befestigt ist, was zu einer "
+"schlechteren Oberflächenqualität führt. Es kann auch dazu führen, dass die "
+"Füllung durch die äußeren Oberflächen des Teils scheint."
 
 msgid "Height to rod"
 msgstr "Höhe zur Führung"
@@ -9448,10 +9559,10 @@ msgstr ""
 "eingeführten Zufallspunkten"
 
 msgid "Apply fuzzy skin to first layer"
-msgstr ""
+msgstr "Fuzzy Skin auf die erste Schicht anwenden"
 
 msgid "Whether to apply fuzzy skin on the first layer"
-msgstr ""
+msgstr "Ob Fuzzy Skin auf die erste Schicht angewendet werden soll"
 
 msgid "Filter out tiny gaps"
 msgstr "Filtert winzige Lücken aus"
@@ -9732,16 +9843,20 @@ msgstr ""
 "Materialien oder manuell lösbaren Unterstützungsmaterialien"
 
 msgid "Maximum width of a segmented region"
-msgstr ""
+msgstr "Maximale Breite eines segmentierten Bereichs"
 
 msgid "Maximum width of a segmented region. Zero disables this feature."
 msgstr ""
+"Maximale Breite eines segmentierten Bereichs. Null deaktiviert diese "
+"Funktion."
 
 msgid "Interlocking depth of a segmented region"
-msgstr ""
+msgstr "Verriegelungstiefe eines segmentierten Bereichs"
 
 msgid "Interlocking depth of a segmented region. Zero disables this feature."
 msgstr ""
+"Verriegelungstiefe eines segmentierten Bereichs. Null deaktiviert diese "
+"Funktion."
 
 msgid "Ironing Type"
 msgstr "Glättungsmethode"
@@ -10485,7 +10600,7 @@ msgid "Show auto-calibration marks"
 msgstr "Zeige automatische Kalibrierungsmarkierungen"
 
 msgid "Disable set remaining print time"
-msgstr ""
+msgstr "Verbleibende Druckzeit deaktivieren"
 
 msgid "Seam position"
 msgstr "Nahtposition"
@@ -10643,20 +10758,26 @@ msgstr ""
 "Naht."
 
 msgid "Smooth Spiral"
-msgstr ""
+msgstr "Gleichmäßige Spirale"
 
 msgid ""
 "Smooth Spiral smoothes out X and Y moves as wellresulting in no visible seam "
 "at all, even in the XY directions on walls that are not vertical"
 msgstr ""
+"Die gleichmäßige Spirale glättet auch die X- und Y-Bewegungen, so dass keine "
+"Naht sichtbar ist, auch nicht in den XY-Richtungen an Wänden, die nicht "
+"senkrecht sind."
 
 msgid "Max XY Smoothing"
-msgstr ""
+msgstr "Maximale XY-Glättung"
 
 msgid ""
 "Maximum distance to move points in XY to try to achieve a smooth spiralIf "
 "expressed as a %, it will be computed over nozzle diameter"
 msgstr ""
+"Maximaler Abstand, um Punkte in XY zu verschieben, um eine gleichmäßige "
+"Spirale zu erreichen. Wenn als Prozentsatz angegeben, wird er in Bezug auf "
+"den Düsendurchmesser berechnet."
 
 msgid ""
 "If smooth or traditional mode is selected, a timelapse video will be "
@@ -13255,8 +13376,8 @@ msgid ""
 "Note: FlashAir with firmware 2.00.02 or newer and activated upload function "
 "is required."
 msgstr ""
-"Hinweis: FlashAir mit Firmware 2.00.02 oder neuer und aktivierter "
-"Upload-Funktion erforderlich."
+"Hinweis: FlashAir mit Firmware 2.00.02 oder neuer und aktivierter Upload-"
+"Funktion erforderlich."
 
 msgid "Connection to MKS works correctly."
 msgstr "Verbindung zu MKS funktioniert korrekt."
@@ -13301,7 +13422,9 @@ msgstr "%1% : kein freier Speicherplatz"
 #. TRN %1% = host
 #, boost-format
 msgid "Upload has failed. There is no suitable storage found at %1%."
-msgstr "Upload ist fehlgeschlagen. Es wurde kein geeigneter Speicherplatz unter %1% gefunden."
+msgstr ""
+"Upload ist fehlgeschlagen. Es wurde kein geeigneter Speicherplatz unter %1% "
+"gefunden."
 
 msgid "Connection to Prusa Connect works correctly."
 msgstr "Verbindung zu Prusa Connect funktioniert korrekt."
@@ -13373,6 +13496,8 @@ msgid ""
 "Chamber temperature\n"
 "Did you know that OrcaSlicer supports chamber temperature?"
 msgstr ""
+"Kammertemperatur\n"
+"Wussten Sie, dass OrcaSlicer die Kammertemperatur unterstützt?"
 
 #: resources/data/hints.ini: [hint:Calibration]
 msgid ""
@@ -13380,18 +13505,25 @@ msgid ""
 "Did you know that calibrating your printer can do wonders? Check out our "
 "beloved calibration solution in OrcaSlicer."
 msgstr ""
+"Kalibrierung\n"
+"Wussten Sie, dass die Kalibrierung Ihres Druckers Wunder bewirken kann? "
+"Schauen Sie sich unsere beliebte Kalibrierungslösung in OrcaSlicer an."
 
 #: resources/data/hints.ini: [hint:Auxiliary fan]
 msgid ""
 "Auxiliary fan\n"
 "Did you know that OrcaSlicer supports Auxiliary part cooling fan?"
 msgstr ""
+"Hilfsventilator\n"
+"Wussten Sie, dass OrcaSlicer einen Hilfskühlventilator unterstützt?"
 
 #: resources/data/hints.ini: [hint:Air filtration]
 msgid ""
 "Air filtration/Exhuast Fan\n"
 "Did you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
 msgstr ""
+"Luftfiltration/Abzugslüfter\n"
+"Wussten Sie, dass OrcaSlicer Luftfiltration/Abzugslüfter unterstützen kann?"
 
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
@@ -13399,6 +13531,9 @@ msgid ""
 "Did you know that Orca Slicer offers a wide range of keyboard shortcuts and "
 "3D scene operations."
 msgstr ""
+"wie benutze ich Tastenkombinationen\n"
+"Wussten Sie, dass Orca Slicer eine Vielzahl von Tastenkombinationen und 3D-"
+"Szenenoperationen bietet."
 
 #: resources/data/hints.ini: [hint:Cut Tool]
 msgid ""
@@ -13416,6 +13551,9 @@ msgid ""
 "Did you know that you can fix a corrupted 3D model to avoid a lot of slicing "
 "problems on the Windows system?"
 msgstr ""
+"Modell reparieren\n"
+"Wussten Sie, dass Sie ein beschädigtes 3D-Modell reparieren können, um eine "
+"Vielzahl von Slicing-Problemen auf dem Windows-System zu vermeiden?"
 
 #: resources/data/hints.ini: [hint:Timelapse]
 msgid ""
@@ -13472,6 +13610,9 @@ msgid ""
 "Did you know that you use the Search tool to quickly find a specific Orca "
 "Slicer setting?"
 msgstr ""
+"Suchfunktion\n"
+"Wussten Sie, dass Sie das Suchwerkzeug verwenden können, um schnell eine "
+"bestimmte Orca Slicer-Einstellung zu finden?"
 
 #: resources/data/hints.ini: [hint:Simplify Model]
 msgid ""
@@ -13479,6 +13620,10 @@ msgid ""
 "Did you know that you can reduce the number of triangles in a mesh using the "
 "Simplify mesh feature? Right-click the model and select Simplify model."
 msgstr ""
+"Modell vereinfachen\n"
+"Wussten Sie, dass Sie die Anzahl der Dreiecke in einem Netz mit der Funktion "
+"\"Netz vereinfachen\" reduzieren können? Klicken Sie mit der rechten "
+"Maustaste auf das Modell und wählen Sie \"Modell vereinfachen\"."
 
 #: resources/data/hints.ini: [hint:Slicing Parameter Table]
 msgid ""
@@ -13507,6 +13652,10 @@ msgid ""
 "part modifier? That way you can, for example, create easily resizable holes "
 "directly in Orca Slicer."
 msgstr ""
+"Teil abziehen\n"
+"Wussten Sie, dass Sie ein Netz von einem anderen abziehen können, indem Sie "
+"den negativen Teilmodifikator verwenden? Auf diese Weise können Sie "
+"beispielsweise direkt in Orca Slicer leicht skalierbare Löcher erstellen."
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
@@ -13664,6 +13813,11 @@ msgid ""
 "extruder/hotend clogging when printing lower temperature filament with a "
 "higher enclosure temperature. More info about this in the Wiki."
 msgstr ""
+"Wenn mit geöffneter Druckertür gedruckt werden muss\n"
+"Wussten Sie, dass das Öffnen der Druckertür die Wahrscheinlichkeit eines "
+"Verstopfens des Extruders/Hotends beim Drucken von Filamenten mit niedriger "
+"Temperatur und höherer Gehäusetemperatur verringern kann. Weitere "
+"Informationen dazu finden Sie im Wiki."
 
 #: resources/data/hints.ini: [hint:Avoid warping]
 msgid ""
@@ -13672,21 +13826,10 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
-
-#~ msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-#~ msgstr "Basierend auf OrcaSlicer, BambuStudio und PrusaSlicer"
-
-#~ msgid "Edit Text"
-#~ msgstr "Text bearbeiten"
-
-#~ msgid "Error! Unable to create thread!"
-#~ msgstr "Fehler. Thread kann nicht erstellt werden."
-
-#~ msgid "Exception"
-#~ msgstr "Ausnahme"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "SLA-Archiv auswählen:"
+"Verwerfungen vermeiden\n"
+"Wussten Sie, dass Sie bei der Verwendung von Materialien, die zu "
+"Verwerfungen neigen, wie z.B. ABS, durch eine angemessene Erhöhung der "
+"Heizbetttemperatur die Wahrscheinlichkeit von Verwerfungen verringern können."
 
 #~ msgid "Import file"
 #~ msgstr "Datei importieren"

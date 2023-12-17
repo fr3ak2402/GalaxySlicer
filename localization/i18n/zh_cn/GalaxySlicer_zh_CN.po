@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:12+0100\n"
+"POT-Creation-Date: 2023-12-17 17:57+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -5440,16 +5440,16 @@ msgstr "低温打印热床"
 msgid "PLA Plate"
 msgstr "PLA打印板"
 
-msgid "Bamabu Engineering Plate"
+msgid "Bambu Engineering Plate"
 msgstr "工程打印热床"
 
-msgid "Bamabu Smooth PEI Plate"
+msgid "Bambu Smooth PEI Plate"
 msgstr ""
 
 msgid "High temperature Plate"
 msgstr "高温打印热床"
 
-msgid "Bamabu Textured PEI Plate"
+msgid "Bambu Textured PEI Plate"
 msgstr ""
 
 msgid "Send print job to"
@@ -12588,15 +12588,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "添加/删除打印机"
 
-#~ msgid "Bambu Engineering Plate"
-#~ msgstr "Bambu工程材料热床"
-
-#~ msgid "Bambu Smooth PEI Plate"
-#~ msgstr "Bambu光滑PEI热床"
-
-#~ msgid "Bambu Textured PEI Plate"
-#~ msgstr "Bambu纹理PEI热床"
-
 #~ msgid ""
 #~ "When print by object, machines with I3 structure will not generate "
 #~ "timelapse videos."
@@ -13134,7 +13125,7 @@ msgstr ""
 #~ msgid "Score"
 #~ msgstr "打分"
 
-#~ msgid "Bamabu High Temperature Plate"
+#~ msgid "Bambu High Temperature Plate"
 #~ msgstr "高温打印热床"
 
 #~ msgid "Can't connect to the printer"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:12+0100\n"
+"POT-Creation-Date: 2023-12-17 17:57+0100\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -5573,16 +5573,16 @@ msgstr "Bambu Cool Plate"
 msgid "PLA Plate"
 msgstr "PLA 플레이트"
 
-msgid "Bamabu Engineering Plate"
-msgstr "Bamabu Engineering Plate"
+msgid "Bambu Engineering Plate"
+msgstr "Bambu Engineering Plate"
 
-msgid "Bamabu Smooth PEI Plate"
+msgid "Bambu Smooth PEI Plate"
 msgstr ""
 
 msgid "High temperature Plate"
 msgstr "High temperature Plate"
 
-msgid "Bamabu Textured PEI Plate"
+msgid "Bambu Textured PEI Plate"
 msgstr ""
 
 msgid "Send print job to"
@@ -13152,15 +13152,6 @@ msgstr ""
 #~ msgid "Add/Remove printers"
 #~ msgstr "프린터 추가/제거"
 
-#~ msgid "Bambu Engineering Plate"
-#~ msgstr "Bambu Engineering Plate"
-
-#~ msgid "Bambu Smooth PEI Plate"
-#~ msgstr "Bambu Smooth PEI Plate"
-
-#~ msgid "Bambu Textured PEI Plate"
-#~ msgstr "Bambu Textured PEI Plate"
-
 #~ msgid ""
 #~ "When print by object, machines with I3 structure will not generate "
 #~ "timelapse videos."
@@ -13806,8 +13797,8 @@ msgstr ""
 #~ msgid "Score"
 #~ msgstr "점수"
 
-#~ msgid "Bamabu High Temperature Plate"
-#~ msgstr "Bamabu High Temperature Plate"
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Bambu High Temperature Plate"
 
 #~ msgid "Can't connect to the printer"
 #~ msgstr "프린터에 연결할 수 없습니다"
