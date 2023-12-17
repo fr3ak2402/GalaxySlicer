@@ -13216,111 +13216,115 @@ msgstr ""
 
 #, c-format, boost-format
 msgid "Mismatched type of print host: %s"
-msgstr ""
+msgstr "Nicht übereinstimmender Typ des Druck-Hosts: %s"
 
 msgid "Connection to AstroBox works correctly."
-msgstr ""
+msgstr "Verbindung zum AstroBox funktioniert korrekt."
 
 msgid "Could not connect to AstroBox"
-msgstr ""
+msgstr "Konnte keine Verbindung zum AstroBox herstellen"
 
 msgid "Note: AstroBox version at least 1.1.0 is required."
-msgstr ""
+msgstr "Hinweis: AstroBox Version mindestens 1.1.0 erforderlich."
 
 msgid "Connection to Duet works correctly."
-msgstr ""
+msgstr "Verbindung zu Duet funktioniert korrekt."
 
 msgid "Could not connect to Duet"
-msgstr ""
+msgstr "Konnte keine Verbindung zu Duet herstellen"
 
 msgid "Unknown error occured"
-msgstr ""
+msgstr "Unbekannter Fehler aufgetreten"
 
 msgid "Wrong password"
-msgstr ""
+msgstr "Falsches Passwort"
 
 msgid "Could not get resources to create a new connection"
-msgstr ""
+msgstr "Konnte keine Ressourcen zum Erstellen einer neuen Verbindung erhalten"
 
 msgid "Upload not enabled on FlashAir card."
-msgstr ""
+msgstr "Upload auf FlashAir-Karte nicht aktiviert."
 
 msgid "Connection to FlashAir works correctly and upload is enabled."
-msgstr ""
+msgstr "Verbindung zu FlashAir funktioniert korrekt und Upload ist aktiviert."
 
 msgid "Could not connect to FlashAir"
-msgstr ""
+msgstr "Konnte keine Verbindung zu FlashAir herstellen"
 
 msgid ""
 "Note: FlashAir with firmware 2.00.02 or newer and activated upload function "
 "is required."
 msgstr ""
+"Hinweis: FlashAir mit Firmware 2.00.02 oder neuer und aktivierter "
+"Upload-Funktion erforderlich."
 
 msgid "Connection to MKS works correctly."
-msgstr ""
+msgstr "Verbindung zu MKS funktioniert korrekt."
 
 msgid "Could not connect to MKS"
-msgstr ""
+msgstr "Konnte keine Verbindung zu MKS herstellen"
 
 msgid "Connection to OctoPrint works correctly."
-msgstr ""
+msgstr "Verbindung zu OctoPrint funktioniert korrekt."
 
 msgid "Could not connect to OctoPrint"
-msgstr ""
+msgstr "Konnte keine Verbindung zu OctoPrint herstellen"
 
 msgid "Note: OctoPrint version at least 1.1.0 is required."
-msgstr ""
+msgstr "Hinweis: OctoPrint Version mindestens 1.1.0 erforderlich."
 
 msgid "Connection to Prusa SL1 / SL1S works correctly."
-msgstr ""
+msgstr "Verbindung zu Prusa SL1 / SL1S funktioniert korrekt."
 
 msgid "Could not connect to Prusa SLA"
-msgstr ""
+msgstr "Konnte keine Verbindung zu Prusa SLA herstellen"
 
 msgid "Connection to PrusaLink works correctly."
-msgstr ""
+msgstr "Verbindung zu PrusaLink funktioniert korrekt."
 
 msgid "Could not connect to PrusaLink"
-msgstr ""
+msgstr "Konnte keine Verbindung zu PrusaLink herstellen"
 
 msgid "Storages found"
-msgstr ""
+msgstr "Speicher gefunden"
 
 #. TRN %1% = storage path
 #, boost-format
 msgid "%1% : read only"
-msgstr ""
+msgstr "%1% : Nur-Lesen"
 
 #. TRN %1% = storage path
 #, boost-format
 msgid "%1% : no free space"
-msgstr ""
+msgstr "%1% : kein freier Speicherplatz"
 
 #. TRN %1% = host
 #, boost-format
 msgid "Upload has failed. There is no suitable storage found at %1%."
-msgstr ""
+msgstr "Upload ist fehlgeschlagen. Es wurde kein geeigneter Speicherplatz unter %1% gefunden."
 
 msgid "Connection to Prusa Connect works correctly."
-msgstr ""
+msgstr "Verbindung zu Prusa Connect funktioniert korrekt."
 
 msgid "Could not connect to Prusa Connect"
-msgstr ""
+msgstr "Konnte keine Verbindung zu Prusa Connect herstellen"
 
 msgid "Connection to Repetier works correctly."
-msgstr ""
+msgstr "Verbindung zu Repetier funktioniert korrekt."
 
 msgid "Could not connect to Repetier"
-msgstr ""
+msgstr "Konnte keine Verbindung zu Repetier herstellen"
 
 msgid "Note: Repetier version at least 0.90.0 is required."
-msgstr ""
+msgstr "Hinweis: Repetier Version mindestens 0.90.0 erforderlich."
 
 #, boost-format
 msgid ""
 "HTTP status: %1%\n"
 "Message body: \"%2%\""
 msgstr ""
+"HTTP-Status: %1%\n"
+"Nachrichtentext: \"%2%\""
 
 #, boost-format
 msgid ""
@@ -13328,6 +13332,9 @@ msgid ""
 "Message body: \"%1%\"\n"
 "Error: \"%2%\""
 msgstr ""
+"Die Analyse der Host-Antwort ist fehlgeschlagen.\n"
+"Nachrichtentext: \"%1%\"\n"
+"Fehler: \"%2%\""
 
 #, boost-format
 msgid ""
@@ -13335,6 +13342,9 @@ msgid ""
 "Message body: \"%1%\"\n"
 "Error: \"%2%\""
 msgstr ""
+"Die Aufzählung der Drucker des Hosts ist fehlgeschlagen.\n"
+"Nachrichtentext: \"%1%\"\n"
+"Fehler: \"%2%\""
 
 #: resources/data/hints.ini: [hint:Precise wall]
 msgid ""
@@ -13342,6 +13352,9 @@ msgid ""
 "Did you know that turning on precise wall can improve precision and layer "
 "consistency?"
 msgstr ""
+"Präzise Wand\n"
+"Wussten Sie, dass Sie durch das Einschalten der präzisen Wand die Präzision "
+"und die Schichtkonsistenz verbessern können?"
 
 #: resources/data/hints.ini: [hint:Sandwich mode]
 msgid ""
@@ -13350,6 +13363,10 @@ msgid ""
 "precision and layer consistency if your model doesn't have very steep "
 "overhangs?"
 msgstr ""
+"Sandwich-Modus\n"
+"Wussten Sie, dass Sie den Sandwich-Modus (innen-außen-innen) verwenden "
+"können, um die Präzision und die Schichtkonsistenz zu verbessern, wenn Ihr "
+"Modell keine sehr steilen Überhänge hat?"
 
 #: resources/data/hints.ini: [hint:Chamber temperature]
 msgid ""
