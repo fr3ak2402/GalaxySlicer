@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 23:44+0100\n"
+"POT-Creation-Date: 2023-12-17 17:12+0100\n"
 "PO-Revision-Date: 2023-08-23 15:56+0900\n"
 "Last-Translator: Hotsolidinfill\n"
 "Language-Team: \n"
@@ -587,8 +587,8 @@ msgstr "구성 파일 \"%1%\"이(가) 로드되었지만 일부 값이 인식되
 msgid "V"
 msgstr "V"
 
-msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-msgstr "OrcaSlicer, BambuStudio 및 PrusaSlicer를 기반으로 함"
+msgid "Based on GalaxySlicer, BambuStudio and PrusaSlicer"
+msgstr ""
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -857,6 +857,24 @@ msgstr "지지대 차단기 추가"
 msgid "Add support enforcer"
 msgstr "지지대 강제기 추가"
 
+msgid "Add text"
+msgstr ""
+
+msgid "Add negative text"
+msgstr ""
+
+msgid "Add text modifier"
+msgstr ""
+
+msgid "Add SVG part"
+msgstr ""
+
+msgid "Add negative SVG"
+msgstr ""
+
+msgid "Add SVG modifier"
+msgstr ""
+
 msgid "Select settings"
 msgstr "설정 선택"
 
@@ -872,9 +890,6 @@ msgstr "Del"
 
 msgid "Delete the selected object"
 msgstr "선택된 개체 삭제"
-
-msgid "Edit Text"
-msgstr "텍스트 편집"
 
 msgid "Load..."
 msgstr "불러오기..."
@@ -908,6 +923,12 @@ msgstr "원기둥"
 
 msgid "Cone"
 msgstr "원뿔"
+
+msgid "Text"
+msgstr ""
+
+msgid "SVG"
+msgstr ""
 
 msgid "Height range Modifier"
 msgstr "높이 범위 수정자"
@@ -1041,6 +1062,18 @@ msgstr "반전"
 
 msgid "Mirror object"
 msgstr "개체 반전"
+
+msgid "Edit text"
+msgstr ""
+
+msgid "Ability to change text, font, size, ..."
+msgstr ""
+
+msgid "Edit SVG"
+msgstr ""
+
+msgid "Change SVG source file, projection, size, ..."
+msgstr ""
 
 msgid "Invalidate cut info"
 msgstr "잘못된 잘라내기 정보"
@@ -1662,10 +1695,6 @@ msgstr ""
 msgid "Arranging..."
 msgstr "정렬 중..."
 
-msgid ""
-"Arrange failed. Found some exceptions when processing object geometries."
-msgstr "정렬에 실패했습니다. 개체 형상을 처리할 때 일부 예외를 발견했습니다."
-
 msgid "Arranging"
 msgstr "정렬 중"
 
@@ -1680,6 +1709,10 @@ msgstr ""
 
 msgid "Arranging done."
 msgstr "정렬 완료."
+
+msgid ""
+"Arrange failed. Found some exceptions when processing object geometries."
+msgstr "정렬에 실패했습니다. 개체 형상을 처리할 때 일부 예외를 발견했습니다."
 
 #, c-format, boost-format
 msgid ""
@@ -1710,6 +1743,9 @@ msgstr "방향 지정 중..."
 msgid "Orienting"
 msgstr "방향 지정 중"
 
+msgid "Orienting canceled."
+msgstr ""
+
 msgid "Filling"
 msgstr ""
 
@@ -1719,11 +1755,14 @@ msgstr "베드 채우기 취소됨."
 msgid "Bed filling done."
 msgstr "베드 채우기 완료."
 
-msgid "Error! Unable to create thread!"
-msgstr "오류! 스레드를 만들 수 없습니다!"
+msgid "Searching for optimal orientation"
+msgstr ""
 
-msgid "Exception"
-msgstr "예외"
+msgid "Orientation search canceled."
+msgstr ""
+
+msgid "Orientation found."
+msgstr ""
 
 msgid "Logging in"
 msgstr "로그인 중"
@@ -1829,30 +1868,6 @@ msgstr "성공적으로 보냈습니다. %s초 내에 현재 페이지가 닫힙
 
 msgid "An SD card needs to be inserted before sending to printer."
 msgstr "프린터로 전송 전에 SD 카드를 삽입해야 합니다."
-
-msgid "Choose SLA archive:"
-msgstr "SLA 아카이브 선택:"
-
-msgid "Import file"
-msgstr "파일 가져오기"
-
-msgid "Import model and profile"
-msgstr "모델과 파일 가져오기"
-
-msgid "Import profile only"
-msgstr "프로필만 가져오기"
-
-msgid "Import model only"
-msgstr "모델만 가져오기"
-
-msgid "Accurate"
-msgstr "정밀한"
-
-msgid "Balanced"
-msgstr "균형 잡힌"
-
-msgid "Quick"
-msgstr "빠른"
 
 msgid "Importing SLA archive"
 msgstr "SLA 아카이브 가져오는 중"
@@ -3543,6 +3558,12 @@ msgstr ""
 msgid "Show g-code window in Previce scene"
 msgstr ""
 
+msgid "Reset Window Layout"
+msgstr ""
+
+msgid "Reset to default window layout"
+msgstr ""
+
 msgid "Show &Labels"
 msgstr "이름표 &보기"
 
@@ -4618,6 +4639,12 @@ msgstr ""
 "전통적인 타임랩스 사진을 사용하면 표면 결함이 발생할수 있습니다.부드러운 모드"
 "로 변경하는 것이 좋습니다."
 
+msgid "Expand sidebar"
+msgstr ""
+
+msgid "Collapse sidebar"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Loading file: %s"
 msgstr "파일 로드 중: %s"
@@ -4863,6 +4890,9 @@ msgid ""
 "import it."
 msgstr ""
 
+msgid "Import SLA archive"
+msgstr ""
+
 msgid "The selected file"
 msgstr "선택한 파일"
 
@@ -4944,6 +4974,15 @@ msgid ""
 msgstr ""
 "모델 메쉬에 부울 연산을 수행할 수 없습니다. 오직 양수 부품만 내보내집니다."
 
+msgid ""
+"Are you sure you want to store original SVGs with their local paths into the "
+"3MF file?\n"
+"If you hit 'NO', all SVGs in the project will not be editable any more."
+msgstr ""
+
+msgid "Private protection"
+msgstr ""
+
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
 msgstr "프린터가 준비됐나요? 출력 시트가 제자리에 있고 비어 있고 깨끗합니까?"
 
@@ -4965,6 +5004,9 @@ msgstr "프린터로 전송"
 
 msgid "Custom supports and color painting were removed before repairing."
 msgstr "수리 전 사용자 지정 지지대와 컬러 페인트가 제거되었습니다."
+
+msgid "Optimize Rotation"
+msgstr ""
 
 msgid "Invalid number"
 msgstr "잘못된 번호"
@@ -5981,6 +6023,15 @@ msgstr "정밀도"
 msgid "Wall generator"
 msgstr "벽 생성기"
 
+msgid "Walls and surfaces"
+msgstr ""
+
+msgid "Bridging"
+msgstr ""
+
+msgid "Overhangs"
+msgstr ""
+
 msgid "Walls"
 msgstr "벽"
 
@@ -6567,19 +6618,15 @@ msgstr "래밍 선 너비"
 msgid "Ramming line spacing"
 msgstr "래밍 선 간격"
 
-msgid "Auto-Calc"
-msgstr "자동 계산"
-
-msgid "Re-calculate"
+msgid "Recalculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "필라멘트 교체를 위한 쏟기(플러쉬) 부피"
 
 msgid ""
-"Studio would re-calculate your flushing volumes everytime the filaments "
-"color changed. You could disable the auto-calculate in Bambu Studio > "
-"Preferences"
+"Orca recalculates your flushing volumes everytime the filament colors "
+"change. You can change this behavior in Preferences."
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6595,15 +6642,6 @@ msgstr "승수는 [%.2f, %.2f] 범위에 있어야 합니다."
 
 msgid "Multiplier"
 msgstr "승수"
-
-msgid "unloaded"
-msgstr "빼냄"
-
-msgid "loaded"
-msgstr "넣음"
-
-msgid "Filament #"
-msgstr "필라멘트 #"
 
 msgid "From"
 msgstr "에서"
@@ -7522,6 +7560,12 @@ msgstr "출력 가능 높이"
 msgid "Maximum printable height which is limited by mechanism of printer"
 msgstr "프린터 기계장치에 의해 제한되는 출력 가능한 최대 높이"
 
+msgid "Preferred orientation"
+msgstr ""
+
+msgid "Automatically orient stls on the Z-axis upon initial import"
+msgstr ""
+
 msgid "Printer preset names"
 msgstr "프린터 사전 설정 이름"
 
@@ -8096,6 +8140,9 @@ msgstr "공기 여과 활성화"
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr "더 나은 공기 여과를 위해 활성화하세요. G코드 명령: M106 P3 S(0-255)"
 
+msgid "Fan speed"
+msgstr "팬 속도"
+
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
@@ -8266,7 +8313,29 @@ msgstr "작은 둘레 길이에 대한 임계값을 설정합니다. 기본 임�
 msgid "Walls printing order"
 msgstr ""
 
-msgid "Print sequence of inner wall and outer wall. "
+msgid ""
+"Print sequence of the internal (inner) and external (outer) walls. \n"
+"\n"
+"Use Inner/Outer for best overhangs. This is because the overhanging walls "
+"can adhere to a neighouring perimeter while printing. However, this option "
+"results in slightly reduced surface quality as the external perimeter is "
+"deformed by being squashed to the internal perimeter.\n"
+"\n"
+"Use Inner/Outer/Inner for the best external surface finish and dimensional "
+"accuracy as the external wall is printed undisturbed from an internal "
+"perimeter. However, overhang performance will reduce as there is no internal "
+"perimeter to print the external wall against. This option requires a minimum "
+"of 3 walls to be effective as it prints the internal walls from the 3rd "
+"perimeter onwards first, then the external perimeter and, finally, the first "
+"internal perimeter. This option is recomended against the Outer/Inner option "
+"in most cases. \n"
+"\n"
+"Use Outer/Inner for the same external wall quality and dimensional accuracy "
+"benefits of Inner/Outer/Inner option. However, the z seams will appear less "
+"consistent as the first extrusion of a new layer starts on a visible "
+"surface.\n"
+"\n"
+" "
 msgstr ""
 
 msgid "Inner/Outer"
@@ -8281,7 +8350,15 @@ msgstr ""
 msgid "Print infill first"
 msgstr ""
 
-msgid "Order of wall/infill. false means print wall first. "
+msgid ""
+"Order of wall/infill. When the tickbox is unchecked the walls are printed "
+"first, which works best in most cases.\n"
+"\n"
+"Printing walls first may help with extreme overhangs as the walls have the "
+"neighbouring infill to adhere to. However, the infill will slighly push out "
+"the printed walls where it is attached to them, resulting in a worse "
+"external surface finish. It can also cause the infill to shine through the "
+"external surfaces of the part."
 msgstr ""
 
 msgid "Height to rod"
@@ -9043,14 +9120,6 @@ msgstr ""
 "장치에 보조 출력물 냉각팬이 있는 경우 이 옵션을 활성화합니다. G코드 명령: "
 "M106 P2 S(0-255)."
 
-msgid "Exhaust cooling fan"
-msgstr ""
-
-msgid ""
-"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
-"P3 S(0-255)."
-msgstr ""
-
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
@@ -9402,9 +9471,6 @@ msgstr "이동 최대 가속도"
 
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr "이동 시 최대 가속도(M204 T)는 Marlin 2에만 적용됩니다"
-
-msgid "Fan speed"
-msgstr "팬 속도"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
@@ -9922,6 +9988,9 @@ msgstr ""
 msgid "Show auto-calibration marks"
 msgstr "자동 교정 기호 표시"
 
+msgid "Disable set remaining print time"
+msgstr ""
+
 msgid "Seam position"
 msgstr "솔기 위치"
 
@@ -10059,6 +10128,22 @@ msgstr ""
 "나선화는 외부 윤곽선의 z 이동을 부드럽게 합니다. 그리고 개체를 꽉찬 하단 레이"
 "어(Solid bottom layers)가 있는 단일 벽으로 출력합니다. 최종 생성된 출력물에"
 "는 솔기가 없습니다"
+
+msgid "Smooth Spiral"
+msgstr ""
+
+msgid ""
+"Smooth Spiral smoothes out X and Y moves as wellresulting in no visible seam "
+"at all, even in the XY directions on walls that are not vertical"
+msgstr ""
+
+msgid "Max XY Smoothing"
+msgstr ""
+
+msgid ""
+"Maximum distance to move points in XY to try to achieve a smooth spiralIf "
+"expressed as a %, it will be computed over nozzle diameter"
+msgstr ""
 
 msgid ""
 "If smooth or traditional mode is selected, a timelapse video will be "
@@ -10658,8 +10743,16 @@ msgid "Wipe Distance"
 msgstr "닦기 거리"
 
 msgid ""
-"Discribe how long the nozzle will move along the last path when retracting"
-msgstr "퇴출 시 노즐이 마지막 경로를 따라 이동하는 거리"
+"Discribe how long the nozzle will move along the last path when "
+"retracting. \n"
+"\n"
+"Depending on how long the wipe operation lasts, how fast and long the "
+"extruder/filament retraction settings are, a retraction move may be needed "
+"to retract the remaining filament. \n"
+"\n"
+"Setting a value in the retract amount before wipe setting below will perform "
+"any excess retraction before the wipe, else it will be performed after."
+msgstr ""
 
 msgid ""
 "The wiping tower can be used to clean up the residue on the nozzle and "
@@ -12111,7 +12204,7 @@ msgstr ""
 msgid "wiki"
 msgstr ""
 
-msgid "Improt Preset"
+msgid "Import Preset"
 msgstr ""
 
 msgid "Create Type"
@@ -12611,6 +12704,46 @@ msgid ""
 "Error: \"%2%\""
 msgstr ""
 
+#: resources/data/hints.ini: [hint:Precise wall]
+msgid ""
+"Precise wall\n"
+"Did you know that turning on precise wall can improve precision and layer "
+"consistency?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Sandwich mode]
+msgid ""
+"Sandwich mode\n"
+"Did you know that you can use sandwich mode (inner-outer-inner) to improve "
+"precision and layer consistency if your model doesn't have very steep "
+"overhangs?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Chamber temperature]
+msgid ""
+"Chamber temperature\n"
+"Did you know that OrcaSlicer supports chamber temperature?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Calibration]
+msgid ""
+"Calibration\n"
+"Did you know that calibrating your printer can do wonders? Check out our "
+"beloved calibration solution in OrcaSlicer."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Auxiliary fan]
+msgid ""
+"Auxiliary fan\n"
+"Did you know that OrcaSlicer supports Auxiliary part cooling fan?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Air filtration]
+msgid ""
+"Air filtration/Exhuast Fan\n"
+"Did you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
+msgstr ""
+
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
@@ -12694,13 +12827,8 @@ msgstr ""
 msgid ""
 "Simplify Model\n"
 "Did you know that you can reduce the number of triangles in a mesh using the "
-"Simplify mesh feature? Right-click the model and select Simplify model. Read "
-"more in the documentation."
+"Simplify mesh feature? Right-click the model and select Simplify model."
 msgstr ""
-"모델 단순화\n"
-"메쉬 단순화 기능을 사용하여 메쉬의 삼각형 수를 줄일 수 있다는 사실을 알고 있"
-"습니까? 모델을 마우스 오른쪽 버튼으로 클릭하고 모델 단순화를 선택합니다. 자세"
-"한 내용은 설명서를 참조하십시오."
 
 #: resources/data/hints.ini: [hint:Slicing Parameter Table]
 msgid ""
@@ -12727,12 +12855,8 @@ msgid ""
 "Subtract a Part\n"
 "Did you know that you can subtract one mesh from another using the Negative "
 "part modifier? That way you can, for example, create easily resizable holes "
-"directly in Orca Slicer. Read more in the documentation."
+"directly in Orca Slicer."
 msgstr ""
-"부품 비우기\n"
-"비우기 부품 수정자를 사용하여 한 메쉬를 다른 메쉬에서 뺄수 있다는 것을 알고 "
-"있습니까? 예를 들어 오르카 슬라이서에서 직접 쉽게 크기를 조정할수 있는 구멍"
-"을 만들수 있습니다. 자세한 내용은 설명서를 참조하십시오."
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
@@ -12892,6 +13016,80 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+#~ msgstr "OrcaSlicer, BambuStudio 및 PrusaSlicer를 기반으로 함"
+
+#~ msgid "Edit Text"
+#~ msgstr "텍스트 편집"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "오류! 스레드를 만들 수 없습니다!"
+
+#~ msgid "Exception"
+#~ msgstr "예외"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "SLA 아카이브 선택:"
+
+#~ msgid "Import file"
+#~ msgstr "파일 가져오기"
+
+#~ msgid "Import model and profile"
+#~ msgstr "모델과 파일 가져오기"
+
+#~ msgid "Import profile only"
+#~ msgstr "프로필만 가져오기"
+
+#~ msgid "Import model only"
+#~ msgstr "모델만 가져오기"
+
+#~ msgid "Accurate"
+#~ msgstr "정밀한"
+
+#~ msgid "Balanced"
+#~ msgstr "균형 잡힌"
+
+#~ msgid "Quick"
+#~ msgstr "빠른"
+
+#~ msgid "Auto-Calc"
+#~ msgstr "자동 계산"
+
+#~ msgid "unloaded"
+#~ msgstr "빼냄"
+
+#~ msgid "loaded"
+#~ msgstr "넣음"
+
+#~ msgid "Filament #"
+#~ msgstr "필라멘트 #"
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr "퇴출 시 노즐이 마지막 경로를 따라 이동하는 거리"
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "모델 단순화\n"
+#~ "메쉬 단순화 기능을 사용하여 메쉬의 삼각형 수를 줄일 수 있다는 사실을 알고 "
+#~ "있습니까? 모델을 마우스 오른쪽 버튼으로 클릭하고 모델 단순화를 선택합니"
+#~ "다. 자세한 내용은 설명서를 참조하십시오."
+
+#~ msgid ""
+#~ "Subtract a Part\n"
+#~ "Did you know that you can subtract one mesh from another using the "
+#~ "Negative part modifier? That way you can, for example, create easily "
+#~ "resizable holes directly in Orca Slicer. Read more in the documentation."
+#~ msgstr ""
+#~ "부품 비우기\n"
+#~ "비우기 부품 수정자를 사용하여 한 메쉬를 다른 메쉬에서 뺄수 있다는 것을 알"
+#~ "고 있습니까? 예를 들어 오르카 슬라이서에서 직접 쉽게 크기를 조정할수 있는 "
+#~ "구멍을 만들수 있습니다. 자세한 내용은 설명서를 참조하십시오."
 
 #~ msgid "Newer 3mf version"
 #~ msgstr "최신 3mf 버전"

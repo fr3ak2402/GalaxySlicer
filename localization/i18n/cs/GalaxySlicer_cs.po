@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 23:44+0100\n"
+"POT-Creation-Date: 2023-12-17 17:12+0100\n"
 "PO-Revision-Date: 2023-07-17 21:51+0200\n"
 "Last-Translator: Momo <renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -589,8 +589,8 @@ msgstr ""
 msgid "V"
 msgstr "V"
 
-msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-msgstr "Založeno na OrcaSlicer, BambuStudio a PrusaSlicer"
+msgid "Based on GalaxySlicer, BambuStudio and PrusaSlicer"
+msgstr ""
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -863,6 +863,24 @@ msgstr "Přidat blokátor podpěr"
 msgid "Add support enforcer"
 msgstr "Přidat vynucení podpěr"
 
+msgid "Add text"
+msgstr ""
+
+msgid "Add negative text"
+msgstr ""
+
+msgid "Add text modifier"
+msgstr ""
+
+msgid "Add SVG part"
+msgstr ""
+
+msgid "Add negative SVG"
+msgstr ""
+
+msgid "Add SVG modifier"
+msgstr ""
+
 msgid "Select settings"
 msgstr "Vybrat nastavení"
 
@@ -877,9 +895,6 @@ msgstr "Smazat"
 
 msgid "Delete the selected object"
 msgstr "Smazat vybraný objekt"
-
-msgid "Edit Text"
-msgstr "Upravit text"
 
 msgid "Load..."
 msgstr "Načíst..."
@@ -913,6 +928,12 @@ msgstr "Válec"
 
 msgid "Cone"
 msgstr "Kužel"
+
+msgid "Text"
+msgstr ""
+
+msgid "SVG"
+msgstr ""
 
 msgid "Height range Modifier"
 msgstr "Modifikátor výškového rozsahu"
@@ -1046,6 +1067,18 @@ msgstr "Zrcadlit"
 
 msgid "Mirror object"
 msgstr "Zrcadlit objekt"
+
+msgid "Edit text"
+msgstr ""
+
+msgid "Ability to change text, font, size, ..."
+msgstr ""
+
+msgid "Edit SVG"
+msgstr ""
+
+msgid "Change SVG source file, projection, size, ..."
+msgstr ""
 
 msgid "Invalidate cut info"
 msgstr "Zneplatnění informací o řezu"
@@ -1683,12 +1716,6 @@ msgstr ""
 msgid "Arranging..."
 msgstr "Uspořádávání..."
 
-msgid ""
-"Arrange failed. Found some exceptions when processing object geometries."
-msgstr ""
-"Uspořádání se nezdařilo. Při zpracování geometrií objektů bylo nalezeno "
-"několik výjimek."
-
 msgid "Arranging"
 msgstr "Uspořádávání"
 
@@ -1703,6 +1730,12 @@ msgstr ""
 
 msgid "Arranging done."
 msgstr "Uspořádávání dokončeno."
+
+msgid ""
+"Arrange failed. Found some exceptions when processing object geometries."
+msgstr ""
+"Uspořádání se nezdařilo. Při zpracování geometrií objektů bylo nalezeno "
+"několik výjimek."
 
 #, c-format, boost-format
 msgid ""
@@ -1734,6 +1767,9 @@ msgstr "Orientování..."
 msgid "Orienting"
 msgstr "Orientování"
 
+msgid "Orienting canceled."
+msgstr ""
+
 msgid "Filling"
 msgstr ""
 
@@ -1743,11 +1779,14 @@ msgstr "Vyplnění podložky zrušeno."
 msgid "Bed filling done."
 msgstr "Vyplnění podložky je dokončené."
 
-msgid "Error! Unable to create thread!"
-msgstr "Chyba! Nelze vytvořit vlákno!"
+msgid "Searching for optimal orientation"
+msgstr ""
 
-msgid "Exception"
-msgstr "Výjimka"
+msgid "Orientation search canceled."
+msgstr ""
+
+msgid "Orientation found."
+msgstr ""
 
 msgid "Logging in"
 msgstr "Přihlášení"
@@ -1855,30 +1894,6 @@ msgstr "Úspěšně odesláno. Zavřít aktuální stránku za %s s"
 
 msgid "An SD card needs to be inserted before sending to printer."
 msgstr "Před odesláním do tiskárny je třeba vložit SD kartu."
-
-msgid "Choose SLA archive:"
-msgstr "Vyberte SLA archiv:"
-
-msgid "Import file"
-msgstr "Importovat soubor"
-
-msgid "Import model and profile"
-msgstr "Importovat model a profil"
-
-msgid "Import profile only"
-msgstr "Importovat pouze profil"
-
-msgid "Import model only"
-msgstr "Importujte pouze model"
-
-msgid "Accurate"
-msgstr "Přesné"
-
-msgid "Balanced"
-msgstr "Vyvážené"
-
-msgid "Quick"
-msgstr "Rychlé"
 
 msgid "Importing SLA archive"
 msgstr "Importuje se SLA archiv"
@@ -3596,6 +3611,12 @@ msgstr ""
 msgid "Show g-code window in Previce scene"
 msgstr ""
 
+msgid "Reset Window Layout"
+msgstr ""
+
+msgid "Reset to default window layout"
+msgstr ""
+
 msgid "Show &Labels"
 msgstr "Zobrazit &Popisky"
 
@@ -4695,6 +4716,12 @@ msgstr ""
 "Povolení tradičního časosběrného fotografování může způsobit povrchové "
 "nedokonalosti. Doporučuje se přepnout na hladký režim."
 
+msgid "Expand sidebar"
+msgstr ""
+
+msgid "Collapse sidebar"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Loading file: %s"
 msgstr "Načítání souboru: %s"
@@ -4947,6 +4974,9 @@ msgstr ""
 "Import do GalaxySliceru se nezdařil. Stáhněte si prosím soubor a ručně jej "
 "importujte."
 
+msgid "Import SLA archive"
+msgstr ""
+
 msgid "The selected file"
 msgstr "Vybraný soubor"
 
@@ -5028,6 +5058,15 @@ msgstr ""
 "Nelze provést logickou operaci nad mashí modelů. Budou exportovány pouze "
 "kladné části."
 
+msgid ""
+"Are you sure you want to store original SVGs with their local paths into the "
+"3MF file?\n"
+"If you hit 'NO', all SVGs in the project will not be editable any more."
+msgstr ""
+
+msgid "Private protection"
+msgstr ""
+
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
 msgstr "Je tiskárna připravena? Je tiskový list na místě, prázdný a čistý?"
 
@@ -5050,6 +5089,9 @@ msgstr "Odeslat do tiskárny"
 
 msgid "Custom supports and color painting were removed before repairing."
 msgstr "Vlastní podpěry a barevné malby byly před opravou odstraněny."
+
+msgid "Optimize Rotation"
+msgstr ""
 
 msgid "Invalid number"
 msgstr "Neplatné číslo"
@@ -6082,6 +6124,15 @@ msgstr "Přesnost"
 msgid "Wall generator"
 msgstr "Generátor stěny"
 
+msgid "Walls and surfaces"
+msgstr ""
+
+msgid "Bridging"
+msgstr ""
+
+msgid "Overhangs"
+msgstr ""
+
 msgid "Walls"
 msgstr "Stěny"
 
@@ -6687,19 +6738,15 @@ msgstr "Šířka linky při rapidní extruzi"
 msgid "Ramming line spacing"
 msgstr "Rozestup linek při rapidní extruzi"
 
-msgid "Auto-Calc"
-msgstr "Automatický výpočet"
-
-msgid "Re-calculate"
+msgid "Recalculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "Čistící objemy pro výměnu filamentu"
 
 msgid ""
-"Studio would re-calculate your flushing volumes everytime the filaments "
-"color changed. You could disable the auto-calculate in Bambu Studio > "
-"Preferences"
+"Orca recalculates your flushing volumes everytime the filament colors "
+"change. You can change this behavior in Preferences."
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6715,15 +6762,6 @@ msgstr "Násobitel by měl být v rozsahu [%.2f, %.2f]."
 
 msgid "Multiplier"
 msgstr "Multiplikátor"
-
-msgid "unloaded"
-msgstr "vyjmuto"
-
-msgid "loaded"
-msgstr "zaváděn"
-
-msgid "Filament #"
-msgstr "Filament #"
 
 msgid "From"
 msgstr "Z"
@@ -7655,6 +7693,12 @@ msgstr "Výška pro tisk"
 msgid "Maximum printable height which is limited by mechanism of printer"
 msgstr "Maximální tisknutelná výška, která je omezena mechanismem tiskárny"
 
+msgid "Preferred orientation"
+msgstr ""
+
+msgid "Automatically orient stls on the Z-axis upon initial import"
+msgstr ""
+
 msgid "Printer preset names"
 msgstr "Názvy přednastavení tiskáren"
 
@@ -8243,6 +8287,9 @@ msgstr "Aktivovat filtrování vzduchu"
 msgid "Activate for better air filtration. G-code command: M106 P3 S(0-255)"
 msgstr "Aktivovat pro lepší filtrování vzduchu. G-kód příkaz: M106 P3 S(0-255)"
 
+msgid "Fan speed"
+msgstr "Rychlost ventilátoru"
+
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
@@ -8421,7 +8468,29 @@ msgstr ""
 msgid "Walls printing order"
 msgstr ""
 
-msgid "Print sequence of inner wall and outer wall. "
+msgid ""
+"Print sequence of the internal (inner) and external (outer) walls. \n"
+"\n"
+"Use Inner/Outer for best overhangs. This is because the overhanging walls "
+"can adhere to a neighouring perimeter while printing. However, this option "
+"results in slightly reduced surface quality as the external perimeter is "
+"deformed by being squashed to the internal perimeter.\n"
+"\n"
+"Use Inner/Outer/Inner for the best external surface finish and dimensional "
+"accuracy as the external wall is printed undisturbed from an internal "
+"perimeter. However, overhang performance will reduce as there is no internal "
+"perimeter to print the external wall against. This option requires a minimum "
+"of 3 walls to be effective as it prints the internal walls from the 3rd "
+"perimeter onwards first, then the external perimeter and, finally, the first "
+"internal perimeter. This option is recomended against the Outer/Inner option "
+"in most cases. \n"
+"\n"
+"Use Outer/Inner for the same external wall quality and dimensional accuracy "
+"benefits of Inner/Outer/Inner option. However, the z seams will appear less "
+"consistent as the first extrusion of a new layer starts on a visible "
+"surface.\n"
+"\n"
+" "
 msgstr ""
 
 msgid "Inner/Outer"
@@ -8436,7 +8505,15 @@ msgstr ""
 msgid "Print infill first"
 msgstr ""
 
-msgid "Order of wall/infill. false means print wall first. "
+msgid ""
+"Order of wall/infill. When the tickbox is unchecked the walls are printed "
+"first, which works best in most cases.\n"
+"\n"
+"Printing walls first may help with extreme overhangs as the walls have the "
+"neighbouring infill to adhere to. However, the infill will slighly push out "
+"the printed walls where it is attached to them, resulting in a worse "
+"external surface finish. It can also cause the infill to shine through the "
+"external surfaces of the part."
 msgstr ""
 
 msgid "Height to rod"
@@ -9227,16 +9304,6 @@ msgstr ""
 "Povolte tuto možnost, pokud stroj disponuje pomocným ventilátorem pro "
 "chlazení dílů. G-kódový příkaz: M106 P2 S(0-255)."
 
-msgid "Exhaust cooling fan"
-msgstr "Ventilátor chlazení výfukových plynů"
-
-msgid ""
-"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
-"P3 S(0-255)."
-msgstr ""
-"Povolte tuto možnost, pokud stroj disponuje ventilátorem chlazení výfukových "
-"plynů. G-kódový příkaz: M106 P3 S(0-255)."
-
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
@@ -9597,9 +9664,6 @@ msgstr "Maximální zrychlení pro cestování"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 "maximální zrychlení pro cestování (M204 T), používá se pouze pro Marlin 2"
-
-msgid "Fan speed"
-msgstr "Rychlost ventilátoru"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
@@ -10131,6 +10195,9 @@ msgstr ""
 msgid "Show auto-calibration marks"
 msgstr "Zobrazit automatické kalibrační značky"
 
+msgid "Disable set remaining print time"
+msgstr ""
+
 msgid "Seam position"
 msgstr "Pozice švu"
 
@@ -10273,6 +10340,22 @@ msgstr ""
 "Spiralize vyhlazuje pohyby z vnějšího obrysu. A přemění pevný model na "
 "jednostěnný tisk s pevnými spodními vrstvami. Konečný vygenerovaný model "
 "nemá žádný šev"
+
+msgid "Smooth Spiral"
+msgstr ""
+
+msgid ""
+"Smooth Spiral smoothes out X and Y moves as wellresulting in no visible seam "
+"at all, even in the XY directions on walls that are not vertical"
+msgstr ""
+
+msgid "Max XY Smoothing"
+msgstr ""
+
+msgid ""
+"Maximum distance to move points in XY to try to achieve a smooth spiralIf "
+"expressed as a %, it will be computed over nozzle diameter"
+msgstr ""
 
 msgid ""
 "If smooth or traditional mode is selected, a timelapse video will be "
@@ -10891,9 +10974,16 @@ msgid "Wipe Distance"
 msgstr "Vzdálenost čištění"
 
 msgid ""
-"Discribe how long the nozzle will move along the last path when retracting"
+"Discribe how long the nozzle will move along the last path when "
+"retracting. \n"
+"\n"
+"Depending on how long the wipe operation lasts, how fast and long the "
+"extruder/filament retraction settings are, a retraction move may be needed "
+"to retract the remaining filament. \n"
+"\n"
+"Setting a value in the retract amount before wipe setting below will perform "
+"any excess retraction before the wipe, else it will be performed after."
 msgstr ""
-"Popište, jak dlouho se bude tryska při retrakci pohybovat po poslední dráze"
 
 msgid ""
 "The wiping tower can be used to clean up the residue on the nozzle and "
@@ -12371,7 +12461,7 @@ msgstr ""
 msgid "wiki"
 msgstr ""
 
-msgid "Improt Preset"
+msgid "Import Preset"
 msgstr ""
 
 msgid "Create Type"
@@ -12876,6 +12966,46 @@ msgid ""
 "Error: \"%2%\""
 msgstr ""
 
+#: resources/data/hints.ini: [hint:Precise wall]
+msgid ""
+"Precise wall\n"
+"Did you know that turning on precise wall can improve precision and layer "
+"consistency?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Sandwich mode]
+msgid ""
+"Sandwich mode\n"
+"Did you know that you can use sandwich mode (inner-outer-inner) to improve "
+"precision and layer consistency if your model doesn't have very steep "
+"overhangs?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Chamber temperature]
+msgid ""
+"Chamber temperature\n"
+"Did you know that OrcaSlicer supports chamber temperature?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Calibration]
+msgid ""
+"Calibration\n"
+"Did you know that calibrating your printer can do wonders? Check out our "
+"beloved calibration solution in OrcaSlicer."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Auxiliary fan]
+msgid ""
+"Auxiliary fan\n"
+"Did you know that OrcaSlicer supports Auxiliary part cooling fan?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Air filtration]
+msgid ""
+"Air filtration/Exhuast Fan\n"
+"Did you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
+msgstr ""
+
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
@@ -12960,13 +13090,8 @@ msgstr ""
 msgid ""
 "Simplify Model\n"
 "Did you know that you can reduce the number of triangles in a mesh using the "
-"Simplify mesh feature? Right-click the model and select Simplify model. Read "
-"more in the documentation."
+"Simplify mesh feature? Right-click the model and select Simplify model."
 msgstr ""
-"Zjednodušit model\n"
-"Věděli jste, že můžete snížit počet trojúhelníků v síti pomocí funkce "
-"Zjednodušit síť? Klikněte pravým tlačítkem na model a vyberte možnost "
-"Zjednodušit model. Více informací najdete v dokumentaci."
 
 #: resources/data/hints.ini: [hint:Slicing Parameter Table]
 msgid ""
@@ -12993,13 +13118,8 @@ msgid ""
 "Subtract a Part\n"
 "Did you know that you can subtract one mesh from another using the Negative "
 "part modifier? That way you can, for example, create easily resizable holes "
-"directly in Orca Slicer. Read more in the documentation."
+"directly in Orca Slicer."
 msgstr ""
-"Odečíst část\n"
-"Věděli jste, že můžete odečíst jednu síťovinu od druhé pomocí negativního "
-"modifikátoru části? Tímto způsobem můžete například vytvářet snadno "
-"nastavitelné otvory přímo v programu Orca Slicer. Přečtěte si více v "
-"dokumentaci."
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
@@ -13162,6 +13282,93 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+#~ msgstr "Založeno na OrcaSlicer, BambuStudio a PrusaSlicer"
+
+#~ msgid "Edit Text"
+#~ msgstr "Upravit text"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "Chyba! Nelze vytvořit vlákno!"
+
+#~ msgid "Exception"
+#~ msgstr "Výjimka"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "Vyberte SLA archiv:"
+
+#~ msgid "Import file"
+#~ msgstr "Importovat soubor"
+
+#~ msgid "Import model and profile"
+#~ msgstr "Importovat model a profil"
+
+#~ msgid "Import profile only"
+#~ msgstr "Importovat pouze profil"
+
+#~ msgid "Import model only"
+#~ msgstr "Importujte pouze model"
+
+#~ msgid "Accurate"
+#~ msgstr "Přesné"
+
+#~ msgid "Balanced"
+#~ msgstr "Vyvážené"
+
+#~ msgid "Quick"
+#~ msgstr "Rychlé"
+
+#~ msgid "Auto-Calc"
+#~ msgstr "Automatický výpočet"
+
+#~ msgid "unloaded"
+#~ msgstr "vyjmuto"
+
+#~ msgid "loaded"
+#~ msgstr "zaváděn"
+
+#~ msgid "Filament #"
+#~ msgstr "Filament #"
+
+#~ msgid "Exhaust cooling fan"
+#~ msgstr "Ventilátor chlazení výfukových plynů"
+
+#~ msgid ""
+#~ "Enable this option if machine has exhaust cooling fan. G-code command: "
+#~ "M106 P3 S(0-255)."
+#~ msgstr ""
+#~ "Povolte tuto možnost, pokud stroj disponuje ventilátorem chlazení "
+#~ "výfukových plynů. G-kódový příkaz: M106 P3 S(0-255)."
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr ""
+#~ "Popište, jak dlouho se bude tryska při retrakci pohybovat po poslední "
+#~ "dráze"
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "Zjednodušit model\n"
+#~ "Věděli jste, že můžete snížit počet trojúhelníků v síti pomocí funkce "
+#~ "Zjednodušit síť? Klikněte pravým tlačítkem na model a vyberte možnost "
+#~ "Zjednodušit model. Více informací najdete v dokumentaci."
+
+#~ msgid ""
+#~ "Subtract a Part\n"
+#~ "Did you know that you can subtract one mesh from another using the "
+#~ "Negative part modifier? That way you can, for example, create easily "
+#~ "resizable holes directly in Orca Slicer. Read more in the documentation."
+#~ msgstr ""
+#~ "Odečíst část\n"
+#~ "Věděli jste, že můžete odečíst jednu síťovinu od druhé pomocí negativního "
+#~ "modifikátoru části? Tímto způsobem můžete například vytvářet snadno "
+#~ "nastavitelné otvory přímo v programu Orca Slicer. Přečtěte si více v "
+#~ "dokumentaci."
 
 #~ msgid "Make overhang printable hole area"
 #~ msgstr "Oblast otvoru pro tisk převisu bez podpěr."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-10 23:44+0100\n"
+"POT-Creation-Date: 2023-12-17 17:12+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -594,8 +594,8 @@ msgstr ""
 msgid "V"
 msgstr "V"
 
-msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
-msgstr "Basado en OrcaSlicer, BambuStudio y PrusaSlicer"
+msgid "Based on GalaxySlicer, BambuStudio and PrusaSlicer"
+msgstr ""
 
 msgid ""
 "GalaxySlicer will terminate because of running out of memory.It may be a "
@@ -874,6 +874,24 @@ msgstr "Añadir bloqueo soportes"
 msgid "Add support enforcer"
 msgstr "Añadir forzado de soportes"
 
+msgid "Add text"
+msgstr ""
+
+msgid "Add negative text"
+msgstr ""
+
+msgid "Add text modifier"
+msgstr ""
+
+msgid "Add SVG part"
+msgstr ""
+
+msgid "Add negative SVG"
+msgstr ""
+
+msgid "Add SVG modifier"
+msgstr ""
+
 msgid "Select settings"
 msgstr "Seleccione los ajustes"
 
@@ -888,9 +906,6 @@ msgstr "Borrar"
 
 msgid "Delete the selected object"
 msgstr "Eliminar el objeto seleccionado"
-
-msgid "Edit Text"
-msgstr "Editar Texto"
 
 msgid "Load..."
 msgstr "Cargar..."
@@ -924,6 +939,12 @@ msgstr "Cilindro"
 
 msgid "Cone"
 msgstr "Cono"
+
+msgid "Text"
+msgstr ""
+
+msgid "SVG"
+msgstr ""
 
 msgid "Height range Modifier"
 msgstr "Modificador de rango de Altura"
@@ -1057,6 +1078,18 @@ msgstr "Reflejar"
 
 msgid "Mirror object"
 msgstr "Objeto reflejado"
+
+msgid "Edit text"
+msgstr ""
+
+msgid "Ability to change text, font, size, ..."
+msgstr ""
+
+msgid "Edit SVG"
+msgstr ""
+
+msgid "Change SVG source file, projection, size, ..."
+msgstr ""
 
 msgid "Invalidate cut info"
 msgstr "Invalidar información de corte"
@@ -1700,12 +1733,6 @@ msgstr ""
 msgid "Arranging..."
 msgstr "Organizando..."
 
-msgid ""
-"Arrange failed. Found some exceptions when processing object geometries."
-msgstr ""
-"El posicionamiento ha fallado. Se han encontrado algunas excepciones al "
-"procesar las geometrías de los objetos."
-
 msgid "Arranging"
 msgstr "Organizando"
 
@@ -1720,6 +1747,12 @@ msgstr ""
 
 msgid "Arranging done."
 msgstr "Organización terminada."
+
+msgid ""
+"Arrange failed. Found some exceptions when processing object geometries."
+msgstr ""
+"El posicionamiento ha fallado. Se han encontrado algunas excepciones al "
+"procesar las geometrías de los objetos."
 
 #, c-format, boost-format
 msgid ""
@@ -1751,6 +1784,9 @@ msgstr "Orientando..."
 msgid "Orienting"
 msgstr "Orientación"
 
+msgid "Orienting canceled."
+msgstr ""
+
 msgid "Filling"
 msgstr ""
 
@@ -1760,11 +1796,14 @@ msgstr "Bed filling canceled."
 msgid "Bed filling done."
 msgstr "Bed filling done."
 
-msgid "Error! Unable to create thread!"
-msgstr "¡Error! ¡No se ha podido crear el proceso!"
+msgid "Searching for optimal orientation"
+msgstr ""
 
-msgid "Exception"
-msgstr "Excepción"
+msgid "Orientation search canceled."
+msgstr ""
+
+msgid "Orientation found."
+msgstr ""
 
 msgid "Logging in"
 msgstr "Iniciando sesión"
@@ -1875,30 +1914,6 @@ msgstr "Envío exitoso. Cierre la página actual en %s s"
 
 msgid "An SD card needs to be inserted before sending to printer."
 msgstr "Se necesita insertar una tarjeta SD antes de enviar a la impresora."
-
-msgid "Choose SLA archive:"
-msgstr "Elige el archivo SLA:"
-
-msgid "Import file"
-msgstr "Importar archivo"
-
-msgid "Import model and profile"
-msgstr "Importar modelo y perfil"
-
-msgid "Import profile only"
-msgstr "Importar perfil solo"
-
-msgid "Import model only"
-msgstr "Importar solo el modelo"
-
-msgid "Accurate"
-msgstr "Precisión"
-
-msgid "Balanced"
-msgstr "Balanceado"
-
-msgid "Quick"
-msgstr "Rápido"
 
 msgid "Importing SLA archive"
 msgstr "Importando archivo SLA"
@@ -3646,6 +3661,12 @@ msgstr ""
 msgid "Show g-code window in Previce scene"
 msgstr ""
 
+msgid "Reset Window Layout"
+msgstr ""
+
+msgid "Reset to default window layout"
+msgstr ""
+
 msgid "Show &Labels"
 msgstr "Mostrar &Etiquetas"
 
@@ -4744,6 +4765,12 @@ msgstr ""
 "Activar la fotografía timelapse tradicional puede causar imperfecciones en "
 "la superficie. Se recomienda cambiar al modo suave."
 
+msgid "Expand sidebar"
+msgstr ""
+
+msgid "Collapse sidebar"
+msgstr ""
+
 #, c-format, boost-format
 msgid "Loading file: %s"
 msgstr "Cargando archivo: %s"
@@ -5001,6 +5028,9 @@ msgid ""
 "import it."
 msgstr ""
 
+msgid "Import SLA archive"
+msgstr ""
+
 msgid "The selected file"
 msgstr "El archivo seleccionado"
 
@@ -5084,6 +5114,15 @@ msgstr ""
 "Unable to perform boolean operation on model meshes. Only positive parts "
 "will be exported."
 
+msgid ""
+"Are you sure you want to store original SVGs with their local paths into the "
+"3MF file?\n"
+"If you hit 'NO', all SVGs in the project will not be editable any more."
+msgstr ""
+
+msgid "Private protection"
+msgstr ""
+
 msgid "Is the printer ready? Is the print sheet in place, empty and clean?"
 msgstr "Printer ready? Is the print sheet in place, empty and clean?"
 
@@ -5107,6 +5146,9 @@ msgid "Custom supports and color painting were removed before repairing."
 msgstr ""
 "Los soportes personalizados y la pintura de color se eliminaron antes de la "
 "reparación."
+
+msgid "Optimize Rotation"
+msgstr ""
 
 msgid "Invalid number"
 msgstr "Número inválido"
@@ -6167,6 +6209,15 @@ msgstr "Precisión"
 msgid "Wall generator"
 msgstr "Generador de perímetros"
 
+msgid "Walls and surfaces"
+msgstr ""
+
+msgid "Bridging"
+msgstr ""
+
+msgid "Overhangs"
+msgstr ""
+
 msgid "Walls"
 msgstr "Perímetros"
 
@@ -6774,19 +6825,15 @@ msgstr "Ancho de línea de Ramming"
 msgid "Ramming line spacing"
 msgstr "Espaciado de línea de moldeado de extremo"
 
-msgid "Auto-Calc"
-msgstr "Auto-Calc"
-
-msgid "Re-calculate"
+msgid "Recalculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "Volúmenes de limpieza para el cambio de filamentos"
 
 msgid ""
-"Studio would re-calculate your flushing volumes everytime the filaments "
-"color changed. You could disable the auto-calculate in Bambu Studio > "
-"Preferences"
+"Orca recalculates your flushing volumes everytime the filament colors "
+"change. You can change this behavior in Preferences."
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6802,15 +6849,6 @@ msgstr "El multiplicador debería estar en el rango [%.2f, %.2f]."
 
 msgid "Multiplier"
 msgstr "Multiplicador"
-
-msgid "unloaded"
-msgstr "descargado"
-
-msgid "loaded"
-msgstr "cargado"
-
-msgid "Filament #"
-msgstr "Filamento #"
 
 msgid "From"
 msgstr "Desde"
@@ -7764,6 +7802,12 @@ msgstr "Altura imprimible"
 msgid "Maximum printable height which is limited by mechanism of printer"
 msgstr "Altura máxima imprimible limitada por el mecanismo de la impresora"
 
+msgid "Preferred orientation"
+msgstr ""
+
+msgid "Automatically orient stls on the Z-axis upon initial import"
+msgstr ""
+
 msgid "Printer preset names"
 msgstr "Nombres de ajustes de la impresora"
 
@@ -8378,6 +8422,9 @@ msgstr ""
 "Activar para una mejor filtración del aire. Comando de G-Code: M106 P3 "
 "S(0-255)"
 
+msgid "Fan speed"
+msgstr "Velocidad del ventilador"
+
 msgid ""
 "Speed of exhuast fan during printing.This speed will overwrite the speed in "
 "filament custom gcode"
@@ -8559,7 +8606,29 @@ msgstr ""
 msgid "Walls printing order"
 msgstr ""
 
-msgid "Print sequence of inner wall and outer wall. "
+msgid ""
+"Print sequence of the internal (inner) and external (outer) walls. \n"
+"\n"
+"Use Inner/Outer for best overhangs. This is because the overhanging walls "
+"can adhere to a neighouring perimeter while printing. However, this option "
+"results in slightly reduced surface quality as the external perimeter is "
+"deformed by being squashed to the internal perimeter.\n"
+"\n"
+"Use Inner/Outer/Inner for the best external surface finish and dimensional "
+"accuracy as the external wall is printed undisturbed from an internal "
+"perimeter. However, overhang performance will reduce as there is no internal "
+"perimeter to print the external wall against. This option requires a minimum "
+"of 3 walls to be effective as it prints the internal walls from the 3rd "
+"perimeter onwards first, then the external perimeter and, finally, the first "
+"internal perimeter. This option is recomended against the Outer/Inner option "
+"in most cases. \n"
+"\n"
+"Use Outer/Inner for the same external wall quality and dimensional accuracy "
+"benefits of Inner/Outer/Inner option. However, the z seams will appear less "
+"consistent as the first extrusion of a new layer starts on a visible "
+"surface.\n"
+"\n"
+" "
 msgstr ""
 
 msgid "Inner/Outer"
@@ -8574,7 +8643,15 @@ msgstr ""
 msgid "Print infill first"
 msgstr ""
 
-msgid "Order of wall/infill. false means print wall first. "
+msgid ""
+"Order of wall/infill. When the tickbox is unchecked the walls are printed "
+"first, which works best in most cases.\n"
+"\n"
+"Printing walls first may help with extreme overhangs as the walls have the "
+"neighbouring infill to adhere to. However, the infill will slighly push out "
+"the printed walls where it is attached to them, resulting in a worse "
+"external surface finish. It can also cause the infill to shine through the "
+"external surfaces of the part."
 msgstr ""
 
 msgid "Height to rod"
@@ -9392,14 +9469,6 @@ msgstr ""
 "Activar esta opción si la máquina dispone de ventilador auxiliar de "
 "refrigeración de piezas. Comando código G: M106 P2 S(0-255)."
 
-msgid "Exhaust cooling fan"
-msgstr ""
-
-msgid ""
-"Enable this option if machine has exhaust cooling fan. G-code command: M106 "
-"P3 S(0-255)."
-msgstr ""
-
 msgid ""
 "Start the fan this number of seconds earlier than its target start time (you "
 "can use fractional seconds). It assumes infinite acceleration for this time "
@@ -9770,9 +9839,6 @@ msgstr "Aceleración máxima para el desplazamiento"
 msgid "Maximum acceleration for travel (M204 T), it only applies to Marlin 2"
 msgstr ""
 "Máxima aceleración para el desplazamiento (M204 T), solo se aplica a Marlin 2"
-
-msgid "Fan speed"
-msgstr "Velocidad del ventilador"
 
 msgid ""
 "Part cooling fan speed may be increased when auto cooling is enabled. This "
@@ -10329,6 +10395,9 @@ msgstr ""
 msgid "Show auto-calibration marks"
 msgstr "Muestra marcas de autocalibración"
 
+msgid "Disable set remaining print time"
+msgstr ""
+
 msgid "Seam position"
 msgstr "Posición de la costura"
 
@@ -10475,6 +10544,22 @@ msgstr ""
 "Spiralize suaviza los movimientos z del contorno exterior. Y convierte un "
 "modelo sólido en una impresión de una soel perímetro con capas inferiores "
 "sólidas. El modelo final generado no tiene costura"
+
+msgid "Smooth Spiral"
+msgstr ""
+
+msgid ""
+"Smooth Spiral smoothes out X and Y moves as wellresulting in no visible seam "
+"at all, even in the XY directions on walls that are not vertical"
+msgstr ""
+
+msgid "Max XY Smoothing"
+msgstr ""
+
+msgid ""
+"Maximum distance to move points in XY to try to achieve a smooth spiralIf "
+"expressed as a %, it will be computed over nozzle diameter"
+msgstr ""
 
 msgid ""
 "If smooth or traditional mode is selected, a timelapse video will be "
@@ -11113,10 +11198,16 @@ msgid "Wipe Distance"
 msgstr "Distancia de limpieza"
 
 msgid ""
-"Discribe how long the nozzle will move along the last path when retracting"
+"Discribe how long the nozzle will move along the last path when "
+"retracting. \n"
+"\n"
+"Depending on how long the wipe operation lasts, how fast and long the "
+"extruder/filament retraction settings are, a retraction move may be needed "
+"to retract the remaining filament. \n"
+"\n"
+"Setting a value in the retract amount before wipe setting below will perform "
+"any excess retraction before the wipe, else it will be performed after."
 msgstr ""
-"Describa cuánto tiempo se moverá la boquilla a lo largo de la última "
-"trayectoria al retraerse"
 
 msgid ""
 "The wiping tower can be used to clean up the residue on the nozzle and "
@@ -12635,7 +12726,7 @@ msgstr ""
 msgid "wiki"
 msgstr ""
 
-msgid "Improt Preset"
+msgid "Import Preset"
 msgstr ""
 
 msgid "Create Type"
@@ -13140,6 +13231,46 @@ msgid ""
 "Error: \"%2%\""
 msgstr ""
 
+#: resources/data/hints.ini: [hint:Precise wall]
+msgid ""
+"Precise wall\n"
+"Did you know that turning on precise wall can improve precision and layer "
+"consistency?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Sandwich mode]
+msgid ""
+"Sandwich mode\n"
+"Did you know that you can use sandwich mode (inner-outer-inner) to improve "
+"precision and layer consistency if your model doesn't have very steep "
+"overhangs?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Chamber temperature]
+msgid ""
+"Chamber temperature\n"
+"Did you know that OrcaSlicer supports chamber temperature?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Calibration]
+msgid ""
+"Calibration\n"
+"Did you know that calibrating your printer can do wonders? Check out our "
+"beloved calibration solution in OrcaSlicer."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Auxiliary fan]
+msgid ""
+"Auxiliary fan\n"
+"Did you know that OrcaSlicer supports Auxiliary part cooling fan?"
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Air filtration]
+msgid ""
+"Air filtration/Exhuast Fan\n"
+"Did you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
+msgstr ""
+
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
@@ -13224,13 +13355,8 @@ msgstr ""
 msgid ""
 "Simplify Model\n"
 "Did you know that you can reduce the number of triangles in a mesh using the "
-"Simplify mesh feature? Right-click the model and select Simplify model. Read "
-"more in the documentation."
+"Simplify mesh feature? Right-click the model and select Simplify model."
 msgstr ""
-"Simplificar modelo\n"
-"¿Sabías que puedes reducir el número de triángulos de una malla utilizando "
-"la función Simplificar malla? Haga clic con el botón derecho del ratón en el "
-"modelo y seleccione Simplificar modelo. Más información en la documentación."
 
 #: resources/data/hints.ini: [hint:Slicing Parameter Table]
 msgid ""
@@ -13257,13 +13383,8 @@ msgid ""
 "Subtract a Part\n"
 "Did you know that you can subtract one mesh from another using the Negative "
 "part modifier? That way you can, for example, create easily resizable holes "
-"directly in Orca Slicer. Read more in the documentation."
+"directly in Orca Slicer."
 msgstr ""
-"Restar una parte\n"
-"¿Sabías que puedes sustraer una malla de otra utilizando el modificador de "
-"pieza Negativa? De esta forma puedes, por ejemplo, crear agujeros fácilmente "
-"redimensionables directamente en Orca Slicer. Más información en la "
-"documentación."
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
@@ -13427,6 +13548,84 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Based on OrcaSlicer, BambuStudio and PrusaSlicer"
+#~ msgstr "Basado en OrcaSlicer, BambuStudio y PrusaSlicer"
+
+#~ msgid "Edit Text"
+#~ msgstr "Editar Texto"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "¡Error! ¡No se ha podido crear el proceso!"
+
+#~ msgid "Exception"
+#~ msgstr "Excepción"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "Elige el archivo SLA:"
+
+#~ msgid "Import file"
+#~ msgstr "Importar archivo"
+
+#~ msgid "Import model and profile"
+#~ msgstr "Importar modelo y perfil"
+
+#~ msgid "Import profile only"
+#~ msgstr "Importar perfil solo"
+
+#~ msgid "Import model only"
+#~ msgstr "Importar solo el modelo"
+
+#~ msgid "Accurate"
+#~ msgstr "Precisión"
+
+#~ msgid "Balanced"
+#~ msgstr "Balanceado"
+
+#~ msgid "Quick"
+#~ msgstr "Rápido"
+
+#~ msgid "Auto-Calc"
+#~ msgstr "Auto-Calc"
+
+#~ msgid "unloaded"
+#~ msgstr "descargado"
+
+#~ msgid "loaded"
+#~ msgstr "cargado"
+
+#~ msgid "Filament #"
+#~ msgstr "Filamento #"
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr ""
+#~ "Describa cuánto tiempo se moverá la boquilla a lo largo de la última "
+#~ "trayectoria al retraerse"
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "Simplificar modelo\n"
+#~ "¿Sabías que puedes reducir el número de triángulos de una malla "
+#~ "utilizando la función Simplificar malla? Haga clic con el botón derecho "
+#~ "del ratón en el modelo y seleccione Simplificar modelo. Más información "
+#~ "en la documentación."
+
+#~ msgid ""
+#~ "Subtract a Part\n"
+#~ "Did you know that you can subtract one mesh from another using the "
+#~ "Negative part modifier? That way you can, for example, create easily "
+#~ "resizable holes directly in Orca Slicer. Read more in the documentation."
+#~ msgstr ""
+#~ "Restar una parte\n"
+#~ "¿Sabías que puedes sustraer una malla de otra utilizando el modificador "
+#~ "de pieza Negativa? De esta forma puedes, por ejemplo, crear agujeros "
+#~ "fácilmente redimensionables directamente en Orca Slicer. Más información "
+#~ "en la documentación."
 
 #~ msgid "Newer 3mf version"
 #~ msgstr "Nueva versión 3mf"
