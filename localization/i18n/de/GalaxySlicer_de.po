@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 17:57+0100\n"
+"POT-Creation-Date: 2023-12-17 20:43+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -11007,10 +11007,10 @@ msgstr ""
 "aktuelle Filament."
 
 msgid "Reduce interface filament for base"
-msgstr ""
+msgstr "Schnittstellenfilament für die Basis reduzieren"
 
 msgid "Avoid using support interface filament to print support base"
-msgstr ""
+msgstr "Vermeiden Sie es, Stütz-Schnittstellenfilament für die Stütz-Basis zu "
 
 msgid ""
 "Line width of support. If expressed as a %, it will be computed over the "
@@ -11049,10 +11049,10 @@ msgid "Bottom interface layers"
 msgstr "Untere Schnittstellenschichten"
 
 msgid "Number of bottom interface layers"
-msgstr ""
+msgstr "Anzahl der unteren Schnittstellenschichten"
 
 msgid "Same as top"
-msgstr ""
+msgstr "Wie Oberfläche"
 
 msgid "Top interface spacing"
 msgstr "Oberer Schnittstellenabstand"
@@ -11292,10 +11292,10 @@ msgstr ""
 "Setzen Sie diesen Wert auf Null, um keine doppelten Wände zu erhalten."
 
 msgid "Support wall loops"
-msgstr ""
+msgstr "Wand-Schleifen der Stützstruktur"
 
 msgid "This setting specify the count of walls around support"
-msgstr ""
+msgstr "Diese Einstellung gibt die Anzahl der Wände um die Stützstruktur an"
 
 msgid "Tree support with infill"
 msgstr "Baumsupport mit Füllung"
@@ -11432,6 +11432,17 @@ msgid ""
 "Setting a value in the retract amount before wipe setting below will perform "
 "any excess retraction before the wipe, else it will be performed after."
 msgstr ""
+"Beschreibt, wie lange die Düse entlang des letzten Pfades bewegt wird, wenn "
+"zurückgezogen wird. \n"
+"\n"
+"Je nachdem, wie lange die Wischoperation dauert, wie schnell und wie lange "
+"die Einstellungen für den Extruder-/Filamentrückzug sind, kann ein "
+"Rückzugsbefehl erforderlich sein, um das verbleibende Filament "
+"zurückzuziehen. \n"
+"\n"
+"Wenn ein Wert in der Einstellung \"Rückzugsmenge vor dem Wischen\" unten "
+"angegeben ist, wird ein übermäßiger Rückzug vor dem Wischen ausgeführt, "
+"ansonsten wird er danach ausgeführt."
 
 msgid ""
 "The wiping tower can be used to clean up the residue on the nozzle and "
@@ -12068,7 +12079,7 @@ msgstr "Der Name darf nicht leer sein."
 
 #, c-format, boost-format
 msgid "The selected preset: %s is not found."
-msgstr ""
+msgstr "Die ausgewählte Voreinstellung: %s wurde nicht gefunden."
 
 msgid "The name cannot be the same as the system preset name."
 msgstr ""
@@ -12773,279 +12784,307 @@ msgid "Delete input"
 msgstr "Eingabe löschen"
 
 msgid "Network Test"
-msgstr ""
+msgstr "Netzwerktest"
 
 msgid "Start Test Multi-Thread"
-msgstr ""
+msgstr "Starten Sie den Test mit mehreren Threads"
 
 msgid "Start Test Single-Thread"
-msgstr ""
+msgstr "Starten Sie den Test mit einem Thread"
 
 msgid "Export Log"
-msgstr ""
+msgstr "Protokoll exportieren"
 
 msgid "Studio Version:"
-msgstr ""
+msgstr "Studio Version:"
 
 msgid "System Version:"
-msgstr ""
+msgstr "System Version:"
 
 msgid "DNS Server:"
-msgstr ""
+msgstr "DNS Server:"
 
 msgid "Test BambuLab"
-msgstr ""
+msgstr "Test BambuLab"
 
 msgid "Test BambuLab:"
-msgstr ""
+msgstr "Test BambuLab:"
 
 msgid "Test Bing.com"
-msgstr ""
+msgstr "Test Bing.com"
 
 msgid "Test bing.com:"
-msgstr ""
+msgstr "Test bing.com:"
 
 msgid "Test HTTP"
-msgstr ""
+msgstr "Test HTTP"
 
 msgid "Test HTTP Service:"
-msgstr ""
+msgstr "Test HTTP Service:"
 
 msgid "Test storage"
-msgstr ""
+msgstr "Test Speicher"
 
 msgid "Test Storage Upload:"
-msgstr ""
+msgstr "Test Speicher hochladen:"
 
 msgid "Test storage upgrade"
-msgstr ""
+msgstr "Test Speicher Upgrade"
 
 msgid "Test Storage Upgrade:"
-msgstr ""
+msgstr "Test Speicher Upgrade:"
 
 msgid "Test storage download"
-msgstr ""
+msgstr "Test Speicher Download"
 
 msgid "Test Storage Download:"
-msgstr ""
+msgstr "Test Speicher Download:"
 
 msgid "Test plugin download"
-msgstr ""
+msgstr "Test Plugin Download"
 
 msgid "Test Plugin Download:"
-msgstr ""
+msgstr "Test Plugin Download:"
 
 msgid "Test Storage Upload"
-msgstr ""
+msgstr "Test Speicher hochladen"
 
 msgid "Log Info"
-msgstr ""
+msgstr "Protokoll Info"
 
 msgid "Select filament preset"
-msgstr ""
+msgstr "Filament-Voreinstellung auswählen"
 
 msgid "Create Filament"
-msgstr ""
+msgstr "Filament erstellen"
 
 msgid "Create Based on Current Filament"
-msgstr ""
+msgstr "Erstellen Sie basierend auf dem aktuellen Filament"
 
 msgid "Copy Current Filament Preset "
-msgstr ""
+msgstr "Aktuelle Filament-Voreinstellung kopieren"
 
 msgid "Basic Information"
-msgstr ""
+msgstr "Grundlegende Informationen"
 
 msgid "Add Filament Preset under this filament"
-msgstr ""
+msgstr "Filament-Voreinstellung unter diesem Filament hinzufügen"
 
 msgid "We could create the filament presets for your following printer:"
 msgstr ""
+"Wir könnten die Filament-Voreinstellungen für Ihren folgenden Drucker "
+"erstellen:"
 
 msgid "Select Vendor"
-msgstr ""
+msgstr "Anbieter auswählen"
 
 msgid "Input Custom Vendor"
-msgstr ""
+msgstr "Benutzerdefinierten Anbieter eingeben"
 
 msgid "Can't find vendor I want"
-msgstr ""
+msgstr "Ich kann den Anbieter, den ich möchte, nicht finden"
 
 msgid "Select Type"
-msgstr ""
+msgstr "Typ auswählen"
 
 msgid "Select Filament Preset"
-msgstr ""
+msgstr "Filament-Voreinstellung auswählen"
 
 msgid "Serial"
-msgstr ""
+msgstr "Seriennummer"
 
 msgid "e.g. Basic, Matte, Silk, Marble"
-msgstr ""
+msgstr "z.B. Basic, Matte, Silk, Marble"
 
 msgid "Filament Preset"
-msgstr ""
+msgstr "Filament-Voreinstellung"
 
 msgid "Create"
-msgstr ""
+msgstr "Erstellen"
 
 msgid "Vendor is not selected, please reselect vendor."
-msgstr ""
+msgstr "Anbieter ist nicht ausgewählt, bitte Anbieter erneut auswählen."
 
 msgid "Custom vendor is not input, please input custom vendor."
 msgstr ""
+"Benutzerdefinierter Anbieter ist nicht eingegeben, bitte benutzerdefinierten "
+"Anbieter eingeben."
 
 msgid ""
 "\"Bambu\" or \"Generic\" can not be used as a Vendor for custom filaments."
 msgstr ""
+"\"Bambu\" oder \"Generic\" kann nicht als Anbieter für benutzerdefinierte "
+"Filamente verwendet werden."
 
 msgid "Filament type is not selected, please reselect type."
-msgstr ""
+msgstr "Filamenttyp ist nicht ausgewählt, bitte Filamenttyp erneut auswählen."
 
 msgid "Filament serial is not inputed, please input serial."
 msgstr ""
+"Filament-Seriennummer ist nicht eingegeben, bitte Seriennummer eingeben."
 
 msgid ""
 "There may be escape characters in the vendor or serial input of filament. "
 "Please delete and re-enter."
 msgstr ""
+"Im Anbieter oder in der Serieneingabe des Filaments können Escape-Zeichen "
+"vorhanden sein. Bitte löschen und erneut eingeben."
 
 msgid "All inputs in the custom vendor or serial are spaces. Please re-enter."
 msgstr ""
+"Alle Eingaben im benutzerdefinierten Anbieter oder in der Seriennummer sind "
+"Leerzeichen. Bitte erneut eingeben."
 
 msgid "The beginning of the vendor can not be a number. Please re-enter."
-msgstr ""
+msgstr "Der Anfang des Anbieters darf keine Zahl sein. Bitte erneut eingeben."
 
 msgid ""
 "You have not selected a printer or preset yet. Please select at least one."
 msgstr ""
+"Sie haben noch keinen Drucker oder keine Voreinstellung ausgewählt. Bitte "
+"wählen Sie mindestens einen aus."
 
 msgid "Some existing presets have failed to be created, as follows:\n"
 msgstr ""
+"Einige vorhandene Voreinstellungen konnten nicht erstellt werden, wie "
+"folgt:\n"
 
 msgid ""
 "\n"
 "Do you want to rewrite it?"
 msgstr ""
+"\n"
+"Möchten Sie es überschreiben?"
 
 msgid ""
 "We would rename the presets as \"Vendor Type Serial @printer you "
 "selected\". \n"
 "To add preset for more prinetrs, Please go to printer selection"
 msgstr ""
+"Wir würden die Voreinstellungen als \"Vendor Type Serial @printer, den Sie "
+"ausgewählt haben\" umbenennen. \n"
+"Um weitere Voreinstellungen für Drucker hinzuzufügen, gehen Sie bitte zur "
+"Druckerauswahl"
 
 msgid "Create Printer/Nozzle"
-msgstr ""
+msgstr "Drucker/Düse erstellen"
 
 msgid "Create Printer"
-msgstr ""
+msgstr "Drucker erstellen"
 
 msgid "Create Nozzle for Existing Printer"
-msgstr ""
+msgstr "Düse für vorhandenen Drucker erstellen"
 
 msgid "Create from Template"
-msgstr ""
+msgstr "Aus Vorlage erstellen"
 
 msgid "Create Based on Current Printer"
-msgstr ""
+msgstr "Erstellen Sie basierend auf dem aktuellen Drucker"
 
 msgid "wiki"
-msgstr ""
+msgstr "wiki"
 
 msgid "Import Preset"
-msgstr ""
+msgstr "Voreinstellung importieren"
 
 msgid "Create Type"
-msgstr ""
+msgstr "Typ erstellen"
 
 msgid "The model is not fond, place reselect vendor."
-msgstr ""
+msgstr "Das Modell ist nicht gefunden, bitte Anbieter erneut auswählen."
 
 msgid "Select Model"
-msgstr ""
+msgstr "Modell auswählen"
 
 msgid "Select Printer"
-msgstr ""
+msgstr "Drucker auswählen"
 
 msgid "Input Custom Model"
-msgstr ""
+msgstr "Benutzerdefiniertes Modell eingeben"
 
 msgid "Can't find my printer model"
-msgstr ""
+msgstr "Ich kann mein Druckermodell nicht finden"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "Rechteck"
 
 msgid "Printable Space"
-msgstr ""
+msgstr "Druckbarer Raum"
 
 msgid "X"
-msgstr ""
+msgstr "X"
 
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 msgid "Hot Bed STL"
-msgstr ""
+msgstr "Hot Bed STL"
 
 msgid "Load stl"
-msgstr ""
+msgstr "STL laden"
 
 msgid "Hot Bed SVG"
-msgstr ""
+msgstr "Hot Bed SVG"
 
 msgid "Load svg"
-msgstr ""
+msgstr "SVG laden"
 
 msgid "Max Print Height"
-msgstr ""
+msgstr "Maximale Druckhöhe"
 
 #, c-format, boost-format
 msgid "The file exceeds %d MB, please import again."
-msgstr ""
+msgstr "Die Datei überschreitet %d MB, bitte erneut importieren."
 
 msgid "Exception in obtaining file size, please import again."
-msgstr ""
+msgstr "Ausnahme beim Abrufen der Dateigröße, bitte erneut importieren."
 
 msgid "Preset path is not find, please reselect vendor."
 msgstr ""
+"Voreinstellungspfad ist nicht gefunden, bitte Anbieter erneut auswählen."
 
 msgid "The printer model was not found, please reselect."
-msgstr ""
+msgstr "Das Druckermodell wurde nicht gefunden, bitte erneut auswählen."
 
 msgid "The nozzle diameter is not fond, place reselect."
-msgstr ""
+msgstr "Der Düsendurchmesser ist nicht gefunden, bitte erneut auswählen."
 
 msgid "The printer preset is not fond, place reselect."
-msgstr ""
+msgstr "Die Druckervoreinstellung ist nicht gefunden, bitte erneut auswählen."
 
 msgid "Printer Preset"
-msgstr ""
+msgstr "Druckervoreinstellung"
 
 msgid "Filament Preset Template"
-msgstr ""
+msgstr "Filament-Voreinstellungsvorlage"
 
 msgid "Deselect All"
-msgstr ""
+msgstr "Alle abwählen"
 
 msgid "Process Preset Template"
-msgstr ""
+msgstr "Prozess-Voreinstellungsvorlage"
 
 msgid "Back Page 1"
-msgstr ""
+msgstr "Zurück Seite 1"
 
 msgid ""
 "You have not yet chosen which printer preset to create based on. Please "
 "choose the vendor and model of the printer"
 msgstr ""
+"Sie haben noch nicht ausgewählt, welche Druckervoreinstellung erstellt "
+"werden soll. Bitte wählen Sie den Anbieter und das Modell des Druckers"
 
 msgid ""
 "You have entered an illegal input in the printable area section on the first "
 "page. Please check before creating it."
 msgstr ""
+"Sie haben eine ungültige Eingabe im Bereich des druckbaren Bereichs auf der "
+"ersten Seite eingegeben. Bitte überprüfen Sie es, bevor Sie es erstellen."
 
 msgid "The custom printer or model is not inputed, place input."
 msgstr ""
+"Der benutzerdefinierte Drucker oder das Modell ist nicht eingegeben, bitte "
+"eingeben."
 
 msgid ""
 "The printer preset you created already has a preset with the same name. Do "
@@ -13056,60 +13095,81 @@ msgid ""
 "reserve.\n"
 "\tCancel: Do not create a preset, return to the creation interface."
 msgstr ""
+"Die von Ihnen erstellte Druckervoreinstellung hat bereits eine "
+"Voreinstellung mit demselben Namen. Möchten Sie es überschreiben?\n"
+"\tJa: Überschreiben Sie die Druckervoreinstellung mit demselben Namen, und "
+"Filament- und Prozessvoreinstellungen mit demselben Voreinstellungsnamen "
+"werden neu erstellt \n"
+"und Filament- und Prozessvoreinstellungen ohne denselben "
+"Voreinstellungsnamen werden beibehalten.\n"
+"\tAbbrechen: Erstellen Sie keine Voreinstellung, kehren Sie zur Erstellungs-"
+"Schnittstelle zurück."
 
 msgid "You need to select at least one filament preset."
-msgstr ""
+msgstr "Sie müssen mindestens eine Filament-Voreinstellung auswählen."
 
 msgid "You need to select at least one process preset."
-msgstr ""
+msgstr "Sie müssen mindestens eine Prozess-Voreinstellung auswählen."
 
 msgid "Create filament presets failed. As follows:\n"
-msgstr ""
+msgstr "Erstellen von Filament-Voreinstellungen fehlgeschlagen. Wie folgt:\n"
 
 msgid "Create process presets failed. As follows:\n"
-msgstr ""
+msgstr "Erstellen von Prozess-Voreinstellungen fehlgeschlagen. Wie folgt:\n"
 
 msgid "Vendor is not find, please reselect."
-msgstr ""
+msgstr "Anbieter ist nicht gefunden, bitte erneut auswählen."
 
 msgid "Current vendor has no models, please reselect."
-msgstr ""
+msgstr "Der aktuelle Anbieter hat keine Modelle, bitte erneut auswählen."
 
 msgid ""
 "You have not selected the vendor and model or inputed the custom vendor and "
 "model."
 msgstr ""
+"Sie haben den Anbieter und das Modell nicht ausgewählt oder den "
+"benutzerdefinierten Anbieter und das Modell eingegeben."
 
 msgid ""
 "There may be escape characters in the custom printer vendor or model. Please "
 "delete and re-enter."
 msgstr ""
+"Im benutzerdefinierten Druckeranbieter oder -modell können Escape-Zeichen "
+"vorhanden sein. Bitte löschen und erneut eingeben."
 
 msgid ""
 "All inputs in the custom printer vendor or model are spaces. Please re-enter."
 msgstr ""
+"Alle Eingaben im benutzerdefinierten Druckeranbieter oder -modell sind "
+"Leerzeichen. Bitte erneut eingeben."
 
 msgid "Please check bed printable shape and origin input."
 msgstr ""
+"Bitte überprüfen Sie die Eingabe der druckbaren Form und des Ursprungs des "
+"Bettes."
 
 msgid ""
 "You have not yet selected the printer to replace the nozzle, please choose."
 msgstr ""
+"Sie haben den Drucker, der die Düse ersetzen soll, noch nicht ausgewählt, "
+"bitte wählen Sie."
 
 msgid "Create Printer Successful"
-msgstr ""
+msgstr "Drucker erfolgreich erstellt"
 
 msgid "Create Filament Successful"
-msgstr ""
+msgstr "Filament erfolgreich erstellt"
 
 msgid "Printer Created"
-msgstr ""
+msgstr "Drucker erstellt"
 
 msgid "Please go to printer settings to edit your presets"
 msgstr ""
+"Bitte gehen Sie zu den Druckereinstellungen, um Ihre Voreinstellungen zu "
+"bearbeiten"
 
 msgid "Filament Created"
-msgstr ""
+msgstr "Filament erstellt"
 
 msgid ""
 "Please go to filament setting to edit your presets if you need.\n"
@@ -13117,45 +13177,50 @@ msgid ""
 "volumetric speed have a significant impact on printing quality. Please set "
 "them carefully."
 msgstr ""
+"Bitte gehen Sie zu den Filament-Einstellungen, um Ihre Voreinstellungen zu "
+"bearbeiten, wenn Sie dies benötigen.\n"
+"Bitte beachten Sie, dass die Düsentemperatur, die Heizbetttemperatur und die "
+"maximale volumetrische Geschwindigkeit einen erheblichen Einfluss auf die "
+"Druckqualität haben. Bitte stellen Sie sie sorgfältig ein."
 
 msgid "Printer Setting"
-msgstr ""
+msgstr "Druckereinstellung"
 
 msgid "Export Configs"
-msgstr ""
+msgstr "Konfigurationen exportieren"
 
 msgid "Printer config bundle(.bbscfg)"
-msgstr ""
+msgstr "Drucker-Konfigurationsbündel (.bbscfg)"
 
 msgid "Filament bundle(.bbsflmt)"
-msgstr ""
+msgstr "Filament-Bündel (.bbsflmt)"
 
 msgid "Printer presets(.zip)"
-msgstr ""
+msgstr "Drucker-Voreinstellungen (.zip)"
 
 msgid "Filament presets(.zip)"
-msgstr ""
+msgstr "Filament-Voreinstellungen (.zip)"
 
 msgid "Process presets(.zip)"
-msgstr ""
+msgstr "Prozess-Voreinstellungen (.zip)"
 
 msgid "initialize fail"
-msgstr ""
+msgstr "Initialisierung fehlgeschlagen"
 
 msgid "add file fail"
-msgstr ""
+msgstr "Datei hinzufügen fehlgeschlagen"
 
 msgid "add bundle structure file fail"
-msgstr ""
+msgstr "Hinzufügen der Bündelstrukturdatei fehlgeschlagen"
 
 msgid "finalize fail"
-msgstr ""
+msgstr "Finalisierung fehlgeschlagen"
 
 msgid "open zip written fail"
-msgstr ""
+msgstr "Schreiben der Zip-Datei fehlgeschlagen"
 
 msgid "Export successful"
-msgstr ""
+msgstr "Export erfolgreich"
 
 #, c-format, boost-format
 msgid ""
@@ -13164,114 +13229,146 @@ msgid ""
 "If not, a time suffix will be added, and you can modify the name after "
 "creation."
 msgstr ""
+"Der Ordner '%s' existiert bereits im aktuellen Verzeichnis. Möchten Sie ihn "
+"löschen und neu erstellen.\n"
+"Wenn nicht, wird ein Zeitstempel hinzugefügt, und Sie können den Namen nach "
+"der Erstellung ändern."
 
 msgid ""
 "Printer and all the filament&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
+"Drucker und alle Filament- und Prozessvoreinstellungen, die zum Drucker "
+"gehören. \n"
+"Kann mit anderen geteilt werden."
 
 msgid ""
 "User's fillment preset set. \n"
 "Can be shared with others."
 msgstr ""
+"Benutzer-Filament-Voreinstellungssatz. \n"
+"Kann mit anderen geteilt werden."
 
 msgid ""
 "Only display printer names with changes to printer, filament, and process "
 "presets."
 msgstr ""
+"Nur Druckernamen mit Änderungen an Drucker-, Filament- und "
+"Prozessvoreinstellungen anzeigen."
 
 msgid "Only display the filament names with changes to filament presets."
 msgstr ""
+"Nur die Filamentnamen mit Änderungen an den Filament-Voreinstellungen "
+"anzeigen."
 
 msgid ""
 "Only printer names with user printer presets will be displayed, and each "
 "preset you choose will be exported as a zip."
 msgstr ""
+"Nur Druckernamen mit Benutzer-Druckervoreinstellungen werden angezeigt, und "
+"jede Voreinstellung, die Sie auswählen, wird als Zip exportiert."
 
 msgid ""
 "Only the filament names with user filament presets will be displayed, \n"
 "and all user filament presets in each filament name you select will be "
 "exported as a zip."
 msgstr ""
+"Nur die Filamentnamen mit benutzerdefinierten Filament-Voreinstellungen "
+"werden angezeigt, \n"
+"und alle benutzerdefinierten Filament-Voreinstellungen in jedem "
+"Filamentnamen, den Sie auswählen, werden als Zip exportiert."
 
 msgid ""
 "Only printer names with changed process presets will be displayed, \n"
 "and all user process presets in each printer name you select will be "
 "exported as a zip."
 msgstr ""
+"Nur Druckernamen mit geänderten Prozess-Voreinstellungen werden angezeigt, \n"
+"und alle Benutzer-Prozess-Voreinstellungen in jedem Druckernamen, den Sie "
+"auswählen, werden als Zip exportiert."
 
 msgid "Please select at least one printer or filament."
-msgstr ""
+msgstr "Bitte wählen Sie mindestens einen Drucker oder ein Filament aus."
 
 msgid "Please select a type you want to export"
-msgstr ""
+msgstr "Bitte wählen Sie einen Typ aus, den Sie exportieren möchten"
 
 msgid "Edit Filament"
-msgstr ""
+msgstr "Filament bearbeiten"
 
 msgid "Filament presets under this filament"
-msgstr ""
+msgstr "Filament-Voreinstellungen unter diesem Filament"
 
 msgid ""
 "Note: If the only preset under this filament is deleted, the filament will "
 "be deleted after exiting the dialog."
 msgstr ""
+"Hinweis: Wenn die einzige Voreinstellung unter diesem Filament gelöscht "
+"wird, wird das Filament nach dem Verlassen des Dialogfelds gelöscht."
 
 msgid "Presets inherited by other presets can not be deleted"
 msgstr ""
+"Voreinstellungen, die von anderen Voreinstellungen geerbt wurden, können "
+"nicht gelöscht werden"
 
 msgid "The following presets inherits this preset."
 msgid_plural "The following preset inherits this preset."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Die folgenden Voreinstellungen erben diese Voreinstellung."
+msgstr[1] "Die folgende Voreinstellung erbt diese Voreinstellung."
 
 msgid "Delete Preset"
-msgstr ""
+msgstr "Voreinstellung löschen"
 
 msgid "Are you sure to delete the selected preset?"
-msgstr ""
+msgstr "Möchten Sie die ausgewählte Voreinstellung wirklich löschen?"
 
 msgid "Delete preset"
-msgstr ""
+msgstr "Voreinstellung löschen"
 
 msgid "+ Add Preset"
-msgstr ""
+msgstr "+ Voreinstellung hinzufügen"
 
 msgid "Delete Filament"
-msgstr ""
+msgstr "Filament löschen"
 
 msgid ""
 "All the filament presets belong to this filament would be deleted. \n"
 "If you are using this filament on your printer, please reset the filament "
 "information for that slot."
 msgstr ""
+"Alle Filament-Voreinstellungen, die zu diesem Filament gehören, werden "
+"gelöscht. \n"
+"Wenn Sie dieses Filament auf Ihrem Drucker verwenden, setzen Sie bitte die "
+"Filamentinformationen für diesen Steckplatz zurück."
 
 msgid "Delete filament"
-msgstr ""
+msgstr "Filament löschen"
 
 msgid "Add Preset"
-msgstr ""
+msgstr "Voreinstellung hinzufügen"
 
 msgid "Add preset for new printer"
-msgstr ""
+msgstr "Voreinstellung für neuen Drucker hinzufügen"
 
 msgid "Copy preset from filament"
-msgstr ""
+msgstr "Voreinstellung vom Filament kopieren"
 
 msgid "The filament choice not find filament preset, please reselect it"
 msgstr ""
+"Das ausgewählte Filament findet keine Filament-Voreinstellung, bitte neu "
+"auswählen"
 
 msgid "Edit Preset"
-msgstr ""
+msgstr "Voreinstellung bearbeiten"
 
 msgid "For more information, please check out Wiki"
-msgstr ""
+msgstr "Für weitere Informationen besuchen Sie bitte Wiki"
 
 msgid "Collapse"
-msgstr ""
+msgstr "Ausblenden"
 
 msgid "Daily Tips"
-msgstr ""
+msgstr "Tägliche Tipps"
 
 msgid "Need select printer"
 msgstr "Drucker auswählen"
