@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-17 20:43+0100\n"
+"POT-Creation-Date: 2023-12-19 09:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11716,7 +11716,7 @@ msgid "Air filtration/Exhuast Fan\nDid you know that OrcaSlicer can support Air 
 msgstr ""
 
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
-msgid "How to use keyboard shortcuts\nDid you know that Orca Slicer offers a wide range of keyboard shortcuts and 3D scene operations."
+msgid "How to use keyboard shortcuts\nDid you know that Galaxy Slicer offers a wide range of keyboard shortcuts and 3D scene operations."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Cut Tool]
@@ -11748,7 +11748,7 @@ msgid "Object List\nDid you know that you can view all objects/parts in a list a
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Search Functionality]
-msgid "Search Functionality\nDid you know that you use the Search tool to quickly find a specific Orca Slicer setting?"
+msgid "Search Functionality\nDid you know that you use the Search tool to quickly find a specific Galaxy Slicer setting?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Simplify Model]
@@ -11764,11 +11764,11 @@ msgid "Split to Objects/Parts\nDid you know that you can split a big object into
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Subtract a Part]
-msgid "Subtract a Part\nDid you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in Orca Slicer."
+msgid "Subtract a Part\nDid you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in Galaxy Slicer."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:STEP]
-msgid "STEP\nDid you know that you can improve your print quality by slicing a STEP file instead of an STL?\nOrca Slicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
+msgid "STEP\nDid you know that you can improve your print quality by slicing a STEP file instead of an STL?\nGalaxy Slicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Z seam location]
