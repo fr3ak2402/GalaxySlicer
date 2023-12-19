@@ -2,7 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 09:51+0100\n"
+"POT-Creation-Date: 2023-12-19 22:09+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -289,6 +292,12 @@ msgstr "Seleziona tutti i connettori"
 
 msgid "Cut"
 msgstr "Taglia"
+
+msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgstr ""
+
+msgid "Repairing model object"
+msgstr "Riparazione oggetto"
 
 msgid "Connector"
 msgstr "Connettore"
@@ -1362,9 +1371,6 @@ msgstr "Inserisci un nuovo nome"
 msgid "Renaming"
 msgstr "Rinomina"
 
-msgid "Repairing model object"
-msgstr "Repairing model object"
-
 msgid "Following model object has been repaired"
 msgid_plural "Following model objects have been repaired"
 msgstr[0] "The following model object has been repaired"
@@ -1829,11 +1835,6 @@ msgid "Sending print job through cloud service"
 msgstr "Sending print job through cloud service"
 
 msgid "Print task sending times out."
-msgstr ""
-
-msgid ""
-"The printer timed out while receiving a print job. Please check if the "
-"network is functioning properly and send the print again."
 msgstr ""
 
 msgid "Service Unavailable"
@@ -3195,7 +3196,7 @@ msgstr "Volume:"
 msgid "Size:"
 msgstr "Size:"
 
-#, boost-format
+#, c-format, boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -4460,8 +4461,8 @@ msgstr "Recupero automatico perdita passi"
 msgid "Allow Prompt Sound"
 msgstr ""
 
-msgid "Fliament Tangle Detect"
-msgstr ""
+msgid "Filament Tangle Detect"
+msgstr "Rilevamento del groviglio del filamento"
 
 msgid "Global"
 msgstr "Global"
@@ -5475,8 +5476,8 @@ msgstr "Save %s as"
 msgid "User Preset"
 msgstr "User Preset"
 
-msgid "Project Inside Preset"
-msgstr "Project Inside Preset"
+msgid "Preset Inside Project"
+msgstr "Preset interno al Progetto"
 
 msgid "Name is invalid;"
 msgstr "Name is invalid;"
@@ -6033,8 +6034,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add "
-"Primitive\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add Primitive"
+"\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "Quando si registra un timelapse senza testa di satmpa, si consiglia di "
 "aggiungere un \"Timelapse Torre di pulizia\"\n"
@@ -6432,8 +6433,8 @@ msgstr "Undef"
 msgid "Unsaved Changes"
 msgstr "Modifiche non salvate"
 
-msgid "Discard or Keep changes"
-msgstr "Discard or keep changes"
+msgid "Transfer or discard changes"
+msgstr "Scarta o mantieni le modifiche"
 
 msgid "Old Value"
 msgstr "Valore precedente"
@@ -7038,6 +7039,9 @@ msgstr "Stampa"
 msgid "Idle"
 msgstr "Inattivo"
 
+msgid "Beta version"
+msgstr ""
+
 msgid "Latest version"
 msgstr "Ultima versione"
 
@@ -7064,8 +7068,8 @@ msgid ""
 msgstr ""
 "È stato rilevato un aggiornamento importante che deve essere eseguito prima "
 "che la stampa possa continuare. Si desidera aggiornare ora? È possibile "
-"effettuare l'aggiornamento anche in un secondo momento da \"Aggiorna "
-"firmware\"."
+"effettuare l'aggiornamento anche in un secondo momento da \"Aggiorna firmware"
+"\"."
 
 msgid ""
 "The firmware version is abnormal. Repairing and updating are required before "
@@ -8928,11 +8932,16 @@ msgstr "Massima velocità della ventola al layer"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer "
-"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
-"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
-"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" will be ignored if lower than "
+"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
+"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
+"La velocità della ventola aumenterà linearmente da zero al livello "
+"\"close_fan_the_first_x_layers\" al massimo al livello \"full_fan_speed_layer"
+"\". \"full_fan_speed_layer\" verrà ignorato se inferiore a "
+"\"close_fan_the_first_x_layers\", nel qual caso la ventola funzionerà alla "
+"massima velocità consentita al livello \"close_fan_the_first_x_layers\" + 1."
 
 msgid "Support interface fan speed"
 msgstr ""
@@ -10232,10 +10241,11 @@ msgstr ""
 "non viene utilizzato alcun filamento specifico per il supporto e viene "
 "utilizzato il filamento corrente"
 
-msgid "Reduce interface filament for base"
-msgstr ""
+msgid "Avoid interface filament for base"
+msgstr "Ridurre il filamento di interfaccia per la base"
 
-msgid "Avoid using support interface filament to print support base"
+msgid ""
+"Avoid using support interface filament to print support base if possible."
 msgstr ""
 
 msgid ""
@@ -11931,7 +11941,7 @@ msgstr ""
 msgid "All inputs in the custom vendor or serial are spaces. Please re-enter."
 msgstr ""
 
-msgid "The beginning of the vendor can not be a number. Please re-enter."
+msgid "The vendor can not be a number. Please re-enter."
 msgstr ""
 
 msgid ""
@@ -11947,8 +11957,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you "
-"selected\". \n"
+"We would rename the presets as \"Vendor Type Serial @printer you selected"
+"\". \n"
 "To add preset for more prinetrs, Please go to printer selection"
 msgstr ""
 
@@ -12774,3 +12784,599 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid ""
+#~ "The printer timed out while receiving a print job. Please check if the "
+#~ "network is functioning properly and send the print again."
+#~ msgstr ""
+#~ "La stampante ha raggiunto il timeout durante la ricezione di un lavoro di "
+#~ "stampa. Controlla se la rete funziona correttamente e invia nuovamente la "
+#~ "stampa."
+
+#~ msgid "The beginning of the vendor can not be a number. Please re-enter."
+#~ msgstr ""
+#~ "L'inizio del fornitore non può essere un numero. Si prega di inserire di "
+#~ "nuovo."
+
+#~ msgid "Edit Text"
+#~ msgstr "Modifica testo"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "Errore. Impossibile creare il processo."
+
+#~ msgid "Exception"
+#~ msgstr "Eccezione"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "Seleziona l'archivio SLA:"
+
+#~ msgid "Import file"
+#~ msgstr "Importa file"
+
+#~ msgid "Import model and profile"
+#~ msgstr "Importa modello e profilo"
+
+#~ msgid "Import profile only"
+#~ msgstr "Importa solo profilo"
+
+#~ msgid "Import model only"
+#~ msgstr "Importa solo modello"
+
+#~ msgid "Accurate"
+#~ msgstr "Accurato"
+
+#~ msgid "Balanced"
+#~ msgstr "Bilanciato"
+
+#~ msgid "Quick"
+#~ msgstr "Rapido"
+
+#~ msgid "Auto-Calc"
+#~ msgstr "Calcolo automatico"
+
+#~ msgid "Re-calculate"
+#~ msgstr "Ricalcolo"
+
+#~ msgid ""
+#~ "Studio would re-calculate your flushing volumes everytime the filaments "
+#~ "color changed. You could disable the auto-calculate in Bambu Studio > "
+#~ "Preferences"
+#~ msgstr ""
+#~ "Studio ricalcolava i volumi di spurgo ogni volta che il colore dei "
+#~ "filamenti cambiava. È possibile disabilitare il calcolo automatico nelle "
+#~ "preferenze > di Bambu Studio"
+
+#~ msgid "unloaded"
+#~ msgstr "scaricato"
+
+#~ msgid "loaded"
+#~ msgstr "caricato"
+
+#~ msgid "Filament #"
+#~ msgstr "Filamento #"
+
+#~ msgid "Print sequence of inner wall and outer wall. "
+#~ msgstr "Stampa la sequenza della parete interna e della parete esterna. "
+
+#~ msgid "Order of wall/infill. false means print wall first. "
+#~ msgstr ""
+#~ "L'ordine tra parete (wall) e riempimento (infill). \"False\" significa "
+#~ "stampare prima la parete."
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr ""
+#~ "Descrive per quanto tempo il nozzle si muoverà lungo l'ultimo percorso "
+#~ "mentre si ritrae."
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "Semplifica Modello\n"
+#~ "Sapevate che è possibile ridurre il numero di triangoli in una mesh "
+#~ "utilizzando la funzione Semplifica mesh? Fare clic con il tasto destro "
+#~ "del mouse sul modello e selezionare Semplifica modello. Per saperne di "
+#~ "più, consultare la documentazione."
+
+#~ msgid ""
+#~ "Subtract a Part\n"
+#~ "Did you know that you can subtract one mesh from another using the "
+#~ "Negative part modifier? That way you can, for example, create easily "
+#~ "resizable holes directly in Orca Slicer. Read more in the documentation."
+#~ msgstr ""
+#~ "Sottrazione di una parte\n"
+#~ "Sapevi che puoi sottrarre una mesh da un'altra usando il modificatore "
+#~ "Parte negativa? In questo modo è possibile, ad esempio, creare fori "
+#~ "facilmente ridimensionabili direttamente in Orca Slicer. Per ulteriori "
+#~ "informazioni, consulta la documentazione."
+
+#~ msgid "Filling bed "
+#~ msgstr "Riempi piano"
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "La trama riempimento %1% non supporta il 100%% di densità."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Passare alla trama rettilinea?\n"
+#~ "Sì - passa automaticamente alla trama rettilinea\n"
+#~ "No - ripristina automaticamente la densità al valore predefinito non 100%"
+
+#~ msgid "Please heat the nozzle to above 170 degree before loading filament."
+#~ msgstr ""
+#~ "Riscaldare il nozzle a una temperatura superiore a 170 gradi prima di "
+#~ "caricare il filamento."
+
+#~ msgid "Newer 3mf version"
+#~ msgstr "Versione 3mf più recente"
+
+#~ msgid "Show g-code window"
+#~ msgstr "Mostra la finestra del codice g"
+
+#~ msgid "If enabled, g-code window will be displayed."
+#~ msgstr "Se abilitato, verrà visualizzata la finestra del codice g."
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "Questa è la densità del riempimento interno. 100%% significa che "
+#~ "l'oggetto sarà in ogni sua parte."
+
+#~ msgid "Tree support wall loops"
+#~ msgstr "Loop parete supporto ad albero"
+
+#~ msgid "This setting specify the count of walls around tree support"
+#~ msgstr "Questa specifica il numero di pareti attorno al supporto ad albero."
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " Non funziona con una densità del 100%%"
+
+#~ msgid "Ctrl + Shift + Enter"
+#~ msgstr "Ctrl + Shift + Invio"
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Strumento-Faccia sul piatto"
+
+#~ msgid "Export as STL"
+#~ msgstr "Esporta come STL"
+
+#~ msgid "Check cloud service status"
+#~ msgstr "Verifica lo stato del servizio cloud"
+
+#~ msgid "Please input a valid value (K in 0~0.5)"
+#~ msgstr "Inserisci un valore valido (K in 0~0.5)"
+
+#~ msgid "Please input a valid value (K in 0~0.5, N in 0.6~2.0)"
+#~ msgstr "Inserisci un valore valido (K in 0~0.5, N in 0.6~2.0)"
+
+#~ msgid "Export all objects as STL"
+#~ msgstr "Esporta tutti gli oggetti come STL"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Found following keys "
+#~ "unrecognized:"
+#~ msgstr ""
+#~ "Versione del 3mf %s è più recente %s della versione %s, trovate le "
+#~ "seguenti chiavi non riconosciute:"
+
+#~ msgid "You'd better upgrade your software.\n"
+#~ msgstr "Devi aggiornare il software.\n"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Suggest to upgrade "
+#~ "your software."
+#~ msgstr ""
+#~ "Versione del 3mf %s è più recente della versione %s di %s, si consiglia "
+#~ "di aggiornare il software."
+
+#~ msgid "The 3mf is not compatible, load geometry data only!"
+#~ msgstr "Il 3mf non è compatibile, carica solo i dati della geometria!"
+
+#~ msgid "Incompatible 3mf"
+#~ msgstr "Incompatible 3mf"
+
+#~ msgid "Add/Remove printers"
+#~ msgstr "Aggiungi/Rimuovi stampanti"
+
+#~ msgid ""
+#~ "When print by object, machines with I3 structure will not generate "
+#~ "timelapse videos."
+#~ msgstr ""
+#~ "Quando si stampa per oggetto, le macchine con struttura I3 non "
+#~ "genereranno video timelapse."
+
+#, c-format, boost-format
+#~ msgid "%s is not supported by AMS."
+#~ msgstr "%s non è supportato da AMS."
+
+#~ msgid "Don't remind me of this version again"
+#~ msgstr "Non ricordarmi più questa versione."
+
+#~ msgid "Error: IP or Access Code are not correct"
+#~ msgstr "Errore: l'IP o il codice di accesso non sono corretti"
+
+#~ msgid ""
+#~ "Extrude perimeters that have a part over an overhang in the reverse "
+#~ "direction on odd layers. This alternating pattern can drastically improve "
+#~ "steep overhang."
+#~ msgstr ""
+#~ "Estrudere i perimetri che hanno una parte su una sporgenza nella "
+#~ "direzione inversa su layer dispari. Questo schema alternato può "
+#~ "migliorare drasticamente lo strapiombo ripido."
+
+#~ msgid "Order of inner wall/outer wall/infil"
+#~ msgstr "Ordine di parete interna/esterna/riempimento"
+
+#~ msgid "Print sequence of inner wall, outer wall and infill. "
+#~ msgstr ""
+#~ "È la sequenza di stampa di pareti interne, pareti esterne e dei "
+#~ "riempimenti."
+
+#~ msgid "inner/outer/infill"
+#~ msgstr "interno/esterno/riempimento"
+
+#~ msgid "outer/inner/infill"
+#~ msgstr "esterno/interno/riempimento"
+
+#~ msgid "infill/inner/outer"
+#~ msgstr "riempimento/interno/esterno"
+
+#~ msgid "infill/outer/inner"
+#~ msgstr "riempimento/esterno/interno"
+
+#~ msgid "inner-outer-inner/infill"
+#~ msgstr "interno-esterno-interno/riempimento"
+
+#, c-format, boost-format
+#~ msgid "%%"
+#~ msgstr "%%"
+
+#~ msgid "Export 3MF"
+#~ msgstr "Esporta 3MF"
+
+#~ msgid "Export project as 3MF."
+#~ msgstr "Questo esporta il progetto come file 3mf."
+
+#~ msgid "Export slicing data"
+#~ msgstr "Esporta dati elaborati"
+
+#~ msgid "Export slicing data to a folder."
+#~ msgstr "Esporta dati elaborati in una cartella"
+
+#~ msgid "Load slicing data"
+#~ msgstr "Carica dati di slicing"
+
+#~ msgid "Load cached slicing data from directory"
+#~ msgstr "Carica i dati di slicing nella cache dalla directory"
+
+#~ msgid "Export STL"
+#~ msgstr "Esporta STL"
+
+#~ msgid "Export the objects as multiple STL."
+#~ msgstr "Esportare gli oggetti come STL multipli."
+
+#~ msgid "Slice"
+#~ msgstr "Slice"
+
+#~ msgid "Slice the plates: 0-all plates, i-plate i, others-invalid"
+#~ msgstr "Slicing dei piatti: 0-tutti i piatti, i-piatto i, altri-invalidi"
+
+#~ msgid "Show command help."
+#~ msgstr "Mostra la guida ai comandi."
+
+#~ msgid "UpToDate"
+#~ msgstr "Aggiornato"
+
+#~ msgid "Update the configs values of 3mf to latest."
+#~ msgstr "Aggiorna valori di configurazione dei 3mf ai più recenti."
+
+#~ msgid "Load default filaments"
+#~ msgstr "Carica filamenti predefiniti"
+
+#~ msgid "Load first filament as default for those not loaded"
+#~ msgstr "Carica il primo filamento come predefinito per quelli non caricati"
+
+#~ msgid "mtcpp"
+#~ msgstr "mtcpp"
+
+#~ msgid "max triangle count per plate for slicing."
+#~ msgstr "numero massimo di triangoli per piatto da elaborare"
+
+#~ msgid "mstpp"
+#~ msgstr "mstpp"
+
+#~ msgid "max slicing time per plate in seconds."
+#~ msgstr "Tempo massimo di slicing per piatto in secondi"
+
+#~ msgid "Normative check"
+#~ msgstr "Controllo normativo"
+
+#~ msgid "Check the normative items."
+#~ msgstr "Controlla gli articoli normativi."
+
+#~ msgid "Output Model Info"
+#~ msgstr "Info Modello di output"
+
+#~ msgid "Output the model's information."
+#~ msgstr "Questo produce le informazioni del modello."
+
+#~ msgid "Export Settings"
+#~ msgstr "Esporta impostazioni"
+
+#~ msgid "Export settings to a file."
+#~ msgstr "Questo esporta le impostazioni in un file."
+
+#~ msgid "Send progress to pipe"
+#~ msgstr "Inviare l'avanzamento al pipe"
+
+#~ msgid "Send progress to pipe."
+#~ msgstr "Inviare l'avanzamento al pipe"
+
+#~ msgid "Arrange Options"
+#~ msgstr "Opzioni disposizione"
+
+#~ msgid "Arrange options: 0-disable, 1-enable, others-auto"
+#~ msgstr "Opzioni di disposizione: 0-disabilita, 1-abilita, altro-auto"
+
+#~ msgid "Repetions count"
+#~ msgstr "Conteggio delle ripetizioni"
+
+#~ msgid "Repetions count of the whole model"
+#~ msgstr "Numero di ripetizioni dell'intero modello"
+
+#~ msgid "Convert Unit"
+#~ msgstr "Converti unità"
+
+#~ msgid "Convert the units of model"
+#~ msgstr "Converti le unità del modello"
+
+#~ msgid "Rotate around X"
+#~ msgstr "Ruota attorno ad X"
+
+#~ msgid "Rotation angle around the X axis in degrees."
+#~ msgstr "Angolo di rotazione attorno all'asse X in gradi."
+
+#~ msgid "Scale the model by a float factor"
+#~ msgstr "Ridimensiona il modello in base a un fattore float"
+
+#~ msgid "Load General Settings"
+#~ msgstr "Carica impostazioni generali"
+
+#~ msgid "Load process/machine settings from the specified file"
+#~ msgstr "Carica le impostazioni di processo/macchina dal file specificato"
+
+#~ msgid "Load Filament Settings"
+#~ msgstr "Carica impostazioni filamento"
+
+#~ msgid "Load filament settings from the specified file list"
+#~ msgstr ""
+#~ "Carica le impostazioni del filamento dall'elenco di file specificato"
+
+#~ msgid "Skip Objects"
+#~ msgstr "Salta oggetti"
+
+#~ msgid "Skip some objects in this print"
+#~ msgstr "Salta alcuni oggetti in questa stampa"
+
+#~ msgid "load uptodate process/machine settings when using uptodate"
+#~ msgstr ""
+#~ "Caricare le impostazioni di processo/macchina aggiornate quando si "
+#~ "utilizza UptoDate"
+
+#~ msgid ""
+#~ "load uptodate process/machine settings from the specified file when using "
+#~ "uptodate"
+#~ msgstr ""
+#~ "Caricare le impostazioni di processo/macchina aggiornate dal file "
+#~ "specificato quando si utilizza UptoDate"
+
+#~ msgid "Output directory"
+#~ msgstr "Output directory"
+
+#~ msgid "Output directory for the exported files."
+#~ msgstr "Questa è la cartella di destinazione per i file esportati."
+
+#~ msgid "Debug level"
+#~ msgstr "Livello di debug"
+
+#~ msgid ""
+#~ "Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+#~ "trace\n"
+#~ msgstr ""
+#~ "Imposta livello di debug. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+#~ "trace\n"
+
+#, boost-format
+#~ msgid "The selected preset: %1% is not found."
+#~ msgstr "Il preset selezionato: %1% non è stato trovato."
+
+#~ msgid ""
+#~ "3D Scene Operations\n"
+#~ "Did you know how to control view and object/part selection with mouse and "
+#~ "touchpanel in the 3D scene?"
+#~ msgstr ""
+#~ "Operazioni sulla scena 3D\n"
+#~ "Sapete come controllare la vista e la selezione di oggetti/parti con il "
+#~ "mouse e il touch panel nella scena 3D?"
+
+#~ msgid ""
+#~ "Fix Model\n"
+#~ "Did you know that you can fix a corrupted 3D model to avoid a lot of "
+#~ "slicing problems?"
+#~ msgstr ""
+#~ "Correggi Modello\n"
+#~ "Sapevi che puoi correggere un modello 3D danneggiato per evitare molti "
+#~ "problemi di slicing?"
+
+#~ msgid ""
+#~ "When need to print with the printer door opened\n"
+#~ "Opening the printer door can reduce the probability of extruder/hotend "
+#~ "clogging when printing lower temperature filament with a higher enclosure "
+#~ "temperature. More info about this in the Wiki."
+#~ msgstr ""
+#~ "Quando è necessario stampare con lo sportello della stampante aperto\n"
+#~ "L'apertura dello sportello della stampante può ridurre la probabilità di "
+#~ "intasamento dell'estrusore/hotend quando si stampa un filamento a "
+#~ "temperatura inferiore con una temperatura dell'involucro più elevata. "
+#~ "Maggiori informazioni su questo nel Wiki."
+
+#~ msgid "Embeded"
+#~ msgstr "Integrato"
+
+#~ msgid "Show online staff-picked models on the home page"
+#~ msgstr "Mostra i modelli online selezionati dallo staff  nella home page"
+
+#~ msgid "Online Models"
+#~ msgstr "Modelli Online"
+
+#~ msgid "The minimum printing speed when slow down for cooling"
+#~ msgstr "The minimum printing speed when slowing down for cooling."
+
+#~ msgid ""
+#~ "The bed temperature exceeds filament's vitrification temperature. Please "
+#~ "open the front door of printer before printing to avoid nozzle clog."
+#~ msgstr ""
+#~ "La temperatura del piano supera la temperatura di vetrificazione del "
+#~ "filamento. Aprire lo sportello anteriore della stampante prima di "
+#~ "stampare per evitare l'intasamento del nozzle."
+
+#~ msgid "Temperature of vitrificaiton"
+#~ msgstr "Temperature of vitrification"
+
+#~ msgid ""
+#~ "Material becomes soft at this temperature. Thus the heatbed cannot be "
+#~ "hotter than this tempature"
+#~ msgstr ""
+#~ "Material becomes soft at this temperature. Thus, the heat bed cannot be "
+#~ "hotter than this temperature."
+
+#~ msgid "Enable this option if machine has auxiliary part cooling fan"
+#~ msgstr "Enable this option if the machine has an auxiliary part cooling fan"
+
+#~ msgid ""
+#~ "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
+#~ "during printing except the first several layers which is defined by no "
+#~ "cooling layers"
+#~ msgstr ""
+#~ "This is the speed of auxiliary part cooling fan. The auxiliary fan will "
+#~ "run at this speed during printing except for during the first several "
+#~ "layers which may be set to have no part cooling."
+
+#~ msgid "Empty layers around bottom are replaced by nearest normal layers."
+#~ msgstr "Empty layers around bottom are replaced by nearest normal layers."
+
+#~ msgid "The model has too many empty layers."
+#~ msgstr "Il modello ha troppi layers vuoti."
+
+#~ msgid "Cali"
+#~ msgstr "Calib."
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "Calibrazione estrusione"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Inserisco il nuovo filamento nell'estrusore"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "The bed temperature of other layers is lower than the bed temperature of "
+#~ "the first layer by more than %d degrees centigrade.\n"
+#~ "This may cause models to break free from the build plate during printing."
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "La temperatura del piano è superiore alla temperatura di vetrificazione "
+#~ "di questo filamento.\n"
+#~ "Ciò può causare il blocco del nozzle e il fallimento della stampa.\n"
+#~ "Si prega di tenere la stampante aperta durante il processo di stampa per "
+#~ "garantire la circolazione dell'aria o ridurre la temperatura del piano."
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Stima del tempo totale"
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "Identificazione frequenza di risonanza"
+
+#~ msgid "Immediately score"
+#~ msgstr "Punteggio immediato"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "Assegna un punteggio per il tuo modello Bambu Market preferito."
+
+#~ msgid "Score"
+#~ msgstr "Punteggio"
+
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Bambu High Temperature Plate"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "Impossibile connettersi alla stampante"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "Recommended temperature range"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "High Temp Plate"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "This is the bed temperature when the high temperature plate is installed. "
+#~ "A value of 0 means the filament does not support printing on the High "
+#~ "Temp Plate."
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Spessore supporto interno del ponte"
+
+#~ msgid ""
+#~ "Style and shape of the support. For normal support, projecting the "
+#~ "supports into a regular grid will create more stable supports (default), "
+#~ "while snug support towers will save material and reduce object scarring.\n"
+#~ "For tree support, slim style will merge branches more aggressively and "
+#~ "save a lot of material (default), while hybrid style will create similar "
+#~ "structure to normal support under large flat overhangs."
+#~ msgstr ""
+#~ "Stile e forma del supporto. Per supporti normali, la proiezione dei "
+#~ "supporti in una griglia regolare creerà supporti più stabili "
+#~ "(impostazione predefinita), mentre le torri di supporto aderenti faranno "
+#~ "risparmiare materiale e ridurranno le giunzioni oggetto.\n"
+#~ "Per i supporti ad albero, lo stile slim unirà i rami in modo più "
+#~ "aggressivo e risparmierà molto materiale (impostazione predefinita), "
+#~ "mentre lo stile ibrido creerà una struttura simile a quella dei sostegni "
+#~ "normali sotto grandi sporgenze piatte."
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "Bed temperature difference"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "Non è consigliabile che la temperatura del piano degli altri layer sia "
+#~ "inferiore a quella del primo layer di oltre questa soglia. Una "
+#~ "temperatura del piano troppo bassa degli altri layer può causare il "
+#~ "distacco dell'oggetto dal piatto."
+
+#~ msgid "Orient the model"
+#~ msgstr "Orient the model"
