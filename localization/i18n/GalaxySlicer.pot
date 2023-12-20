@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 22:09+0800\n"
+"POT-Creation-Date: 2023-12-20 10:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3021,7 +3021,7 @@ msgstr ""
 msgid "Size:"
 msgstr ""
 
-#, possible-c-format, possible-boost-format
+#, possible-boost-format
 msgid ""
 "Conflicts of gcode paths have been found at layer %d, z = %.2lf mm. Please "
 "separate the conflicted objects farther (%s <-> %s)."
@@ -5712,8 +5712,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 
 msgid "Line width"
@@ -8372,10 +8372,10 @@ msgstr ""
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 
 msgid "Support interface fan speed"
@@ -11176,8 +11176,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you selected"
-"\". \n"
+"We would rename the presets as \"Vendor Type Serial @printer you "
+"selected\". \n"
 "To add preset for more prinetrs, Please go to printer selection"
 msgstr ""
 
@@ -11702,19 +11702,19 @@ msgid "Sandwich mode\nDid you know that you can use sandwich mode (inner-outer-i
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Chamber temperature]
-msgid "Chamber temperature\nDid you know that OrcaSlicer supports chamber temperature?"
+msgid "Chamber temperature\nDid you know that GalaxySlicer supports chamber temperature?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Calibration]
-msgid "Calibration\nDid you know that calibrating your printer can do wonders? Check out our beloved calibration solution in OrcaSlicer."
+msgid "Calibration\nDid you know that calibrating your printer can do wonders? Check out our beloved calibration solution in GalaxySlicer."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Auxiliary fan]
-msgid "Auxiliary fan\nDid you know that OrcaSlicer supports Auxiliary part cooling fan?"
+msgid "Auxiliary fan\nDid you know that GalaxySlicer supports Auxiliary part cooling fan?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Air filtration]
-msgid "Air filtration/Exhuast Fan\nDid you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
+msgid "Air filtration/Exhuast Fan\nDid you know that GalaxySlicer can support Air filtration/Exhuast Fan?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]

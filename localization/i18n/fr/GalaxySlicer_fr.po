@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 09:51+0100\n"
+"POT-Creation-Date: 2023-12-20 10:05+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -295,6 +295,12 @@ msgstr "Sélectionner tous les connecteurs"
 
 msgid "Cut"
 msgstr "Couper"
+
+msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgstr ""
+
+msgid "Repairing model object"
+msgstr "Réparer le modèle"
 
 msgid "Connector"
 msgstr "Connecteur"
@@ -1397,9 +1403,6 @@ msgstr "Entrez le nouveau nom"
 msgid "Renaming"
 msgstr "Renommer"
 
-msgid "Repairing model object"
-msgstr "Réparer le modèle"
-
 msgid "Following model object has been repaired"
 msgid_plural "Following model objects have been repaired"
 msgstr[0] "Le modèle suivant a été réparé"
@@ -1874,11 +1877,6 @@ msgid "Sending print job through cloud service"
 msgstr "Envoi de la tâche d'impression via le service cloud"
 
 msgid "Print task sending times out."
-msgstr ""
-
-msgid ""
-"The printer timed out while receiving a print job. Please check if the "
-"network is functioning properly and send the print again."
 msgstr ""
 
 msgid "Service Unavailable"
@@ -4572,7 +4570,7 @@ msgstr "Récupération automatique en cas de perte de pas"
 msgid "Allow Prompt Sound"
 msgstr "Autoriser le son de l'invite"
 
-msgid "Fliament Tangle Detect"
+msgid "Filament Tangle Detect"
 msgstr ""
 
 msgid "Global"
@@ -5625,8 +5623,8 @@ msgstr "Enregistrer %s sous"
 msgid "User Preset"
 msgstr "Préréglage utilisateur"
 
-msgid "Project Inside Preset"
-msgstr "Préréglages intégrés au projet"
+msgid "Preset Inside Project"
+msgstr ""
 
 msgid "Name is invalid;"
 msgstr "Le nom n'est pas valide;"
@@ -6633,8 +6631,8 @@ msgstr "Indéfini"
 msgid "Unsaved Changes"
 msgstr "Modifications non enregistrées"
 
-msgid "Discard or Keep changes"
-msgstr "Ignorer ou conserver les modifications"
+msgid "Transfer or discard changes"
+msgstr ""
 
 msgid "Old Value"
 msgstr "Ancienne valeur"
@@ -7254,6 +7252,9 @@ msgstr "Impression"
 
 msgid "Idle"
 msgstr "Inactive"
+
+msgid "Beta version"
+msgstr ""
 
 msgid "Latest version"
 msgstr "Dernière version"
@@ -10661,10 +10662,11 @@ msgstr ""
 "signifie qu'aucun filament spécifique n'est utilisé pour les supports et que "
 "le filament actuel est utilisé"
 
-msgid "Reduce interface filament for base"
+msgid "Avoid interface filament for base"
 msgstr ""
 
-msgid "Avoid using support interface filament to print support base"
+msgid ""
+"Avoid using support interface filament to print support base if possible."
 msgstr ""
 
 msgid ""
@@ -12385,7 +12387,7 @@ msgstr ""
 msgid "All inputs in the custom vendor or serial are spaces. Please re-enter."
 msgstr ""
 
-msgid "The beginning of the vendor can not be a number. Please re-enter."
+msgid "The vendor can not be a number. Please re-enter."
 msgstr ""
 
 msgid ""
@@ -12946,26 +12948,26 @@ msgstr ""
 #: resources/data/hints.ini: [hint:Chamber temperature]
 msgid ""
 "Chamber temperature\n"
-"Did you know that OrcaSlicer supports chamber temperature?"
+"Did you know that GalaxySlicer supports chamber temperature?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Calibration]
 msgid ""
 "Calibration\n"
 "Did you know that calibrating your printer can do wonders? Check out our "
-"beloved calibration solution in OrcaSlicer."
+"beloved calibration solution in GalaxySlicer."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Auxiliary fan]
 msgid ""
 "Auxiliary fan\n"
-"Did you know that OrcaSlicer supports Auxiliary part cooling fan?"
+"Did you know that GalaxySlicer supports Auxiliary part cooling fan?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Air filtration]
 msgid ""
 "Air filtration/Exhuast Fan\n"
-"Did you know that OrcaSlicer can support Air filtration/Exhuast Fan?"
+"Did you know that GalaxySlicer can support Air filtration/Exhuast Fan?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
@@ -13241,3 +13243,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Project Inside Preset"
+#~ msgstr "Préréglages intégrés au projet"
+
+#~ msgid "Discard or Keep changes"
+#~ msgstr "Ignorer ou conserver les modifications"
