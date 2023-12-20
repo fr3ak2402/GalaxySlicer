@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-19 22:09+0800\n"
+"POT-Creation-Date: 2023-12-20 10:48+0100\n"
 "PO-Revision-Date: 2023-12-20 09:20+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -619,7 +619,6 @@ msgstr "치명적 오류"
 
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
-msgid "OrcaSlicer got an unhandled exception: %1%"
 msgstr "Orca Slicer에 처리되지 않은 예외가 발생했습니다: %1%"
 
 msgid "Downloading Bambu Network Plug-in"
@@ -680,7 +679,7 @@ msgid ""
 "Please note, application settings will be lost, but printer profiles will "
 "not be affected."
 msgstr ""
-"Orca Slicer 구성 파일이 손상되어 구문을 분석할 수 없습니다.\n"
+"Galaxy Slicer 구성 파일이 손상되어 구문을 분석할 수 없습니다.\n"
 "Orca Slicer가 구성 파일을 다시 생성하려고 시도했습니다.\n"
 "응용 프로그램 설정은 손실되지만 프린터 프로필은 영향을 받지 않습니다."
 
@@ -1945,7 +1944,7 @@ msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
 msgstr ""
 
 msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
+msgstr "BambuStudio는 PrusaResearch의 PrusaSlicer를 기반으로 합니다."
 
 msgid ""
 "PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"
@@ -1971,16 +1970,6 @@ msgstr ""
 #, c-format, boost-format
 msgid "About %s"
 msgstr "About %s"
-
-msgid "Orca Slicer "
-msgstr "Orca Slicer "
-
-msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
-msgstr ""
-"Orca Slicer는 BambuStudio, PrusaSlicer 및 SuperSlicer를 기반으로 합니다."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr "BambuStudio는 PrusaResearch의 PrusaSlicer를 기반으로 합니다."
 
 msgid "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
 msgstr "PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci."
@@ -5075,8 +5064,8 @@ msgid ""
 "\"Fix Model\" feature is currently only on Windows. Please repair the model "
 "on GalaxySlicer(windows) or CAD softwares."
 msgstr ""
-"\"모델 수리\" 기능은 현재 Windows에만 있습니다. Orca Slicer(Wndows) 또는 CAD "
-"소프트웨어 등에서 모델을 수정하세요."
+"\"모델 수리\" 기능은 현재 Windows에만 있습니다. Galaxy Slicer(Wndows) 또는 "
+"CAD 소프트웨어 등에서 모델을 수정하세요."
 
 #, c-format, boost-format
 msgid ""
@@ -7986,6 +7975,7 @@ msgstr "반전 임계값"
 msgid "Overhang reversal threshold"
 msgstr "돌출부 반전 임계값"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
@@ -8764,6 +8754,7 @@ msgstr "선의 시작 또는 주 방향을 제어하는 드문 채우기 패턴�
 msgid "Sparse infill density"
 msgstr "드문 채우기 밀도"
 
+#, c-format, boost-format
 msgid ""
 "Density of internal sparse infill, 100% turns all sparse infill into solid "
 "infill and internal solid infill pattern will be used"
@@ -13088,6 +13079,13 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Orca Slicer "
+#~ msgstr "Galaxy Slicer "
+
+#~ msgid "OrcaSlicer is based on BambuStudio, PrusaSlicer, and SuperSlicer."
+#~ msgstr ""
+#~ "Orca Slicer는 BambuStudio, PrusaSlicer 및 SuperSlicer를 기반으로 합니다."
 
 #~ msgid ""
 #~ "Chamber temperature\n"
