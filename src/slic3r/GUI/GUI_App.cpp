@@ -1116,7 +1116,7 @@ std::string GUI_App::get_plugin_url(std::string name, std::string country_code)
 {
     std::string url = get_http_url(country_code);
 
-    std::string curr_version = SLIC3R_VERSION;
+    std::string curr_version = BBL_PLUGIN_VERSION;
     std::string using_version = curr_version.substr(0, 9) + "00";
     if (name == "cameratools")
         using_version = curr_version.substr(0, 6) + "00.00";
@@ -1228,10 +1228,10 @@ int GUI_App::download_plugin(std::string name, std::string package_name, Install
 
 
     if (download_url.empty()) {
-        BOOST_LOG_TRIVIAL(info) << "[download_plugin 1]: no available plugin found for this app version: " << SLIC3R_VERSION;
+        BOOST_LOG_TRIVIAL(info) << "[download_plugin 1]: no available plugin found for this app version: " << BBL_PLUGIN_VERSION;
         if (pro_fn) pro_fn(InstallStatusDownloadFailed, 0, cancel);
         j["result"] = "failed";
-        j["error_msg"] = "[download_plugin 1]: no available plugin found for this app version: " + std::string(SLIC3R_VERSION);
+        j["error_msg"] = "[download_plugin 1]: no available plugin found for this app version: " + std::string(BBL_PLUGIN_VERSION);
         return -1;
     }
     else if (pro_fn) {
@@ -1488,7 +1488,7 @@ bool GUI_App::check_networking_version()
     if (!network_ver.empty()) {
         BOOST_LOG_TRIVIAL(info) << "get_network_agent_version=" << network_ver;
     }
-    std::string studio_ver = SLIC3R_VERSION;
+    std::string studio_ver = BBL_PLUGIN_VERSION;
     if (network_ver.length() >= 8) {
         if (network_ver.substr(0,8) == studio_ver.substr(0,8)) {
             m_networking_compatible = true;
@@ -1892,7 +1892,7 @@ std::map<std::string, std::string> GUI_App::get_extra_header()
     std::map<std::string, std::string> extra_headers;
     extra_headers.insert(std::make_pair("X-BBL-Client-Type", "slicer"));
     extra_headers.insert(std::make_pair("X-BBL-Client-Name", SLIC3R_APP_NAME));
-    extra_headers.insert(std::make_pair("X-BBL-Client-Version", VersionInfo::convert_full_version(SLIC3R_VERSION)));
+    extra_headers.insert(std::make_pair("X-BBL-Client-Version", VersionInfo::convert_full_version(BBL_PLUGIN_VERSION)));
 #if defined(__WINDOWS__)
     extra_headers.insert(std::make_pair("X-BBL-OS-Type", "windows"));
 #elif defined(__APPLE__)
@@ -2156,7 +2156,7 @@ bool GUI_App::on_init_inner()
         int last_major = m_last_config_version->maj();
         int last_minor = m_last_config_version->min();
         int last_patch = m_last_config_version->patch()/100;
-        std::string studio_ver = SLIC3R_VERSION;
+        std::string studio_ver = BBL_PLUGIN_VERSION;
         int cur_major = atoi(studio_ver.substr(0,2).c_str());
         int cur_minor = atoi(studio_ver.substr(3,2).c_str());
         int cur_patch = atoi(studio_ver.substr(6,2).c_str());
@@ -2169,8 +2169,8 @@ bool GUI_App::on_init_inner()
         }
     }
 
-    if(app_config->get("version") != SLIC3R_VERSION) {
-        app_config->set("version", SLIC3R_VERSION);
+    if(app_config->get("version") != BBL_PLUGIN_VERSION) {
+        app_config->set("version", BBL_PLUGIN_VERSION);
     }
 
     GalaxySlicerSplashScreen * scrn = nullptr;
@@ -3880,7 +3880,7 @@ void GUI_App::check_track_enable()
     if (app_config && app_config->get("firstguide", "privacyuse") == "true") {
         //enable track event
         json header_json;
-        header_json["ver"] = SLIC3R_VERSION;
+        header_json["ver"] = BBL_PLUGIN_VERSION;
         wxString os_desc = wxGetOsDescription();
         int major = 0, minor = 0, micro = 0;
         header_json["os"] = std::string(os_desc.ToUTF8());
