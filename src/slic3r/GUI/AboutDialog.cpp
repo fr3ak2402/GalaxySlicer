@@ -108,7 +108,7 @@ void CopyrightsDialog::fill_entries()
         { "Miniz",                                          "",      "https://github.com/richgel999/miniz" },
         { "Nanosvg",                                        "",      "https://github.com/memononen/nanosvg" },
         { "nlohmann/json",                                  "",      "https://json.nlohmann.me" },
-        { "oneTBB",                                         "",      "https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/onetbb.html" },
+        { "Qhull",                                          "",      "http://qhull.org" },
         { "Open Cascade",                                   "",      "https://www.opencascade.com" },
         { "OpenGL",                                         "",      "https://www.opengl.org" },
         { "OpenSSL",                                        "",      "https://www.openssl.org" },
@@ -120,8 +120,8 @@ void CopyrightsDialog::fill_entries()
         { "Real-Time DXT1/DXT5 C compression library",      "",      "https://github.com/Cyan4973/RygsDXTc" },
         { "SemVer",                                         "",      "https://semver.org" },
         { "Shinyprofiler",                                  "",      "https://code.google.com/p/shinyprofiler" },
-        { "Slic3r",                                         "",      "https://slic3r.org" },
         { "SuperSlicer",                                    "",      "https://github.com/supermerill/SuperSlicer" },
+        { "TBB",                                            "",      "https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/onetbb.html" },
         { "wxWidgets",                                      "",      "https://www.wxwidgets.org" },
         { "zlib",                                           "",      "http://zlib.net" }
     };
