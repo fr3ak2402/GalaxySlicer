@@ -496,42 +496,61 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
         sub_menu->AppendSeparator();
     }
 
-        append_menu_item(
-    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) 
-    {
+    for (auto &item : {L("Cube"), L("Cylinder"), L("Sphere"), L("Cone"), L("Disc"), L("Torus")}) {
+    #for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) {
+       
+         append_menu_item(
+            sub_menu, wxID_ANY, _(item), "",
+            [type, item](wxCommandEvent &) {
+              obj_list()->load_generic_subobject(item, type);
+            },
+            "", menu);
+    }
+
+    append_menu_item_add_text(sub_menu, type);
+    append_menu_item_add_svg(sub_menu, type);
+    
+    return sub_menu;
+}
+
+// Orca: add submenu for adding handy models
+wxMenu* MenuFactory::append_submenu_add_handy_model(wxMenu* menu, ModelVolumeType type) {
+    auto sub_menu = new wxMenu;
+
+    for (auto &item : {L("Orca Cube"), L("3DBenchy"), L("Autodesk FDM Test"),
+                       L("Voron Cube"), L("Stanford Bunny")}) {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
-            [type, item](wxCommandEvent &) 
-            {
+            [type, item](wxCommandEvent &) {
                 std::vector<boost::filesystem::path> input_files;
                 std::string file_name = item;
-
-                if (file_name == L("Galaxy Cube")) {
-                    file_name = "GalaxyCube.step";
-                }
-                else if (file_name == L("Galaxy Flower")) {
-                    file_name = "GalaxyFlower.step";
-                }
-                else if (file_name == L("Orca Cube")) {
+                if (file_name == L("Galaxy Cube"))
+                    file_name = "GalaxyCube.step";              
+                else if (file_name == L("Orca Cube"))
                     file_name = "OrcaCube_v2.3mf";
-                }
-                else if (file_name == L("Voron Cube")) {
-                    file_name = "Voron_Design_Cube_v7.stl";
-                }
-                else if (file_name == L("Disc")) {
-                    file_name = "Disc.stl";
-                }
-                else if (file_name == L("3DBenchy")) {
-                    file_name = "3DBenchy.stl";
-                }
-                else if (file_name == L("Autodesk FDM Test")) {
+                else if (file_name == L("3DBenchy"))
+                file_name = "3DBenchy.stl";
+                else if (file_name == L("Autodesk FDM Test"))
                     file_name = "ksr_fdmtest_v4.stl";
-                }
-                else {
-                    return;
-                }
-                
-                input_files.push_back(
+                else if (file_name == L("Voron Cube"))
+                    file_name = "Voron_Design_Cube_v7.stl";
+                else if (file_name == L("Stanford Bunny"))
+                    file_name = "Stanford_Bunny.stl";      
+                else if (file_name == L("Galaxy Flower")) 
+                    file_name = "GalaxyFlower.step";
+                else if (file_name == L("Orca Cube")) 
+                    file_name = "OrcaCube_v2.3mf";
+                else if (file_name == L("Voron Cube")) 
+                    file_name = "Voron_Design_Cube_v7.stl";
+                else if (file_name == L("Disc")) 
+                    file_name = "Disc.stl";
+                else if (file_name == L("3DBenchy")) 
+                    file_name = "3DBenchy.stl";
+                else if (file_name == L("Autodesk FDM Test")) 
+                    file_name = "ksr_fdmtest_v4.stl";
+                else
+                return;
+                    input_files.push_back(
                     (boost::filesystem::path(Slic3r::resources_dir()) /
                     "handy_models" / file_name));
                 plater()->load_files(input_files, LoadStrategy::LoadModel);
