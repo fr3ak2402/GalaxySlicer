@@ -635,12 +635,11 @@ msgstr "¡Conexión %s fallida! [SN:%s, code=%s]"
 msgid ""
 "GalaxySlicer requires the Microsoft WebView2 Runtime to operate certain "
 "features.\n"
-"Orca Slicer requires the Microsoft WebView2 Runtime to operate certain features.\n"
+"Galaxy Slicer requires the Microsoft WebView2 Runtime to operate certain features.\n"
 "Click Yes to install it now."
 msgstr ""
 "GalaxySlicer requiere el tiempo de ejecución de Microsoft WebView2 para "
 "operar ciertas características.\n"
-"Orca Slicer requiere el tiempo de ejecución de Microsoft WebView2 para operar ciertas características.\n"
 "Haga clic en Sí para instalarlo ahora."
 
 msgid "WebView2 Runtime"
@@ -1902,21 +1901,6 @@ msgstr "Orca Slicer está basado en BambuStudio por Bambulab, el cual está basa
 
 msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
 msgstr "OrcaSlicer está basado originalmente en BambuStudio por BambuLab."
-
-msgid "BambuStudio is originally based on PrusaSlicer by PrusaResearch."
-msgstr ""
-"BambuStudio está basado originalmente en PrusaSlicer por PrusaResearch."
-
-msgid ""
-"PrusaSlicer is from Slic3r by Alessandro Ranellucci and the RepRap community"
-msgstr ""
-
-msgid ""
-"Slic3r was created by Alessandro Ranellucci with the help of many other "
-"contributors."
-msgstr ""
-"Slic3r fue creado por Alessandro Ranellucci con la ayuda de muchos otros "
-"contruyentes."
 
 msgid "Libraries"
 msgstr "Librerías"
@@ -8183,9 +8167,6 @@ msgid "Time cost"
 msgstr "Coste dinerario por hora"
 
 msgid "The printer cost per hour"
-msgstr "La cantidad de dinero que cuesta la impresión que vamos a realizar por hora. Podemos calcular el coste dependiendo de la potencia de la impresora, el coste del filamento, etc."
-
-msgid "The printer cost per hour"
 msgstr "Coste por hora de la impresión"
 
 msgid "money/h"
@@ -8541,7 +8522,7 @@ msgid "Host Type"
 msgstr "Tipo de host"
 
 msgid "Slic3r can upload G-code files to a printer host. This field must contain the kind of the host."
-msgstr "Orca Slicer puede cargar archivos G-Code a un host de impresora. Este campo puede contener el tipo de host."
+msgstr "Galaxy Slicer puede cargar archivos G-Code a un host de impresora. Este campo puede contener el tipo de host."
 
 msgid "Nozzle volume"
 msgstr "Volumen de la boquilla"
@@ -10371,7 +10352,7 @@ msgid "Export Log"
 msgstr "Exportar Registro"
 
 msgid "Studio Version:"
-msgstr "Versión de Orca:"
+msgstr "Versión de Galaxy:"
 
 msgid "System Version:"
 msgstr "Versión de Sistema:"
@@ -11030,7 +11011,7 @@ msgstr ""
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
-"Did you know that Orca Slicer offers a wide range of keyboard shortcuts and 3D scene operations."
+"Did you know that Galaxy Slicer offers a wide range of keyboard shortcuts and 3D scene operations."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Cut Tool]
@@ -11090,7 +11071,7 @@ msgstr ""
 #: resources/data/hints.ini: [hint:Search Functionality]
 msgid ""
 "Search Functionality\n"
-"Did you know that you use the Search tool to quickly find a specific Orca Slicer setting?"
+"Did you know that you use the Search tool to quickly find a specific Galaxy Slicer setting?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Simplify Model]
@@ -11118,18 +11099,18 @@ msgstr ""
 #: resources/data/hints.ini: [hint:Subtract a Part]
 msgid ""
 "Subtract a Part\n"
-"Did you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in Orca Slicer."
+"Did you know that you can subtract one mesh from another using the Negative part modifier? That way you can, for example, create easily resizable holes directly in Galaxy Slicer."
 msgstr ""
 
 #: resources/data/hints.ini: [hint:STEP]
 msgid ""
 "STEP\n"
 "Did you know that you can improve your print quality by slicing a STEP file instead of an STL?\n"
-"Orca Slicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
+"Galaxy Slicer supports slicing STEP files, providing smoother results than a lower resolution STL. Give it a try!"
 msgstr ""
 "STEP\n"
 "¿Sabías que puedes mejorar la calidad de impresión cortando un archivo STEP en lugar de un STL?\n"
-"Orca Slicer soporta el corte de archivos STEP, proporcionando resultados más suaves que un STL de menor resolución. ¡Pruébalo!"
+"Galaxy Slicer soporta el corte de archivos STEP, proporcionando resultados más suaves que un STL de menor resolución. ¡Pruébalo!"
 
 #: resources/data/hints.ini: [hint:Z seam location]
 msgid ""

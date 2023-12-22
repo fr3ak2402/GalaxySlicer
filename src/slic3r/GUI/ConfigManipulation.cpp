@@ -581,7 +581,7 @@ void ConfigManipulation::toggle_print_fff_options(DynamicPrintConfig *config, co
     
     bool support_is_tree = config->opt_bool("enable_support") && is_tree(support_type);
     bool support_is_normal_tree = support_is_tree && support_style != smsOrganic &&
-    // Orca: use organic as default
+    // Galaxy: use organic as default
     support_style != smsDefault;
     bool support_is_organic = support_is_tree && !support_is_normal_tree;
     // settings shared by normal and organic trees
@@ -619,7 +619,7 @@ void ConfigManipulation::toggle_print_fff_options(DynamicPrintConfig *config, co
     
     toggle_line("raft_contact_distance", have_raft && !have_support_soluble);
     
-    // Orca: Raft, grid, snug and organic supports use these two parameters to control the size & density of the "brim"/flange
+    // Galaxy: Raft, grid, snug and organic supports use these two parameters to control the size & density of the "brim"/flange
     for (auto el : { "raft_first_layer_expansion", "raft_first_layer_density"})
         toggle_field(el, have_support_material && !(support_is_normal_tree && !have_raft));
     

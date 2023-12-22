@@ -87,7 +87,7 @@ public:
     //BBS: get vendor's current version
     Semver get_vendor_profile_version(std::string vendor_name);
 
-    // Orca: get vendor type
+    // Galaxy: get vendor type
     VendorType get_current_vendor_type();
     // Vendor related handy functions
     bool is_bbl_vendor() { return get_current_vendor_type() == VendorType::Marlin_BBL; }
@@ -111,7 +111,7 @@ public:
     //BBS: check whether this is the only edited filament
     bool is_the_only_edited_filament(unsigned int filament_index);
 
-    // Orca: update selected filament and print
+    // Galaxy: update selected filament and print
     void           update_selections(AppConfig &config);
     void set_calibrate_printer(std::string name);
 

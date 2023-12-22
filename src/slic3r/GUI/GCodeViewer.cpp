@@ -506,7 +506,7 @@ void GCodeViewer::SequentialView::GCodeWindow::load_gcode(const std::string& fil
 void GCodeViewer::SequentialView::GCodeWindow::render(float top, float bottom, float right, uint64_t curr_line_id) const
 //void GCodeViewer::SequentialView::GCodeWindow::render(float top, float bottom, uint64_t curr_line_id) const
 {
-    // Orca: truncate long lines(>55 characters), add "..." at the end
+    // Galaxy: truncate long lines(>55 characters), add "..." at the end
     auto update_lines = [this](uint64_t start_id, uint64_t end_id) {
         std::vector<Line> ret;
         ret.reserve(end_id - start_id + 1);
@@ -3138,7 +3138,7 @@ void GCodeViewer::load_shells(const Print& print, bool initialized, bool force_p
         object_count++;
     }
 
-    // Orca: disable wipe tower shell
+    // Galaxy: disable wipe tower shell
     // if (wxGetApp().preset_bundle->printers.get_edited_preset().printer_technology() == ptFFF) {
         //     // BBS: adds wipe tower's volume
         //     std::vector<unsigned int> print_extruders = print.extruders(true);

@@ -122,7 +122,7 @@ void ButtonsListCtrl::Rescale()
 {
     //m_mode_sizer->msw_rescale();
     int em = em_unit(this);
-    // Orca: following is removed by PS in wx 3.16 refactor.
+    // Galaxy: following is removed by PS in wx 3.16 refactor.
     // doesn't seem to be doing anything rn so leaving it alone
     for (Button* btn : m_pageButtons) {
         //BBS

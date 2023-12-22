@@ -36,7 +36,7 @@ public:
         // Returns true if the job was asked to cancel itself.
         virtual bool was_canceled() const = 0;
 
-        // Orca:
+        // Galaxy:
         virtual void clear_percent()                                                                                             = 0;
         virtual void show_error_info(const std::string &msg, int code, const std::string &description, const std::string &extra) = 0;
 

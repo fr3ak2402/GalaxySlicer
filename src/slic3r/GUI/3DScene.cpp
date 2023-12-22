@@ -749,7 +749,7 @@ int GLVolumeCollection::load_wipe_tower_preview(
             colors.push_back(extruder_colors[0]);
     }
 
-    // Orca: make it transparent
+    // Galaxy: make it transparent
     for(auto& color : colors)
         color.a(0.66f);
     volumes.emplace_back(new GLWipeTowerVolume(colors));

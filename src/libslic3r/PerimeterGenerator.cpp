@@ -1939,10 +1939,10 @@ void PerimeterGenerator::process_arachne()
         int        loop_number = this->config->wall_loops + surface.extra_perimeters - 1; // 0-indexed loops
         if (this->layer_id == 0 && this->config->only_one_wall_first_layer)
             loop_number = 0;
-        // Orca: set the topmost layer to be one wall according to the config
+        // Galaxy: set the topmost layer to be one wall according to the config
         if (loop_number > 0 && config->only_one_wall_top && this->upper_slices == nullptr)
             loop_number = 0;
-        // Orca: properly adjust offset for the outer wall if precise_outer_wall is enabled.
+        // Galaxy: properly adjust offset for the outer wall if precise_outer_wall is enabled.
         ExPolygons last = offset_ex(surface.expolygon.simplify_p(surface_simplify_resolution),
                       config->precise_outer_wall ? -float(ext_perimeter_width - ext_perimeter_spacing )
                                                  : -float(ext_perimeter_width / 2. - ext_perimeter_spacing / 2.));

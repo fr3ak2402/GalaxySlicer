@@ -521,7 +521,7 @@ void Tab::create_preset_tab()
     // Initialize the DynamicPrintConfig by default keys/values.
     build();
 
-    // Orca: shouldn't be needed bc TabCtrl doesn't use images passed through
+    // Galaxyxy: shouldn't be needed bc TabCtrl doesn't use images passed through
     // If needed, updated code is below. SetImages will need to be implemented in TabCtrl
     // which should be easiest by adding wxWithImages mixin.
     // This instance was added by PS when updating wx
@@ -1186,7 +1186,7 @@ void Tab::msw_rescale()
     if (m_detach_preset_btn)
         m_detach_preset_btn->sys_color_changed();
 
-    // Orca: shouldn't be needed bc TabCtrl doesn't use images passed through
+    // Galaxy: shouldn't be needed bc TabCtrl doesn't use images passed through
     // If needed, updated code is below. SetImages will need to be implemented in TabCtrl
     // which should be easiest by adding wxWithImages mixin.
     /*    // update icons for m_tabctrl
@@ -1223,7 +1223,7 @@ void Tab::sys_color_changed()
 
     update_show_hide_incompatible_button();
 
-    // Orca: shouldn't be needed bc TabCtrl doesn't use images passed through
+    // Galaxy: shouldn't be needed bc TabCtrl doesn't use images passed through
     // If needed, updated code is below. SetImages will need to be implemented in TabCtrl
     // which should be easiest by adding wxWithImages mixin.
 /*    // update icons for m_tabctrl
@@ -1443,7 +1443,7 @@ void Tab::on_value_change(const std::string& opt_key, const boost::any& value)
     }
 
     // BBS set support style to default when support type changes
-    // Orca: do this only in simple mode
+    // Galaxy: do this only in simple mode
     if (opt_key == "support_type" && m_mode == comSimple) {
         DynamicPrintConfig new_conf = *m_config;
         new_conf.set_key_value("support_style", new ConfigOptionEnum<SupportMaterialStyle>(smsDefault));
@@ -3178,7 +3178,7 @@ void TabFilament::build()
             return sizer;
         });
 
-        // Orca: multi tool is not supported yet.
+        // Galaxy: multi tool is not supported yet.
 #ifdef ORCA_MULTI_TOOL
         optgroup = page->new_optgroup(L("Toolchange parameters with multi extruder MM printers"));
         optgroup->append_single_option_line("filament_multitool_ramming");
@@ -3282,7 +3282,7 @@ void TabFilament::toggle_options()
         update_filament_overrides_page();
 
     if (m_active_page->title() == L("Multimaterial")) {
-        // Orca: hide specific settings for BBL printers
+        // Galaxy: hide specific settings for BBL printers
         for (auto el :
              {"filament_minimal_purge_on_wipe_tower", "filament_loading_speed_start", "filament_loading_speed",
               "filament_unloading_speed_start", "filament_unloading_speed", "filament_load_time", "filament_unload_time",
@@ -3762,7 +3762,7 @@ if (is_marlin_flavor)
         auto page     = add_options_page(L("Multimaterial"), "printer", true);
         auto optgroup = page->new_optgroup(L("Single extruder multimaterial setup"));
         optgroup->append_single_option_line("single_extruder_multi_material", "semm");
-        // Orca: we only support Single Extruder Multi Material, so it's always enabled
+        // Galaxy: we only support Single Extruder Multi Material, so it's always enabled
         // optgroup->m_on_change = [this](const t_config_option_key &opt_key, const boost::any &value) {
         //     wxTheApp->CallAfter([this, opt_key, value]() {
         //         if (opt_key == "single_extruder_multi_material") {
@@ -4599,7 +4599,7 @@ bool Tab::select_preset(std::string preset_name, bool delete_current /*=false*/,
         // check if there is something in the cache to move to the new selected preset
         apply_config_from_cache();
 
-        // Orca: update presets for the selected printer
+        // Galaxy: update presets for the selected printer
         if (m_type == Preset::TYPE_PRINTER) {
           m_preset_bundle->update_selections(*wxGetApp().app_config);
           wxGetApp().plater()->sidebar().on_filaments_change(m_preset_bundle->filament_presets.size());

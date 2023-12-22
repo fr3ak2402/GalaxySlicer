@@ -163,7 +163,7 @@ const ImVec4 ImGuiWrapper::COL_SEPARATOR_DARK    = { 0.24f, 0.24f, 0.27f, 1.0f }
 const ImVec4 ImGuiWrapper::COL_TITLE_BG          = { 0.745f, 0.745f, 0.745f, 1.0f };
 const ImVec4 ImGuiWrapper::COL_WINDOW_BG         = { 1.000f, 1.000f, 1.000f, 1.0f };
 const ImVec4 ImGuiWrapper::COL_WINDOW_BG_DARK    = { 45 / 255.f, 45 / 255.f, 49 / 255.f, 1.f };
-const ImVec4 ImGuiWrapper::COL_ORCA              = to_ImVec4(ColorRGBA::ORCA());
+const ImVec4 ImGuiWrapper::COL_ORCA              = to_ImVec4(ColorRGBA::Galaxy());
 
 int ImGuiWrapper::TOOLBAR_WINDOW_FLAGS = ImGuiWindowFlags_AlwaysAutoResize
                                  | ImGuiWindowFlags_NoMove
@@ -2578,7 +2578,7 @@ void ImGuiWrapper::push_combo_style(const float scale)
         ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.0f * scale);
         ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BG_DARK);
         ImGui::PushStyleColor(ImGuiCol_BorderActive, COL_ORCA);
-        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, to_ImVec4(to_rgba(ColorRGB::ORCA(), 0.5f)));
+        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, to_ImVec4(to_rgba(ColorRGB::Galaxy(), 0.5f)));
         ImGui::PushStyleColor(ImGuiCol_HeaderActive, COL_ORCA);
         ImGui::PushStyleColor(ImGuiCol_Header, COL_ORCA);
         ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, ImGuiWrapper::COL_WINDOW_BG_DARK);
@@ -2588,7 +2588,7 @@ void ImGuiWrapper::push_combo_style(const float scale)
         ImGui::PushStyleVar(ImGuiStyleVar_FrameBorderSize, 1.0f * scale);
         ImGui::PushStyleColor(ImGuiCol_PopupBg, ImGuiWrapper::COL_WINDOW_BG);
         ImGui::PushStyleColor(ImGuiCol_BorderActive, COL_ORCA);
-        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, to_ImVec4(to_rgba(ColorRGB::ORCA(), 0.5f)));
+        ImGui::PushStyleColor(ImGuiCol_HeaderHovered, to_ImVec4(to_rgba(ColorRGB::Galaxy(), 0.5f)));
         ImGui::PushStyleColor(ImGuiCol_HeaderActive, COL_ORCA);
         ImGui::PushStyleColor(ImGuiCol_Header, COL_ORCA);
         ImGui::PushStyleColor(ImGuiCol_ScrollbarBg, ImGuiWrapper::COL_WINDOW_BG);

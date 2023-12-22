@@ -1271,7 +1271,7 @@ int NetworkAgent::track_enable(bool enable)
 
 int NetworkAgent::track_event(std::string evt_key, std::string content)
 {
-    // Orca: disable track
+    // Galaxy: disable track
     return 0;
     if (!this->enable_track)
         return 0;

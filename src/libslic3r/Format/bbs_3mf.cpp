@@ -4362,7 +4362,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
             return true;
         }
 
-        // TODO: Orca: support legacy text info
+        // TODO: Galaxy: support legacy text info
         /*
         TextInfo text_info;
         text_info.m_text      = xml_unescape(bbs_get_attribute_value_string(attributes, num_attributes, TEXT_ATTR));
@@ -8550,7 +8550,7 @@ Transform3d create_fix(const std::optional<Transform3d> &prev, const ModelVolume
     // when no change do not calculate transformation only store original fix matrix
 
     // Create transformation used after load actual stored volume
-    // Orca: do not bake volume transformation into meshes
+    // Galaxy: do not bake volume transformation into meshes
     // const Transform3d &actual_trmat = volume.get_matrix();
     const Transform3d& actual_trmat = Transform3d::Identity();
 

@@ -733,7 +733,7 @@ void Preview::load_print_as_fff(bool keep_z_range, bool only_gcode)
             //BBS show sliders
             show_moves_sliders();
 
-            //Orca: keep shell preview on but make it more transparent
+            //Galaxy: keep shell preview on but make it more transparent
             m_canvas->set_shells_on_previewing(true);
             m_canvas->set_shell_transparence();
             Refresh();

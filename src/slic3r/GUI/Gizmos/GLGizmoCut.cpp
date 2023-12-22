@@ -2930,7 +2930,7 @@ void GLGizmoCut3D::on_render_input_window(float x, float y, float bottom_limit)
 
     GizmoImguiEnd();
 
-    // Orca
+    // Galaxy
     ImGuiWrapper::pop_toolbar_style();
 
     if (!m_connectors_editing) // connectors mode

@@ -186,7 +186,7 @@ bool Print::invalidate_state_by_config_options(const ConfigOptionResolver & /* n
         "required_nozzle_HRC",
         "upward_compatible_machine",
         "is_infill_first",
-        // Orca
+        // Galaxy
         "chamber_temperature",
         "thumbnails",
         "thumbnails_format",
@@ -1033,7 +1033,7 @@ StringObjectException Print::check_multi_filament_valid(const Print& print)
     return {std::string()};
 }
 
-// Orca: this g92e0 regex is used copied from PrusaSlicer
+// Galaxy: this g92e0 regex is used copied from PrusaSlicer
 // Matches "G92 E0" with various forms of writing the zero and with an optional comment.
 boost::regex regex_g92e0 { "^[ \\t]*[gG]92[ \\t]*[eE](0(\\.0*)?|\\.0+)[ \\t]*(;.*)?$" };
 
@@ -1129,7 +1129,7 @@ StringObjectException Print::validate(StringObjectException *warning, Polygons* 
     for (size_t print_object_idx = 0; print_object_idx < m_objects.size(); ++ print_object_idx)
         if (const PrintObject &print_object = *m_objects[print_object_idx];
             print_object.has_support_material() && is_tree(print_object.config().support_type.value) && (print_object.config().support_style.value == smsOrganic || 
-                // Orca: use organic as default
+                // Galaxy: use organic as default
                 print_object.config().support_style.value == smsDefault) &&
             print_object.model_object()->has_custom_layering()) {
             if (const std::vector<coordf_t> &layers = layer_height_profile(print_object_idx); ! layers.empty())
@@ -1292,7 +1292,7 @@ StringObjectException Print::validate(StringObjectException *warning, Polygons* 
                 // Prusa: Fixing crashes with invalid tip diameter or branch diameter
                 // https://github.com/prusa3d/PrusaSlicer/commit/96b3ae85013ac363cd1c3e98ec6b7938aeacf46d
                 if (is_tree(object->config().support_type.value) && (object->config().support_style == smsOrganic ||
-                    // Orca: use organic as default
+                    // Galaxy: use organic as default
                     object->config().support_style == smsDefault)) {
                     float extrusion_width = std::min(
                         support_material_flow(object).width(),
@@ -1357,7 +1357,7 @@ StringObjectException Print::validate(StringObjectException *warning, Polygons* 
         }
     }
 
-    // Orca: G92 E0 is not supported when using absolute extruder addressing
+    // Galaxy: G92 E0 is not supported when using absolute extruder addressing
     // This check is copied from PrusaSlicer, the original author is Vojtech Bubnik
     if(!is_BBL_printer()) {
         bool before_layer_gcode_resets_extruder =
@@ -2393,7 +2393,7 @@ const WipeTowerData &Print::wipe_tower_data(size_t filaments_cnt) const
             float maximum = std::accumulate(max_wipe_volumes.begin(), max_wipe_volumes.end(), 0.f);
             maximum       = maximum * filaments_cnt / max_wipe_volumes.size();
             
-            // Orca: it's overshooting a bit, so let's reduce it a bit
+            // Galaxy: it's overshooting a bit, so let's reduce it a bit
             maximum *= 0.6; 
             const_cast<Print *>(this)->m_wipe_tower_data.depth = maximum / (layer_height * width);
         } else {

@@ -248,7 +248,7 @@ void ObjectLayers::UpdateAndShow(const bool show)
 
 void ObjectLayers::msw_rescale()
 {
-    //Orca: deleted what PS commented out
+    //Galaxy: deleted what PS commented out
     m_grid_sizer->Layout();
 }
 

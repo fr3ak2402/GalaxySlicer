@@ -309,7 +309,7 @@ void GLGizmosManager::reset_all_states()
         open_gizmo(current);
 
     activate_gizmo(Undefined);
-    // Orca: do not clear hover state, as Emboss gizmo can be used without selection
+    // Galaxy: do not clear hover state, as Emboss gizmo can be used without selection
     //m_hover = Undefined;
 }
 
@@ -1115,7 +1115,7 @@ void GLGizmosManager::do_render_overlay() const
 
         GLTexture::render_sub_texture(icons_texture_id, top_x, top_x + icons_size_x, top_y - icons_size_y, top_y, { { u_left, v_bottom }, { u_right, v_bottom }, { u_right, v_top }, { u_left, v_top } });
         if (idx == m_current
-            // Orca: Show Svg dialog at the same place as emboss gizmo
+            // Galaxy: Show Svg dialog at the same place as emboss gizmo
             || (m_current == Svg && idx == Emboss)) {
             //BBS: GUI refactor: GLToolbar&&Gizmo adjust
             //render_input_window uses a different coordination(imgui)

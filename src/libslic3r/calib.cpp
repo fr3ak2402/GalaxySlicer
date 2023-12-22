@@ -489,7 +489,7 @@ std::string CalibPressureAdvanceLine::print_pa_lines(double start_x, double star
 
     if (m_draw_numbers) {
 
-        // Orca: skip drawing indicator lines
+        // Galaxy: skip drawing indicator lines
         // gcode << writer.set_speed(fast);
         // gcode << move_to(Vec2d(start_x + m_length_short, y_pos + (num - 1) * m_space_y + 2), writer);
         // gcode << writer.extrude_to_xy(Vec2d(start_x + m_length_short, y_pos + (num - 1) * m_space_y + 7), thin_e_per_mm * 7);

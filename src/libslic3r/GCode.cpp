@@ -1467,7 +1467,7 @@ namespace DoExport {
         if (ret.size() < MAX_TAGS_COUNT) check(_(L("Change filament G-code")), config.change_filament_gcode.value);
         if (ret.size() < MAX_TAGS_COUNT) check(_(L("Printing by object G-code")), config.printing_by_object_gcode.value);
         //if (ret.size() < MAX_TAGS_COUNT) check(_(L("Color Change G-code")), config.color_change_gcode.value);
-        //Orca
+        //Galaxy
         if (ret.size() < MAX_TAGS_COUNT) check(_(L("Change extrusion role G-code")), config.change_extrusion_role_gcode.value);
         if (ret.size() < MAX_TAGS_COUNT) check(_(L("Pause G-code")), config.machine_pause_gcode.value);
         if (ret.size() < MAX_TAGS_COUNT) check(_(L("Template Custom G-code")), config.template_custom_gcode.value);
@@ -1983,7 +1983,7 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
     //BBS: total layer number
     file.write_format(";%s\n", GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Total_Layer_Number_Placeholder).c_str());
     m_enable_exclude_object = config().exclude_object;
-    //Orca: extra check for bbl printer
+    //Galaxy: extra check for bbl printer
     if (is_bbl_printers) {
         if (print.calib_params().mode == CalibMode::Calib_None) { // Don't support skipping in cali mode
             // list all label_object_id with sorted order here
@@ -2052,7 +2052,7 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
       } else {
         if (m_gcode_thumbnail_format != GCodeThumbnailsFormat::BTT_TFT) {
             auto thumbnaim_fmt = m_gcode_thumbnail_format;
-            // Orca: if the thumbnail format is ColPic, we write PNG in the beginning of gcode file and ColPic in the end of gcode file. 
+            // Galaxy: if the thumbnail format is ColPic, we write PNG in the beginning of gcode file and ColPic in the end of gcode file. 
             if(m_gcode_thumbnail_format == GCodeThumbnailsFormat::ColPic)
                 thumbnaim_fmt = GCodeThumbnailsFormat::PNG;
           GCodeThumbnails::export_thumbnails_to_file(
@@ -2367,7 +2367,7 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
     // adds tag for processor
     file.write_format(";%s%s\n", GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Role).c_str(), ExtrusionEntity::role_to_string(erCustom).c_str());
 
-    // Orca: set chamber temperature at the beginning of gcode file
+    // Galaxy: set chamber temperature at the beginning of gcode file
     if (activate_chamber_temp_control && max_chamber_temp > 0)
         file.write(m_writer.set_chamber_temperature(max_chamber_temp, true)); // set chamber_temperature
 
@@ -2394,7 +2394,7 @@ void GCode::_do_export(Print& print, GCodeOutputStream &file, ThumbnailsGenerato
     if (is_bbl_printers) {
         this->_print_first_layer_extruder_temperatures(file, print, machine_start_gcode, initial_extruder_id, true);
     }
-    // Orca: when activate_air_filtration is set on any extruder, find and set the highest during_print_exhaust_fan_speed
+    // Galaxy: when activate_air_filtration is set on any extruder, find and set the highest during_print_exhaust_fan_speed
     bool activate_air_filtration        = false;
     int  during_print_exhaust_fan_speed = 0;
     for (const auto &extruder : m_writer.extruders()) {
@@ -3383,7 +3383,7 @@ namespace Skirt {
 
 } // namespace Skirt
 
-// Orca: Klipper can't parse object names with spaces and other spetical characters
+// Galaxy: Klipper can't parse object names with spaces and other spetical characters
 std::string sanitize_instance_name(const std::string& name) {
     // Replace sequences of non-word characters with an underscore
     std::string result = std::regex_replace(name, std::regex("[ !@#$%^&*()=+\\[\\]{};:\",']+"), "_");
@@ -3603,7 +3603,7 @@ LayerResult GCode::process_layer(
 
     //BBS
     if (first_layer) {
-        // Orca: we don't need to optimize the Klipper as only set once
+        // Galaxy: we don't need to optimize the Klipper as only set once
         if (m_config.default_acceleration.value > 0 && m_config.initial_layer_acceleration.value > 0) {
             gcode += m_writer.set_print_acceleration((unsigned int)floor(m_config.initial_layer_acceleration.value + 0.5));
         }
@@ -3631,7 +3631,7 @@ LayerResult GCode::process_layer(
         }
       }
       // Reset acceleration at sencond layer
-      // Orca: only set once, don't need to call set_accel_and_jerk
+      // Galaxy: only set once, don't need to call set_accel_and_jerk
       if (m_config.default_acceleration.value > 0 && m_config.initial_layer_acceleration.value > 0) {
         gcode += m_writer.set_print_acceleration((unsigned int) floor(m_config.default_acceleration.value + 0.5));
       }
@@ -4737,7 +4737,7 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     gcode += this->unretract();
     m_config.apply(m_calib_config);
 
-    // Orca: optimize for Klipper, set acceleration and jerk in one command
+    // Galaxy: optimize for Klipper, set acceleration and jerk in one command
     unsigned int acceleration_i = 0;
     double jerk = 0;
     // adjust acceleration
@@ -4970,7 +4970,7 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
 
     double F = speed * 60;  // convert mm/sec to mm/min
 
-    //Orca: process custom gcode for extrusion role change
+    //Galaxy: process custom gcode for extrusion role change
     if (path.role() != m_last_extrusion_role && !m_config.change_extrusion_role_gcode.value.empty()) {
             DynamicConfig config;
             config.set_key_value("extrusion_role", new ConfigOptionString(extrusion_role_to_string_for_parser(path.role())));
@@ -5229,7 +5229,7 @@ std::string GCode::_extrude(const ExtrusionPath &path, std::string description, 
     return gcode;
 }
 
-//Orca: get string name of extrusion role. used for change_extruder_role_gcode
+//Galaxy: get string name of extrusion role. used for change_extruder_role_gcode
 std::string GCode::extrusion_role_to_string_for_parser(const ExtrusionRole & role)
 {
     switch (role) {
@@ -5306,7 +5306,7 @@ std::string GCode::travel_to(const Point &point, ExtrusionRole role, std::string
     const bool used_external_mp_once  = m_avoid_crossing_perimeters.used_external_mp_once();
     std::string gcode;
 
-    // Orca: we don't need to optimize the Klipper as only set once
+    // Galaxy: we don't need to optimize the Klipper as only set once
     double jerk_to_set = 0.0;
     unsigned int acceleration_to_set = 0;
     if (this->on_first_layer()) {
@@ -5552,7 +5552,7 @@ std::string GCode::retract(bool toolchange, bool is_last_retraction, LiftType li
     gcode += toolchange ? m_writer.retract_for_toolchange() : m_writer.retract();
 
     gcode += m_writer.reset_e();
-    // Orca: check if should + can lift (roughly from SuperSlicer)
+    // Galaxy: check if should + can lift (roughly from SuperSlicer)
     RetractLiftEnforceType retract_lift_type = RetractLiftEnforceType(EXTRUDER_CONFIG(retract_lift_enforce));
 
     bool needs_lift = toolchange
@@ -5737,7 +5737,7 @@ std::string GCode::set_extruder(unsigned int extruder_id, double print_z, bool b
     // Process the custom change_filament_gcode.
     const std::string& change_filament_gcode = m_config.change_filament_gcode.value;
     std::string toolchange_gcode_parsed;
-    //Orca: Ignore change_filament_gcode if is the first call for a tool change and manual_filament_change is enabled
+    //Galaxy: Ignore change_filament_gcode if is the first call for a tool change and manual_filament_change is enabled
     if (!change_filament_gcode.empty() && !(m_config.manual_filament_change.value && m_toolchange_count == 1)) {
         toolchange_gcode_parsed = placeholder_parser_process("change_filament_gcode", change_filament_gcode, extruder_id, &dyn_config);
         check_add_eol(toolchange_gcode_parsed);
@@ -5822,7 +5822,7 @@ std::string GCode::set_object_info(Print *print) {
         return "";
     std::ostringstream gcode;
     size_t object_id = 0;
-    // Orca: check if we are in pa calib mode
+    // Galaxy: check if we are in pa calib mode
     if (print->calib_mode() == CalibMode::Calib_PA_Line || print->calib_mode() == CalibMode::Calib_PA_Pattern) {
         BoundingBoxf bbox_bed(print->config().printable_area.values);
         bbox_bed.offset(-5.0);
@@ -5832,7 +5832,7 @@ std::string GCode::set_object_info(Print *print) {
         polygon_bed.append(Point(bbox_bed.max.x(), bbox_bed.max.y()));
         polygon_bed.append(Point(bbox_bed.min.x(), bbox_bed.max.y()));
         gcode << "EXCLUDE_OBJECT_DEFINE NAME="
-              << "Orca-PA-Calibration-Test"
+              << "Galaxy-PA-Calibration-Test"
               << " CENTER=" << 0 << "," << 0 << " POLYGON=" << polygon_to_string(polygon_bed, print, true) << "\n";
     } else {
         size_t unique_id = 0;

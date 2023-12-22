@@ -2347,7 +2347,7 @@ bool SelectMachineDialog::is_same_printer_model()
     if(preset_bundle == nullptr) return result;
     const auto source_model = preset_bundle->printers.get_edited_preset().get_printer_type(preset_bundle);
     const auto target_model = obj_->printer_type;
-    // Orca: ignore P1P -> P1S
+    // Galaxy: ignore P1P -> P1S
     if (source_model != target_model && !(preset_bundle->printers.get_edited_preset().get_printer_type(preset_bundle) == "C12") && !(target_model == "C11" && source_model == "C12")) {
         BOOST_LOG_TRIVIAL(info) << "printer_model: source = " << source_model;
         BOOST_LOG_TRIVIAL(info) << "printer_model: target = " << target_model;

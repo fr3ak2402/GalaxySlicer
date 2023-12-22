@@ -128,7 +128,7 @@ std::unique_ptr<CompressedImageBuffer> compress_thumbnail_colpic(const Thumbnail
     int width = int(data.width);
     int height = int(data.height);
 
-    // Orca: cap data size to MAX_SIZE while maintaining aspect ratio
+    // Galaxy: cap data size to MAX_SIZE while maintaining aspect ratio
     if (width > MAX_SIZE || height > MAX_SIZE) {
         double aspectRatio = static_cast<double>(width) / height;
         if (aspectRatio > 1.0) {

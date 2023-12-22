@@ -290,7 +290,7 @@ protected:
     static constexpr float SmartFillAngleMax  = 90.f;
     static constexpr float SmartFillAngleStep = 1.f;
 
-    // Orca: paint behavior enchancement
+    // Galaxy: paint behavior enchancement
     bool m_vertical_only = false;
     bool m_horizontal_only = false;
 

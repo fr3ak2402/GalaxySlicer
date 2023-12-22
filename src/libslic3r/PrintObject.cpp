@@ -2390,7 +2390,7 @@ void PrintObject::bridge_over_infill()
             const size_t n_vlines = (bb_x.max.x() - bb_x.min.x() + bridging_flow.scaled_spacing() - 1) / bridging_flow.scaled_spacing();
             std::vector<Line> vertical_lines(n_vlines);
             for (size_t i = 0; i < n_vlines; i++) {
-                // Orca: Make sure the line is placed in the middle of the extrusion
+                // Galaxy: Make sure the line is placed in the middle of the extrusion
                 // coord_t x           = bb_x.min.x() + i * bridging_flow.scaled_spacing();
                 coord_t x           = bb_x.min.x() + (i + 0.5) * bridging_flow.scaled_spacing();
                 coord_t y_min       = bb_y.min.y() - bridging_flow.scaled_spacing();
@@ -2689,7 +2689,7 @@ void PrintObject::bridge_over_infill()
                         }
                     }
 
-                    // Orca: Keep fine details for better anchoring
+                    // Galaxy: Keep fine details for better anchoring
                     // bridging_area         = opening(bridging_area, flow.scaled_spacing());
                     bridging_area          = opening(bridging_area, flow.scaled_spacing() * 0.75);
                     bridging_area          = closing(bridging_area, flow.scaled_spacing());
@@ -3432,7 +3432,7 @@ void PrintObject::_generate_support_material()
 
     if (this->config().enable_support.value && is_tree(this->config().support_type.value)) {
         if (this->config().support_style.value == smsOrganic ||
-            // Orca: use organic as default
+            // Galaxy: use organic as default
             this->config().support_style.value == smsDefault) {
             fff_tree_support_generate(*this, std::function<void()>([this]() { this->throw_if_canceled(); }));
         } else {

@@ -848,7 +848,7 @@ void GLGizmoEmboss::on_render_input_window(float x, float y, float bottom_limit)
 
     double screen_scale = wxDisplay(wxGetApp().plater()).GetScaleFactor();
 
-    // Orca
+    // Galaxy
     ImGuiWrapper::push_toolbar_style(m_parent.get_scale());
     ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(4.0, 5.0) * screen_scale);
     ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 4.0f * screen_scale);
@@ -918,7 +918,7 @@ void GLGizmoEmboss::on_render_input_window(float x, float y, float bottom_limit)
 
     GizmoImguiEnd();
 
-    // Orca
+    // Galaxy
     ImGui::PopStyleVar(2);
     ImGuiWrapper::pop_toolbar_style();
 }

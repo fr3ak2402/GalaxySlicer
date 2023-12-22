@@ -6046,7 +6046,7 @@ bool ImGui::Begin(const char* name, bool* p_open, ImGuiWindowFlags flags)
             window->Pos = FindBestWindowPosForPopup(window);
         else if ((flags & ImGuiWindowFlags_Popup) != 0 && !window_pos_set_by_api && window_just_appearing_after_hidden_for_resize)
             window->Pos = FindBestWindowPosForPopup(window);
-        // Orca: Allow fixed tooltip pos while still being clamped inside the render area
+        // Galaxy: Allow fixed tooltip pos while still being clamped inside the render area
         else if ((flags & ImGuiWindowFlags_Tooltip) != 0 && !window_is_child_tooltip) {
             if (window_pos_set_by_api) {
                 // Hack: add ImGuiWindowFlags_Popup so it does not follow cursor

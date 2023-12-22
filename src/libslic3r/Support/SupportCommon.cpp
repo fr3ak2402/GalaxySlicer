@@ -1795,7 +1795,7 @@ void generate_support_toolpaths(
                     sheath  = true;
                     no_sort = true;
                 } else if (config.support_style == SupportMaterialStyle::smsOrganic ||
-                    // Orca: use organic as default
+                    // Galaxy: use organic as default
                     config.support_style == smsDefault) {
                     tree_supports_generate_paths(base_layer.extrusions, base_layer.polygons_to_extrude(), flow, support_params);
                     done = true;

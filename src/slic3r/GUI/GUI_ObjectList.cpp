@@ -5598,7 +5598,7 @@ void ObjectList::OnEditingStarted(wxDataViewEvent &event)
 #endif
 #endif //__WXMSW__
 
-    // Orca: Automatically show drop down on editing start and finish editing when the combobox is closed
+    // Galaxy: Automatically show drop down on editing start and finish editing when the combobox is closed
     // Note: this must placed AFTER the above `renderer->StartEditing` call, otherwise `c` will be nullptr on MacOS,
     //       due to the code in MacDarkMode.mm
     if (event.GetColumn() == colFilament) {

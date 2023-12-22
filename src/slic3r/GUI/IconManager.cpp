@@ -365,7 +365,7 @@ void draw(const IconManager::Icon &icon, const ImVec2 &size, const ImVec4 &tint_
     ImTextureID id = (void *)static_cast<intptr_t>(icon.tex_id);
     const ImVec2 &s  = (size.x < 1 || size.y < 1) ? icon.size : size;
 
-    // Orca: Align icon center vertically
+    // Galaxy: Align icon center vertically
     ImGuiWindow  *window      = ImGui::GetCurrentWindow();
     ImGuiContext &g           = *GImGui;
     float         cursor_y    = window->DC.CursorPos.y;

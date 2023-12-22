@@ -273,7 +273,7 @@ static const t_config_enum_values s_keys_map_BrimType = {
     {"inner_only",      btInnerOnly},
     {"outer_and_inner", btOuterAndInner},
     {"auto_brim", btAutoBrim},  // BBS
-    {"brim_ears", btEar},     // Orca
+    {"brim_ears", btEar},     // Galaxy
 };
 CONFIG_OPTION_ENUM_DEFINE_STATIC_MAPS(BrimType)
 
@@ -2308,7 +2308,7 @@ def = this->add("filament_loading_speed", coFloats);
     def->mode    = comAdvanced;
     def->set_default_value(new ConfigOptionFloat(0));
 
-    // Orca: may remove this option later
+    // Galaxy: may remove this option later
     def =this->add("support_chamber_temp_control",coBool);
     def->label=L("Support control chamber temperature");
     def->tooltip=L("This option is enabled if machine support controlling chamber temperature\nG-code command: M141 S(0-255)");

@@ -1269,7 +1269,7 @@ wxString OptionsGroup::get_url(const std::string& path_end)
         //BBS
         return wxString::Format(L"https://wiki.bambulab.com/%s/software/bambu-studio/%s", L"en", str);
     }
-    // Orca: point to sf wiki for seam parameters
+    // Galaxy: point to sf wiki for seam parameters
     //return wxString::Format(L"https://github.com/SoftFever/OrcaSlicer/wiki/%s", from_u8(path_end));
 
 }

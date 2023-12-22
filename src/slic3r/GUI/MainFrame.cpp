@@ -972,7 +972,7 @@ void MainFrame::init_tabpanel() {
               auto     cfg = wxGetApp().preset_bundle->printers.get_edited_preset().config;
               wxString url = cfg.opt_string("print_host_webui").empty() ? cfg.opt_string("print_host") : cfg.opt_string("print_host_webui");
               if (url.empty()) {
-                  wxString url = wxString::Format("file://%s/web/orca/missing_connection.html", from_u8(resources_dir()));
+                  wxString url = wxString::Format("file://%s/web/Galaxy/missing_connection.html", from_u8(resources_dir()));
                   m_printer_view->load_url(url);
               }
           }
@@ -2760,7 +2760,7 @@ void MainFrame::init_menubar_as_editor()
         }, "", nullptr,
         [this]() {return m_plater->is_view3D_shown();; }, this);
         
-    append_menu_item(m_topbar->GetCalibMenu(), wxID_ANY, _L("Orca Tolerance Test"), _L("Orca Tolerance Test"),
+    append_menu_item(m_topbar->GetCalibMenu(), wxID_ANY, _L("Galaxy Tolerance Test"), _L("Galaxy Tolerance Test"),
         [this](wxCommandEvent&) {
             m_plater->new_project();
         m_plater->add_model(false, Slic3r::resources_dir() + "/calib/tolerance_test/OrcaToleranceTest.stl");
@@ -2846,7 +2846,7 @@ void MainFrame::init_menubar_as_editor()
         [this]() {return m_plater->is_view3D_shown();; }, this);
 
     // Tolerance Test
-    append_menu_item(calib_menu, wxID_ANY, _L("Orca Tolerance Test"), _L("Orca Tolerance Test"),
+    append_menu_item(calib_menu, wxID_ANY, _L("Galaxy Tolerance Test"), _L("Galaxy Tolerance Test"),
         [this](wxCommandEvent&) {
             m_plater->new_project();
             m_plater->add_model(false, Slic3r::resources_dir() + "/calib/tolerance_test/OrcaToleranceTest.stl");

@@ -75,7 +75,7 @@ inline void export_thumbnails_to_file(ThumbnailsGeneratorCallback &thumbnail_cb,
                             encoded = encoded.substr(max_row_length);
                         }
 
-                        // Orca write remaining ecoded data
+                        // Galaxy write remaining ecoded data
                         if (encoded.size() > 0)
                             output((boost::format("; %s\n") % encoded).str().c_str());
 

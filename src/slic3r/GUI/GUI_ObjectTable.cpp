@@ -240,7 +240,7 @@ void GridCellFilamentsEditor::BeginEdit(int row, int col, wxGrid* grid)
 
     Combo()->SetFocus();
 
-    // Orca: Show dropdown on editing start
+    // Galaxy: Show dropdown on editing start
     Combo()->ToggleDropDown();
 
 #ifdef __WXOSX_COCOA__
@@ -435,7 +435,7 @@ void GridCellChoiceEditor::BeginEdit(int row, int col, wxGrid *grid)
 
     Combo()->SetFocus();
 
-    // Orca: Show dropdown on editing start
+    // Galaxy: Show dropdown on editing start
     Combo()->ToggleDropDown();
 
 #ifdef __WXOSX_COCOA__

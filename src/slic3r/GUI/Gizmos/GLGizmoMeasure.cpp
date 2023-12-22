@@ -1841,7 +1841,7 @@ void GLGizmoMeasure::on_render_input_window(float x, float y, float bottom_limit
             last_y = y;
     }
     
-    // Orca
+    // Galaxy
     ImGuiWrapper::push_toolbar_style(m_parent.get_scale());
 
     GizmoImguiBegin(get_name(), ImGuiWindowFlags_NoMove | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoTitleBar);
@@ -2000,7 +2000,7 @@ void GLGizmoMeasure::on_render_input_window(float x, float y, float bottom_limit
 
     GizmoImguiEnd();
 
-    // Orca
+    // Galaxy
     ImGuiWrapper::pop_toolbar_style();
 }
 

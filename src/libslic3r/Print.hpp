@@ -204,7 +204,7 @@ struct PrintInstance
     // 
     // instance id
     size_t               id;
-    // Orca: unique id used by marlin/rrf cancel object feature
+    // Galaxy: unique id used by marlin/rrf cancel object feature
     size_t               unique_id;
 
     //BBS: instance_shift is too large because of multi-plate, apply without plate offset.

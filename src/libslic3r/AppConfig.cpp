@@ -235,12 +235,12 @@ void AppConfig::set_defaults()
         set("slicer_uuid", to_string(uuid));
     }
 
-    // Orca
+    // Galaxy
     if (get("stealth_mode").empty()) {
         set_bool("stealth_mode", false);
     }
 
-    // Orca
+    // Galaxy
     if(get("show_splash_screen").empty()) {
         set_bool("show_splash_screen", true);
     }

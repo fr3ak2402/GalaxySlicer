@@ -1,4 +1,4 @@
-// Orca: This file is ported from latest PrusaSlicer
+// Galaxy: This file is ported from latest PrusaSlicer
 
 // Original PrusaSlicer Copyright:
 ///|/ Copyright (c) Prusa Research 2017 - 2023 Lukáš Matěna @lukasmatena, Vojtěch Bubník @bubnikv, Enrico Turri @enricoturri1966
@@ -1033,7 +1033,7 @@ void WipeTower2::toolchange_Change(
                              + never_skip_tag() + "\n");
     writer.append("[deretraction_from_wipe_tower_generator]");
 
-     // Orca TODO: handle multi extruders
+     // Galaxy TODO: handle multi extruders
     // The toolchange Tn command will be inserted later, only in case that the user does
     // not provide a custom toolchange gcode.
 	writer.set_tool(new_tool); // This outputs nothing, the writer just needs to know the tool has changed.
@@ -1414,7 +1414,7 @@ std::vector<std::vector<float>> WipeTower2::extract_wipe_volumes(const PrintConf
     std::vector<float> wiping_matrix(cast<float>(config.flush_volumes_matrix.values));
     auto scale = config.flush_multiplier;
 
-    // Orca todo: currently we only/always support SEMM.
+    // Galaxyxyxy todo: currently we only/always support SEMM.
     // The values shall only be used when SEMM is enabled. The purging for other printers
     // is determined by filament_minimal_purge_on_wipe_tower.
     if (! config.purge_in_prime_tower.value)

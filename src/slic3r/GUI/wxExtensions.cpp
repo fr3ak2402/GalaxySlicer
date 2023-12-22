@@ -898,7 +898,7 @@ ScalableBitmap::ScalableBitmap( wxWindow *parent,
     m_parent(parent), m_icon_name(icon_name), m_legacy_bmp(use_legacy_bmp),
     m_size({px_cnt, px_cnt}), m_grayscale(grayscale), m_resize(resize) // BBS: support resize by fill border
 {
-    // Orca: there is currently an issue causing the advanced SwitchButton to not scale properly
+    // Galaxy: there is currently an issue causing the advanced SwitchButton to not scale properly
     // when using get_bmp_bundle. This allows for the older method of getting a scaled bitmap to be
     // used in this edge case while the underlying issue is determined.
     if (m_legacy_bmp) {

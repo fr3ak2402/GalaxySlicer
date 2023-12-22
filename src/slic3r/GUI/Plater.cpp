@@ -835,7 +835,7 @@ Sidebar::Sidebar(Plater *parent)
     ScalableButton* add_btn = new ScalableButton(p->m_panel_filament_title, wxID_ANY, "add_filament");
     add_btn->SetToolTip(_L("Add one filament"));
     add_btn->Bind(wxEVT_BUTTON, [this, scrolled_sizer](wxCommandEvent& e){
-        // Orca: limit filament choices to 64
+        // Galaxyxy: limit filament choices to 64
         if (p->combos_filament.size() >= 64)
             return;
 
@@ -1131,7 +1131,7 @@ void Sidebar::update_all_preset_comboboxes()
 
     bool is_bbl_vendor = preset_bundle.is_bbl_vendor();
 
-    // Orca:: show device tab based on vendor type
+    // Galaxy:: show device tab based on vendor type
     auto p_mainframe = wxGetApp().mainframe;
     p_mainframe->show_device(is_bbl_vendor);
 
@@ -2623,7 +2623,7 @@ Plater::priv::priv(Plater *q, MainFrame *main_frame)
 
     update();
 
-    // Orca: Make sidebar dockable
+    // Galaxy: Make sidebar dockable
     m_aui_mgr.AddPane(sidebar, wxAuiPaneInfo()
                                    .Name("sidebar")
                                    .Left()
@@ -6973,7 +6973,7 @@ void Plater::priv::on_change_color_mode(SimpleEvent& evt) {
 void Plater::priv::apply_color_mode()
 {
     const bool is_dark         = wxGetApp().dark_mode();
-    wxColour   orca_color      = wxColour(59, 68, 70);//wxColour(ColorRGBA::ORCA().r_uchar(), ColorRGBA::ORCA().g_uchar(), ColorRGBA::ORCA().b_uchar());
+    wxColour   orca_color      = wxColour(59, 68, 70);//wxColour(ColorRGBA::Galaxy().r_uchar(), ColorRGBA::Galaxy().g_uchar(), ColorRGBA::Galaxy().b_uchar());
     orca_color                 = is_dark ? StateColor::darkModeColorFor(orca_color) : StateColor::lightModeColorFor(orca_color);
     wxColour sash_color = is_dark ? wxColour(38, 46, 48) : wxColour(206, 206, 206);
     m_aui_mgr.GetArtProvider()->SetColour(wxAUI_DOCKART_INACTIVE_CAPTION_COLOUR, sash_color);
@@ -11008,7 +11008,7 @@ void publish(Model &model, SaveStrategy strategy) {
         }
     }
 
-    // Orca: don't show this in silence mode
+    // Galaxy: don't show this in silence mode
     if (exist_new && !(strategy & SaveStrategy::Silence)) {
         MessageDialog dialog(nullptr,
                              _L("Are you sure you want to store original SVGs with their local paths into the 3MF file?\n"
@@ -11326,7 +11326,7 @@ void Plater::reslice()
         return;
     }
 
-    // Orca: regenerate CalibPressureAdvancePattern custom G-code to apply changes
+    // Galaxy: regenerate CalibPressureAdvancePattern custom G-code to apply changes
     if (model().calib_pa_pattern) {
         PresetBundle* preset_bundle = wxGetApp().preset_bundle;
 

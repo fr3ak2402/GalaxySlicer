@@ -697,7 +697,7 @@ public:
         case smsTreeStrong:
         case smsTreeHybrid:
 
-        // Orca: use organic as default
+        // Galaxy: use organic as default
         case smsDefault:
         case smsOrganic:
 //            assert(false);

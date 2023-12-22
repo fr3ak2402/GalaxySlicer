@@ -406,7 +406,7 @@ wxBitmapBundle* BitmapCache::from_svg(const std::string& bitmap_name, unsigned t
         return it->second;
 
     // map of color replaces
-    //Orca: use replaces from load_svg function
+    //Galaxy: use replaces from load_svg function
     std::map<std::string, std::string> replaces;
     replaces["\"#0x00AE42\""] = "\"#009688\"";
     replaces["\"#00FF00\""] = "\"#52c7b8\"";

@@ -1,4 +1,4 @@
-// Orca: This file is ported from latest PrusaSlicer
+// Galaxy: This file is ported from latest PrusaSlicer
 
 #include <algorithm>
 #include <wx/dcbuffer.h>
