@@ -413,7 +413,7 @@ static int scale()
 }
 #endif // __WXGTK2__
 
-wxBitmapBundle* get_bmp_bundle(const std::string& bmp_name_in, int width/* = 16*/)
+wxBitmapBundle* get_bmp_bundle(const std::string& bmp_name_in, int width/* = 16*/, int height/* = -1*/)
 {
 #ifdef __WXGTK2__
     width *= scale();
