@@ -525,7 +525,7 @@ WipingPanel::WipingPanel(wxWindow* parent, const std::vector<float>& matrix, con
     auto message_sizer = new wxBoxSizer(wxVERTICAL);
     tip_message_panel->SetSizer(message_sizer);
     {
-        wxString message = _L("Galaxy recalculates your flushing volumes everytime the filament colors change. You can change this behavior in Preferences.");
+        wxString message = _L("Studio would re-calculate your flushing volumes everytime the filaments color changed. You could disable the auto-calculate in Bambu Studio > Preferences");
         m_tip_message_label = new Label(tip_message_panel, wxEmptyString);
         wxClientDC dc(tip_message_panel);
         wxString multiline_message;
