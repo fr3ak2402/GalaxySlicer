@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -894,27 +894,6 @@ msgstr "Verwijder het geselecteerde object"
 msgid "Load..."
 msgstr "Laden..."
 
-msgid "Galaxy Cube"
-msgstr ""
-
-msgid "Galaxy Flower"
-msgstr ""
-
-msgid "Orca Cube"
-msgstr "Orca-kubus"
-
-msgid "Voron Cube"
-msgstr "Voron-kubus"
-
-msgid "Disc"
-msgstr ""
-
-msgid "3DBenchy"
-msgstr "3DBenchy"
-
-msgid "Autodesk FDM Test"
-msgstr "Autodesk FDM Test"
-
 msgid "Cube"
 msgstr "Kubus"
 
@@ -923,6 +902,33 @@ msgstr "Cilinder"
 
 msgid "Cone"
 msgstr "Kegel"
+
+msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr "Orca-kubus"
+
+msgid "3DBenchy"
+msgstr "3DBenchy"
+
+msgid "Autodesk FDM Test"
+msgstr "Autodesk FDM Test"
+
+msgid "Voron Cube"
+msgstr "Voron-kubus"
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
 
 msgid "Text"
 msgstr ""
@@ -1082,6 +1088,9 @@ msgstr "Invalidate cut info"
 
 msgid "Add Primitive"
 msgstr "Primitief toevoegen"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "Toon labels"
@@ -2615,6 +2624,18 @@ msgstr ""
 "Nee - Pas de vaas modus deze keer niet toe"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3655,7 +3676,7 @@ msgstr ""
 msgid "Retraction test"
 msgstr ""
 
-msgid "Orca Tolerance Test"
+msgid "Galaxy Tolerance Test"
 msgstr ""
 
 msgid "Max flowrate"
@@ -6728,15 +6749,19 @@ msgstr ""
 msgid "Ramming line spacing"
 msgstr ""
 
-msgid "Recalculate"
+msgid "Auto-Calc"
+msgstr ""
+
+msgid "Re-calculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "Volumes reinigen voor filament wijziging"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6753,6 +6778,15 @@ msgstr ""
 
 msgid "Multiplier"
 msgstr "Vermenigvuldiger"
+
+msgid "unloaded"
+msgstr ""
+
+msgid "loaded"
+msgstr ""
+
+msgid "Filament #"
+msgstr ""
 
 msgid "From"
 msgstr "Van"
@@ -9427,6 +9461,17 @@ msgstr ""
 "Dit geeft aan of de machine de stille modus ondersteunt waarin de machine "
 "een lagere versnelling gebruikt om te printen"
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "Machine limieten"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9448,9 +9493,6 @@ msgstr "Maximale snelheid voor Z"
 
 msgid "Maximum speed E"
 msgstr "Maximale snelheid voor E"
-
-msgid "Machine limits"
-msgstr "Machine limieten"
 
 msgid "Maximum X speed"
 msgstr "Maximale X snelheid"
@@ -9788,6 +9830,20 @@ msgstr "Dit is de snelheid voor de binnenste wanden"
 
 msgid "Number of walls of every layer"
 msgstr "Dit is het aantal wanden per laag."
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "

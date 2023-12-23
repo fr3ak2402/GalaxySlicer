@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: 2023-11-20 01:07+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -903,27 +903,6 @@ msgstr "Удаление выбранных моделей"
 msgid "Load..."
 msgstr "Загрузить…"
 
-msgid "Galaxy Cube"
-msgstr "Galaxy Cube"
-
-msgid "Galaxy Flower"
-msgstr "Galaxy Flower"
-
-msgid "Orca Cube"
-msgstr "Куб Orca Design"
-
-msgid "Voron Cube"
-msgstr "Куб Voron Design"
-
-msgid "Disc"
-msgstr ""
-
-msgid "3DBenchy"
-msgstr "3DBenchy"
-
-msgid "Autodesk FDM Test"
-msgstr "FDM тест от Autodesk"
-
 msgid "Cube"
 msgstr "Куб"
 
@@ -932,6 +911,33 @@ msgstr "Цилиндр"
 
 msgid "Cone"
 msgstr "Конус"
+
+msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr "Куб Orca Design"
+
+msgid "3DBenchy"
+msgstr "3DBenchy"
+
+msgid "Autodesk FDM Test"
+msgstr "FDM тест от Autodesk"
+
+msgid "Voron Cube"
+msgstr "Куб Voron Design"
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr "Galaxy Cube"
+
+msgid "Galaxy Flower"
+msgstr "Galaxy Flower"
 
 msgid "Text"
 msgstr ""
@@ -1090,6 +1096,9 @@ msgstr "Удалить информацию о разрезе"
 
 msgid "Add Primitive"
 msgstr "Добавить примитив"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "Показать имена файлов"
@@ -2638,6 +2647,18 @@ msgstr ""
 "Нет - Отказаться от использования режима «Спиральная ваза»"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3698,8 +3719,8 @@ msgstr "Коэф. Pressure Advance"
 msgid "Retraction test"
 msgstr "Тест откатов"
 
-msgid "Orca Tolerance Test"
-msgstr "Тест допусков от Orca"
+msgid "Galaxy Tolerance Test"
+msgstr ""
 
 msgid "Max flowrate"
 msgstr "Макс. скорость потока"
@@ -6805,15 +6826,19 @@ msgstr "Ширина линии при рэмминге"
 msgid "Ramming line spacing"
 msgstr "Расстояние между линиями при рэмминге"
 
-msgid "Recalculate"
+msgid "Auto-Calc"
+msgstr ""
+
+msgid "Re-calculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "Объёмы очистки при смене пластиковой нити"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6831,6 +6856,15 @@ msgstr "Множитель должен находиться в диапазон
 
 msgid "Multiplier"
 msgstr "Множитель"
+
+msgid "unloaded"
+msgstr ""
+
+msgid "loaded"
+msgstr ""
+
+msgid "Filament #"
+msgstr ""
 
 msgid "From"
 msgstr "С"
@@ -9696,6 +9730,17 @@ msgstr ""
 "Поддержка тихого режима, в котором принтер использует меньшее ускорение "
 "печати для уменьшения уровня шума."
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "Ограничения принтера"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9717,9 +9762,6 @@ msgstr "Максимальная скорость перемещения по Z"
 
 msgid "Maximum speed E"
 msgstr "Максимальная скорость подачи у экструдера (E)"
-
-msgid "Machine limits"
-msgstr "Ограничения принтера"
 
 msgid "Maximum X speed"
 msgstr "Максимальная скорость перемещения по X"
@@ -10125,6 +10167,20 @@ msgstr "Скорость печати внутренних периметров.
 
 msgid "Number of walls of every layer"
 msgstr "Количество периметров на каждом слое модели."
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
@@ -13527,3 +13583,6 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Orca Tolerance Test"
+#~ msgstr "Тест допусков от Orca"

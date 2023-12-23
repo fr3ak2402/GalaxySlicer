@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -889,27 +889,6 @@ msgstr "Delete the selected object"
 msgid "Load..."
 msgstr "Caricamento..."
 
-msgid "Galaxy Cube"
-msgstr ""
-
-msgid "Galaxy Flower"
-msgstr ""
-
-msgid "Orca Cube"
-msgstr ""
-
-msgid "Voron Cube"
-msgstr ""
-
-msgid "Disc"
-msgstr ""
-
-msgid "3DBenchy"
-msgstr ""
-
-msgid "Autodesk FDM Test"
-msgstr ""
-
 msgid "Cube"
 msgstr "Cube"
 
@@ -918,6 +897,33 @@ msgstr "Cilindro"
 
 msgid "Cone"
 msgstr "Cone"
+
+msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr ""
+
+msgid "3DBenchy"
+msgstr ""
+
+msgid "Autodesk FDM Test"
+msgstr ""
+
+msgid "Voron Cube"
+msgstr ""
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
 
 msgid "Text"
 msgstr "Testo"
@@ -1075,6 +1081,9 @@ msgstr "Annulla informazioni di taglio"
 
 msgid "Add Primitive"
 msgstr "Add Primitive"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "Mostra Etichette"
@@ -2588,6 +2597,18 @@ msgstr ""
 "No  - Cancel enabling spiral mode"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3627,7 +3648,7 @@ msgstr ""
 msgid "Retraction test"
 msgstr ""
 
-msgid "Orca Tolerance Test"
+msgid "Galaxy Tolerance Test"
 msgstr ""
 
 msgid "Max flowrate"
@@ -6650,18 +6671,23 @@ msgstr ""
 msgid "Ramming line spacing"
 msgstr ""
 
-msgid "Recalculate"
-msgstr "Ricalcola"
+msgid "Auto-Calc"
+msgstr "Calcolo automatico"
+
+msgid "Re-calculate"
+msgstr "Ricalcolo"
 
 msgid "Flushing volumes for filament change"
 msgstr "Flushing volumes for filament change"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
-"Orca ricalcola i volumi di risciacquo ogni volta che i colori del filamento "
-"cambiano. È possibile modificare questo comportamento in Preferenze."
+"Studio ricalcolava i volumi di spurgo ogni volta che il colore dei filamenti "
+"cambiava. È possibile disabilitare il calcolo automatico nelle preferenze > "
+"di Bambu Studio"
 
 msgid "Flushing volume (mm³) for each filament pair."
 msgstr "Flushing volume (mm³) for each filament pair."
@@ -6676,6 +6702,15 @@ msgstr "Il moltiplicatore deve essere compreso nell'intervallo [%.2f, %.2f]."
 
 msgid "Multiplier"
 msgstr "Moltiplicatore"
+
+msgid "unloaded"
+msgstr "scaricato"
+
+msgid "loaded"
+msgstr "caricato"
+
+msgid "Filament #"
+msgstr "Filamento #"
 
 msgid "From"
 msgstr "Da"
@@ -9363,6 +9398,17 @@ msgstr ""
 "Whether the machine supports silent mode in which machine uses lower "
 "acceleration to print more quietly"
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "Limiti macchina"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9384,9 +9430,6 @@ msgstr "Maximum speed Z"
 
 msgid "Maximum speed E"
 msgstr "Maximum speed E"
-
-msgid "Machine limits"
-msgstr "Limiti macchina"
 
 msgid "Maximum X speed"
 msgstr "Maximum X speed"
@@ -9720,6 +9763,20 @@ msgstr "This is the speed for inner walls."
 
 msgid "Number of walls of every layer"
 msgstr "This is the number of walls per layer."
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
@@ -12869,6 +12926,17 @@ msgid ""
 "probability of warping."
 msgstr ""
 
+#~ msgid "Recalculate"
+#~ msgstr "Ricalcola"
+
+#~ msgid ""
+#~ "Orca recalculates your flushing volumes everytime the filament colors "
+#~ "change. You can change this behavior in Preferences."
+#~ msgstr ""
+#~ "Orca ricalcola i volumi di risciacquo ogni volta che i colori del "
+#~ "filamento cambiano. È possibile modificare questo comportamento in "
+#~ "Preferenze."
+
 #~ msgid ""
 #~ "The printer timed out while receiving a print job. Please check if the "
 #~ "network is functioning properly and send the print again."
@@ -12914,30 +12982,6 @@ msgstr ""
 
 #~ msgid "Quick"
 #~ msgstr "Rapido"
-
-#~ msgid "Auto-Calc"
-#~ msgstr "Calcolo automatico"
-
-#~ msgid "Re-calculate"
-#~ msgstr "Ricalcolo"
-
-#~ msgid ""
-#~ "Studio would re-calculate your flushing volumes everytime the filaments "
-#~ "color changed. You could disable the auto-calculate in Bambu Studio > "
-#~ "Preferences"
-#~ msgstr ""
-#~ "Studio ricalcolava i volumi di spurgo ogni volta che il colore dei "
-#~ "filamenti cambiava. È possibile disabilitare il calcolo automatico nelle "
-#~ "preferenze > di Bambu Studio"
-
-#~ msgid "unloaded"
-#~ msgstr "scaricato"
-
-#~ msgid "loaded"
-#~ msgstr "caricato"
-
-#~ msgid "Filament #"
-#~ msgstr "Filamento #"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "Stampa la sequenza della parete interna e della parete esterna. "

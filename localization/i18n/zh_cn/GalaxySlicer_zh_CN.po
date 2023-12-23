@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -883,27 +883,6 @@ msgstr "删除所选对象"
 msgid "Load..."
 msgstr "加载..."
 
-msgid "Galaxy Cube"
-msgstr "逆戟鲸方块"
-
-msgid "Galaxy Flower"
-msgstr "逆戟鲸花"
-
-msgid "Orca Cube"
-msgstr "Orca逆方块"
-
-msgid "Voron Cube"
-msgstr "Voron方块"
-
-msgid "Disc"
-msgstr "圆盘"
-
-msgid "3DBenchy"
-msgstr "小船"
-
-msgid "Autodesk FDM Test"
-msgstr "欧特克FDM测试"
-
 msgid "Cube"
 msgstr "立方体"
 
@@ -912,6 +891,33 @@ msgstr "圆柱体"
 
 msgid "Cone"
 msgstr "锥体"
+
+msgid "Disc"
+msgstr "圆盘"
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr "Orca逆方块"
+
+msgid "3DBenchy"
+msgstr "小船"
+
+msgid "Autodesk FDM Test"
+msgstr "欧特克FDM测试"
+
+msgid "Voron Cube"
+msgstr "Voron方块"
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr "逆戟鲸方块"
+
+msgid "Galaxy Flower"
+msgstr "逆戟鲸花"
 
 msgid "Text"
 msgstr ""
@@ -1069,6 +1075,9 @@ msgstr "解除切割关系"
 
 msgid "Add Primitive"
 msgstr "添加标准模型"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "显示标签"
@@ -2485,6 +2494,18 @@ msgstr ""
 "否 - 暂不使用旋转模式"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3526,8 +3547,8 @@ msgstr "压力提前"
 msgid "Retraction test"
 msgstr "回抽测试"
 
-msgid "Orca Tolerance Test"
-msgstr "Orca误差测试"
+msgid "Galaxy Tolerance Test"
+msgstr ""
 
 msgid "Max flowrate"
 msgstr "最大体积流量"
@@ -6443,15 +6464,19 @@ msgstr "尖端成型线宽"
 msgid "Ramming line spacing"
 msgstr "尖端成型线间距"
 
-msgid "Recalculate"
+msgid "Auto-Calc"
+msgstr ""
+
+msgid "Re-calculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "耗材丝更换时的冲刷体积"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6467,6 +6492,15 @@ msgstr "乘数的取值范围是[%.2f, %.2f]"
 
 msgid "Multiplier"
 msgstr "乘数"
+
+msgid "unloaded"
+msgstr ""
+
+msgid "loaded"
+msgstr ""
+
+msgid "Filament #"
+msgstr ""
 
 msgid "From"
 msgstr "从"
@@ -8993,6 +9027,17 @@ msgid ""
 "acceleration to print"
 msgstr "机器是否支持使用低加速度打印的静音模式。"
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "机器限制"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9012,9 +9057,6 @@ msgstr "Z最大速度"
 
 msgid "Maximum speed E"
 msgstr "E最大速度"
-
-msgid "Machine limits"
-msgstr "机器限制"
 
 msgid "Maximum X speed"
 msgstr "X最大速度"
@@ -9366,6 +9408,20 @@ msgstr "内圈墙打印速度"
 
 msgid "Number of walls of every layer"
 msgstr "每一层的外墙"
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
@@ -12457,3 +12513,6 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Orca Tolerance Test"
+#~ msgstr "Orca误差测试"

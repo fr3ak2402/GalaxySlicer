@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: 2023-12-20 09:20+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -904,27 +904,6 @@ msgstr "선택된 개체 삭제"
 msgid "Load..."
 msgstr "불러오기..."
 
-msgid "Galaxy Cube"
-msgstr ""
-
-msgid "Galaxy Flower"
-msgstr ""
-
-msgid "Orca Cube"
-msgstr "Orca Cube"
-
-msgid "Voron Cube"
-msgstr "Voron Cube"
-
-msgid "Disc"
-msgstr ""
-
-msgid "3DBenchy"
-msgstr "3DBenchy"
-
-msgid "Autodesk FDM Test"
-msgstr "Autodesk FDM Test"
-
 msgid "Cube"
 msgstr "정육면체"
 
@@ -933,6 +912,33 @@ msgstr "원기둥"
 
 msgid "Cone"
 msgstr "원뿔"
+
+msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr "Orca Cube"
+
+msgid "3DBenchy"
+msgstr "3DBenchy"
+
+msgid "Autodesk FDM Test"
+msgstr "Autodesk FDM Test"
+
+msgid "Voron Cube"
+msgstr "Voron Cube"
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
 
 msgid "Text"
 msgstr "텍스트"
@@ -1090,6 +1096,9 @@ msgstr "잘못된 잘라내기 정보"
 
 msgid "Add Primitive"
 msgstr "기본 모델 추가"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "이름표 표시"
@@ -2557,6 +2566,18 @@ msgstr ""
 "아니오 - 이번에는 나선 모드 사용을 포기합니다"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3606,8 +3627,8 @@ msgstr "프레셔 어드밴스"
 msgid "Retraction test"
 msgstr "퇴출 테스트"
 
-msgid "Orca Tolerance Test"
-msgstr "Orca 공차 테스트"
+msgid "Galaxy Tolerance Test"
+msgstr ""
 
 msgid "Max flowrate"
 msgstr "최대 유량"
@@ -6624,18 +6645,22 @@ msgstr "래밍 선 너비"
 msgid "Ramming line spacing"
 msgstr "래밍 선 간격"
 
-msgid "Recalculate"
-msgstr "다시계산"
+msgid "Auto-Calc"
+msgstr "자동 계산"
+
+msgid "Re-calculate"
+msgstr "다시 계산"
 
 msgid "Flushing volumes for filament change"
 msgstr "필라멘트 교체를 위한 쏟기(플러쉬) 부피"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
-"Orca Slicer는 필라멘트 색상이 바뀔 때마다 플러싱 볼륨을 다시 계산합니다. 환"
-"경 설정에서 이 동작을 변경할 수 있습니다."
+"Studio는 필라멘트를 교체할 때마다 플러싱 볼륨을 다시 계산합니다.색상이 변경되"
+"었습니다. Bambu Studio > 에서 자동 계산을 비활성화할 수 있습니다.환경설정"
 
 msgid "Flushing volume (mm³) for each filament pair."
 msgstr "각 필라멘트 쌍에 대한 쏟기(플러쉬) 부피(mm³)."
@@ -6650,6 +6675,15 @@ msgstr "승수는 [%.2f, %.2f] 범위에 있어야 합니다."
 
 msgid "Multiplier"
 msgstr "승수"
+
+msgid "unloaded"
+msgstr "언로드됨"
+
+msgid "loaded"
+msgstr "로드됨"
+
+msgid "Filament #"
+msgstr "필라멘트 #"
 
 msgid "From"
 msgstr "에서"
@@ -9394,6 +9428,17 @@ msgid ""
 "acceleration to print"
 msgstr "기기가 낮은 가속도를 사용하여 출력하는 무음 모드 지원 여부"
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "장비 한계"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9415,9 +9460,6 @@ msgstr "Z축 최대 속도"
 
 msgid "Maximum speed E"
 msgstr "E축 최대 속도"
-
-msgid "Machine limits"
-msgstr "장비 한계"
 
 msgid "Maximum X speed"
 msgstr "X축 최대 속도"
@@ -9798,6 +9840,20 @@ msgstr "내벽 속도"
 
 msgid "Number of walls of every layer"
 msgstr "모든 레이어의 벽 수"
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
@@ -13080,6 +13136,19 @@ msgid ""
 "probability of warping."
 msgstr ""
 
+#~ msgid "Orca Tolerance Test"
+#~ msgstr "Orca 공차 테스트"
+
+#~ msgid "Recalculate"
+#~ msgstr "다시계산"
+
+#~ msgid ""
+#~ "Orca recalculates your flushing volumes everytime the filament colors "
+#~ "change. You can change this behavior in Preferences."
+#~ msgstr ""
+#~ "Orca Slicer는 필라멘트 색상이 바뀔 때마다 플러싱 볼륨을 다시 계산합니다. "
+#~ "환경 설정에서 이 동작을 변경할 수 있습니다."
+
 #~ msgid "Orca Slicer "
 #~ msgstr "Galaxy Slicer "
 
@@ -13160,30 +13229,6 @@ msgstr ""
 
 #~ msgid "Quick"
 #~ msgstr "빠른"
-
-#~ msgid "Auto-Calc"
-#~ msgstr "자동 계산"
-
-#~ msgid "Re-calculate"
-#~ msgstr "다시 계산"
-
-#~ msgid ""
-#~ "Studio would re-calculate your flushing volumes everytime the filaments "
-#~ "color changed. You could disable the auto-calculate in Bambu Studio > "
-#~ "Preferences"
-#~ msgstr ""
-#~ "Studio는 필라멘트를 교체할 때마다 플러싱 볼륨을 다시 계산합니다.색상이 변"
-#~ "경되었습니다. Bambu Studio > 에서 자동 계산을 비활성화할 수 있습니다.환경"
-#~ "설정"
-
-#~ msgid "unloaded"
-#~ msgstr "언로드됨"
-
-#~ msgid "loaded"
-#~ msgstr "로드됨"
-
-#~ msgid "Filament #"
-#~ msgstr "필라멘트 #"
 
 #~ msgid "Print sequence of inner wall and outer wall. "
 #~ msgstr "내벽과 외벽의 순서를 인쇄합니다."

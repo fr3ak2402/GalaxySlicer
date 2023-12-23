@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -878,19 +878,22 @@ msgstr ""
 msgid "Load..."
 msgstr ""
 
-msgid "Galaxy Cube"
+msgid "Cube"
 msgstr ""
 
-msgid "Galaxy Flower"
+msgid "Cylinder"
 msgstr ""
 
-msgid "Orca Cube"
-msgstr ""
-
-msgid "Voron Cube"
+msgid "Cone"
 msgstr ""
 
 msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
 msgstr ""
 
 msgid "3DBenchy"
@@ -899,13 +902,16 @@ msgstr ""
 msgid "Autodesk FDM Test"
 msgstr ""
 
-msgid "Cube"
+msgid "Voron Cube"
 msgstr ""
 
-msgid "Cylinder"
+msgid "Stanford Bunny"
 msgstr ""
 
-msgid "Cone"
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
 msgstr ""
 
 msgid "Text"
@@ -1063,6 +1069,9 @@ msgid "Invalidate cut info"
 msgstr ""
 
 msgid "Add Primitive"
+msgstr ""
+
+msgid "Add Handy models"
 msgstr ""
 
 msgid "Show Labels"
@@ -2431,6 +2440,18 @@ msgid ""
 msgstr ""
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3443,7 +3464,7 @@ msgstr ""
 msgid "Retraction test"
 msgstr ""
 
-msgid "Orca Tolerance Test"
+msgid "Galaxy Tolerance Test"
 msgstr ""
 
 msgid "Max flowrate"
@@ -6283,15 +6304,19 @@ msgstr ""
 msgid "Ramming line spacing"
 msgstr ""
 
-msgid "Recalculate"
+msgid "Auto-Calc"
+msgstr ""
+
+msgid "Re-calculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr ""
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6306,6 +6331,15 @@ msgid "The multiplier should be in range [%.2f, %.2f]."
 msgstr ""
 
 msgid "Multiplier"
+msgstr ""
+
+msgid "unloaded"
+msgstr ""
+
+msgid "loaded"
+msgstr ""
+
+msgid "Filament #"
 msgstr ""
 
 msgid "From"
@@ -8724,6 +8758,17 @@ msgid ""
 "acceleration to print"
 msgstr ""
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr ""
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -8742,9 +8787,6 @@ msgid "Maximum speed Z"
 msgstr ""
 
 msgid "Maximum speed E"
-msgstr ""
-
-msgid "Machine limits"
 msgstr ""
 
 msgid "Maximum X speed"
@@ -9062,6 +9104,20 @@ msgid "Speed of inner wall"
 msgstr ""
 
 msgid "Number of walls of every layer"
+msgstr ""
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
 msgstr ""
 
 msgid ""

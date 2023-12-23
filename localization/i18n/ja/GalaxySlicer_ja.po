@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-20 10:48+0100\n"
+"POT-Creation-Date: 2023-12-23 16:42+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -882,27 +882,6 @@ msgstr "選択したオブジェクトを削除"
 msgid "Load..."
 msgstr "ファイルを読込む"
 
-msgid "Galaxy Cube"
-msgstr ""
-
-msgid "Galaxy Flower"
-msgstr ""
-
-msgid "Orca Cube"
-msgstr ""
-
-msgid "Voron Cube"
-msgstr ""
-
-msgid "Disc"
-msgstr ""
-
-msgid "3DBenchy"
-msgstr ""
-
-msgid "Autodesk FDM Test"
-msgstr ""
-
 msgid "Cube"
 msgstr "キューブ"
 
@@ -911,6 +890,33 @@ msgstr "シリンダー"
 
 msgid "Cone"
 msgstr "コーン"
+
+msgid "Disc"
+msgstr ""
+
+msgid "Torus"
+msgstr ""
+
+msgid "Orca Cube"
+msgstr ""
+
+msgid "3DBenchy"
+msgstr ""
+
+msgid "Autodesk FDM Test"
+msgstr ""
+
+msgid "Voron Cube"
+msgstr ""
+
+msgid "Stanford Bunny"
+msgstr ""
+
+msgid "Galaxy Cube"
+msgstr ""
+
+msgid "Galaxy Flower"
+msgstr ""
 
 msgid "Text"
 msgstr ""
@@ -1068,6 +1074,9 @@ msgstr "Invalidate cut info"
 
 msgid "Add Primitive"
 msgstr "プリミティブを追加"
+
+msgid "Add Handy models"
+msgstr ""
 
 msgid "Show Labels"
 msgstr "ラベルを表示"
@@ -2510,6 +2519,18 @@ msgstr ""
 "いいえ - 変更せず、スパイラルモードを有効しません"
 
 msgid ""
+"Alternate extra wall only works with ensure vertical shell thickness "
+"disabled. "
+msgstr ""
+
+msgid ""
+"Change these settings automatically? \n"
+"Yes - Disable ensure vertical shell thickness and enable alternate extra "
+"wall\n"
+"No  - Dont use alternate extra wall"
+msgstr ""
+
+msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support "
 "Layer Height is on.\n"
 "Which do you want to keep?\n"
@@ -3544,7 +3565,7 @@ msgstr ""
 msgid "Retraction test"
 msgstr ""
 
-msgid "Orca Tolerance Test"
+msgid "Galaxy Tolerance Test"
 msgstr ""
 
 msgid "Max flowrate"
@@ -6486,15 +6507,19 @@ msgstr ""
 msgid "Ramming line spacing"
 msgstr ""
 
-msgid "Recalculate"
+msgid "Auto-Calc"
+msgstr ""
+
+msgid "Re-calculate"
 msgstr ""
 
 msgid "Flushing volumes for filament change"
 msgstr "フィラメントを入替える為のフラッシュ量"
 
 msgid ""
-"Orca recalculates your flushing volumes everytime the filament colors "
-"change. You can change this behavior in Preferences."
+"Studio would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in Bambu Studio > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6510,6 +6535,15 @@ msgstr "マルチプライヤーの有効範囲は [%.2f, %.2f] です。"
 
 msgid "Multiplier"
 msgstr "マルチプライヤ"
+
+msgid "unloaded"
+msgstr ""
+
+msgid "loaded"
+msgstr ""
+
+msgid "Filament #"
+msgstr ""
 
 msgid "From"
 msgstr "From"
@@ -9044,6 +9078,17 @@ msgid ""
 "acceleration to print"
 msgstr "サイレントモード有無"
 
+msgid "Emit limits to G-code"
+msgstr ""
+
+msgid "Machine limits"
+msgstr "プリンター制限"
+
+msgid ""
+"If enabled, the machine limits will be emitted to G-code file.\n"
+"This option will be ignored if the g-code flavor is set to Klipper."
+msgstr ""
+
 msgid ""
 "This G-code will be used as a code for the pause print. User can insert "
 "pause G-code in gcode viewer"
@@ -9065,9 +9110,6 @@ msgstr "最大速度 Z"
 
 msgid "Maximum speed E"
 msgstr "最大速度 E"
-
-msgid "Machine limits"
-msgstr "プリンター制限"
 
 msgid "Maximum X speed"
 msgstr "最大速度 X"
@@ -9392,6 +9434,20 @@ msgstr "内壁の造形速度です。"
 
 msgid "Number of walls of every layer"
 msgstr "壁面の層数です。"
+
+msgid "Alternate extra wall"
+msgstr ""
+
+msgid ""
+"This setting adds an extra wall to every other layer. This way the infill "
+"gets wedged vertically between the walls, resulting in stronger prints. \n"
+"\n"
+"When this option is enabled, the ensure vertical shell thickness option "
+"needs to be disabled. \n"
+"\n"
+"Using lightning infill together with this option is not recommended as there "
+"is limited infill to anchor the extra perimeters to."
+msgstr ""
 
 msgid ""
 "If you want to process the output G-code through custom scripts, just list "
