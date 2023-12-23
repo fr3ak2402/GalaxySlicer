@@ -497,14 +497,13 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
     }
 
     for (auto &item : {L("Cube"), L("Cylinder"), L("Sphere"), L("Cone"), L("Disc"), L("Torus")}) {
-    #for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) {
-       
-         append_menu_item(
-            sub_menu, wxID_ANY, _(item), "",
-            [type, item](wxCommandEvent &) {
-              obj_list()->load_generic_subobject(item, type);
-            },
-            "", menu);
+    //    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) {
+            append_menu_item(
+                sub_menu, wxID_ANY, _(item), "",
+                [type, item](wxCommandEvent &) {
+                    obj_list()->load_generic_subobject(item, type);
+                },
+                "", menu);
     }
 
     append_menu_item_add_text(sub_menu, type);
