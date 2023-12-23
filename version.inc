@@ -9,8 +9,9 @@ if(NOT DEFINED BBL_RELEASE_TO_PUBLIC)
 set(BBL_RELEASE_TO_PUBLIC "1")
 endif()
 if(NOT DEFINED BBL_INTERNAL_TESTING)
-set(BBL_INTERNAL_TESTING "1")
+set(BBL_INTERNAL_TESTING "0")
 endif()
+set(SoftFever_VERSION "1.9.0-alpha")
 set(GalaxySlicer_VERSION "1.0.0-beta2")
 
 # Build number
