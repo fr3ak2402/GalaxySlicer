@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2986,6 +2986,9 @@ msgstr "Час"
 msgid "Percent"
 msgstr "Відсоток"
 
+msgid "Used filament"
+msgstr "Філамент, що використовується"
+
 msgid "Layer Height (mm)"
 msgstr "Висота шару (мм)"
 
@@ -3003,9 +3006,6 @@ msgstr "Температура (°С)"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "Об'ємна витрата (мм³/с)"
-
-msgid "Used filament"
-msgstr "Філамент, що використовується"
 
 msgid "Travel"
 msgstr "Переміщення"

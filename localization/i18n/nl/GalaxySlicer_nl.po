@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3005,6 +3005,9 @@ msgstr "Tijd"
 msgid "Percent"
 msgstr "Procent"
 
+msgid "Used filament"
+msgstr "Verbruikt filament"
+
 msgid "Layer Height (mm)"
 msgstr "Laaghoogte (mm)"
 
@@ -3022,9 +3025,6 @@ msgstr "Temperatuur (°C)"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "Volumestroom (mm³/s)"
-
-msgid "Used filament"
-msgstr "Verbruikt filament"
 
 msgid "Travel"
 msgstr "Verplaatsen"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2802,6 +2802,9 @@ msgstr ""
 msgid "Percent"
 msgstr ""
 
+msgid "Used filament"
+msgstr ""
+
 msgid "Layer Height (mm)"
 msgstr ""
 
@@ -2818,9 +2821,6 @@ msgid "Temperature (°C)"
 msgstr ""
 
 msgid "Volumetric flow rate (mm³/s)"
-msgstr ""
-
-msgid "Used filament"
 msgstr ""
 
 msgid "Travel"

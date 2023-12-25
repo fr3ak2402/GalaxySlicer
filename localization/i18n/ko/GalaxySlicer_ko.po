@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 22:15+0800\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: 2023-12-25 12:35+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -1948,8 +1948,8 @@ msgid ""
 "GalaxySlicer is based on OrcaSlicer, BambuStudio, PrusaSlicer, and "
 "SuperSlicer."
 msgstr ""
-"Galaxy Slicer는 Prusa Research의 PrusaSlicer에서 나온 뱀부랩의 BambuStudio를 기"
-"반으로 합니다.  PrusaSlicer는 Alessandro Ranellucci와 RepRap 커뮤니티의 "
+"Galaxy Slicer는 Prusa Research의 PrusaSlicer에서 나온 뱀부랩의 BambuStudio를 "
+"기반으로 합니다.  PrusaSlicer는 Alessandro Ranellucci와 RepRap 커뮤니티의 "
 "Slic3r에서 제작되었습니다"
 
 msgid "OrcaSlicer is originally based on BambuStudio by BambuLab."
@@ -2962,6 +2962,9 @@ msgstr "시간"
 msgid "Percent"
 msgstr "퍼센트"
 
+msgid "Used filament"
+msgstr "사용된 필라멘트"
+
 msgid "Layer Height (mm)"
 msgstr "레이어 높이(mm)"
 
@@ -2979,9 +2982,6 @@ msgstr "온도 (°C)"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "체적 유량 (mm³/s)"
-
-msgid "Used filament"
-msgstr "사용된 필라멘트"
 
 msgid "Travel"
 msgstr "이동(트레블)"
@@ -8817,6 +8817,7 @@ msgstr "선의 시작 또는 주 방향을 제어하는 드문 채움 패턴에 
 msgid "Sparse infill density"
 msgstr "드문 채움 밀도"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Density of internal sparse infill, 100% turns all sparse infill into solid "
 "infill and internal solid infill pattern will be used"

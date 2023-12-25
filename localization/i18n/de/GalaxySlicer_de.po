@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -296,7 +296,7 @@ msgid "Cut"
 msgstr "Schneiden"
 
 msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
-msgstr ""
+msgstr """
 
 msgid "Repairing model object"
 msgstr "Modellobjekt reparieren"
@@ -929,7 +929,7 @@ msgid "Disc"
 msgstr "Scheibe"
 
 msgid "Torus"
-msgstr ""
+msgstr "Ring"
 
 msgid "Orca Cube"
 msgstr "Galaxy Würfel"
@@ -1112,7 +1112,7 @@ msgid "Add Primitive"
 msgstr "Primitiv hinzufügen"
 
 msgid "Add Handy models"
-msgstr ""
+msgstr "füge freihand Modelle hinzu"
 
 msgid "Show Labels"
 msgstr "Bezeichnung anzeigen"
@@ -3085,6 +3085,9 @@ msgstr "Zeit"
 msgid "Percent"
 msgstr "Prozent"
 
+msgid "Used filament"
+msgstr "Genutztes Filament"
+
 msgid "Layer Height (mm)"
 msgstr "Schichthöhe (mm)"
 
@@ -3102,9 +3105,6 @@ msgstr "Temperatur (°C)"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "Volumetrische Flussrate (mm³/s)"
-
-msgid "Used filament"
-msgstr "Genutztes Filament"
 
 msgid "Travel"
 msgstr "Eilgang"
@@ -7370,7 +7370,7 @@ msgid "Idle"
 msgstr "Inaktiv"
 
 msgid "Beta version"
-msgstr ""
+msgstr "Beta Version"
 
 msgid "Latest version"
 msgstr "Neueste Version"
@@ -9967,7 +9967,7 @@ msgstr ""
 "Beschleunigung zum Drucken verwendet"
 
 msgid "Emit limits to G-code"
-msgstr ""
+msgstr "Übertrage Limits in den G-Code"
 
 msgid "Machine limits"
 msgstr "Maschinengrenzen"

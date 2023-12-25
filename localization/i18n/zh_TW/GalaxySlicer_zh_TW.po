@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: 2023-11-06 14:37+0800\n"
 "Last-Translator: ablegods <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -2882,6 +2882,9 @@ msgstr "時間"
 msgid "Percent"
 msgstr "百分比"
 
+msgid "Used filament"
+msgstr "使用的線材"
+
 msgid "Layer Height (mm)"
 msgstr "層高（mm）"
 
@@ -2899,9 +2902,6 @@ msgstr "溫度（℃）"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "體積流量速度（mm³/s）"
-
-msgid "Used filament"
-msgstr "使用的線材"
 
 msgid "Travel"
 msgstr "空駛"

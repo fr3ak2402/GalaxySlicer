@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:42+0100\n"
+"POT-Creation-Date: 2023-12-25 17:20+0100\n"
 "PO-Revision-Date: 2023-09-30 15:15+0200\n"
 "Last-Translator: René Mošner <Renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -3006,6 +3006,9 @@ msgstr "Čas"
 msgid "Percent"
 msgstr "Procento"
 
+msgid "Used filament"
+msgstr "Použito filamentu"
+
 msgid "Layer Height (mm)"
 msgstr "Výška vrstvy (mm)"
 
@@ -3023,9 +3026,6 @@ msgstr "Teplota (°C)"
 
 msgid "Volumetric flow rate (mm³/s)"
 msgstr "Objemový průtok (mm³/s)"
-
-msgid "Used filament"
-msgstr "Použito filamentu"
 
 msgid "Travel"
 msgstr "Rychloposun"
