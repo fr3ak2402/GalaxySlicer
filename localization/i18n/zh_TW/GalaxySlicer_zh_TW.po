@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-11-06 14:37+0800\n"
 "Last-Translator: ablegods <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -470,9 +470,6 @@ msgstr "下半部分"
 
 msgid "Keep"
 msgstr "保持"
-
-msgid "Place on cut"
-msgstr "切割面放置到熱床"
 
 msgid "Flip"
 msgstr "翻轉"
@@ -1588,9 +1585,6 @@ msgstr "擦除選項"
 msgid "Bed adhension"
 msgstr "熱床黏接"
 
-msgid "Advanced"
-msgstr "高級"
-
 msgid "Add part"
 msgstr "新增部件"
 
@@ -2066,12 +2060,6 @@ msgstr "高度範圍"
 msgid "Settings for height range"
 msgstr "高度範圍設定"
 
-msgid "Object"
-msgstr "對象"
-
-msgid "Part"
-msgstr "零件"
-
 msgid "Layer"
 msgstr "層"
 
@@ -2292,9 +2280,6 @@ msgstr "無３Ｄ列印機"
 
 msgid "..."
 msgstr "..."
-
-msgid "Failed to connect to the server"
-msgstr "無法連接伺服器"
 
 msgid "Check the status of current system services"
 msgstr "請檢查當前系統服務狀態"
@@ -7302,9 +7287,6 @@ msgstr ""
 msgid "Ctrl+Shift+G"
 msgstr ""
 
-msgid "Copy to clipboard"
-msgstr "複製到剪貼板"
-
 msgid "Paste from clipboard"
 msgstr "從剪切板黏貼"
 
@@ -7414,9 +7396,6 @@ msgstr "Shift+方向鍵"
 
 msgid "Movement step set to 1 mm"
 msgstr "沿X、Y軸以1mm為步進移動對象"
-
-msgid "Esc"
-msgstr ""
 
 msgid "keyboard 1-9: set filament for object/part"
 msgstr "按鍵1-9：設置對象/零件的線材"
@@ -13349,5 +13328,6 @@ msgstr ""
 
 #~ msgid "Edit Text"
 #~ msgstr "編輯文字"
+
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Galaxy 誤差測試"

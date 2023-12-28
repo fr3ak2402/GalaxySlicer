@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -371,7 +367,7 @@ msgid "Tolerance"
 msgstr "Speling"
 
 msgid "Drag"
-msgstr "Sleep"
+msgstr "Drag"
 
 msgid "Draw cut line"
 msgstr ""
@@ -388,12 +384,6 @@ msgstr "Right click"
 msgid "Remove connector"
 msgstr "Remove connector"
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "Drag"
-msgstr "Drag"
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 msgid "Move connector"
 msgstr "Move connector"
 
@@ -415,13 +405,8 @@ msgstr ""
 msgid "Remove connectors"
 msgstr "Verbindingen verwijderen"
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "Connector"
-msgstr "Connector"
-=======
 msgid "Bulge"
 msgstr ""
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 
 msgid "Bulge proportion related to radius"
 msgstr ""
@@ -481,12 +466,6 @@ msgstr "Lower part"
 msgid "Keep"
 msgstr "Keep"
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "Place on cut"
-msgstr "Place on cut"
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 msgid "Flip"
 msgstr "Flip"
 
@@ -499,67 +478,12 @@ msgstr "In delen knippen"
 msgid "Perform cut"
 msgstr "Knippen uitvoeren"
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "Reset"
-msgstr "Terugzetten"
-
-msgid "Connectors"
-msgstr "Connectors"
-
-msgid "Type"
-msgstr "Type"
-
-msgid "Style"
-msgstr "Stijl"
-
-msgid "Shape"
-msgstr "Vorm"
-
-msgid "Depth ratio"
-msgstr "Depth ratio"
-
-msgid "Remove connectors"
-msgstr "Remove connectors"
-
-msgid "Prizm"
-msgstr "Prizm"
-
-msgid "Frustum"
-msgstr "Frustum"
-
-msgid "Square"
-msgstr "Square"
-
-msgid "Hexagon"
-msgstr "Hexagon"
-
-msgid "Confirm connectors"
-msgstr "Confirm connectors"
-
-msgid "Cancel"
-msgstr "Annuleren"
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 msgid "Warning"
 msgstr "Waarschuwing"
 
 msgid "Invalid connectors detected"
 msgstr "Invalid connectors detected"
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "connector is out of cut contour"
-msgstr "connector is out of cut contour"
-
-msgid "connectors are out of cut contour"
-msgstr "connectors are out of cut contour"
-
-msgid "connector is out of object"
-msgstr "connector is out of object"
-
-msgid "connectors is out of object"
-msgstr "Connectors must be on object surface."
-=======
 #, c-format, boost-format
 msgid "%1$d connector is out of cut contour"
 msgid_plural "%1$d connectors are out of cut contour"
@@ -571,34 +495,23 @@ msgid "%1$d connector is out of object"
 msgid_plural "%1$d connectors are out of object"
 msgstr[0] ""
 msgstr[1] ""
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 
 msgid "Some connectors are overlapped"
 msgstr "Some connectors are overlapped"
 
 msgid "Select at least one object to keep after cutting."
 msgstr ""
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
 "Invalid state. \n"
 "No one part is selected to keep after cut"
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 
 msgid "Cut plane is placed out of object"
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-msgid "Dowel"
-msgstr "Dowel"
-
-msgid "Tolerance"
-msgstr "Tolerance"
-=======
 msgid "Cut plane with groove is invalid"
 msgstr ""
 
 msgid "Connector"
-msgstr "Verbinding"
+msgstr "Connector"
 
 msgid "Cut by Plane"
 msgstr ""
@@ -614,7 +527,6 @@ msgstr ""
 
 msgid "Delete connector"
 msgstr ""
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po
 
 msgid "Mesh name"
 msgstr "Constructie name"
@@ -13797,515 +13709,21 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
-<<<<<<< HEAD:localization/i18n/nl/GalaxySlicer_nl.po
-=======
-
-#~ msgid "Movement:"
-#~ msgstr "Beweging:"
-
-#~ msgid "Movement"
-#~ msgstr "Beweging"
-
-#~ msgid "Auto Segment"
-#~ msgstr "Automatische segmenteren"
 
 #~ msgid "Depth ratio"
-#~ msgstr "Diepteratio"
+#~ msgstr "Depth ratio"
 
 #~ msgid "Prizm"
-#~ msgstr "Prisma"
+#~ msgstr "Prizm"
 
 #~ msgid "connector is out of cut contour"
-#~ msgstr "Verbinding ligt buiten knipcontour"
+#~ msgstr "connector is out of cut contour"
 
 #~ msgid "connectors are out of cut contour"
-#~ msgstr "Verbindingen liggen buiten knipcontour"
+#~ msgstr "connectors are out of cut contour"
 
 #~ msgid "connector is out of object"
-#~ msgstr "Verbinding ligt buiten object"
+#~ msgstr "connector is out of object"
 
-# Source and destination string both English, but different. Please clarify!
 #~ msgid "connectors is out of object"
 #~ msgstr "Connectors must be on object surface."
-
-#~ msgid ""
-#~ "Invalid state. \n"
-#~ "No one part is selected for keep after cut"
-#~ msgstr ""
-#~ "Foutieve staat. \n"
-#~ "Geen onderdelen geselecteerd om te behouden na knippen"
-
-#~ msgid "Edit Text"
-#~ msgstr "Pas tekst aan"
-
-#~ msgid "Error! Unable to create thread!"
-#~ msgstr "Fout! Kan geen thread maken!"
-
-#~ msgid "Exception"
-#~ msgstr "Uitzondering"
-
-#~ msgid "Choose SLA archive:"
-#~ msgstr "Choose SLA archive:"
-
-#~ msgid "Import file"
-#~ msgstr "Import file"
-
-#~ msgid "Import model and profile"
-#~ msgstr "Import model and profile"
-
-#~ msgid "Import profile only"
-#~ msgstr "Import profile only"
-
-#~ msgid "Import model only"
-#~ msgstr "Import model only"
-
-#~ msgid "Accurate"
-#~ msgstr "Accurate"
-
-#~ msgid "Balanced"
-#~ msgstr "Balanced"
-
-#~ msgid "Quick"
-#~ msgstr "Quick"
-
-#~ msgid ""
-#~ "Discribe how long the nozzle will move along the last path when retracting"
-#~ msgstr ""
-#~ "Dit beschrijft hoe lang de nozzle langs het laatste pad zal bewegen "
-#~ "tijdens het terugtrekken (rectracting)."
-
-#~ msgid ""
-#~ "Simplify Model\n"
-#~ "Did you know that you can reduce the number of triangles in a mesh using "
-#~ "the Simplify mesh feature? Right-click the model and select Simplify "
-#~ "model. Read more in the documentation."
-#~ msgstr ""
-#~ "Vereenvoudig het model\n"
-#~ "Wist u dat u het aantal driehoeken in een mesh kunt verminderen met de "
-#~ "functie Simplify mesh? Klik met de rechtermuisknop op het model en "
-#~ "selecteer Model vereenvoudigen. Lees meer in de documentatie."
-
-#~ msgid "Filling bed "
-#~ msgstr "Filling bed"
-
-#, boost-format
-#~ msgid "%1% infill pattern doesn't support 100%% density."
-#~ msgstr "%1% het gekozen vulling patroon ondersteund geen 100%% dichtheid."
-
-#~ msgid ""
-#~ "Switch to rectilinear pattern?\n"
-#~ "Yes - switch to rectilinear pattern automaticlly\n"
-#~ "No  - reset density to default non 100% value automaticlly"
-#~ msgstr ""
-#~ "Overschakelen naar rechtlijnig patroon?\n"
-#~ "Ja - Automatisch overschakelen naar rechtlijnig patroon\n"
-#~ "Nee - Zet de dichtheid automatisch terug naar de standaard niet 100% "
-#~ "waarde"
-
-#~ msgid "Please heat the nozzle to above 170 degree before loading filament."
-#~ msgstr ""
-#~ "Verwarm de nozzle tot meer dan 170 graden voordat je het filament laadt."
-
-#~ msgid "Newer 3mf version"
-#~ msgstr "Nieuwere versie 3mf"
-
-#, c-format
-#~ msgid "Density of internal sparse infill, 100% means solid throughout"
-#~ msgstr ""
-#~ "Dit is de dichtheid van de interne vulling. 100%% betekent dat het object "
-#~ "geheel solide zal zijn."
-
-#~ msgid "Tree support wall loops"
-#~ msgstr "Tree support wand lussen"
-
-#~ msgid "This setting specify the count of walls around tree support"
-#~ msgstr ""
-#~ "Deze instelling specificeert het aantal wanden rond de tree support."
-
-#, c-format, boost-format
-#~ msgid " doesn't work at 100%% density "
-#~ msgstr " doesn't work at 100%% density "
-
-#~ msgid "Ctrl + Shift + Enter"
-#~ msgstr "Ctrl + Shift + Enter"
-
-#~ msgid "Tool-Lay on Face"
-#~ msgstr "Hulpmiddel op zijde plaatsen"
-
-#~ msgid "Export as STL"
-#~ msgstr "Exporteer als STL-bestand"
-
-#~ msgid "Check cloud service status"
-#~ msgstr "Check cloud service status"
-
-#~ msgid "Please input a valid value (K in 0~0.5)"
-#~ msgstr "Voer een geldige waarde in (K in 0 ~ 0,5)"
-
-#~ msgid "Please input a valid value (K in 0~0.5, N in 0.6~2.0)"
-#~ msgstr "Voer een geldige waarde in (K in 0 ~ 0,5, N in 0,6 ~ 2,0)"
-
-#~ msgid "Export all objects as STL"
-#~ msgstr "Exporteer alle objecten als STL"
-
-#, c-format, boost-format
-#~ msgid ""
-#~ "The 3mf's version %s is newer than %s's version %s, Found following keys "
-#~ "unrecognized:"
-#~ msgstr ""
-#~ "Versie %s van de 3mf is nieuwer dan versie %s van %s. De volgende "
-#~ "sleutels worden niet herkend:"
-
-#~ msgid "You'd better upgrade your software.\n"
-#~ msgstr "U dient de software te upgraden.\n"
-
-#, c-format, boost-format
-#~ msgid ""
-#~ "The 3mf's version %s is newer than %s's version %s, Suggest to upgrade "
-#~ "your software."
-#~ msgstr ""
-#~ "Versie %s van de 3mf is nieuwer dan versie %s van %s. Wij stellen voor om "
-#~ "uw software te upgraden."
-
-#~ msgid "The 3mf is not compatible, load geometry data only!"
-#~ msgstr ""
-#~ "Het 3mf bestand is niet compatibel, enkel de geometrische data wordt "
-#~ "geladen!"
-
-#~ msgid "Incompatible 3mf"
-#~ msgstr "Onbruikbaar 3mf bestand"
-
-#~ msgid "Add/Remove printers"
-#~ msgstr "Printers toevoegen/verwijderen"
-
-#, c-format, boost-format
-#~ msgid "%s is not supported by AMS."
-#~ msgstr "%s is not supported by the AMS."
-
-#~ msgid "Don't remind me of this version again"
-#~ msgstr "Herinner me niet meer aan deze versie."
-
-#~ msgid "Error: IP or Access Code are not correct"
-#~ msgstr "Fout: IP-adres of toegangscode zijn niet correct"
-
-#~ msgid "Order of inner wall/outer wall/infil"
-#~ msgstr "Volgorde binnenwand/buitenwand/opvulling (infill)"
-
-#~ msgid "Print sequence of inner wall, outer wall and infill. "
-#~ msgstr ""
-#~ "Dit is de afdrukvolgorde van binnenwanden, buitenwanden en vulling "
-#~ "(infill)."
-
-#~ msgid "inner/outer/infill"
-#~ msgstr "binnenste/buitenste/vulling (infill)"
-
-#~ msgid "outer/inner/infill"
-#~ msgstr "buitenste/binnenste/vulling (infill)"
-
-#~ msgid "infill/inner/outer"
-#~ msgstr "Vulling (infill)/binnenste/buitenste"
-
-#~ msgid "infill/outer/inner"
-#~ msgstr "Vulling (infill)/buitenste/binnenste"
-
-#~ msgid "inner-outer-inner/infill"
-#~ msgstr "binnen-buiten-binnen/infill"
-
-#~ msgid "Export 3MF"
-#~ msgstr "Exporteer 3mf"
-
-#~ msgid "Export project as 3MF."
-#~ msgstr "Dit exporteert het project als 3MF."
-
-#~ msgid "Export slicing data"
-#~ msgstr "Exporteer slicinggegevens"
-
-#~ msgid "Export slicing data to a folder."
-#~ msgstr "Exporteer slicinggegevens naar een map"
-
-#~ msgid "Load slicing data"
-#~ msgstr "Laad slicinggegevens"
-
-#~ msgid "Load cached slicing data from directory"
-#~ msgstr "Laad slicinggegevens in de cache uit de directory"
-
-#~ msgid "Slice"
-#~ msgstr "Slice"
-
-#~ msgid "Slice the plates: 0-all plates, i-plate i, others-invalid"
-#~ msgstr ""
-#~ "Slice de printbedden: 0-alle printbedden, i-printbed i, andere-onjuist"
-
-#~ msgid "Show command help."
-#~ msgstr "Dit toont de command hulp."
-
-#~ msgid "UpToDate"
-#~ msgstr "UpToDate"
-
-#~ msgid "Update the configs values of 3mf to latest."
-#~ msgstr "Update de configuratiewaarden van 3mf naar de nieuwste versie."
-
-#~ msgid "mtcpp"
-#~ msgstr "mtcpp"
-
-#~ msgid "max triangle count per plate for slicing."
-#~ msgstr "max triangle count per plate for slicing"
-
-#~ msgid "mstpp"
-#~ msgstr "mstpp"
-
-#~ msgid "max slicing time per plate in seconds."
-#~ msgstr "max slicing time per plate in seconds"
-
-#~ msgid "Normative check"
-#~ msgstr "Normative check"
-
-#~ msgid "Check the normative items."
-#~ msgstr "Check the normative items."
-
-#~ msgid "Output Model Info"
-#~ msgstr "Model informatie weergeven"
-
-#~ msgid "Output the model's information."
-#~ msgstr "Dit geeft de informatie van het model weer."
-
-#~ msgid "Export Settings"
-#~ msgstr "Exporteer instellingen"
-
-#~ msgid "Export settings to a file."
-#~ msgstr "Exporteer instellingen naar een bestand"
-
-#~ msgid "Send progress to pipe"
-#~ msgstr "Stuur voortgang naar pipe"
-
-#~ msgid "Send progress to pipe."
-#~ msgstr "Stuur voortgang naar pipe"
-
-#~ msgid "Arrange Options"
-#~ msgstr "Rangschik opties"
-
-#~ msgid "Arrange options: 0-disable, 1-enable, others-auto"
-#~ msgstr "Rangschik opties: 0-uitzetten, 1-aanzetten, anders-automatisch"
-
-#~ msgid "Convert Unit"
-#~ msgstr "Eenheid converteren"
-
-#~ msgid "Convert the units of model"
-#~ msgstr "Converteer de eenheden van het model"
-
-#~ msgid "Scale the model by a float factor"
-#~ msgstr "Schaal het model met een float-factor"
-
-#~ msgid "Load General Settings"
-#~ msgstr "Standaard instellingen laden"
-
-#~ msgid "Load process/machine settings from the specified file"
-#~ msgstr "Proces/machine instellingen laden vanuit een gekozen bestand"
-
-#~ msgid "Load Filament Settings"
-#~ msgstr "Filament instellingen laden"
-
-#~ msgid "Load filament settings from the specified file list"
-#~ msgstr "Filament instellingen laden vanuit een bestandslijst"
-
-#~ msgid "Skip Objects"
-#~ msgstr "Skip Objects"
-
-#~ msgid "Skip some objects in this print"
-#~ msgstr "Skip some objects in this print"
-
-#~ msgid "Output directory"
-#~ msgstr "Uitvoermap"
-
-#~ msgid "Output directory for the exported files."
-#~ msgstr "Dit is de map waarin de geëxporteerde bestanden worden opgeslagen"
-
-#~ msgid "Debug level"
-#~ msgstr "Debuggen level"
-
-#~ msgid ""
-#~ "Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
-#~ "trace\n"
-#~ msgstr ""
-#~ "Sets debug logging level. 0:fataal, 1:error, 2:waarschuwing, 3:info, 4:"
-#~ "debug, 5:trace\n"
-
-#~ msgid ""
-#~ "3D Scene Operations\n"
-#~ "Did you know how to control view and object/part selection with mouse and "
-#~ "touchpanel in the 3D scene?"
-#~ msgstr ""
-#~ "3D-scènebewerkingen\n"
-#~ "Weet u hoe u de weergave en selectie van objecten/onderdelen met de muis "
-#~ "en het aanraakscherm in de 3D-scène kunt bedienen?"
-
-#~ msgid ""
-#~ "Fix Model\n"
-#~ "Did you know that you can fix a corrupted 3D model to avoid a lot of "
-#~ "slicing problems?"
-#~ msgstr ""
-#~ "Model repareren\n"
-#~ "Wist u dat u een beschadigd 3D-model kunt repareren om veel snijproblemen "
-#~ "te voorkomen?"
-
-# Source and destination string both English but don't match!
-#~ msgid "Embeded"
-#~ msgstr "Embedded"
-
-#~ msgid ""
-#~ "OrcaSlicer configuration file may be corrupted and is not abled to be "
-#~ "parsed.Please delete the file and try again."
-#~ msgstr ""
-#~ "OrcaSlicer configuratiebestand is mogelijks corrupt, en kan niet verwerkt "
-#~ "worden.Verwijder het configuratiebestand en probeer het opnieuw."
-
-#~ msgid "Online Models"
-#~ msgstr "Online Models"
-
-#~ msgid "Show online staff-picked models on the home page"
-#~ msgstr "Show online staff-picked models on the home page"
-
-#~ msgid "The minimum printing speed when slow down for cooling"
-#~ msgstr "De minimale printsnelheid indien er afgeremd wordt om af te koelen"
-
-#~ msgid ""
-#~ "The bed temperature exceeds filament's vitrification temperature. Please "
-#~ "open the front door of printer before printing to avoid nozzle clog."
-#~ msgstr ""
-#~ "De bedtemperatuur overschrijdt de vitrificatietemperatuur van het "
-#~ "filament. Open de voorkdeur van de printer voor het printen om "
-#~ "verstopping van de nozzles te voorkomen."
-
-#~ msgid "Temperature of vitrificaiton"
-#~ msgstr "Temperatuur van verglazing"
-
-#~ msgid ""
-#~ "Material becomes soft at this temperature. Thus the heatbed cannot be "
-#~ "hotter than this tempature"
-#~ msgstr ""
-#~ "Op deze temperatuur zal het materiaal zacht worden. Daarom kan de "
-#~ "temperatuur van het printbed niet hoger dan deze waarde."
-
-#~ msgid "Enable this option if machine has auxiliary part cooling fan"
-#~ msgstr ""
-#~ "Schakel deze optie in als de machine een ventilator voor de enclosure "
-#~ "heeft"
-
-#~ msgid ""
-#~ "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
-#~ "during printing except the first several layers which is defined by no "
-#~ "cooling layers"
-#~ msgstr ""
-#~ "Snelheid van de auxiliary part ventilator. De auxiliary ventilator draait "
-#~ "op deze snelheid tijdens het afdrukken, behalve de eerste paar lagen, die "
-#~ "worden gedefinieerd door geen koellagen"
-
-#~ msgid "Empty layers around bottom are replaced by nearest normal layers."
-#~ msgstr ""
-#~ "Lege lagen in de buurt van de bodem worden vervangen door de "
-#~ "dichtsbijzijnde normale lagen."
-
-#~ msgid "The model has too many empty layers."
-#~ msgstr "Het model heeft te veel lege lagen."
-
-#~ msgid "Cali"
-#~ msgstr "Cali"
-
-#~ msgid "Calibration of extrusion"
-#~ msgstr "Kalibratie van de extrusie"
-
-#~ msgid "Push new filament into the extruder"
-#~ msgstr "Push new filament into the extruder"
-
-#, c-format, boost-format
-#~ msgid ""
-#~ "Bed temperature of other layer is lower than bed temperature of initial "
-#~ "layer for more than %d degree centigrade.\n"
-#~ "This may cause model broken free from build plate during printing"
-#~ msgstr ""
-#~ "De printbed temperatuur voor de overige lagen is %d graden celcius lager "
-#~ "dan de temperatuur voor de eerste laag.\n"
-#~ "Hierdoor kan de print loskomen van het printbed gedurende de printtaak"
-
-#~ msgid ""
-#~ "Bed temperature is higher than vitrification temperature of this "
-#~ "filament.\n"
-#~ "This may cause nozzle blocked and printing failure\n"
-#~ "Please keep the printer open during the printing process to ensure air "
-#~ "circulation or reduce the temperature of the hot bed"
-#~ msgstr ""
-#~ "De bedtemperatuur is hoger dan de vitrificatietemperatuur van dit "
-#~ "filament.\n"
-#~ "Dit kan leiden tot verstopping van de nozzle en tot print fouten.\n"
-#~ "Houd de printer open tijdens het printproces om te zorgen voor "
-#~ "luchtcirculatie, of om de temperatuur van het warmwaterbed te verlagen."
-
-#~ msgid "Total Time Estimation"
-#~ msgstr "Total Time Estimation"
-
-#~ msgid "Resonance frequency identification"
-#~ msgstr "Identificatie van de resonantiefrequentie"
-
-#~ msgid "Immediately score"
-#~ msgstr "Immediately score"
-
-#~ msgid "Please give a score for your favorite Bambu Market model."
-#~ msgstr "Please give a score for your favorite Bambu Market model."
-
-#~ msgid "Score"
-#~ msgstr "Score"
-
-#~ msgid "Bambu High Temperature Plate"
-#~ msgstr "Bambu High Temperature (hoge temperatuur) Plate"
-
-#~ msgid "Can't connect to the printer"
-#~ msgstr "Kan geen verbinding maken met de printer"
-
-#~ msgid "Recommended temperature range"
-#~ msgstr "Geadviseerde temperatuurbereik"
-
-#~ msgid "High Temp Plate"
-#~ msgstr "High Temp Plate (hoge temperatuur printbed)"
-
-#~ msgid ""
-#~ "Bed temperature when high temperature plate is installed. Value 0 means "
-#~ "the filament does not support to print on the High Temp Plate"
-#~ msgstr ""
-#~ "Dit is de bedtemperatuur wanneer de hogetemperatuurplaat is "
-#~ "geïnstalleerd. Een waarde van 0 betekent dat het filament printen op de "
-#~ "High Temp Plate niet ondersteunt."
-
-#~ msgid "Internal bridge support thickness"
-#~ msgstr "Dikte interne brugondersteuning"
-
-#~ msgid ""
-#~ "Style and shape of the support. For normal support, projecting the "
-#~ "supports into a regular grid will create more stable supports (default), "
-#~ "while snug support towers will save material and reduce object scarring.\n"
-#~ "For tree support, slim style will merge branches more aggressively and "
-#~ "save a lot of material (default), while hybrid style will create similar "
-#~ "structure to normal support under large flat overhangs."
-#~ msgstr ""
-#~ "Stijl en vorm van de ondersteuning. Voor normale ondersteuning zal grit "
-#~ "stabielere steunen creëren (standaard), terwijl snug materiaal bespaart "
-#~ "en littekens op het object zal verminderen.\n"
-#~ "Voor tree ondersteuning zal de slanke stijl takken agressiever "
-#~ "samenvoegen en veel materiaal besparen (standaard), terwijl de hybride "
-#~ "stijl een soortgelijke structuur creëert als de normale ondersteuning "
-#~ "onder grote platte overhangen."
-
-#~ msgid "Bed temperature difference"
-#~ msgstr "Printbed temperatuurverschil"
-
-#~ msgid ""
-#~ "Do not recommend bed temperature of other layer to be lower than initial "
-#~ "layer for more than this threshold. Too low bed temperature of other "
-#~ "layer may cause the model broken free from build plate"
-#~ msgstr ""
-#~ "Het wordt niet aanbevolen om de bedtemperatuur van andere lagen meer dan "
-#~ "deze drempelwaarde te verlagen dan de eerste laag. Een te lage "
-#~ "bedtemperatuur van een andere laag kan ertoe leiden dat het model loskomt "
-#~ "van de bouwplaat."
-
-#~ msgid "Orient the model"
-#~ msgstr "Oriënteer het model"
->>>>>>> b51856faff (fix/update locale):localization/i18n/nl/OrcaSlicer_nl.po

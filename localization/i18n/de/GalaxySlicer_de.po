@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/de/GalaxySlicer_de.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/de/OrcaSlicer_de.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -407,13 +403,8 @@ msgstr "Alle Verbinder auswählen"
 msgid "Cut"
 msgstr "Schneiden"
 
-<<<<<<< HEAD:localization/i18n/de/GalaxySlicer_de.po
-msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
-msgstr """
-=======
 msgid "Rotate cut plane"
 msgstr ""
->>>>>>> b51856faff (fix/update locale):localization/i18n/de/OrcaSlicer_de.po
 
 msgid "Remove connectors"
 msgstr "Verbinder entfernen"

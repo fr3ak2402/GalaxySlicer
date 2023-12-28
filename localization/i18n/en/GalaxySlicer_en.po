@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/en/GalaxySlicer_en.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/en/OrcaSlicer_en.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13532,8 +13528,6 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
-<<<<<<< HEAD:localization/i18n/en/GalaxySlicer_en.po
-=======
 
 #~ msgid "Movement:"
 #~ msgstr "Movement:"
@@ -13991,4 +13985,3 @@ msgstr ""
 
 #~ msgid "Orient the model"
 #~ msgstr "Orient the model"
->>>>>>> b51856faff (fix/update locale):localization/i18n/en/OrcaSlicer_en.po

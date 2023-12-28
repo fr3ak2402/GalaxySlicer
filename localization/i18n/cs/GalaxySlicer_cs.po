@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-09-30 15:15+0200\n"
 "Last-Translator: René Mošner <Renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -2100,15 +2096,6 @@ msgstr "Výškové rozsahy"
 msgid "Settings for height range"
 msgstr "Nastavení pro výškový rozsah"
 
-<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
-msgid "Object"
-msgstr "Objekt"
-
-msgid "Part"
-msgstr "Část"
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
 msgid "Layer"
 msgstr "Vrstva"
 
@@ -11990,13 +11977,10 @@ msgid ""
 "Wipe tower is only compatible with relative mode. It is recommended on most "
 "printers. Default is checked"
 msgstr ""
-<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 "Při použití volby \"label_objects\" se doporučuje relativní vytlačování. "
 "Některé extrudery fungují lépe, když je tato možnost odškrtnuta (režim "
 "absolutního vytlačování). Čistící věž je kompatibilní pouze s relativním "
 "režimem. Na tiskárnách BambuLab je vždy povolen. Výchozí je zaškrtnuto"
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -14098,10 +14082,9 @@ msgid ""
 "probability of warping."
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Orca Test Tolerance"
-=======
+
 #~ msgid ""
 #~ "Relative extrusion is recommended when using \"label_objects\" option."
 #~ "Some extruders work better with this option unckecked (absolute extrusion "
@@ -14755,4 +14738,3 @@ msgstr ""
 #~ "Zadejte prosím platné hodnoty:\n"
 #~ "start > 10 kroků >= 0\n"
 #~ "konec > začátek + krok)"
->>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po

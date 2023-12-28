@@ -6,11 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-12-25 01:15+0300\n"
 "Last-Translator: Olcay ÖREN\n"
 "Language-Team: Türkçe\n"
@@ -411,15 +407,8 @@ msgstr "Tüm bağlayıcıları seç"
 msgid "Cut"
 msgstr "Kes"
 
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
-msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
-msgstr ""
-"Ana kat olmayan kenarlar kesme aletinden kaynaklanıyor, şimdi düzeltmek "
-"istiyor musunuz?"
-=======
 msgid "Rotate cut plane"
 msgstr ""
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
 
 msgid "Remove connectors"
 msgstr "Konektörleri kaldır"
@@ -1709,12 +1698,6 @@ msgstr ""
 msgid "Text"
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
-msgid "SVG"
-msgstr ""
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
 msgid "Height range Modifier"
 msgstr "Yükseklik aralığı Değiştirici"
 
@@ -11975,13 +11958,10 @@ msgid ""
 "Wipe tower is only compatible with relative mode. It is recommended on most "
 "printers. Default is checked"
 msgstr ""
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
 "\"label_objects\" seçeneği kullanılırken göreceli ekstrüzyon önerilir. Bazı "
 "ekstrüderler bu seçeneğin işareti kaldırıldığında (mutlak ekstrüzyon modu) "
 "daha iyi çalışır. Temizleme kulesi yalnızca göreceli modla uyumludur. "
 "BambuLab yazıcılarında her zaman etkindir. Varsayılan olarak işaretlendi"
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -13247,12 +13227,6 @@ msgstr ""
 msgid "Create Based on Current Printer"
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
-msgid "wiki"
-msgstr ""
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
 msgid "Import Preset"
 msgstr ""
 
@@ -14095,12 +14069,8 @@ msgid ""
 "probability of warping."
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/tr/GalaxySlicer_tr.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Orca Tolerans Testi"
-=======
-#~ msgid "wiki"
-#~ msgstr "wiki"
 
 #~ msgid ""
 #~ "Relative extrusion is recommended when using \"label_objects\" option."
@@ -14157,7 +14127,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Orca, filament renkleri her değiştiğinde yıkama hacimlerinizi yeniden "
 #~ "hesaplar. Bu davranışı Tercihler'de değiştirebilirsiniz."
->>>>>>> b51856faff (fix/update locale):localization/i18n/tr/OrcaSlicer_tr.po
 
 #~ msgid ""
 #~ "The printer timed out while receiving a print job. Please check if the "

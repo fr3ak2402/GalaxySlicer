@@ -7696,10 +7696,10 @@ msgid ""
 <<<<<<< HEAD
 "Orca recalculates your flushing volumes everytime the filament colors "
 "change. You can change this behavior in Preferences."
-=======
+
 "Orca would re-calculate your flushing volumes everytime the filaments color "
 "changed. You could disable the auto-calculate in Orca Slicer > Preferences"
->>>>>>> b51856faff (fix/update locale)
+
 msgstr ""
 "Orca recalcule vos volumes de purge à chaque fois que les couleurs des "
 "filaments changent. Vous pouvez modifier ce comportement dans les "
@@ -14787,7 +14787,7 @@ msgstr ""
 "plateau chauffant peut réduire la probabilité de déformation."
 
 <<<<<<< HEAD
-=======
+
 #~ msgid ""
 #~ "Relative extrusion is recommended when using \"label_objects\" option."
 #~ "Some extruders work better with this option unckecked (absolute extrusion "
@@ -14845,7 +14845,7 @@ msgstr ""
 #~ "filaments changent. Vous pouvez modifier ce comportement dans les "
 #~ "préférences."
 
->>>>>>> b51856faff (fix/update locale)
+
 #~ msgid ""
 #~ "The printer timed out while receiving a print job. Please check if the "
 #~ "network is functioning properly and send the print again."

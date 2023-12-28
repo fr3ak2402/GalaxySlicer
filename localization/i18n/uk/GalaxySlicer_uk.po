@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/uk/GalaxySlicer_uk.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/uk/OrcaSlicer_uk.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13707,10 +13703,9 @@ msgid ""
 "probability of warping."
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/uk/GalaxySlicer_uk.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Тест на переносимість ORCA"
-=======
+
 #~ msgid ""
 #~ "Relative extrusion is recommended when using \"label_objects\" option."
 #~ "Some extruders work better with this option unckecked (absolute extrusion "
@@ -14254,4 +14249,3 @@ msgstr ""
 #~ "Введіть допустимі значення:\n"
 #~ "старт > 10 кроків >= 0\n"
 #~ "кінець > початок + крок)"
->>>>>>> b51856faff (fix/update locale):localization/i18n/uk/OrcaSlicer_uk.po

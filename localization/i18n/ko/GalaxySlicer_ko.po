@@ -7,11 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/ko/GalaxySlicer_ko.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/ko/OrcaSlicer_ko.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-12-25 12:35+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -6773,8 +6769,8 @@ msgstr ""
 msgid ""
 "When recording timelapse without toolhead, it is recommended to add a "
 "\"Timelapse Wipe Tower\" \n"
-"by right-click the empty position of build plate and choose \"Add Primitive"
-"\"->\"Timelapse Wipe Tower\"."
+"by right-click the empty position of build plate and choose \"Add "
+"Primitive\"->\"Timelapse Wipe Tower\"."
 msgstr ""
 "툴헤드 없이 시간 경과를 기록할 경우 \"시간 경과 제거 타워\"를 추가하는 것이 "
 "좋습니다\n"
@@ -9773,10 +9769,10 @@ msgstr "팬 최대 속도 레이어"
 
 msgid ""
 "Fan speed will be ramped up linearly from zero at layer "
-"\"close_fan_the_first_x_layers\" to maximum at layer \"full_fan_speed_layer"
-"\". \"full_fan_speed_layer\" will be ignored if lower than "
-"\"close_fan_the_first_x_layers\", in which case the fan will be running at "
-"maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
+"\"close_fan_the_first_x_layers\" to maximum at layer "
+"\"full_fan_speed_layer\". \"full_fan_speed_layer\" will be ignored if lower "
+"than \"close_fan_the_first_x_layers\", in which case the fan will be running "
+"at maximum allowed speed at layer \"close_fan_the_first_x_layers\" + 1."
 msgstr ""
 "팬 속도는 \"close_fan_the_first_x_layers\" 의 0에서 \"full_fan_speed_layer\" "
 "의 최고 속도까지 선형적으로 증가합니다. \"full_fan_speed_layer\"가 "
@@ -11832,12 +11828,9 @@ msgid ""
 "Wipe tower is only compatible with relative mode. It is recommended on most "
 "printers. Default is checked"
 msgstr ""
-<<<<<<< HEAD:localization/i18n/ko/GalaxySlicer_ko.po
 "상대적 압출은 \"label_objects\" 옵션(기타; 개체 이름표)을 사용할 때 권장됩니"
 "다. 일부 압출기는 이 옵션을 해제하면 더 잘 작동합니다(절대 압출 모드). 와이"
 "프 타워는 상대 모드에서만 호환됩니다"
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/ko/OrcaSlicer_ko.po
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -13061,8 +13054,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We would rename the presets as \"Vendor Type Serial @printer you selected"
-"\". \n"
+"We would rename the presets as \"Vendor Type Serial @printer you "
+"selected\". \n"
 "To add preset for more prinetrs, Please go to printer selection"
 msgstr ""
 "사전 설정의 이름을 \"선택한 공급업체 유형 직렬 @프린터\"로 변경합니다.\n"
@@ -13083,12 +13076,6 @@ msgstr ""
 msgid "Create Based on Current Printer"
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/ko/GalaxySlicer_ko.po
-msgid "wiki"
-msgstr ""
-
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/ko/OrcaSlicer_ko.po
 msgid "Import Preset"
 msgstr ""
 
@@ -13950,10 +13937,9 @@ msgstr ""
 "ABS 등 뒤틀림이 발생하기 쉬운 소재를 출력할 때, 히트베드 온도를 적절하게 높이"
 "면 뒤틀림 가능성을 줄일 수 있다는 사실을 알고 계셨나요?"
 
-<<<<<<< HEAD:localization/i18n/ko/GalaxySlicer_ko.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Orca 공차 테스트"
-=======
+
 #~ msgid "wiki"
 #~ msgstr "위키"
 
@@ -14000,7 +13986,6 @@ msgstr ""
 #~ msgstr ""
 #~ "잘못된 상태입니다.\n"
 #~ "절단 후 유지를 위해 선택된 부품이 없습니다"
->>>>>>> b51856faff (fix/update locale):localization/i18n/ko/OrcaSlicer_ko.po
 
 #~ msgid "Recalculate"
 #~ msgstr "다시계산"

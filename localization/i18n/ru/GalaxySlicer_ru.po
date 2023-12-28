@@ -2,11 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:localization/i18n/ru/GalaxySlicer_ru.po
-"POT-Creation-Date: 2023-12-25 17:20+0100\n"
-=======
-"POT-Creation-Date: 2023-12-28 00:20+0800\n"
->>>>>>> b51856faff (fix/update locale):localization/i18n/ru/OrcaSlicer_ru.po
+"POT-Creation-Date: 2023-12-28 09:27+0100\n"
 "PO-Revision-Date: 2023-11-20 01:07+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -12199,7 +12195,6 @@ msgid ""
 "Wipe tower is only compatible with relative mode. It is recommended on most "
 "printers. Default is checked"
 msgstr ""
-<<<<<<< HEAD:localization/i18n/ru/GalaxySlicer_ru.po
 "Относительная экструзия рекомендуется при использовании опции «Название "
 "моделей».\n"
 "\n"
@@ -12207,8 +12202,6 @@ msgstr ""
 "BambuLab она всегда включена (флажок стоит).\n"
 "Некоторые экструдеры работают лучше при отключении этой опции (абсолютный "
 "режим экструзии)."
-=======
->>>>>>> b51856faff (fix/update locale):localization/i18n/ru/OrcaSlicer_ru.po
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -14337,10 +14330,9 @@ msgid ""
 "probability of warping."
 msgstr ""
 
-<<<<<<< HEAD:localization/i18n/ru/GalaxySlicer_ru.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Тест допусков от Orca"
-=======
+
 #~ msgid ""
 #~ "Relative extrusion is recommended when using \"label_objects\" option."
 #~ "Some extruders work better with this option unckecked (absolute extrusion "
@@ -14673,11 +14665,6 @@ msgstr ""
 #~ "Температура стола превышает температуру стеклования пластиковой нити. "
 #~ "Пожалуйста, откройте переднюю дверцу принтера перед печатью, чтобы "
 #~ "избежать засорения сопла."
-
-#~ msgid "The 3mf is not from Bambu Lab, load geometry data only."
-#~ msgstr ""
-#~ "Этот 3mf создан не в Bambu Lab, поэтому загрузятся только данные "
-#~ "геометрии."
 
 #~ msgid ""
 #~ "The 3mf's version %s is newer than %s's version %s, Found following keys "
@@ -15290,4 +15277,3 @@ msgstr ""
 
 #~ msgid "MB uploaded"
 #~ msgstr "МБ загружено"
->>>>>>> b51856faff (fix/update locale):localization/i18n/ru/OrcaSlicer_ru.po
