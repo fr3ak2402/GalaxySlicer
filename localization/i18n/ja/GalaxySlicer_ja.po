@@ -2,7 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD:localization/i18n/ja/GalaxySlicer_ja.po
 "POT-Creation-Date: 2023-12-25 17:20+0100\n"
+=======
+"POT-Creation-Date: 2023-12-28 00:20+0800\n"
+>>>>>>> b51856faff (fix/update locale):localization/i18n/ja/OrcaSlicer_ja.po
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -214,6 +218,9 @@ msgstr "mm"
 msgid "Position"
 msgstr "位置"
 
+#. TRN - Input label. Be short as possible
+#. Angle between Y axis and text line direction.
+#. TRN - Input label. Be short as possible
 msgid "Rotation"
 msgstr "回転"
 
@@ -253,6 +260,7 @@ msgstr "空間座標"
 msgid "°"
 msgstr "°"
 
+#. TRN - Input label. Be short as possible
 msgid "Size"
 msgstr "サイズ"
 
@@ -261,6 +269,113 @@ msgstr "%"
 
 msgid "uniform scale"
 msgstr "スケール"
+
+msgid "Planar"
+msgstr ""
+
+msgid "Dovetail"
+msgstr ""
+
+msgid "Auto"
+msgstr "自動"
+
+msgid "Manual"
+msgstr ""
+
+msgid "Plug"
+msgstr "Plug"
+
+msgid "Dowel"
+msgstr "Dowel"
+
+msgid "Snap"
+msgstr ""
+
+msgid "Prism"
+msgstr ""
+
+msgid "Frustum"
+msgstr "Frustum"
+
+msgid "Square"
+msgstr "Square"
+
+msgid "Hexagon"
+msgstr "Hexagon"
+
+msgid "Keep orientation"
+msgstr ""
+
+msgid "Place on cut"
+msgstr "Place on cut"
+
+msgid "Flip upside down"
+msgstr ""
+
+msgid "Connectors"
+msgstr "Connectors"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Style"
+msgstr "スタイル"
+
+msgid "Shape"
+msgstr "形状"
+
+#. TRN - Input label. Be short as possible
+#. Size in emboss direction
+#. TRN - Input label. Be short as possible
+msgid "Depth"
+msgstr ""
+
+msgid "Groove"
+msgstr ""
+
+msgid "Width"
+msgstr "幅"
+
+msgid "Flap Angle"
+msgstr ""
+
+msgid "Groove Angle"
+msgstr ""
+
+msgid "Part"
+msgstr "パーツ"
+
+msgid "Object"
+msgstr "OBJ"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane"
+msgstr ""
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane\n"
+"Right-click a part to assign it to the other side"
+msgstr ""
+
+msgid "Move cut plane"
+msgstr ""
+
+msgid "Mode"
+msgstr ""
+
+msgid "Change cut mode"
+msgstr ""
+
+msgid "Tolerance"
+msgstr "Tolerance"
+
+msgid "Drag"
+msgstr "Drag"
+
+msgid "Draw cut line"
+msgstr ""
 
 msgid "Left click"
 msgstr "Left click"
@@ -273,9 +388,6 @@ msgstr "Right click"
 
 msgid "Remove connector"
 msgstr "Remove connector"
-
-msgid "Drag"
-msgstr "Drag"
 
 msgid "Move connector"
 msgstr "Move connector"
@@ -292,29 +404,63 @@ msgstr "Select all connectors"
 msgid "Cut"
 msgstr "カット"
 
-msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgid "Rotate cut plane"
 msgstr ""
 
-msgid "Repairing model object"
-msgstr "モデルオブジェクトを修復"
+msgid "Remove connectors"
+msgstr "Remove connectors"
 
-msgid "Connector"
-msgstr "Connector"
+msgid "Bulge"
+msgstr ""
 
-msgid "Movement:"
-msgstr "移動"
+msgid "Bulge proportion related to radius"
+msgstr ""
 
-msgid "Movement"
-msgstr "移動"
+msgid "Space"
+msgstr "スペース"
 
-msgid "Height"
-msgstr "高度"
+msgid "Space proportion related to radius"
+msgstr ""
+
+msgid "Confirm connectors"
+msgstr "Confirm connectors"
+
+msgid "Cancel"
+msgstr "取消し"
+
+msgid "Build Volume"
+msgstr ""
+
+msgid "Flip cut plane"
+msgstr ""
+
+msgid "Groove change"
+msgstr ""
+
+msgid "Reset"
+msgstr "リセット"
+
+#. TRN: This is an entry in the Undo/Redo stack. The whole line will be 'Edited: (name of whatever was edited)'.
+msgid "Edited"
+msgstr ""
+
+msgid "Cut position"
+msgstr ""
+
+msgid "Reset cutting plane"
+msgstr ""
 
 msgid "Edit connectors"
 msgstr "Edit connectors"
 
 msgid "Add connectors"
 msgstr "Add connectors"
+
+msgid "Reset cut"
+msgstr ""
+
+msgid "Reset cutting plane and remove connectors"
+msgstr ""
 
 msgid "Upper part"
 msgstr "Upper part"
@@ -325,9 +471,6 @@ msgstr "Lower part"
 msgid "Keep"
 msgstr "Keep"
 
-msgid "Place on cut"
-msgstr "Place on cut"
-
 msgid "Flip"
 msgstr "Flip"
 
@@ -337,50 +480,8 @@ msgstr "After cut"
 msgid "Cut to parts"
 msgstr "パーツに割り切る"
 
-msgid "Auto Segment"
-msgstr "自動分割"
-
 msgid "Perform cut"
 msgstr "カットを実行"
-
-msgid "Reset"
-msgstr "リセット"
-
-msgid "Connectors"
-msgstr "Connectors"
-
-msgid "Type"
-msgstr "タイプ"
-
-msgid "Style"
-msgstr "スタイル"
-
-msgid "Shape"
-msgstr "形状"
-
-msgid "Depth ratio"
-msgstr "Depth ratio"
-
-msgid "Remove connectors"
-msgstr "Remove connectors"
-
-msgid "Prizm"
-msgstr "Prizm"
-
-msgid "Frustum"
-msgstr "Frustum"
-
-msgid "Square"
-msgstr "Square"
-
-msgid "Hexagon"
-msgstr "Hexagon"
-
-msgid "Confirm connectors"
-msgstr "Confirm connectors"
-
-msgid "Cancel"
-msgstr "取消し"
 
 msgid "Warning"
 msgstr "警告"
@@ -388,36 +489,45 @@ msgstr "警告"
 msgid "Invalid connectors detected"
 msgstr "Invalid connectors detected"
 
-msgid "connector is out of cut contour"
-msgstr "connector is out of cut contour"
+#, c-format, boost-format
+msgid "%1$d connector is out of cut contour"
+msgid_plural "%1$d connectors are out of cut contour"
+msgstr[0] ""
 
-msgid "connectors are out of cut contour"
-msgstr "connectors are out of cut contour"
-
-msgid "connector is out of object"
-msgstr "connector is out of object"
-
-msgid "connectors is out of object"
-msgstr "Connectors must be on object surface."
+#, c-format, boost-format
+msgid "%1$d connector is out of object"
+msgid_plural "%1$d connectors are out of object"
+msgstr[0] ""
 
 msgid "Some connectors are overlapped"
 msgstr "Some connectors are overlapped"
 
-msgid ""
-"Invalid state. \n"
-"No one part is selected for keep after cut"
+msgid "Select at least one object to keep after cutting."
 msgstr ""
-"Invalid state. \n"
-"No one part is selected to keep after cut"
 
-msgid "Plug"
-msgstr "Plug"
+msgid "Cut plane is placed out of object"
+msgstr ""
 
-msgid "Dowel"
-msgstr "Dowel"
+msgid "Cut plane with groove is invalid"
+msgstr ""
 
-msgid "Tolerance"
-msgstr "Tolerance"
+msgid "Connector"
+msgstr "Connector"
+
+msgid "Cut by Plane"
+msgstr ""
+
+msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgstr ""
+
+msgid "Repairing model object"
+msgstr "モデルオブジェクトを修復"
+
+msgid "Cut by line"
+msgstr ""
+
+msgid "Delete connector"
+msgstr ""
 
 msgid "Mesh name"
 msgstr "メッシュ名"
@@ -513,6 +623,8 @@ msgstr "継ぎ目ペイントを退出"
 msgid "Paint-on seam editing"
 msgstr "継ぎ目編集"
 
+#. TRN - Input label. Be short as possible
+#. Select look of letter shape
 msgid "Font"
 msgstr "フォント"
 
@@ -547,6 +659,655 @@ msgstr "Rotate text"
 
 msgid "Text shape"
 msgstr "文字形状"
+
+msgid "Set Mirror"
+msgstr ""
+
+msgid "Embossed text"
+msgstr ""
+
+msgid "Enter emboss gizmo"
+msgstr ""
+
+msgid "Leave emboss gizmo"
+msgstr ""
+
+msgid "Embossing actions"
+msgstr ""
+
+msgid "Emboss"
+msgstr ""
+
+msgid "Text-Rotate"
+msgstr ""
+
+msgid "NORMAL"
+msgstr ""
+
+msgid "SMALL"
+msgstr ""
+
+msgid "ITALIC"
+msgstr ""
+
+msgid "SWISS"
+msgstr ""
+
+msgid "MODERN"
+msgstr ""
+
+msgid "First font"
+msgstr ""
+
+msgid "Default font"
+msgstr ""
+
+msgid "Advanced"
+msgstr "高度な設定"
+
+msgid ""
+"The text cannot be written using the selected font. Please try choosing a "
+"different font."
+msgstr ""
+
+msgid "Embossed text cannot contain only white spaces."
+msgstr ""
+
+msgid "Text contains character glyph (represented by '?') unknown by font."
+msgstr ""
+
+msgid "Text input doesn't show font skew."
+msgstr ""
+
+msgid "Text input doesn't show font boldness."
+msgstr ""
+
+msgid "Text input doesn't show gap between lines."
+msgstr ""
+
+msgid "Too tall, diminished font height inside text input."
+msgstr ""
+
+msgid "Too small, enlarged font height inside text input."
+msgstr ""
+
+msgid "Text doesn't show current horizontal alignment."
+msgstr ""
+
+msgid "Revert font changes."
+msgstr ""
+
+#, boost-format
+msgid "Font \"%1%\" can't be selected."
+msgstr ""
+
+msgid "Operation"
+msgstr ""
+
+msgid "Join"
+msgstr ""
+
+msgid "Click to change text into object part."
+msgstr ""
+
+msgid "You can't change a type of the last solid part of the object."
+msgstr ""
+
+msgctxt "EmbossOperation"
+msgid "Cut"
+msgstr ""
+
+msgid "Click to change part type into negative volume."
+msgstr ""
+
+msgid "Modifier"
+msgstr "モディファイア"
+
+msgid "Click to change part type into modifier."
+msgstr ""
+
+msgid "Change Text Type"
+msgstr ""
+
+#, boost-format
+msgid "Rename style(%1%) for embossing text"
+msgstr ""
+
+msgid "Name can't be empty."
+msgstr ""
+
+msgid "Name has to be unique."
+msgstr ""
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Rename style"
+msgstr ""
+
+msgid "Rename current style."
+msgstr ""
+
+msgid "Can't rename temporary style."
+msgstr ""
+
+msgid "First Add style to list."
+msgstr ""
+
+#, boost-format
+msgid "Save %1% style"
+msgstr ""
+
+msgid "No changes to save."
+msgstr ""
+
+msgid "New name of style"
+msgstr ""
+
+msgid "Save as new style"
+msgstr ""
+
+msgid "Only valid font can be added to style."
+msgstr ""
+
+msgid "Add style to my list."
+msgstr ""
+
+msgid "Save as new style."
+msgstr ""
+
+msgid "Remove style"
+msgstr ""
+
+msgid "Can't remove the last existing style."
+msgstr ""
+
+#, boost-format
+msgid "Are you sure you want to permanently remove the \"%1%\" style?"
+msgstr ""
+
+#, boost-format
+msgid "Delete \"%1%\" style."
+msgstr ""
+
+#, boost-format
+msgid "Can't delete \"%1%\". It is last style."
+msgstr ""
+
+#, boost-format
+msgid "Can't delete temporary style \"%1%\"."
+msgstr ""
+
+#, boost-format
+msgid "Modified style \"%1%\""
+msgstr ""
+
+#, boost-format
+msgid "Current style is \"%1%\""
+msgstr ""
+
+#, boost-format
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+
+msgid "Not valid style."
+msgstr ""
+
+#, boost-format
+msgid "Style \"%1%\" can't be used and will be removed from a list."
+msgstr ""
+
+msgid "Unset italic"
+msgstr ""
+
+msgid "Set italic"
+msgstr ""
+
+msgid "Unset bold"
+msgstr ""
+
+msgid "Set bold"
+msgstr ""
+
+msgid "Revert text size."
+msgstr ""
+
+msgid "Revert embossed depth."
+msgstr ""
+
+msgid ""
+"Advanced options cannot be changed for the selected font.\n"
+"Select another font."
+msgstr ""
+
+msgid "Revert using of model surface."
+msgstr ""
+
+msgid "Revert Transformation per glyph."
+msgstr ""
+
+msgid "Set global orientation for whole text."
+msgstr ""
+
+msgid "Set position and orientation per glyph."
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Left"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Center"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Right"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Top"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Middle"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Bottom"
+msgstr ""
+
+msgid "Revert alignment."
+msgstr ""
+
+#. TRN EmbossGizmo: font units
+msgid "points"
+msgstr ""
+
+msgid "Revert gap between characters"
+msgstr ""
+
+msgid "Distance between characters"
+msgstr ""
+
+msgid "Revert gap between lines"
+msgstr ""
+
+msgid "Distance between lines"
+msgstr ""
+
+msgid "Undo boldness"
+msgstr ""
+
+msgid "Tiny / Wide glyphs"
+msgstr ""
+
+msgid "Undo letter's skew"
+msgstr ""
+
+msgid "Italic strength ratio"
+msgstr ""
+
+msgid "Undo translation"
+msgstr ""
+
+msgid "Distance of the center of the text to the model surface."
+msgstr ""
+
+msgid "Undo rotation"
+msgstr ""
+
+msgid "Rotate text Clock-wise."
+msgstr ""
+
+msgid "Unlock the text's rotation when moving text along the object's surface."
+msgstr ""
+
+msgid "Lock the text's rotation when moving text along the object's surface."
+msgstr ""
+
+msgid "Select from True Type Collection."
+msgstr ""
+
+msgid "Set text to face camera"
+msgstr ""
+
+msgid "Orient the text towards the camera."
+msgstr ""
+
+#, boost-format
+msgid ""
+"Can't load exactly same font(\"%1%\"). Aplication selected a similar "
+"one(\"%2%\"). You have to specify font for enable edit text."
+msgstr ""
+
+msgid "No symbol"
+msgstr ""
+
+msgid "Loading"
+msgstr "ロード中"
+
+msgid "In queue"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Height of one text line - Font Ascent
+msgid "Height"
+msgstr "高度"
+
+#. TRN - Input label. Be short as possible
+#. Copy surface of model on surface of the embossed text
+#. TRN - Input label. Be short as possible
+msgid "Use surface"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Option to change projection on curved surface
+#. for each character(glyph) in text separately
+msgid "Per glyph"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Align Top|Middle|Bottom and Left|Center|Right
+msgid "Alignment"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Char gap"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Line gap"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Boldness"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Like Font italic
+msgid "Skew ratio"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Distance from model surface to be able
+#. move text as part fully into not flat surface
+#. move text as modifier fully out of not flat surface
+#. TRN - Input label. Be short as possible
+msgid "From surface"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Keep vector from bottom to top of text aligned with printer Y axis
+msgid "Keep up"
+msgstr ""
+
+#. TRN - Input label. Be short as possible.
+#. Some Font file contain multiple fonts inside and
+#. this is numerical selector of font inside font collections
+msgid "Collection"
+msgstr ""
+
+msgid "Enter SVG gizmo"
+msgstr ""
+
+msgid "Leave SVG gizmo"
+msgstr ""
+
+msgid "SVG actions"
+msgstr ""
+
+msgid "SVG"
+msgstr ""
+
+#. TRN This is an item label in the undo-redo stack.
+msgid "SVG-Rotate"
+msgstr ""
+
+#, boost-format
+msgid "Opacity (%1%)"
+msgstr ""
+
+#, boost-format
+msgid "Color gradient (%1%)"
+msgstr ""
+
+msgid "Undefined fill type"
+msgstr ""
+
+msgid "Linear gradient"
+msgstr ""
+
+msgid "Radial gradient"
+msgstr ""
+
+msgid "Open filled path"
+msgstr ""
+
+msgid "Undefined stroke type"
+msgstr ""
+
+msgid "Path can't be healed from selfintersection and multiple points."
+msgstr ""
+
+msgid ""
+"Final shape constains selfintersection or multiple points with same "
+"coordinate."
+msgstr ""
+
+#, boost-format
+msgid "Shape is marked as invisible (%1%)."
+msgstr ""
+
+#. TRN: The first placeholder is shape identifier, the second one is text describing the problem.
+#, boost-format
+msgid "Fill of shape (%1%) contains unsupported: %2%."
+msgstr ""
+
+#, boost-format
+msgid "Stroke of shape (%1%) is too thin (minimal width is %2% mm)."
+msgstr ""
+
+#, boost-format
+msgid "Stroke of shape (%1%) contains unsupported: %2%."
+msgstr ""
+
+msgid "Face the camera"
+msgstr ""
+
+#. TRN - Preview of filename after clear local filepath.
+msgid "Unknown filename"
+msgstr ""
+
+#, boost-format
+msgid "SVG file path is \"%1%\""
+msgstr ""
+
+msgid "Reload SVG file from disk."
+msgstr ""
+
+msgid "Change file"
+msgstr ""
+
+msgid "Change to another .svg file"
+msgstr ""
+
+msgid "Forget the file path"
+msgstr ""
+
+msgid ""
+"Do NOT save local path to 3MF file.\n"
+"Also disables 'reload from disk' option."
+msgstr ""
+
+#. TRN: An menu option to convert the SVG into an unmodifiable model part.
+msgid "Bake"
+msgstr ""
+
+#. TRN: Tooltip for the menu item.
+msgid "Bake into model as uneditable part"
+msgstr ""
+
+msgid "Save as"
+msgstr ""
+
+msgid "Save SVG file"
+msgstr ""
+
+msgid "Save as '.svg' file"
+msgstr ""
+
+msgid "Size in emboss direction."
+msgstr ""
+
+#. TRN: The placeholder contains a number.
+#, boost-format
+msgid "Scale also changes amount of curve samples (%1%)"
+msgstr ""
+
+msgid "Width of SVG."
+msgstr ""
+
+msgid "Height of SVG."
+msgstr ""
+
+msgid "Lock/unlock the aspect ratio of the SVG."
+msgstr ""
+
+msgid "Reset scale"
+msgstr ""
+
+msgid "Resize"
+msgstr ""
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr ""
+
+msgid "Reset distance"
+msgstr ""
+
+msgid "Reset rotation"
+msgstr ""
+
+msgid "Lock/unlock rotation angle when dragging above the surface."
+msgstr ""
+
+msgid "Mirror vertically"
+msgstr ""
+
+msgid "Mirror horizontally"
+msgstr ""
+
+#. TRN: This is the name of the action that shows in undo/redo stack (changing part type from SVG to something else).
+msgid "Change SVG Type"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Mirror"
+msgstr "反転"
+
+msgid "Choose SVG file for emboss:"
+msgstr ""
+
+#, boost-format
+msgid "File does NOT exist (%1%)."
+msgstr ""
+
+#, boost-format
+msgid "Filename has to end with \".svg\" but you selected %1%"
+msgstr ""
+
+#, boost-format
+msgid "Nano SVG parser can't load from file (%1%)."
+msgstr ""
+
+#, boost-format
+msgid "SVG file does NOT contain a single path to be embossed (%1%)."
+msgstr ""
+
+msgid "Vertex"
+msgstr ""
+
+msgid "Edge"
+msgstr ""
+
+msgid "Plane"
+msgstr ""
+
+msgid "Point on edge"
+msgstr ""
+
+msgid "Point on circle"
+msgstr ""
+
+msgid "Point on plane"
+msgstr ""
+
+msgid "Center of edge"
+msgstr ""
+
+msgid "Center of circle"
+msgstr ""
+
+msgid "ShiftLeft mouse button"
+msgstr ""
+
+msgid "Select feature"
+msgstr ""
+
+msgid "Select point"
+msgstr ""
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Restart selection"
+msgstr ""
+
+msgid "Esc"
+msgstr "Esc"
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Measure"
+msgstr ""
+
+msgid "Edit to scale"
+msgstr ""
+
+msgctxt "Verb"
+msgid "Scale"
+msgstr ""
+
+msgid "None"
+msgstr "無し"
+
+msgid "Diameter"
+msgstr "直径"
+
+msgid "Length"
+msgstr "長さ"
+
+msgid "Selection"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "コピー"
+
+msgid "Perpendicular distance"
+msgstr ""
+
+msgid "Distance"
+msgstr ""
+
+msgid "Direct distance"
+msgstr ""
+
+msgid "Distance XYZ"
+msgstr ""
 
 msgid "Ctrl+"
 msgstr "Ctrl+"
@@ -722,9 +1483,6 @@ msgstr ""
 msgid "Sync user presets"
 msgstr ""
 
-msgid "Loading"
-msgstr "ロード中"
-
 msgid "Loading user preset"
 msgstr "ユーザープリセットを読込み中"
 
@@ -754,9 +1512,6 @@ msgstr "G-codeファイルを選択"
 
 msgid "Import File"
 msgstr "Import File"
-
-msgid "Delete"
-msgstr "削除"
 
 msgid "Choose files"
 msgstr "ファイルを選択"
@@ -827,9 +1582,6 @@ msgstr "拭き上げ設定"
 
 msgid "Bed adhension"
 msgstr "ベッド接着"
-
-msgid "Advanced"
-msgstr "高度な設定"
 
 msgid "Add part"
 msgstr "パーツを追加"
@@ -919,9 +1671,6 @@ msgid "Galaxy Flower"
 msgstr ""
 
 msgid "Text"
-msgstr ""
-
-msgid "SVG"
 msgstr ""
 
 msgid "Height range Modifier"
@@ -1050,9 +1799,6 @@ msgstr "Z軸方向"
 
 msgid "Mirror along the Z axis"
 msgstr "反転 (Z軸)"
-
-msgid "Mirror"
-msgstr "反転"
 
 msgid "Mirror object"
 msgstr "オブジェクトを反転"
@@ -1317,12 +2063,6 @@ msgstr "Height ranges"
 msgid "Settings for height range"
 msgstr "Settings for height range"
 
-msgid "Object"
-msgstr "OBJ"
-
-msgid "Part"
-msgstr "パーツ"
-
 msgid "Layer"
 msgstr "積層"
 
@@ -1346,9 +2086,6 @@ msgstr "オブジェクトの最後のパーツはタイプを変更できませ
 
 msgid "Negative Part"
 msgstr "マイナスパーツ"
-
-msgid "Modifier"
-msgstr "モディファイア"
 
 msgid "Support Blocker"
 msgstr "サポート除去器"
@@ -1420,9 +2157,6 @@ msgstr "インフィル密度 (%)"
 
 msgid "Auto Brim"
 msgstr "オートブリム"
-
-msgid "Auto"
-msgstr "自動"
 
 msgid "Mouse ear"
 msgstr ""
@@ -1499,9 +2233,6 @@ msgstr "カスタム G-code"
 msgid "Enter Custom G-code used on current layer:"
 msgstr "現在の積層にカスタムG-codeを追加"
 
-msgid "OK"
-msgstr "OK"
-
 msgid "Jump to Layer"
 msgstr "積層に移動"
 
@@ -1556,14 +2287,14 @@ msgstr "プリンタ無し"
 msgid "..."
 msgstr ""
 
-msgid "Failed to connect to the server"
-msgstr "サーバーに接続できませんでした"
-
 msgid "Check the status of current system services"
 msgstr "Check the status of current system services"
 
 msgid "code"
 msgstr "code"
+
+msgid "Failed to connect to the server"
+msgstr "サーバーに接続できませんでした"
 
 msgid "Failed to connect to cloud service"
 msgstr "Failed to connect to cloud service"
@@ -2365,9 +3096,6 @@ msgstr ""
 
 msgid "Origin"
 msgstr "原点"
-
-msgid "Diameter"
-msgstr "直径"
 
 msgid "Size in X and Y of the rectangular plate."
 msgstr "プレート上のサイズ"
@@ -5898,6 +6626,11 @@ msgstr ""
 "independent support layer height"
 
 msgid ""
+"Layer height is too small.\n"
+"It will set to min_layer_height\n"
+msgstr ""
+
+msgid ""
 "Layer height exceeds the limit in Printer Settings -> Extruder -> Layer "
 "height limits ,this may cause printing quality issues."
 msgstr ""
@@ -6517,9 +7250,8 @@ msgid "Flushing volumes for filament change"
 msgstr "フィラメントを入替える為のフラッシュ量"
 
 msgid ""
-"Studio would re-calculate your flushing volumes everytime the filaments "
-"color changed. You could disable the auto-calculate in Bambu Studio > "
-"Preferences"
+"Orca would re-calculate your flushing volumes everytime the filaments color "
+"changed. You could disable the auto-calculate in Orca Slicer > Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6580,9 +7312,6 @@ msgstr "⌘+Shift+G"
 
 msgid "Ctrl+Shift+G"
 msgstr "Ctrl+Shift+G"
-
-msgid "Copy to clipboard"
-msgstr "コピー"
 
 msgid "Paste from clipboard"
 msgstr "貼り付け"
@@ -6692,9 +7421,6 @@ msgstr "Shift + ↑↓←→"
 msgid "Movement step set to 1 mm"
 msgstr "移動ステップを1mmに設定"
 
-msgid "Esc"
-msgstr "Esc"
-
 msgid "keyboard 1-9: set filament for object/part"
 msgstr "キー1-9: オブジェクト/パーツのフィラメントを設定"
 
@@ -6778,9 +7504,6 @@ msgstr "オブジェクトとパーツ造形用の押出機番号を設定"
 
 msgid "Delete objects, parts, modifiers  "
 msgstr "オブジェクト、パーツ、モディファイヤを削除"
-
-msgid "Space"
-msgstr "スペース"
 
 msgid "Select the object/part and press space to change the name"
 msgstr "オブジェクト/パーツを選択し、名前を変更します"
@@ -8737,9 +9460,6 @@ msgstr ""
 "この設定により、壁面を造形時にノズルがランダムで軽微な振動を加えます。これに"
 "より、表面にザラザラ感が出来上がります。"
 
-msgid "None"
-msgstr "無し"
-
 msgid "Contour"
 msgstr "Contour"
 
@@ -9531,9 +10251,6 @@ msgstr "積層変更時のリトラクション"
 msgid "Force a retraction when changes layer"
 msgstr "この設定により、積層を変更時にリトラクションを実行します。"
 
-msgid "Length"
-msgstr "長さ"
-
 msgid "Retraction Length"
 msgstr "リトラクション長さ"
 
@@ -9710,6 +10427,21 @@ msgstr ""
 msgid ""
 "To minimize the visibility of the seam in a closed loop extrusion, a small "
 "inward movement is executed before the extruder leaves the loop."
+msgstr ""
+
+msgid "Wipe before external loop"
+msgstr ""
+
+msgid ""
+"To minimise visibility of potential overextrusion at the start of an "
+"external perimeter when printing with Outer/Inner or Inner/Outer/Inner wall "
+"print order, the deretraction is performed slightly on the inside from the "
+"start of the external perimeter. That way any potential over extrusion is "
+"hidden from the outside surface. \n"
+"\n"
+"This is useful when printing with Outer/Inner or Inner/Outer/Inner wall "
+"print order as in these modes it is more likely an external perimeter is "
+"printed immediately after a deretraction move."
 msgstr ""
 
 msgid "Wipe speed"
@@ -10382,9 +11114,6 @@ msgstr "プライム量"
 msgid "The volume of material to prime extruder on tower."
 msgstr "フィラメントのフラッシュ量です。"
 
-msgid "Width"
-msgstr "幅"
-
 msgid "Width of prime tower"
 msgstr "プライムタワーの幅です。"
 
@@ -10531,8 +11260,8 @@ msgstr ""
 msgid ""
 "Relative extrusion is recommended when using \"label_objects\" option.Some "
 "extruders work better with this option unckecked (absolute extrusion mode). "
-"Wipe tower is only compatible with relative mode. It is always enabled on "
-"BambuLab printers. Default is checked"
+"Wipe tower is only compatible with relative mode. It is recommended on most "
+"printers. Default is checked"
 msgstr ""
 
 msgid ""
@@ -11681,9 +12410,6 @@ msgstr ""
 msgid "Create Based on Current Printer"
 msgstr ""
 
-msgid "wiki"
-msgstr ""
-
 msgid "Import Preset"
 msgstr ""
 
@@ -12217,11 +12943,31 @@ msgid ""
 "Did you know that GalaxySlicer can support Air filtration/Exhuast Fan?"
 msgstr ""
 
+#: resources/data/hints.ini: [hint:G-code window]
+msgid ""
+"G-code window\n"
+"You can turn on/off the G-code window by pressing the <b>C</b> key."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Switch workspaces]
+msgid ""
+"Switch workspaces\n"
+"You can swtich between <b>Prepare</b> and <b>Preview</b> workspaces by "
+"pressing the <b>Tab</b> key."
+msgstr ""
+
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
 "Did you know that Galaxy Slicer offers a wide range of keyboard shortcuts "
 "and 3D scene operations."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Reverse on odd]
+msgid ""
+"Reverse on odd\n"
+"Did you know that <b>Reverse on odd</b> feature can significantly improve "
+"the surface quality of your overhangs?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Cut Tool]
@@ -12466,3 +13212,475 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+<<<<<<< HEAD:localization/i18n/ja/GalaxySlicer_ja.po
+=======
+
+#~ msgid "Movement:"
+#~ msgstr "移動"
+
+#~ msgid "Movement"
+#~ msgstr "移動"
+
+#~ msgid "Auto Segment"
+#~ msgstr "自動分割"
+
+#~ msgid "Depth ratio"
+#~ msgstr "Depth ratio"
+
+#~ msgid "Prizm"
+#~ msgstr "Prizm"
+
+#~ msgid "connector is out of cut contour"
+#~ msgstr "connector is out of cut contour"
+
+#~ msgid "connectors are out of cut contour"
+#~ msgstr "connectors are out of cut contour"
+
+#~ msgid "connector is out of object"
+#~ msgstr "connector is out of object"
+
+#~ msgid "connectors is out of object"
+#~ msgstr "Connectors must be on object surface."
+
+#~ msgid ""
+#~ "Invalid state. \n"
+#~ "No one part is selected for keep after cut"
+#~ msgstr ""
+#~ "Invalid state. \n"
+#~ "No one part is selected to keep after cut"
+
+#~ msgid "Edit Text"
+#~ msgstr "Edit Text"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "エラー：スレッドを作成できません"
+
+#~ msgid "Exception"
+#~ msgstr "異常"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "Choose SLA archive:"
+
+#~ msgid "Import file"
+#~ msgstr "Import file"
+
+#~ msgid "Import model and profile"
+#~ msgstr "Import model and profile"
+
+#~ msgid "Import profile only"
+#~ msgstr "Import profile only"
+
+#~ msgid "Import model only"
+#~ msgstr "Import model only"
+
+#~ msgid "Accurate"
+#~ msgstr "Accurate"
+
+#~ msgid "Balanced"
+#~ msgstr "Balanced"
+
+#~ msgid "Quick"
+#~ msgstr "Quick"
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr "リトラクション時にノズルが最後のパスに沿って移動する距離です。"
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "モデルを簡略化\n"
+#~ "オブジェクトのメッシュを簡略化して、スライスの速度を上げられます。モデルを"
+#~ "右クリックし、メニューで選択できます。"
+
+#~ msgid "Filling bed "
+#~ msgstr "Filling bed"
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% のインフィル パターンは 100%% の密度をサポートしません。"
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "直線パターンに切り替えますか？\n"
+#~ "はい - 直線パターンに切り替えます\n"
+#~ "いいえ - 充填密度をリセットします"
+
+#~ msgid "Please heat the nozzle to above 170 degree before loading filament."
+#~ msgstr ""
+#~ "フィラメントをロードする前に、ノズル温度を170℃以上に加熱してください"
+
+#~ msgid "Newer 3mf version"
+#~ msgstr "新3mfバージョン"
+
+#, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr ""
+#~ "スパース インフィルの密度です。100%%に設定する場合ソリッドになります。"
+
+#~ msgid "Tree support wall loops"
+#~ msgstr "ツリーサポート壁層数"
+
+#~ msgid "This setting specify the count of walls around tree support"
+#~ msgstr "ツリーサポートの壁面層数です。"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " doesn't work at 100%% density "
+
+#~ msgid "Ctrl + Shift + Enter"
+#~ msgstr "Ctrl + Shift + Enter"
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "ツール 底面選択"
+
+#~ msgid "Export as STL"
+#~ msgstr "STL形式でエクスポート"
+
+#~ msgid "Check cloud service status"
+#~ msgstr "Check cloud service status"
+
+#~ msgid "Please input a valid value (K in 0~0.5)"
+#~ msgstr "有効な値を入力してください (0 ~ 0.5)"
+
+#~ msgid "Please input a valid value (K in 0~0.5, N in 0.6~2.0)"
+#~ msgstr "有効な値を入力してください (K: 0 ~ 0.5, N: 0.6 ~ 2.0)"
+
+#~ msgid "Export all objects as STL"
+#~ msgstr "全てのオブジェクト (STL)"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Found following keys "
+#~ "unrecognized:"
+#~ msgstr ""
+#~ "3mfのバージョン %s は %sのバージョン %sより新しい為、下記のキーを認識でき"
+#~ "ません"
+
+#~ msgid "You'd better upgrade your software.\n"
+#~ msgstr "ソフトウェアをアップデートする必要があります。\n"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Suggest to upgrade "
+#~ "your software."
+#~ msgstr ""
+#~ "3mfのバージョン%sは%sの%sより新しい為、ソフトウェアを更新してください。"
+
+#~ msgid "The 3mf is not compatible, load geometry data only!"
+#~ msgstr ""
+#~ "この3mfファイルと互換性がありません、ジオメトリーデータのみ読込みます。"
+
+#~ msgid "Incompatible 3mf"
+#~ msgstr "互換性の無い 3mf"
+
+#~ msgid "Add/Remove printers"
+#~ msgstr "プリンターを追加/削除"
+
+#, c-format, boost-format
+#~ msgid "%s is not supported by AMS."
+#~ msgstr "%s is not supported by the AMS."
+
+#~ msgid "Don't remind me of this version again"
+#~ msgstr "今後このバージョンの通知をしません"
+
+#~ msgid "Error: IP or Access Code are not correct"
+#~ msgstr "エラー: IPアドレス或はアクセスコードが正しくありません"
+
+#~ msgid "Order of inner wall/outer wall/infil"
+#~ msgstr "造形順番"
+
+#~ msgid "Print sequence of inner wall, outer wall and infill. "
+#~ msgstr "内壁、外壁とインフィルの造形順序を指定します。"
+
+#~ msgid "inner/outer/infill"
+#~ msgstr "内壁/外壁/インフィル"
+
+#~ msgid "outer/inner/infill"
+#~ msgstr "外壁/内壁/インフィル"
+
+#~ msgid "infill/inner/outer"
+#~ msgstr "インフィル/内壁/外壁"
+
+#~ msgid "infill/outer/inner"
+#~ msgstr "インフィル/外壁/内壁"
+
+#~ msgid "inner-outer-inner/infill"
+#~ msgstr "内壁-外壁-内壁/インフィル"
+
+#~ msgid "Export 3MF"
+#~ msgstr "3mf をエクスポート"
+
+#~ msgid "Export project as 3MF."
+#~ msgstr "プロジェクトを3MF式で出力"
+
+#~ msgid "Export slicing data"
+#~ msgstr "スライスデータをエクスポート"
+
+#~ msgid "Export slicing data to a folder."
+#~ msgstr "スライスデータをエクスポート"
+
+#~ msgid "Load slicing data"
+#~ msgstr "スライスデータを読込み"
+
+#~ msgid "Load cached slicing data from directory"
+#~ msgstr "スライスデータを読込み"
+
+#~ msgid "Slice"
+#~ msgstr "スライス"
+
+#~ msgid "Slice the plates: 0-all plates, i-plate i, others-invalid"
+#~ msgstr "プレートをスライス: 0: 全て, i:プレートi, その他: 無効"
+
+#~ msgid "Show command help."
+#~ msgstr "ヘルプを表示します。"
+
+#~ msgid "UpToDate"
+#~ msgstr "最新の状態です。"
+
+#~ msgid "Update the configs values of 3mf to latest."
+#~ msgstr "3mfの構成値を更新"
+
+#~ msgid "mtcpp"
+#~ msgstr "mtcpp"
+
+#~ msgid "max triangle count per plate for slicing."
+#~ msgstr "max triangle count per plate for slicing"
+
+#~ msgid "mstpp"
+#~ msgstr "mstpp"
+
+#~ msgid "max slicing time per plate in seconds."
+#~ msgstr "max slicing time per plate in seconds"
+
+#~ msgid "Normative check"
+#~ msgstr "Normative check"
+
+#~ msgid "Check the normative items."
+#~ msgstr "Check the normative items."
+
+#~ msgid "Output Model Info"
+#~ msgstr "出力モデル情報"
+
+#~ msgid "Output the model's information."
+#~ msgstr "出力するモデル情報です。"
+
+#~ msgid "Export Settings"
+#~ msgstr "エクスポート設定"
+
+#~ msgid "Export settings to a file."
+#~ msgstr "設定をファイルにエクスポートします。"
+
+#~ msgid "Send progress to pipe"
+#~ msgstr "パイプに進捗を送信"
+
+#~ msgid "Send progress to pipe."
+#~ msgstr "パイプに進捗を送信"
+
+#~ msgid "Arrange Options"
+#~ msgstr "レイアウト設定"
+
+#~ msgid "Arrange options: 0-disable, 1-enable, others-auto"
+#~ msgstr "レイアウト設定: 0: 無効　1: 有効　その他: 自動"
+
+#~ msgid "Convert Unit"
+#~ msgstr "単位変換"
+
+#~ msgid "Convert the units of model"
+#~ msgstr "モデルの単位を変換"
+
+#~ msgid "Scale the model by a float factor"
+#~ msgstr "指定した比率で伸縮する"
+
+#~ msgid "Load General Settings"
+#~ msgstr "一般設定を読込む"
+
+#~ msgid "Load process/machine settings from the specified file"
+#~ msgstr "指定ファイルから設定値を読込む"
+
+#~ msgid "Load Filament Settings"
+#~ msgstr "フィラメント設定を読込む"
+
+#~ msgid "Load filament settings from the specified file list"
+#~ msgstr "指定したファイルリストからフィラメント設定を読込む"
+
+#~ msgid "Skip Objects"
+#~ msgstr "Skip Objects"
+
+#~ msgid "Skip some objects in this print"
+#~ msgstr "Skip some objects in this print"
+
+#~ msgid "Output directory"
+#~ msgstr "出力先フォルダ"
+
+#~ msgid "Output directory for the exported files."
+#~ msgstr "エクスポートの出力先フォルダです。"
+
+#~ msgid "Debug level"
+#~ msgstr "デバッグ レベル"
+
+#~ msgid ""
+#~ "Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+#~ "trace\n"
+#~ msgstr ""
+#~ "デバッグロギングレベルを設定します。0:fatal、1:error、2:warning、3:info、"
+#~ "4:debug、5:trace。\n"
+
+#~ msgid ""
+#~ "3D Scene Operations\n"
+#~ "Did you know how to control view and object/part selection with mouse and "
+#~ "touchpanel in the 3D scene?"
+#~ msgstr ""
+#~ "3Dシーンの操作\n"
+#~ "マウスとタッチパネルで、オブジェクト/パーツの操作方法を確認しましょう"
+
+#~ msgid ""
+#~ "Fix Model\n"
+#~ "Did you know that you can fix a corrupted 3D model to avoid a lot of "
+#~ "slicing problems?"
+#~ msgstr ""
+#~ "モデル修復\n"
+#~ "破損したモデルでも修復してスライスできます。"
+
+#~ msgid "Embeded"
+#~ msgstr "Embedded"
+
+#~ msgid "Online Models"
+#~ msgstr "Online Models"
+
+#~ msgid "Show online staff-picked models on the home page"
+#~ msgstr "Show online staff-picked models on the home page"
+
+#~ msgid "The minimum printing speed when slow down for cooling"
+#~ msgstr "冷却のために速度を落とした時の最低造形速度。"
+
+#~ msgid ""
+#~ "The bed temperature exceeds filament's vitrification temperature. Please "
+#~ "open the front door of printer before printing to avoid nozzle clog."
+#~ msgstr ""
+#~ "ベッド温度がフィラメントの軟化温度より高いです、ノズル詰まりが発生する可能"
+#~ "性があります。ベッド温度を下げるか、プリンタのドアを開けてください。"
+
+#~ msgid "Temperature of vitrificaiton"
+#~ msgstr "軟化温度"
+
+#~ msgid ""
+#~ "Material becomes soft at this temperature. Thus the heatbed cannot be "
+#~ "hotter than this tempature"
+#~ msgstr ""
+#~ "この温度でフィラメントが柔らかくなります、ベッド温度をこれ以下に設定してく"
+#~ "ださい"
+
+#~ msgid "Enable this option if machine has auxiliary part cooling fan"
+#~ msgstr "パーツ補助冷却ファンがある場合有効にしてください"
+
+#~ msgid ""
+#~ "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
+#~ "during printing except the first several layers which is defined by no "
+#~ "cooling layers"
+#~ msgstr "補助パーツ冷却ファンの回転速度です。"
+
+#~ msgid "Empty layers around bottom are replaced by nearest normal layers."
+#~ msgstr "底面との隙間があります、レイヤーを入れ替えました"
+
+#~ msgid "The model has too many empty layers."
+#~ msgstr "このモデルには空層があります。"
+
+#~ msgid "Cali"
+#~ msgstr "標定"
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "押出のキャリブレーション"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Push new filament into the extruder"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "ベッド温度が1層目温度より %d ℃以上低いです。造形中プレートより離脱する可能"
+#~ "性があります"
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "ベッド温度がフィラメントの軟化温度より高いです。ノズル詰りや造形失敗する可"
+#~ "能性があります。\n"
+#~ "ドアを開いて換気を良くするか、ベッド温度を下げてください。"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Total Time Estimation"
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "共振特性測定"
+
+#~ msgid "Immediately score"
+#~ msgstr "Immediately score"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "Please give a score for your favorite Bambu Market model."
+
+#~ msgid "Score"
+#~ msgstr "Score"
+
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Bambu 高温プレート"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "プリンターに接続できない"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "推奨温度範囲"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "高温プレート"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "高温プレートが装着時のベッド温度です。値が0の場合、フィラメントが高温プ"
+#~ "レートに使用できない意味です。"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "内部ブリッジサポート厚さ"
+
+#~ msgid ""
+#~ "Style and shape of the support. For normal support, projecting the "
+#~ "supports into a regular grid will create more stable supports (default), "
+#~ "while snug support towers will save material and reduce object scarring.\n"
+#~ "For tree support, slim style will merge branches more aggressively and "
+#~ "save a lot of material (default), while hybrid style will create similar "
+#~ "structure to normal support under large flat overhangs."
+#~ msgstr ""
+#~ "サポートのスタイルと形状。通常サポートでは、グリッドでサポートを生成しま"
+#~ "す。ツリーサポートでは、サポート材を節約できます。ハイブリッドでは、ツリー"
+#~ "より大きなサポート面を生成できます。"
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "ベッド温度差"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "他の層のベッド温度を1層目よりこの値以上高く設定してください。温度が低くな"
+#~ "ると、造形失敗する可能性があります。"
+
+#~ msgid "Orient the model"
+#~ msgstr "モデルの向きを調整"
+>>>>>>> b51856faff (fix/update locale):localization/i18n/ja/OrcaSlicer_ja.po

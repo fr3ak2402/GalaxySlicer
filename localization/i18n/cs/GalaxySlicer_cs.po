@@ -2,7 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 "POT-Creation-Date: 2023-12-25 17:20+0100\n"
+=======
+"POT-Creation-Date: 2023-12-28 00:20+0800\n"
+>>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
 "PO-Revision-Date: 2023-09-30 15:15+0200\n"
 "Last-Translator: René Mošner <Renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -216,6 +220,9 @@ msgstr "mm"
 msgid "Position"
 msgstr "Pozice"
 
+#. TRN - Input label. Be short as possible
+#. Angle between Y axis and text line direction.
+#. TRN - Input label. Be short as possible
 msgid "Rotation"
 msgstr "Otáčení"
 
@@ -255,6 +262,7 @@ msgstr "Světové souřadnice"
 msgid "°"
 msgstr "°"
 
+#. TRN - Input label. Be short as possible
 msgid "Size"
 msgstr "Rozměr"
 
@@ -263,6 +271,113 @@ msgstr "%"
 
 msgid "uniform scale"
 msgstr "jednotné měřítko"
+
+msgid "Planar"
+msgstr ""
+
+msgid "Dovetail"
+msgstr ""
+
+msgid "Auto"
+msgstr "Automaticky"
+
+msgid "Manual"
+msgstr ""
+
+msgid "Plug"
+msgstr "Čep"
+
+msgid "Dowel"
+msgstr "Kolík"
+
+msgid "Snap"
+msgstr ""
+
+msgid "Prism"
+msgstr ""
+
+msgid "Frustum"
+msgstr "Středový jehlan"
+
+msgid "Square"
+msgstr "Čtverec"
+
+msgid "Hexagon"
+msgstr "Šestiúhelník"
+
+msgid "Keep orientation"
+msgstr ""
+
+msgid "Place on cut"
+msgstr "Umístit řezem na podložku"
+
+msgid "Flip upside down"
+msgstr ""
+
+msgid "Connectors"
+msgstr "Spojky"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Style"
+msgstr "Styl"
+
+msgid "Shape"
+msgstr "Tvar"
+
+#. TRN - Input label. Be short as possible
+#. Size in emboss direction
+#. TRN - Input label. Be short as possible
+msgid "Depth"
+msgstr ""
+
+msgid "Groove"
+msgstr ""
+
+msgid "Width"
+msgstr "Šířka"
+
+msgid "Flap Angle"
+msgstr ""
+
+msgid "Groove Angle"
+msgstr ""
+
+msgid "Part"
+msgstr "Dílů"
+
+msgid "Object"
+msgstr "Objekt"
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane"
+msgstr ""
+
+msgid ""
+"Click to flip the cut plane\n"
+"Drag to move the cut plane\n"
+"Right-click a part to assign it to the other side"
+msgstr ""
+
+msgid "Move cut plane"
+msgstr ""
+
+msgid "Mode"
+msgstr ""
+
+msgid "Change cut mode"
+msgstr ""
+
+msgid "Tolerance"
+msgstr "Tolerance"
+
+msgid "Drag"
+msgstr "Táhnutí"
+
+msgid "Draw cut line"
+msgstr ""
 
 msgid "Left click"
 msgstr "Levý klik"
@@ -275,9 +390,6 @@ msgstr "Pravý klik"
 
 msgid "Remove connector"
 msgstr "Odstranit spojku"
-
-msgid "Drag"
-msgstr "Táhnutí"
 
 msgid "Move connector"
 msgstr "Přesunout spojku"
@@ -294,29 +406,63 @@ msgstr "Vybrat všechny spojky"
 msgid "Cut"
 msgstr "Řezat"
 
-msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgid "Rotate cut plane"
 msgstr ""
 
-msgid "Repairing model object"
-msgstr "Oprava objektu modelu"
+msgid "Remove connectors"
+msgstr "Odstranit spojky"
 
-msgid "Connector"
-msgstr "Spojka"
+msgid "Bulge"
+msgstr ""
 
-msgid "Movement:"
-msgstr "Přejezd:"
+msgid "Bulge proportion related to radius"
+msgstr ""
 
-msgid "Movement"
-msgstr "Přejezd"
+msgid "Space"
+msgstr "Mezerník"
 
-msgid "Height"
-msgstr "Výška"
+msgid "Space proportion related to radius"
+msgstr ""
+
+msgid "Confirm connectors"
+msgstr "Potvrzení spojek"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Build Volume"
+msgstr ""
+
+msgid "Flip cut plane"
+msgstr ""
+
+msgid "Groove change"
+msgstr ""
+
+msgid "Reset"
+msgstr "Výchozí"
+
+#. TRN: This is an entry in the Undo/Redo stack. The whole line will be 'Edited: (name of whatever was edited)'.
+msgid "Edited"
+msgstr ""
+
+msgid "Cut position"
+msgstr ""
+
+msgid "Reset cutting plane"
+msgstr ""
 
 msgid "Edit connectors"
 msgstr "Upravit spojky"
 
 msgid "Add connectors"
 msgstr "Přidat spojky"
+
+msgid "Reset cut"
+msgstr ""
+
+msgid "Reset cutting plane and remove connectors"
+msgstr ""
 
 msgid "Upper part"
 msgstr "Horní část"
@@ -327,9 +473,6 @@ msgstr "Spodní část"
 msgid "Keep"
 msgstr "Ponechat"
 
-msgid "Place on cut"
-msgstr "Umístit řezem na podložku"
-
 msgid "Flip"
 msgstr "Otočit"
 
@@ -339,50 +482,8 @@ msgstr "Po řezu"
 msgid "Cut to parts"
 msgstr "Rozřezat na díly"
 
-msgid "Auto Segment"
-msgstr "Automatický segment"
-
 msgid "Perform cut"
 msgstr "Provést řez"
-
-msgid "Reset"
-msgstr "Výchozí"
-
-msgid "Connectors"
-msgstr "Spojky"
-
-msgid "Type"
-msgstr "Typ"
-
-msgid "Style"
-msgstr "Styl"
-
-msgid "Shape"
-msgstr "Tvar"
-
-msgid "Depth ratio"
-msgstr "Poměr hloubky"
-
-msgid "Remove connectors"
-msgstr "Odstranit spojky"
-
-msgid "Prizm"
-msgstr "Hranol"
-
-msgid "Frustum"
-msgstr "Středový jehlan"
-
-msgid "Square"
-msgstr "Čtverec"
-
-msgid "Hexagon"
-msgstr "Šestiúhelník"
-
-msgid "Confirm connectors"
-msgstr "Potvrzení spojek"
-
-msgid "Cancel"
-msgstr "Zrušit"
 
 msgid "Warning"
 msgstr "Varování"
@@ -390,36 +491,49 @@ msgstr "Varování"
 msgid "Invalid connectors detected"
 msgstr "Byly zjištěny neplatné spojky"
 
-msgid "connector is out of cut contour"
-msgstr "spojka je mimo obrys řezu"
+#, c-format, boost-format
+msgid "%1$d connector is out of cut contour"
+msgid_plural "%1$d connectors are out of cut contour"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
-msgid "connectors are out of cut contour"
-msgstr "spojky jsou mimo obrys řezu"
-
-msgid "connector is out of object"
-msgstr "spojka je mimo objekt"
-
-msgid "connectors is out of object"
-msgstr "spojky jsou mimo objekt"
+#, c-format, boost-format
+msgid "%1$d connector is out of object"
+msgid_plural "%1$d connectors are out of object"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 msgid "Some connectors are overlapped"
 msgstr "Některé spojky se překrývají"
 
-msgid ""
-"Invalid state. \n"
-"No one part is selected for keep after cut"
+msgid "Select at least one object to keep after cutting."
 msgstr ""
-"Neplatný stav. \n"
-"Není vybrána žádná část pro zachování po řezu"
 
-msgid "Plug"
-msgstr "Čep"
+msgid "Cut plane is placed out of object"
+msgstr ""
 
-msgid "Dowel"
-msgstr "Kolík"
+msgid "Cut plane with groove is invalid"
+msgstr ""
 
-msgid "Tolerance"
-msgstr "Tolerance"
+msgid "Connector"
+msgstr "Spojka"
+
+msgid "Cut by Plane"
+msgstr ""
+
+msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgstr ""
+
+msgid "Repairing model object"
+msgstr "Oprava objektu modelu"
+
+msgid "Cut by line"
+msgstr ""
+
+msgid "Delete connector"
+msgstr ""
 
 msgid "Mesh name"
 msgstr "Název sítě"
@@ -516,6 +630,8 @@ msgstr ""
 msgid "Paint-on seam editing"
 msgstr ""
 
+#. TRN - Input label. Be short as possible
+#. Select look of letter shape
 msgid "Font"
 msgstr "Písmo"
 
@@ -552,6 +668,655 @@ msgstr "Otočit text"
 
 msgid "Text shape"
 msgstr "Tvar textu"
+
+msgid "Set Mirror"
+msgstr ""
+
+msgid "Embossed text"
+msgstr ""
+
+msgid "Enter emboss gizmo"
+msgstr ""
+
+msgid "Leave emboss gizmo"
+msgstr ""
+
+msgid "Embossing actions"
+msgstr ""
+
+msgid "Emboss"
+msgstr ""
+
+msgid "Text-Rotate"
+msgstr ""
+
+msgid "NORMAL"
+msgstr ""
+
+msgid "SMALL"
+msgstr ""
+
+msgid "ITALIC"
+msgstr ""
+
+msgid "SWISS"
+msgstr ""
+
+msgid "MODERN"
+msgstr ""
+
+msgid "First font"
+msgstr ""
+
+msgid "Default font"
+msgstr ""
+
+msgid "Advanced"
+msgstr "Pokročilé"
+
+msgid ""
+"The text cannot be written using the selected font. Please try choosing a "
+"different font."
+msgstr ""
+
+msgid "Embossed text cannot contain only white spaces."
+msgstr ""
+
+msgid "Text contains character glyph (represented by '?') unknown by font."
+msgstr ""
+
+msgid "Text input doesn't show font skew."
+msgstr ""
+
+msgid "Text input doesn't show font boldness."
+msgstr ""
+
+msgid "Text input doesn't show gap between lines."
+msgstr ""
+
+msgid "Too tall, diminished font height inside text input."
+msgstr ""
+
+msgid "Too small, enlarged font height inside text input."
+msgstr ""
+
+msgid "Text doesn't show current horizontal alignment."
+msgstr ""
+
+msgid "Revert font changes."
+msgstr ""
+
+#, boost-format
+msgid "Font \"%1%\" can't be selected."
+msgstr ""
+
+msgid "Operation"
+msgstr ""
+
+msgid "Join"
+msgstr ""
+
+msgid "Click to change text into object part."
+msgstr ""
+
+msgid "You can't change a type of the last solid part of the object."
+msgstr ""
+
+msgctxt "EmbossOperation"
+msgid "Cut"
+msgstr ""
+
+msgid "Click to change part type into negative volume."
+msgstr ""
+
+msgid "Modifier"
+msgstr "Modifikátor"
+
+msgid "Click to change part type into modifier."
+msgstr ""
+
+msgid "Change Text Type"
+msgstr ""
+
+#, boost-format
+msgid "Rename style(%1%) for embossing text"
+msgstr ""
+
+msgid "Name can't be empty."
+msgstr ""
+
+msgid "Name has to be unique."
+msgstr ""
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Rename style"
+msgstr ""
+
+msgid "Rename current style."
+msgstr ""
+
+msgid "Can't rename temporary style."
+msgstr ""
+
+msgid "First Add style to list."
+msgstr ""
+
+#, boost-format
+msgid "Save %1% style"
+msgstr ""
+
+msgid "No changes to save."
+msgstr ""
+
+msgid "New name of style"
+msgstr ""
+
+msgid "Save as new style"
+msgstr ""
+
+msgid "Only valid font can be added to style."
+msgstr ""
+
+msgid "Add style to my list."
+msgstr ""
+
+msgid "Save as new style."
+msgstr ""
+
+msgid "Remove style"
+msgstr ""
+
+msgid "Can't remove the last existing style."
+msgstr ""
+
+#, boost-format
+msgid "Are you sure you want to permanently remove the \"%1%\" style?"
+msgstr ""
+
+#, boost-format
+msgid "Delete \"%1%\" style."
+msgstr ""
+
+#, boost-format
+msgid "Can't delete \"%1%\". It is last style."
+msgstr ""
+
+#, boost-format
+msgid "Can't delete temporary style \"%1%\"."
+msgstr ""
+
+#, boost-format
+msgid "Modified style \"%1%\""
+msgstr ""
+
+#, boost-format
+msgid "Current style is \"%1%\""
+msgstr ""
+
+#, boost-format
+msgid ""
+"Changing style to \"%1%\" will discard current style modification.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+
+msgid "Not valid style."
+msgstr ""
+
+#, boost-format
+msgid "Style \"%1%\" can't be used and will be removed from a list."
+msgstr ""
+
+msgid "Unset italic"
+msgstr ""
+
+msgid "Set italic"
+msgstr ""
+
+msgid "Unset bold"
+msgstr ""
+
+msgid "Set bold"
+msgstr ""
+
+msgid "Revert text size."
+msgstr ""
+
+msgid "Revert embossed depth."
+msgstr ""
+
+msgid ""
+"Advanced options cannot be changed for the selected font.\n"
+"Select another font."
+msgstr ""
+
+msgid "Revert using of model surface."
+msgstr ""
+
+msgid "Revert Transformation per glyph."
+msgstr ""
+
+msgid "Set global orientation for whole text."
+msgstr ""
+
+msgid "Set position and orientation per glyph."
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Left"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Center"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Right"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Top"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Middle"
+msgstr ""
+
+msgctxt "Alignment"
+msgid "Bottom"
+msgstr ""
+
+msgid "Revert alignment."
+msgstr ""
+
+#. TRN EmbossGizmo: font units
+msgid "points"
+msgstr ""
+
+msgid "Revert gap between characters"
+msgstr ""
+
+msgid "Distance between characters"
+msgstr ""
+
+msgid "Revert gap between lines"
+msgstr ""
+
+msgid "Distance between lines"
+msgstr ""
+
+msgid "Undo boldness"
+msgstr ""
+
+msgid "Tiny / Wide glyphs"
+msgstr ""
+
+msgid "Undo letter's skew"
+msgstr ""
+
+msgid "Italic strength ratio"
+msgstr ""
+
+msgid "Undo translation"
+msgstr ""
+
+msgid "Distance of the center of the text to the model surface."
+msgstr ""
+
+msgid "Undo rotation"
+msgstr ""
+
+msgid "Rotate text Clock-wise."
+msgstr ""
+
+msgid "Unlock the text's rotation when moving text along the object's surface."
+msgstr ""
+
+msgid "Lock the text's rotation when moving text along the object's surface."
+msgstr ""
+
+msgid "Select from True Type Collection."
+msgstr ""
+
+msgid "Set text to face camera"
+msgstr ""
+
+msgid "Orient the text towards the camera."
+msgstr ""
+
+#, boost-format
+msgid ""
+"Can't load exactly same font(\"%1%\"). Aplication selected a similar "
+"one(\"%2%\"). You have to specify font for enable edit text."
+msgstr ""
+
+msgid "No symbol"
+msgstr ""
+
+msgid "Loading"
+msgstr "Načítání"
+
+msgid "In queue"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Height of one text line - Font Ascent
+msgid "Height"
+msgstr "Výška"
+
+#. TRN - Input label. Be short as possible
+#. Copy surface of model on surface of the embossed text
+#. TRN - Input label. Be short as possible
+msgid "Use surface"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Option to change projection on curved surface
+#. for each character(glyph) in text separately
+msgid "Per glyph"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Align Top|Middle|Bottom and Left|Center|Right
+msgid "Alignment"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Char gap"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Line gap"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Boldness"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Like Font italic
+msgid "Skew ratio"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Distance from model surface to be able
+#. move text as part fully into not flat surface
+#. move text as modifier fully out of not flat surface
+#. TRN - Input label. Be short as possible
+msgid "From surface"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+#. Keep vector from bottom to top of text aligned with printer Y axis
+msgid "Keep up"
+msgstr ""
+
+#. TRN - Input label. Be short as possible.
+#. Some Font file contain multiple fonts inside and
+#. this is numerical selector of font inside font collections
+msgid "Collection"
+msgstr ""
+
+msgid "Enter SVG gizmo"
+msgstr ""
+
+msgid "Leave SVG gizmo"
+msgstr ""
+
+msgid "SVG actions"
+msgstr ""
+
+msgid "SVG"
+msgstr ""
+
+#. TRN This is an item label in the undo-redo stack.
+msgid "SVG-Rotate"
+msgstr ""
+
+#, boost-format
+msgid "Opacity (%1%)"
+msgstr ""
+
+#, boost-format
+msgid "Color gradient (%1%)"
+msgstr ""
+
+msgid "Undefined fill type"
+msgstr ""
+
+msgid "Linear gradient"
+msgstr ""
+
+msgid "Radial gradient"
+msgstr ""
+
+msgid "Open filled path"
+msgstr ""
+
+msgid "Undefined stroke type"
+msgstr ""
+
+msgid "Path can't be healed from selfintersection and multiple points."
+msgstr ""
+
+msgid ""
+"Final shape constains selfintersection or multiple points with same "
+"coordinate."
+msgstr ""
+
+#, boost-format
+msgid "Shape is marked as invisible (%1%)."
+msgstr ""
+
+#. TRN: The first placeholder is shape identifier, the second one is text describing the problem.
+#, boost-format
+msgid "Fill of shape (%1%) contains unsupported: %2%."
+msgstr ""
+
+#, boost-format
+msgid "Stroke of shape (%1%) is too thin (minimal width is %2% mm)."
+msgstr ""
+
+#, boost-format
+msgid "Stroke of shape (%1%) contains unsupported: %2%."
+msgstr ""
+
+msgid "Face the camera"
+msgstr ""
+
+#. TRN - Preview of filename after clear local filepath.
+msgid "Unknown filename"
+msgstr ""
+
+#, boost-format
+msgid "SVG file path is \"%1%\""
+msgstr ""
+
+msgid "Reload SVG file from disk."
+msgstr ""
+
+msgid "Change file"
+msgstr ""
+
+msgid "Change to another .svg file"
+msgstr ""
+
+msgid "Forget the file path"
+msgstr ""
+
+msgid ""
+"Do NOT save local path to 3MF file.\n"
+"Also disables 'reload from disk' option."
+msgstr ""
+
+#. TRN: An menu option to convert the SVG into an unmodifiable model part.
+msgid "Bake"
+msgstr ""
+
+#. TRN: Tooltip for the menu item.
+msgid "Bake into model as uneditable part"
+msgstr ""
+
+msgid "Save as"
+msgstr ""
+
+msgid "Save SVG file"
+msgstr ""
+
+msgid "Save as '.svg' file"
+msgstr ""
+
+msgid "Size in emboss direction."
+msgstr ""
+
+#. TRN: The placeholder contains a number.
+#, boost-format
+msgid "Scale also changes amount of curve samples (%1%)"
+msgstr ""
+
+msgid "Width of SVG."
+msgstr ""
+
+msgid "Height of SVG."
+msgstr ""
+
+msgid "Lock/unlock the aspect ratio of the SVG."
+msgstr ""
+
+msgid "Reset scale"
+msgstr ""
+
+msgid "Resize"
+msgstr ""
+
+msgid "Distance of the center of the SVG to the model surface."
+msgstr ""
+
+msgid "Reset distance"
+msgstr ""
+
+msgid "Reset rotation"
+msgstr ""
+
+msgid "Lock/unlock rotation angle when dragging above the surface."
+msgstr ""
+
+msgid "Mirror vertically"
+msgstr ""
+
+msgid "Mirror horizontally"
+msgstr ""
+
+#. TRN: This is the name of the action that shows in undo/redo stack (changing part type from SVG to something else).
+msgid "Change SVG Type"
+msgstr ""
+
+#. TRN - Input label. Be short as possible
+msgid "Mirror"
+msgstr "Zrcadlit"
+
+msgid "Choose SVG file for emboss:"
+msgstr ""
+
+#, boost-format
+msgid "File does NOT exist (%1%)."
+msgstr ""
+
+#, boost-format
+msgid "Filename has to end with \".svg\" but you selected %1%"
+msgstr ""
+
+#, boost-format
+msgid "Nano SVG parser can't load from file (%1%)."
+msgstr ""
+
+#, boost-format
+msgid "SVG file does NOT contain a single path to be embossed (%1%)."
+msgstr ""
+
+msgid "Vertex"
+msgstr ""
+
+msgid "Edge"
+msgstr ""
+
+msgid "Plane"
+msgstr ""
+
+msgid "Point on edge"
+msgstr ""
+
+msgid "Point on circle"
+msgstr ""
+
+msgid "Point on plane"
+msgstr ""
+
+msgid "Center of edge"
+msgstr ""
+
+msgid "Center of circle"
+msgstr ""
+
+msgid "ShiftLeft mouse button"
+msgstr ""
+
+msgid "Select feature"
+msgstr ""
+
+msgid "Select point"
+msgstr ""
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Restart selection"
+msgstr ""
+
+msgid "Esc"
+msgstr "Esc"
+
+msgid "Unselect"
+msgstr ""
+
+msgid "Measure"
+msgstr ""
+
+msgid "Edit to scale"
+msgstr ""
+
+msgctxt "Verb"
+msgid "Scale"
+msgstr ""
+
+msgid "None"
+msgstr "Žádné"
+
+msgid "Diameter"
+msgstr "Průměr"
+
+msgid "Length"
+msgstr "Vzdálenost"
+
+msgid "Selection"
+msgstr ""
+
+msgid "Copy to clipboard"
+msgstr "Kopírovat do schránky"
+
+msgid "Perpendicular distance"
+msgstr ""
+
+msgid "Distance"
+msgstr ""
+
+msgid "Direct distance"
+msgstr ""
+
+msgid "Distance XYZ"
+msgstr ""
 
 msgid "Ctrl+"
 msgstr "Ctrl+"
@@ -745,9 +1510,6 @@ msgstr ""
 msgid "Sync user presets"
 msgstr ""
 
-msgid "Loading"
-msgstr "Načítání"
-
 msgid "Loading user preset"
 msgstr "Načítání uživatelské předvolby"
 
@@ -777,9 +1539,6 @@ msgstr "Vyberte soubor s G-kódem:"
 
 msgid "Import File"
 msgstr "Importovat soubor"
-
-msgid "Delete"
-msgstr "Smazat"
 
 msgid "Choose files"
 msgstr "Vyberte soubory"
@@ -850,9 +1609,6 @@ msgstr "Možnosti čištění"
 
 msgid "Bed adhension"
 msgstr "Přilnavost k Podložce"
-
-msgid "Advanced"
-msgstr "Pokročilé"
 
 msgid "Add part"
 msgstr "Přidat díl"
@@ -942,9 +1698,6 @@ msgid "Galaxy Flower"
 msgstr "Galaxy Květ"
 
 msgid "Text"
-msgstr ""
-
-msgid "SVG"
 msgstr ""
 
 msgid "Height range Modifier"
@@ -1073,9 +1826,6 @@ msgstr "Podél osy Z"
 
 msgid "Mirror along the Z axis"
 msgstr "Zrcadlit podél osy Z"
-
-msgid "Mirror"
-msgstr "Zrcadlit"
 
 msgid "Mirror object"
 msgstr "Zrcadlit objekt"
@@ -1350,12 +2100,15 @@ msgstr "Výškové rozsahy"
 msgid "Settings for height range"
 msgstr "Nastavení pro výškový rozsah"
 
+<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 msgid "Object"
 msgstr "Objekt"
 
 msgid "Part"
 msgstr "Část"
 
+=======
+>>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
 msgid "Layer"
 msgstr "Vrstva"
 
@@ -1378,9 +2131,6 @@ msgstr "Typ poslední části pevného objektu nelze změnit."
 
 msgid "Negative Part"
 msgstr "Negativní díl"
-
-msgid "Modifier"
-msgstr "Modifikátor"
 
 msgid "Support Blocker"
 msgstr "Blokátor podpěr"
@@ -1458,9 +2208,6 @@ msgstr "Hustota výplně (%)"
 msgid "Auto Brim"
 msgstr "Auto Límec"
 
-msgid "Auto"
-msgstr "Automaticky"
-
 msgid "Mouse ear"
 msgstr "Uši myši"
 
@@ -1536,9 +2283,6 @@ msgstr "Vlastní G-kód"
 msgid "Enter Custom G-code used on current layer:"
 msgstr "Zadejte vlastní G-kód použitý na aktuální vrstvě:"
 
-msgid "OK"
-msgstr "OK"
-
 msgid "Jump to Layer"
 msgstr "Přejít na vrstvu"
 
@@ -1593,14 +2337,14 @@ msgstr "Žádná tiskárna"
 msgid "..."
 msgstr "..."
 
-msgid "Failed to connect to the server"
-msgstr "Nepodařilo se připojit k serveru"
-
 msgid "Check the status of current system services"
 msgstr "Zkontrolujte stav aktuálních systémových služeb"
 
 msgid "code"
 msgstr "kód"
+
+msgid "Failed to connect to the server"
+msgstr "Nepodařilo se připojit k serveru"
 
 msgid "Failed to connect to cloud service"
 msgstr "Selhalo připojení ke cloudové službě"
@@ -2436,9 +3180,6 @@ msgstr ""
 
 msgid "Origin"
 msgstr "Počátek"
-
-msgid "Diameter"
-msgstr "Průměr"
 
 msgid "Size in X and Y of the rectangular plate."
 msgstr "Rozměr obdélníkové tiskové podložky v ose X a Y."
@@ -6107,6 +6848,11 @@ msgstr ""
 "nezávislé výšky podpůrné vrstvy"
 
 msgid ""
+"Layer height is too small.\n"
+"It will set to min_layer_height\n"
+msgstr ""
+
+msgid ""
 "Layer height exceeds the limit in Printer Settings -> Extruder -> Layer "
 "height limits ,this may cause printing quality issues."
 msgstr ""
@@ -6767,9 +7513,8 @@ msgid "Flushing volumes for filament change"
 msgstr "Čistící objemy pro výměnu filamentu"
 
 msgid ""
-"Studio would re-calculate your flushing volumes everytime the filaments "
-"color changed. You could disable the auto-calculate in Bambu Studio > "
-"Preferences"
+"Orca would re-calculate your flushing volumes everytime the filaments color "
+"changed. You could disable the auto-calculate in Orca Slicer > Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -6830,9 +7575,6 @@ msgstr "⌘+Shift+G"
 
 msgid "Ctrl+Shift+G"
 msgstr "Ctrl+Shift+G"
-
-msgid "Copy to clipboard"
-msgstr "Kopírovat do schránky"
 
 msgid "Paste from clipboard"
 msgstr "Vložit ze schránky"
@@ -6945,9 +7687,6 @@ msgstr "Shift+libovolná šipka"
 msgid "Movement step set to 1 mm"
 msgstr "Krok pro posun výběru o velikosti 1 mm"
 
-msgid "Esc"
-msgstr "Esc"
-
 msgid "keyboard 1-9: set filament for object/part"
 msgstr "klávesnice 1-9: nastavení filamentu pro objekt/díl"
 
@@ -7031,9 +7770,6 @@ msgstr "Nastavit číslo extruderu pro objekty a díly"
 
 msgid "Delete objects, parts, modifiers  "
 msgstr "Smazat objekty, díly, modifikátory  "
-
-msgid "Space"
-msgstr "Mezerník"
 
 msgid "Select the object/part and press space to change the name"
 msgstr "Vyberte objekt/díl a stiskněte mezerník pro změnu názvu"
@@ -9191,9 +9927,6 @@ msgstr ""
 "Náhodné chvění při tisku na stěnu, takže povrch má hrubý vzhled. Toto "
 "nastavení řídí neostrou polohu"
 
-msgid "None"
-msgstr "Žádné"
-
 msgid "Contour"
 msgstr "Obrys"
 
@@ -10109,9 +10842,6 @@ msgstr "Retrakce při změně vrstvy"
 msgid "Force a retraction when changes layer"
 msgstr "Vynutit retrakci při změně vrstvy"
 
-msgid "Length"
-msgstr "Vzdálenost"
-
 msgid "Retraction Length"
 msgstr "Vzdálenost retrakce"
 
@@ -10318,6 +11048,21 @@ msgid ""
 msgstr ""
 "Aby byla minimalizována viditelnost švu při vytlačování s uzavřenou smyčkou, "
 "je proveden malý pohyb dovnitř předtím, než vytlačovací stroj opustí smyčku."
+
+msgid "Wipe before external loop"
+msgstr ""
+
+msgid ""
+"To minimise visibility of potential overextrusion at the start of an "
+"external perimeter when printing with Outer/Inner or Inner/Outer/Inner wall "
+"print order, the deretraction is performed slightly on the inside from the "
+"start of the external perimeter. That way any potential over extrusion is "
+"hidden from the outside surface. \n"
+"\n"
+"This is useful when printing with Outer/Inner or Inner/Outer/Inner wall "
+"print order as in these modes it is more likely an external perimeter is "
+"printed immediately after a deretraction move."
+msgstr ""
 
 msgid "Wipe speed"
 msgstr "Rychlost čištění"
@@ -11070,9 +11815,6 @@ msgstr "Základní objem"
 msgid "The volume of material to prime extruder on tower."
 msgstr "Objem materiálu k naplnění extruderu na věži."
 
-msgid "Width"
-msgstr "Šířka"
-
 msgid "Width of prime tower"
 msgstr "Šířka pro čistící věž"
 
@@ -11245,13 +11987,16 @@ msgstr "Použít relativní E vzdálenosti"
 msgid ""
 "Relative extrusion is recommended when using \"label_objects\" option.Some "
 "extruders work better with this option unckecked (absolute extrusion mode). "
-"Wipe tower is only compatible with relative mode. It is always enabled on "
-"BambuLab printers. Default is checked"
+"Wipe tower is only compatible with relative mode. It is recommended on most "
+"printers. Default is checked"
 msgstr ""
+<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 "Při použití volby \"label_objects\" se doporučuje relativní vytlačování. "
 "Některé extrudery fungují lépe, když je tato možnost odškrtnuta (režim "
 "absolutního vytlačování). Čistící věž je kompatibilní pouze s relativním "
 "režimem. Na tiskárnách BambuLab je vždy povolen. Výchozí je zaškrtnuto"
+=======
+>>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -12516,9 +13261,6 @@ msgstr ""
 msgid "Create Based on Current Printer"
 msgstr ""
 
-msgid "wiki"
-msgstr ""
-
 msgid "Import Preset"
 msgstr ""
 
@@ -13064,11 +13806,31 @@ msgid ""
 "Did you know that GalaxySlicer can support Air filtration/Exhuast Fan?"
 msgstr ""
 
+#: resources/data/hints.ini: [hint:G-code window]
+msgid ""
+"G-code window\n"
+"You can turn on/off the G-code window by pressing the <b>C</b> key."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Switch workspaces]
+msgid ""
+"Switch workspaces\n"
+"You can swtich between <b>Prepare</b> and <b>Preview</b> workspaces by "
+"pressing the <b>Tab</b> key."
+msgstr ""
+
 #: resources/data/hints.ini: [hint:How to use keyboard shortcuts]
 msgid ""
 "How to use keyboard shortcuts\n"
 "Did you know that Galaxy Slicer offers a wide range of keyboard shortcuts "
 "and 3D scene operations."
+msgstr ""
+
+#: resources/data/hints.ini: [hint:Reverse on odd]
+msgid ""
+"Reverse on odd\n"
+"Did you know that <b>Reverse on odd</b> feature can significantly improve "
+"the surface quality of your overhangs?"
 msgstr ""
 
 #: resources/data/hints.ini: [hint:Cut Tool]
@@ -13336,5 +14098,661 @@ msgid ""
 "probability of warping."
 msgstr ""
 
+<<<<<<< HEAD:localization/i18n/cs/GalaxySlicer_cs.po
 #~ msgid "Orca Tolerance Test"
 #~ msgstr "Orca Test Tolerance"
+=======
+#~ msgid ""
+#~ "Relative extrusion is recommended when using \"label_objects\" option."
+#~ "Some extruders work better with this option unckecked (absolute extrusion "
+#~ "mode). Wipe tower is only compatible with relative mode. It is always "
+#~ "enabled on BambuLab printers. Default is checked"
+#~ msgstr ""
+#~ "Při použití volby \"label_objects\" se doporučuje relativní extruzi. "
+#~ "Některé extrudery fungují lépe, když je tato možnost odškrtnuta (režim "
+#~ "absolutní extruze). Čistící věž je kompatibilní pouze s relativním "
+#~ "režimem. Na tiskárnách BambuLab je vždy povolen. Výchozí je zaškrtnuto"
+
+#~ msgid "Movement:"
+#~ msgstr "Přejezd:"
+
+#~ msgid "Movement"
+#~ msgstr "Přejezd"
+
+#~ msgid "Auto Segment"
+#~ msgstr "Automatický segment"
+
+#~ msgid "Depth ratio"
+#~ msgstr "Poměr hloubky"
+
+#~ msgid "Prizm"
+#~ msgstr "Hranol"
+
+#~ msgid "connector is out of cut contour"
+#~ msgstr "spojka je mimo obrys řezu"
+
+#~ msgid "connectors are out of cut contour"
+#~ msgstr "spojky jsou mimo obrys řezu"
+
+#~ msgid "connector is out of object"
+#~ msgstr "spojka je mimo objekt"
+
+#~ msgid "connectors is out of object"
+#~ msgstr "spojky jsou mimo objekt"
+
+#~ msgid ""
+#~ "Invalid state. \n"
+#~ "No one part is selected for keep after cut"
+#~ msgstr ""
+#~ "Neplatný stav. \n"
+#~ "Není vybrána žádná část pro zachování po řezu"
+
+#~ msgid "Edit Text"
+#~ msgstr "Upravit text"
+
+#~ msgid "Error! Unable to create thread!"
+#~ msgstr "Chyba! Nelze vytvořit vlákno!"
+
+#~ msgid "Exception"
+#~ msgstr "Výjimka"
+
+#~ msgid "Choose SLA archive:"
+#~ msgstr "Vyberte SLA archiv:"
+
+#~ msgid "Import file"
+#~ msgstr "Importovat soubor"
+
+#~ msgid "Import model and profile"
+#~ msgstr "Importovat model a profil"
+
+#~ msgid "Import profile only"
+#~ msgstr "Importovat pouze profil"
+
+#~ msgid "Import model only"
+#~ msgstr "Importujte pouze model"
+
+#~ msgid "Accurate"
+#~ msgstr "Přesné"
+
+#~ msgid "Balanced"
+#~ msgstr "Vyvážené"
+
+#~ msgid "Quick"
+#~ msgstr "Rychlé"
+
+#~ msgid ""
+#~ "Discribe how long the nozzle will move along the last path when retracting"
+#~ msgstr ""
+#~ "Popište, jak dlouho se bude tryska při retrakci pohybovat po poslední "
+#~ "dráze"
+
+#~ msgid ""
+#~ "Simplify Model\n"
+#~ "Did you know that you can reduce the number of triangles in a mesh using "
+#~ "the Simplify mesh feature? Right-click the model and select Simplify "
+#~ "model. Read more in the documentation."
+#~ msgstr ""
+#~ "Zjednodušit model\n"
+#~ "Věděli jste, že můžete snížit počet trojúhelníků v síti pomocí funkce "
+#~ "Zjednodušit síť? Klikněte pravým tlačítkem na model a vyberte možnost "
+#~ "Zjednodušit model. Více informací najdete v dokumentaci."
+
+#~ msgid ""
+#~ "Subtract a Part\n"
+#~ "Did you know that you can subtract one mesh from another using the "
+#~ "Negative part modifier? That way you can, for example, create easily "
+#~ "resizable holes directly in Orca Slicer. Read more in the documentation."
+#~ msgstr ""
+#~ "Odečíst část\n"
+#~ "Věděli jste, že můžete odečíst jednu síťovinu od druhé pomocí negativního "
+#~ "modifikátoru části? Tímto způsobem můžete například vytvářet snadno "
+#~ "nastavitelné otvory přímo v programu Orca Slicer. Přečtěte si více v "
+#~ "dokumentaci."
+
+#~ msgid "Filling bed "
+#~ msgstr "Vyplňování podložky "
+
+#, boost-format
+#~ msgid "%1% infill pattern doesn't support 100%% density."
+#~ msgstr "%1% vzor výplně nepodporuje 100%% hustotu."
+
+#~ msgid ""
+#~ "Switch to rectilinear pattern?\n"
+#~ "Yes - switch to rectilinear pattern automaticlly\n"
+#~ "No  - reset density to default non 100% value automaticlly"
+#~ msgstr ""
+#~ "Přepnout na přímočarý vzor?\n"
+#~ "Ano - přepnout na přímočarý vzor automaticky\n"
+#~ "Ne - automaticky resetovat hustotu na výchozí ne 100% hodnotu"
+
+#~ msgid "Please heat the nozzle to above 170 degree before loading filament."
+#~ msgstr "Před vložením filamentu zahřejte trysku na více než 170 stupňů."
+
+#~ msgid "Newer 3mf version"
+#~ msgstr "Novější verze 3mf"
+
+#~ msgid "Show g-code window"
+#~ msgstr "Zobrazit okno s G-kódem"
+
+#~ msgid "If enabled, g-code window will be displayed."
+#~ msgstr "Pokud je povoleno, zobrazí se okno s G-kódem."
+
+#, fuzzy, c-format
+#~ msgid "Density of internal sparse infill, 100% means solid throughout"
+#~ msgstr "Hustota vnitřní výplně, 100% znamená celistvou v celém rozsahu"
+
+#~ msgid "Tree support wall loops"
+#~ msgstr "Stěnové smyčky na podpěry stromů"
+
+#~ msgid "This setting specify the count of walls around tree support"
+#~ msgstr "Toto nastavení určuje počet stěn kolem podpěry stromu"
+
+#, c-format, boost-format
+#~ msgid " doesn't work at 100%% density "
+#~ msgstr " nefunguje při 100%% hustotě "
+
+#~ msgid "Ctrl + Shift + Enter"
+#~ msgstr "Ctrl + Shift + Enter"
+
+#~ msgid "Tool-Lay on Face"
+#~ msgstr "Nástroj-Plochou na podložku"
+
+#~ msgid "Export as STL"
+#~ msgstr "Exportovat jako STL"
+
+#~ msgid "Check cloud service status"
+#~ msgstr "Zkontrolujte stav cloudové služby"
+
+#~ msgid "Please input a valid value (K in 0~0.5)"
+#~ msgstr "Zadejte prosím platnou hodnotu (K v 0~0,5)"
+
+#~ msgid "Please input a valid value (K in 0~0.5, N in 0.6~2.0)"
+#~ msgstr "Zadejte platnou hodnotu (K v 0~0,5, N v 0,6~2,0)"
+
+#~ msgid "Export all objects as STL"
+#~ msgstr "Exportovat všechny objekty jako STL"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Found following keys "
+#~ "unrecognized:"
+#~ msgstr ""
+#~ "Verze 3mf %s je novější než verze %s %s, byly nalezeny následující klíče "
+#~ "nerozpoznaný:"
+
+#~ msgid "You'd better upgrade your software.\n"
+#~ msgstr "Měli byste aktualizovat software.\n"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "The 3mf's version %s is newer than %s's version %s, Suggest to upgrade "
+#~ "your software."
+#~ msgstr ""
+#~ "Verze %s zařízení 3mf je novější než verze %s %s, navrhněte upgrade "
+#~ "vašeho software."
+
+#~ msgid "The 3mf is not compatible, load geometry data only!"
+#~ msgstr "3mf není kompatibilní, načtěte pouze geometrická data!"
+
+#~ msgid "Incompatible 3mf"
+#~ msgstr "Nekompatibilní 3mf"
+
+#~ msgid "Add/Remove printers"
+#~ msgstr "Přidat/Odebrat tiskárny"
+
+#~ msgid ""
+#~ "When print by object, machines with I3 structure will not generate "
+#~ "timelapse videos."
+#~ msgstr ""
+#~ "Při tisku podle objektu stroje s I3 strukturou nevytvoří časosběrná videa."
+
+#, c-format, boost-format
+#~ msgid "%s is not supported by AMS."
+#~ msgstr "%s není systémem AMS podporován."
+
+#~ msgid "Don't remind me of this version again"
+#~ msgstr "Tuto verzi mi znovu nepřipomínat"
+
+#~ msgid "Error: IP or Access Code are not correct"
+#~ msgstr "Cchyb: IP nebo přístupový kód nejsou správné"
+
+#~ msgid ""
+#~ "Extrude perimeters that have a part over an overhang in the reverse "
+#~ "direction on odd layers. This alternating pattern can drastically improve "
+#~ "steep overhang."
+#~ msgstr ""
+#~ "Extrudovat perimetry, které mají část přes převis ve směru opačném na "
+#~ "lichých vrstvách. Toto střídání může výrazně zlepšit strmý převis."
+
+#~ msgid "Order of inner wall/outer wall/infil"
+#~ msgstr "Pořadí vnitřní stěny/vnější stěny/výplně"
+
+#~ msgid "Print sequence of inner wall, outer wall and infill. "
+#~ msgstr "Tisková sekvence vnitřní stěny, vnější stěny a výplně. "
+
+#~ msgid "inner/outer/infill"
+#~ msgstr "vnitřní/vnější/výplň"
+
+#~ msgid "outer/inner/infill"
+#~ msgstr "vnější/vnitřní/výplň"
+
+#~ msgid "infill/inner/outer"
+#~ msgstr "výplň/vnitřní/vnější"
+
+#~ msgid "infill/outer/inner"
+#~ msgstr "výplň/vnější/vnitřní"
+
+#~ msgid "inner-outer-inner/infill"
+#~ msgstr "vnitřní-vnější-vnitřní/výplň"
+
+#, c-format, boost-format
+#~ msgid "%%"
+#~ msgstr "%%"
+
+#~ msgid "Export 3MF"
+#~ msgstr "Exportovat 3MF"
+
+#~ msgid "Export project as 3MF."
+#~ msgstr "Exportovat projekt jako 3MF."
+
+#~ msgid "Export slicing data"
+#~ msgstr "Exportovat data Slicování"
+
+#~ msgid "Export slicing data to a folder."
+#~ msgstr "Exportovat data Slicování do složky."
+
+#~ msgid "Load slicing data"
+#~ msgstr "Načíst data Slicování"
+
+#~ msgid "Load cached slicing data from directory"
+#~ msgstr "Načíst data dělení z mezipaměti z adresáře"
+
+#~ msgid "Export STL"
+#~ msgstr "Exportovat STL"
+
+#~ msgid "Export the objects as multiple STL."
+#~ msgstr "Exportovat objekty jako více STL souborů."
+
+#~ msgid "Slice"
+#~ msgstr "Slicovat"
+
+#~ msgid "Slice the plates: 0-all plates, i-plate i, others-invalid"
+#~ msgstr ""
+#~ "Slicovat podložky: 0-všechny podložky, i- podložku i, ostatní-neplatné"
+
+#~ msgid "Show command help."
+#~ msgstr "Zobrazit nápovědu k příkazu."
+
+#~ msgid "UpToDate"
+#~ msgstr "Aktualizováno"
+
+#~ msgid "Update the configs values of 3mf to latest."
+#~ msgstr "Aktualizujte konfigurační hodnoty 3mf na nejnovější."
+
+#~ msgid "Load default filaments"
+#~ msgstr "Načíst výchozí filamenty"
+
+#~ msgid "Load first filament as default for those not loaded"
+#~ msgstr "Načíst první filament jako výchozí pro ty, které nebyly načteny"
+
+#~ msgid "mtcpp"
+#~ msgstr "mtcpp"
+
+#~ msgid "max triangle count per plate for slicing."
+#~ msgstr "max počet trojúhelníků na podložku pro slicování."
+
+#~ msgid "mstpp"
+#~ msgstr "mstpp"
+
+#~ msgid "max slicing time per plate in seconds."
+#~ msgstr "max čas slicování na podložku v sekundách."
+
+#~ msgid "Normative check"
+#~ msgstr "Normativní kontrola"
+
+#~ msgid "Check the normative items."
+#~ msgstr "Kontrola normativních prvků."
+
+#~ msgid "Output Model Info"
+#~ msgstr "Info o výstupním modelu"
+
+#~ msgid "Output the model's information."
+#~ msgstr "Vytisknout informace o modelu."
+
+#~ msgid "Export Settings"
+#~ msgstr "Nastavení exportu"
+
+#~ msgid "Export settings to a file."
+#~ msgstr "Exportovat nastavení do souboru."
+
+#~ msgid "Send progress to pipe"
+#~ msgstr "Poslat průběh do roury"
+
+#~ msgid "Send progress to pipe."
+#~ msgstr "Poslat průběh do roury."
+
+#~ msgid "Arrange Options"
+#~ msgstr "Volby uspořádání"
+
+#~ msgid "Arrange options: 0-disable, 1-enable, others-auto"
+#~ msgstr "Volby uspořádání: 0-zakázat, 1-povolit, ostatní-automaticky"
+
+#~ msgid "Repetions count"
+#~ msgstr "Počet opakování"
+
+#~ msgid "Repetions count of the whole model"
+#~ msgstr "Počet opakování celého modelu"
+
+#~ msgid "Convert Unit"
+#~ msgstr "Převést jednotku"
+
+#~ msgid "Convert the units of model"
+#~ msgstr "Převést jednotky modelu"
+
+#~ msgid "Rotate around X"
+#~ msgstr "Rotace kolem osy X"
+
+#~ msgid "Rotation angle around the X axis in degrees."
+#~ msgstr "Úhel rotace kolem osy X v stupních."
+
+#~ msgid "Scale the model by a float factor"
+#~ msgstr "Měřítko modelu pomocí plovoucího faktoru"
+
+#~ msgid "Load General Settings"
+#~ msgstr "Načíst obecná nastavení"
+
+#~ msgid "Load process/machine settings from the specified file"
+#~ msgstr "Načíst nastavení procesu/stroje ze zadaného souboru"
+
+#~ msgid "Load Filament Settings"
+#~ msgstr "Načíst nastavení filamentu"
+
+#~ msgid "Load filament settings from the specified file list"
+#~ msgstr "Načíst nastavení filamentu ze zadaného seznamu souborů"
+
+#~ msgid "Skip Objects"
+#~ msgstr "Přeskočit objekty"
+
+#~ msgid "Skip some objects in this print"
+#~ msgstr "Přeskočit některé objekty při tisku"
+
+#~ msgid "load uptodate process/machine settings when using uptodate"
+#~ msgstr "Načítat aktuální nastavení procesu/stroje při použití aktuálního"
+
+#~ msgid ""
+#~ "load uptodate process/machine settings from the specified file when using "
+#~ "uptodate"
+#~ msgstr ""
+#~ "Načítat aktuální nastavení procesu/stroje ze zadaného souboru při použití "
+#~ "aktuálního"
+
+#~ msgid "Output directory"
+#~ msgstr "Výstupní adresář"
+
+#~ msgid "Output directory for the exported files."
+#~ msgstr "Výstupní adresář pro exportované soubory."
+
+#~ msgid "Debug level"
+#~ msgstr "Úroveň ladění"
+
+#~ msgid ""
+#~ "Sets debug logging level. 0:fatal, 1:error, 2:warning, 3:info, 4:debug, 5:"
+#~ "trace\n"
+#~ msgstr ""
+#~ "Nastaví úroveň protokolování ladění. 0:fatal, 1:error, 2:warning, 3:info, "
+#~ "4:debug, 5:sledovat\n"
+
+#, boost-format
+#~ msgid "The selected preset: %1% is not found."
+#~ msgstr "Vybraná předvolba: %1% nebyla nalezena."
+
+#~ msgid ""
+#~ "3D Scene Operations\n"
+#~ "Did you know how to control view and object/part selection with mouse and "
+#~ "touchpanel in the 3D scene?"
+#~ msgstr ""
+#~ "Operace v 3D scéně\n"
+#~ "Věděli jste, že můžete ovládat zobrazení a výběr objektů nebo částí "
+#~ "pomocí myši a dotykového panelu v 3D scéně?"
+
+#~ msgid ""
+#~ "Fix Model\n"
+#~ "Did you know that you can fix a corrupted 3D model to avoid a lot of "
+#~ "slicing problems?"
+#~ msgstr ""
+#~ "Opravit model\n"
+#~ "Věděli jste, že můžete opravit poškozený 3D model a vyhnout se tak mnoha "
+#~ "problémům při slicování?"
+
+#~ msgid ""
+#~ "When need to print with the printer door opened\n"
+#~ "Opening the printer door can reduce the probability of extruder/hotend "
+#~ "clogging when printing lower temperature filament with a higher enclosure "
+#~ "temperature. More info about this in the Wiki."
+#~ msgstr ""
+#~ "Kdy potřebujete tisknout s otevřenými dveřmi tiskárny\n"
+#~ "Otevření dveří tiskárny může snížit pravděpodobnost ucpaní extruderu/"
+#~ "hotendu při tisku filamentu s nižší teplotou a vyšší teplotě uzavřeného "
+#~ "prostoru. Další informace naleznete ve Wiki."
+
+#~ msgid "Embeded"
+#~ msgstr "Vloženo"
+
+#~ msgid ""
+#~ "OrcaSlicer configuration file may be corrupted and is not abled to be "
+#~ "parsed.Please delete the file and try again."
+#~ msgstr ""
+#~ "Konfigurační soubor OrcaSlicer může být poškozen a nelze jej analyzovat."
+#~ "Smažte soubor a zkuste to znovu."
+
+#~ msgid "Online Models"
+#~ msgstr "Online modely"
+
+#~ msgid "Show online staff-picked models on the home page"
+#~ msgstr "Zobrazit online modely vybrané týmem na úvodní stránce"
+
+#~ msgid "The minimum printing speed when slow down for cooling"
+#~ msgstr "Minimální rychlost tisku při zpomalení kvůli chlazení"
+
+#~ msgid ""
+#~ "There are currently no identical spare consumables available, and "
+#~ "automatic replenishment is currently not possible. \n"
+#~ "(Currently supporting automatic supply of consumables with the same "
+#~ "brand, material type, and color)"
+#~ msgstr ""
+#~ "Aktuálně nejsou k dispozici žádné shodné náhradní spotřební materiály a "
+#~ "automatické doplnění momentálně není možné. \n"
+#~ "(Aktuálně podporuje automatické dodávky spotřebních materiálů se stejnou "
+#~ "značkou, typem materiálu a barvou)"
+
+#~ msgid "Invalid nozzle diameter"
+#~ msgstr "Neplatný průměr trysky"
+
+#~ msgid ""
+#~ "The bed temperature exceeds filament's vitrification temperature. Please "
+#~ "open the front door of printer before printing to avoid nozzle clog."
+#~ msgstr ""
+#~ "Teplota podložky překračuje teplotu vitrifikace filamentu. Prosím. Před "
+#~ "tiskem otevřete přední dvířka tiskárny, aby nedošlo k ucpání trysky."
+
+#~ msgid "Temperature of vitrificaiton"
+#~ msgstr "Teplota vitrifikace"
+
+#~ msgid ""
+#~ "Material becomes soft at this temperature. Thus the heatbed cannot be "
+#~ "hotter than this tempature"
+#~ msgstr ""
+#~ "Materiál při této teplotě změkne. Vyhřívaná podložka tedy nemůže být "
+#~ "teplejší než tato teplota"
+
+#~ msgid "Enable this option if machine has auxiliary part cooling fan"
+#~ msgstr "Povolte tuto možnost, pokud má stroj pomocný chladicí ventilátor"
+
+#~ msgid ""
+#~ "This option is enabled if machine support controlling chamber temperature"
+#~ msgstr ""
+#~ "Tato možnost je povolena, pokud stroj podporuje řízení teploty komory"
+
+#~ msgid "Enable this if printer support air filtration"
+#~ msgstr "Povolte to, pokud tiskárna podporuje filtraci vzduchu"
+
+#~ msgid ""
+#~ "Speed of auxiliary part cooling fan. Auxiliary fan will run at this speed "
+#~ "during printing except the first several layers which is defined by no "
+#~ "cooling layers"
+#~ msgstr ""
+#~ "Rychlost chladicího ventilátoru pomocné části. Pomocný ventilátor poběží "
+#~ "touto rychlostí během tisku kromě prvních několika vrstev, které nejsou "
+#~ "definovány žádnými chladicími vrstvami"
+
+#~ msgid ""
+#~ "Filter out gaps smaller than the threshold specified. This setting won't "
+#~ "affect top/bottom layers"
+#~ msgstr ""
+#~ "Vyfiltrované mezery menší než stanovený práh. Toto nastavení neovlivní "
+#~ "vrstvy horního/spodního povrchu"
+
+#~ msgid "Empty layers around bottom are replaced by nearest normal layers."
+#~ msgstr ""
+#~ "Prázdné vrstvy kolem dna jsou nahrazeny nejbližšími normálními vrstvami."
+
+#~ msgid "The model has too many empty layers."
+#~ msgstr "Model má příliš mnoho prázdných vrstev."
+
+#~ msgid "Cali"
+#~ msgstr "Kalibrace"
+
+#~ msgid "Calibration of extrusion"
+#~ msgstr "Kalibrace extruze"
+
+#~ msgid "Push new filament into the extruder"
+#~ msgstr "Zasuňte nový filament do extruderu"
+
+#, c-format, boost-format
+#~ msgid ""
+#~ "Bed temperature of other layer is lower than bed temperature of initial "
+#~ "layer for more than %d degree centigrade.\n"
+#~ "This may cause model broken free from build plate during printing"
+#~ msgstr ""
+#~ "Teplota podložky ostatních vrstev je nižší než teplota podložky první "
+#~ "vrstvy o více než %d stupňů Celsia.\n"
+#~ "To může způsobit, že se modely během tisku uvolní z podložky"
+
+#~ msgid ""
+#~ "Bed temperature is higher than vitrification temperature of this "
+#~ "filament.\n"
+#~ "This may cause nozzle blocked and printing failure\n"
+#~ "Please keep the printer open during the printing process to ensure air "
+#~ "circulation or reduce the temperature of the hot bed"
+#~ msgstr ""
+#~ "Teplota podložky je vyšší než teplota vitrifikace tohoto filamentu.\n"
+#~ "To může způsobit ucpání trysky a selhání tisku\n"
+#~ "Nechte tiskárnu během procesu tisku otevřenou, abyste zajistili cirkulaci "
+#~ "vzduchu nebo snížení teploty podložky"
+
+#~ msgid "Total Time Estimation"
+#~ msgstr "Celkový odhad času"
+
+#~ msgid "Resonance frequency identification"
+#~ msgstr "Identifikace rezonanční frekvence"
+
+#~ msgid "Immediately score"
+#~ msgstr "Okamžitě ohodnotit"
+
+#~ msgid "Please give a score for your favorite Bambu Market model."
+#~ msgstr "Prosím, ohodnoťte svůj oblíbený model z Bambu Market."
+
+#~ msgid "Score"
+#~ msgstr "Hodnocení"
+
+#~ msgid "Bambu High Temperature Plate"
+#~ msgstr "Bambu vysoká teplota Podlozky"
+
+#~ msgid "Can't connect to the printer"
+#~ msgstr "Nelze se připojit k tiskárně"
+
+#~ msgid "Recommended temperature range"
+#~ msgstr "Doporučený teplotní rozsah"
+
+#~ msgid "High Temp Plate"
+#~ msgstr "High Temp Podložka"
+
+#~ msgid ""
+#~ "Bed temperature when high temperature plate is installed. Value 0 means "
+#~ "the filament does not support to print on the High Temp Plate"
+#~ msgstr ""
+#~ "Toto je teplota podložky, když je instalována konstrukční podložka. "
+#~ "Hodnota 0 znamená, že filament nepodporuje tisk na High Temp Podložku"
+
+#~ msgid "Internal bridge support thickness"
+#~ msgstr "Tloušťka vnitřní podpěry mostu"
+
+#~ msgid ""
+#~ "If enabled, support loops will be generated under the contours of "
+#~ "internal bridges.These support loops could prevent internal bridges from "
+#~ "extruding over the air and improve the top surface quality, especially "
+#~ "when the sparse infill density is low.This value determines the thickness "
+#~ "of the support loops. 0 means disable this feature"
+#~ msgstr ""
+#~ "Pokud je povoleno, podpůrné smyčky budou generovány pod obrysy interních "
+#~ "mostů. Tyto podpůrné smyčky mohou zabránit extruzi materiálu do vzduchu a "
+#~ "zlepšit kvalitu horního povrchu, zejména když je nízká hustota výplně. "
+#~ "Tato hodnota určuje tloušťku podpůrných smyček. Hodnota 0 znamená, že "
+#~ "tato funkce je zakázána."
+
+#, fuzzy, c-format, boost-format
+#~ msgid ""
+#~ "Klipper's max_accel_to_decel will be adjusted to this % of acceleration"
+#~ msgstr "Klipper max_accel_to_decel bude upraven na toto % zrychlení"
+
+#~ msgid ""
+#~ "Style and shape of the support. For normal support, projecting the "
+#~ "supports into a regular grid will create more stable supports (default), "
+#~ "while snug support towers will save material and reduce object scarring.\n"
+#~ "For tree support, slim style will merge branches more aggressively and "
+#~ "save a lot of material (default), while hybrid style will create similar "
+#~ "structure to normal support under large flat overhangs."
+#~ msgstr ""
+#~ "Styl a tvar podpěry. Pro normální podpěru vytvoří promítnutí podpěr do "
+#~ "pravidelné mřížky stabilnější podpěry (výchozí), zatímco přiléhavé "
+#~ "podpěrné věže šetří materiál a omezují zjizvení objektů.\n"
+#~ "Pro podpěru stromu se tenký styl spojí větví se agresivněji a ušetří "
+#~ "spoustu materiálu (výchozí), zatímco hybridní styl vytvoří podobnou "
+#~ "strukturu jako normální podpěr a pod velkými plochými převisy."
+
+#~ msgid "Target chamber temperature"
+#~ msgstr "Cílová teplota v komoře"
+
+#~ msgid "Bed temperature difference"
+#~ msgstr "Rozdíl teplot podložky"
+
+#~ msgid ""
+#~ "Do not recommend bed temperature of other layer to be lower than initial "
+#~ "layer for more than this threshold. Too low bed temperature of other "
+#~ "layer may cause the model broken free from build plate"
+#~ msgstr ""
+#~ "Nedoporučujeme, aby teplota podložky jiné vrstvy byla nižší než počáteční "
+#~ "vrstva o více než tento limit. Příliš nízká teplota podložky jiné vrstvy "
+#~ "může způsobit, že se model uvolní z vyhřívané podložky"
+
+#~ msgid "Orient the model"
+#~ msgstr "Orientujte model"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 0 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "Zadejte prosím platné hodnoty:\n"
+#~ "start > 0 krok >= 0\n"
+#~ "konec > začátek + krok)"
+
+#~ msgid ""
+#~ "Please input valid values:\n"
+#~ "start > 10 step >= 0\n"
+#~ "end > start + step)"
+#~ msgstr ""
+#~ "Zadejte prosím platné hodnoty:\n"
+#~ "start > 10 kroků >= 0\n"
+#~ "konec > začátek + krok)"
+>>>>>>> b51856faff (fix/update locale):localization/i18n/cs/OrcaSlicer_cs.po
