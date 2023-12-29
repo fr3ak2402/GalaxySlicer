@@ -499,7 +499,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
     }
 
     for (auto &item : {L("Cube"), L("Cylinder"), L("Sphere"), L("Cone"), L("Disc"), L("Torus")}) {
-    //    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Orca Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) {
+    //    for (auto &item : {L("Galaxy Cube"), L("Galaxy Flower"), L("Galaxy Cube"), L("Voron Cube"), L("Disc"), L("3DBenchy"), L("Autodesk FDM Test")}) {
             append_menu_item(
                 sub_menu, wxID_ANY, _(item), "",
                 [type, item](wxCommandEvent &) {
@@ -518,7 +518,7 @@ wxMenu* MenuFactory::append_submenu_add_generic(wxMenu* menu, ModelVolumeType ty
 wxMenu* MenuFactory::append_submenu_add_handy_model(wxMenu* menu, ModelVolumeType type) {
     auto sub_menu = new wxMenu;
 
-    for (auto &item : {L("Orca Cube"), L("3DBenchy"), L("Autodesk FDM Test"),
+    for (auto &item : {L("Galaxy Cube"), L("3DBenchy"), L("Autodesk FDM Test"),
                        L("Voron Cube"), L("Stanford Bunny")}) {
         append_menu_item(
             sub_menu, wxID_ANY, _(item), "",
@@ -527,7 +527,7 @@ wxMenu* MenuFactory::append_submenu_add_handy_model(wxMenu* menu, ModelVolumeTyp
                 std::string file_name = item;
                 if (file_name == L("Galaxy Cube"))
                     file_name = "GalaxyCube.step";              
-                else if (file_name == L("Orca Cube"))
+                else if (file_name == L("Galaxy Cube"))
                     file_name = "OrcaCube_v2.3mf";
                 else if (file_name == L("3DBenchy"))
                 file_name = "3DBenchy.stl";
@@ -539,7 +539,7 @@ wxMenu* MenuFactory::append_submenu_add_handy_model(wxMenu* menu, ModelVolumeTyp
                     file_name = "Stanford_Bunny.stl";      
                 else if (file_name == L("Galaxy Flower")) 
                     file_name = "GalaxyFlower.step";
-                else if (file_name == L("Orca Cube")) 
+                else if (file_name == L("Galaxy Cube")) 
                     file_name = "OrcaCube_v2.3mf";
                 else if (file_name == L("Voron Cube")) 
                     file_name = "Voron_Design_Cube_v7.stl";

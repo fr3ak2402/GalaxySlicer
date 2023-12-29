@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 09:27+0100\n"
+"POT-Creation-Date: 2023-12-29 14:02+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -519,7 +519,7 @@ msgstr "Connecteur"
 msgid "Cut by Plane"
 msgstr ""
 
-msgid "non-mainifold edges be caused by cut tool, do you want to fix it now?"
+msgid "non-manifold edges be caused by cut tool, do you want to fix it now?"
 msgstr ""
 
 msgid "Repairing model object"
@@ -1674,8 +1674,8 @@ msgstr "Disque"
 msgid "Torus"
 msgstr ""
 
-msgid "Orca Cube"
-msgstr "Cube Orca"
+msgid "Galaxy Cube"
+msgstr "Cube Galaxy"
 
 msgid "3DBenchy"
 msgstr "3DBenchy"
@@ -1688,9 +1688,6 @@ msgstr "Cube Voron"
 
 msgid "Stanford Bunny"
 msgstr ""
-
-msgid "Galaxy Cube"
-msgstr "Cube Galaxy"
 
 msgid "Galaxy Flower"
 msgstr "Fleur Galaxy"
@@ -7614,8 +7611,9 @@ msgid "Flushing volumes for filament change"
 msgstr "Volumes de purge - Changement de filament"
 
 msgid ""
-"Orca would re-calculate your flushing volumes everytime the filaments color "
-"changed. You could disable the auto-calculate in Orca Slicer > Preferences"
+"Galaxy would re-calculate your flushing volumes everytime the filaments "
+"color changed. You could disable the auto-calculate in GalaxySlicer  > "
+"Preferences"
 msgstr ""
 
 msgid "Flushing volume (mm³) for each filament pair."
@@ -7841,8 +7839,8 @@ msgstr "Gizmo Point de support SLA"
 msgid "Gizmo FDM paint-on seam"
 msgstr "Gizmo Peinture de la couture FDM"
 
-msgid "Swtich between Prepare/Prewview"
-msgstr "Basculer entre Préparer/Aperçu"
+msgid "Switch between Prepare/Preview"
+msgstr ""
 
 msgid "Plater"
 msgstr "Plaquer"
@@ -13754,7 +13752,7 @@ msgstr ""
 #: resources/data/hints.ini: [hint:Switch workspaces]
 msgid ""
 "Switch workspaces\n"
-"You can swtich between <b>Prepare</b> and <b>Preview</b> workspaces by "
+"You can switch between <b>Prepare</b> and <b>Preview</b> workspaces by "
 "pressing the <b>Tab</b> key."
 msgstr ""
 
@@ -14038,6 +14036,12 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Orca Cube"
+#~ msgstr "Cube Orca"
+
+#~ msgid "Swtich between Prepare/Prewview"
+#~ msgstr "Basculer entre Préparer/Aperçu"
 
 #~ msgid "Movement:"
 #~ msgstr "Mouvement:"

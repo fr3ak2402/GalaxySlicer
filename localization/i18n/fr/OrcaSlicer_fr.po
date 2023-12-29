@@ -7697,7 +7697,7 @@ msgid ""
 "Orca recalculates your flushing volumes everytime the filament colors "
 "change. You can change this behavior in Preferences."
 
-"Orca would re-calculate your flushing volumes everytime the filaments color "
+"Galaxy would re-calculate your flushing volumes everytime the filaments color "
 "changed. You could disable the auto-calculate in Orca Slicer > Preferences"
 
 msgstr ""
