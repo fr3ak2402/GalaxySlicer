@@ -62,6 +62,7 @@ wxString get_fail_reason(int code)
 #endif //__WINDOWS__
 
      m_tocken.reset(new int(0));
+
      std::string icon_path = (boost::format("%1%/images/GalaxySlicerTitle.ico") % resources_dir()).str();
      SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
@@ -186,7 +187,7 @@ wxString get_fail_reason(int code)
      m_link_Terms_title->SetFont(Label::Head_13);
      m_link_Terms_title->SetMaxSize(wxSize(FromDIP(450), -1));
      m_link_Terms_title->Wrap(FromDIP(450));
-     m_link_Terms_title->SetForegroundColour(wxColour("#693A71")); 
+     m_link_Terms_title->SetForegroundColour(wxColour("#693A71"));
      m_link_Terms_title->Bind(wxEVT_LEFT_DOWN, [this](auto& e) {
          wxString txt = _L("Thank you for purchasing a Bambu Lab device.Before using your Bambu Lab device, please read the termsand conditions.By clicking to agree to use your Bambu Lab device, you agree to abide by the Privacy Policyand Terms of Use(collectively, the \"Terms\"). If you do not comply with or agree to the Bambu Lab Privacy Policy, please do not use Bambu Lab equipment and services.");
          ConfirmBeforeSendDialog confirm_dlg(this, wxID_ANY, _L("Terms and Conditions"), ConfirmBeforeSendDialog::ButtonStyle::ONLY_CONFIRM);
@@ -395,6 +396,7 @@ wxString get_fail_reason(int code)
      m_button_bind->SetMinSize(BIND_DIALOG_BUTTON_SIZE);
      m_button_bind->SetCornerRadius(FromDIP(12));
      m_button_bind->Enable(false);
+
 
      StateColor btn_bg_white(std::pair<wxColour, int>(wxColour(206, 206, 206), StateColor::Hovered),
                             std::pair<wxColour, int>(*wxWHITE, StateColor::Normal));
@@ -661,7 +663,7 @@ UnBindMachineDialog::UnBindMachineDialog(Plater *plater /*= nullptr*/)
      : DPIDialog(static_cast<wxWindow *>(wxGetApp().mainframe), wxID_ANY, _L("Log out printer"), wxDefaultPosition, wxDefaultSize, wxCAPTION)
  {
     m_tocken.reset(new int(0));
-     std::string icon_path = (boost::format("%1%/images/GalaxySlicerTitle.ico") % resources_dir()).str();
+std::string icon_path = (boost::format("%1%/images/GalaxySlicerTitle.ico") % resources_dir()).str();
      SetIcon(wxIcon(encode_path(icon_path.c_str()), wxBITMAP_TYPE_ICO));
 
      SetBackgroundColour(*wxWHITE);
