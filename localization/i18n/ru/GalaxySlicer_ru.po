@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:02+0100\n"
+"POT-Creation-Date: 2023-12-29 12:07+0800\n"
 "PO-Revision-Date: 2023-11-20 01:07+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -5993,6 +5993,9 @@ msgstr "Регион входа"
 
 msgid "Stealth Mode"
 msgstr "Режим конфиденциальности (отключение телеметрии Bambulab)"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "Метрическая СИ"

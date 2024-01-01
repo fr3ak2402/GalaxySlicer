@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:02+0100\n"
+"POT-Creation-Date: 2023-12-29 12:07+0800\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -5748,6 +5748,9 @@ msgstr "登录区域"
 
 msgid "Stealth Mode"
 msgstr "局域网模式"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "公制"

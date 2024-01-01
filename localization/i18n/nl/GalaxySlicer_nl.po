@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:02+0100\n"
+"POT-Creation-Date: 2023-12-29 12:07+0800\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5927,6 +5927,9 @@ msgid "Login Region"
 msgstr "Inlogregio"
 
 msgid "Stealth Mode"
+msgstr ""
+
+msgid "Check for stable updates only"
 msgstr ""
 
 msgid "Metric"

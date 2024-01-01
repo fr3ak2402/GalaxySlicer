@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:02+0100\n"
+"POT-Creation-Date: 2023-12-29 12:07+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -6098,6 +6098,9 @@ msgstr "Login-Region"
 
 msgid "Stealth Mode"
 msgstr "Unsichtbarer Modus"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "Metrisch"

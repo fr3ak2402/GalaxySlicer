@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 14:02+0100\n"
+"POT-Creation-Date: 2023-12-29 12:07+0800\n"
 "PO-Revision-Date: 2023-12-25 12:35+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -5877,6 +5877,9 @@ msgstr "로그인 지역"
 
 msgid "Stealth Mode"
 msgstr "스텔스 모드"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "미터법"
