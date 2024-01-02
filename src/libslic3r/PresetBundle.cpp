@@ -801,7 +801,7 @@ bool PresetBundle::import_json_presets(PresetsConfigSubstitutions &            s
         std::string                        version_str          = key_values[BBL_JSON_KEY_VERSION];
         boost::optional<Semver>            version              = Semver::parse(version_str);
         if (!version) return false;
-        Semver app_version = *(Semver::parse(SoftFever_VERSION));
+        Semver app_version = *(Semver::parse(GalaxySlicer_VERSION));
         if (version->maj() != app_version.maj()) {
             BOOST_LOG_TRIVIAL(warning) << __FUNCTION__ << " Preset incompatibla, not loading: " << name;
             return false;

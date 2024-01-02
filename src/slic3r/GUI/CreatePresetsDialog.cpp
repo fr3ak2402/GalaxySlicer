@@ -3795,7 +3795,7 @@ ExportConfigsDialog::ExportCase ExportConfigsDialog::archive_filament_bundle_to_
             std::string   clock = get_curr_timestmp();
             bundle_structure["user_name"]     = "";
             bundle_structure["user_id"]       = "";
-            bundle_structure["version"]       = SoftFever_VERSION;
+            bundle_structure["version"]       = GalaxySlicer_VERSION;
             bundle_structure["bundle_id"]     = filament_name + "_" + clock;
             bundle_structure["bundle_type"] = "filament config bundle";
             bundle_structure["filament_name"] = filament_name;
