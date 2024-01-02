@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 22:55+0800\n"
+"POT-Creation-Date: 2024-01-02 08:35+0100\n"
 "PO-Revision-Date: 2023-12-29 22:35+0300\n"
 "Last-Translator: Olcay ÖREN\n"
 "Language-Team: Türkçe\n"
@@ -731,7 +731,9 @@ msgid "Embossed text cannot contain only white spaces."
 msgstr "Kabartmalı metin yalnızca beyaz boşluklardan oluşamaz."
 
 msgid "Text contains character glyph (represented by '?') unknown by font."
-msgstr "Metin, yazı tipi tarafından bilinmeyen karakter glifini ('?' ile temsil edilir) içeriyor."
+msgstr ""
+"Metin, yazı tipi tarafından bilinmeyen karakter glifini ('?' ile temsil "
+"edilir) içeriyor."
 
 msgid "Text input doesn't show font skew."
 msgstr "Metin girişi yazı tipi çarpıklığını göstermiyor."
@@ -869,7 +871,8 @@ msgid ""
 "\n"
 "Would you like to continue anyway?"
 msgstr ""
-"Stilin \"%1%\" olarak değiştirilmesi mevcut stil değişikliğini iptal edecektir.\n"
+"Stilin \"%1%\" olarak değiştirilmesi mevcut stil değişikliğini iptal "
+"edecektir.\n"
 "\n"
 "Yine de devam etmek ister misin?"
 
@@ -985,7 +988,9 @@ msgid "Rotate text Clock-wise."
 msgstr "Metni Saat yönünde döndürün."
 
 msgid "Unlock the text's rotation when moving text along the object's surface."
-msgstr "Metni nesnenin yüzeyi boyunca hareket ettirirken metnin dönüşünün kilidini açın."
+msgstr ""
+"Metni nesnenin yüzeyi boyunca hareket ettirirken metnin dönüşünün kilidini "
+"açın."
 
 msgid "Lock the text's rotation when moving text along the object's surface."
 msgstr "Metni nesnenin yüzeyi boyunca taşırken metnin dönüşünü kilitleyin."
@@ -1004,8 +1009,9 @@ msgid ""
 "Can't load exactly same font(\"%1%\"). Aplication selected a similar "
 "one(\"%2%\"). You have to specify font for enable edit text."
 msgstr ""
-"Tam olarak aynı yazı tipi yüklenemiyor(\"%1%\"). Uygulama benzer bir uygulama "
-"seçti(\"%2%\"). Metni düzenlemeyi etkinleştirmek için yazı tipini belirtmeniz gerekir."
+"Tam olarak aynı yazı tipi yüklenemiyor(\"%1%\"). Uygulama benzer bir "
+"uygulama seçti(\"%2%\"). Metni düzenlemeyi etkinleştirmek için yazı tipini "
+"belirtmeniz gerekir."
 
 msgid "No symbol"
 msgstr "No symbol"
@@ -1090,9 +1096,11 @@ msgstr "SVG"
 msgid "SVG-Rotate"
 msgstr "SVG-Döndürme"
 
+#, fuzzy, boost-format
 msgid "Opacity (%1%)"
 msgstr "Opaklık (%1)"
 
+#, fuzzy, boost-format
 msgid "Color gradient (%1%)"
 msgstr "Renk gradyanı (%1)"
 
@@ -1121,16 +1129,20 @@ msgstr ""
 "Son şekil, aynı koordinata sahip birden fazla noktanın kendi kendine "
 "kesişimini içerir."
 
+#, fuzzy, boost-format
 msgid "Shape is marked as invisible (%1%)."
 msgstr "Şekil görünmez (%1) olarak işaretlendi."
 
 #. TRN: The first placeholder is shape identifier, the second one is text describing the problem.
+#, fuzzy, boost-format
 msgid "Fill of shape (%1%) contains unsupported: %2%."
 msgstr "Şeklin dolgusu (%1) desteklenmeyenleri içeriyor: %2%."
 
+#, fuzzy, boost-format
 msgid "Stroke of shape (%1%) is too thin (minimal width is %2% mm)."
 msgstr "Şeklin konturu (%1) çok ince (minimum genişlik %2 mm'dir)."
 
+#, fuzzy, boost-format
 msgid "Stroke of shape (%1%) contains unsupported: %2%."
 msgstr "Şeklin konturu (%1) desteklenmeyenleri içeriyor: %2%."
 
@@ -1185,6 +1197,7 @@ msgid "Size in emboss direction."
 msgstr "Kabartma yönünde boyut."
 
 #. TRN: The placeholder contains a number.
+#, fuzzy, boost-format
 msgid "Scale also changes amount of curve samples (%1%)"
 msgstr "Ölçek ayrıca eğri örneklerinin miktarını da değiştirir (%1)"
 
@@ -1232,15 +1245,19 @@ msgstr "Ayna"
 msgid "Choose SVG file for emboss:"
 msgstr "Kabartma için SVG dosyasını seçin:"
 
+#, fuzzy, boost-format
 msgid "File does NOT exist (%1%)."
 msgstr "Dosya mevcut DEĞİL (%1)."
 
+#, boost-format
 msgid "Filename has to end with \".svg\" but you selected %1%"
 msgstr "Dosya adının \".svg\" ile bitmesi gerekiyor ancak siz %1%'i seçtiniz"
 
+#, fuzzy, boost-format
 msgid "Nano SVG parser can't load from file (%1%)."
 msgstr "Nano SVG ayrıştırıcı dosyadan (%1) yüklenemiyor."
 
+#, fuzzy, boost-format
 msgid "SVG file does NOT contain a single path to be embossed (%1%)."
 msgstr "SVG dosyası kabartma yapılacak tek bir yol İÇERMEZ (%1)."
 
@@ -3354,8 +3371,8 @@ msgid ""
 "No  - Dont use alternate extra wall"
 msgstr ""
 "Bu ayarlar otomatik olarak değiştirilsin mi?\n"
-"Evet - Dikey kabuk kalınlığını sağlamayı devre dışı bırakın ve alternatif ekstra "
-"duvarı etkinleştirin\n"
+"Evet - Dikey kabuk kalınlığını sağlamayı devre dışı bırakın ve alternatif "
+"ekstra duvarı etkinleştirin\n"
 "Hayır - Alternatif ekstra duvar kullanmayın"
 
 msgid ""
@@ -5956,9 +5973,6 @@ msgstr "Giriş Bölgesi"
 
 msgid "Stealth Mode"
 msgstr "Gizli mod"
-
-msgid "Check for stable updates only"
-msgstr "Yalnızca kararlı güncellemeleri kontrol edin"
 
 msgid "Metric"
 msgstr "Metrik"
@@ -11068,14 +11082,14 @@ msgid ""
 "printed immediately after a deretraction move."
 msgstr ""
 "Dış/İç veya İç/Dış/İç duvar baskı sırası ile yazdırırken, dış çevrenin "
-"başlangıcında olası aşırı çıkıntının görünürlüğünü en aza indirmek "
-"için, kaldırma işlemi dış çevrenin başlangıcından itibaren biraz "
-"içeride gerçekleştirilir. Bu şekilde herhangi bir aşırı ekstrüzyon "
-"potansiyeli dış yüzeyden gizlenir. \n"
+"başlangıcında olası aşırı çıkıntının görünürlüğünü en aza indirmek için, "
+"kaldırma işlemi dış çevrenin başlangıcından itibaren biraz içeride "
+"gerçekleştirilir. Bu şekilde herhangi bir aşırı ekstrüzyon potansiyeli dış "
+"yüzeyden gizlenir. \n"
 "\n"
 "Bu, Dış/İç veya İç/Dış/İç duvar yazdırma sırası ile yazdırırken "
-"kullanışlıdır, çünkü bu modlarda, bir geri çekilme hareketinin "
-"hemen ardından bir dış çevrenin yazdırılması daha olasıdır."
+"kullanışlıdır, çünkü bu modlarda, bir geri çekilme hareketinin hemen "
+"ardından bir dış çevrenin yazdırılması daha olasıdır."
 
 msgid "Wipe speed"
 msgstr "Temizleme hızı"
@@ -11989,9 +12003,9 @@ msgid ""
 "printers. Default is checked"
 msgstr ""
 "\"label_objects\" seçeneği kullanılırken göreceli ekstrüzyon önerilir. Bazı "
-"ekstrüderler bu seçenek işaretlenmediğinde daha iyi çalışır (mutlak ekstrüzyon modu). "
-"Silme kulesi yalnızca göreceli modla uyumludur. Çoğu yazıcıda önerilir. "
-"Varsayılan işaretlendi."
+"ekstrüderler bu seçenek işaretlenmediğinde daha iyi çalışır (mutlak "
+"ekstrüzyon modu). Silme kulesi yalnızca göreceli modla uyumludur. Çoğu "
+"yazıcıda önerilir. Varsayılan işaretlendi."
 
 msgid ""
 "Classic wall generator produces walls with constant extrusion width and for "
@@ -14106,6 +14120,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Check for stable updates only"
+#~ msgstr "Yalnızca kararlı güncellemeleri kontrol edin"
 
 #~ msgid "Orca Cube"
 #~ msgstr "Orca Küpü"
