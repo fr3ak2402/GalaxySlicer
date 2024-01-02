@@ -97,7 +97,7 @@ cp -R $resources_path ./GalaxySlicer.app/Contents/Resources
 # delete .DS_Store file
 find ./GalaxySlicer.app/ -name '.DS_Store' -delete
 # extract version
-# export ver=$(grep '^#define SoftFever_VERSION' ../src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
+# export ver=$(grep '^#define GalaxySlicer_VERSION' ../src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
 # ver="_V${ver//\"}"
 # echo $PWD
 # if [ "1." != "$NIGHTLY_BUILD". ];
