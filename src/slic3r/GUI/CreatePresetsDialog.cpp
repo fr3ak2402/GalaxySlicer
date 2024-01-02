@@ -3479,7 +3479,7 @@ wxBoxSizer *ExportConfigsDialog::create_export_config_item(wxWindow *parent)
 
     radioBoxSizer->Add(create_radio_item(m_exprot_type.preset_bundle, parent, wxEmptyString, m_export_type_btns), 0, wxEXPAND | wxALL, 0);
     radioBoxSizer->Add(0, 0, 0, wxTOP, FromDIP(6));
-    wxStaticText *static_export_printer_preset_bundle_text = new wxStaticText(parent, wxID_ANY, _L("Printer and all the filament&process presets that belongs to the printer. \nCan be shared with others."), wxDefaultPosition, wxDefaultSize);
+    wxStaticText *static_export_printer_preset_bundle_text = new wxStaticText(parent, wxID_ANY, _L("Printer and all the filament&&process presets that belongs to the printer. \nCan be shared with others."), wxDefaultPosition, wxDefaultSize);
     static_export_printer_preset_bundle_text->SetFont(Label::Body_12);
     static_export_printer_preset_bundle_text->SetForegroundColour(wxColour("#6B6B6B"));
     radioBoxSizer->Add(static_export_printer_preset_bundle_text, 0, wxEXPAND | wxLEFT, FromDIP(22));
@@ -3680,7 +3680,7 @@ ExportConfigsDialog::ExportCase ExportConfigsDialog::archive_preset_bundle_to_fi
             std::string   clock = get_curr_timestmp();
             bundle_structure["user_name"]           = "";
             bundle_structure["user_id"]             = "";
-            bundle_structure["version"]             = SoftFever_VERSION;
+            bundle_structure["version"]             = GalaxySlicer_VERSION;
             bundle_structure["bundle_id"]           = printer_preset_name_ + "_" + clock;
             bundle_structure["bundle_type"] = "printer config bundle";
             bundle_structure["printer_preset_name"] = printer_preset_name_;
