@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 17:55+0100\n"
+"POT-Creation-Date: 2024-01-02 08:32+0100\n"
 "PO-Revision-Date: 2023-11-20 01:07+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -4546,6 +4546,12 @@ msgstr[0] "Импортирована %d конфигурация (только 
 msgstr[1] "Импортировано %d конфигурации (только не системные и совместимые)."
 msgstr[2] "Импортировано %d конфигураций (только не системные и совместимые)."
 
+msgid ""
+"\n"
+"Hint: Make sure you have added the corresponding printer before importing "
+"the configs."
+msgstr ""
+
 msgid "Import result"
 msgstr "Импортировать результат"
 
@@ -4754,7 +4760,7 @@ msgid ""
 "GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
 "Файл .gcode.3mf не содержит G-кода. Пожалуйста, нарежьте его в программе "
-"Bambu Studio и экспортируйте новый файл .gcode.3mf."
+"Galaxy Slicer и экспортируйте новый файл .gcode.3mf."
 
 #, c-format, boost-format
 msgid "File '%s' was lost! Please download it again."
@@ -13665,10 +13671,10 @@ msgstr ""
 msgid "Export Configs"
 msgstr ""
 
-msgid "Printer config bundle(.bbscfg)"
+msgid "Printer config bundle(.galaxy_printer)"
 msgstr ""
 
-msgid "Filament bundle(.bbsflmt)"
+msgid "Filament bundle(.galaxy_filament)"
 msgstr ""
 
 msgid "Printer presets(.zip)"
@@ -14760,7 +14766,7 @@ msgstr ""
 #~ msgid ""
 #~ "Step 1, please confirm Bambu Studio and your printer are in the same LAN."
 #~ msgstr ""
-#~ "Шаг 1. Пожалуйста, убедитесь, что Bambu Studio и ваш принтер находятся в "
+#~ "Шаг 1. Пожалуйста, убедитесь, что Galaxy Slicer и ваш принтер находятся в "
 #~ "одной локальной сети."
 
 #~ msgid "Error: IP or Access Code are not correct"

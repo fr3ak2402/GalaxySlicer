@@ -468,7 +468,7 @@ var LangText = {
 		"t50": "Se déconnecter",
 		"t52": "Passer",
 		"t53": "Rejoindre",
-		"t54": "Dans la communauté de l'impression 3D, nous apprenons des succès et des échecs des uns et des autres pour ajuster nos propres paramètres et paramètres de découpage. Bambu Studio suit le même principe et utilise l'apprentissage automatique pour améliorer ses performances à partir des succès et des échecs du grand nombre d'impressions de nos utilisateurs. Nous formons Bambu Studio à être plus intelligent en leur fournissant les données du monde réel. Si vous le souhaitez, ce service accédera aux informations de vos journaux d'erreurs et de vos journaux d'utilisation, qui peuvent inclure des informations décrites dans ",
+		"t54": "Dans la communauté de l'impression 3D, nous apprenons des succès et des échecs des uns et des autres pour ajuster nos propres paramètres et paramètres de découpage. Galaxy Slicer suit le même principe et utilise l'apprentissage automatique pour améliorer ses performances à partir des succès et des échecs du grand nombre d'impressions de nos utilisateurs. Nous formons Bambu Studio à être plus intelligent en leur fournissant les données du monde réel. Si vous le souhaitez, ce service accédera aux informations de vos journaux d'erreurs et de vos journaux d'utilisation, qui peuvent inclure des informations décrites dans ",
 		"t55": "Politique de confidentialité",
 		"t56": ". Nous ne collecterons aucune donnée personnelle par laquelle un individu peut être identifié directement ou indirectement, y compris, sans s'y limiter, les noms, adresses, informations de paiement ou numéros de téléphone. En activant ce service, vous acceptez ces conditions et la déclaration sur la politique de confidentialité.",
 		"t57": "",

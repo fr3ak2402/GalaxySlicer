@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-01 17:55+0100\n"
+"POT-Creation-Date: 2024-01-02 08:32+0100\n"
 "PO-Revision-Date: 2023-11-06 14:37+0800\n"
 "Last-Translator: ablegods <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -4376,6 +4376,12 @@ msgid_plural ""
 "There are %d configs imported. (Only non-system and compatible configs)"
 msgstr[0] "共匯入 %d 組預設（僅包含非系統且與當前配置相容的預設）"
 
+msgid ""
+"\n"
+"Hint: Make sure you have added the corresponding printer before importing "
+"the configs."
+msgstr ""
+
 msgid "Import result"
 msgstr "匯入結果"
 
@@ -4571,7 +4577,7 @@ msgid ""
 "The .gcode.3mf file contains no G-code data.Please slice it with "
 "GalaxySlicer and export a new .gcode.3mf file."
 msgstr ""
-".gcode.3mf文件中不包含 G-code 數據。請使用 Bambu Studio 進行切片並匯出新的."
+".gcode.3mf文件中不包含 G-code 數據。請使用 Galaxy Slicer 進行切片並匯出新的."
 "gcode.3mf文件。"
 
 #, c-format, boost-format
@@ -12655,10 +12661,10 @@ msgstr ""
 msgid "Export Configs"
 msgstr ""
 
-msgid "Printer config bundle(.bbscfg)"
+msgid "Printer config bundle(.galaxy_printer)"
 msgstr ""
 
-msgid "Filament bundle(.bbsflmt)"
+msgid "Filament bundle(.galaxy_filament)"
 msgstr ""
 
 msgid "Printer presets(.zip)"
