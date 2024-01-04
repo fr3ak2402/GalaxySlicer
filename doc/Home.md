@@ -1,7 +1,7 @@
-Welcome to the OrcaSlicer WIKI!
+Welcome to the GalaxySlicer WIKI!
 
 We have divided it roughly into the following pages:
 
 * [Calibration](wiki/Calibration)
-* [Seam](wiki/Seam)
-* [How to build Orca Slicer](wiki/How-to-build)
+* [Print settings](wiki/Print-settings/Home)
+* [How to build Galaxy Slicer](wiki/How-to-build)

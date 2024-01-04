@@ -1,0 +1,83 @@
+
+#Content
+{
+	overflow-y:auto;
+}
+
+.collapse-container {
+	margin-bottom: 3mm;
+}
+
+.collapsible {
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	padding: 10px;
+	background-color: #693A71;
+	border-radius: 16px;
+	color: white;
+	font-size: 15px;
+}
+
+.collapsible:hover {
+	background-color: #C7ACCB;
+}
+
+.collapsible-text {
+    flex: 1;
+}
+
+.collapsible-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.collapsible-state {
+    width: 12px;
+    height: 12px;
+	margin-left: 10px;
+    margin-right: 10px;
+}
+
+.collapsible-option {
+	float: right;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background-color: #F0F0F0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.content-text {
+	padding: 0 18px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1.5px solid #693A71;
+	border-bottom-width: 1.5px;
+}
+
+.OptionBtn
+{
+	padding: 1.5mm 5mm;
+	font-size: 14px;
+	text-align: center;
+	background-color: #693A71;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.OptionBtn:hover
+{
+	background-color:#C7ACCB;
+}
+

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="max-age=7200" />
+    <title>P15</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="15.css" />
+    <link rel="stylesheet" type="text/css" href="../css/dark.css" />
+    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/json2.js"></script>
+    <script type="text/javascript" src="../../data/text.js"></script>
+    <script type="text/javascript" src="../js/globalapi.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="15.js"></script>
+</head>
+
+<body onLoad="OnInit()">
+    <div id="Title">
+		<div class="trans" tid="t95">Applications</div>
+    </div>
+	
+	<div id="Content" class="ZScrol">
+		<!--Profile Manager-->
+		<div class="collapse-container">
+			<div class="collapsible">
+				<img class="collapsible-image" src="img/profile_manager.png">
+				<div class="collapsible-text">
+					<p class="trans" tid="t96">Profile Manager</p>
+				</div>
+				<img class="collapsible-state" src="img/collapse_state_close.svg">
+			</div>
+			
+			<div class="content">
+				<p class="content-text trans" tid="a1">The Profile Manager provides access to additional third-party profiles of printers that are not available in the standard GalaxySlicer installation. These profiles can be easily added via the Profile Manager so that they can be used in GalaxySlicer. Additionally, profiles from other slicers can be converted for GalaxySlicer so that they can be used as well. The Profile Manager can also be used to create new profiles.</p>
+				<div class="collapsible-option">
+					<div class="OptionBtn trans" id="DownloadBtn" tid="t115" onclick="DownloadApplication()">Download</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <div id="AcceptArea">
+        <div class="GrayBtn trans" id="PreBtn" tid="t8" onclick="window.open('../3/index.html','_self')">Back</div>
+        <div class="NormalBtn trans" id="AcceptBtn" tid="t9" onclick="GotoSelectionPage()">Next</div>
+    </div>
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    var collapsible = this;
+    var content = this.nextElementSibling;
+    var collapsibleState = collapsible.querySelector(".collapsible-state");
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      collapsibleState.src = "img/collapse_state_close.svg";
+      setTimeout(function() {
+        collapsible.style.borderBottomLeftRadius = "16px";
+        collapsible.style.borderBottomRightRadius = "16px";
+      }, 220);
+    } else {
+      collapsible.style.borderBottomLeftRadius = "0px";
+      collapsible.style.borderBottomRightRadius = "0px";
+      content.style.maxHeight = content.scrollHeight + "px";
+      collapsibleState.src = "img/collapse_state_open.svg";
+    }
+  });
+}
+</script>
+
+</html>

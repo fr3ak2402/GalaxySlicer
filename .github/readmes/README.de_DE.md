@@ -1,6 +1,7 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
-[![EN Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=EN)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/README.md)
-[![NL Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=NL)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/.github/readmes/README.nl_NL.md)
+[![EN Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=EN)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/README.md)
+[![FR Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=FR)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_9/.github/readmes/README.fr_FR.md)
+[![NL Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=NL)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/.github/readmes/README.nl_NL.md)
 -------------------------------------
 [![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=Lizenz&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/fr3ak2402/GalaxySlicer?style=flat-square&label=Version&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)

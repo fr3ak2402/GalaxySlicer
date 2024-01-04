@@ -49,6 +49,8 @@ public:
     std::string set_print_acceleration(unsigned int acceleration)   { return set_acceleration_internal(Acceleration::Print, acceleration); }
     std::string set_travel_acceleration(unsigned int acceleration)  { return set_acceleration_internal(Acceleration::Travel, acceleration); }
     std::string set_jerk_xy(double jerk);
+    // Galaxy: set acceleration and jerk in one command for Klipper
+    std::string set_accel_and_jerk(unsigned int acceleration, double jerk);
     std::string set_pressure_advance(double pa) const;
     std::string reset_e(bool force = false);
     std::string update_progress(unsigned int num, unsigned int tot, bool allow_100 = false) const;
@@ -72,8 +74,8 @@ public:
     //BBS: generate G2 or G3 extrude which moves by arc
     std::string extrude_arc_to_xy(const Vec2d &point, const Vec2d &center_offset, double dE, const bool is_ccw, const std::string &comment = std::string(), bool force_no_extrusion = false);
     std::string extrude_to_xyz(const Vec3d &point, double dE, const std::string &comment = std::string(), bool force_no_extrusion = false);
-    std::string retract(bool before_wipe = false);
-    std::string retract_for_toolchange(bool before_wipe = false);
+    std::string retract(bool before_wipe = false, double retract_length = 0);
+    std::string retract_for_toolchange(bool before_wipe = false, double retract_length = 0);
     std::string unretract();
     std::string lift(LiftType lift_type = LiftType::NormalLift, bool spiral_vase = false);
     std::string unlift();
@@ -112,7 +114,10 @@ public:
     void set_is_bbl_machine(bool bval) {m_is_bbl_printers = bval;}
     const bool is_bbl_printers() const {return m_is_bbl_printers;}
     void set_is_first_layer(bool bval) { m_is_first_layer = bval; }
+    GCodeFlavor get_gcode_flavor() const { return config.gcode_flavor; }
 
+    // Returns whether this flavor supports separate print and travel acceleration.
+    static bool supports_separate_travel_acceleration(GCodeFlavor flavor);
   private:
 	// Extruders are sorted by their ID, so that binary search is possible.
     std::vector<Extruder> m_extruders;

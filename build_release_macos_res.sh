@@ -62,7 +62,7 @@ then
     #cmake --build . --config Release --target all 
     if [ "1." == "$PACK_DEPS". ];
     then
-        tar -zcvf /$WD/build_$ARCH/GalaxySlicer/GalaxySlicer_dep_mac_${ARCH}_$(date +"%d-%m-%Y").tar.gz GalaxySlicer_dep_$ARCH
+        tar -zcvf /$WD/build_$ARCH/GalaxySlicer/GalaxySlicer_dep_mac_${ARCH}_$(date +"%Y%m%d").tar.gz GalaxySlicer_dep_$ARCH
         
     fi
 fi
@@ -100,5 +100,6 @@ find ./GalaxySlicer.app/ -name '.DS_Store' -delete
      ver=${ver}_dev
  fi
 
+cp -pR ./GalaxySlicer.app /Applications/GalaxySlicer.app
 
  zip -FSr GalaxySlicer${ver}_Mac_${ARCH}.zip GalaxySlicer.app

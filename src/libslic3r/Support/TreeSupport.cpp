@@ -249,8 +249,12 @@ static std::vector<std::pair<TreeSupportSettings, std::vector<size_t>>> group_me
                     raw_overhangs = overhangs;
                     raw_overhangs_calculated = true;
                 }
-                if (! (enforced_layer || blockers_layers.empty() || blockers_layers[layer_id].empty()))
-                    overhangs = diff(overhangs, blockers_layers[layer_id], ApplySafetyOffset::Yes);
+                if (! (enforced_layer || blockers_layers.empty() || blockers_layers[layer_id].empty())) {
+                    Polygons &blocker = blockers_layers[layer_id];
+                    // Arthur: union_ is a must because after mirroring, the blocker polygons are in left-hand coordinates, ie clockwise,
+                    // which are not valid polygons, and will be removed by offset. union_ can make these polygons right.
+                    overhangs = diff(overhangs, offset(union_(blocker), scale_(g_config_tree_support_collision_resolution)), ApplySafetyOffset::Yes);
+                }
                 if (config.bridge_no_support) {
                     for (const LayerRegion *layerm : current_layer.regions())
                         remove_bridges_from_contacts(print_config, lower_layer, *layerm, 
@@ -3532,7 +3536,7 @@ static void generate_support_areas(Print &print, const BuildVolume &build_volume
             // ### draw these points as circles
 
             if (print_object.config().support_style.value != smsOrganic &&
-                // Orca: use organic as default
+                // Galaxy: use organic as default
                 print_object.config().support_style.value != smsDefault)
                 draw_areas(*print.get_object(processing.second.front()), volumes, config, overhangs, move_bounds, 
                     bottom_contacts, top_contacts, intermediate_layers, layer_storage, throw_on_cancel);

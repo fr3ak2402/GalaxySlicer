@@ -20,8 +20,17 @@
 # therefore, unfortunatelly, the installation cannot be copied/moved elsewhere without re-installing wxWidgets.
 #
 
-project(GalaxySlicer-deps)
 cmake_minimum_required(VERSION 3.2)
+if (APPLE)
+    # if CMAKE_OSX_DEPLOYMENT_TARGET is not set, set it to 11.3
+    if (NOT CMAKE_OSX_DEPLOYMENT_TARGET)
+        set(CMAKE_OSX_DEPLOYMENT_TARGET "11.3" CACHE STRING "Minimum OS X deployment version" FORCE)
+    endif ()
+    message(STATUS "CMAKE_OSX_DEPLOYMENT_TARGET: ${CMAKE_OSX_DEPLOYMENT_TARGET}")
+
+endif ()
+
+project(GalaxySlicer-deps)
 
 include(ExternalProject)
 include(ProcessorCount)
@@ -32,7 +41,7 @@ if (NPROC EQUAL 0)
 endif ()
 
 set(DESTDIR "${CMAKE_CURRENT_BINARY_DIR}/destdir" CACHE PATH "Destination directory")
-set(DEP_DOWNLOAD_DIR ${CMAKE_CURRENT_BINARY_DIR} CACHE PATH "Path for downloaded source packages.")
+set(DEP_DOWNLOAD_DIR ${CMAKE_CURRENT_BINARY_DIR}/../DL_CACHE CACHE PATH "Path for downloaded source packages.")
 
 option(DEP_DEBUG "Build debug variants (only applicable on Windows)" OFF)
 
@@ -50,9 +59,9 @@ if (APPLE)
     set(CMAKE_FIND_FRAMEWORK LAST)
     set(CMAKE_FIND_APPBUNDLE LAST)
     list(FIND CMAKE_OSX_ARCHITECTURES ${CMAKE_SYSTEM_PROCESSOR} _arch_idx)
-    message(STATUS "prusaslicer_add_cmake_project for Apple")
+    message(STATUS "galaxyslicer_add_cmake_project for Apple")
     if (CMAKE_OSX_ARCHITECTURES AND _arch_idx LESS 0)
-        message(STATUS "prusaslicer_add_cmake_project for Apple crosscompiling")
+        message(STATUS "galaxyslicer_add_cmake_project for Apple crosscompiling")
         set(IS_CROSS_COMPILE TRUE)
         set(CMAKE_CXX_COMPILER_ID "Clang")
         string(REPLACE ";" "$<SEMICOLON>" CMAKE_OSX_ARCHS "${CMAKE_OSX_ARCHITECTURES}")
@@ -85,7 +94,7 @@ if (NOT _is_multi AND NOT CMAKE_BUILD_TYPE)
     message(STATUS "Forcing CMAKE_BUILD_TYPE to Release as it was not specified.")
 endif ()
 
-function(add_to_galaxyslicer_cmake_project projectname)
+function(galaxyslicer_add_cmake_project projectname)
     cmake_parse_arguments(P_ARGS "" "INSTALL_DIR;BUILD_COMMAND;INSTALL_COMMAND" "CMAKE_ARGS" ${ARGN})
 
     set(_configs_line -DCMAKE_BUILD_TYPE:STRING=${CMAKE_BUILD_TYPE})
@@ -133,6 +142,7 @@ else()
         ${_gen}
         CMAKE_ARGS
             -DCMAKE_INSTALL_PREFIX:STRING=${DESTDIR}/usr/local
+            -DCMAKE_PREFIX_PATH:STRING=${DESTDIR}/usr/local
             -DBUILD_SHARED_LIBS:BOOL=OFF
             ${_cmake_osx_arch}
             "${_configs_line}"
@@ -145,7 +155,7 @@ else()
 
 endif()
 
-endfunction(add_to_galaxyslicer_cmake_project)
+endfunction(galaxyslicer_add_cmake_project)
 
 
 if (MSVC)
@@ -162,7 +172,6 @@ if (MSVC)
     endif ()
 elseif (APPLE)
     message("OS X SDK Path: ${CMAKE_OSX_SYSROOT}")
-    set(CMAKE_OSX_DEPLOYMENT_TARGET "11.3" CACHE STRING "Minimum OS X deployment version" FORCE)
     if (CMAKE_OSX_DEPLOYMENT_TARGET)
         set(DEP_OSX_TARGET "${CMAKE_OSX_DEPLOYMENT_TARGET}")
         message("OS X Deployment Target: ${DEP_OSX_TARGET}")

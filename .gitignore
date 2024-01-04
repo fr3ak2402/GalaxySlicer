@@ -30,3 +30,9 @@ error.txt
 gefundene_wxcolor_werte.txt
 merge_inh*.py
 
+*.mo
+**/process_full/
+**/machine_full/
+**/filament_full/
+/deps/DL_CACHE/
+/deps/DL_CACHE

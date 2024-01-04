@@ -1,11 +1,12 @@
 #!/bin/bash
-set -e # exit on first error
 
 export ROOT=`pwd`
 export NCORES=`nproc --all`
 export CMAKE_BUILD_PARALLEL_LEVEL=${NCORES}
 FOUND_GTK2=$(dpkg -l libgtk* | grep gtk2)
 FOUND_GTK3=$(dpkg -l libgtk* | grep gtk-3)
+
+set -e # exit on first error
 
 function check_available_memory_and_disk() {
     FREE_MEM_GB=$(free -g -t | grep 'Mem:' | rev | cut -d" " -f1 | rev)
@@ -33,7 +34,7 @@ function usage() {
     echo "   -g: force gtk2 build"
     echo "   -b: build in debug mode"
     echo "   -d: build deps (optional)"
-    echo "   -s: build orca-slicer (optional)"
+    echo "   -s: build galaxy-slicer (optional)"
     echo "   -u: only update clock & dependency packets (optional and need sudo)"
     echo "   -r: skip free ram check (low ram compiling)"
     echo "For a first use, you want to 'sudo ./BuildLinux.sh -u'"
@@ -76,8 +77,8 @@ then
     exit 0
 fi
 
-# Addtional Dev packages for OrcaSlicer
-export REQUIRED_DEV_PACKAGES="libmspack-dev libgstreamerd-3-dev libsecret-1-dev libwebkit2gtk-4.0-dev libosmesa6-dev libssl-dev libcurl4-openssl-dev eglexternalplatform-dev libudev-dev libdbus-1-dev extra-cmake-modules"
+# Addtional Dev packages for GalaxySlicer
+export REQUIRED_DEV_PACKAGES="libmspack-dev libgstreamerd-3-dev libsecret-1-dev libwebkit2gtk-4.0-dev libosmesa6-dev libssl-dev libcurl4-openssl-dev eglexternalplatform-dev libudev-dev libdbus-1-dev extra-cmake-modules texinfo"
 # libwebkit2gtk-4.1-dev ??
 export DEV_PACKAGES_COUNT=$(echo ${REQUIRED_DEV_PACKAGES} | wc -w)
 if [ $(dpkg --get-selections | grep -E "$(echo ${REQUIRED_DEV_PACKAGES} | tr ' ' '|')" | wc -l) -lt ${DEV_PACKAGES_COUNT} ]; then

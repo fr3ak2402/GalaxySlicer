@@ -810,9 +810,12 @@ namespace client
             const ConfigOption *opt = ctx->resolve_symbol(opt_key_str);
             if (opt == nullptr) {
                 // Check whether the opt_key ends with '_'.
-                if (opt_key_str.back() == '_')
+                if (opt_key_str.back() == '_') {
                     opt_key_str.resize(opt_key_str.size() - 1);
-                opt = ctx->resolve_symbol(opt_key_str);
+                    opt = ctx->resolve_symbol(opt_key_str);
+                }
+                if (opt == nullptr)
+                    ctx->throw_exception("Variable does not exist", opt_key);
             }
             if (! opt->is_vector())
                 ctx->throw_exception("Trying to index a scalar variable", opt_key);
@@ -884,7 +887,7 @@ namespace client
                 case coPercents: output.set_d(static_cast<const ConfigOptionPercents*>(opt.opt)->values[idx]); break;
                 case coPoints:   output.set_s(to_string(static_cast<const ConfigOptionPoints  *>(opt.opt)->values[idx])); break;
                 case coBools:    output.set_b(static_cast<const ConfigOptionBools   *>(opt.opt)->values[idx] != 0); break;
-                // Orca: support enum vector variable type
+                // Galaxy: support enum vector variable type
                 case coEnums:    output.set_i(static_cast<const ConfigOptionInts *>(opt.opt)->values[idx]); break;
                 default:
                     ctx->throw_exception("Unknown vector variable type", opt.it_range);

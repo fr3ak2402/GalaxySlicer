@@ -69,6 +69,8 @@ public:
     void        process_classic();
     void        process_arachne();
 
+    void        add_infill_contour_for_arachne( ExPolygons infill_contour, int loops, coord_t ext_perimeter_spacing, coord_t perimeter_spacing, coord_t min_perimeter_infill_spacing, coord_t spacing, bool is_inner_part );
+
     double      ext_mm3_per_mm()        const { return m_ext_mm3_per_mm; }
     double      mm3_per_mm()            const { return m_mm3_per_mm; }
     double      mm3_per_mm_overhang()   const { return m_mm3_per_mm_overhang; }
@@ -79,7 +81,7 @@ public:
 private:
     std::map<int, Polygons> generate_lower_polygons_series(float width);
     void split_top_surfaces(const ExPolygons &orig_polygons, ExPolygons &top_fills, ExPolygons &non_top_polygons, ExPolygons &fill_clip) const;
-    void apply_extra_perimeters();
+    void apply_extra_perimeters(ExPolygons& infill_area);
 
 private:
     bool        m_spiral_vase;

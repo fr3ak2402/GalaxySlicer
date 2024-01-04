@@ -311,7 +311,20 @@ bool run_post_process_scripts(std::string &src_path, bool make_copy, const std::
                     continue;
                 BOOST_LOG_TRIVIAL(info) << "Executing script " << script << " on file " << path;
                 std::string std_err;
-                const int result = run_script(script, gcode_file.string(), std_err);
+                //GalaxySlicer: Python support for post processing scripts.
+                std::string script_line = script;
+
+                //If the script is a Python, it should be examined more closely.
+                if (script_line.find(".py") != std::string::npos)
+                {   
+                    //build python command for post processing python based scripts
+                    script_line = build_python_command(script_line);
+                }
+
+                //const int result = run_script(script, gcode_file.string(), std_err);
+
+                //GalaxySlicer: set script line
+                const int result = run_script(script_line, gcode_file.string(), std_err);
                 if (result != 0) {
                     const std::string msg = std_err.empty() ? (boost::format("Post-processing script %1% on file %2% failed.\nError code: %3%") % script % path % result).str()
                         : (boost::format("Post-processing script %1% on file %2% failed.\nError code: %3%\nOutput:\n%4%") % script % path % result % std_err).str();
@@ -376,4 +389,69 @@ bool run_post_process_scripts(std::string &src_path, bool make_copy, const std::
     return true;
 }
 
+//GalaxySlicer: Python Support
+#ifdef WIN32
+std::string build_python_command(std::string &script_line)
+{
+    std::string python_command;
+    //if it looks like the following, then it is System post processor: Vendor#postprocessor.py
+    if (script_line.find("#") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
+    {
+        std::vector<std::string> script_infos;
+
+        boost::split(script_infos, script_line, boost::is_any_of("#"));
+
+        //build python command for system post processor
+        python_command = python_dir() + "/python.exe \"" + resources_dir() + "/profiles/" + script_infos[0] + "/postprocessor/" + script_infos[1] + "\"";
+    }
+    //if it looks like the following, then it is Non-system post processor: /path/to/postprocessor.py
+    else if (script_line.find("/") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
+    {
+        //build python command for non-system post processor
+        python_command = python_dir() + "/python.exe \"" + script_line + "\"";
+    }
+    //if it looks like the following, then it is Non-system post processor: \path\to\postprocessor.py
+    else if (script_line.find("\\") != std::string::npos && script_line.find(".exe") == std::string::npos && script_line.find("python3") == std::string::npos)
+    {
+        //build python command for non-system post processor
+        script_line = boost::replace_all_copy(script_line, "\\", "/");
+        python_command = python_dir() + "/python.exe \"" + script_line + "\"";
+    }
+    //if it looks like the follwoing, then it is Non-system prost processor with python.exe: /path/to/python.exe /path/to/postprocessor.py
+    else
+    {
+        python_command = script_line;
+    }
+
+    return python_command;
+}
+#else
+std::string build_python_command(std::string &script_line)
+{
+    std::string python_command;
+    //If it looks like the following, then it is System post processor: Vendor#postprocessor.py
+    if (script_line.find("#") != std::string::npos && script_line.find("python3") == std::string::npos)
+    {
+        std::vector<std::string> script_infos;
+
+        boost::split(script_infos, script_line, boost::is_any_of("#"));
+
+        //build python command for system post processor
+        python_command = "python3 " + resources_dir() + "/profiles/" + script_infos[0] + "/postprocessor/" + script_infos[1];
+    }
+    //If it looks like the following, then it is System post processor: /path/to/postprocessor.py
+    else if (script_line.find("/") != std::string::npos && script_line.find("python3") == std::string::npos)
+    {
+        //build python command for non-system post processor
+        python_command = "python3 " + script_line;
+    }
+    //if it looks like the follwoing, then it is Non-system prost processor with python3 command: python3 /path/to/postprocessor.py
+    else
+    {
+        python_command = script_line;
+    }
+    
+    return python_command;
+}
+#endif
 } // namespace Slic3r

@@ -1,3 +1,8 @@
+///|/ Copyright (c) Prusa Research 2016 - 2023 Oleksandra Iushchenko @YuSanka, Vojtěch Bubník @bubnikv, Filip Sykala @Jony01, David Kocík @kocikdav, Enrico Turri @enricoturri1966, Tomáš Mészáros @tamasmeszaros, Lukáš Matěna @lukasmatena, Vojtěch Král @vojtechkral
+///|/ Copyright (c) 2019 Sijmen Schoon
+///|/
+///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
+///|/
 #ifndef slic3r_Utils_hpp_
 #define slic3r_Utils_hpp_
 
@@ -43,6 +48,7 @@
 #define CLI_PRINTABLE_SIZE_REDUCED     -20
 #define CLI_OBJECT_ARRANGE_FAILED      -21
 #define CLI_OBJECT_ORIENT_FAILED       -22
+#define CLI_MODIFIED_PARAMS_TO_PRINTER -23
 
 
 #define CLI_NO_SUITABLE_OBJECTS     -50
@@ -60,7 +66,7 @@
 #define CLI_FILAMENTS_DIFFERENT_TEMP        -62
 #define CLI_OBJECT_COLLISION_IN_SEQ_PRINT   -63
 #define CLI_OBJECT_COLLISION_IN_LAYER_PRINT -64
-#define CLI_SPIRAL_MODE_CANNOT_DUPLICATE    -65
+#define CLI_SPIRAL_MODE_INVALID_PARAMS      -65
 
 #define CLI_SLICING_ERROR                  -100
 #define CLI_GCODE_PATH_CONFLICTS           -101
@@ -97,6 +103,18 @@ void set_resources_dir(const std::string &path);
 // Return a full path to the resources directory.
 const std::string& resources_dir();
 
+#if WIN32
+//GalaxySlicer: add python dir
+void set_python_dir(const std::string &path);
+// Return a full path to the python directory.
+const std::string& python_dir();
+
+//GalaxySlicer: add applications dir
+void set_applications_dir(const std::string &path);
+// Return a full path to the applications directory.
+const std::string& applications_dir();
+#endif
+
 //BBS: add temp dir
 void set_temporary_dir(const std::string &path);
 const std::string& temporary_dir();
@@ -119,8 +137,11 @@ inline std::string convert_to_full_version(std::string short_version)
     }
     return result;
 }
-
-
+template<typename DataType>
+inline DataType round_divide(DataType dividend, DataType divisor) //!< Return dividend divided by divisor rounded to the nearest integer
+{
+    return (dividend + divisor / 2) / divisor;
+}
 
 // Set a path with GUI localization files.
 void set_local_dir(const std::string &path);
@@ -154,6 +175,11 @@ void flush_logs();
 // A special type for strings encoded in the local Windows 8-bit code page.
 // This type is only needed for Perl bindings to relay to Perl that the string is raw, not UTF-8 encoded.
 typedef std::string local_encoded_string;
+
+// Returns next utf8 sequence length. =number of bytes in string, that creates together one utf-8 character. 
+// Starting at pos. ASCII characters returns 1. Works also if pos is in the middle of the sequence.
+extern size_t get_utf8_sequence_length(const std::string& text, size_t pos = 0);
+extern size_t get_utf8_sequence_length(const char *seq, size_t size);
 
 // Convert an UTF-8 encoded string into local coding.
 // On Windows, the UTF-8 string is converted to a local 8-bit code page.
@@ -287,6 +313,16 @@ template <class VectorType> void reserve_power_of_2(VectorType &vector, size_t n
     vector.reserve(next_highest_power_of_2(n));
 }
 
+template<class VectorType> void reserve_more(VectorType &vector, size_t n)
+{
+    vector.reserve(vector.size() + n);
+}
+
+template<class VectorType> void reserve_more_power_of_2(VectorType &vector, size_t n)
+{
+    vector.reserve(next_highest_power_of_2(vector.size() + n));
+}
+
 template<typename INDEX_TYPE>
 inline INDEX_TYPE prev_idx_modulo(INDEX_TYPE idx, const INDEX_TYPE count)
 {
@@ -348,6 +384,7 @@ inline typename CONTAINER_TYPE::value_type& next_value_modulo(typename CONTAINER
 }
 
 extern std::string xml_escape(std::string text, bool is_marked = false);
+extern std::string xml_escape_double_quotes_attribute_value(std::string text);
 extern std::string xml_unescape(std::string text);
 
 
@@ -625,6 +662,9 @@ inline std::string filter_characters(const std::string& str, const std::string& 
 
 void copy_directory_recursively(const boost::filesystem::path &source, const boost::filesystem::path &target);
 
+// Orca: Since 1.7.9 Boost deprecated save_string_file and load_string_file, copy and modified from boost 1.7.8
+void save_string_file(const boost::filesystem::path& p, const std::string& str);
+void load_string_file(const boost::filesystem::path& p, std::string& str);
 
 } // namespace Slic3r
 

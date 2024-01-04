@@ -1,3 +1,7 @@
+///|/ Copyright (c) Prusa Research 2017 - 2023 Vojtěch Bubník @bubnikv, David Kocík @kocikdav, Lukáš Matěna @lukasmatena, Filip Sykala @Jony01, Enrico Turri @enricoturri1966, Oleksandra Iushchenko @YuSanka, Vojtěch Král @vojtechkral
+///|/
+///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
+///|/
 #ifndef slic3r_AppConfig_hpp_
 #define slic3r_AppConfig_hpp_
 
@@ -81,7 +85,7 @@ public:
 	std::string 		get(const std::string &key) const
 		{ std::string value; this->get("app", key, value); return value; }
 	bool				get_bool(const std::string &key) const
-		{ return this->get(key) == "true"; }
+		{ return this->get(key) == "true" || this->get(key) == "1"; }
 	void			    set(const std::string &section, const std::string &key, const std::string &value)
 	{
 #ifndef NDEBUG
@@ -170,7 +174,7 @@ public:
 	void 				set_vendors(VendorMap &&vendors) { m_vendors = std::move(vendors); m_dirty = true; }
 	const VendorMap&    vendors() const { return m_vendors; }
 
-	// Orca printer settings
+	// Galaxy printer settings
     typedef std::map<std::string, nlohmann::json> MachineSettingMap;
     bool has_printer_settings(std::string printer) const {
         return m_printer_settings.find(printer) != m_printer_settings.end();
@@ -209,7 +213,7 @@ public:
     }
 
 	const std::vector<PrinterCaliInfo> &get_printer_cali_infos() const { return m_printer_cali_infos; }
-    void save_printer_cali_infos(const PrinterCaliInfo& cali_info);
+    void save_printer_cali_infos(const PrinterCaliInfo& cali_info, bool need_change_status = true);
 
 	// return recent/last_opened_folder or recent/settings_folder or empty string.
 	std::string 		get_last_dir() const;
@@ -287,6 +291,7 @@ public:
 
 	static const std::string SECTION_FILAMENTS;
     static const std::string SECTION_MATERIALS;
+    static const std::string SECTION_EMBOSS_STYLE;
 
 private:
 	template<typename T>

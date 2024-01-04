@@ -29,6 +29,9 @@ inline bool run_post_process_scripts(std::string &src_path, const DynamicPrintCo
 // BBS
 extern void gcode_add_line_number(const std::string &path, const DynamicPrintConfig &config);
 
+//GalaxySlicer: Python Support
+std::string build_python_command(std::string &script_line);
+
 } // namespace Slic3r
 
 #endif /* slic3r_GCode_PostProcessor_hpp_ */

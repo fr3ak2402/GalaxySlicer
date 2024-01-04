@@ -34,7 +34,6 @@
 
 class StepIndicator;
 
-#define COMMAND_TIMEOUT_U0      15
 #define COMMAND_TIMEOUT         5
 
 namespace Slic3r {
@@ -161,8 +160,10 @@ public:
 private:
     MachineObject*  m_obj;
     ScalableBitmap  m_thumbnail_placeholder;
+    wxBitmap        m_thumbnail_bmp_display;
     ScalableBitmap  m_bitmap_use_time;
     ScalableBitmap  m_bitmap_use_weight;
+    ScalableBitmap  m_bitmap_background;
 
     wxPanel *       m_panel_printing_title;
     wxPanel*        m_staticline;
@@ -178,19 +179,23 @@ private:
     wxStaticText*   m_staticText_progress_percent;
     wxStaticText*   m_staticText_progress_percent_icon;
     wxStaticText*   m_staticText_progress_left;
-    // Orca: show print end time
+    // Galaxy: show print end time
     wxStaticText * m_staticText_progress_end;
     wxStaticText*   m_staticText_layers;
     wxStaticText *  m_has_rated_prompt;
+    wxStaticText *  m_request_failed_info;
     wxStaticBitmap* m_bitmap_thumbnail;
+    int             m_plate_index { -1 };
     wxStaticBitmap* m_bitmap_static_use_time;
     wxStaticBitmap* m_bitmap_static_use_weight;
     ScalableButton* m_button_pause_resume;
     ScalableButton* m_button_abort;
     Button*         m_button_market_scoring;
     Button*         m_button_clean;
+    Button *                      m_button_market_retry;
     wxPanel *                     m_score_subtask_info;
     wxPanel *                     m_score_staticline;
+    wxPanel *                     m_request_failed_panel;
     // score page
     int                           m_star_count;
     std::vector<ScalableButton *> m_score_star;
@@ -219,6 +224,8 @@ public:
     void update_layers_num(bool show, wxString num = wxEmptyString);
     void show_priting_use_info(bool show, wxString time = wxEmptyString, wxString weight = wxEmptyString);
     void show_profile_info(bool show, wxString profile = wxEmptyString);
+    void set_thumbnail_img(const wxBitmap& bmp);
+    void set_plate_index(int plate_idx = -1);
     void market_scoring_show();
     void market_scoring_hide();
     
@@ -226,14 +233,17 @@ public:
     ScalableButton* get_abort_button() {return m_button_abort;};
     ScalableButton* get_pause_resume_button() {return m_button_pause_resume;};
     Button* get_market_scoring_button() {return m_button_market_scoring;};
+    Button * get_market_retry_buttom() { return m_button_market_retry; };
     Button* get_clean_button() {return m_button_clean;};
     wxStaticBitmap* get_bitmap_thumbnail() {return m_bitmap_thumbnail;};
+    wxPanel *  get_request_failed_panel() { return m_request_failed_panel; }
     int get_star_count() { return m_star_count; }
     void set_star_count(int star_count);
     std::vector<ScalableButton *> &get_score_star() { return m_score_star; }
     bool get_star_count_dirty() { return m_star_count_dirty; }
     void set_star_count_dirty(bool dirty) { m_star_count_dirty = dirty; }
     void                           set_has_reted_text(bool has_rated);
+    void paint(wxPaintEvent&);
 
 };
 
@@ -465,10 +475,9 @@ protected:
     int          m_last_timelapse = -1;
     int          m_last_extrusion = -1;
     int          m_last_vcamera   = -1;
+    int          m_model_mall_request_count = 0;
     bool         m_is_load_with_temp = false;
-    bool         m_print_finish            = false;
     json         m_rating_result;
-    json         m_last_result;
 
     wxWebRequest web_request;
     bool bed_temp_input    = false;
@@ -492,6 +501,7 @@ protected:
     void update_tasklist_info();
 
     void on_market_scoring(wxCommandEvent &event);
+    void on_market_retry(wxCommandEvent &event);
     void on_subtask_pause_resume(wxCommandEvent &event);
     void on_subtask_abort(wxCommandEvent &event);
     void on_print_error_clean(wxCommandEvent &event);
@@ -534,7 +544,7 @@ protected:
     void on_ams_selected(wxCommandEvent &event);
     void on_ams_guide(wxCommandEvent &event);
     void on_ams_retry(wxCommandEvent &event);
-    void on_print_error_func(wxCommandEvent& event);
+    void on_print_error_done(wxCommandEvent& event);
 
     void on_fan_changed(wxCommandEvent& event);
     void on_cham_temp_kill_focus(wxFocusEvent& event);
@@ -579,9 +589,6 @@ protected:
     void on_webrequest_state(wxWebRequestEvent &evt);
     bool is_task_changed(MachineObject* obj);
 
-    /* model mall score */
-    bool model_score_is_update();
-
     /* camera */
     void update_camera_state(MachineObject* obj);
     bool show_vcamera = false;
@@ -625,7 +632,6 @@ public:
 
     void set_default();
     void show_status(int status);
-    void set_print_finish_status(bool is_finish);
     void set_hold_count(int& count);
 
     void rescale_camera_icons();

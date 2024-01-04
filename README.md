@@ -1,6 +1,7 @@
 ![GalaxySlicer_github_banner](https://github.com/fr3ak2402/GalaxySlicer/assets/96239814/31a440c6-fa99-42f0-af4a-f8589d34dfb8)
-[![DE Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=DE)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/.github/readmes/README.de_DE.md)
-[![NL Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=NL)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_VIII/.github/readmes/README.nl_NL.md)
+[![DE Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=DE)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/.github/readmes/README.de_DE.md)
+[![FR Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=FR)](https://github.com/fr3ak2402/GalaxySlicer/blob/dev_9/.github/readmes/README.fr_FR.md)
+[![NL Readme](https://img.shields.io/badge/Readme-%23693A71?style=flat-square&label=NL)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/.github/readmes/README.nl_NL.md)
 -------------------------------------
 [![GitHub license](https://img.shields.io/github/license/Fr3ak2402/GalaxySlicer?style=flat-square&label=License&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/blob/main/LICENSE.txt)
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/fr3ak2402/GalaxySlicer?style=flat-square&label=Version&color=693A71)](https://github.com/fr3ak2402/GalaxySlicer/releases/latest)
@@ -27,8 +28,16 @@ The following printers are currently supported by GalaxySlicer: **[Printer list]
 Currently, only Windows, macOS x64 & arm64 releases are precompiled.
 
 All compile releases can be found at the following link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
+- Mac 64-bit  
+  - Tools needed: Xcode, Cmake, git, gettext, libtool, automake, autoconf, texinfo
+      - You can install most of them by running `brew install cmake gettext libtool automake autoconf texinfo`
+  - run `build_release_macos.sh`
 
 # Supported operating systems
+- Ubuntu 
+  - Dependencies **Will be auto installed with the shell script**: `libmspack-dev libgstreamerd-3-dev libsecret-1-dev libwebkit2gtk-4.0-dev libosmesa6-dev libssl-dev libcurl4-openssl-dev eglexternalplatform-dev libudev-dev libdbus-1-dev extra-cmake-modules libgtk2.0-dev libglew-dev libudev-dev libdbus-1-dev cmake git texinfo`
+  - run 'sudo ./BuildLinux.sh -u'
+  - run './BuildLinux.sh -dsir'
 
 GalaxySlicer has been tested under the following operating systems so that full functionality can be guaranteed. For all operating systems that were not listed on no complete functionality can be guaranteed
 

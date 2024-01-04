@@ -186,7 +186,7 @@ void MaterialItem::doRender(wxDC &dc)
     auto mcolor = m_material_coloul;
     auto acolor = m_ams_coloul;
 
-    if (mcolor.Alpha() == 0) {
+    if (mcolor.Alpha() == 0 || acolor.Alpha() == 0) {
         dc.DrawBitmap(m_transparent_mitem.bmp(), FromDIP(1), FromDIP(1));
     }
 
@@ -1163,6 +1163,7 @@ void MappingContainer::doRender(wxDC& dc)
 AmsReplaceMaterialDialog::AmsReplaceMaterialDialog(wxWindow* parent)
     : DPIDialog(parent, wxID_ANY, _L("Auto Refill"), wxDefaultPosition, wxDefaultSize, wxSYSTEM_MENU | wxCAPTION | wxCLOSE_BOX)
 {
+
 #ifdef __WINDOWS__
     SetDoubleBuffered(true);
 #endif //__WINDOWS__
@@ -1331,8 +1332,20 @@ void AmsReplaceMaterialDialog::update_machine_obj(MachineObject* obj)
         m_scrollview_groups->SetMinSize(wxSize(FromDIP(400), height));
         m_scrollview_groups->SetMaxSize(wxSize(FromDIP(400), height));
     } else {
-        if (label_txt)
-            label_txt->SetLabelText(_L("There are currently no identical spare consumables available, and automatic replenishment is currently not possible. \n(Currently supporting automatic supply of consumables with the same brand, material type, and color)"));
+        if (!obj->is_support_filament_backup) {
+            label_txt->SetLabel(_L("The printer does not currently support auto refill."));
+        }
+        else if (!obj->ams_auto_switch_filament_flag) {
+            label_txt->SetLabelText(_L("AMS filament backup is not enabled, please enable it in the AMS settings."));
+        }
+        else {
+            label_txt->SetLabelText(_L("If there are two identical filaments in AMS, AMS filament backup will be enabled. \n(Currently supporting automatic supply of consumables with the same brand, material type, and color)"));
+        } 
+
+        label_txt->SetMinSize(wxSize(FromDIP(380), -1));
+        label_txt->SetMaxSize(wxSize(FromDIP(380), -1));
+        label_txt->Wrap(FromDIP(380));
+
     }
    
     m_scrollview_groups->Layout();
@@ -1536,10 +1549,13 @@ void AmsRMGroup::doRender(wxDC& dc)
         dc.SetFont(::Label::Body_12);
         auto text_size = dc.GetTextExtent(tray_name);
         dc.SetTextForeground(tray_color.GetLuminance() < 0.6 ? *wxWHITE : wxColour("#262E30"));
+        if (tray_color.Alpha() == 0) {dc.SetTextForeground(wxColour(0x262E30));}
+
         dc.DrawText(tray_name, x_center - text_size.x / 2, size.y - y_center - text_size.y / 2);
 
         //draw split line
         dc.SetPen(wxPen(*wxWHITE, 2));
+        if (tray_color.Alpha() == 0) {dc.SetPen(wxPen(wxColour(0xCECECE), 2));}
         dc.SetBrush(*wxTRANSPARENT_BRUSH);
         auto pos_sp_start = CalculateEndpoint(wxPoint(x, y), (360 - startAngle),  size.x / 2 - FromDIP(3));
         dc.DrawLine(wxPoint(x, y), pos_sp_start);

@@ -1,8 +1,0 @@
-{
-    "name": "Snapmaker TPU @base",
-    "instantiation": "false",
-    "filament_id": "SMF39",
-    "inherits": "fdm_filament_tpu",
-    "type": "filament",
-    "from": "system"
-}

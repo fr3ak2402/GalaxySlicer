@@ -56,6 +56,7 @@
 #include "libslic3r/Thread.hpp"
 #include "libslic3r/miniz_extension.hpp"
 #include "libslic3r/Utils.hpp"
+#include "libslic3r/Color.hpp"
 
 #include "GUI.hpp"
 #include "GUI_Utils.hpp"
@@ -99,6 +100,7 @@
 #include "ReleaseNote.hpp"
 #include "PrivacyUpdateDialog.hpp"
 #include "ModelMall.hpp"
+#include "HintNotification.hpp"
 
 //#ifdef WIN32
 //#include "BaseException.h"
@@ -393,7 +395,7 @@ private:
             version = _L("V") + " " + GUI_App::format_display_version();
 
             // credits infornation
-            credits = _L("Based on OrcaSlicer, BambuStudio and PrusaSlicer");
+            credits = _L("Based on GalaxySlicer, BambuStudio and PrusaSlicer");
 
             title_font = Label::Head_16;
             version_font = Label::Body_16;
@@ -704,6 +706,12 @@ static void generic_exception_handle()
 //#endif
 }
 
+void GUI_App::toggle_show_gcode_window()
+{
+    m_show_gcode_window = !m_show_gcode_window;
+    app_config->set_bool("show_gcode_window", m_show_gcode_window);
+}
+
 std::vector<std::string> GUI_App::split_str(std::string src, std::string separator)
 {
     std::string::size_type pos;
@@ -729,6 +737,14 @@ void GUI_App::post_init()
     assert(initialized());
     if (! this->initialized())
         throw Slic3r::RuntimeError("Calling post_init() while not yet initialized");
+
+    if (app_config->get("sync_user_preset") == "true") {
+        // BBS loading user preset
+        // Always async, not such startup step
+        // BOOST_LOG_TRIVIAL(info) << "Loading user presets...";
+        // scrn->SetText(_L("Loading user presets..."));
+        if (m_agent) { start_sync_user_preset(); }
+    }
 
     bool switch_to_3d = false;
     if (!this->init_params->input_files.empty()) {
@@ -824,6 +840,8 @@ void GUI_App::post_init()
 //#endif
         if (is_editor())
             mainframe->select_tab(size_t(0));
+        if (app_config->get("default_page") == "1")
+            mainframe->select_tab(size_t(1));
         mainframe->Thaw();
         plater_->trigger_restore_project(1);
         BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << ", end load_gl_resources";
@@ -879,7 +897,7 @@ void GUI_App::post_init()
     if (app_config->get("stealth_mode") == "false")
         hms_query = new HMSQuery();
     
-    m_show_gcode_window = app_config->get("show_gcode_window") == "true";
+    m_show_gcode_window = app_config->get_bool("show_gcode_window");
     if (m_networking_need_update) {
         //updating networking
         int ret = updating_bambu_networking();
@@ -950,8 +968,6 @@ void GUI_App::post_init()
                 hms_query->check_hms_info();
         });
 
-    std::string functional_config_file = Slic3r::resources_dir() + "/config.json";
-    DeviceManager::load_functional_config(encode_path(functional_config_file.c_str()));
 
     std::string filaments_blacklist_config_file = Slic3r::resources_dir() + "/printers/filaments_blacklist.json";
     DeviceManager::load_filaments_blacklist_config(encode_path(filaments_blacklist_config_file.c_str()));
@@ -1040,21 +1056,6 @@ void GUI_App::shutdown()
 
     if (m_is_recreating_gui) return;
     m_is_closing = true;
-    stop_sync_user_preset();
-
-    if (m_device_manager) {
-        delete m_device_manager;
-        m_device_manager = nullptr;
-    }
-
-    if (m_agent) {
-        //BBS avoid a crash on mac platform
-#ifdef __WINDOWS__
-        m_agent->start_discovery(false, false);
-#endif
-        delete m_agent;
-        m_agent = nullptr;
-    }
     BOOST_LOG_TRIVIAL(info) << "GUI_App::shutdown exit";
 }
 
@@ -1115,7 +1116,7 @@ std::string GUI_App::get_plugin_url(std::string name, std::string country_code)
 {
     std::string url = get_http_url(country_code);
 
-    std::string curr_version = SLIC3R_VERSION;
+    std::string curr_version = BBL_PLUGIN_VERSION;
     std::string using_version = curr_version.substr(0, 9) + "00";
     if (name == "cameratools")
         using_version = curr_version.substr(0, 6) + "00.00";
@@ -1227,10 +1228,10 @@ int GUI_App::download_plugin(std::string name, std::string package_name, Install
 
 
     if (download_url.empty()) {
-        BOOST_LOG_TRIVIAL(info) << "[download_plugin 1]: no available plugin found for this app version: " << SLIC3R_VERSION;
+        BOOST_LOG_TRIVIAL(info) << "[download_plugin 1]: no available plugin found for this app version: " << BBL_PLUGIN_VERSION;
         if (pro_fn) pro_fn(InstallStatusDownloadFailed, 0, cancel);
         j["result"] = "failed";
-        j["error_msg"] = "[download_plugin 1]: no available plugin found for this app version: " + std::string(SLIC3R_VERSION);
+        j["error_msg"] = "[download_plugin 1]: no available plugin found for this app version: " + std::string(BBL_PLUGIN_VERSION);
         return -1;
     }
     else if (pro_fn) {
@@ -1451,9 +1452,9 @@ void GUI_App::restart_networking()
         if (app_config->get("sync_user_preset") == "true") {
             start_sync_user_preset();
         }
-        if (mainframe && this->app_config->get("staff_pick_switch") == "true") {
-            if (mainframe->m_webview) { mainframe->m_webview->SendDesignStaffpick(has_model_mall()); }
-        }
+        // if (mainframe && this->app_config->get("staff_pick_switch") == "true") {
+        //     if (mainframe->m_webview) { mainframe->m_webview->SendDesignStaffpick(has_model_mall()); }
+        // }
     }
     BOOST_LOG_TRIVIAL(info) << __FUNCTION__<< boost::format(" exit, m_agent=%1%")%m_agent;
 }
@@ -1487,7 +1488,7 @@ bool GUI_App::check_networking_version()
     if (!network_ver.empty()) {
         BOOST_LOG_TRIVIAL(info) << "get_network_agent_version=" << network_ver;
     }
-    std::string studio_ver = SLIC3R_VERSION;
+    std::string studio_ver = BBL_PLUGIN_VERSION;
     if (network_ver.length() >= 8) {
         if (network_ver.substr(0,8) == studio_ver.substr(0,8)) {
             m_networking_compatible = true;
@@ -1556,6 +1557,8 @@ void GUI_App::init_networking_callbacks()
                     obj->is_tunnel_mqtt = tunnel;
                     obj->command_request_push_all(true);
                     obj->command_get_version();
+                    obj->erase_user_access_code();
+                    obj->command_get_access_code();
                     GUI::wxGetApp().sidebar().load_ams_list(obj->dev_id, obj);
                 }
                 });
@@ -1567,6 +1570,12 @@ void GUI_App::init_networking_callbacks()
             return std::string();
             }
         );
+
+        m_agent->set_on_subscribe_failure_fn([this](std::string dev_id) {
+            CallAfter([this, dev_id] {
+                on_start_subscribe_again(dev_id);
+            });
+        });
 
         m_agent->set_on_local_connect_fn(
             [this](int state, std::string dev_id, std::string msg) {
@@ -1813,16 +1822,11 @@ void GUI_App::init_app_config()
             data_dir_path = boost::filesystem::path(data_dir());
         #endif
         if (!boost::filesystem::exists(data_dir_path)){
-            auto older_data_dir = data_dir_path.parent_path() / "BambuStudio-SoftFever";
-            if(boost::filesystem::exists(older_data_dir)){
-                copy_directory_recursively(older_data_dir,data_dir_path);
-                boost::system::error_code ec;
-                boost::filesystem::rename(data_dir_path / "BambuStudio.conf", data_dir_path / "GalaxySlicer.conf", ec);
-                boost::filesystem::rename(data_dir_path / "BambuStudio.conf.bak", data_dir_path / "GalaxySlicer.conf.bak", ec);
-            }
-            else
-                boost::filesystem::create_directory(data_dir_path);
+            boost::filesystem::create_directory(data_dir_path);
         }
+
+        // Change current dirtory of application
+        chdir(encode_path((Slic3r::data_dir() + "/log").c_str()).c_str());
     } else {
         m_datadir_redefined = true;
     }
@@ -1845,16 +1849,15 @@ void GUI_App::init_app_config()
         app_config = new AppConfig();
         //app_config = new AppConfig(is_editor() ? AppConfig::EAppMode::Editor : AppConfig::EAppMode::GCodeViewer);
 
+    m_config_corrupted = false;
 	// load settings
 	m_app_conf_exists = app_config->exists();
 	if (m_app_conf_exists) {
         std::string error = app_config->load();
         if (!error.empty()) {
-            // Error while parsing config file. We'll customize the error message and rethrow to be displayed.
-            throw Slic3r::RuntimeError(
-                _u8L("GalaxySlicer configuration file may be corrupted and is not abled to be parsed."
-                     "Please delete the file and try again.") +
-                "\n\n" + app_config->config_path() + "\n\n" + error);
+            //if the config file is corrupted, we will show a error dialog and create a default config file.
+            m_config_corrupted = true;
+
         }
         // Save orig_version here, so its empty if no app_config existed before this run.
         m_last_config_version = app_config->orig_version();//parse_semver_from_ini(app_config->config_path());
@@ -1892,7 +1895,7 @@ std::map<std::string, std::string> GUI_App::get_extra_header()
     std::map<std::string, std::string> extra_headers;
     extra_headers.insert(std::make_pair("X-BBL-Client-Type", "slicer"));
     extra_headers.insert(std::make_pair("X-BBL-Client-Name", SLIC3R_APP_NAME));
-    extra_headers.insert(std::make_pair("X-BBL-Client-Version", VersionInfo::convert_full_version(SLIC3R_VERSION)));
+    extra_headers.insert(std::make_pair("X-BBL-Client-Version", VersionInfo::convert_full_version(BBL_PLUGIN_VERSION)));
 #if defined(__WINDOWS__)
     extra_headers.insert(std::make_pair("X-BBL-OS-Type", "windows"));
 #elif defined(__APPLE__)
@@ -1937,7 +1940,8 @@ void GUI_App::on_start_subscribe_again(std::string dev_id)
         MachineObject* obj = dev->get_selected_machine();
         if (!obj) return;
 
-        if ( (dev_id == obj->dev_id) && obj->is_connecting() ) {
+        if ( (dev_id == obj->dev_id) && obj->is_connecting() && obj->subscribe_counter > 0) {
+            obj->subscribe_counter--;
             if(wxGetApp().getAgent()) wxGetApp().getAgent()->set_user_selected_machine(dev_id);
             BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << ": dev_id=" << obj->dev_id;
         }
@@ -1978,6 +1982,27 @@ bool GUI_App::OnInit()
         generic_exception_handle();
         return false;
     }
+}
+
+int GUI_App::OnExit()
+{
+    stop_sync_user_preset();
+
+    if (m_device_manager) {
+        delete m_device_manager;
+        m_device_manager = nullptr;
+    }
+
+    if (m_agent) {
+        // BBS avoid a crash on mac platform
+#ifdef __WINDOWS__
+        m_agent->start_discovery(false, false);
+#endif
+        delete m_agent;
+        m_agent = nullptr;
+    }
+
+    return wxApp::OnExit();
 }
 
 class wxBoostLog : public wxLog
@@ -2056,6 +2081,7 @@ bool GUI_App::on_init_inner()
     }
 #endif
 
+    BOOST_LOG_TRIVIAL(info) << boost::format("gui mode, Current GalaxySlicer Version %1%")%SLIC3R_VERSION;
     // Enable this to get the default Win32 COMCTRL32 behavior of static boxes.
 //    wxSystemOptions::SetOption("msw.staticbox.optimized-paint", 0);
     // Enable this to disable Windows Vista themes for all wxNotebooks. The themes seem to lead to terrible
@@ -2133,7 +2159,7 @@ bool GUI_App::on_init_inner()
         int last_major = m_last_config_version->maj();
         int last_minor = m_last_config_version->min();
         int last_patch = m_last_config_version->patch()/100;
-        std::string studio_ver = SLIC3R_VERSION;
+        std::string studio_ver = BBL_PLUGIN_VERSION;
         int cur_major = atoi(studio_ver.substr(0,2).c_str());
         int cur_minor = atoi(studio_ver.substr(3,2).c_str());
         int cur_patch = atoi(studio_ver.substr(6,2).c_str());
@@ -2146,13 +2172,12 @@ bool GUI_App::on_init_inner()
         }
     }
 
-    if(app_config->get("version") != SLIC3R_VERSION) {
-        app_config->set("version", SLIC3R_VERSION);
+    if(app_config->get("version") != BBL_PLUGIN_VERSION) {
+        app_config->set("version", BBL_PLUGIN_VERSION);
     }
 
     GalaxySlicerSplashScreen * scrn = nullptr;
-    const bool show_splash_screen = true;
-    if (show_splash_screen) {
+    if (app_config->get("show_splash_screen") == "true") {
         // make a bitmap with dark grey banner on the left side
         //BBS make BBL splash screen bitmap
         wxBitmap bmp = GalaxySlicerSplashScreen::MakeBitmap();
@@ -2213,7 +2238,6 @@ bool GUI_App::on_init_inner()
 
 
                 dialog.SetExtendedMessage(extmsg);*/
-
                 std::string skip_version_str = this->app_config->get("app", "skip_version");
                 bool skip_this_version = false;
                 if (!skip_version_str.empty()) {
@@ -2232,7 +2256,7 @@ bool GUI_App::on_init_inner()
                     dialog.update_version_info(extmsg, version_info.version_str);
                     //dialog.update_version_info(version_info.description);
                     if (evt.GetInt() != 0) {
-                        dialog.m_remind_choice->Hide();
+                        dialog.m_button_skip_version->Hide();
                     }
                     switch (dialog.ShowModal())
                     {
@@ -2328,16 +2352,6 @@ bool GUI_App::on_init_inner()
             show_error(nullptr, ex.what());
         }
     //}
-
-    if (app_config->get("sync_user_preset") == "true") {
-        //BBS loading user preset
-        // Always async, not such startup step
-        //BOOST_LOG_TRIVIAL(info) << "Loading user presets...";
-        //scrn->SetText(_L("Loading user presets..."));
-        if (m_agent) {
-            start_sync_user_preset();
-        }
-    }
 
 #ifdef WIN32
 #if !wxVERSION_EQUAL_OR_GREATER_THAN(3,1,3)
@@ -2471,6 +2485,7 @@ bool GUI_App::on_init_inner()
 
         if (m_post_initialized && app_config->dirty())
             app_config->save();
+
     });
 
     m_initialized = true;
@@ -2478,6 +2493,13 @@ bool GUI_App::on_init_inner()
     flush_logs();
 
     BOOST_LOG_TRIVIAL(info) << "finished the gui app init";
+    if (m_config_corrupted) {
+        m_config_corrupted = false;
+        show_error(nullptr,
+                   _u8L(
+                       "The GalaxySlicer configuration file may be corrupted and cannot be parsed.\nGalaxySlicer has attempted to recreate the "
+                       "configuration file.\nPlease note, application settings will be lost, but printer profiles will not be affected."));
+    }
     //BBS: delete splash screen
     delete scrn;
     return true;
@@ -2588,14 +2610,16 @@ __retry:
 
     if (create_network_agent) {
         BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << boost::format(", create network agent...");
-        m_agent = new Slic3r::NetworkAgent();
+        //std::string data_dir = wxStandardPaths::Get().GetUserDataDir().ToUTF8().data();
+        std::string data_directory = data_dir();
+
+        m_agent = new Slic3r::NetworkAgent(data_directory);
 
         if (!m_device_manager)
             m_device_manager = new Slic3r::DeviceManager(m_agent);
         else
             m_device_manager->set_agent(m_agent);
-        //std::string data_dir = wxStandardPaths::Get().GetUserDataDir().ToUTF8().data();
-        std::string data_directory = data_dir();
+
 
         //BBS set config dir
         if (m_agent) {
@@ -2710,15 +2734,15 @@ void GUI_App::update_label_colours_from_appconfig()
 
 void GUI_App::update_publish_status()
 {
-    mainframe->show_publish_button(has_model_mall());
-    if (app_config->get("staff_pick_switch") == "true") {
-        mainframe->m_webview->SendDesignStaffpick(has_model_mall());
-    }
+    // mainframe->show_publish_button(has_model_mall());
+    // if (app_config->get("staff_pick_switch") == "true") {
+    //     mainframe->m_webview->SendDesignStaffpick(has_model_mall());
+    // }
 }
 
 bool GUI_App::has_model_mall()
 {
-    if (auto cc = app_config->get_country_code(); cc == "CN" || cc == "")
+    if (auto cc = app_config->get_region(); cc == "CNH" || cc == "China" || cc == "")
         return false;
     return true;
 }
@@ -2949,8 +2973,7 @@ void GUI_App::set_label_clr_modified(const wxColour& clr)
     if (m_color_label_modified == clr)
         return;
     m_color_label_modified = clr;
-    auto clr_str = wxString::Format(wxT("#%02X%02X%02X"), clr.Red(), clr.Green(), clr.Blue());
-    std::string str = clr_str.ToStdString();
+    const std::string str = encode_color(ColorRGB(clr.Red(), clr.Green(), clr.Blue()));
     app_config->save();
     */
 }
@@ -2963,8 +2986,7 @@ void GUI_App::set_label_clr_sys(const wxColour& clr)
     if (m_color_label_sys == clr)
         return;
     m_color_label_sys = clr;
-    auto clr_str = wxString::Format(wxT("#%02X%02X%02X"), clr.Red(), clr.Green(), clr.Blue());
-    std::string str = clr_str.ToStdString();
+    const std::string str = encode_color(ColorRGB(clr.Red(), clr.Green(), clr.Blue()));
     app_config->save();
     */
 }
@@ -3539,22 +3561,22 @@ std::string GUI_App::handle_web_request(std::string cmd)
                     }
                 }
             }
-            else if (command_str.compare("modelmall_model_advise_get") == 0) {
-                if (mainframe && this->app_config->get("staff_pick_switch") == "true") {
-                    if (mainframe->m_webview) {
-                        mainframe->m_webview->SendDesignStaffpick(has_model_mall());
-                    }
-                }
-            }
-            else if (command_str.compare("modelmall_model_open") == 0) {
-                if (root.get_child_optional("data") != boost::none) {
-                    pt::ptree data_node = root.get_child("data");
-                    boost::optional<std::string> id = data_node.get_optional<std::string>("id");
-                    if (id.has_value() && mainframe->m_webview) {
-                        mainframe->m_webview->OpenModelDetail(id.value(), m_agent);
-                    }
-                }
-            }
+            // else if (command_str.compare("modelmall_model_advise_get") == 0) {
+            //     if (mainframe && this->app_config->get("staff_pick_switch") == "true") {
+            //         if (mainframe->m_webview) {
+            //             mainframe->m_webview->SendDesignStaffpick(has_model_mall());
+            //         }
+            //     }
+            // }
+            // else if (command_str.compare("modelmall_model_open") == 0) {
+            //     if (root.get_child_optional("data") != boost::none) {
+            //         pt::ptree data_node = root.get_child("data");
+            //         boost::optional<std::string> id = data_node.get_optional<std::string>("id");
+            //         if (id.has_value() && mainframe->m_webview) {
+            //             mainframe->m_webview->OpenModelDetail(id.value(), m_agent);
+            //         }
+            //     }
+            // }
             else if (command_str.compare("homepage_open_recentfile") == 0) {
                 if (root.get_child_optional("data") != boost::none) {
                     pt::ptree data_node = root.get_child("data");
@@ -3623,6 +3645,17 @@ std::string GUI_App::handle_web_request(std::string cmd)
                     wxPostEvent(mainframe, e);
                 }
             }
+            //GalaxySlicer: Open Library URL
+            else if (command_str.compare("homepage_open_library") == 0) {
+                if (root.get_child_optional("data") != boost::none) {
+                    pt::ptree                    data_node = root.get_child("data");
+                    boost::optional<std::string> path      = data_node.get_optional<std::string>("url");
+                    if (path.has_value()) {
+                        wxLaunchDefaultBrowser(path.value());
+                    }
+                }
+            }
+            //GalaxySlicer: Open Social URL
             else if (command_str.compare("homepage_open_social") == 0) {
                 if (root.get_child_optional("data") != boost::none) {
                     pt::ptree                    data_node = root.get_child("data");
@@ -3769,8 +3802,8 @@ void GUI_App::on_http_error(wxCommandEvent &evt)
     if (code == HttpErrorVersionLimited) {
         MessageDialog msg_dlg(nullptr, _L("The version of GalaxySlicer is too low and needs to be updated to the latest version before it can be used normally"), "", wxAPPLY | wxOK);
         if (msg_dlg.ShowModal() == wxOK) {
-            return;
         }
+       
     }
 
     // request login
@@ -3778,9 +3811,15 @@ void GUI_App::on_http_error(wxCommandEvent &evt)
         if (m_agent) {
             if (m_agent->is_user_login()) {
                 this->request_user_logout();
-                MessageDialog msg_dlg(nullptr, _L("Login information expired. Please login again."), "", wxAPPLY | wxOK);
-                if (msg_dlg.ShowModal() == wxOK) {
-                    return;
+
+                if (!m_show_http_errpr_msgdlg) {
+                    MessageDialog msg_dlg(nullptr, _L("Login information expired. Please login again."), "", wxAPPLY | wxOK);
+                    m_show_http_errpr_msgdlg = true;
+                    auto modal_result = msg_dlg.ShowModal();
+                    if (modal_result == wxOK || modal_result == wxCLOSE) {
+                        m_show_http_errpr_msgdlg = false;
+                        return;
+                    }
                 }
             }
         }
@@ -3839,12 +3878,12 @@ void GUI_App::on_user_login_handle(wxCommandEvent &evt)
 
 void GUI_App::check_track_enable()
 {
-    // Orca: alaways disable track event
+    // Galaxy: alaways disable track event
     return;
     if (app_config && app_config->get("firstguide", "privacyuse") == "true") {
         //enable track event
         json header_json;
-        header_json["ver"] = SLIC3R_VERSION;
+        header_json["ver"] = BBL_PLUGIN_VERSION;
         wxString os_desc = wxGetOsDescription();
         int major = 0, minor = 0, micro = 0;
         header_json["os"] = std::string(os_desc.ToUTF8());
@@ -4008,7 +4047,7 @@ void GUI_App::check_new_galaxyslicer_version(bool show_tips, int by_user)
             try 
             {
                 boost::trim(body);
-                // SoftFever (OrcaSlicer): parse github release, ported from SS
+                //parse github release, ported from SS
 
                 boost::property_tree::ptree root;
 
@@ -4305,6 +4344,7 @@ void GUI_App::reload_settings()
     if (preset_bundle && m_agent) {
         std::map<std::string, std::map<std::string, std::string>> user_presets;
         m_agent->get_user_presets(&user_presets);
+        BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << __LINE__ << " cloud user preset number is: " << user_presets.size();
         preset_bundle->load_user_presets(*app_config, user_presets, ForwardCompatibilitySubstitutionRule::Enable);
         preset_bundle->save_user_presets(*app_config, get_delete_cache_presets());
         mainframe->update_side_preset_ui();
@@ -4331,18 +4371,25 @@ void GUI_App::sync_preset(Preset* preset)
     int result = -1;
     unsigned int http_code = 200;
     std::string updated_info;
+    long long update_time = 0;
     // only sync user's preset
     if (!preset->is_user()) return;
     if (preset->is_custom_defined()) return;
 
-    if (preset->setting_id.empty() && preset->sync_info.empty() && !preset->base_id.empty()) {
-        std::map<std::string, std::string> values_map;
+    auto setting_id = preset->setting_id;
+    std::map<std::string, std::string> values_map;
+    if (setting_id.empty() && preset->sync_info.empty()) {
+        if (m_create_preset_blocked[preset->type])
+            return;
         int ret = preset_bundle->get_differed_values_to_update(*preset, values_map);
         if (!ret) {
             std::string new_setting_id = m_agent->request_setting_id(preset->name, &values_map, &http_code);
             if (!new_setting_id.empty()) {
-                preset->setting_id = new_setting_id;
+                setting_id = new_setting_id;
                 result = 0;
+                auto update_time_str = values_map[BBL_JSON_KEY_UPDATE_TIME];
+                if (!update_time_str.empty())
+                    update_time = std::atoll(update_time_str.c_str());
             }
             else {
                 BOOST_LOG_TRIVIAL(trace) << "[sync_preset]init: request_setting_id failed, http code "<<http_code;
@@ -4361,14 +4408,18 @@ void GUI_App::sync_preset(Preset* preset)
             updated_info = "hold";
         }
     }
-    else if ((preset->sync_info.compare("create") == 0) && !preset->base_id.empty()) {
-        std::map<std::string, std::string> values_map;
+    else if (preset->sync_info.compare("create") == 0) {
+        if (m_create_preset_blocked[preset->type])
+            return;
         int ret = preset_bundle->get_differed_values_to_update(*preset, values_map);
         if (!ret) {
             std::string new_setting_id = m_agent->request_setting_id(preset->name, &values_map, &http_code);
             if (!new_setting_id.empty()) {
-                preset->setting_id = new_setting_id;
+                setting_id = new_setting_id;
                 result = 0;
+                auto update_time_str = values_map[BBL_JSON_KEY_UPDATE_TIME];
+                if (!update_time_str.empty())
+                    update_time = std::atoll(update_time_str.c_str());
             }
             else {
                 BOOST_LOG_TRIVIAL(trace) << "[sync_preset]create: request_setting_id failed, http code "<<http_code;
@@ -4385,22 +4436,25 @@ void GUI_App::sync_preset(Preset* preset)
             BOOST_LOG_TRIVIAL(trace) << "[sync_preset]create: can not generate differed preset";
         }
     }
-    else if ((preset->sync_info.compare("update") == 0) && !preset->base_id.empty()) {
-        if (!preset->setting_id.empty()) {
-            std::map<std::string, std::string> values_map;
+    else if (preset->sync_info.compare("update") == 0) {
+        if (!setting_id.empty()) {
             int ret = preset_bundle->get_differed_values_to_update(*preset, values_map);
             if (!ret) {
-                if (values_map[BBL_JSON_KEY_BASE_ID] ==  preset->setting_id) {
-                    //clear the setting_id in this case
-                    preset->setting_id.clear();
+                if (auto iter = values_map.find(BBL_JSON_KEY_BASE_ID); iter != values_map.end() && iter->second == setting_id) {
+                    //clear the setting_id in this case ???
+                    setting_id.clear();
                     result = 0;
                 }
                 else {
-                    result = m_agent->put_setting(preset->setting_id, preset->name, &values_map, &http_code);
+                    result = m_agent->put_setting(setting_id, preset->name, &values_map, &http_code);
                     if (http_code >= 400) {
                         result = 0;
                         updated_info = "hold";
-                        BOOST_LOG_TRIVIAL(error) << "[sync_preset] put setting_id = " << preset->setting_id << " failed, http_code = " << http_code;
+                        BOOST_LOG_TRIVIAL(error) << "[sync_preset] put setting_id = " << setting_id << " failed, http_code = " << http_code;
+                    } else {
+                        auto update_time_str = values_map[BBL_JSON_KEY_UPDATE_TIME];
+                        if (!update_time_str.empty())
+                            update_time = std::atoll(update_time_str.c_str());
                     }
                 }
 
@@ -4416,19 +4470,34 @@ void GUI_App::sync_preset(Preset* preset)
         }
     }
 
-    //update sync_info preset info in file
+    if (http_code >= 400 && values_map["code"] == "14") { // Limit
+        m_create_preset_blocked[preset->type] = true;
+        CallAfter([this] {
+            plater()->get_notification_manager()->push_notification(NotificationType::BBLUserPresetExceedLimit);
+            static bool dialog_notified = false;
+            if (dialog_notified)
+                return;
+            dialog_notified = true;
+            if (mainframe == nullptr)
+                return;
+            auto msg = _L("The number of user presets cached in the cloud has exceeded the upper limit, newly created user presets can only be used locally.");
+            MessageDialog(mainframe, msg, _L("Sync user presets"), wxICON_WARNING | wxOK).ShowModal();
+        });
+        return; // this error not need hold, and should not hold
+    }
 
+    // update sync_info preset info in file
     if (result == 0) {
         //PresetBundle* preset_bundle = wxGetApp().preset_bundle;
         if (!this->preset_bundle) return;
 
         BOOST_LOG_TRIVIAL(trace) << "sync_preset: sync operation: " << preset->sync_info << " success! preset = " << preset->name;
         if (preset->type == Preset::Type::TYPE_FILAMENT) {
-            preset_bundle->filaments.set_sync_info_and_save(preset->name, preset->setting_id, updated_info);
+            preset_bundle->filaments.set_sync_info_and_save(preset->name, setting_id, updated_info, update_time);
         } else if (preset->type == Preset::Type::TYPE_PRINT) {
-            preset_bundle->prints.set_sync_info_and_save(preset->name, preset->setting_id, updated_info);
+            preset_bundle->prints.set_sync_info_and_save(preset->name, setting_id, updated_info, update_time);
         } else if (preset->type == Preset::Type::TYPE_PRINTER) {
-            preset_bundle->printers.set_sync_info_and_save(preset->name, preset->setting_id, updated_info);
+            preset_bundle->printers.set_sync_info_and_save(preset->name, setting_id, updated_info, update_time);
         }
     }
 }
@@ -4441,12 +4510,15 @@ void GUI_App::start_sync_user_preset(bool with_progress_dlg)
     if (!m_agent || !m_agent->is_user_login()) return;
 
     // has already start sync
-    if (enable_sync) return;
+    if (m_user_sync_token) return;
 
     ProgressFn progressFn;
     WasCancelledFn cancelFn;
     std::function<void(bool)> finishFn;
 
+    BOOST_LOG_TRIVIAL(info) << "start_sync_service...";
+    // BBS
+    m_user_sync_token.reset(new int(0));
     if (with_progress_dlg) {
         auto dlg = new ProgressDialog(_L("Loading"), "", 100, this->mainframe, wxPD_AUTO_HIDE | wxPD_APP_MODAL | wxPD_CAN_ABORT);
         dlg->Update(0, _L("Loading user preset"));
@@ -4456,36 +4528,50 @@ void GUI_App::start_sync_user_preset(bool with_progress_dlg)
             });
         };
         cancelFn = [this, dlg]() {
-            return dlg->WasCanceled();
+            return m_is_closing || dlg->WasCanceled();
         };
-        finishFn = [this, userid = m_agent->get_user_id(), dlg](bool ok) {
+        finishFn = [this, userid = m_agent->get_user_id(), dlg, t = std::weak_ptr<int>(m_user_sync_token)](bool ok) {
             CallAfter([=]{
                 dlg->Destroy();
-                if (ok && m_agent && userid == m_agent->get_user_id()) reload_settings();
+                if (ok && m_agent && t.lock() == m_user_sync_token && userid == m_agent->get_user_id()) reload_settings();
             });
         };
     }
     else {
-        finishFn = [this, userid = m_agent->get_user_id()](bool ok) {
+        finishFn = [this, userid = m_agent->get_user_id(), t = std::weak_ptr<int>(m_user_sync_token)](bool ok) {
             CallAfter([=] {
-                if (ok && m_agent && userid == m_agent->get_user_id()) reload_settings();
+                if (ok && m_agent && t.lock() == m_user_sync_token && userid == m_agent->get_user_id()) reload_settings();
             });
         };
     }
 
-    BOOST_LOG_TRIVIAL(info) << "start_sync_service...";
-    //BBS
-    enable_sync = true;
     m_sync_update_thread = Slic3r::create_thread(
-        [this, progressFn, cancelFn, finishFn] {
+        [this, progressFn, cancelFn, finishFn, t = std::weak_ptr<int>(m_user_sync_token)] {
             // get setting list, update setting list
             std::string version = preset_bundle->get_vendor_profile_version(PresetBundle::BBL_BUNDLE).to_string();
-            int ret = m_agent->get_setting_list(version, progressFn, cancelFn);
+            int ret = m_agent->get_setting_list2(version, [this](auto info) {
+                auto type = info[BBL_JSON_KEY_TYPE];
+                auto name = info[BBL_JSON_KEY_NAME];
+                auto setting_id = info[BBL_JSON_KEY_SETTING_ID];
+                auto update_time_str = info[BBL_JSON_KEY_UPDATE_TIME];
+                long long update_time = 0;
+                if (!update_time_str.empty())
+                    update_time = std::atoll(update_time_str.c_str());
+                if (type == "filament") {
+                    return preset_bundle->filaments.need_sync(name, setting_id, update_time);
+                } else if (type == "print") {
+                    return preset_bundle->prints.need_sync(name, setting_id, update_time);
+                } else if (type == "printer") {
+                    return preset_bundle->printers.need_sync(name, setting_id, update_time);
+                } else {
+                    return true;
+                }
+            }, progressFn, cancelFn);
             finishFn(ret == 0);
 
             int count = 0, sync_count = 0;
             std::vector<Preset> presets_to_sync;
-            while (enable_sync) {
+            while (!t.expired()) {
                 count++;
                 if (count % 20 == 0) {
                     if (m_agent) {
@@ -4495,25 +4581,39 @@ void GUI_App::start_sync_user_preset(bool with_progress_dlg)
                         //sync preset
                         if (!preset_bundle) continue;
 
-                        sync_count = preset_bundle->prints.get_user_presets(presets_to_sync);
+                        int total_count = 0;
+                        sync_count = preset_bundle->prints.get_user_presets(preset_bundle, presets_to_sync);
                         if (sync_count > 0) {
                             for (Preset& preset : presets_to_sync) {
                                 sync_preset(&preset);
+                                boost::this_thread::sleep_for(boost::chrono::milliseconds(100));
                             }
                         }
+                        total_count += sync_count;
 
-                        sync_count = preset_bundle->filaments.get_user_presets(presets_to_sync);
+                        sync_count = preset_bundle->filaments.get_user_presets(preset_bundle, presets_to_sync);
                         if (sync_count > 0) {
                             for (Preset& preset : presets_to_sync) {
                                 sync_preset(&preset);
+                                boost::this_thread::sleep_for(boost::chrono::milliseconds(100));
                             }
                         }
+                        total_count += sync_count;
 
-                        sync_count = preset_bundle->printers.get_user_presets(presets_to_sync);
+                        sync_count = preset_bundle->printers.get_user_presets(preset_bundle, presets_to_sync);
                         if (sync_count > 0) {
                             for (Preset& preset : presets_to_sync) {
                                 sync_preset(&preset);
+                                boost::this_thread::sleep_for(boost::chrono::milliseconds(100));
                             }
+                        }
+                        total_count += sync_count;
+
+                        if (total_count == 0) {
+                            CallAfter([this] {
+                                if (!m_is_closing)
+                                    plater()->get_notification_manager()->close_notification_of_type(NotificationType::BBLUserPresetExceedLimit);
+                            });
                         }
 
                         unsigned int http_code = 200;
@@ -4527,6 +4627,7 @@ void GUI_App::start_sync_user_preset(bool with_progress_dlg)
                             if (result == 0) {
                                 preset_deleted_from_cloud(del_setting_id);
                                 it = delete_cache_presets.erase(it);
+                                m_create_preset_blocked = { false, false, false, false, false, false };
                                 BOOST_LOG_TRIVIAL(trace) << "sync_preset: sync operation: delete success! setting id = " << del_setting_id;
                             }
                             else {
@@ -4544,12 +4645,16 @@ void GUI_App::start_sync_user_preset(bool with_progress_dlg)
 
 void GUI_App::stop_sync_user_preset()
 {
-    if (!enable_sync)
+    if (!m_user_sync_token)
         return;
 
-    enable_sync = false;
-    if (m_sync_update_thread.joinable())
-        m_sync_update_thread.detach();
+    m_user_sync_token.reset();
+    if (m_sync_update_thread.joinable()) {
+        if (m_is_closing)
+            m_sync_update_thread.join();
+        else
+            m_sync_update_thread.detach();
+    }
 }
 
 void GUI_App::start_http_server()
@@ -4746,7 +4851,7 @@ bool GUI_App::load_language(wxString language, bool initial)
     	// Get the active language from PrusaSlicer.ini, or empty string if the key does not exist.
         language = app_config->get("language");
         if (! language.empty())
-        	BOOST_LOG_TRIVIAL(info) << boost::format("language provided by BambuStudio.conf: %1%") % language;
+        	BOOST_LOG_TRIVIAL(info) << boost::format("language provided by GalaxySlicer.conf: %1%") % language;
         else {
             // Get the system language.
             const wxLanguage lang_system = wxLanguage(wxLocale::GetSystemLanguage());
@@ -4916,6 +5021,7 @@ bool GUI_App::load_language(wxString language, bool initial)
     //FIXME This is a temporary workaround, the correct solution is to switch to "C" locale during file import / export only.
     //wxSetlocale(LC_NUMERIC, "C");
     Preset::update_suffix_modified((_L("*") + " ").ToUTF8().data());
+    HintDatabase::get_instance().reinit();
 	return true;
 }
 
@@ -4925,6 +5031,11 @@ Tab* GUI_App::get_tab(Preset::Type type)
         if (tab->type() == type)
             return tab->completed() ? tab : nullptr; // To avoid actions with no-completed Tab
     return nullptr;
+}
+
+Tab* GUI_App::get_plate_tab()
+{
+    return plate_tab;
 }
 
 Tab* GUI_App::get_model_tab(bool part)
@@ -5657,6 +5768,12 @@ void GUI_App::MacOpenFiles(const wxArrayString &fileNames)
 Sidebar& GUI_App::sidebar()
 {
     return plater_->sidebar();
+}
+
+GizmoObjectManipulation *GUI_App::obj_manipul()
+{
+    // If this method is called before plater_ has been initialized, return nullptr (to avoid a crash)
+    return (plater_ != nullptr) ? &plater_->get_view3D_canvas3D()->get_gizmos_manager().get_object_manipulation() : nullptr;
 }
 
 ObjectSettings* GUI_App::obj_settings()

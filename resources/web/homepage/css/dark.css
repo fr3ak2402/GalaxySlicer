@@ -97,6 +97,13 @@ body
 	background-color: #6B5E7D;
 }
 
+/*----Libraries------*/
+.LibraryItem:hover
+{
+	border-color: #9C6DA4;
+	background-color: #6B5E7D;
+}
+
 /*----Socials------*/
 .SocialItem:hover
 {

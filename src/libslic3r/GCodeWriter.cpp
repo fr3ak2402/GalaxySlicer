@@ -5,6 +5,7 @@
 #include <iostream>
 #include <map>
 #include <assert.h>
+#include <GCode/GCodeProcessor.hpp>
 
 #ifdef __APPLE__
     #include <boost/spirit/include/karma.hpp>
@@ -18,7 +19,7 @@ namespace Slic3r {
 bool GCodeWriter::full_gcode_comment = true;
 const double GCodeWriter::slope_threshold = 3 * PI / 180;
 
-bool supports_separate_travel_acceleration(GCodeFlavor flavor)
+bool GCodeWriter::supports_separate_travel_acceleration(GCodeFlavor flavor)
 {
     return (flavor == gcfRepetier || flavor == gcfMarlinFirmware ||  flavor == gcfRepRapFirmware);
 }
@@ -164,9 +165,13 @@ std::string GCodeWriter::set_chamber_temperature(int temperature, bool wait)
 
     if (wait)
     {
-        gcode<<"M106 P2 S255 \n";
-        gcode<<"M191 S"<<std::to_string(temperature)<<" ;"<<"set chamber_temperature and wait for it to be reached\n";
-        gcode<<"M106 P2 S0 \n";
+        // Galaxy: should we let the M191 command to turn on the auxiliary fan?
+        if (config.auxiliary_fan)
+            gcode << "M106 P2 S255 \n";
+        gcode << "M191 S" << std::to_string(temperature) << " ;"
+              << "set chamber_temperature and wait for it to be reached\n";
+        if (config.auxiliary_fan)
+            gcode << "M106 P2 S0 \n";
     }
     else {
         code = "M141";
@@ -243,6 +248,48 @@ std::string GCodeWriter::set_jerk_xy(double jerk)
 
 }
 
+std::string GCodeWriter::set_accel_and_jerk(unsigned int acceleration, double jerk)
+{
+    // Only Klipper supports setting acceleration and jerk at the same time. Throw an error if we try to do this on other flavours.
+    if(FLAVOR_IS_NOT(gcfKlipper))
+        throw std::runtime_error("set_accel_and_jerk() is only supported by Klipper");
+
+    // Clamp the acceleration to the allowed maximum.
+    if (m_max_acceleration > 0 && acceleration > m_max_acceleration)
+        acceleration = m_max_acceleration;
+    
+    bool is_empty = true;
+    std::ostringstream gcode;
+    gcode << "SET_VELOCITY_LIMIT";
+    if (acceleration != 0 && acceleration != m_last_acceleration) {
+        gcode << " ACCEL=" << acceleration;
+        if (this->config.accel_to_decel_enable) {
+            gcode << " ACCEL_TO_DECEL=" << acceleration * this->config.accel_to_decel_factor / 100;
+        }
+        m_last_acceleration = acceleration;
+        is_empty = false;
+    }
+    // Clamp the jerk to the allowed maximum.
+    if (m_max_jerk > 0 && jerk > m_max_jerk)
+        jerk = m_max_jerk;
+
+    if (jerk > 0.01 && !is_approx(jerk, m_last_jerk)) {
+        gcode << " SQUARE_CORNER_VELOCITY=" << jerk;
+        m_last_jerk = jerk;
+        is_empty = false;
+    }
+
+    if(is_empty)
+        return std::string();
+
+    if (GCodeWriter::full_gcode_comment)
+        gcode << " ; adjust VELOCITY_LIMIT(accel/jerk)";
+    gcode << "\n";
+
+    return gcode.str();
+
+}
+
 std::string GCodeWriter::set_pressure_advance(double pa) const
 {
     std::ostringstream gcode;
@@ -273,7 +320,7 @@ std::string GCodeWriter::reset_e(bool force)
         return "";
     
     if (m_extruder != nullptr) {
-        if (m_extruder->E() == 0. && ! force)
+        if (is_zero(m_extruder->E()) && ! force)
             return "";
         m_extruder->reset_E();
     }
@@ -294,6 +341,10 @@ std::string GCodeWriter::update_progress(unsigned int num, unsigned int tot, boo
 {
     if (FLAVOR_IS_NOT(gcfMakerWare) && FLAVOR_IS_NOT(gcfSailfish))
         return "";
+
+    if (config.disable_m73) {
+        return "";
+    }
     
     unsigned int percent = (unsigned int)floor(100.0 * num / tot + 0.5);
     if (!allow_100) percent = std::min(percent, (unsigned int)99);
@@ -308,7 +359,8 @@ std::string GCodeWriter::update_progress(unsigned int num, unsigned int tot, boo
 
 std::string GCodeWriter::toolchange_prefix() const
 {
-    return FLAVOR_IS(gcfMakerWare) ? "M135 T" :
+    return config.manual_filament_change ? ";" + GCodeProcessor::reserved_tag(GCodeProcessor::ETags::Manual_Tool_Change) + "T":
+           FLAVOR_IS(gcfMakerWare) ? "M135 T" :
            FLAVOR_IS(gcfSailfish)  ? "M108 T" : "T";
 }
 
@@ -630,23 +682,23 @@ std::string GCodeWriter::extrude_to_xyz(const Vec3d &point, double dE, const std
     return w.string();
 }
 
-std::string GCodeWriter::retract(bool before_wipe)
+std::string GCodeWriter::retract(bool before_wipe, double retract_length)
 {
     double factor = before_wipe ? m_extruder->retract_before_wipe() : 1.;
     assert(factor >= 0. && factor <= 1. + EPSILON);
     return this->_retract(
-        factor * m_extruder->retraction_length(),
+        retract_length > EPSILON ? retract_length : factor * m_extruder->retraction_length(),
         factor * m_extruder->retract_restart_extra(),
         "retract"
     );
 }
 
-std::string GCodeWriter::retract_for_toolchange(bool before_wipe)
+std::string GCodeWriter::retract_for_toolchange(bool before_wipe, double retract_length)
 {
     double factor = before_wipe ? m_extruder->retract_before_wipe() : 1.;
     assert(factor >= 0. && factor <= 1. + EPSILON);
     return this->_retract(
-        factor * m_extruder->retract_length_toolchange(),
+        retract_length > EPSILON ? retract_length : factor * m_extruder->retract_length_toolchange(),
         factor * m_extruder->retract_restart_extra_toolchange(),
         "retract for toolchange"
     );
@@ -661,7 +713,7 @@ std::string GCodeWriter::_retract(double length, double restart_extra, const std
         length = 1;
 
     std::string gcode;
-    if (double dE = m_extruder->retract(length, restart_extra);  dE != 0) {
+    if (double dE = m_extruder->retract(length, restart_extra);  !is_zero(dE)) {
         if (this->config.use_firmware_retraction) {
             gcode = FLAVOR_IS(gcfMachinekit) ? "G22 ; retract\n" : "G10 ; retract\n";
         }
@@ -689,7 +741,7 @@ std::string GCodeWriter::unretract()
     if (FLAVOR_IS(gcfMakerWare))
         gcode = "M101 ; extruder on\n";
     
-    if (double dE = m_extruder->unretract(); dE != 0) {
+    if (double dE = m_extruder->unretract(); !is_zero(dE)) {
         if (this->config.use_firmware_retraction) {
             gcode += FLAVOR_IS(gcfMachinekit) ? "G23 ; unretract\n" : "G11 ; unretract\n";
             gcode += this->reset_e();
@@ -827,7 +879,7 @@ void GCodeWriter::add_object_end_labels(std::string& gcode)
         gcode += m_gcode_label_objects_end;
         m_gcode_label_objects_end = "";
 
-        // Orca: reset E so that e value remain correct after skipping the object
+        // Galaxy: reset E so that e value remain correct after skipping the object
         // ref to: https://github.com/Fr3ak2402/GalaxySlicer/pull/205/commits/7f1fe0bd544077626080aa1a9a0576aa735da1a4#r1083470162
         if (!this->config.use_relative_e_distances)
             gcode += reset_e(true);

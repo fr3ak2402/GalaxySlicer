@@ -176,7 +176,7 @@ main() {
 
     local json_string="{\n"
     json_string+="\"name\": \"$1\",\n"
-    json_string+="\"version\": \"01.00.00.00\",\n"
+    json_string+="\"version\": \"01.01.00.00\",\n"
     json_string+="\"force_update\": \"0\",\n"
     json_string+="\"description\": \"${1} configurations\",\n"
     json_string+="\"machine_model_list\": $(explore_machine_model_list "$base_directory/machine" "machine" "  "),\n"

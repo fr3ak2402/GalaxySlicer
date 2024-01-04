@@ -405,8 +405,7 @@ void PhysicalPrinterDialog::update(bool printer_change)
     const PrinterTechnology tech = Preset::printer_technology(*m_config);
     // Only offer the host type selection for FFF, for SLA it's always the SL1 printer (at the moment)
     bool supports_multiple_printers = false;
-    if (tech == ptFFF) 
-    {
+    if (tech == ptFFF) {
         update_host_type(printer_change);
         const auto opt = m_config->option<ConfigOptionEnum<PrintHostType>>("host_type");
         m_optgroup->show_field("host_type");

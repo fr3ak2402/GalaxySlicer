@@ -52,6 +52,7 @@ wxFont Label::Body_12;
 wxFont Label::Body_11;
 wxFont Label::Body_10;
 wxFont Label::Body_9;
+wxFont Label::Body_8;
 
 void Label::initSysFont()
 {
@@ -65,7 +66,6 @@ void Label::initSysFont()
     result = wxFont::AddPrivateFont(font_path);
     // BOOST_LOG_TRIVIAL(info) << boost::format("add font of HarmonyOS_Sans_SC_Regular returns %1%")%result;
     printf("add font of HarmonyOS_Sans_SC_Regular returns %d\n", result);
-
     // Adding NanumGothic Regular and Bold
     font_path = wxString::FromUTF8(resource_path + "/fonts/NanumGothic-Regular.ttf");
     result = wxFont::AddPrivateFont(font_path);
@@ -97,6 +97,7 @@ void Label::initSysFont()
     Body_11 = Label::sysFont(11, false);
     Body_10 = Label::sysFont(10, false);
     Body_9  = Label::sysFont(9, false);
+    Body_8  = Label::sysFont(8, false);
 }
 
 class WXDLLIMPEXP_CORE wxTextWrapper2

@@ -1,3 +1,15 @@
+///|/ Copyright (c) Prusa Research 2016 - 2023 Vojtěch Bubník @bubnikv, Pavel Mikuš @Godrak, Filip Sykala @Jony01, Lukáš Hejl @hejllukas, Enrico Turri @enricoturri1966, Lukáš Matěna @lukasmatena, Tomáš Mészáros @tamasmeszaros
+///|/ Copyright (c) Slic3r 2013 - 2016 Alessandro Ranellucci @alranel
+///|/ Copyright (c) 2014 Petr Ledvina @ledvinap
+///|/ Copyright (c) 2014 Kamil Kwolek
+///|/ Copyright (c) 2013 Jose Luis Perez Diez
+///|/
+///|/ ported from lib/Slic3r/Point.pm:
+///|/ Copyright (c) Prusa Research 2018 Vojtěch Bubník @bubnikv
+///|/ Copyright (c) Slic3r 2011 - 2015 Alessandro Ranellucci @alranel
+///|/
+///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
+///|/
 #include "Point.hpp"
 #include "Line.hpp"
 #include "MultiPoint.hpp"
@@ -47,65 +59,12 @@ Pointf3s transform(const Pointf3s& points, const Transform3d& t)
 
 void Point::rotate(double angle, const Point &center)
 {
-    double cur_x = (double)(*this)(0);
-    double cur_y = (double)(*this)(1);
-    double s     = ::sin(angle);
-    double c     = ::cos(angle);
-    double dx    = cur_x - (double)center(0);
-    double dy    = cur_y - (double)center(1);
-    (*this)(0) = (coord_t)round( (double)center(0) + c * dx - s * dy );
-    (*this)(1) = (coord_t)round( (double)center(1) + c * dy + s * dx );
-}
-
-int Point::nearest_point_index(const Points &points) const
-{
-    PointConstPtrs p;
-    p.reserve(points.size());
-    for (Points::const_iterator it = points.begin(); it != points.end(); ++it)
-        p.push_back(&*it);
-    return this->nearest_point_index(p);
-}
-
-int Point::nearest_point_index(const PointConstPtrs &points) const
-{
-    int idx = -1;
-    double distance = -1;  // double because long is limited to 2147483647 on some platforms and it's not enough
-    
-    for (PointConstPtrs::const_iterator it = points.begin(); it != points.end(); ++it) {
-        /* If the X distance of the candidate is > than the total distance of the
-           best previous candidate, we know we don't want it */
-        double d = sqr<double>((*this)(0) - (*it)->x());
-        if (distance != -1 && d > distance) continue;
-        
-        /* If the Y distance of the candidate is > than the total distance of the
-           best previous candidate, we know we don't want it */
-        d += sqr<double>((*this)(1) - (*it)->y());
-        if (distance != -1 && d > distance) continue;
-        
-        idx = it - points.begin();
-        distance = d;
-        
-        if (distance < EPSILON) break;
-    }
-    
-    return idx;
-}
-
-int Point::nearest_point_index(const PointPtrs &points) const
-{
-    PointConstPtrs p;
-    p.reserve(points.size());
-    for (PointPtrs::const_iterator it = points.begin(); it != points.end(); ++it)
-        p.push_back(*it);
-    return this->nearest_point_index(p);
-}
-
-bool Point::nearest_point(const Points &points, Point* point) const
-{
-    int idx = this->nearest_point_index(points);
-    if (idx == -1) return false;
-    *point = points.at(idx);
-    return true;
+    Vec2d  cur = this->cast<double>();
+    double s   = ::sin(angle);
+    double c   = ::cos(angle);
+    auto   d   = cur - center.cast<double>();
+    this->x() = fast_round_up<coord_t>(center.x() + c * d.x() - s * d.y());
+    this->y() = fast_round_up<coord_t>(center.y() + s * d.x() + c * d.y());
 }
 
 /* Three points are a counter-clockwise turn if ccw > 0, clockwise if
@@ -179,7 +138,7 @@ Point Point::projection_onto(const Line &line) const
     return ((line.a - *this).cast<double>().squaredNorm() < (line.b - *this).cast<double>().squaredNorm()) ? line.a : line.b;
 }
 
-bool has_duplicate_points(std::vector<Point> &&pts)
+bool has_duplicate_points(Points &&pts)
 {
     std::sort(pts.begin(), pts.end());
     for (size_t i = 1; i < pts.size(); ++ i)
@@ -188,18 +147,46 @@ bool has_duplicate_points(std::vector<Point> &&pts)
     return false;
 }
 
-BoundingBox get_extents(const Points &pts)
-{ 
-    return BoundingBox(pts);
+Points collect_duplicates(Points pts /* Copy */)
+{
+    std::sort(pts.begin(), pts.end());
+    Points duplicits;
+    const Point *prev = &pts.front();
+    for (size_t i = 1; i < pts.size(); ++i) {
+        const Point *act = &pts[i];
+        if (*prev == *act) {
+            // duplicit point
+            if (!duplicits.empty() && duplicits.back() == *act)
+                continue; // only unique duplicits
+            duplicits.push_back(*act);
+        }
+        prev = act;
+    }
+    return duplicits;
 }
 
-BoundingBox get_extents(const std::vector<Points> &pts)
+template<bool IncludeBoundary>
+BoundingBox get_extents(const Points &pts)
+{ 
+    BoundingBox out;
+    BoundingBox::construct<IncludeBoundary>(out, pts.begin(), pts.end());
+    return out;
+}
+template BoundingBox get_extents<false>(const Points &pts);
+template BoundingBox get_extents<true>(const Points &pts);
+
+// if IncludeBoundary, then a bounding box is defined even for a single point.
+// otherwise a bounding box is only defined if it has a positive area.
+template<bool IncludeBoundary>
+BoundingBox get_extents(const VecOfPoints &pts)
 {
     BoundingBox bbox;
     for (const Points &p : pts)
-        bbox.merge(get_extents(p));
+        bbox.merge(get_extents<IncludeBoundary>(p));
     return bbox;
 }
+template BoundingBox get_extents<false>(const VecOfPoints &pts);
+template BoundingBox get_extents<true>(const VecOfPoints &pts);
 
 BoundingBoxf get_extents(const std::vector<Vec2d> &pts)
 {
@@ -207,6 +194,58 @@ BoundingBoxf get_extents(const std::vector<Vec2d> &pts)
     for (const Vec2d &p : pts)
         bbox.merge(p);
     return bbox;
+}
+
+
+int Point::nearest_point_index(const Points &points) const
+{
+    PointConstPtrs p;
+    p.reserve(points.size());
+    for (Points::const_iterator it = points.begin(); it != points.end(); ++it)
+        p.push_back(&*it);
+    return this->nearest_point_index(p);
+}
+
+int Point::nearest_point_index(const PointConstPtrs &points) const
+{
+    int idx = -1;
+    double distance = -1;  // double because long is limited to 2147483647 on some platforms and it's not enough
+    
+    for (PointConstPtrs::const_iterator it = points.begin(); it != points.end(); ++it) {
+        /* If the X distance of the candidate is > than the total distance of the
+           best previous candidate, we know we don't want it */
+        double d = sqr<double>((*this)(0) - (*it)->x());
+        if (distance != -1 && d > distance) continue;
+        
+        /* If the Y distance of the candidate is > than the total distance of the
+           best previous candidate, we know we don't want it */
+        d += sqr<double>((*this)(1) - (*it)->y());
+        if (distance != -1 && d > distance) continue;
+        
+        idx = it - points.begin();
+        distance = d;
+        
+        if (distance < EPSILON) break;
+    }
+    
+    return idx;
+}
+
+int Point::nearest_point_index(const PointPtrs &points) const
+{
+    PointConstPtrs p;
+    p.reserve(points.size());
+    for (PointPtrs::const_iterator it = points.begin(); it != points.end(); ++it)
+        p.push_back(*it);
+    return this->nearest_point_index(p);
+}
+
+bool Point::nearest_point(const Points &points, Point* point) const
+{
+    int idx = this->nearest_point_index(points);
+    if (idx == -1) return false;
+    *point = points.at(idx);
+    return true;
 }
 
 std::ostream& operator<<(std::ostream &stm, const Vec2d &pointf)

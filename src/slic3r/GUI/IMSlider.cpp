@@ -16,7 +16,7 @@ constexpr double miscalculation = scale_(scale_(1));   // equal to 1 mm2
 
 static const float  LEFT_MARGIN       = 13.0f + 100.0f;  // avoid thumbnail toolbar
 static const float  HORIZONTAL_SLIDER_WINDOW_HEIGHT  = 64.0f;
-static const float  VERTICAL_SLIDER_WINDOW_WIDTH     = 124.0f;
+static const float  VERTICAL_SLIDER_WINDOW_WIDTH     = 160.0f;
 static const float  GROOVE_WIDTH      = 12.0f;
 static const ImVec2 ONE_LAYER_MARGIN  = ImVec2(20.0f, 20.0f);
 static const ImVec2 ONE_LAYER_BUTTON_SIZE  = ImVec2(28.0f, 28.0f);
@@ -101,19 +101,19 @@ static std::string short_and_splitted_time(const std::string &time)
     // Format the dhm time.
     char buffer[64];
     if (days > 0)
-        ::sprintf(buffer, "%dd%dh\n%dm", days, hours, minutes);
+        ::sprintf(buffer, "%dd%dh%dm", days, hours, minutes);
     else if (hours > 0) {
         if (hours < 10 && minutes < 10 && seconds < 10)
             ::sprintf(buffer, "%dh%dm%ds", hours, minutes, seconds);
         else if (hours > 10 && minutes > 10 && seconds > 10)
-            ::sprintf(buffer, "%dh\n%dm\n%ds", hours, minutes, seconds);
+            ::sprintf(buffer, "%dh%dm%ds", hours, minutes, seconds);
         else if ((minutes < 10 && seconds > 10) || (minutes > 10 && seconds < 10))
-            ::sprintf(buffer, "%dh\n%dm%ds", hours, minutes, seconds);
+            ::sprintf(buffer, "%dh%dm%ds", hours, minutes, seconds);
         else
-            ::sprintf(buffer, "%dh%dm\n%ds", hours, minutes, seconds);
+            ::sprintf(buffer, "%dh%dm%ds", hours, minutes, seconds);
     } else if (minutes > 0) {
         if (minutes > 10 && seconds > 10)
-            ::sprintf(buffer, "%dm\n%ds", minutes, seconds);
+            ::sprintf(buffer, "%dm%ds", minutes, seconds);
         else
             ::sprintf(buffer, "%dm%ds", minutes, seconds);
     } else
@@ -404,8 +404,9 @@ void IMSlider::add_code_as_tick(Type type, int selected_extruder)
 }
 
 void IMSlider::delete_tick(const TickCode& tick) {
+    Type t = tick.type; // Avoid Use-After-Free issue, which resets the tick.type to 0
     m_ticks.ticks.erase(tick);
-    post_ticks_changed_event(tick.type);
+    post_ticks_changed_event(t);
 }
 
 bool IMSlider::check_ticks_changed_event(Type type)
@@ -585,8 +586,8 @@ void IMSlider::draw_colored_band(const ImRect& groove, const ImRect& slideable_r
     };
     //draw main colored band
     const int default_color_idx = m_mode == MultiAsSingle ? std::max<int>(m_only_extruder - 1, 0) : 0;
-    std::array<float, 4>rgba = decode_color_to_float_array(m_extruder_colors[default_color_idx]);
-    ImU32 band_clr = IM_COL32(rgba[0] * 255.0f, rgba[1] * 255.0f, rgba[2] * 255.0f, rgba[3] * 255.0f);
+    ColorRGBA rgba = decode_color_to_float_array(m_extruder_colors[default_color_idx]);
+    ImU32     band_clr          = ImGuiWrapper::to_ImU32(rgba);
     draw_main_band(band_clr);
 
     static float tick_pos;
@@ -604,8 +605,8 @@ void IMSlider::draw_colored_band(const ImRect& groove, const ImRect& slideable_r
                 const std::string clr_str = m_mode == SingleExtruder ? tick_it->color : get_color_for_tool_change_tick(tick_it);
 
                 if (!clr_str.empty()) {
-                    std::array<float, 4>rgba = decode_color_to_float_array(clr_str);
-                    ImU32 band_clr = IM_COL32(rgba[0] * 255.0f, rgba[1] * 255.0f, rgba[2] * 255.0f, rgba[3] * 255.0f);
+                    ColorRGBA rgba = decode_color_to_float_array(clr_str);
+                    ImU32     band_clr = ImGuiWrapper::to_ImU32(rgba);
                     if (tick_it->tick == 0)
                         draw_main_band(band_clr);
                     else
@@ -615,6 +616,43 @@ void IMSlider::draw_colored_band(const ImRect& groove, const ImRect& slideable_r
         }
         tick_it++;
     }
+}
+
+void IMSlider::draw_custom_label_block(const ImVec2 anchor, Type type)
+{
+    wxString label;
+    switch (type)
+    {
+    case ColorChange:
+        label = _L("Color");
+        break;
+    case PausePrint:
+        label = _L("Pause");
+        break;
+    case ToolChange:
+        label = _L("Color");
+        break;
+    case Template:
+        label = _L("Template");
+        break;
+    case Custom:
+        label = _L("Custom");
+        break;
+    case Unknown:
+        break;
+    default:
+        break;
+    }
+    const ImVec2 text_size = ImGui::CalcTextSize(into_u8(label).c_str());
+    const ImVec2 padding = ImVec2(4, 2) * m_scale;
+    const ImU32  clr = IM_COL32(255, 111, 0, 255);
+    const float  rounding = 2.0f * m_scale;
+    ImVec2 block_pos = { anchor.x - text_size.x - padding.x * 2, anchor.y - text_size.y / 2 - padding.y };
+    ImVec2 block_size = { text_size.x + padding.x * 2, text_size.y + padding.y * 2 };
+    ImGui::RenderFrame(block_pos, block_pos + block_size, clr, false, rounding);
+    ImGui::PushStyleColor(ImGuiCol_Text, { 1,1,1,1 });
+    ImGui::RenderText(block_pos + padding, into_u8(label).c_str());
+    ImGui::PopStyleColor();
 }
 
 void IMSlider::draw_ticks(const ImRect& slideable_region) {
@@ -662,10 +700,8 @@ void IMSlider::draw_ticks(const ImRect& slideable_region) {
             ImGui::RenderFrame(right_hover_box.Min, right_hover_box.Max, tick_hover_box_clr, false);
 
             show_tooltip(*tick_it);
-            if (context.IO.MouseClicked[0]) {
-                m_tick_value = tick_it->tick;
-                m_tick_rect = ImVec4(tick_hover_box.Min.x, tick_hover_box.Min.y, tick_hover_box.Max.x, tick_hover_box.Max.y);
-            }
+            m_tick_value = tick_it->tick;
+            m_tick_rect = ImVec4(tick_hover_box.Min.x, tick_hover_box.Min.y, tick_hover_box.Max.x, tick_hover_box.Max.y);
         }
         ++tick_it;
     }
@@ -692,6 +728,11 @@ void IMSlider::draw_ticks(const ImRect& slideable_region) {
             ImVec2      icon_pos = ImVec2(slideable_region.GetCenter().x + icon_offset.x, tick_pos - icon_offset.y);
             button_with_pos(custom_icon_id, icon_size, icon_pos);
         }
+
+        //draw label block
+        ImVec2 label_block_anchor = ImVec2(slideable_region.GetCenter().x - tick_offset.y, tick_pos);
+        draw_custom_label_block(label_block_anchor, tick_it->type);
+
         ++tick_it;
     }
 
@@ -699,6 +740,10 @@ void IMSlider::draw_ticks(const ImRect& slideable_region) {
               GetSelection() == ssLower  ? m_ticks.ticks.find(TickCode{this->GetLowerValue()}) :
                                            m_ticks.ticks.end();
     if (tick_it != m_ticks.ticks.end()) {
+        //draw label block again, to keep it in front
+        ImVec2 label_block_anchor = ImVec2(slideable_region.GetCenter().x - tick_offset.y, get_tick_pos(tick_it->tick));
+        draw_custom_label_block(label_block_anchor, tick_it->type);
+
         // draw delete icon
         ImVec2      icon_pos       = ImVec2(slideable_region.GetCenter().x + icon_offset.x, get_tick_pos(tick_it->tick) - icon_offset.y);
         button_with_pos(m_delete_icon_id, icon_size, icon_pos);
@@ -725,25 +770,76 @@ void IMSlider::show_tooltip(const std::string tooltip) {
 }
 
 void IMSlider::show_tooltip(const TickCode& tick){
+    // Use previous layer's complete time as current layer's tick time,
+    // since ticks are added at the beginning of current layer
+    std::string time_str = "";
+    // TODO: support first layer
+    if (tick.tick > 0) {
+        time_str = get_label(tick.tick - 1, ltEstimatedTime);
+    }
+    if (!time_str.empty()) {
+        time_str += "\n";
+    }
+    
     switch (tick.type)
     {
     case CustomGCode::ColorChange:
         break;
     case CustomGCode::PausePrint:
-        show_tooltip(_u8L("Pause:") + " \"" + gcode(PausePrint) + "\"");
+        show_tooltip(time_str + _u8L("Pause:") + " \"" + gcode(PausePrint) + "\"");
         break;
     case CustomGCode::ToolChange:
-        show_tooltip(_u8L("Change Filament"));
+        show_tooltip(time_str + _u8L("Change Filament"));
         break;
     case CustomGCode::Template:
-        show_tooltip(_u8L("Custom Template:") + " \"" + gcode(Template) + "\"");
+        show_tooltip(time_str + _u8L("Custom Template:") + " \"" + gcode(Template) + "\"");
         break;
     case CustomGCode::Custom:
-        show_tooltip(_u8L("Custom G-code:") + " \"" + tick.extra + "\"");
+        show_tooltip(time_str + _u8L("Custom G-code:") + " \"" + tick.extra + "\"");
         break;
     default:
         break;
     }
+}
+
+int IMSlider::get_tick_near_point(int v_min, int v_max, const ImVec2& pt, const ImRect& rect) {
+    ImS32 v_range = (v_min < v_max ? v_max - v_min : v_min - v_max);
+    
+    const ImGuiAxis axis = is_horizontal() ? ImGuiAxis_X : ImGuiAxis_Y;
+    const float region_usable_sz = (rect.Max[axis] - rect.Min[axis]);
+    const float region_usable_pos_min = rect.Min[axis];
+    
+    const float abs_pos = pt[axis];
+    
+    float pos_ratio = (region_usable_sz > 0.0f) ? ImClamp((abs_pos - region_usable_pos_min) / region_usable_sz, 0.0f, 1.0f) : 0.0f;
+    if (axis == ImGuiAxis_Y)
+        pos_ratio = 1.0f - pos_ratio;
+    
+    return v_min + (ImS32)(v_range * pos_ratio + 0.5f);
+}
+
+void IMSlider::draw_tick_on_mouse_position(const ImRect& slideable_region) {
+    int v_min = GetMinValue();
+    int v_max = GetMaxValue();
+    ImGuiContext& context = *GImGui;
+    
+    int tick = get_tick_near_point(v_min, v_max, context.IO.MousePos, slideable_region);
+    
+    //draw tick
+    ImVec2 tick_offset   = ImVec2(22.0f, 14.0f) * m_scale;
+    float  tick_width    = 1.0f * m_scale;
+
+    const ImU32 tick_clr = IM_COL32(144, 144, 144, 255);
+
+    float tick_pos = get_pos_from_value(v_min, v_max, tick, slideable_region);
+    ImRect tick_left  = ImRect(slideable_region.GetCenter().x - tick_offset.x, tick_pos - tick_width, slideable_region.GetCenter().x - tick_offset.y, tick_pos);
+    ImRect tick_right = ImRect(slideable_region.GetCenter().x + tick_offset.y, tick_pos - tick_width, slideable_region.GetCenter().x + tick_offset.x, tick_pos);
+    ImGui::RenderFrame(tick_left.Min, tick_left.Max, tick_clr, false);
+    ImGui::RenderFrame(tick_right.Min, tick_right.Max, tick_clr, false);
+    
+    // draw layer time
+    std::string label = get_label(tick, ltEstimatedTime);
+    show_tooltip(label);
 }
 
 bool IMSlider::vertical_slider(const char* str_id, int* higher_value, int* lower_value, std::string& higher_label, std::string& lower_label,int v_min, int v_max, const ImVec2& size, SelectedSlider& selection, bool one_layer_flag, float scale)
@@ -914,6 +1010,11 @@ bool IMSlider::vertical_slider(const char* str_id, int* higher_value, int* lower
         pos_3 = pos_1 + triangle_offsets[2];
         window->DrawList->AddTriangleFilled(pos_1, pos_2, pos_3, white_bg);
         ImGui::RenderText(text_start + text_padding, lower_label.c_str());
+        
+        // draw mouse position
+        if (hovered) {
+            draw_tick_on_mouse_position(h_selected ? higher_slideable_region : lower_slideable_region);
+        }
     }
     if (one_layer_flag) 
     {
@@ -953,6 +1054,11 @@ bool IMSlider::vertical_slider(const char* str_id, int* higher_value, int* lower
         ImRect text_rect = ImRect(text_start, text_start + text_size);
         ImGui::RenderFrame(text_rect.Min, text_rect.Max, white_bg, false, text_frame_rounding);
         ImGui::RenderText(text_start + text_padding, higher_label.c_str());
+        
+        // draw mouse position
+        if (hovered) {
+            draw_tick_on_mouse_position(one_slideable_region);
+        }
     }
 
     return value_changed;
@@ -1068,9 +1174,7 @@ void IMSlider::render_input_custom_gcode(std::string custom_gcode)
         }
         const int text_height = 6;
 
-        ImGui::InputTextMultiline("##text", m_custom_gcode, sizeof(m_custom_gcode), ImVec2(-1, ImGui::GetTextLineHeight() * text_height), ImGuiInputTextFlags_CallbackAlways, [](ImGuiInputTextCallbackData* data) { 
-            return data->CursorPos = data->BufTextLen;
-            });
+        ImGui::InputTextMultiline("##text", m_custom_gcode, sizeof(m_custom_gcode), ImVec2(-1, ImGui::GetTextLineHeight() * text_height));
 
         ImGui::NewLine();
         ImGui::SameLine(ImGui::GetStyle().WindowPadding.x * 14);
@@ -1263,9 +1367,9 @@ void IMSlider::render_add_menu()
             }
             else if (begin_menu(_u8L("Change Filament").c_str())) {
                 for (int i = 0; i < extruder_num; i++) {
-                    std::array<float, 4> rgba     = decode_color_to_float_array(m_extruder_colors[i]);
-                    ImU32                icon_clr = IM_COL32(rgba[0] * 255.0f, rgba[1] * 255.0f, rgba[2] * 255.0f, rgba[3] * 255.0f);
-                    if (rgba[3] == 0)
+                    ColorRGBA rgba     = decode_color_to_float_array(m_extruder_colors[i]);
+                    ImU32                icon_clr = ImGuiWrapper::to_ImU32(rgba);
+                    if (rgba.a() == 0)
                         icon_clr = 0;
                     if (menu_item_with_icon((_u8L("Filament ") + std::to_string(i + 1)).c_str(), "", ImVec2(14, 14) * m_scale, icon_clr, false, true, &hovered)) add_code_as_tick(ToolChange, i + 1);
                     if (hovered) { show_tooltip(_u8L("Change filament at the beginning of this layer.")); }
@@ -1313,8 +1417,8 @@ void IMSlider::render_edit_menu(const TickCode& tick)
                 }
                 else if (begin_menu(_u8L("Change Filament").c_str())) {
                     for (int i = 0; i < extruder_num; i++) {
-                        std::array<float, 4> rgba = decode_color_to_float_array(m_extruder_colors[i]);
-                        ImU32                icon_clr = IM_COL32(rgba[0] * 255.0f, rgba[1] * 255.0f, rgba[2] * 255.0f, rgba[3] * 255.0f);
+                        ColorRGBA rgba = decode_color_to_float_array(m_extruder_colors[i]);
+                        ImU32     icon_clr = ImGuiWrapper::to_ImU32(rgba);
                         if (menu_item_with_icon((_u8L("Filament ") + std::to_string(i + 1)).c_str(), "", ImVec2(14, 14) * m_scale, icon_clr)) add_code_as_tick(ToolChange, i + 1);
                     }
                     end_menu();

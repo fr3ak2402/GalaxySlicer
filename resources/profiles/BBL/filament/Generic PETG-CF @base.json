@@ -39,7 +39,7 @@
         "PETG-CF"
     ],
     "filament_vendor": [
-        "Bambu Lab"
+        "Generic"
     ],
     "hot_plate_temp": [
         "70"
@@ -66,7 +66,7 @@
         "6"
     ],
     "temperature_vitrification": [
-        "75"
+        "70"
     ],
     "textured_plate_temp": [
         "70"

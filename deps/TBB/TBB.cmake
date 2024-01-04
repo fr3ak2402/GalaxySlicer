@@ -1,13 +1,13 @@
 # Use oneTBB v2021.10.0 for Windows and macOS to fully support hybrid CPUs.
 if (WIN32)
-	set(_oneTBB_url "https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.10.0.zip")
-	set(_oneTBB_hash 78fb7bb29b415f53de21a68c4fdf97de8ae035090d9ee9caa221e32c6e79567c)
+	set(_oneTBB_url "https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.zip")
+	set(_oneTBB_hash 2f0bfce641d238e80798fc48397d43821bd977d49c4e03bc785be363b7ab4742)
 else()
-	set(_oneTBB_url "https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.10.0.zip")
-	set(_oneTBB_hash 78fb7bb29b415f53de21a68c4fdf97de8ae035090d9ee9caa221e32c6e79567c)
+	set(_oneTBB_url "https://github.com/oneapi-src/oneTBB/archive/refs/tags/v2021.11.0.zip")
+	set(_oneTBB_hash 2f0bfce641d238e80798fc48397d43821bd977d49c4e03bc785be363b7ab4742)
 endif()
 
-add_to_galaxyslicer_cmake_project(
+galaxyslicer_add_cmake_project(
     TBB
     URL ${_oneTBB_url}
     URL_HASH SHA256=${_oneTBB_hash}

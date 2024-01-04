@@ -1,7 +1,0 @@
-{
-    "type": "process",
-    "name": "fdm_process_hurakan_common",
-    "from": "system",
-    "instantiation": "false",
-    "inherits": "fdm_process_biqu_common"
-}

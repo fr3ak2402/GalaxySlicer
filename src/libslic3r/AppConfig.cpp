@@ -1,3 +1,7 @@
+///|/ Copyright (c) Prusa Research 2017 - 2023 Oleksandra Iushchenko @YuSanka, Vojtěch Bubník @bubnikv, Pavel Mikuš @Godrak, David Kocík @kocikdav, Lukáš Matěna @lukasmatena, Enrico Turri @enricoturri1966, Lukáš Hejl @hejllukas, Filip Sykala @Jony01, Vojtěch Král @vojtechkral
+///|/
+///|/ PrusaSlicer is released under the terms of the AGPLv3 or higher
+///|/
 #include "libslic3r/libslic3r.h"
 #include "libslic3r/Utils.hpp"
 #include "AppConfig.hpp"
@@ -38,11 +42,12 @@ using namespace nlohmann;
 
 namespace Slic3r {
 
-static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/fr3ak2402/GalaxySlicer/releases";
+static const std::string VERSION_CHECK_URL = "https://api.github.com/repos/fr3ak2402/GalaxySlicer/releases/latest";
 static const std::string MODELS_STR = "models";
 
 const std::string AppConfig::SECTION_FILAMENTS = "filaments";
 const std::string AppConfig::SECTION_MATERIALS = "sla_materials";
+const std::string AppConfig::SECTION_EMBOSS_STYLE = "font";
 
 std::string AppConfig::get_language_code()
 {
@@ -149,6 +154,9 @@ void AppConfig::set_defaults()
 
         if (get("use_inches").empty())
             set("use_inches", "0");
+
+        if (get("default_page").empty())
+            set("default_page", "0");
     }
     else {
 #ifdef _WIN32
@@ -160,10 +168,8 @@ void AppConfig::set_defaults()
     if (get("use_perspective_camera").empty())
         set_bool("use_perspective_camera", true);
 
-#ifdef SUPPORT_FREE_CAMERA
     if (get("use_free_camera").empty())
         set_bool("use_free_camera", false);
-#endif
 
 #ifdef SUPPORT_REVERSE_MOUSE_ZOOM
     if (get("reverse_mouse_wheel_zoom").empty())
@@ -229,10 +235,16 @@ void AppConfig::set_defaults()
         set("slicer_uuid", to_string(uuid));
     }
 
-    // Orca
+    // Galaxy
     if (get("stealth_mode").empty()) {
         set_bool("stealth_mode", false);
     }
+
+    // Galaxy
+    if(get("show_splash_screen").empty()) {
+        set_bool("show_splash_screen", true);
+    }
+
     if (get("show_model_mesh").empty()) {
         set_bool("show_model_mesh", false);
     }
@@ -247,6 +259,10 @@ void AppConfig::set_defaults()
 
     if (get("show_daily_tips").empty()) {
         set_bool("show_daily_tips", true);
+    }
+    //true is auto calculate
+    if (get("auto_calculate").empty()) {
+        set_bool("auto_calculate", true);
     }
 
     if (get("show_home_page").empty()) {
@@ -305,9 +321,9 @@ void AppConfig::set_defaults()
         set("max_recent_count", "18");
     }
 
-    if (get("staff_pick_switch").empty()) {
-        set_bool("staff_pick_switch", true);
-    }
+    // if (get("staff_pick_switch").empty()) {
+    //     set_bool("staff_pick_switch", false);
+    // }
 
     if (get("sync_system_preset").empty()) {
         set_bool("sync_system_preset", true);
@@ -336,7 +352,7 @@ void AppConfig::set_defaults()
 // #endif
 
     if (get("allow_ip_resolve").empty())
-        set("allow_ip_resolve", "1");
+        set_bool("allow_ip_resolve", true);
 
     if (get("presets", "filament_colors").empty()) {
         set_str("presets", "filament_colors", "#F2754E");
@@ -991,7 +1007,7 @@ void AppConfig::set_vendors(const AppConfig &from)
     m_dirty = true;
 }
 
-void AppConfig::save_printer_cali_infos(const PrinterCaliInfo &cali_info)
+void AppConfig::save_printer_cali_infos(const PrinterCaliInfo &cali_info, bool need_change_status)
 {
     auto iter = std::find_if(m_printer_cali_infos.begin(), m_printer_cali_infos.end(), [&cali_info](const PrinterCaliInfo &cali_info_item) {
         return cali_info_item.dev_id == cali_info.dev_id;
@@ -1000,7 +1016,9 @@ void AppConfig::save_printer_cali_infos(const PrinterCaliInfo &cali_info)
     if (iter == m_printer_cali_infos.end()) {
         m_printer_cali_infos.emplace_back(cali_info);
     } else {
-        (*iter).cali_finished = cali_info.cali_finished;
+        if (need_change_status) {
+            (*iter).cali_finished = cali_info.cali_finished;
+        }
         (*iter).cache_flow_ratio = cali_info.cache_flow_ratio;
         (*iter).selected_presets = cali_info.selected_presets;
     }

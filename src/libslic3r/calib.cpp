@@ -439,11 +439,8 @@ std::string CalibPressureAdvanceLine::generate_test(double start_pa /*= 0*/, dou
 
     m_length_long = 40 + std::min(w - 120.0, 0.0);
 
-    auto startx = (w - m_length_short * 2 - m_length_long - 20) / 2;
-    auto starty = (h - count * m_space_y) / 2;
-    if (is_delta()) {
-        CalibPressureAdvanceLine::delta_modify_start(startx, starty, count);
-    }
+    auto startx = bed_ext.min.x() + (w - m_length_short * 2 - m_length_long - 20) / 2;
+    auto starty = bed_ext.min.y() + (h - count * m_space_y) / 2;
 
     return print_pa_lines(startx, starty, start_pa, step_pa, count);
 }
@@ -492,7 +489,7 @@ std::string CalibPressureAdvanceLine::print_pa_lines(double start_x, double star
 
     if (m_draw_numbers) {
 
-        // Orca: skip drawing indicator lines
+        // Galaxy: skip drawing indicator lines
         // gcode << writer.set_speed(fast);
         // gcode << move_to(Vec2d(start_x + m_length_short, y_pos + (num - 1) * m_space_y + 2), writer);
         // gcode << writer.extrude_to_xy(Vec2d(start_x + m_length_short, y_pos + (num - 1) * m_space_y + 7), thin_e_per_mm * 7);
@@ -501,8 +498,8 @@ std::string CalibPressureAdvanceLine::print_pa_lines(double start_x, double star
 
         DrawBoxOptArgs default_box_opt_args(2, m_height_layer, 0.6, fast);
         default_box_opt_args.is_filled = true;
-        gcode << draw_box(writer, start_x + m_length_short + m_length_long + m_length_short, start_y-m_space_y, number_spacing() * 8,
-                 num * m_space_y, default_box_opt_args);
+        gcode << draw_box(writer, start_x + m_length_short + m_length_long + m_length_short, start_y - m_space_y, number_spacing() * 8,
+                          (num + 1) * m_space_y, default_box_opt_args);
         gcode << writer.travel_to_z(m_height_layer*2);
         for (int i = 0; i < num; i += 2) {
             gcode << draw_number(start_x + m_length_short + m_length_long + m_length_short + 3, y_pos + i * m_space_y + m_space_y / 2,
@@ -528,14 +525,14 @@ CalibPressureAdvancePattern::CalibPressureAdvancePattern(
 };
 
 void CalibPressureAdvancePattern::generate_custom_gcodes(const DynamicPrintConfig &config,
-                                                         bool                      is_bbl_machine,
+                                                                                                                  bool                      is_bbl_machine,
                                                          Model                    &model,
                                                          const Vec3d              &origin)
 {
     std::stringstream gcode;
     gcode << "; start pressure advance pattern for layer\n";
 
-    refresh_setup(config, is_bbl_machine, model, origin);
+        refresh_setup(config, is_bbl_machine, model, origin);
 
     gcode << move_to(Vec2d(m_starting_point.x(), m_starting_point.y()), m_writer, "Move to start XY position");
     gcode << m_writer.travel_to_z(height_first_layer(), "Move to start Z position");
@@ -560,6 +557,9 @@ void CalibPressureAdvancePattern::generate_custom_gcodes(const DynamicPrintConfi
 
     // draw pressure advance pattern
     for (int i = 0; i < m_num_layers; ++i) {
+        const double layer_height = height_first_layer() + (i * height_layer());
+        const double zhop_height = layer_height + height_layer();
+
         if (i > 0) {
             gcode << "; end pressure advance pattern for layer\n";
             CustomGCode::Item item;
@@ -571,7 +571,6 @@ void CalibPressureAdvancePattern::generate_custom_gcodes(const DynamicPrintConfi
             gcode = std::stringstream(); // reset for next layer contents
             gcode << "; start pressure advance pattern for layer\n";
 
-            const double layer_height = height_first_layer() + (i * height_layer());
             gcode << m_writer.travel_to_z(layer_height, "Move to layer height");
         }
 
@@ -609,7 +608,9 @@ void CalibPressureAdvancePattern::generate_custom_gcodes(const DynamicPrintConfi
         double initial_x = to_x;
         double initial_y = to_y;
 
+        gcode << m_writer.travel_to_z(zhop_height, "z-hop before move");
         gcode << move_to(Vec2d(to_x, to_y), m_writer, "Move to pattern start");
+        gcode << m_writer.travel_to_z(layer_height, "undo z-hop");
 
         for (int j = 0; j < num_patterns; ++j) {
             // increment pressure advance
@@ -634,15 +635,21 @@ void CalibPressureAdvancePattern::generate_custom_gcodes(const DynamicPrintConfi
                 if (k != wall_count() - 1) {
                     // perimeters not done yet. move to next perimeter
                     to_x += line_spacing_angle();
+                    gcode << m_writer.travel_to_z(zhop_height, "z-hop before move");
                     gcode << move_to(Vec2d(to_x, to_y), m_writer, "Move to start next pattern wall");
+                    gcode << m_writer.travel_to_z(layer_height, "undo z-hop");
                 } else if (j != num_patterns - 1) {
                     // patterns not done yet. move to next pattern
                     to_x += m_pattern_spacing + line_width();
+                    gcode << m_writer.travel_to_z(zhop_height, "z-hop before move");
                     gcode << move_to(Vec2d(to_x, to_y), m_writer, "Move to next pattern");
+                    gcode << m_writer.travel_to_z(layer_height, "undo z-hop");
                 } else if (i != m_num_layers - 1) {
                     // layers not done yet. move back to start
                     to_x = initial_x;
+                    gcode << m_writer.travel_to_z(zhop_height, "z-hop before move");
                     gcode << move_to(Vec2d(to_x, to_y), m_writer, "Move back to start position");
+                    gcode << m_writer.travel_to_z(layer_height, "undo z-hop");
                 } else {
                     // everything done
                 }
@@ -686,8 +693,6 @@ void CalibPressureAdvancePattern::refresh_setup(const DynamicPrintConfig &config
     m_config.apply(model.objects.front()->config.get(), true);
     m_config.apply(model.objects.front()->volumes.front()->config.get(), true);
 
-    m_is_delta = (m_config.option<ConfigOptionPoints>("printable_area")->values.size() > 4);
-
     _refresh_starting_point(model);
     _refresh_writer(is_bbl_machine, model, origin);
 }
@@ -702,11 +707,6 @@ void CalibPressureAdvancePattern::_refresh_starting_point(const Model &model)
 
     m_starting_point = Vec3d(bbox.min.x(), bbox.max.y(), 0);
     m_starting_point.y() += m_handle_spacing;
-
-    if (m_is_delta) {
-        m_starting_point.x() *= -1;
-        m_starting_point.y() -= (frame_size_y() / 2);
-    }
 }
 
 void CalibPressureAdvancePattern::_refresh_writer(bool is_bbl_machine, const Model &model, const Vec3d &origin)

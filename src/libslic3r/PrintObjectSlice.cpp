@@ -656,6 +656,7 @@ void reGroupingLayerPolygons(std::vector<groupedVolumeSlices>& gvss, ExPolygons 
     }
 }
 
+/*
 std::string fix_slicing_errors(PrintObject* object, LayerPtrs &layers, const std::function<void()> &throw_if_canceled, int &firstLayerReplacedBy)
 {
     std::string error_msg;//BBS
@@ -777,6 +778,7 @@ std::string fix_slicing_errors(PrintObject* object, LayerPtrs &layers, const std
 
     return error_msg;
 }
+*/
 
 void groupingVolumesForBrim(PrintObject* object, LayerPtrs& layers, int firstLayerReplacedBy)
 {
@@ -813,7 +815,7 @@ void PrintObject::slice()
     m_print->throw_if_canceled();
     int firstLayerReplacedBy = 0;
 
-#if 1
+#if 0
     // Fix the model.
     //FIXME is this the right place to do? It is done repeateadly at the UI and now here at the backend.
     std::string warning = fix_slicing_errors(this, m_layers, [this](){ m_print->throw_if_canceled(); }, firstLayerReplacedBy);
@@ -824,6 +826,9 @@ void PrintObject::slice()
         this->active_step_add_warning(PrintStateBase::WarningLevel::CRITICAL, warning, PrintStateBase::SlicingReplaceInitEmptyLayers);
     }
 #endif
+
+    // Detect and process holes that should be converted to polyholes
+    this->_transform_hole_to_polyholes();
 
     // BBS: the actual first layer slices stored in layers are re-sorted by volume group and will be used to generate brim
     groupingVolumesForBrim(this, m_layers, firstLayerReplacedBy);
@@ -1075,12 +1080,13 @@ void PrintObject::slice_volumes()
         	// Only enable Elephant foot compensation if printing directly on the print bed.
             float(scale_(m_config.elefant_foot_compensation.value)) :
         	0.f;
-        // Uncompensated slices for the first layer in case the Elephant foot compensation is applied.
-	    ExPolygons  lslices_1st_layer;
+        // Uncompensated slices for the layers in case the Elephant foot compensation is applied.
+        std::vector<ExPolygons> lslices_elfoot_uncompensated;
+        lslices_elfoot_uncompensated.resize(elephant_foot_compensation_scaled > 0 ? std::min(m_config.elefant_foot_compensation_layers.value, (int)m_layers.size()) : 0);
         //BBS: this part has been changed a lot to support seperated contour and hole size compensation
 	    tbb::parallel_for(
 	        tbb::blocked_range<size_t>(0, m_layers.size()),
-			[this, xy_hole_scaled, xy_contour_scaled, elephant_foot_compensation_scaled, &lslices_1st_layer](const tbb::blocked_range<size_t>& range) {
+			[this, xy_hole_scaled, xy_contour_scaled, elephant_foot_compensation_scaled, &lslices_elfoot_uncompensated](const tbb::blocked_range<size_t>& range) {
 	            for (size_t layer_id = range.begin(); layer_id < range.end(); ++ layer_id) {
 	                m_print->throw_if_canceled();
 	                Layer *layer = m_layers[layer_id];
@@ -1093,21 +1099,22 @@ void PrintObject::slice_volumes()
 	                    // Single region, growing or shrinking.
 	                    LayerRegion *layerm = layer->m_regions.front();
                         if (elfoot > 0) {
-		                    // Apply the elephant foot compensation and store the 1st layer slices without the Elephant foot compensation applied.
-		                    lslices_1st_layer = to_expolygons(std::move(layerm->slices.surfaces));
+		                    // Apply the elephant foot compensation and store the original layer slices without the Elephant foot compensation applied.
+                            ExPolygons expolygons_to_compensate = to_expolygons(std::move(layerm->slices.surfaces));
                             if (xy_contour_scaled > 0 || xy_hole_scaled > 0) {
-                                lslices_1st_layer = _shrink_contour_holes(std::max(0.f, xy_contour_scaled),
+                                expolygons_to_compensate = _shrink_contour_holes(std::max(0.f, xy_contour_scaled),
                                                                    std::max(0.f, xy_hole_scaled),
-                                                                   lslices_1st_layer);
+                                                                   expolygons_to_compensate);
                             }
                             if (xy_contour_scaled < 0 || xy_hole_scaled < 0) {
-                                lslices_1st_layer = _shrink_contour_holes(std::min(0.f, xy_contour_scaled),
+                                expolygons_to_compensate = _shrink_contour_holes(std::min(0.f, xy_contour_scaled),
                                                                    std::min(0.f, xy_hole_scaled),
-                                                                   lslices_1st_layer);
+                                                                   expolygons_to_compensate);
                             }
+                            lslices_elfoot_uncompensated[layer_id] = expolygons_to_compensate;
 							layerm->slices.set(
 								union_ex(
-									Slic3r::elephant_foot_compensation(lslices_1st_layer,
+									Slic3r::elephant_foot_compensation(expolygons_to_compensate,
 	                            		layerm->flow(frExternalPerimeter), unscale<double>(elfoot))),
 								stInternal);
 	                    } else {
@@ -1161,8 +1168,9 @@ void PrintObject::slice_volumes()
                             ExPolygons trimming;
                             static const float eps = float(scale_(m_config.slice_closing_radius.value) * 1.5);
                             if (elfoot > 0.f) {
-                                lslices_1st_layer = offset_ex(layer->merged(eps), -eps);
-                                trimming = Slic3r::elephant_foot_compensation(lslices_1st_layer,
+                                ExPolygons expolygons_to_compensate = offset_ex(layer->merged(eps), -eps);
+                                lslices_elfoot_uncompensated[layer_id] = expolygons_to_compensate;
+                                trimming = Slic3r::elephant_foot_compensation(expolygons_to_compensate,
                                     layer->m_regions.front()->flow(frExternalPerimeter), unscale<double>(elfoot));
                             } else {
                                 trimming = layer->merged(float(SCALED_EPSILON));
@@ -1185,22 +1193,24 @@ void PrintObject::slice_volumes()
 	            }
 	        });
 	    if (elephant_foot_compensation_scaled > 0.f && ! m_layers.empty()) {
-	    	// The Elephant foot has been compensated, therefore the 1st layer's lslices are shrank with the Elephant foot compensation value.
+	    	// The Elephant foot has been compensated, therefore the elefant_foot_compensation_layers layer's lslices are shrank with the Elephant foot compensation value.
 	    	// Store the uncompensated value there.
 	    	assert(m_layers.front()->id() == 0);
-            //BBS: sort the lslices_1st_layer according to shortest path before saving
-            //Otherwise the travel of first layer would be mess.
-            Points ordering_points;
-            ordering_points.reserve(lslices_1st_layer.size());
-            for (const ExPolygon& ex : lslices_1st_layer)
-                ordering_points.push_back(ex.contour.first_point());
-            std::vector<Points::size_type> order = chain_points(ordering_points);
-            ExPolygons lslices_1st_layer_sorted;
-            lslices_1st_layer_sorted.reserve(lslices_1st_layer.size());
-            for (size_t i : order)
-                lslices_1st_layer_sorted.emplace_back(std::move(lslices_1st_layer[i]));
-
-            m_layers.front()->lslices = std::move(lslices_1st_layer_sorted);
+            //BBS: sort the lslices_elfoot_uncompensated according to shortest path before saving
+            //Otherwise the travel of the layer layer would be mess.
+            for (int i = 0; i < lslices_elfoot_uncompensated.size(); i++) {
+                ExPolygons &expolygons_uncompensated = lslices_elfoot_uncompensated[i];
+                Points ordering_points;
+                ordering_points.reserve(expolygons_uncompensated.size());
+                for (const ExPolygon &ex : expolygons_uncompensated)
+                    ordering_points.push_back(ex.contour.first_point());
+                std::vector<Points::size_type> order = chain_points(ordering_points);
+                ExPolygons lslices_sorted;
+                lslices_sorted.reserve(expolygons_uncompensated.size());
+                for (size_t i : order)
+                    lslices_sorted.emplace_back(std::move(expolygons_uncompensated[i]));
+                m_layers[i]->lslices = std::move(lslices_sorted);
+            }
 		}
 	}
 

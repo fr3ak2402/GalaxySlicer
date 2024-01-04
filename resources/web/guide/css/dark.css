@@ -37,6 +37,19 @@ input[type=search] {
 	color: black;
 }
 
+/*--TabBar--*/
+.TabButton:hover
+{
+	background-color: #B9B9BC;
+	border-bottom: 1.5px solid #5f5f5f;
+	color: #5f5f5f;
+}
+
+.TabActive
+{
+	background-color: #B9B9BC;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #3E3E45;
   opacity: 1; /* Firefox */
@@ -88,4 +101,10 @@ input[type=search] {
 {
 	background-color:#9C6DA4;
 	color: #fff;	
+}
+
+/*----Menu----*/
+#Title div.TitleUnselected
+{
+	color: #BEBEC0;
 }

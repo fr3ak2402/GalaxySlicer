@@ -18,6 +18,7 @@ namespace GUI {
 class ConfigOptionsGroup;
 
 using ConfigOptionsGroupShp = std::shared_ptr<ConfigOptionsGroup>;
+using ConfigOptionsGroupWkp = std::weak_ptr<ConfigOptionsGroup>;
 
 struct BedShape
 {
@@ -93,7 +94,7 @@ class BedShapeDialog : public DPIDialog
 	BedShapePanel*	m_panel;
 public:
 	BedShapeDialog(wxWindow* parent) : DPIDialog(parent, wxID_ANY, _(L("Bed Shape")),
-        wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER) {}
+        wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE) {}
 
     void build_dialog(const ConfigOptionPoints& default_pt, const ConfigOptionString& custom_texture, const ConfigOptionString& custom_model);
 
