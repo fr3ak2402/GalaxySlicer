@@ -22,7 +22,7 @@ on:
        - 'resources/**'
     
 jobs:
-  build_osx_arm64:
+  build_osx_${{inputs.arch}}:
     name: Build macOS arm64
     runs-on: macos-13
 
@@ -30,19 +30,23 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install tools
+        if: inputs.os == 'macos-13'      
         run: |
-          brew install cmake git gettext zstd
-      - run: mkdir -p ${{ github.workspace }}/deps/build_arm64
-      - run: mkdir -p ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-
+          brew install cmake git gettext tree
+          brew list
+          mkdir -p ${{ github.workspace }}/deps/${{inputs.arch}}
+          mkdir -p ${{ github.workspace }}/deps/${{inputs.arch}}/GalaxySlicer_dep_${{inputs.arch}}
+          tree ${{ github.workspace }}/deps/build_${{inputs.arch}}/GalaxySlicer_dep_${{inputs.arch}}
+  
       - name: Download and extract GalaxySlicer deps
+        if: inputs.os == 'macos-13'        
         working-directory: ${{ github.workspace }}
         run: |
-          curl -LJO https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/September_23/GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz
-          tar -zxf GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz -C ${{ github.workspace }}/deps/build_arm64
-          chown -R $(id -u):$(id -g) ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-          ls -l ${{ github.workspace }}/deps/build_arm64/GalaxySlicer_dep_arm64
-          rm GalaxySlicer_dep_macOS_arm64_05-09-23.tar.gz
+          curl -LJO https://github.com/fr3ak2402/GalaxySlicer_deps/releases/download/September_23/GalaxySlicer_dep_macOS_${{inputs.arch}}_05-09-23.tar.gz
+          tar -zxf GalaxySlicer_dep_macOS_${{inputs.arch}}_05-09-23.tar.gz -C ${{ github.workspace }}/deps/build_${{inputs.arch}}
+          chown -R $(id -u):$(id -g) ${{ github.workspace }}/deps/build_${{inputs.arch}}/GalaxySlicer_dep_${{inputs.arch}}
+          ls -l ${{ github.workspace }}/deps/build_${{inputs.arch}}/GalaxySlicer_dep_${{inputs.arch}}
+          rm GalaxySlicer_dep_macOS_${{inputs.arch}}_05-09-23.tar.gz
           
       - name: Build GalaxySlicer
         working-directory: ${{ github.workspace }}
@@ -67,21 +71,21 @@ jobs:
       #    security import $CERTIFICATE_PATH -P $P12_PASSWORD -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
       #    security list-keychain -d user -s $KEYCHAIN_PATH
       #    security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k $P12_PASSWORD $KEYCHAIN_PATH
-      #    codesign --deep --force --verbose --sign "$CERTIFICATE_ID" ${{ github.workspace }}/build_arm64/GalaxySlicer/GalaxySlicer.app
+      #    codesign --deep --force --verbose --sign "$CERTIFICATE_ID" ${{ github.workspace }}/build_${{inputs.arch}}/GalaxySlicer/GalaxySlicer.app
       
       - name: Pack GalaxySlicer
         working-directory: ${{ github.workspace }}
         run: |
-          export ver=$(grep '^#define GalaxySlicer_VERSION' ./build_arm64/src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
+          export ver=$(grep '^#define GalaxySlicer_VERSION' ./build_${{inputs.arch}}/src/libslic3r/libslic3r_version.h | cut -d ' ' -f3)
           ver="_V${ver//\"}"
-          cd ${{ github.workspace }}/build_arm64/GalaxySlicer
+          cd ${{ github.workspace }}/build_${{inputs.arch}}/GalaxySlicer
           zip -FSrq GalaxySlicer${ver}_Mac_AppleSilicon_signed.zip ./GalaxySlicer.app
           
       #- name: Create DMG
       #  uses: QQxiaoming/create-dmg-action@v0.0.2
       #  with:
       #    name: 'GalaxySlicer'
-      #    srcdir: '${{ github.workspace }}/build_arm64/GalaxySlicer/GalaxySlicer.app'
+      #    srcdir: '${{ github.workspace }}/build_${{inputs.arch}}/GalaxySlicer/GalaxySlicer.app'
 
       #- name: Upload GalaxySlicer.dmg
       #  uses: actions/upload-artifact@v3
@@ -92,5 +96,5 @@ jobs:
       - name: Upload GalaxySlicer*.zip
         uses: actions/upload-artifact@v3
         with:
-          name: GalaxySlicer_macOS_arm64_nightly
-          path: ${{ github.workspace }}/build_arm64/GalaxySlicer/GalaxySlicer*.zip
+          name: GalaxySlicer_macOS_${{inputs.arch}}_nightly
+          path: ${{ github.workspace }}/build_${{inputs.arch}}/GalaxySlicer/GalaxySlicer*.zip
