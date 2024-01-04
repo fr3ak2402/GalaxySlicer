@@ -28,8 +28,16 @@ The following printers are currently supported by GalaxySlicer: **[Printer list]
 Currently, only Windows, macOS x64 & arm64 releases are precompiled.
 
 All compile releases can be found at the following link: **[Releases](https://github.com/fr3ak2402/GalaxySlicer/releases)**
+- Mac 64-bit  
+  - Tools needed: Xcode, Cmake, git, gettext, libtool, automake, autoconf, texinfo
+      - You can install most of them by running `brew install cmake gettext libtool automake autoconf texinfo`
+  - run `build_release_macos.sh`
 
 # Supported operating systems
+- Ubuntu 
+  - Dependencies **Will be auto installed with the shell script**: `libmspack-dev libgstreamerd-3-dev libsecret-1-dev libwebkit2gtk-4.0-dev libosmesa6-dev libssl-dev libcurl4-openssl-dev eglexternalplatform-dev libudev-dev libdbus-1-dev extra-cmake-modules libgtk2.0-dev libglew-dev libudev-dev libdbus-1-dev cmake git texinfo`
+  - run 'sudo ./BuildLinux.sh -u'
+  - run './BuildLinux.sh -dsir'
 
 GalaxySlicer has been tested under the following operating systems so that full functionality can be guaranteed. For all operating systems that were not listed on no complete functionality can be guaranteed
 
