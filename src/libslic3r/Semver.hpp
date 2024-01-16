@@ -161,20 +161,10 @@ public:
 		if (ver.metadata != nullptr)   { res += '+'; res += ver.metadata; }
 		return res;
 	}
-	std::string to_string_short() const {
+	std::string to_string_sf() const {
 		//BBS: version format
 		std::string res;
 		res = (boost::format("%1%.%2%.%3%") % ver.major % ver.minor % ver.patch).str();
-
-		if (ver.prerelease != nullptr) { res += '-'; res += ver.prerelease; }
-		if (ver.metadata != nullptr) { res += '+'; res += ver.metadata; }
-		return res;
-	}
-
-	std::string to_string_output() const {
-		//BBS: version format
-		std::string res;
-		res = (boost::format("V%1%.%2%.%3%") % ver.major % ver.minor % ver.patch).str();
 
 		if (ver.prerelease != nullptr) { res += '-'; res += ver.prerelease; }
 		if (ver.metadata != nullptr) { res += '+'; res += ver.metadata; }

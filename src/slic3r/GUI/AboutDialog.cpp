@@ -123,7 +123,8 @@ void CopyrightsDialog::fill_entries()
         { "SuperSlicer",                                    "",      "https://github.com/supermerill/SuperSlicer" },
         { "TBB",                                            "",      "https://www.intel.cn/content/www/cn/zh/developer/tools/oneapi/onetbb.html" },
         { "wxWidgets",                                      "",      "https://www.wxwidgets.org" },
-        { "zlib",                                           "",      "http://zlib.net" }
+        { "zlib",                                           "",      "http://zlib.net" },
+
     };
 }
 
