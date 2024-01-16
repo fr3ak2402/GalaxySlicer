@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 08:35+0100\n"
+"POT-Creation-Date: 2024-01-16 09:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -504,7 +504,9 @@ msgid "Some connectors are overlapped"
 msgstr "Einige Verbinder überlappen sich"
 
 msgid "Select at least one object to keep after cutting."
-msgstr "Wählen Sie mindestens ein Objekt aus, das nach dem Schneiden erhalten bleiben soll."
+msgstr ""
+"Wählen Sie mindestens ein Objekt aus, das nach dem Schneiden erhalten "
+"bleiben soll."
 
 msgid "Cut plane is placed out of object"
 msgstr "Schnittfläche ist außerhalb des Objekts platziert"
@@ -519,7 +521,9 @@ msgid "Cut by Plane"
 msgstr "Schnitt durch Ebene"
 
 msgid "non-manifold edges be caused by cut tool, do you want to fix it now?"
-msgstr "Nicht-manifold Kanten durch Schneidwerkzeug verursacht, möchten Sie es jetzt beheben?"
+msgstr ""
+"Nicht-manifold Kanten durch Schneidwerkzeug verursacht, möchten Sie es jetzt "
+"beheben?"
 
 msgid "Repairing model object"
 msgstr "Modellobjekt reparieren"
@@ -2370,14 +2374,14 @@ msgstr "Kein Drucker"
 msgid "..."
 msgstr "..."
 
+msgid "Failed to connect to the server"
+msgstr "Verbindung zum Server fehlgeschlagen"
+
 msgid "Check the status of current system services"
 msgstr "Überprüfen Sie den Status der aktuellen Systemdienste"
 
 msgid "code"
 msgstr "Code"
-
-msgid "Failed to connect to the server"
-msgstr "Verbindung zum Server fehlgeschlagen"
 
 msgid "Failed to connect to cloud service"
 msgstr "Verbindung zum Cloud-Dienst fehlgeschlagen"
@@ -4963,6 +4967,9 @@ msgstr "MicroSD-Karte"
 msgid "Camera Setting"
 msgstr "Kameraeinstellung"
 
+msgid "Switch Camera View"
+msgstr ""
+
 msgid "Control"
 msgstr "Steuerung"
 
@@ -6105,6 +6112,9 @@ msgstr "Login-Region"
 
 msgid "Stealth Mode"
 msgstr "Unsichtbarer Modus"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "Metrisch"
@@ -7942,6 +7952,15 @@ msgstr "SLA Stützpunkte"
 msgid "Gizmo FDM paint-on seam"
 msgstr "FDM Naht aufmalen"
 
+msgid "Gizmo Text emboss / engrave"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
 msgid "Switch between Prepare/Preview"
 msgstr "Zwischen Vorbereiten/ Vorschau wechseln"
 
@@ -9412,6 +9431,47 @@ msgstr ""
 "wird normalerweise empfohlen, diese Funktion zu aktivieren. Wenn Sie jedoch "
 "große Düsen verwenden, sollten Sie diese Funktion deaktivieren."
 
+msgid "Don't filter out small internal bridges (experimental)"
+msgstr ""
+
+msgid ""
+"This option can help reducing pillowing on top surfaces in heavily slanted "
+"or curved models.\n"
+"\n"
+"By default, small internal bridges are filtered out and the internal solid "
+"infill is printed directly over the sparse infill. This works well in most "
+"cases, speeding up printing without too much compromise on top surface "
+"quality. \n"
+"\n"
+"However, in heavily slanted or curved models especially where too low sparse "
+"infill density is used, this may result in curling of the unsupported solid "
+"infill, causing pillowing.\n"
+"\n"
+"Enabling this option will print internal bridge layer over slightly "
+"unsupported internal solid infill. The options below control the amount of "
+"filtering, i.e. the amount of internal bridges created.\n"
+"\n"
+"Disabled - Disables this option. This is the default behaviour and works "
+"well in most cases.\n"
+"\n"
+"Limited filtering - Creates internal bridges on heavily slanted surfaces, "
+"while avoiding creating uncessesary interal bridges. This works well for "
+"most difficult models.\n"
+"\n"
+"No filtering - Creates internal bridges on every potential internal "
+"overhang. This option is useful for heavily slanted top surface models. "
+"However, in most cases it creates too many unecessary bridges."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Limited filtering"
+msgstr ""
+
+msgid "No filtering"
+msgstr ""
+
 msgid "Max bridge length"
 msgstr "Max Überbrückungslänge"
 
@@ -10525,6 +10585,12 @@ msgstr "Mit welcher Art von G-Code ist der Drucker kompatibel"
 
 msgid "Klipper"
 msgstr "Klipper"
+
+msgid "Support multi bed types"
+msgstr ""
+
+msgid "Enable this option if you want to use multiple bed types"
+msgstr ""
 
 msgid "Label objects"
 msgstr "Objekte beschriften"
@@ -14025,9 +14091,12 @@ msgstr ""
 "der Erstellung ändern."
 
 msgid ""
-"Printer and all the filament&process presets that belongs to the printer. \n"
+"Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
+"Drucker und alle Filament- und Prozessvoreinstellungen, die zum Drucker "
+"gehören. \n"
+"Kann mit anderen geteilt werden."
 
 msgid ""
 "User's fillment preset set. \n"
@@ -14745,15 +14814,6 @@ msgstr ""
 "Wussten Sie, dass Sie bei der Verwendung von Materialien, die zu "
 "Verwerfungen neigen, wie z.B. ABS, durch eine angemessene Erhöhung der "
 "Heizbetttemperatur die Wahrscheinlichkeit von Verwerfungen verringern können."
-
-#~ msgid ""
-#~ "Printer and all the filament&&process presets that belongs to the "
-#~ "printer. \n"
-#~ "Can be shared with others."
-#~ msgstr ""
-#~ "Drucker und alle Filament- und Prozessvoreinstellungen, die zum Drucker "
-#~ "gehören. \n"
-#~ "Kann mit anderen geteilt werden."
 
 #~ msgid "Orca Cube"
 #~ msgstr "Galaxy Würfel"

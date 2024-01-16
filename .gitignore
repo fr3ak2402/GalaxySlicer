@@ -35,4 +35,5 @@ merge_inh*.py
 **/machine_full/
 **/filament_full/
 /deps/DL_CACHE/
+*error.*
 /deps/DL_CACHE

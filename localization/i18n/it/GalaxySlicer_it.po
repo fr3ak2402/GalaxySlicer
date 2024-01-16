@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 08:35+0100\n"
+"POT-Creation-Date: 2024-01-16 09:49+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -2357,14 +2357,14 @@ msgstr "No printer"
 msgid "..."
 msgstr ""
 
+msgid "Failed to connect to the server"
+msgstr "Connessione al server non riuscita"
+
 msgid "Check the status of current system services"
 msgstr "Verifica lo stato attuale dei servizi di sistema."
 
 msgid "code"
 msgstr "Codice"
-
-msgid "Failed to connect to the server"
-msgstr "Connessione al server non riuscita"
 
 msgid "Failed to connect to cloud service"
 msgstr "Connessione al servizio cloud non riuscita"
@@ -4909,6 +4909,9 @@ msgstr "MicroSD"
 msgid "Camera Setting"
 msgstr "Impostazioni camera"
 
+msgid "Switch Camera View"
+msgstr ""
+
 msgid "Control"
 msgstr "Control"
 
@@ -6028,6 +6031,9 @@ msgstr "Login Region"
 
 msgid "Stealth Mode"
 msgstr ""
+
+msgid "Check for stable updates only"
+msgstr "Verifica solo la disponibilità di aggiornamenti stabili"
 
 msgid "Metric"
 msgstr "Metric"
@@ -7834,6 +7840,15 @@ msgstr "Punti di supporto SLA Gizmo"
 msgid "Gizmo FDM paint-on seam"
 msgstr "Gizmo FDM pittura giunzione"
 
+msgid "Gizmo Text emboss / engrave"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
 msgid "Switch between Prepare/Preview"
 msgstr "Swtich tra Prepare/Prewview"
 
@@ -9279,6 +9294,47 @@ msgstr ""
 "consiglia di attivare questa funzione. Tuttavia, considera di disattivarlo "
 "se stai utilizzando ugelli di grandi dimensioni."
 
+msgid "Don't filter out small internal bridges (experimental)"
+msgstr ""
+
+msgid ""
+"This option can help reducing pillowing on top surfaces in heavily slanted "
+"or curved models.\n"
+"\n"
+"By default, small internal bridges are filtered out and the internal solid "
+"infill is printed directly over the sparse infill. This works well in most "
+"cases, speeding up printing without too much compromise on top surface "
+"quality. \n"
+"\n"
+"However, in heavily slanted or curved models especially where too low sparse "
+"infill density is used, this may result in curling of the unsupported solid "
+"infill, causing pillowing.\n"
+"\n"
+"Enabling this option will print internal bridge layer over slightly "
+"unsupported internal solid infill. The options below control the amount of "
+"filtering, i.e. the amount of internal bridges created.\n"
+"\n"
+"Disabled - Disables this option. This is the default behaviour and works "
+"well in most cases.\n"
+"\n"
+"Limited filtering - Creates internal bridges on heavily slanted surfaces, "
+"while avoiding creating uncessesary interal bridges. This works well for "
+"most difficult models.\n"
+"\n"
+"No filtering - Creates internal bridges on every potential internal "
+"overhang. This option is useful for heavily slanted top surface models. "
+"However, in most cases it creates too many unecessary bridges."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Limited filtering"
+msgstr ""
+
+msgid "No filtering"
+msgstr ""
+
 msgid "Max bridge length"
 msgstr "Lunghezza massima Bridge"
 
@@ -10368,6 +10424,12 @@ msgid "What kind of gcode the printer is compatible with"
 msgstr "What kind of G-code the printer is compatible with."
 
 msgid "Klipper"
+msgstr ""
+
+msgid "Support multi bed types"
+msgstr ""
+
+msgid "Enable this option if you want to use multiple bed types"
 msgstr ""
 
 msgid "Label objects"
@@ -13825,9 +13887,12 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Printer and all the filament&process presets that belongs to the printer. \n"
+"Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
+"Stampante e tutte le preimpostazioni di filamento e processo che "
+"appartengono alla stampante. \n"
+"Può essere condiviso con altri."
 
 msgid ""
 "User's fillment preset set. \n"
@@ -14497,15 +14562,6 @@ msgstr ""
 "ridurre la probabilità di deformazione."
 
 #~ msgid ""
-#~ "Printer and all the filament&&process presets that belongs to the "
-#~ "printer. \n"
-#~ "Can be shared with others."
-#~ msgstr ""
-#~ "Stampante e tutte le preimpostazioni di filamento e processo che "
-#~ "appartengono alla stampante. \n"
-#~ "Può essere condiviso con altri."
-
-#~ msgid ""
 #~ "OrcaSlicer will terminate because of a localization error. It will be "
 #~ "appreciated if you report the specific scenario this issue happened."
 #~ msgstr ""
@@ -14540,9 +14596,6 @@ msgstr ""
 #~ "Ci sono alcuni filamenti sconosciuti mappati su un preset generico. "
 #~ "Aggiorna Orca Slicer o riavvia GalaxySlicer per verificare se è presente "
 #~ "un aggiornamento delle impostazioni di sistema."
-
-#~ msgid "Check for stable updates only"
-#~ msgstr "Verifica solo la disponibilità di aggiornamenti stabili"
 
 #~ msgid ""
 #~ "After a tool change, the exact position of the newly loaded filament "

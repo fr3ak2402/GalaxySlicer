@@ -179,7 +179,7 @@ then
         
         # make deps
         echo "[4/9] Building dependencies..."
-        make -j$NCORES
+        make deps -j$NCORES
         echo "done"
 
         # rename wxscintilla # TODO: DeftDawg: Does GalaxySlicer need this?

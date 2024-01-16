@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 08:35+0100\n"
+"POT-Creation-Date: 2024-01-16 09:49+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2301,14 +2301,14 @@ msgstr "Ingen skrivare"
 msgid "..."
 msgstr ""
 
+msgid "Failed to connect to the server"
+msgstr "Uppkoppling till servern misslyckades"
+
 msgid "Check the status of current system services"
 msgstr "Kontrollera status för aktuella systemtjänster"
 
 msgid "code"
 msgstr "kod"
-
-msgid "Failed to connect to the server"
-msgstr "Uppkoppling till servern misslyckades"
 
 msgid "Failed to connect to cloud service"
 msgstr "Det gick inte att ansluta till molntjänsten"
@@ -4792,6 +4792,9 @@ msgstr "MicroSD-kort"
 msgid "Camera Setting"
 msgstr "Kamerainställning"
 
+msgid "Switch Camera View"
+msgstr ""
+
 msgid "Control"
 msgstr "Kontroll"
 
@@ -5867,6 +5870,9 @@ msgid "Login Region"
 msgstr "Logga in Region"
 
 msgid "Stealth Mode"
+msgstr ""
+
+msgid "Check for stable updates only"
 msgstr ""
 
 msgid "Metric"
@@ -7625,6 +7631,15 @@ msgstr "Gizmo SLA support punkter"
 msgid "Gizmo FDM paint-on seam"
 msgstr "Gizmo FDM målad söm"
 
+msgid "Gizmo Text emboss / engrave"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
 msgid "Switch between Prepare/Preview"
 msgstr ""
 
@@ -8941,6 +8956,47 @@ msgid ""
 "using large nozzles."
 msgstr ""
 
+msgid "Don't filter out small internal bridges (experimental)"
+msgstr ""
+
+msgid ""
+"This option can help reducing pillowing on top surfaces in heavily slanted "
+"or curved models.\n"
+"\n"
+"By default, small internal bridges are filtered out and the internal solid "
+"infill is printed directly over the sparse infill. This works well in most "
+"cases, speeding up printing without too much compromise on top surface "
+"quality. \n"
+"\n"
+"However, in heavily slanted or curved models especially where too low sparse "
+"infill density is used, this may result in curling of the unsupported solid "
+"infill, causing pillowing.\n"
+"\n"
+"Enabling this option will print internal bridge layer over slightly "
+"unsupported internal solid infill. The options below control the amount of "
+"filtering, i.e. the amount of internal bridges created.\n"
+"\n"
+"Disabled - Disables this option. This is the default behaviour and works "
+"well in most cases.\n"
+"\n"
+"Limited filtering - Creates internal bridges on heavily slanted surfaces, "
+"while avoiding creating uncessesary interal bridges. This works well for "
+"most difficult models.\n"
+"\n"
+"No filtering - Creates internal bridges on every potential internal "
+"overhang. This option is useful for heavily slanted top surface models. "
+"However, in most cases it creates too many unecessary bridges."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Limited filtering"
+msgstr ""
+
+msgid "No filtering"
+msgstr ""
+
 msgid "Max bridge length"
 msgstr "Max bridge/brygg längd"
 
@@ -9879,6 +9935,12 @@ msgid "What kind of gcode the printer is compatible with"
 msgstr "Vilken typ av G-kod är skrivaren kompatibel med"
 
 msgid "Klipper"
+msgstr ""
+
+msgid "Support multi bed types"
+msgstr ""
+
+msgid "Enable this option if you want to use multiple bed types"
 msgstr ""
 
 msgid "Label objects"
@@ -12921,7 +12983,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Printer and all the filament&process presets that belongs to the printer. \n"
+"Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
 

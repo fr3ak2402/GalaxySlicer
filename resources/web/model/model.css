@@ -371,4 +371,8 @@ body
 	height: 480px;
 }
 
+.viewer-button
+{
+	background-color: rgba(255,0,0,.5)!important;
+}
 

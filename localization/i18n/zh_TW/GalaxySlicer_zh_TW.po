@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 08:35+0100\n"
+"POT-Creation-Date: 2024-01-16 09:49+0100\n"
 "PO-Revision-Date: 2023-11-06 14:37+0800\n"
 "Last-Translator: ablegods <ablegods@gmail.com>\n"
 "Language-Team: \n"
@@ -2278,14 +2278,14 @@ msgstr "無３Ｄ列印機"
 msgid "..."
 msgstr "..."
 
+msgid "Failed to connect to the server"
+msgstr "無法連接伺服器"
+
 msgid "Check the status of current system services"
 msgstr "請檢查當前系統服務狀態"
 
 msgid "code"
 msgstr "code"
-
-msgid "Failed to connect to the server"
-msgstr "無法連接伺服器"
 
 msgid "Failed to connect to cloud service"
 msgstr "無法連接到雲服務"
@@ -4706,6 +4706,9 @@ msgstr "SD卡"
 msgid "Camera Setting"
 msgstr "攝影機設置"
 
+msgid "Switch Camera View"
+msgstr ""
+
 msgid "Control"
 msgstr "控制"
 
@@ -5762,6 +5765,9 @@ msgstr "登錄區域"
 
 msgid "Stealth Mode"
 msgstr "區域網路模式"
+
+msgid "Check for stable updates only"
+msgstr ""
 
 msgid "Metric"
 msgstr "公制"
@@ -7449,6 +7455,15 @@ msgstr "SLA支撐點"
 msgid "Gizmo FDM paint-on seam"
 msgstr "FDM塗裝接縫"
 
+msgid "Gizmo Text emboss / engrave"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
 msgid "Switch between Prepare/Preview"
 msgstr "在準備/預覽模式之中切換"
 
@@ -8704,6 +8719,47 @@ msgid ""
 "using large nozzles."
 msgstr ""
 
+msgid "Don't filter out small internal bridges (experimental)"
+msgstr ""
+
+msgid ""
+"This option can help reducing pillowing on top surfaces in heavily slanted "
+"or curved models.\n"
+"\n"
+"By default, small internal bridges are filtered out and the internal solid "
+"infill is printed directly over the sparse infill. This works well in most "
+"cases, speeding up printing without too much compromise on top surface "
+"quality. \n"
+"\n"
+"However, in heavily slanted or curved models especially where too low sparse "
+"infill density is used, this may result in curling of the unsupported solid "
+"infill, causing pillowing.\n"
+"\n"
+"Enabling this option will print internal bridge layer over slightly "
+"unsupported internal solid infill. The options below control the amount of "
+"filtering, i.e. the amount of internal bridges created.\n"
+"\n"
+"Disabled - Disables this option. This is the default behaviour and works "
+"well in most cases.\n"
+"\n"
+"Limited filtering - Creates internal bridges on heavily slanted surfaces, "
+"while avoiding creating uncessesary interal bridges. This works well for "
+"most difficult models.\n"
+"\n"
+"No filtering - Creates internal bridges on every potential internal "
+"overhang. This option is useful for heavily slanted top surface models. "
+"However, in most cases it creates too many unecessary bridges."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Limited filtering"
+msgstr ""
+
+msgid "No filtering"
+msgstr ""
+
 msgid "Max bridge length"
 msgstr "最大橋接長度"
 
@@ -9634,6 +9690,12 @@ msgid "What kind of gcode the printer is compatible with"
 msgstr "３Ｄ列印機相容的G-code風格'"
 
 msgid "Klipper"
+msgstr ""
+
+msgid "Support multi bed types"
+msgstr ""
+
+msgid "Enable this option if you want to use multiple bed types"
 msgstr ""
 
 msgid "Label objects"
@@ -12703,7 +12765,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Printer and all the filament&process presets that belongs to the printer. \n"
+"Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
 

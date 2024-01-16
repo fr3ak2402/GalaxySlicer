@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-29 22:55+0800\n"
+"POT-Creation-Date: 2024-01-16 09:49+0100\n"
 "PO-Revision-Date: 2024-01-01 14:28+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -2316,14 +2316,14 @@ msgstr "프린터 없음"
 msgid "..."
 msgstr "..."
 
+msgid "Failed to connect to the server"
+msgstr "서버 연결 실패"
+
 msgid "Check the status of current system services"
 msgstr "현재 시스템 서비스 상태 확인"
 
 msgid "code"
 msgstr "코드"
-
-msgid "Failed to connect to the server"
-msgstr "서버 연결 실패"
 
 msgid "Failed to connect to cloud service"
 msgstr "클라우드 서비스에 연결하지 못했습니다."
@@ -4803,6 +4803,9 @@ msgstr "SD 카드"
 
 msgid "Camera Setting"
 msgstr "카메라 설정"
+
+msgid "Switch Camera View"
+msgstr ""
 
 msgid "Control"
 msgstr "제어"
@@ -7640,6 +7643,15 @@ msgstr "도구 상자 지지대 칠하기"
 msgid "Gizmo FDM paint-on seam"
 msgstr "도구 상자 솔기 칠하기"
 
+msgid "Gizmo Text emboss / engrave"
+msgstr ""
+
+msgid "Zoom in"
+msgstr ""
+
+msgid "Zoom out"
+msgstr ""
+
 msgid "Switch between Prepare/Preview"
 msgstr "준비 하기/미리 보기 전환"
 
@@ -8777,6 +8789,7 @@ msgstr "반전 임계값"
 msgid "Overhang reversal threshold"
 msgstr "돌출부 반전 임계값"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered "
 "useful. Can be a % of the perimeter width.\n"
@@ -9008,6 +9021,47 @@ msgstr ""
 "활성화되면 두꺼운 내부 브릿지가 사용됩니다. 일반적으로 다음을 권장합니다.이 "
 "기능을 켜두세요. 하지만 다음과 같은 경우에는 끄는 것을 고려해 보세요.큰 노즐"
 "을 사용합니다."
+
+msgid "Don't filter out small internal bridges (experimental)"
+msgstr ""
+
+msgid ""
+"This option can help reducing pillowing on top surfaces in heavily slanted "
+"or curved models.\n"
+"\n"
+"By default, small internal bridges are filtered out and the internal solid "
+"infill is printed directly over the sparse infill. This works well in most "
+"cases, speeding up printing without too much compromise on top surface "
+"quality. \n"
+"\n"
+"However, in heavily slanted or curved models especially where too low sparse "
+"infill density is used, this may result in curling of the unsupported solid "
+"infill, causing pillowing.\n"
+"\n"
+"Enabling this option will print internal bridge layer over slightly "
+"unsupported internal solid infill. The options below control the amount of "
+"filtering, i.e. the amount of internal bridges created.\n"
+"\n"
+"Disabled - Disables this option. This is the default behaviour and works "
+"well in most cases.\n"
+"\n"
+"Limited filtering - Creates internal bridges on heavily slanted surfaces, "
+"while avoiding creating uncessesary interal bridges. This works well for "
+"most difficult models.\n"
+"\n"
+"No filtering - Creates internal bridges on every potential internal "
+"overhang. This option is useful for heavily slanted top surface models. "
+"However, in most cases it creates too many unecessary bridges."
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Limited filtering"
+msgstr ""
+
+msgid "No filtering"
+msgstr ""
 
 msgid "Max bridge length"
 msgstr "최대 브릿지 길이"
@@ -9558,6 +9612,7 @@ msgstr "선의 시작 또는 주 방향을 제어하는 드문 채우기 패턴�
 msgid "Sparse infill density"
 msgstr "드문 채우기 밀도"
 
+#, fuzzy, c-format, boost-format
 msgid ""
 "Density of internal sparse infill, 100% turns all sparse infill into solid "
 "infill and internal solid infill pattern will be used"
@@ -10040,6 +10095,12 @@ msgstr "프린터와 호환되는 G코드 종류"
 
 msgid "Klipper"
 msgstr "Klipper"
+
+msgid "Support multi bed types"
+msgstr ""
+
+msgid "Enable this option if you want to use multiple bed types"
+msgstr ""
 
 msgid "Label objects"
 msgstr "개체 이름표"
@@ -13328,7 +13389,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Printer and all the filament&process presets that belongs to the printer. \n"
+"Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
 

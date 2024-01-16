@@ -23,6 +23,7 @@
 #include <algorithm>
 #include "Plater.hpp"
 #include "BitmapCache.hpp"
+#include "slic3r/GUI/GUI_App.hpp"
 
 namespace Slic3r { namespace GUI {
 
@@ -281,6 +282,10 @@ UpdateVersionDialog::UpdateVersionDialog(wxWindow *parent)
     m_simplebook_release_note->SetMinSize(wxSize(FromDIP(560), FromDIP(430)));
     m_simplebook_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
 
+    m_scrollwindows_release_note = new wxScrolledWindow(m_simplebook_release_note, wxID_ANY, wxDefaultPosition, wxSize(FromDIP(560), FromDIP(430)), wxVSCROLL);
+    m_scrollwindows_release_note->SetScrollRate(5, 5);
+    m_scrollwindows_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
+
     //webview
     m_vebview_release_note = CreateTipView(m_simplebook_release_note);
     m_vebview_release_note->SetBackgroundColour(wxColour(0xF8, 0xF8, 0xF8));
@@ -344,6 +349,17 @@ UpdateVersionDialog::UpdateVersionDialog(wxWindow *parent)
         EndModal(wxID_NO);
     });
 
+    m_cb_stable_only = new CheckBox(this);
+    m_cb_stable_only->SetValue(wxGetApp().app_config->get_bool("check_stable_update_only"));
+    m_cb_stable_only->Bind(wxEVT_TOGGLEBUTTON, [this](wxCommandEvent& e) {
+        wxGetApp().app_config->set_bool("check_stable_update_only", m_cb_stable_only->GetValue());
+        e.Skip();
+    });
+
+    auto stable_only_label = new Label(this, _L("Check for stable updates only"));
+    stable_only_label->SetFont(Label::Body_13);
+    stable_only_label->SetForegroundColour(wxColour(38, 46, 48));
+    stable_only_label->SetFont(Label::Body_12);
 
     m_button_cancel = new Button(this, _L("Cancel"));
     m_button_cancel->SetBackgroundColor(btn_bg_white);
@@ -359,10 +375,10 @@ UpdateVersionDialog::UpdateVersionDialog(wxWindow *parent)
 
     m_sizer_main->Add(m_line_top, 0, wxEXPAND | wxBOTTOM, 0);
     
-    sizer_button->Add(m_bitmap_open_in_browser, 0, wxALIGN_CENTER | wxLEFT, FromDIP(7));
-    sizer_button->Add(m_link_open_in_browser, 0, wxALIGN_CENTER| wxLEFT, FromDIP(3));
     //sizer_button->Add(m_remind_choice, 0, wxALL | wxEXPAND, FromDIP(5));
     sizer_button->AddStretchSpacer();
+    sizer_button->Add(stable_only_label, 0, wxALIGN_CENTER | wxLEFT, FromDIP(7));
+    sizer_button->Add(m_cb_stable_only, 0, wxALIGN_CENTER | wxLEFT, FromDIP(5));
     sizer_button->Add(m_button_download, 0, wxALL, FromDIP(5));
     sizer_button->Add(m_button_skip_version, 0, wxALL, FromDIP(5));
     sizer_button->Add(m_button_cancel, 0, wxALL, FromDIP(5));

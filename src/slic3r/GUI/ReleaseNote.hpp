@@ -101,6 +101,7 @@ public:
     wxStaticBitmap*   m_bitmap_open_in_browser;
     wxHyperlinkCtrl*  m_link_open_in_browser;
     Button*           m_button_skip_version;
+    CheckBox*         m_cb_stable_only;
     Button*           m_button_download;
     Button*           m_button_cancel;
     std::string       url_line;
