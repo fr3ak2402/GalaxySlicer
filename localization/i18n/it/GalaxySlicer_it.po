@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 09:49+0100\n"
+"POT-Creation-Date: 2024-01-19 18:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -4111,6 +4111,15 @@ msgstr "Vai in diretta"
 
 msgid "Resolution"
 msgstr "Resolution"
+
+msgid "Enable"
+msgstr "Abilita"
+
+msgid "Hostname or IP"
+msgstr ""
+
+msgid "Custom camera source"
+msgstr ""
 
 msgid "Show \"Live Video\" guide page."
 msgstr "Mostra pagina della guida \"Diretta Video\"."
@@ -8834,6 +8843,29 @@ msgstr ""
 "disabilitata e lo spessore del guscio inferiore è determinato semplicemente "
 "dal numero di layers del guscio inferiore."
 
+msgid "Apply gap fill"
+msgstr ""
+
+msgid ""
+"Enables gap fill for the selected surfaces. The minimum gap length that will "
+"be filled can be controlled from the filter out tiny gaps option below.\n"
+"\n"
+"Options:\n"
+"1. Everywhere: Applies gap fill to top, bottom and internal solid surfaces\n"
+"2. Top and Bottom surfaces: Applies gap fill to top and bottom surfaces "
+"only\n"
+"3. Nowhere: Disables gap fill\n"
+msgstr ""
+
+msgid "Everywhere"
+msgstr ""
+
+msgid "Top and bottom surfaces"
+msgstr ""
+
+msgid "Nowhere"
+msgstr ""
+
 msgid "Force cooling for overhang and bridge"
 msgstr "Force cooling for overhangs and bridges"
 
@@ -9374,6 +9406,18 @@ msgstr ""
 "Aggiunge un riempimento solido in prossimità delle superfici inclinate per "
 "garantire lo spessore verticale del guscio (layers solidi superiori e "
 "inferiori)."
+
+msgid "Further reduce solid infill on walls (experimental)"
+msgstr ""
+
+msgid ""
+"Further reduces any solid infill applied to walls. As there will be very "
+"limited infill supporting solid surfaces, make sure that you are using "
+"adequate number of walls to support the part on sloping surfaces.\n"
+"\n"
+"For heavily sloped surfaces this option is not suitable as it will generate "
+"too thin of a top layer and should be disabled."
+msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Top surface pattern"
@@ -10976,9 +11020,6 @@ msgstr ""
 "riempimento. Ciò significa che il gocciolamento non verrà visto. Questo può "
 "ridurre i tempi di ritrazione per i modelli complessi e far risparmiare "
 "tempo di stampa, ma rende lo slicing e la generazione del G-code più lento."
-
-msgid "Enable"
-msgstr "Abilita"
 
 msgid "Filename format"
 msgstr "Filename format"

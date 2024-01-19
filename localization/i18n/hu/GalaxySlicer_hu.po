@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 09:49+0100\n"
+"POT-Creation-Date: 2024-01-19 18:18+0100\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4021,6 +4021,15 @@ msgstr "Streamelés indítása"
 
 msgid "Resolution"
 msgstr "Felbontás"
+
+msgid "Enable"
+msgstr "Engedélyezve"
+
+msgid "Hostname or IP"
+msgstr ""
+
+msgid "Custom camera source"
+msgstr ""
 
 msgid "Show \"Live Video\" guide page."
 msgstr "Az „Élő videó” útmutató oldal megjelenítése."
@@ -8611,6 +8620,29 @@ msgstr ""
 "ki van kapcsolva, és az alsó héj vastagságát egyszerűen az alsó héjrétegek "
 "száma határozza meg."
 
+msgid "Apply gap fill"
+msgstr ""
+
+msgid ""
+"Enables gap fill for the selected surfaces. The minimum gap length that will "
+"be filled can be controlled from the filter out tiny gaps option below.\n"
+"\n"
+"Options:\n"
+"1. Everywhere: Applies gap fill to top, bottom and internal solid surfaces\n"
+"2. Top and Bottom surfaces: Applies gap fill to top and bottom surfaces "
+"only\n"
+"3. Nowhere: Disables gap fill\n"
+msgstr ""
+
+msgid "Everywhere"
+msgstr ""
+
+msgid "Top and bottom surfaces"
+msgstr ""
+
+msgid "Nowhere"
+msgstr ""
+
 msgid "Force cooling for overhang and bridge"
 msgstr "Hűtés kényszerítése túlnyúlásoknál és áthidalásoknál"
 
@@ -9092,6 +9124,18 @@ msgid ""
 msgstr ""
 "A függőleges héjvastagság biztosítása érdekében szilárd kitöltést alkalmaz a "
 "lejtős felületek közelében."
+
+msgid "Further reduce solid infill on walls (experimental)"
+msgstr ""
+
+msgid ""
+"Further reduces any solid infill applied to walls. As there will be very "
+"limited infill supporting solid surfaces, make sure that you are using "
+"adequate number of walls to support the part on sloping surfaces.\n"
+"\n"
+"For heavily sloped surfaces this option is not suitable as it will generate "
+"too thin of a top layer and should be disabled."
+msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Felső felület mintázata"
@@ -10464,9 +10508,6 @@ msgstr ""
 "Ez az opció lerövidítheti a nyomtatási időt a visszahúzások csökkentésével "
 "komplex modelleknél, de egyúttal lassabbá teszi a szeletelést és a G-kód "
 "generálást"
-
-msgid "Enable"
-msgstr "Engedélyezve"
 
 msgid "Filename format"
 msgstr "Fájlnév formátum"

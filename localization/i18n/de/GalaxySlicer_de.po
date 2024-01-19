@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 09:49+0100\n"
+"POT-Creation-Date: 2024-01-19 18:18+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -4155,6 +4155,15 @@ msgstr "Live-Übertragung starten"
 
 msgid "Resolution"
 msgstr "Auflösung"
+
+msgid "Enable"
+msgstr "Aktivieren"
+
+msgid "Hostname or IP"
+msgstr ""
+
+msgid "Custom camera source"
+msgstr ""
 
 msgid "Show \"Live Video\" guide page."
 msgstr "Anleitungsseite „Live-Video“ anzeigen."
@@ -8962,6 +8971,29 @@ msgstr ""
 "bedeutet, dass diese Einstellung deaktiviert ist und die Dicke der unteren "
 "Schale absolut durch die unteren Schalenschichten bestimmt wird."
 
+msgid "Apply gap fill"
+msgstr ""
+
+msgid ""
+"Enables gap fill for the selected surfaces. The minimum gap length that will "
+"be filled can be controlled from the filter out tiny gaps option below.\n"
+"\n"
+"Options:\n"
+"1. Everywhere: Applies gap fill to top, bottom and internal solid surfaces\n"
+"2. Top and Bottom surfaces: Applies gap fill to top and bottom surfaces "
+"only\n"
+"3. Nowhere: Disables gap fill\n"
+msgstr ""
+
+msgid "Everywhere"
+msgstr ""
+
+msgid "Top and bottom surfaces"
+msgstr ""
+
+msgid "Nowhere"
+msgstr ""
+
 msgid "Force cooling for overhang and bridge"
 msgstr "Zwangskühlung für Überhänge und Brücken"
 
@@ -9512,6 +9544,18 @@ msgid ""
 msgstr ""
 "In der Nähe von schrägen Flächen massive Füllungen hinzufügen, um die "
 "vertikale Wanddicke zu gewährleisten (obere + untere massive Schichten)."
+
+msgid "Further reduce solid infill on walls (experimental)"
+msgstr ""
+
+msgid ""
+"Further reduces any solid infill applied to walls. As there will be very "
+"limited infill supporting solid surfaces, make sure that you are using "
+"adequate number of walls to support the part on sloping surfaces.\n"
+"\n"
+"For heavily sloped surfaces this option is not suitable as it will generate "
+"too thin of a top layer and should be disabled."
+msgstr ""
 
 msgid "Top surface pattern"
 msgstr "Muster der Oberfläche"
@@ -11138,9 +11182,6 @@ msgstr ""
 "nicht zu sehen ist. Dies kann die Zeit für das zurückziehen des Filaments "
 "bei komplexeren Modellen verkürzen und Druckzeit sparen, verlangsamt aber "
 "das Slicen und die G-Code Generierung."
-
-msgid "Enable"
-msgstr "Aktivieren"
 
 msgid "Filename format"
 msgstr "Format des Dateinamens"
