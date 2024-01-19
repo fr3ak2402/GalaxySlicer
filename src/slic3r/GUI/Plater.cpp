@@ -6965,7 +6965,7 @@ void Plater::priv::on_change_color_mode(SimpleEvent& evt) {
 void Plater::priv::apply_color_mode()
 {
     const bool is_dark         = wxGetApp().dark_mode();
-    wxColour   orca_color      = wxColour(59, 68, 70);//wxColour(ColorRGBA::Galaxy().r_uchar(), ColorRGBA::Galaxy().g_uchar(), ColorRGBA::Galaxy().b_uchar());
+    wxColour   orca_color      = wxColour(59, 68, 70);//wxColour(ColorRGBA::ORCA().r_uchar(), ColorRGBA::ORCA().g_uchar(), ColorRGBA::ORCA().b_uchar());
     orca_color                 = is_dark ? StateColor::darkModeColorFor(orca_color) : StateColor::lightModeColorFor(orca_color);
     wxColour sash_color = is_dark ? wxColour(38, 46, 48) : wxColour(206, 206, 206);
     m_aui_mgr.GetArtProvider()->SetColour(wxAUI_DOCKART_INACTIVE_CAPTION_COLOUR, sash_color);
@@ -8840,14 +8840,9 @@ void Plater::_calib_pa_pattern(const Calib_Params& params)
     changed_objects({ 0 });
     _calib_pa_select_added_objects();
 
-    DynamicPrintConfig& printer_config = wxGetApp().preset_bundle->printers.get_edited_preset().config;
+    const DynamicPrintConfig& printer_config = wxGetApp().preset_bundle->printers.get_edited_preset().config;
     DynamicPrintConfig& print_config = wxGetApp().preset_bundle->prints.get_edited_preset().config;
-    auto filament_config = &wxGetApp().preset_bundle->filaments.get_edited_preset().config;
     double nozzle_diameter = printer_config.option<ConfigOptionFloats>("nozzle_diameter")->get_at(0);
-    filament_config->set_key_value("filament_retract_when_changing_layer", new ConfigOptionBoolsNullable{false});
-    filament_config->set_key_value("filament_wipe", new ConfigOptionBoolsNullable{false});
-    printer_config.set_key_value("wipe", new ConfigOptionBools{false});
-    printer_config.set_key_value("retract_when_changing_layer", new ConfigOptionBools{false});
 
     for (const auto opt : SuggestedConfigCalibPAPattern().float_pairs) {
         print_config.set_key_value(
@@ -8881,11 +8876,7 @@ void Plater::_calib_pa_pattern(const Calib_Params& params)
     );
 
     wxGetApp().get_tab(Preset::TYPE_PRINT)->update_dirty();
-    wxGetApp().get_tab(Preset::TYPE_FILAMENT)->update_dirty();
-    wxGetApp().get_tab(Preset::TYPE_PRINTER)->update_dirty();
     wxGetApp().get_tab(Preset::TYPE_PRINT)->reload_config();
-    wxGetApp().get_tab(Preset::TYPE_FILAMENT)->reload_config();
-    wxGetApp().get_tab(Preset::TYPE_PRINTER)->reload_config();
 
     const DynamicPrintConfig full_config = wxGetApp().preset_bundle->full_config();
     PresetBundle* preset_bundle = wxGetApp().preset_bundle;

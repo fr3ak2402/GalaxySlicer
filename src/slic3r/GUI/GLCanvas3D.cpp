@@ -6422,7 +6422,17 @@ void GLCanvas3D::_resize(unsigned int w, unsigned int h)
     m_last_w = w;
     m_last_h = h;
 
-    const float font_size = 1.5f * wxGetApp().em_unit();
+    float font_size = wxGetApp().em_unit();
+
+#ifdef _WIN32
+    // On Windows, if manually scaled here, rendering issues can occur when the system's Display
+    // scaling is greater than 300% as the font's size gets to be to large. So, use imgui font
+    // scaling instead (see: ImGuiWrapper::init_font() and issue #3401)
+    font_size *= (font_size > 30.0f) ? 1.0f : 1.5f;
+#else
+    font_size *= 1.5f;
+#endif
+
 #if ENABLE_RETINA_GL
     imgui->set_scaling(font_size, 1.0f, m_retina_helper->get_scale_factor());
 #else
@@ -7626,7 +7636,6 @@ void GLCanvas3D::_render_imgui_select_plate_toolbar()
     ImGui::PushStyleColor(ImGuiCol_ScrollbarGrab, scroll_col);
     ImGui::PushStyleColor(ImGuiCol_ButtonActive, button_active);
     ImGui::PushStyleColor(ImGuiCol_ButtonHovered, button_hover);
-    ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(128.0f, 128.0f, 128.0f, 0.0f));
 
     ImGui::PushStyleVar(ImGuiStyleVar_ScrollbarSize, 10.0f);
     ImGui::PushStyleVar(ImGuiStyleVar_WindowBorderSize, 0.0f);
@@ -7668,7 +7677,7 @@ void GLCanvas3D::_render_imgui_select_plate_toolbar()
             }
             else {
                 ImGui::PushStyleColor(ImGuiCol_ButtonHovered, button_hover);
-                ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.42f, 0.42f, 0.42f, 1.0f));
+                ImGui::PushStyleColor(ImGuiCol_ButtonActive, button_hover);
             }
         }
 

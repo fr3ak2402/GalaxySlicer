@@ -968,7 +968,7 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         bool m_load_restore = false;
         std::string m_backup_path;
         std::string m_origin_file;
-        //GalaxyOK
+        
         // Semantic version of GalaxySlicer, that generated this 3MF.
         boost::optional<Semver> m_bambuslicer_generator_version;
         unsigned int m_fdm_supports_painting_version = 0;
@@ -1720,7 +1720,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         //BBS: version check
         bool dont_load_config = !m_load_config;
         if (m_bambuslicer_generator_version) {
-            //GalaxyOK
             Semver app_version = *(Semver::parse(GalaxySlicer_VERSION));
             Semver file_version = *m_bambuslicer_generator_version;
             if (file_version.maj() != app_version.maj())
@@ -1846,7 +1845,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         lock.close();
 
         if (!m_is_bbl_3mf) {
-            //GalaxyOK
             // if the 3mf was not produced by GalaxySlicer and there is more than one instance,
             // split the object in as many objects as instances
             BOOST_LOG_TRIVIAL(info) << __FUNCTION__ << ":" << __LINE__ << boost::format(", found 3mf from other vendor, split as instance");
@@ -3241,7 +3239,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
         }
 
         if (!m_is_bbl_3mf) {
-            //GalaxyOK
             // if the 3mf was not produced by GalaxySlicer and there is only one object,
             // set the object name to match the filename
             if (m_model->objects.size() == 1)
@@ -3641,7 +3638,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
             }*/
         } else if (m_curr_metadata_name == BBL_APPLICATION_TAG) {
             // Generator application of the 3MF.
-            //GalaxyOK
             // SLIC3R_APP_KEY - GalaxySlicer_VERSION
             if (boost::starts_with(m_curr_characters, "BambuStudio-")) {
                 m_is_bbl_3mf = true;
@@ -6384,7 +6380,6 @@ void PlateData::parse_filament_info(GCodeProcessorResult *result)
                 metadata_item_map[BBL_CREATION_DATE_TAG] = date;
                 metadata_item_map[BBL_MODIFICATION_TAG]  = date;
                 //SoftFever: write BambuStudio tag to keep it compatible 
-                //GalaxyOK
                 metadata_item_map[BBL_APPLICATION_TAG] = (boost::format("%1%-%2%") % "BambuStudio" % GalaxySlicer_VERSION).str();
             }
             metadata_item_map[BBS_3MF_VERSION] = std::to_string(VERSION_BBS_3MF);
