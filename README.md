@@ -32,6 +32,14 @@ All compile releases can be found at the following link: **[Releases](https://gi
   - Tools needed: Xcode, Cmake, git, gettext, libtool, automake, autoconf, texinfo
       - You can install most of them by running `brew install cmake gettext libtool automake autoconf texinfo`
   - run `build_release_macos.sh`
+  - To build and debug in XCode:
+      - run `XCode.app`
+      - open ``build_`arch`/OrcaSlicer.xcodeproj``
+      - menu bar: Product => Scheme => OrcaSlicer
+      - menu bar: Product => Scheme => Edit Scheme...
+          - Run => Info tab => Build Configuration: `RelWithDebInfo`
+          - Run => Options tab => Document Versions: uncheck `Allow debugging when browsing versions`
+      - menu bar: Product => Run
 
 # Supported operating systems
 - Ubuntu 
