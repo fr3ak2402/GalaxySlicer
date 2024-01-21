@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: 2024-01-01 14:28+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -5276,6 +5276,9 @@ msgstr "현재 플레이트 잠금 해제"
 msgid "Lock current plate"
 msgstr "현재 플레이트 잠금"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "사용자 정의 플레이트"
 
@@ -6828,6 +6831,9 @@ msgstr "벽 생성기"
 msgid "Walls and surfaces"
 msgstr "벽과 표면"
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr "브릿지"
 
@@ -7316,6 +7322,9 @@ msgstr "커버"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "%1% 이름이 이미 있습니다."
+
+msgid "Back"
+msgstr "뒷면"
 
 msgid "Basic Info"
 msgstr "기본 정보"
@@ -8955,6 +8964,15 @@ msgstr "레이어별"
 msgid "By object"
 msgstr "개체별"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "레이어 냉각 향상을 위한 감속"
 
@@ -10328,6 +10346,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "이 G코드는 사용자 정의 코드로 사용됩니다"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "X축 최대 속도"
 
@@ -10974,9 +11008,6 @@ msgstr "근접"
 
 msgid "Aligned"
 msgstr "정렬"
-
-msgid "Back"
-msgstr "뒷면"
 
 msgid "Random"
 msgstr "무작위"

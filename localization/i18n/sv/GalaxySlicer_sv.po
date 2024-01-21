@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5251,6 +5251,9 @@ msgstr ""
 msgid "Lock current plate"
 msgstr ""
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr ""
 
@@ -6809,6 +6812,9 @@ msgstr "Vägg generator"
 msgid "Walls and surfaces"
 msgstr ""
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr ""
 
@@ -7311,6 +7317,9 @@ msgstr "Skydd"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "Namnet \"%1%\" finns redan."
+
+msgid "Back"
+msgstr "Tillbaka"
 
 msgid "Basic Info"
 msgstr "Grundläggande information"
@@ -8890,6 +8899,15 @@ msgstr "Per lager"
 msgid "By object"
 msgstr "Per objekt"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "Sakta ner utskrift för bättre kylning av lager"
 
@@ -10160,6 +10178,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Denna G-kod kommer att användas som en anpassad kod."
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Max hastighet X"
 
@@ -10739,9 +10773,6 @@ msgstr "Närmaste"
 
 msgid "Aligned"
 msgstr "Linjerad"
-
-msgid "Back"
-msgstr "Tillbaka"
 
 msgid "Random"
 msgstr "Slumpmässig"

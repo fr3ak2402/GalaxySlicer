@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -5297,6 +5297,9 @@ msgstr ""
 msgid "Lock current plate"
 msgstr ""
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr ""
 
@@ -6846,6 +6849,9 @@ msgstr "Генерація периметрів"
 msgid "Walls and surfaces"
 msgstr ""
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr ""
 
@@ -7353,6 +7359,9 @@ msgstr "Обкладинка"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "Ім'я %1% вже існує."
+
+msgid "Back"
+msgstr "Ззаду"
 
 msgid "Basic Info"
 msgstr "Основна інформація"
@@ -8963,6 +8972,15 @@ msgstr "За шаром"
 msgid "By object"
 msgstr "По об'єкту"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "Повільний друк для кращого охолодження шару"
 
@@ -10315,6 +10333,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Цей G-код буде використовуватися як код користувача"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Максимальна швидкість X"
 
@@ -10904,9 +10938,6 @@ msgstr "Найближчий"
 
 msgid "Aligned"
 msgstr "Вирівняний"
-
-msgid "Back"
-msgstr "Ззаду"
 
 msgid "Random"
 msgstr "Випадковий"

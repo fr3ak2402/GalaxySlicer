@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: 2023-09-30 15:15+0200\n"
 "Last-Translator: René Mošner <Renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -5328,6 +5328,9 @@ msgstr "Odemknout aktuální podložku"
 msgid "Lock current plate"
 msgstr "Zamknout aktuální podložku"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "Přizpůsobit aktuální podložku"
 
@@ -6897,6 +6900,9 @@ msgstr "Generátor stěny"
 msgid "Walls and surfaces"
 msgstr ""
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr ""
 
@@ -7402,6 +7408,9 @@ msgstr "Obálka"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "Název \"%1%\" již existuje."
+
+msgid "Back"
+msgstr "Zezadu"
 
 msgid "Basic Info"
 msgstr "Základní informace"
@@ -9053,6 +9062,15 @@ msgstr "Podle vrstvy"
 msgid "By object"
 msgstr "Podle objektu"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "Zpomalte tisk pro lepší chlazení vrstvy"
 
@@ -10437,6 +10455,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Tento G-kód bude použit jako vlastní kód"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Maximální rychlost X"
 
@@ -11092,9 +11126,6 @@ msgstr "Nejbližší"
 
 msgid "Aligned"
 msgstr "Zarovnaný"
-
-msgid "Back"
-msgstr "Zezadu"
 
 msgid "Random"
 msgstr "Náhodný"

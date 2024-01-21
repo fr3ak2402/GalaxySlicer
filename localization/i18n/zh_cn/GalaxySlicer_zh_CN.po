@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -5156,6 +5156,9 @@ msgstr "解锁当前板"
 msgid "Lock current plate"
 msgstr "锁定当前板"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "自定义当前板"
 
@@ -6652,6 +6655,9 @@ msgstr "墙生成器"
 msgid "Walls and surfaces"
 msgstr "墙壁和表面"
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr "搭桥"
 
@@ -7126,6 +7132,9 @@ msgstr "封面"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "名字\"%1%\"已经存在。"
+
+msgid "Back"
+msgstr "背面"
 
 msgid "Basic Info"
 msgstr "基本信息"
@@ -8666,6 +8675,15 @@ msgstr "逐层"
 msgid "By object"
 msgstr "逐件"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "降低打印速度 以得到更好的冷却"
 
@@ -9934,6 +9952,22 @@ msgstr "该G-code用于暂停打印。您可以在gcode预览中插入暂停G-co
 msgid "This G-code will be used as a custom code"
 msgstr "该G-code是定制化指令"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "X最大速度"
 
@@ -10528,9 +10562,6 @@ msgstr "最近"
 
 msgid "Aligned"
 msgstr "对齐"
-
-msgid "Back"
-msgstr "背面"
 
 msgid "Random"
 msgstr "随机"

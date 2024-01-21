@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -5382,6 +5382,9 @@ msgstr "Déverrouiller la plaque actuelle"
 msgid "Lock current plate"
 msgstr "Verrouiller la plaque actuelle"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "Personnalisation de la plaque actuelle"
 
@@ -7545,6 +7548,9 @@ msgstr "Couverture"
 msgid "The name \"%1%\" already exists."
 msgstr "Le nom \"%1%\" existe déjà."
 
+msgid "Back"
+msgstr "Arrière"
+
 msgid "Basic Info"
 msgstr "Informations"
 
@@ -9023,7 +9029,8 @@ msgstr ""
 msgid "One wall threshold"
 msgstr "Seuil d'une paroi"
 
-#, c-format, boost-format
+# c-format, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "If a top surface has to be printed and it's partially covered by another "
 "layer, it won't be considered at a top layer where its width is below this "
@@ -11278,9 +11285,6 @@ msgstr "Rapprochée"
 msgid "Aligned"
 msgstr "Alignée"
 
-msgid "Back"
-msgstr "Arrière"
-
 msgid "Random"
 msgstr "Aléatoire"
 
@@ -13094,7 +13098,7 @@ msgstr "Filament"
 msgid "Start temp: "
 msgstr "Début: "
 
-msgid "End temp: "
+msgid "End end: "
 msgstr "Temp. de fin: "
 
 msgid "Temp step: "
@@ -13943,21 +13947,12 @@ msgstr ""
 "Corps du message : « %1% »\n"
 "Erreur : « %2% »"
 
-#~ msgid "End end: "
-#~ msgstr "Temp. de fin: "
-
-#~ msgid ""
-#~ "We would rename the presets as \"Vendor Type Serial @printer you "
-#~ "selected\". \n"
-#~ "To add preset for more prinetrs, Please go to printer selection"
-#~ msgstr ""
-#~ "Nous renommerions les préréglages en « Fournisseur Type Série @imprimante "
-#~ "que vous avez sélectionnée ». \n"
-#~ "Pour ajouter des préréglages pour d’autres imprimantes, veuillez aller à "
-#~ "la sélection de l’imprimante."
-
-#~ msgid "The Config can not be loaded."
-#~ msgstr "La configuration ne peut pas être chargée."
+#: resources/data/hints.ini: [hint:Precise wall]
+msgid ""
+"Precise wall\n"
+"Did you know that turning on precise wall can improve precision and layer "
+"consistency?"
+msgstr ""
 
 #: resources/data/hints.ini: [hint:Sandwich mode]
 msgid ""
@@ -14285,6 +14280,19 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "End temp: "
+#~ msgstr "Temp. de fin: "
+
+#~ msgid ""
+#~ "We would rename the presets as \"Vendor Type Serial @printer you "
+#~ "selected\". \n"
+#~ "To add preset for more prinetrs, Please go to printer selection"
+#~ msgstr ""
+#~ "Nous renommerions les préréglages en « Fournisseur Type Série @imprimante "
+#~ "que vous avez sélectionnée ». \n"
+#~ "Pour ajouter des préréglages pour d’autres imprimantes, veuillez aller à "
+#~ "la sélection de l’imprimante."
 
 #~ msgid "Orca Cube"
 #~ msgstr "Cube Orca"

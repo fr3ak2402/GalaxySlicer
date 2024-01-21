@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -5372,6 +5372,9 @@ msgstr "Desbloquear bandeja actual"
 msgid "Lock current plate"
 msgstr "Bloquear bandeja actual"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "Personalizar bandeja actual"
 
@@ -6984,6 +6987,9 @@ msgstr "Generador de perímetros"
 msgid "Walls and surfaces"
 msgstr "Paredes y superficies"
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr "Puentes"
 
@@ -7502,6 +7508,9 @@ msgstr "Cubierta"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "El nombre \"%1%\" ya existe."
+
+msgid "Back"
+msgstr "Trasera"
 
 msgid "Basic Info"
 msgstr "Información Básica"
@@ -9222,6 +9231,15 @@ msgstr "Por capa"
 msgid "By object"
 msgstr "Por objeto"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr ""
 "Reducir la velocidad de impresión para mejorar el refrigeración de las capas"
@@ -10696,6 +10714,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Este G-code se usará para el código personalizado"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Velocidad máxima X"
 
@@ -11377,9 +11411,6 @@ msgstr "Más cercano"
 
 msgid "Aligned"
 msgstr "Alineado"
-
-msgid "Back"
-msgstr "Trasera"
 
 msgid "Random"
 msgstr "Aleatorio"

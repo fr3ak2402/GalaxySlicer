@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -5464,6 +5464,9 @@ msgstr "Entsperre aktuelle Platte "
 msgid "Lock current plate"
 msgstr "Speere aktuelle Platte"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "Aktuelle Platte anpassen"
 
@@ -7114,6 +7117,9 @@ msgstr "Wandgenerator"
 msgid "Walls and surfaces"
 msgstr "Wände und Oberflächen"
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr "B"
 
@@ -7634,6 +7640,9 @@ msgstr "Abdeckung"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "Der Name \"%1%\" existiert bereits."
+
+msgid "Back"
+msgstr "Rückseite"
 
 msgid "Basic Info"
 msgstr "Basis-Info"
@@ -9387,6 +9396,15 @@ msgstr "Nach Ebene"
 msgid "By object"
 msgstr "Nach Objekt"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "Verlangsamen Sie den Druck für eine bessere Schichtkühlung"
 
@@ -10901,6 +10919,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Dieser G-Code wird als benutzerdefinierter Code verwendet"
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Maximale Geschwindigkeit X"
 
@@ -11585,9 +11619,6 @@ msgstr "Nächste"
 
 msgid "Aligned"
 msgstr "Ausgerichtet"
-
-msgid "Back"
-msgstr "Rückseite"
 
 msgid "Random"
 msgstr "Zufall"

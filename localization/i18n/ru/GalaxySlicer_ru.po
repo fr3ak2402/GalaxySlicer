@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-19 19:07+0100\n"
+"POT-Creation-Date: 2024-01-21 22:21+0100\n"
 "PO-Revision-Date: 2023-11-20 01:07+0700\n"
 "Last-Translator: Andylg <andylg@yandex.ru>\n"
 "Language-Team: \n"
@@ -5372,6 +5372,9 @@ msgstr "Разблокировать текущую печатную пласт�
 msgid "Lock current plate"
 msgstr "Заблокировать текущую печатную пластину"
 
+msgid "Edit current plate name"
+msgstr ""
+
 msgid "Customize current plate"
 msgstr "Настроить текущую печатную пластину"
 
@@ -6958,6 +6961,9 @@ msgstr "Генератор периметров"
 msgid "Walls and surfaces"
 msgstr ""
 
+msgid "Small Area Infill Flow Compensation (experimental)"
+msgstr ""
+
 msgid "Bridging"
 msgstr ""
 
@@ -7471,6 +7477,9 @@ msgstr "Обложка"
 #, boost-format
 msgid "The name \"%1%\" already exists."
 msgstr "Имя \"%1%\" уже существует."
+
+msgid "Back"
+msgstr "Сзади"
 
 msgid "Basic Info"
 msgstr "Общая информация"
@@ -9165,6 +9174,15 @@ msgstr "Одновременно"
 msgid "By object"
 msgstr "По очереди"
 
+msgid "Layer order"
+msgstr ""
+
+msgid "Print order within a single layer"
+msgstr ""
+
+msgid "As object list"
+msgstr ""
+
 msgid "Slow printing down for better layer cooling"
 msgstr "Замедлять печать для лучшего охлаждения слоёв"
 
@@ -10583,6 +10601,22 @@ msgstr ""
 msgid "This G-code will be used as a custom code"
 msgstr "Этот G-код используется для пользовательского кода."
 
+msgid "Enable Flow Compensation"
+msgstr ""
+
+msgid "Enable flow compensation for small infill areas"
+msgstr ""
+
+msgid "Flow Compensation Model"
+msgstr ""
+
+msgid ""
+"Flow Compensation Model, used to adjust the flow for small infill areas. The "
+"model is expressed as a comma separated pair of values for extrusion length "
+"and flow correction factors, one per line, in the following format: "
+"\"1.234,5.678\""
+msgstr ""
+
 msgid "Maximum speed X"
 msgstr "Максимальная скорость перемещения по X"
 
@@ -11265,9 +11299,6 @@ msgstr "Ближайшая"
 
 msgid "Aligned"
 msgstr "По краю"
-
-msgid "Back"
-msgstr "Сзади"
 
 msgid "Random"
 msgstr "Случайно"
