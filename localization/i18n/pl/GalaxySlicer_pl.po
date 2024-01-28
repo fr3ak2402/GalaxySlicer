@@ -56,7 +56,7 @@ msgid "Highlight overhang areas"
 msgstr "Podświetl miejsca nawisu"
 
 msgid "Gap fill"
-msgstr "Wypełnianie przerw"
+msgstr "Wypełnianie szczelin"
 
 msgid "Perform"
 msgstr "Wykonaj"
@@ -112,7 +112,7 @@ msgid "Filament count exceeds the maximum number that painting tool supports. on
 msgstr "Liczba filamentów przekracza maksymalną ilość obsługiwaną przez narzędzie malowania. Tylko pierwsze %1% filamenty będą dostępne w narzędziu malowania."
 
 msgid "Color Painting"
-msgstr "Malowanie kolorami"
+msgstr "Malowanie kolorem"
 
 msgid "Pen shape"
 msgstr "Kształt pióra"
@@ -160,7 +160,7 @@ msgid "Triangle"
 msgstr "Trójkąt"
 
 msgid "Height Range"
-msgstr "Zakres wysokości"
+msgstr "Przedział"
 
 # +++++++++++++++++++++
 msgid "Vertical"
@@ -299,7 +299,7 @@ msgid "Keep orientation"
 msgstr "Zachowaj orientację"
 
 msgid "Place on cut"
-msgstr "Umieść na cięciu"
+msgstr "Umieść na przecięciu"
 
 msgid "Flip upside down"
 msgstr "Obróć do góry nogami"
@@ -605,10 +605,10 @@ msgid "Remove selection"
 msgstr "Usuń zaznaczenie"
 
 msgid "Entering Seam painting"
-msgstr "Rozpoczęcie malowania szwu"
+msgstr "Rozpoczęcie malowania miejsca szwu"
 
 msgid "Leaving Seam painting"
-msgstr "Zakończenie malowania szwu"
+msgstr "Zakończenie malowania miejsca szwu"
 
 msgid "Paint-on seam editing"
 msgstr "Edycja malowania szwu"
@@ -747,7 +747,7 @@ msgid "Cut"
 msgstr "Cięcie"
 
 msgid "Click to change part type into negative volume."
-msgstr "Kliknij, aby zmienić napis tak, aby utworzyl wgłębienie w modelu"
+msgstr "Kliknij, aby zmienić napis tak, aby utworzyl wgłębienie w modelu."
 
 msgid "Modifier"
 msgstr "Modyfikator"
@@ -1566,7 +1566,7 @@ msgid "Add part"
 msgstr "Dodaj część"
 
 msgid "Add negative part"
-msgstr "Dodaj część ujemną"
+msgstr "Dodaj część negatywną"
 
 msgid "Add modifier"
 msgstr "Dodaj modyfikator"
@@ -1662,7 +1662,7 @@ msgid "Set as individual objects"
 msgstr "Ustaw jako osobne obiekty"
 
 msgid "Fill bed with copies"
-msgstr "Wypełnij stół kopiami"
+msgstr "Wypełnij stół kopiami modelu"
 
 msgid "Fill the remaining area of bed with copies of the selected object"
 msgstr "Wypełnij pozostałą część stołu kopiami wybranego obiektu"
@@ -1939,10 +1939,10 @@ msgid "Click the icon to toggle printable property of the object"
 msgstr "Kliknij ikonę, aby włączyć/wyłączyć możliwość druku obiektu"
 
 msgid "Click the icon to edit support painting of the object"
-msgstr "Kliknij ikonę, aby edytować malowanie podpory obiektu"
+msgstr "Kliknij ikonę, aby edytować namalowane podpory obiektu"
 
 msgid "Click the icon to edit color painting of the object"
-msgstr "Kliknij ikonę, aby edytować malowanie koloru obiektu"
+msgstr "Kliknij ikonę, aby edytować kolory obiektu"
 
 msgid "Click the icon to shift this object to the bed"
 msgstr "Kliknij ikonę, aby przenieść ten obiekt na stół"
@@ -2026,7 +2026,7 @@ msgid "Instance manipulation"
 msgstr "Manipulacja instancjami"
 
 msgid "Height ranges"
-msgstr "Zakresy wysokości"
+msgstr "2Zakresy wysokości"
 
 msgid "Settings for height range"
 msgstr "Ustawienia dla zakresu wysokości"
@@ -3122,12 +3122,18 @@ msgstr ""
 
 msgid "Alternate extra wall only works with ensure vertical shell thickness disabled. "
 msgstr ""
+"Alternatywna dodatkowa ściana działa tylko wtedy, gdy jest wyłączona opcja \"zapewnij "
+"pionową grubość powłoki\". "
 
 msgid ""
 "Change these settings automatically? \n"
 "Yes - Disable ensure vertical shell thickness and enable alternate extra wall\n"
 "No  - Dont use alternate extra wall"
 msgstr ""
+"Zmienić te ustawienia automatycznie?\n"
+"Tak  - Wyłącz \"zapewnij pionową grubość powłoki\" i włącz \"alternatywną dodatkową "
+"ścianę\"\n"
+"Nie  - Nie używaj \"alternatywnej dodatkowej ściany\""
 
 msgid ""
 "Prime tower does not work when Adaptive Layer Height or Independent Support Layer Height is on.\n"
@@ -3212,7 +3218,7 @@ msgid "Cleaning nozzle tip"
 msgstr "Czyszczenie końcówki dyszy"
 
 msgid "Checking extruder temperature"
-msgstr "Sprawdzanie temperatury ekstruzora"
+msgstr "Sprawdzanie temperatury extrudera"
 
 msgid "Printing was paused by the user"
 msgstr "Druk został wstrzymany przez użytkownika"
@@ -3444,7 +3450,7 @@ msgid "Statistics of All Plates"
 msgstr "Statystyki wszystkich płyt"
 
 msgid "Display"
-msgstr "Wyświetlenie"
+msgstr "Wyświetl"
 
 msgid "Flushed"
 msgstr "Spłukane"
@@ -3510,10 +3516,10 @@ msgid "Seams"
 msgstr "Szwy"
 
 msgid "Retract"
-msgstr "Cofanie"
+msgstr "Retrakcja"
 
 msgid "Unretract"
-msgstr "Wycofanie"
+msgstr "Unretrakcja"
 
 msgid "Filament Changes"
 msgstr "Zmiany filamentu"
@@ -3758,7 +3764,7 @@ msgid "Vibration compensation"
 msgstr "Kompensacja drgań"
 
 msgid "Motor noise cancellation"
-msgstr "Tłumienie hałasu silników"
+msgstr "Redukcja hałasu silników"
 
 msgid "Calibration program"
 msgstr "Program kalibracji"
@@ -4610,10 +4616,10 @@ msgid "Please heat the nozzle to above 170 degrees before loading or unloading f
 msgstr "Przed załadowaniem lub rozładowaniem filamentu podgrzej dyszę do temperatury powyżej 170 stopni."
 
 msgid "Still unload"
-msgstr "Nadal rozładowuj"
+msgstr "Wyładuj"
 
 msgid "Still load"
-msgstr "Nadal ładuj"
+msgstr "Załaduj"
 
 msgid "Please select an AMS slot before calibration"
 msgstr "Przed kalibracją wybierz gniazdo AMS"
@@ -4724,9 +4730,9 @@ msgstr[2] "%1$d obiektów ma dostosowane wsparcie."
 
 msgid "%1$d Object has color painting."
 msgid_plural "%1$d Objects have color painting."
-msgstr[0] "%1$d obiekt ma malowanie kolorowe."
-msgstr[1] "%1$d obiekty mają malowanie kolorowe."
-msgstr[2] "%1$d obiektów ma malowanie kolorowe."
+msgstr[0] "%1$d obiekt jest pomalowany kolorem."
+msgstr[1] "%1$d obiekty są pomalowanie kolorem."
+msgstr[2] "%1$d obiektów jest pomalowanych kolorem."
 
 msgid "%1$d object was loaded as a part of cut object."
 msgid_plural "%1$d objects were loaded as parts of cut object"
@@ -4780,10 +4786,10 @@ msgid "Gcode path overlap"
 msgstr "Nakładanie się ścieżek Gcode"
 
 msgid "Support painting"
-msgstr "Malowanie podpór"
+msgstr "Namaluj podpory"
 
 msgid "Color painting"
-msgstr "Malowanie kolorowe"
+msgstr "Malowanie kolorem"
 
 msgid "Cut connectors"
 msgstr "Obcięte połączenia"
@@ -5526,7 +5532,7 @@ msgid "System Sync"
 msgstr "Synchronizacja systemu"
 
 msgid "Clear my choice on the unsaved presets."
-msgstr "Wyczyść moje wybory w niezapisanych profilach"
+msgstr "Wyczyść moje wybory w niezapisanych profilach."
 
 msgid "Associate files to OrcaSlicer"
 msgstr "Skojarz pliki z OrcaSlicer"
@@ -6353,7 +6359,7 @@ msgid "Reserved keywords found"
 msgstr "Znaleziono zarezerwowane słowa kluczowe"
 
 msgid "Setting Overrides"
-msgstr "Nadpisywanie ustawień"
+msgstr "Zastępowanie ustawień"
 
 msgid "Retraction"
 msgstr "Retrakcja"
@@ -7050,13 +7056,13 @@ msgid "⌘+Mouse wheel"
 msgstr "⌘+Kółko myszy"
 
 msgid "Support/Color Painting: adjust pen radius"
-msgstr "Wsparcie/Malowanie kolorami: dostosuj promień pędzla"
+msgstr "Wsparcie/Kolorowanie: dostosuj promień pędzla"
 
 msgid "⌥+Mouse wheel"
 msgstr "⌥+Kółko myszy"
 
 msgid "Support/Color Painting: adjust section position"
-msgstr "Wsparcie/Malowanie kolorami: dostosuj pozycję sekcji"
+msgstr "Wsparcie/Kolorowanie: dostosuj pozycję sekcji"
 
 msgid "Ctrl+Mouse wheel"
 msgstr "Ctrl+Kółko myszy"
@@ -7578,10 +7584,10 @@ msgid "Failed processing of the filename_format template."
 msgstr "Niepowodzenie przetwarzania szablonu filename_format."
 
 msgid "Printable area"
-msgstr "Obszar nadający się do druku"
+msgstr "Obszar druku"
 
 msgid "Bed exclude area"
-msgstr "Obszar wykluczenia"
+msgstr "Obszar wykluczony z druku"
 
 msgid ""
 "Unprintable area in XY plane. For example, X1 Series printers use the front left corner to cut filament during filament change. The area is expressed as polygon by points in "
@@ -7619,7 +7625,7 @@ msgid "Slicing height for each layer. Smaller layer height means more accurate a
 msgstr "Wysokość cięcia dla każdej warstwy. Mniejsza wysokość warstwy oznacza większą dokładność i dłuższy czas drukowania"
 
 msgid "Printable height"
-msgstr "Wysokość możliwa do wydrukowania"
+msgstr "Maksymalna wysokość"
 
 msgid "Maximum printable height which is limited by mechanism of printer"
 msgstr "Maksymalna wysokość możliwa do wydrukowania, ograniczona przez mechanizm drukarki"
@@ -7694,13 +7700,13 @@ msgid "HTTP digest"
 msgstr "HTTP digest"
 
 msgid "Avoid crossing wall"
-msgstr "Unikaj przecinania ściany"
+msgstr "Unikaj ruchów nad obrysami"
 
 msgid "Detour and avoid to travel across wall which may cause blob on surface"
 msgstr "Omijaj i unikaj przemieszczania się przez ścianę, co może spowodować powstanie grudek na powierzchni"
 
 msgid "Avoid crossing wall - Max detour length"
-msgstr "Unikaj przecinania ściany - Maksymalna długość objazdu"
+msgstr "Unikaj ruchów nad obrysami - Maksymalna długość objazdu"
 
 msgid ""
 "Maximum detour distance for avoiding crossing wall. Don't detour if the detour distance is large than this value. Detour length could be specified either as an absolute value or as "
@@ -7749,7 +7755,7 @@ msgid "Bed temperature of the initial layer. Value 0 means the filament does not
 msgstr "Temperatura stołu pierwszej warstwy. Wartość 0 oznacza, że filament nie obsługuje drukowania na Textured PEI Plate"
 
 msgid "Bed types supported by the printer"
-msgstr "Typy płyt obsługiwanych przez drukarkę"
+msgstr "Typy płyt roboczych obsługiwanych przez drukarkę"
 
 msgid "Cool Plate"
 msgstr "Cool Plate / PLA Plate"
@@ -7936,7 +7942,7 @@ msgstr "Próg odwrócenia"
 msgid "Overhang reversal threshold"
 msgstr "Próg odwrócenia przy nawisach"
 
-#, c-format, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Number of mm the overhang need to be for the reversal to be considered useful. Can be a %% of the perimeter width.\n"
 "Value 0 enables reversal on every odd layers regardless."
@@ -7966,7 +7972,7 @@ msgid "mm/s or %"
 msgstr "mm/s lub %"
 
 msgid "External"
-msgstr "Zewnętrzne"
+msgstr "Zewn."
 
 msgid "Speed of bridge and completely overhang wall"
 msgstr "Prędkość mostu i całkowicie nawisającej ściany"
@@ -7975,7 +7981,7 @@ msgid "mm/s"
 msgstr "mm/s"
 
 msgid "Internal"
-msgstr "Wewnętrzne"
+msgstr "Wewn."
 
 msgid "Speed of internal bridge. If the value is expressed as a percentage, it will be calculated based on the bridge_speed. Default value is 150%."
 msgstr "Prędkość wewnętrznego mostu. Jeśli wartość jest wyrażona w procentach, będzie obliczana na podstawie prędkości mostu. Domyślna wartość to 150%."
@@ -8061,7 +8067,7 @@ msgstr ""
 "chłodzona przez dłuższy czas. Może to poprawić jakość chłodzenia dla igieł i małych detali"
 
 msgid "Normal printing"
-msgstr "Normalny druk"
+msgstr "Normalne drukowanie"
 
 msgid "The default acceleration of both normal printing and travel except initial layer"
 msgstr "Domyślne przyspieszenie zarówno normalnego druku, jak i podróży, z wyjątkiem pierwszej warstwy"
@@ -8766,7 +8772,7 @@ msgid "Speed of solid infill part of initial layer"
 msgstr "Prędkość pełnego wypełnienia na pierwszej warstwie"
 
 msgid "Initial layer travel speed"
-msgstr "Prędkość ruchu pierwszej warstwy"
+msgstr "Prędkość jałowa pierwszej warstwy"
 
 msgid "Travel speed of initial layer"
 msgstr "Prędkość jałowa dla pierwszej warstwy"
@@ -8837,13 +8843,13 @@ msgid "Whether to apply fuzzy skin on the first layer"
 msgstr "Czy zastosować Fuzzy skin na pierwszej warstwie"
 
 msgid "Filter out tiny gaps"
-msgstr "Filtruj małe przerwy"
+msgstr "Filtruj małe szpary"
 
 msgid "Layers and Perimeters"
 msgstr "Warstwy i obwody"
 
 msgid "Filter out gaps smaller than the threshold specified"
-msgstr "Filtruj przerwy mniejsze niż podany próg"
+msgstr "Filtruj małe szpary mniejsze niż podany próg"
 
 msgid "Speed of gap infill. Gap usually has irregular line width and should be printed more slowly"
 msgstr "Prędkość wypełniania przerw. Przerwa zazwyczaj ma nieregularną szerokość linii i powinna być drukowana wolniej"
@@ -8961,7 +8967,7 @@ msgid "money/h"
 msgstr "zł/h"
 
 msgid "Support control chamber temperature"
-msgstr "Temepratura sterowania komorą podpory"
+msgstr "Sterowanie temperaturą komory"
 
 msgid ""
 "This option is enabled if machine support controlling chamber temperature\n"
@@ -9071,10 +9077,10 @@ msgid "Top surfaces"
 msgstr "Górne powierzchnie"
 
 msgid "Topmost surface"
-msgstr "Najwyższa powierzchnia"
+msgstr "Tylko ostatnia warstwa"
 
 msgid "All solid layer"
-msgstr "Wszystkie pełne warstwy"
+msgstr "Wszystkie jednolite warstwy"
 
 msgid "Ironing Pattern"
 msgstr "Wzór prasowania"
@@ -9225,7 +9231,7 @@ msgid "Maximum acceleration for extruding (M204 P)"
 msgstr "Maksymalne przyspieszenie ekstruzji (M204 P)"
 
 msgid "Maximum acceleration for retracting"
-msgstr "Maks. przyspieszenie cofania"
+msgstr "Maks. przyspieszenie retrakcji"
 
 msgid "Maximum acceleration for retracting (M204 R)"
 msgstr "Maksymalne przyspieszenie cofania (M204 R)"
@@ -9600,7 +9606,7 @@ msgid "Top and Bottom"
 msgstr "Na górze i na dole"
 
 msgid "Extra length on restart"
-msgstr "Dodatkowa ilość dla powrotu"
+msgstr "Dodatkowa długość przy wznawianiu"
 
 msgid "When the retraction is compensated after the travel move, the extruder will push this additional amount of filament. This setting is rarely needed."
 msgstr "Kiedy retrakcja jest kompensowana po ruchu podróży, extruder wypchnie tę dodatkową ilość filamentu. To ustawienie jest rzadko potrzebne."
@@ -9814,7 +9820,7 @@ msgid "Purge remaining filament into prime tower"
 msgstr "Oczyszczanie pozostałego filamentu do wieży czyszczącej"
 
 msgid "Enable filament ramming"
-msgstr "Włącz wpychanie filamentu"
+msgstr "Włącz szybką ekstruzję filamentu"
 
 msgid "No sparse layers (EXPERIMENTAL)"
 msgstr "Brak rzadkich warstw (EKSPERYMENTALNE)"
@@ -10279,7 +10285,7 @@ msgid "The actual flushing volumes is equal to the flush multiplier multiplied b
 msgstr "Aktualna objętość płukania jest równa mnożnikowi płukania pomnożonemu przez objętości płukania w tabeli."
 
 msgid "Prime volume"
-msgstr "Podstawowa objętość"
+msgstr "Objętość podstawowa"
 
 msgid "The volume of material to prime extruder on tower."
 msgstr "Objętość filamentu do załadowania extrudera na wieży."
@@ -10377,7 +10383,7 @@ msgstr ""
 msgid "Polyhole detection margin"
 msgstr "Margines wykrywania poliotworów"
 
-#, c-format, boost-format
+#, fuzzy, c-format, boost-format
 msgid ""
 "Maximum defection of a point to the estimated radius of the circle.\n"
 "As cylinders are often exported as triangles of varying size, points may not be on the circle circumference. This setting allows you some leway to broaden the detection.\n"
@@ -10407,7 +10413,9 @@ msgid "Format of G-code thumbnails: PNG for best quality, JPG for smallest size,
 msgstr "Format miniatur G-code: PNG dla najlepszej jakości, JPG dla najmniejszego rozmiaru, QOI dla oprogramowania o niskiej pamięci"
 
 msgid "Use relative E distances"
-msgstr "Użyj względnych odległości E"
+msgstr ""
+"Użyj względnych \n"
+"odległości E"
 
 msgid ""
 "Relative extrusion is recommended when using \"label_objects\" option.Some extruders work better with this option unckecked (absolute extrusion mode). Wipe tower is only compatible "
@@ -10574,7 +10582,7 @@ msgid "Generating infill toolpath"
 msgstr "Generowanie ścieżki narzędzia wypełnienia"
 
 msgid "Detect overhangs for auto-lift"
-msgstr "Wykryj wysięgnięcia do automatycznego podnoszenia"
+msgstr "Wykryj wystające części do automatycznego podnoszenia"
 
 msgid "Generating support"
 msgstr "Generowanie podpór"
@@ -11246,10 +11254,10 @@ msgid "VFA test"
 msgstr "Test VFA"
 
 msgid "Start speed: "
-msgstr "Rozpocznij prędkość: "
+msgstr "Rozpocznij z prędkością: "
 
 msgid "End speed: "
-msgstr "Koniec prędkości: "
+msgstr "Zakończ z prędkością: "
 
 msgid ""
 "Please input valid values:\n"
@@ -11263,10 +11271,10 @@ msgstr ""
 "koniec > start + krok)"
 
 msgid "Start retraction length: "
-msgstr "Długość początkowej retrakcji: "
+msgstr "Długość retrakcji na początku: "
 
 msgid "End retraction length: "
-msgstr "Długość końcowej retrakcji: "
+msgstr "Długość retrakcji na końcu: "
 
 msgid "mm/mm"
 msgstr "mm/mm"
@@ -11333,7 +11341,7 @@ msgid "Mesh Boolean"
 msgstr "Siatka Booleana"
 
 msgid "Union"
-msgstr "Unia"
+msgstr "Kombinacja"
 
 msgid "Difference"
 msgstr "Różnica"
@@ -11508,6 +11516,8 @@ msgstr ""
 
 msgid "You have not selected a printer or preset yet. Please select at least one."
 msgstr ""
+"Nie wybrałeś jeszcze żadnej drukarki ani ustawień wstępnych. Proszę wybierz "
+"przynajmniej jedno."
 
 msgid "Some existing presets have failed to be created, as follows:\n"
 msgstr ""
@@ -11692,22 +11702,22 @@ msgid "Printer Setting"
 msgstr ""
 
 msgid "Export Configs"
-msgstr ""
+msgstr "Eksportuj konfiguracje"
 
 msgid "Printer config bundle(.orca_printer)"
-msgstr ""
+msgstr "Zestaw konfiguracji drukarki (.orca_printer)"
 
 msgid "Filament bundle(.orca_filament)"
-msgstr ""
+msgstr "Zestaw filamentu (.orca_filament)"
 
 msgid "Printer presets(.zip)"
-msgstr ""
+msgstr "Profile drukarki (.zip)"
 
 msgid "Filament presets(.zip)"
-msgstr ""
+msgstr "Profil filamentu (.zip)"
 
 msgid "Process presets(.zip)"
-msgstr ""
+msgstr "Profile procesu (.zip)"
 
 msgid "initialize fail"
 msgstr ""
@@ -11737,36 +11747,52 @@ msgid ""
 "Printer and all the filament&&process presets that belongs to the printer. \n"
 "Can be shared with others."
 msgstr ""
+"Profil drukarki oraz wszystkie ustawienia filamentu i procesu, które do niej "
+"należą. \n"
+"Można je udostępniać innym osobom."
 
 msgid ""
 "User's fillment preset set. \n"
 "Can be shared with others."
 msgstr ""
+"Profile filamentu.\n"
+"Można je udostępniać innym osobom."
 
 msgid "Only display printer names with changes to printer, filament, and process presets."
 msgstr ""
+"Wyświetlone są jedynie nazwy drukarek, które miały zmienione ustawienia (drukarki, "
+"filamentu lub procesu)."
 
 msgid "Only display the filament names with changes to filament presets."
 msgstr ""
+"Wyświetlone są jedynie nazwy filamentów, które zostały zmodyfikowane w ustawieniach."
 
 msgid "Only printer names with user printer presets will be displayed, and each preset you choose will be exported as a zip."
 msgstr ""
+"Wyświetlane są tylko nazwy drukarek z ustawieniami użytkownika, wybrany zestaw "
+"zostanie wyeksportowany jako plik zip."
 
 msgid ""
 "Only the filament names with user filament presets will be displayed, \n"
 "and all user filament presets in each filament name you select will be exported as a zip."
 msgstr ""
+"Na liście widoczne są tylko nazwy filamentów ze zmodyfikowanymi ustawieniami, \n"
+"a dla każdej wybranej nazwy filamentu zostaną wyeksportowane wszystkie ustawienia "
+"jako archiwum zip."
 
 msgid ""
 "Only printer names with changed process presets will be displayed, \n"
 "and all user process presets in each printer name you select will be exported as a zip."
 msgstr ""
+"Na liście widoczne są tylko nazwy drukarek ze zmodyfikowanymi ustawieniami procesu, \n"
+"a dla każdej wybranej nazwy drukarki zostaną wyeksportowane wszystkie \n"
+"ustawienia procesu jako archiwum zip."
 
 msgid "Please select at least one printer or filament."
-msgstr ""
+msgstr "Proszę wybrać co chcesz wyeksportować."
 
 msgid "Please select a type you want to export"
-msgstr ""
+msgstr "Proszę wybierz co chcesz wyeksportować"
 
 msgid "Edit Filament"
 msgstr ""
