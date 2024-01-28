@@ -1,7 +1,7 @@
 From f4fef135f0a58ca2916c45cd539923ab096935b6 Mon Sep 17 00:00:00 2001
 From: Ocraftyone <Ocraftyone@users.noreply.github.com>
 Date: Thu, 30 Nov 2023 03:25:54 -0500
-Subject: [PATCH] patch v3.2.1 for OrcaSlicer
+Subject: [PATCH] patch v3.2.1 for GalaxySlicer
 
 ---
  build/cmake/lib/webview/CMakeLists.txt |  4 +-

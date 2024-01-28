@@ -2361,7 +2361,7 @@ bool GUI_App::on_init_inner()
     }
 #endif
 
-    BOOST_LOG_TRIVIAL(info) << boost::format("gui mode, Current OrcaSlicer Version %1%")%GalaxySlicer_VERSION;
+    BOOST_LOG_TRIVIAL(info) << boost::format("gui mode, Current GalaxySlicer Version %1%")%GalaxySlicer_VERSION;
     // Enable this to get the default Win32 COMCTRL32 behavior of static boxes.
 //    wxSystemOptions::SetOption("msw.staticbox.optimized-paint", 0);
     // Enable this to disable Windows Vista themes for all wxNotebooks. The themes seem to lead to terrible
@@ -6137,9 +6137,9 @@ void GUI_App::open_mall_page_dialog()
     }
 
     if (link_url.find("?") != std::string::npos) {
-        link_url += "&from=orcaslicer";
+        link_url += "&from=GalaxySlicer";
     } else {
-        link_url += "?from=orcaslicer";
+        link_url += "?from=GalaxySlicer";
     }
 
     wxLaunchDefaultBrowser(link_url);
