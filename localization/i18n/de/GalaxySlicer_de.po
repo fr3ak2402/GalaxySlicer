@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Heiko Liebscher <hliebschergmail.com>\n"
 "Language-Team: \n"
@@ -1417,6 +1417,9 @@ msgstr "Kritischer Fehler"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer hat eine unbehandelte Ausnahme erzeugt: %1%"
+
+msgid "Untitled"
+msgstr "Unbenannt"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "Lade Galaxy Network Plug-in herunter"
@@ -5470,9 +5473,6 @@ msgstr "Namen der aktuellen Platte ändern"
 msgid "Customize current plate"
 msgstr "Aktuelle Platte anpassen"
 
-msgid "Untitled"
-msgstr "Unbenannt"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " Druckplatte %1%:"
@@ -9414,8 +9414,8 @@ msgstr "Nach Ebene"
 msgid "By object"
 msgstr "Nach Objekt"
 
-msgid "Layer order"
-msgstr "Layer Reihenfolge"
+msgid "Intra-layer order"
+msgstr ""
 
 msgid "Print order within a single layer"
 msgstr "Druckreihenfolge innerhalb einer einzelnen Schicht"
@@ -14636,6 +14636,9 @@ msgstr ""
 "Das ausgewählte Filament findet keine Filament-Voreinstellung, bitte neu "
 "auswählen"
 
+msgid "[Delete Required]"
+msgstr ""
+
 msgid "Edit Preset"
 msgstr "Voreinstellung bearbeiten"
 
@@ -15236,6 +15239,9 @@ msgstr ""
 "Wussten Sie, dass Sie bei der Verwendung von Materialien, die zu "
 "Verwerfungen neigen, wie z.B. ABS, durch eine angemessene Erhöhung der "
 "Heizbetttemperatur die Wahrscheinlichkeit von Verwerfungen verringern können."
+
+#~ msgid "Layer order"
+#~ msgstr "Layer Reihenfolge"
 
 #~ msgid "Orca Cube"
 #~ msgstr "Galaxy Würfel"

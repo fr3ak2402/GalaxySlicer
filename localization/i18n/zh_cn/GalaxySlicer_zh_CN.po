@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slic3rPE\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: 2023-04-01 13:21+0800\n"
 "Last-Translator: Jiang Yue <maze1024@gmail.com>\n"
 "Language-Team: \n"
@@ -1369,6 +1369,9 @@ msgstr "严重错误"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer 捕捉到一个未处理的异常：%1%"
+
+msgid "Untitled"
+msgstr "未命名"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "正在下载Bambu网络插件"
@@ -5162,9 +5165,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr "自定义当前板"
 
-msgid "Untitled"
-msgstr "未命名"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr "盘%1%："
@@ -8693,7 +8693,7 @@ msgstr "逐层"
 msgid "By object"
 msgstr "逐件"
 
-msgid "Layer order"
+msgid "Intra-layer order"
 msgstr ""
 
 msgid "Print order within a single layer"
@@ -13254,6 +13254,9 @@ msgstr "从材料中复制预设"
 
 msgid "The filament choice not find filament preset, please reselect it"
 msgstr "您选择的材料未找到材料预设，请重新选择。"
+
+msgid "[Delete Required]"
+msgstr ""
 
 msgid "Edit Preset"
 msgstr "编辑预设"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Guislain Cyril\n"
@@ -1390,6 +1390,9 @@ msgstr "Erreur critique"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer a reçu une exception non gérée : %1%"
+
+msgid "Untitled"
+msgstr "Sans_Titre"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "Téléchargement du plug-in réseau Bambu"
@@ -5388,9 +5391,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr "Personnalisation de la plaque actuelle"
 
-msgid "Untitled"
-msgstr "Sans_Titre"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " du plateau %1% - "
@@ -9252,8 +9252,8 @@ msgstr "Par couche"
 msgid "By object"
 msgstr "Par objet"
 
-msgid "Layer order"
-msgstr "Ordre des couches"
+msgid "Intra-layer order"
+msgstr ""
 
 msgid "Print order within a single layer"
 msgstr "Ordre d’impression au sein d’une même couche"
@@ -13998,6 +13998,9 @@ msgstr ""
 msgid "The filament choice not find filament preset, please reselect it"
 msgstr ""
 
+msgid "[Delete Required]"
+msgstr ""
+
 msgid "Edit Preset"
 msgstr ""
 
@@ -14534,6 +14537,9 @@ msgid ""
 "ABS, appropriately increasing the heatbed temperature can reduce the "
 "probability of warping."
 msgstr ""
+
+#~ msgid "Layer order"
+#~ msgstr "Ordre des couches"
 
 #~ msgid "End temp: "
 #~ msgstr "Temp. de fin: "

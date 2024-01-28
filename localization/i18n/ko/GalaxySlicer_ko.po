@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: 2024-01-01 14:28+0900\n"
 "Last-Translator: Hotsolidinfill <138652683+Hotsolidinfill@users.noreply."
 "Language-Team: \n"
@@ -1393,6 +1393,9 @@ msgstr "치명적 오류"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "Orca Slicer에 처리되지 않은 예외가 발생했습니다: %1%"
+
+msgid "Untitled"
+msgstr "Untitled"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "Downloading Bambu Network Plug-in"
@@ -5282,9 +5285,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr "사용자 정의 플레이트"
 
-msgid "Untitled"
-msgstr "Untitled"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " 플레이트 %1%:"
@@ -8982,7 +8982,7 @@ msgstr "레이어별"
 msgid "By object"
 msgstr "개체별"
 
-msgid "Layer order"
+msgid "Intra-layer order"
 msgstr ""
 
 msgid "Print order within a single layer"
@@ -13813,6 +13813,9 @@ msgstr ""
 
 msgid "The filament choice not find filament preset, please reselect it"
 msgstr "필라멘트 선택에서 사전 설정을 찾을 수 없습니다. 다시 선택하세요"
+
+msgid "[Delete Required]"
+msgstr ""
 
 msgid "Edit Preset"
 msgstr ""

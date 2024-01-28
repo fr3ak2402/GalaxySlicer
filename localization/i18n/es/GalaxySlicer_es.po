@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GalaxySlicer\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1423,6 +1423,9 @@ msgstr "Error crítico"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer obtuvo una excepción no manejada: %1%"
+
+msgid "Untitled"
+msgstr "Sin título"
 
 # msgid "OrcaSlicer got an unhandled exception: %1%"
 # msgstr "OrcaSlicer obtuvo una excepción no manejada: %1%"
@@ -5417,9 +5420,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr "Personalizar bandeja actual"
 
-msgid "Untitled"
-msgstr "Sin título"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " bandeja %1%:"
@@ -9293,7 +9293,7 @@ msgstr "Por capa"
 msgid "By object"
 msgstr "Por objeto"
 
-msgid "Layer order"
+msgid "Intra-layer order"
 msgstr ""
 
 msgid "Print order within a single layer"
@@ -14461,6 +14461,9 @@ msgstr "Copiar perfil desde filamento"
 
 msgid "The filament choice not find filament preset, please reselect it"
 msgstr "Perfil de filamento no encontrado, por favor, seleccione otro"
+
+msgid "[Delete Required]"
+msgstr ""
 
 msgid "Edit Preset"
 msgstr "Editar Perfil"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: 2023-09-30 15:15+0200\n"
 "Last-Translator: René Mošner <Renemosner@seznam.cz>\n"
 "Language-Team: \n"
@@ -1382,6 +1382,9 @@ msgstr "Kritická chyba"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer dostal neošetřenou výjimku: %1%"
+
+msgid "Untitled"
+msgstr "Bez názvu"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "Stahování Bambu Network Plug-in"
@@ -5334,9 +5337,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr "Přizpůsobit aktuální podložku"
 
-msgid "Untitled"
-msgstr "Bez názvu"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " podložka %1%:"
@@ -9080,7 +9080,7 @@ msgstr "Podle vrstvy"
 msgid "By object"
 msgstr "Podle objektu"
 
-msgid "Layer order"
+msgid "Intra-layer order"
 msgstr ""
 
 msgid "Print order within a single layer"
@@ -13947,6 +13947,9 @@ msgid "Copy preset from filament"
 msgstr ""
 
 msgid "The filament choice not find filament preset, please reselect it"
+msgstr ""
+
+msgid "[Delete Required]"
 msgstr ""
 
 msgid "Edit Preset"

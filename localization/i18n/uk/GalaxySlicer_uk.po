@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 18:47+0100\n"
+"POT-Creation-Date: 2024-01-28 12:40+0100\n"
 "PO-Revision-Date: 2023-08-10 20:25-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1379,6 +1379,9 @@ msgstr "Критична помилка"
 #, boost-format
 msgid "GalaxySlicer got an unhandled exception: %1%"
 msgstr "GalaxySlicer отримав необроблений виняток: %1%"
+
+msgid "Untitled"
+msgstr "Без імені"
 
 msgid "Downloading Bambu Network Plug-in"
 msgstr "Завантаження мережевого модуля Bambu, що підключається"
@@ -5303,9 +5306,6 @@ msgstr ""
 msgid "Customize current plate"
 msgstr ""
 
-msgid "Untitled"
-msgstr "Без імені"
-
 #, boost-format
 msgid " plate %1%:"
 msgstr " Пластина %1%:"
@@ -8990,7 +8990,7 @@ msgstr "За шаром"
 msgid "By object"
 msgstr "По об'єкту"
 
-msgid "Layer order"
+msgid "Intra-layer order"
 msgstr ""
 
 msgid "Print order within a single layer"
@@ -13578,6 +13578,9 @@ msgid "Copy preset from filament"
 msgstr ""
 
 msgid "The filament choice not find filament preset, please reselect it"
+msgstr ""
+
+msgid "[Delete Required]"
 msgstr ""
 
 msgid "Edit Preset"
