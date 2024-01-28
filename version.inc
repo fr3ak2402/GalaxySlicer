@@ -23,7 +23,7 @@ string(REGEX MATCH "^([0-9]+)\\.([0-9]+)\\.([0-9]+)"
 set(SLIC3R_VERSION_MAJOR ${CMAKE_MATCH_1})
 set(SLIC3R_VERSION_MINOR ${CMAKE_MATCH_2})
 set(SLIC3R_VERSION_PATCH ${CMAKE_MATCH_3})
-set(SLIC3R_VERSION "01.08.02.56")
+set(SLIC3R_VERSION "01.08.04.51")
 
 # The build_version should start from 50 in master branch
 set(BBL_PLUGIN_VERSION "01.08.02.56")

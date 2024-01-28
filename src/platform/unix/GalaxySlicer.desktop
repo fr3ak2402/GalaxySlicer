@@ -2,7 +2,7 @@
 Name=GalaxySlicer
 GenericName=3D Printing Software
 Icon=GalaxySlicer
-Exec=galaxy-slicer %F
+Exec=galaxy-slicer %U
 Terminal=false
 Type=Application
 MimeType=model/stl;application/vnd.ms-3mfdocument;application/prs.wavefront-obj;application/x-amf;
